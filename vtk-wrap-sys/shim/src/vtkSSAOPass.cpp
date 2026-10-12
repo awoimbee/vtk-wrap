@@ -9,156 +9,156 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkSSAOPass__vtk_wrap_new() { return static_cast<void*>(vtkSSAOPass::New()); }
+extern "C" void* vtkSSAOPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSSAOPass::New()); }
 
-extern "C" int32_t vtkSSAOPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSSAOPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkSSAOPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSSAOPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSSAOPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSSAOPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkSSAOPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSSAOPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSSAOPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSSAOPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSSAOPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSSAOPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSSAOPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSSAOPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkSSAOPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" bool vtkSSAOPass__SetShaderParameters__0(void* self, void* program, void* mapper, void* prop, void* VAO) {
+extern "C" bool vtkSSAOPass__SetShaderParameters__0(void* self, void* program, void* mapper, void* prop, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->SetShaderParameters(static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkProp*>(prop), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" double vtkSSAOPass__GetRadius__0(void* self) {
+extern "C" double vtkSSAOPass__GetRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetRadius();
 }
 
-extern "C" void vtkSSAOPass__SetRadius__0(void* self, double _arg) {
+extern "C" void vtkSSAOPass__SetRadius__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetRadius(_arg);
 }
 
-extern "C" uint32_t vtkSSAOPass__GetKernelSize__0(void* self) {
+extern "C" uint32_t vtkSSAOPass__GetKernelSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetKernelSize();
 }
 
-extern "C" void vtkSSAOPass__SetKernelSize__0(void* self, uint32_t _arg) {
+extern "C" void vtkSSAOPass__SetKernelSize__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetKernelSize(_arg);
 }
 
-extern "C" uint32_t vtkSSAOPass__GetKernelSizeMinValue__0(void* self) {
+extern "C" uint32_t vtkSSAOPass__GetKernelSizeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetKernelSizeMinValue();
 }
 
-extern "C" uint32_t vtkSSAOPass__GetKernelSizeMaxValue__0(void* self) {
+extern "C" uint32_t vtkSSAOPass__GetKernelSizeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetKernelSizeMaxValue();
 }
 
-extern "C" double vtkSSAOPass__GetBias__0(void* self) {
+extern "C" double vtkSSAOPass__GetBias__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetBias();
 }
 
-extern "C" void vtkSSAOPass__SetBias__0(void* self, double _arg) {
+extern "C" void vtkSSAOPass__SetBias__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetBias(_arg);
 }
 
-extern "C" bool vtkSSAOPass__GetBlur__0(void* self) {
+extern "C" bool vtkSSAOPass__GetBlur__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetBlur();
 }
 
-extern "C" void vtkSSAOPass__SetBlur__0(void* self, bool _arg) {
+extern "C" void vtkSSAOPass__SetBlur__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetBlur(_arg);
 }
 
-extern "C" void vtkSSAOPass__BlurOn__0(void* self) {
+extern "C" void vtkSSAOPass__BlurOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->BlurOn();
 }
 
-extern "C" void vtkSSAOPass__BlurOff__0(void* self) {
+extern "C" void vtkSSAOPass__BlurOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->BlurOff();
 }
 
-extern "C" void vtkSSAOPass__SetDepthFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkSSAOPass__SetDepthFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetDepthFormat(_arg);
 }
 
-extern "C" int32_t vtkSSAOPass__GetDepthFormat__0(void* self) {
+extern "C" int32_t vtkSSAOPass__GetDepthFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetDepthFormat();
 }
 
-extern "C" double vtkSSAOPass__GetVolumeOpacityThreshold__0(void* self) {
+extern "C" double vtkSSAOPass__GetVolumeOpacityThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetVolumeOpacityThreshold();
 }
 
-extern "C" void vtkSSAOPass__SetVolumeOpacityThreshold__0(void* self, double _arg) {
+extern "C" void vtkSSAOPass__SetVolumeOpacityThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetVolumeOpacityThreshold(_arg);
 }
 
-extern "C" double vtkSSAOPass__GetVolumeOpacityThresholdMinValue__0(void* self) {
+extern "C" double vtkSSAOPass__GetVolumeOpacityThresholdMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetVolumeOpacityThresholdMinValue();
 }
 
-extern "C" double vtkSSAOPass__GetVolumeOpacityThresholdMaxValue__0(void* self) {
+extern "C" double vtkSSAOPass__GetVolumeOpacityThresholdMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetVolumeOpacityThresholdMaxValue();
 }
 
-extern "C" double vtkSSAOPass__GetIntensityScale__0(void* self) {
+extern "C" double vtkSSAOPass__GetIntensityScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetIntensityScale();
 }
 
-extern "C" void vtkSSAOPass__SetIntensityScale__0(void* self, double _arg) {
+extern "C" void vtkSSAOPass__SetIntensityScale__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetIntensityScale(_arg);
 }
 
-extern "C" double vtkSSAOPass__GetIntensityShift__0(void* self) {
+extern "C" double vtkSSAOPass__GetIntensityShift__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetIntensityShift();
 }
 
-extern "C" void vtkSSAOPass__SetIntensityShift__0(void* self, double _arg) {
+extern "C" void vtkSSAOPass__SetIntensityShift__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkSSAOPass*>(self)->SetIntensityShift(_arg);
 }
 
-extern "C" double vtkSSAOPass__GetIntensityShiftMinValue__0(void* self) {
+extern "C" double vtkSSAOPass__GetIntensityShiftMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetIntensityShiftMinValue();
 }
 
-extern "C" double vtkSSAOPass__GetIntensityShiftMaxValue__0(void* self) {
+extern "C" double vtkSSAOPass__GetIntensityShiftMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAOPass*>(self)->GetIntensityShiftMaxValue();
 }

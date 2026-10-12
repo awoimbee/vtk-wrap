@@ -5,30 +5,30 @@
 #include "vtkOverrideAttribute.h"
 #include <string>
 
-extern "C" void* vtkOpenGLHyperTreeGridMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLHyperTreeGridMapper::New()); }
+extern "C" void* vtkOpenGLHyperTreeGridMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLHyperTreeGridMapper::New()); }
 
-extern "C" void* vtkOpenGLHyperTreeGridMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLHyperTreeGridMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLHyperTreeGridMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLHyperTreeGridMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLHyperTreeGridMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLHyperTreeGridMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLHyperTreeGridMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLHyperTreeGridMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLHyperTreeGridMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLHyperTreeGridMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLHyperTreeGridMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLHyperTreeGridMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLHyperTreeGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLHyperTreeGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLHyperTreeGridMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLHyperTreeGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLHyperTreeGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLHyperTreeGridMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

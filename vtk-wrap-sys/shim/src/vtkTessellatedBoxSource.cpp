@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTessellatedBoxSource__vtk_wrap_new() { return static_cast<void*>(vtkTessellatedBoxSource::New()); }
+extern "C" void* vtkTessellatedBoxSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTessellatedBoxSource::New()); }
 
-extern "C" int32_t vtkTessellatedBoxSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTessellatedBoxSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkTessellatedBoxSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTessellatedBoxSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTessellatedBoxSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTessellatedBoxSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkTessellatedBoxSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTessellatedBoxSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTessellatedBoxSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTessellatedBoxSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTessellatedBoxSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTessellatedBoxSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTessellatedBoxSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTessellatedBoxSource__SetBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) {
+extern "C" void vtkTessellatedBoxSource__SetBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetBounds(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkTessellatedBoxSource__SetBounds__1(void* self, const double* _arg) {
+extern "C" void vtkTessellatedBoxSource__SetBounds__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetBounds(_arg);
 }
 
-extern "C" void vtkTessellatedBoxSource__SetLevel__0(void* self, int32_t _arg) {
+extern "C" void vtkTessellatedBoxSource__SetLevel__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetLevel(_arg);
 }
 
-extern "C" int32_t vtkTessellatedBoxSource__GetLevel__0(void* self) {
+extern "C" int32_t vtkTessellatedBoxSource__GetLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->GetLevel();
 }
 
-extern "C" void vtkTessellatedBoxSource__SetDuplicateSharedPoints__0(void* self, int32_t _arg) {
+extern "C" void vtkTessellatedBoxSource__SetDuplicateSharedPoints__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetDuplicateSharedPoints(_arg);
 }
 
-extern "C" int32_t vtkTessellatedBoxSource__GetDuplicateSharedPoints__0(void* self) {
+extern "C" int32_t vtkTessellatedBoxSource__GetDuplicateSharedPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->GetDuplicateSharedPoints();
 }
 
-extern "C" void vtkTessellatedBoxSource__DuplicateSharedPointsOn__0(void* self) {
+extern "C" void vtkTessellatedBoxSource__DuplicateSharedPointsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->DuplicateSharedPointsOn();
 }
 
-extern "C" void vtkTessellatedBoxSource__DuplicateSharedPointsOff__0(void* self) {
+extern "C" void vtkTessellatedBoxSource__DuplicateSharedPointsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->DuplicateSharedPointsOff();
 }
 
-extern "C" void vtkTessellatedBoxSource__SetQuads__0(void* self, int32_t _arg) {
+extern "C" void vtkTessellatedBoxSource__SetQuads__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetQuads(_arg);
 }
 
-extern "C" int32_t vtkTessellatedBoxSource__GetQuads__0(void* self) {
+extern "C" int32_t vtkTessellatedBoxSource__GetQuads__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->GetQuads();
 }
 
-extern "C" void vtkTessellatedBoxSource__QuadsOn__0(void* self) {
+extern "C" void vtkTessellatedBoxSource__QuadsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->QuadsOn();
 }
 
-extern "C" void vtkTessellatedBoxSource__QuadsOff__0(void* self) {
+extern "C" void vtkTessellatedBoxSource__QuadsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->QuadsOff();
 }
 
-extern "C" void vtkTessellatedBoxSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkTessellatedBoxSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTessellatedBoxSource*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkTessellatedBoxSource__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkTessellatedBoxSource__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTessellatedBoxSource*>(self)->GetOutputPointsPrecision();
 }

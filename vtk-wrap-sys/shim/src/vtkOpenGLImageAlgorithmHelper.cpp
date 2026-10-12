@@ -5,31 +5,31 @@
 #include "vtkRenderWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLImageAlgorithmHelper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLImageAlgorithmHelper::New()); }
+extern "C" void* vtkOpenGLImageAlgorithmHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLImageAlgorithmHelper::New()); }
 
-extern "C" int32_t vtkOpenGLImageAlgorithmHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLImageAlgorithmHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLImageAlgorithmHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLImageAlgorithmHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLImageAlgorithmHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageAlgorithmHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLImageAlgorithmHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLImageAlgorithmHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLImageAlgorithmHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLImageAlgorithmHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLImageAlgorithmHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLImageAlgorithmHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLImageAlgorithmHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLImageAlgorithmHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageAlgorithmHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLImageAlgorithmHelper__SetRenderWindow__0(void* self, void* renWin) {
+extern "C" void vtkOpenGLImageAlgorithmHelper__SetRenderWindow__0(void* self, void* renWin) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageAlgorithmHelper*>(self)->SetRenderWindow(static_cast<vtkRenderWindow*>(renWin));
 }

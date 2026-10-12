@@ -10,132 +10,132 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkDataObjectTree__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObjectTree__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObjectTree::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObjectTree__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObjectTree__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObjectTree__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObjectTree__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObjectTree::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObjectTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObjectTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObjectTree::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObjectTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObjectTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkDataObjectTree__NewTreeIterator__0(void* self) {
+extern "C" void* vtkDataObjectTree__NewTreeIterator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->NewTreeIterator());
 }
 
-extern "C" void* vtkDataObjectTree__NewIterator__0(void* self) {
+extern "C" void* vtkDataObjectTree__NewIterator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->NewIterator());
 }
 
-extern "C" void vtkDataObjectTree__CopyStructure__0(void* self, void* input) {
+extern "C" void vtkDataObjectTree__CopyStructure__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->CopyStructure(static_cast<vtkCompositeDataSet*>(input));
 }
 
-extern "C" void vtkDataObjectTree__SetDataSet__0(void* self, void* iter, void* dataObj) {
+extern "C" void vtkDataObjectTree__SetDataSet__0(void* self, void* iter, void* dataObj) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->SetDataSet(static_cast<vtkCompositeDataIterator*>(iter), static_cast<vtkDataObject*>(dataObj));
 }
 
-extern "C" void vtkDataObjectTree__SetDataSetFrom__0(void* self, void* iter, void* dataObj) {
+extern "C" void vtkDataObjectTree__SetDataSetFrom__0(void* self, void* iter, void* dataObj) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->SetDataSetFrom(static_cast<vtkDataObjectTreeIterator*>(iter), static_cast<vtkDataObject*>(dataObj));
 }
 
-extern "C" void* vtkDataObjectTree__GetDataSet__0(void* self, void* iter) {
+extern "C" void* vtkDataObjectTree__GetDataSet__0(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->GetDataSet(static_cast<vtkCompositeDataIterator*>(iter)));
 }
 
-extern "C" void* vtkDataObjectTree__GetMetaData__0(void* self, void* iter) {
+extern "C" void* vtkDataObjectTree__GetMetaData__0(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->GetMetaData(static_cast<vtkCompositeDataIterator*>(iter)));
 }
 
-extern "C" int32_t vtkDataObjectTree__HasMetaData__0(void* self, void* iter) {
+extern "C" int32_t vtkDataObjectTree__HasMetaData__0(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->HasMetaData(static_cast<vtkCompositeDataIterator*>(iter));
 }
 
-extern "C" unsigned long vtkDataObjectTree__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkDataObjectTree__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetActualMemorySize();
 }
 
-extern "C" void vtkDataObjectTree__Initialize__0(void* self) {
+extern "C" void vtkDataObjectTree__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->Initialize();
 }
 
-extern "C" void vtkDataObjectTree__CompositeShallowCopy__0(void* self, void* src) {
+extern "C" void vtkDataObjectTree__CompositeShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->CompositeShallowCopy(static_cast<vtkCompositeDataSet*>(src));
 }
 
-extern "C" void vtkDataObjectTree__ShallowCopy__0(void* self, void* src) {
+extern "C" void vtkDataObjectTree__ShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->ShallowCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" void vtkDataObjectTree__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkDataObjectTree__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkDataObjectTree*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" int64_t vtkDataObjectTree__GetNumberOfPoints__0(void* self) {
+extern "C" int64_t vtkDataObjectTree__GetNumberOfPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetNumberOfPoints();
 }
 
-extern "C" int64_t vtkDataObjectTree__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkDataObjectTree__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetNumberOfCells();
 }
 
-extern "C" uint32_t vtkDataObjectTree__GetNumberOfChildren__0(void* self) {
+extern "C" uint32_t vtkDataObjectTree__GetNumberOfChildren__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetNumberOfChildren();
 }
 
-extern "C" void* vtkDataObjectTree__GetChild__0(void* self, uint32_t index) {
+extern "C" void* vtkDataObjectTree__GetChild__0(void* self, uint32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->GetChild(index));
 }
 
-extern "C" void* vtkDataObjectTree__GetChildMetaData__0(void* self, uint32_t index) {
+extern "C" void* vtkDataObjectTree__GetChildMetaData__0(void* self, uint32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTree*>(self)->GetChildMetaData(index));
 }
 
-extern "C" int32_t vtkDataObjectTree__HasChildMetaData__0(void* self, uint32_t index) {
+extern "C" int32_t vtkDataObjectTree__HasChildMetaData__0(void* self, uint32_t index) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->HasChildMetaData(index);
 }
 
-extern "C" void* vtkDataObjectTree__GetData__0(void* info) {
+extern "C" void* vtkDataObjectTree__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkDataObjectTree::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkDataObjectTree__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkDataObjectTree__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkDataObjectTree::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" int32_t vtkDataObjectTree__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkDataObjectTree__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTree*>(self)->GetDataObjectType();
 }

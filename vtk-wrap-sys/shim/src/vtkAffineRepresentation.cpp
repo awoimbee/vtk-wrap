@@ -6,54 +6,54 @@
 #include "vtkTransform.h"
 #include <string>
 
-extern "C" int32_t vtkAffineRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAffineRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkAffineRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAffineRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAffineRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAffineRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAffineRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkAffineRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAffineRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAffineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAffineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAffineRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAffineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAffineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAffineRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAffineRepresentation__GetTransform__0(void* self, void* t) {
+extern "C" void vtkAffineRepresentation__GetTransform__0(void* self, void* t) noexcept {
   (void)self;
   static_cast<vtkAffineRepresentation*>(self)->GetTransform(static_cast<vtkTransform*>(t));
 }
 
-extern "C" void vtkAffineRepresentation__SetTolerance__0(void* self, int32_t _arg) {
+extern "C" void vtkAffineRepresentation__SetTolerance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAffineRepresentation*>(self)->SetTolerance(_arg);
 }
 
-extern "C" int32_t vtkAffineRepresentation__GetToleranceMinValue__0(void* self) {
+extern "C" int32_t vtkAffineRepresentation__GetToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAffineRepresentation*>(self)->GetToleranceMinValue();
 }
 
-extern "C" int32_t vtkAffineRepresentation__GetToleranceMaxValue__0(void* self) {
+extern "C" int32_t vtkAffineRepresentation__GetToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAffineRepresentation*>(self)->GetToleranceMaxValue();
 }
 
-extern "C" int32_t vtkAffineRepresentation__GetTolerance__0(void* self) {
+extern "C" int32_t vtkAffineRepresentation__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAffineRepresentation*>(self)->GetTolerance();
 }
 
-extern "C" void vtkAffineRepresentation__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkAffineRepresentation__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkAffineRepresentation*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }

@@ -9,41 +9,41 @@
 #include "vtkShaderProgram.h"
 #include <string>
 
-extern "C" void* vtkGLSLModPixelDebugger__vtk_wrap_new() { return static_cast<void*>(vtkGLSLModPixelDebugger::New()); }
+extern "C" void* vtkGLSLModPixelDebugger__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGLSLModPixelDebugger::New()); }
 
-extern "C" int32_t vtkGLSLModPixelDebugger__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLSLModPixelDebugger__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLSLModPixelDebugger::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLSLModPixelDebugger__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLSLModPixelDebugger__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModPixelDebugger*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLSLModPixelDebugger__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLSLModPixelDebugger__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLSLModPixelDebugger::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLSLModPixelDebugger__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLSLModPixelDebugger__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLSLModPixelDebugger::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLSLModPixelDebugger__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLSLModPixelDebugger__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModPixelDebugger*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGLSLModPixelDebugger__SetSubstitutionJSONFileName__0(void* self, const char* filename) {
+extern "C" void vtkGLSLModPixelDebugger__SetSubstitutionJSONFileName__0(void* self, const char* filename) noexcept {
   (void)self;
   static_cast<vtkGLSLModPixelDebugger*>(self)->SetSubstitutionJSONFileName(std::string(filename));
 }
 
-extern "C" bool vtkGLSLModPixelDebugger__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) {
+extern "C" bool vtkGLSLModPixelDebugger__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkGLSLModPixelDebugger*>(self)->SetShaderParameters(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" bool vtkGLSLModPixelDebugger__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) {
+extern "C" bool vtkGLSLModPixelDebugger__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) noexcept {
   (void)self;
   return static_cast<vtkGLSLModPixelDebugger*>(self)->IsUpToDate(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor));
 }

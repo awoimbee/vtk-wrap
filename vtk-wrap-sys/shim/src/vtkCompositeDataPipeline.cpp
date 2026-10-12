@@ -9,48 +9,48 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCompositeDataPipeline__vtk_wrap_new() { return static_cast<void*>(vtkCompositeDataPipeline::New()); }
+extern "C" void* vtkCompositeDataPipeline__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompositeDataPipeline::New()); }
 
-extern "C" int32_t vtkCompositeDataPipeline__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeDataPipeline__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeDataPipeline::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeDataPipeline__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeDataPipeline__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataPipeline*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeDataPipeline__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeDataPipeline__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeDataPipeline::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeDataPipeline__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeDataPipeline__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeDataPipeline::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeDataPipeline__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeDataPipeline__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataPipeline*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCompositeDataPipeline__GetCompositeOutputData__0(void* self, int32_t port) {
+extern "C" void* vtkCompositeDataPipeline__GetCompositeOutputData__0(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompositeDataPipeline*>(self)->GetCompositeOutputData(port));
 }
 
-extern "C" void* vtkCompositeDataPipeline__LOAD_REQUESTED_BLOCKS__0() {
+extern "C" void* vtkCompositeDataPipeline__LOAD_REQUESTED_BLOCKS__0() noexcept {
   return static_cast<void*>(vtkCompositeDataPipeline::LOAD_REQUESTED_BLOCKS());
 }
 
-extern "C" void* vtkCompositeDataPipeline__COMPOSITE_DATA_META_DATA__0() {
+extern "C" void* vtkCompositeDataPipeline__COMPOSITE_DATA_META_DATA__0() noexcept {
   return static_cast<void*>(vtkCompositeDataPipeline::COMPOSITE_DATA_META_DATA());
 }
 
-extern "C" void* vtkCompositeDataPipeline__UPDATE_COMPOSITE_INDICES__0() {
+extern "C" void* vtkCompositeDataPipeline__UPDATE_COMPOSITE_INDICES__0() noexcept {
   return static_cast<void*>(vtkCompositeDataPipeline::UPDATE_COMPOSITE_INDICES());
 }
 
-extern "C" void* vtkCompositeDataPipeline__BLOCK_AMOUNT_OF_DETAIL__0() {
+extern "C" void* vtkCompositeDataPipeline__BLOCK_AMOUNT_OF_DETAIL__0() noexcept {
   return static_cast<void*>(vtkCompositeDataPipeline::BLOCK_AMOUNT_OF_DETAIL());
 }
 

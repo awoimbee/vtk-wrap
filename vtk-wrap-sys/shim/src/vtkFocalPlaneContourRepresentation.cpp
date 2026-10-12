@@ -4,59 +4,59 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkFocalPlaneContourRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFocalPlaneContourRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkFocalPlaneContourRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFocalPlaneContourRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFocalPlaneContourRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFocalPlaneContourRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFocalPlaneContourRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFocalPlaneContourRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFocalPlaneContourRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__GetIntermediatePointWorldPosition__0(void* self, int32_t n, int32_t idx, double* point) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__GetIntermediatePointWorldPosition__0(void* self, int32_t n, int32_t idx, double* point) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->GetIntermediatePointWorldPosition(n, idx, point);
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__GetIntermediatePointDisplayPosition__0(void* self, int32_t n, int32_t idx, double* point) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__GetIntermediatePointDisplayPosition__0(void* self, int32_t n, int32_t idx, double* point) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->GetIntermediatePointDisplayPosition(n, idx, point);
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__GetNthNodeDisplayPosition__0(void* self, int32_t n, double* pos) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__GetNthNodeDisplayPosition__0(void* self, int32_t n, double* pos) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->GetNthNodeDisplayPosition(n, pos);
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__GetNthNodeWorldPosition__0(void* self, int32_t n, double* pos) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__GetNthNodeWorldPosition__0(void* self, int32_t n, double* pos) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->GetNthNodeWorldPosition(n, pos);
 }
 
-extern "C" void vtkFocalPlaneContourRepresentation__UpdateContourWorldPositionsBasedOnDisplayPositions__0(void* self) {
+extern "C" void vtkFocalPlaneContourRepresentation__UpdateContourWorldPositionsBasedOnDisplayPositions__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFocalPlaneContourRepresentation*>(self)->UpdateContourWorldPositionsBasedOnDisplayPositions();
 }
 
-extern "C" int32_t vtkFocalPlaneContourRepresentation__UpdateContour__0(void* self) {
+extern "C" int32_t vtkFocalPlaneContourRepresentation__UpdateContour__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFocalPlaneContourRepresentation*>(self)->UpdateContour();
 }
 
-extern "C" void vtkFocalPlaneContourRepresentation__UpdateLines__0(void* self, int32_t index) {
+extern "C" void vtkFocalPlaneContourRepresentation__UpdateLines__0(void* self, int32_t index) noexcept {
   (void)self;
   static_cast<vtkFocalPlaneContourRepresentation*>(self)->UpdateLines(index);
 }

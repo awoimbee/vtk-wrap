@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAttributesErrorMetric__vtk_wrap_new() { return static_cast<void*>(vtkAttributesErrorMetric::New()); }
+extern "C" void* vtkAttributesErrorMetric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAttributesErrorMetric::New()); }
 
-extern "C" int32_t vtkAttributesErrorMetric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAttributesErrorMetric__IsTypeOf__0(const char* type_) noexcept {
   return vtkAttributesErrorMetric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAttributesErrorMetric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAttributesErrorMetric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributesErrorMetric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAttributesErrorMetric__SafeDownCast__0(void* o) {
+extern "C" void* vtkAttributesErrorMetric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAttributesErrorMetric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAttributesErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAttributesErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAttributesErrorMetric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAttributesErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAttributesErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributesErrorMetric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkAttributesErrorMetric__GetAbsoluteAttributeTolerance__0(void* self) {
+extern "C" double vtkAttributesErrorMetric__GetAbsoluteAttributeTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributesErrorMetric*>(self)->GetAbsoluteAttributeTolerance();
 }
 
-extern "C" void vtkAttributesErrorMetric__SetAbsoluteAttributeTolerance__0(void* self, double value) {
+extern "C" void vtkAttributesErrorMetric__SetAbsoluteAttributeTolerance__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkAttributesErrorMetric*>(self)->SetAbsoluteAttributeTolerance(value);
 }
 
-extern "C" double vtkAttributesErrorMetric__GetAttributeTolerance__0(void* self) {
+extern "C" double vtkAttributesErrorMetric__GetAttributeTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributesErrorMetric*>(self)->GetAttributeTolerance();
 }
 
-extern "C" void vtkAttributesErrorMetric__SetAttributeTolerance__0(void* self, double value) {
+extern "C" void vtkAttributesErrorMetric__SetAttributeTolerance__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkAttributesErrorMetric*>(self)->SetAttributeTolerance(value);
 }

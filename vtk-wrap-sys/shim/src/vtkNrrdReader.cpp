@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkNrrdReader__vtk_wrap_new() { return static_cast<void*>(vtkNrrdReader::New()); }
+extern "C" void* vtkNrrdReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkNrrdReader::New()); }
 
-extern "C" int32_t vtkNrrdReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkNrrdReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkNrrdReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkNrrdReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkNrrdReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNrrdReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkNrrdReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkNrrdReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkNrrdReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkNrrdReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkNrrdReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkNrrdReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkNrrdReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkNrrdReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNrrdReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkNrrdReader__CanReadFile__0(void* self, const char* filename) {
+extern "C" int32_t vtkNrrdReader__CanReadFile__0(void* self, const char* filename) noexcept {
   (void)self;
   return static_cast<vtkNrrdReader*>(self)->CanReadFile(filename);
 }

@@ -10,101 +10,101 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkPropAssembly__vtk_wrap_new() { return static_cast<void*>(vtkPropAssembly::New()); }
+extern "C" void* vtkPropAssembly__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPropAssembly::New()); }
 
-extern "C" int32_t vtkPropAssembly__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPropAssembly__IsTypeOf__0(const char* type_) noexcept {
   return vtkPropAssembly::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPropAssembly__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPropAssembly__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPropAssembly__SafeDownCast__0(void* o) {
+extern "C" void* vtkPropAssembly__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPropAssembly::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPropAssembly__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPropAssembly__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPropAssembly::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPropAssembly__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPropAssembly__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPropAssembly__AddPart__0(void* self, void* arg0) {
+extern "C" void vtkPropAssembly__AddPart__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->AddPart(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkPropAssembly__RemovePart__0(void* self, void* arg0) {
+extern "C" void vtkPropAssembly__RemovePart__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->RemovePart(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void* vtkPropAssembly__GetParts__0(void* self) {
+extern "C" void* vtkPropAssembly__GetParts__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPropAssembly*>(self)->GetParts());
 }
 
-extern "C" int32_t vtkPropAssembly__RenderOpaqueGeometry__0(void* self, void* ren) {
+extern "C" int32_t vtkPropAssembly__RenderOpaqueGeometry__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(ren));
 }
 
-extern "C" int32_t vtkPropAssembly__RenderTranslucentPolygonalGeometry__0(void* self, void* ren) {
+extern "C" int32_t vtkPropAssembly__RenderTranslucentPolygonalGeometry__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(ren));
 }
 
-extern "C" int32_t vtkPropAssembly__RenderVolumetricGeometry__0(void* self, void* ren) {
+extern "C" int32_t vtkPropAssembly__RenderVolumetricGeometry__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->RenderVolumetricGeometry(static_cast<vtkViewport*>(ren));
 }
 
-extern "C" int32_t vtkPropAssembly__RenderOverlay__0(void* self, void* ren) {
+extern "C" int32_t vtkPropAssembly__RenderOverlay__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->RenderOverlay(static_cast<vtkViewport*>(ren));
 }
 
-extern "C" int32_t vtkPropAssembly__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkPropAssembly__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkPropAssembly__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkPropAssembly__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkPropAssembly__ShallowCopy__0(void* self, void* Prop) {
+extern "C" void vtkPropAssembly__ShallowCopy__0(void* self, void* Prop) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->ShallowCopy(static_cast<vtkProp*>(Prop));
 }
 
-extern "C" unsigned long vtkPropAssembly__GetMTime__0(void* self) {
+extern "C" unsigned long vtkPropAssembly__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->GetMTime();
 }
 
-extern "C" void vtkPropAssembly__InitPathTraversal__0(void* self) {
+extern "C" void vtkPropAssembly__InitPathTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->InitPathTraversal();
 }
 
-extern "C" void* vtkPropAssembly__GetNextPath__0(void* self) {
+extern "C" void* vtkPropAssembly__GetNextPath__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPropAssembly*>(self)->GetNextPath());
 }
 
-extern "C" int32_t vtkPropAssembly__GetNumberOfPaths__0(void* self) {
+extern "C" int32_t vtkPropAssembly__GetNumberOfPaths__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPropAssembly*>(self)->GetNumberOfPaths();
 }
 
-extern "C" void vtkPropAssembly__BuildPaths__0(void* self, void* paths, void* path) {
+extern "C" void vtkPropAssembly__BuildPaths__0(void* self, void* paths, void* path) noexcept {
   (void)self;
   static_cast<vtkPropAssembly*>(self)->BuildPaths(static_cast<vtkAssemblyPaths*>(paths), static_cast<vtkAssemblyPath*>(path));
 }

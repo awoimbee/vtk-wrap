@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSphericalDirectionEncoder__vtk_wrap_new() { return static_cast<void*>(vtkSphericalDirectionEncoder::New()); }
+extern "C" void* vtkSphericalDirectionEncoder__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSphericalDirectionEncoder::New()); }
 
-extern "C" int32_t vtkSphericalDirectionEncoder__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSphericalDirectionEncoder__IsTypeOf__0(const char* type_) noexcept {
   return vtkSphericalDirectionEncoder::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSphericalDirectionEncoder__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSphericalDirectionEncoder__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphericalDirectionEncoder*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSphericalDirectionEncoder__SafeDownCast__0(void* o) {
+extern "C" void* vtkSphericalDirectionEncoder__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSphericalDirectionEncoder::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSphericalDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSphericalDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSphericalDirectionEncoder::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSphericalDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSphericalDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphericalDirectionEncoder*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkSphericalDirectionEncoder__GetEncodedDirection__0(void* self, float* n) {
+extern "C" int32_t vtkSphericalDirectionEncoder__GetEncodedDirection__0(void* self, float* n) noexcept {
   (void)self;
   return static_cast<vtkSphericalDirectionEncoder*>(self)->GetEncodedDirection(n);
 }
 
-extern "C" int32_t vtkSphericalDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) {
+extern "C" int32_t vtkSphericalDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphericalDirectionEncoder*>(self)->GetNumberOfEncodedDirections();
 }

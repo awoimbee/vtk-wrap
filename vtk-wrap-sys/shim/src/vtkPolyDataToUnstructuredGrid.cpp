@@ -5,31 +5,31 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkPolyDataToUnstructuredGrid__vtk_wrap_new() { return static_cast<void*>(vtkPolyDataToUnstructuredGrid::New()); }
+extern "C" void* vtkPolyDataToUnstructuredGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyDataToUnstructuredGrid::New()); }
 
-extern "C" int32_t vtkPolyDataToUnstructuredGrid__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyDataToUnstructuredGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyDataToUnstructuredGrid::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyDataToUnstructuredGrid__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyDataToUnstructuredGrid__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataToUnstructuredGrid*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyDataToUnstructuredGrid__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyDataToUnstructuredGrid__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyDataToUnstructuredGrid::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyDataToUnstructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyDataToUnstructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyDataToUnstructuredGrid::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyDataToUnstructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyDataToUnstructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataToUnstructuredGrid*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkPolyDataToUnstructuredGrid__CanBeProcessedFast__0(void* polyData) {
+extern "C" bool vtkPolyDataToUnstructuredGrid__CanBeProcessedFast__0(void* polyData) noexcept {
   return vtkPolyDataToUnstructuredGrid::CanBeProcessedFast(static_cast<vtkPolyData*>(polyData));
 }
 

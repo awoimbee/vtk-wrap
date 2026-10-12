@@ -8,61 +8,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLProjectedTetrahedraMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLProjectedTetrahedraMapper::New()); }
+extern "C" void* vtkOpenGLProjectedTetrahedraMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLProjectedTetrahedraMapper::New()); }
 
-extern "C" int32_t vtkOpenGLProjectedTetrahedraMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLProjectedTetrahedraMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLProjectedTetrahedraMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLProjectedTetrahedraMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLProjectedTetrahedraMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLProjectedTetrahedraMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLProjectedTetrahedraMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLProjectedTetrahedraMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLProjectedTetrahedraMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLProjectedTetrahedraMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLProjectedTetrahedraMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLProjectedTetrahedraMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLProjectedTetrahedraMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLProjectedTetrahedraMapper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLProjectedTetrahedraMapper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" void vtkOpenGLProjectedTetrahedraMapper__Render__0(void* self, void* renderer, void* volume) {
+extern "C" void vtkOpenGLProjectedTetrahedraMapper__Render__0(void* self, void* renderer, void* volume) noexcept {
   (void)self;
   static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->Render(static_cast<vtkRenderer*>(renderer), static_cast<vtkVolume*>(volume));
 }
 
-extern "C" void vtkOpenGLProjectedTetrahedraMapper__SetUseFloatingPointFrameBuffer__0(void* self, bool _arg) {
+extern "C" void vtkOpenGLProjectedTetrahedraMapper__SetUseFloatingPointFrameBuffer__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->SetUseFloatingPointFrameBuffer(_arg);
 }
 
-extern "C" bool vtkOpenGLProjectedTetrahedraMapper__GetUseFloatingPointFrameBuffer__0(void* self) {
+extern "C" bool vtkOpenGLProjectedTetrahedraMapper__GetUseFloatingPointFrameBuffer__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->GetUseFloatingPointFrameBuffer();
 }
 
-extern "C" void vtkOpenGLProjectedTetrahedraMapper__UseFloatingPointFrameBufferOn__0(void* self) {
+extern "C" void vtkOpenGLProjectedTetrahedraMapper__UseFloatingPointFrameBufferOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->UseFloatingPointFrameBufferOn();
 }
 
-extern "C" void vtkOpenGLProjectedTetrahedraMapper__UseFloatingPointFrameBufferOff__0(void* self) {
+extern "C" void vtkOpenGLProjectedTetrahedraMapper__UseFloatingPointFrameBufferOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->UseFloatingPointFrameBufferOff();
 }
 
-extern "C" bool vtkOpenGLProjectedTetrahedraMapper__IsSupported__0(void* self, void* context) {
+extern "C" bool vtkOpenGLProjectedTetrahedraMapper__IsSupported__0(void* self, void* context) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProjectedTetrahedraMapper*>(self)->IsSupported(static_cast<vtkRenderWindow*>(context));
 }

@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSplitField__vtk_wrap_new() { return static_cast<void*>(vtkSplitField::New()); }
+extern "C" void* vtkSplitField__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSplitField::New()); }
 
-extern "C" int32_t vtkSplitField__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSplitField__IsTypeOf__0(const char* type_) noexcept {
   return vtkSplitField::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSplitField__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSplitField__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplitField*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSplitField__SafeDownCast__0(void* o) {
+extern "C" void* vtkSplitField__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSplitField::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSplitField__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSplitField__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSplitField::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSplitField__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSplitField__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplitField*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSplitField__SetInputField__0(void* self, int32_t attributeType, int32_t fieldLoc) {
+extern "C" void vtkSplitField__SetInputField__0(void* self, int32_t attributeType, int32_t fieldLoc) noexcept {
   (void)self;
   static_cast<vtkSplitField*>(self)->SetInputField(attributeType, fieldLoc);
 }
 
-extern "C" void vtkSplitField__SetInputField__1(void* self, const char* name, int32_t fieldLoc) {
+extern "C" void vtkSplitField__SetInputField__1(void* self, const char* name, int32_t fieldLoc) noexcept {
   (void)self;
   static_cast<vtkSplitField*>(self)->SetInputField(name, fieldLoc);
 }
 
-extern "C" void vtkSplitField__SetInputField__2(void* self, const char* name, const char* fieldLoc) {
+extern "C" void vtkSplitField__SetInputField__2(void* self, const char* name, const char* fieldLoc) noexcept {
   (void)self;
   static_cast<vtkSplitField*>(self)->SetInputField(name, fieldLoc);
 }
 
-extern "C" void vtkSplitField__Split__0(void* self, int32_t component, const char* arrayName) {
+extern "C" void vtkSplitField__Split__0(void* self, int32_t component, const char* arrayName) noexcept {
   (void)self;
   static_cast<vtkSplitField*>(self)->Split(component, arrayName);
 }

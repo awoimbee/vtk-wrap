@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphEdge__vtk_wrap_new() { return static_cast<void*>(vtkGraphEdge::New()); }
+extern "C" void* vtkGraphEdge__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphEdge::New()); }
 
-extern "C" int32_t vtkGraphEdge__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphEdge__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphEdge::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphEdge__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphEdge__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphEdge*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphEdge__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphEdge__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphEdge::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphEdge__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphEdge__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphEdge::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphEdge__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphEdge__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphEdge*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGraphEdge__SetSource__0(void* self, int64_t _arg) {
+extern "C" void vtkGraphEdge__SetSource__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkGraphEdge*>(self)->SetSource(_arg);
 }
 
-extern "C" int64_t vtkGraphEdge__GetSource__0(void* self) {
+extern "C" int64_t vtkGraphEdge__GetSource__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGraphEdge*>(self)->GetSource();
 }
 
-extern "C" void vtkGraphEdge__SetTarget__0(void* self, int64_t _arg) {
+extern "C" void vtkGraphEdge__SetTarget__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkGraphEdge*>(self)->SetTarget(_arg);
 }
 
-extern "C" int64_t vtkGraphEdge__GetTarget__0(void* self) {
+extern "C" int64_t vtkGraphEdge__GetTarget__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGraphEdge*>(self)->GetTarget();
 }
 
-extern "C" void vtkGraphEdge__SetId__0(void* self, int64_t _arg) {
+extern "C" void vtkGraphEdge__SetId__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkGraphEdge*>(self)->SetId(_arg);
 }
 
-extern "C" int64_t vtkGraphEdge__GetId__0(void* self) {
+extern "C" int64_t vtkGraphEdge__GetId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGraphEdge*>(self)->GetId();
 }

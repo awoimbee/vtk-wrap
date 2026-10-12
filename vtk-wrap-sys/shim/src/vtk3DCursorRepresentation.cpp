@@ -7,66 +7,66 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtk3DCursorRepresentation__vtk_wrap_new() { return static_cast<void*>(vtk3DCursorRepresentation::New()); }
+extern "C" void* vtk3DCursorRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtk3DCursorRepresentation::New()); }
 
-extern "C" int32_t vtk3DCursorRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtk3DCursorRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtk3DCursorRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtk3DCursorRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtk3DCursorRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtk3DCursorRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtk3DCursorRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtk3DCursorRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtk3DCursorRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtk3DCursorRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtk3DCursorRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtk3DCursorRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtk3DCursorRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtk3DCursorRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtk3DCursorRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtk3DCursorRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtk3DCursorRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtk3DCursorRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtk3DCursorRepresentation__WidgetInteraction__0(void* self, double* newEventPos) {
+extern "C" void vtk3DCursorRepresentation__WidgetInteraction__0(void* self, double* newEventPos) noexcept {
   (void)self;
   static_cast<vtk3DCursorRepresentation*>(self)->WidgetInteraction(newEventPos);
 }
 
-extern "C" void vtk3DCursorRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtk3DCursorRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtk3DCursorRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtk3DCursorRepresentation__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtk3DCursorRepresentation__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtk3DCursorRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void vtk3DCursorRepresentation__SetCursorShape__0(void* self, int32_t shape) {
+extern "C" void vtk3DCursorRepresentation__SetCursorShape__0(void* self, int32_t shape) noexcept {
   (void)self;
   static_cast<vtk3DCursorRepresentation*>(self)->SetCursorShape(shape);
 }
 
-extern "C" int32_t vtk3DCursorRepresentation__GetShape__0(void* self) {
+extern "C" int32_t vtk3DCursorRepresentation__GetShape__0(void* self) noexcept {
   (void)self;
   return static_cast<vtk3DCursorRepresentation*>(self)->GetShape();
 }
 
-extern "C" void vtk3DCursorRepresentation__SetCustomCursor__0(void* self, void* customCursor) {
+extern "C" void vtk3DCursorRepresentation__SetCustomCursor__0(void* self, void* customCursor) noexcept {
   (void)self;
   static_cast<vtk3DCursorRepresentation*>(self)->SetCustomCursor(static_cast<vtkActor*>(customCursor));
 }
 
-extern "C" void* vtk3DCursorRepresentation__GetCustomCursor__0(void* self) {
+extern "C" void* vtk3DCursorRepresentation__GetCustomCursor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtk3DCursorRepresentation*>(self)->GetCustomCursor());
 }

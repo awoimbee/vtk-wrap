@@ -6,46 +6,46 @@
 #include "vtkSelection.h"
 #include <string>
 
-extern "C" void* vtkSelectionAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkSelectionAlgorithm::New()); }
+extern "C" void* vtkSelectionAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSelectionAlgorithm::New()); }
 
-extern "C" int32_t vtkSelectionAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSelectionAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkSelectionAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSelectionAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSelectionAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSelectionAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSelectionAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkSelectionAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSelectionAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSelectionAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSelectionAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSelectionAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSelectionAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSelectionAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSelectionAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkSelectionAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkSelectionAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSelectionAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkSelectionAlgorithm__GetOutput__1(void* self, int32_t index) {
+extern "C" void* vtkSelectionAlgorithm__GetOutput__1(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSelectionAlgorithm*>(self)->GetOutput(index));
 }
 
-extern "C" void vtkSelectionAlgorithm__SetInputData__0(void* self, void* obj) {
+extern "C" void vtkSelectionAlgorithm__SetInputData__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkSelectionAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(obj));
 }
 
-extern "C" void vtkSelectionAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) {
+extern "C" void vtkSelectionAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) noexcept {
   (void)self;
   static_cast<vtkSelectionAlgorithm*>(self)->SetInputData(index, static_cast<vtkDataObject*>(obj));
 }

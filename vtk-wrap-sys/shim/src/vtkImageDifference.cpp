@@ -7,111 +7,111 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageDifference__vtk_wrap_new() { return static_cast<void*>(vtkImageDifference::New()); }
+extern "C" void* vtkImageDifference__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageDifference::New()); }
 
-extern "C" int32_t vtkImageDifference__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageDifference__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageDifference::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageDifference__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageDifference__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageDifference__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageDifference__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageDifference::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageDifference__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageDifference__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageDifference::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageDifference__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageDifference__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageDifference__SetImageConnection__0(void* self, void* output) {
+extern "C" void vtkImageDifference__SetImageConnection__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetImageConnection(static_cast<vtkAlgorithmOutput*>(output));
 }
 
-extern "C" void vtkImageDifference__SetImageData__0(void* self, void* image) {
+extern "C" void vtkImageDifference__SetImageData__0(void* self, void* image) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetImageData(static_cast<vtkDataObject*>(image));
 }
 
-extern "C" void* vtkImageDifference__GetImage__0(void* self) {
+extern "C" void* vtkImageDifference__GetImage__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageDifference*>(self)->GetImage());
 }
 
-extern "C" double vtkImageDifference__GetError__0(void* self) {
+extern "C" double vtkImageDifference__GetError__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetError();
 }
 
-extern "C" double vtkImageDifference__GetThresholdedError__0(void* self) {
+extern "C" double vtkImageDifference__GetThresholdedError__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetThresholdedError();
 }
 
-extern "C" void vtkImageDifference__SetThreshold__0(void* self, int32_t _arg) {
+extern "C" void vtkImageDifference__SetThreshold__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetThreshold(_arg);
 }
 
-extern "C" int32_t vtkImageDifference__GetThreshold__0(void* self) {
+extern "C" int32_t vtkImageDifference__GetThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetThreshold();
 }
 
-extern "C" void vtkImageDifference__SetAllowShift__0(void* self, bool _arg) {
+extern "C" void vtkImageDifference__SetAllowShift__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetAllowShift(_arg);
 }
 
-extern "C" bool vtkImageDifference__GetAllowShift__0(void* self) {
+extern "C" bool vtkImageDifference__GetAllowShift__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetAllowShift();
 }
 
-extern "C" void vtkImageDifference__AllowShiftOn__0(void* self) {
+extern "C" void vtkImageDifference__AllowShiftOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->AllowShiftOn();
 }
 
-extern "C" void vtkImageDifference__AllowShiftOff__0(void* self) {
+extern "C" void vtkImageDifference__AllowShiftOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->AllowShiftOff();
 }
 
-extern "C" void vtkImageDifference__SetAveraging__0(void* self, bool _arg) {
+extern "C" void vtkImageDifference__SetAveraging__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetAveraging(_arg);
 }
 
-extern "C" bool vtkImageDifference__GetAveraging__0(void* self) {
+extern "C" bool vtkImageDifference__GetAveraging__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetAveraging();
 }
 
-extern "C" void vtkImageDifference__AveragingOn__0(void* self) {
+extern "C" void vtkImageDifference__AveragingOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->AveragingOn();
 }
 
-extern "C" void vtkImageDifference__AveragingOff__0(void* self) {
+extern "C" void vtkImageDifference__AveragingOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->AveragingOff();
 }
 
-extern "C" void vtkImageDifference__SetAverageThresholdFactor__0(void* self, double _arg) {
+extern "C" void vtkImageDifference__SetAverageThresholdFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageDifference*>(self)->SetAverageThresholdFactor(_arg);
 }
 
-extern "C" double vtkImageDifference__GetAverageThresholdFactor__0(void* self) {
+extern "C" double vtkImageDifference__GetAverageThresholdFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDifference*>(self)->GetAverageThresholdFactor();
 }

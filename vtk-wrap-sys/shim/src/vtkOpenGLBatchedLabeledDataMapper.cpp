@@ -9,45 +9,45 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLBatchedLabeledDataMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLBatchedLabeledDataMapper::New()); }
+extern "C" void* vtkOpenGLBatchedLabeledDataMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLBatchedLabeledDataMapper::New()); }
 
-extern "C" int32_t vtkOpenGLBatchedLabeledDataMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLBatchedLabeledDataMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLBatchedLabeledDataMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLBatchedLabeledDataMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLBatchedLabeledDataMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBatchedLabeledDataMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLBatchedLabeledDataMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLBatchedLabeledDataMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLBatchedLabeledDataMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLBatchedLabeledDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLBatchedLabeledDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLBatchedLabeledDataMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLBatchedLabeledDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLBatchedLabeledDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBatchedLabeledDataMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOpenGLBatchedLabeledDataMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLBatchedLabeledDataMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLBatchedLabeledDataMapper::CreateOverrideAttributes());
 }
 
-extern "C" void vtkOpenGLBatchedLabeledDataMapper__SetLabelTextProperty__0(void* self, void* p, int32_t type_) {
+extern "C" void vtkOpenGLBatchedLabeledDataMapper__SetLabelTextProperty__0(void* self, void* p, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedLabeledDataMapper*>(self)->SetLabelTextProperty(static_cast<vtkTextProperty*>(p), type_);
 }
 
-extern "C" void vtkOpenGLBatchedLabeledDataMapper__RenderOpaqueGeometry__0(void* self, void* viewport, void* actor) {
+extern "C" void vtkOpenGLBatchedLabeledDataMapper__RenderOpaqueGeometry__0(void* self, void* viewport, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedLabeledDataMapper*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void vtkOpenGLBatchedLabeledDataMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkOpenGLBatchedLabeledDataMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedLabeledDataMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

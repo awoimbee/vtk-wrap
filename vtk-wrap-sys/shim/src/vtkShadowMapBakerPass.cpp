@@ -7,91 +7,91 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkShadowMapBakerPass__vtk_wrap_new() { return static_cast<void*>(vtkShadowMapBakerPass::New()); }
+extern "C" void* vtkShadowMapBakerPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkShadowMapBakerPass::New()); }
 
-extern "C" int32_t vtkShadowMapBakerPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkShadowMapBakerPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkShadowMapBakerPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkShadowMapBakerPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkShadowMapBakerPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkShadowMapBakerPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkShadowMapBakerPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkShadowMapBakerPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkShadowMapBakerPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkShadowMapBakerPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkShadowMapBakerPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkShadowMapBakerPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkShadowMapBakerPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkShadowMapBakerPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkShadowMapBakerPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkShadowMapBakerPass__GetOpaqueSequence__0(void* self) {
+extern "C" void* vtkShadowMapBakerPass__GetOpaqueSequence__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkShadowMapBakerPass*>(self)->GetOpaqueSequence());
 }
 
-extern "C" void vtkShadowMapBakerPass__SetOpaqueSequence__0(void* self, void* opaqueSequence) {
+extern "C" void vtkShadowMapBakerPass__SetOpaqueSequence__0(void* self, void* opaqueSequence) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->SetOpaqueSequence(static_cast<vtkRenderPass*>(opaqueSequence));
 }
 
-extern "C" void* vtkShadowMapBakerPass__GetCompositeZPass__0(void* self) {
+extern "C" void* vtkShadowMapBakerPass__GetCompositeZPass__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkShadowMapBakerPass*>(self)->GetCompositeZPass());
 }
 
-extern "C" void vtkShadowMapBakerPass__SetCompositeZPass__0(void* self, void* compositeZPass) {
+extern "C" void vtkShadowMapBakerPass__SetCompositeZPass__0(void* self, void* compositeZPass) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->SetCompositeZPass(static_cast<vtkRenderPass*>(compositeZPass));
 }
 
-extern "C" void vtkShadowMapBakerPass__SetResolution__0(void* self, uint32_t _arg) {
+extern "C" void vtkShadowMapBakerPass__SetResolution__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->SetResolution(_arg);
 }
 
-extern "C" uint32_t vtkShadowMapBakerPass__GetResolution__0(void* self) {
+extern "C" uint32_t vtkShadowMapBakerPass__GetResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->GetResolution();
 }
 
-extern "C" void vtkShadowMapBakerPass__SetExponentialConstant__0(void* self, float _arg) {
+extern "C" void vtkShadowMapBakerPass__SetExponentialConstant__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->SetExponentialConstant(_arg);
 }
 
-extern "C" float vtkShadowMapBakerPass__GetExponentialConstant__0(void* self) {
+extern "C" float vtkShadowMapBakerPass__GetExponentialConstant__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->GetExponentialConstant();
 }
 
-extern "C" bool vtkShadowMapBakerPass__GetHasShadows__0(void* self) {
+extern "C" bool vtkShadowMapBakerPass__GetHasShadows__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->GetHasShadows();
 }
 
-extern "C" bool vtkShadowMapBakerPass__LightCreatesShadow__0(void* self, void* l) {
+extern "C" bool vtkShadowMapBakerPass__LightCreatesShadow__0(void* self, void* l) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->LightCreatesShadow(static_cast<vtkLight*>(l));
 }
 
-extern "C" bool vtkShadowMapBakerPass__GetNeedUpdate__0(void* self) {
+extern "C" bool vtkShadowMapBakerPass__GetNeedUpdate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShadowMapBakerPass*>(self)->GetNeedUpdate();
 }
 
-extern "C" void vtkShadowMapBakerPass__SetUpToDate__0(void* self) {
+extern "C" void vtkShadowMapBakerPass__SetUpToDate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkShadowMapBakerPass*>(self)->SetUpToDate();
 }

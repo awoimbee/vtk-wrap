@@ -7,81 +7,81 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkPolyDataPointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkPolyDataPointPlacer::New()); }
+extern "C" void* vtkPolyDataPointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyDataPointPlacer::New()); }
 
-extern "C" int32_t vtkPolyDataPointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyDataPointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyDataPointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyDataPointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyDataPointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyDataPointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyDataPointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyDataPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyDataPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyDataPointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyDataPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyDataPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolyDataPointPlacer__AddProp__0(void* self, void* arg0) {
+extern "C" void vtkPolyDataPointPlacer__AddProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPolyDataPointPlacer*>(self)->AddProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkPolyDataPointPlacer__RemoveViewProp__0(void* self, void* prop) {
+extern "C" void vtkPolyDataPointPlacer__RemoveViewProp__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkPolyDataPointPlacer*>(self)->RemoveViewProp(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkPolyDataPointPlacer__RemoveAllProps__0(void* self) {
+extern "C" void vtkPolyDataPointPlacer__RemoveAllProps__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPolyDataPointPlacer*>(self)->RemoveAllProps();
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__HasProp__0(void* self, void* arg0) {
+extern "C" int32_t vtkPolyDataPointPlacer__HasProp__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->HasProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__GetNumberOfProps__0(void* self) {
+extern "C" int32_t vtkPolyDataPointPlacer__GetNumberOfProps__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->GetNumberOfProps();
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPolyDataPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPolyDataPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkPolyDataPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) {
+extern "C" int32_t vtkPolyDataPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->ValidateDisplayPosition(static_cast<vtkRenderer*>(arg0), displayPos);
 }
 
-extern "C" int32_t vtkPolyDataPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPolyDataPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPolyDataPointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" void* vtkPolyDataPointPlacer__GetPropPicker__0(void* self) {
+extern "C" void* vtkPolyDataPointPlacer__GetPropPicker__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPolyDataPointPlacer*>(self)->GetPropPicker());
 }

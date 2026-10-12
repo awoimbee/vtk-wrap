@@ -9,71 +9,71 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLGPUVolumeRayCastMapper::New()); }
+extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLGPUVolumeRayCastMapper::New()); }
 
-extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLGPUVolumeRayCastMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLGPUVolumeRayCastMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLGPUVolumeRayCastMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLGPUVolumeRayCastMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLGPUVolumeRayCastMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLGPUVolumeRayCastMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLGPUVolumeRayCastMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__GetDepthTexture__0(void* self) {
+extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__GetDepthTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetDepthTexture());
 }
 
-extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__GetColorTexture__0(void* self) {
+extern "C" void* vtkOpenGLGPUVolumeRayCastMapper__GetColorTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetColorTexture());
 }
 
-extern "C" void vtkOpenGLGPUVolumeRayCastMapper__GetDepthImage__0(void* self, void* im) {
+extern "C" void vtkOpenGLGPUVolumeRayCastMapper__GetDepthImage__0(void* self, void* im) noexcept {
   (void)self;
   static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetDepthImage(static_cast<vtkImageData*>(im));
 }
 
-extern "C" void vtkOpenGLGPUVolumeRayCastMapper__GetColorImage__0(void* self, void* im) {
+extern "C" void vtkOpenGLGPUVolumeRayCastMapper__GetColorImage__0(void* self, void* im) noexcept {
   (void)self;
   static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetColorImage(static_cast<vtkImageData*>(im));
 }
 
-extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__GetCurrentPass__0(void* self) {
+extern "C" int32_t vtkOpenGLGPUVolumeRayCastMapper__GetCurrentPass__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->GetCurrentPass();
 }
 
-extern "C" void vtkOpenGLGPUVolumeRayCastMapper__SetSharedDepthTexture__0(void* self, void* nt) {
+extern "C" void vtkOpenGLGPUVolumeRayCastMapper__SetSharedDepthTexture__0(void* self, void* nt) noexcept {
   (void)self;
   static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->SetSharedDepthTexture(static_cast<vtkTextureObject*>(nt));
 }
 
-extern "C" void vtkOpenGLGPUVolumeRayCastMapper__SetPartitions__0(void* self, uint16_t x, uint16_t y, uint16_t z) {
+extern "C" void vtkOpenGLGPUVolumeRayCastMapper__SetPartitions__0(void* self, uint16_t x, uint16_t y, uint16_t z) noexcept {
   (void)self;
   static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->SetPartitions(x, y, z);
 }
 
-extern "C" bool vtkOpenGLGPUVolumeRayCastMapper__PreLoadData__0(void* self, void* ren, void* vol) {
+extern "C" bool vtkOpenGLGPUVolumeRayCastMapper__PreLoadData__0(void* self, void* ren, void* vol) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->PreLoadData(static_cast<vtkRenderer*>(ren), static_cast<vtkVolume*>(vol));
 }
 
-extern "C" void vtkOpenGLGPUVolumeRayCastMapper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLGPUVolumeRayCastMapper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLGPUVolumeRayCastMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }

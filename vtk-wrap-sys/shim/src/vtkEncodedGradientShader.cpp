@@ -7,91 +7,91 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkEncodedGradientShader__vtk_wrap_new() { return static_cast<void*>(vtkEncodedGradientShader::New()); }
+extern "C" void* vtkEncodedGradientShader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEncodedGradientShader::New()); }
 
-extern "C" int32_t vtkEncodedGradientShader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEncodedGradientShader__IsTypeOf__0(const char* type_) noexcept {
   return vtkEncodedGradientShader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEncodedGradientShader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEncodedGradientShader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEncodedGradientShader__SafeDownCast__0(void* o) {
+extern "C" void* vtkEncodedGradientShader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEncodedGradientShader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEncodedGradientShader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEncodedGradientShader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEncodedGradientShader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEncodedGradientShader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEncodedGradientShader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEncodedGradientShader__SetZeroNormalDiffuseIntensity__0(void* self, float _arg) {
+extern "C" void vtkEncodedGradientShader__SetZeroNormalDiffuseIntensity__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkEncodedGradientShader*>(self)->SetZeroNormalDiffuseIntensity(_arg);
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensityMinValue__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensityMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalDiffuseIntensityMinValue();
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensityMaxValue__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensityMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalDiffuseIntensityMaxValue();
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensity__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalDiffuseIntensity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalDiffuseIntensity();
 }
 
-extern "C" void vtkEncodedGradientShader__SetZeroNormalSpecularIntensity__0(void* self, float _arg) {
+extern "C" void vtkEncodedGradientShader__SetZeroNormalSpecularIntensity__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkEncodedGradientShader*>(self)->SetZeroNormalSpecularIntensity(_arg);
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensityMinValue__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensityMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalSpecularIntensityMinValue();
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensityMaxValue__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensityMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalSpecularIntensityMaxValue();
 }
 
-extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensity__0(void* self) {
+extern "C" float vtkEncodedGradientShader__GetZeroNormalSpecularIntensity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetZeroNormalSpecularIntensity();
 }
 
-extern "C" void vtkEncodedGradientShader__UpdateShadingTable__0(void* self, void* ren, void* vol, void* gradest) {
+extern "C" void vtkEncodedGradientShader__UpdateShadingTable__0(void* self, void* ren, void* vol, void* gradest) noexcept {
   (void)self;
   static_cast<vtkEncodedGradientShader*>(self)->UpdateShadingTable(static_cast<vtkRenderer*>(ren), static_cast<vtkVolume*>(vol), static_cast<vtkEncodedGradientEstimator*>(gradest));
 }
 
-extern "C" void vtkEncodedGradientShader__SetActiveComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkEncodedGradientShader__SetActiveComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkEncodedGradientShader*>(self)->SetActiveComponent(_arg);
 }
 
-extern "C" int32_t vtkEncodedGradientShader__GetActiveComponentMinValue__0(void* self) {
+extern "C" int32_t vtkEncodedGradientShader__GetActiveComponentMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetActiveComponentMinValue();
 }
 
-extern "C" int32_t vtkEncodedGradientShader__GetActiveComponentMaxValue__0(void* self) {
+extern "C" int32_t vtkEncodedGradientShader__GetActiveComponentMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetActiveComponentMaxValue();
 }
 
-extern "C" int32_t vtkEncodedGradientShader__GetActiveComponent__0(void* self) {
+extern "C" int32_t vtkEncodedGradientShader__GetActiveComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEncodedGradientShader*>(self)->GetActiveComponent();
 }

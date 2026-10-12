@@ -6,51 +6,51 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkCenterOfMass__vtk_wrap_new() { return static_cast<void*>(vtkCenterOfMass::New()); }
+extern "C" void* vtkCenterOfMass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCenterOfMass::New()); }
 
-extern "C" int32_t vtkCenterOfMass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCenterOfMass__IsTypeOf__0(const char* type_) noexcept {
   return vtkCenterOfMass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCenterOfMass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCenterOfMass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCenterOfMass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCenterOfMass__SafeDownCast__0(void* o) {
+extern "C" void* vtkCenterOfMass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCenterOfMass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCenterOfMass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCenterOfMass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCenterOfMass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCenterOfMass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCenterOfMass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCenterOfMass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCenterOfMass__SetCenter__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkCenterOfMass__SetCenter__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkCenterOfMass*>(self)->SetCenter(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkCenterOfMass__SetCenter__1(void* self, const double* _arg) {
+extern "C" void vtkCenterOfMass__SetCenter__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkCenterOfMass*>(self)->SetCenter(_arg);
 }
 
-extern "C" void vtkCenterOfMass__SetUseScalarsAsWeights__0(void* self, bool _arg) {
+extern "C" void vtkCenterOfMass__SetUseScalarsAsWeights__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCenterOfMass*>(self)->SetUseScalarsAsWeights(_arg);
 }
 
-extern "C" bool vtkCenterOfMass__GetUseScalarsAsWeights__0(void* self) {
+extern "C" bool vtkCenterOfMass__GetUseScalarsAsWeights__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCenterOfMass*>(self)->GetUseScalarsAsWeights();
 }
 
-extern "C" void vtkCenterOfMass__ComputeCenterOfMass__0(void* input, void* scalars, double* center) {
+extern "C" void vtkCenterOfMass__ComputeCenterOfMass__0(void* input, void* scalars, double* center) noexcept {
   vtkCenterOfMass::ComputeCenterOfMass(static_cast<vtkPoints*>(input), static_cast<vtkDataArray*>(scalars), center);
 }
 

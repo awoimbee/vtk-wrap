@@ -6,131 +6,131 @@
 #include "vtkPropCollection.h"
 #include <string>
 
-extern "C" void* vtkSeedRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkSeedRepresentation::New()); }
+extern "C" void* vtkSeedRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSeedRepresentation::New()); }
 
-extern "C" int32_t vtkSeedRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSeedRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkSeedRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSeedRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSeedRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSeedRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkSeedRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSeedRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSeedRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSeedRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSeedRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSeedRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSeedRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSeedRepresentation__GetSeedWorldPosition__0(void* self, uint32_t seedNum, double* pos) {
+extern "C" void vtkSeedRepresentation__GetSeedWorldPosition__0(void* self, uint32_t seedNum, double* pos) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->GetSeedWorldPosition(seedNum, pos);
 }
 
-extern "C" void vtkSeedRepresentation__SetSeedWorldPosition__0(void* self, uint32_t seedNum, double* pos) {
+extern "C" void vtkSeedRepresentation__SetSeedWorldPosition__0(void* self, uint32_t seedNum, double* pos) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->SetSeedWorldPosition(seedNum, pos);
 }
 
-extern "C" void vtkSeedRepresentation__SetSeedDisplayPosition__0(void* self, uint32_t seedNum, double* pos) {
+extern "C" void vtkSeedRepresentation__SetSeedDisplayPosition__0(void* self, uint32_t seedNum, double* pos) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->SetSeedDisplayPosition(seedNum, pos);
 }
 
-extern "C" void vtkSeedRepresentation__GetSeedDisplayPosition__0(void* self, uint32_t seedNum, double* pos) {
+extern "C" void vtkSeedRepresentation__GetSeedDisplayPosition__0(void* self, uint32_t seedNum, double* pos) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->GetSeedDisplayPosition(seedNum, pos);
 }
 
-extern "C" int32_t vtkSeedRepresentation__GetNumberOfSeeds__0(void* self) {
+extern "C" int32_t vtkSeedRepresentation__GetNumberOfSeeds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetNumberOfSeeds();
 }
 
-extern "C" void vtkSeedRepresentation__SetHandleRepresentation__0(void* self, void* handle) {
+extern "C" void vtkSeedRepresentation__SetHandleRepresentation__0(void* self, void* handle) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->SetHandleRepresentation(static_cast<vtkHandleRepresentation*>(handle));
 }
 
-extern "C" void* vtkSeedRepresentation__GetHandleRepresentation__0(void* self, uint32_t num) {
+extern "C" void* vtkSeedRepresentation__GetHandleRepresentation__0(void* self, uint32_t num) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSeedRepresentation*>(self)->GetHandleRepresentation(num));
 }
 
-extern "C" void* vtkSeedRepresentation__GetHandleRepresentation__1(void* self) {
+extern "C" void* vtkSeedRepresentation__GetHandleRepresentation__1(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSeedRepresentation*>(self)->GetHandleRepresentation());
 }
 
-extern "C" void vtkSeedRepresentation__SetTolerance__0(void* self, int32_t _arg) {
+extern "C" void vtkSeedRepresentation__SetTolerance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->SetTolerance(_arg);
 }
 
-extern "C" int32_t vtkSeedRepresentation__GetToleranceMinValue__0(void* self) {
+extern "C" int32_t vtkSeedRepresentation__GetToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetToleranceMinValue();
 }
 
-extern "C" int32_t vtkSeedRepresentation__GetToleranceMaxValue__0(void* self) {
+extern "C" int32_t vtkSeedRepresentation__GetToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetToleranceMaxValue();
 }
 
-extern "C" int32_t vtkSeedRepresentation__GetTolerance__0(void* self) {
+extern "C" int32_t vtkSeedRepresentation__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetTolerance();
 }
 
-extern "C" int32_t vtkSeedRepresentation__GetActiveHandle__0(void* self) {
+extern "C" int32_t vtkSeedRepresentation__GetActiveHandle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->GetActiveHandle();
 }
 
-extern "C" void vtkSeedRepresentation__SetActiveHandle__0(void* self, int32_t handleId) {
+extern "C" void vtkSeedRepresentation__SetActiveHandle__0(void* self, int32_t handleId) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->SetActiveHandle(handleId);
 }
 
-extern "C" int32_t vtkSeedRepresentation__CreateHandle__0(void* self, double* e) {
+extern "C" int32_t vtkSeedRepresentation__CreateHandle__0(void* self, double* e) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->CreateHandle(e);
 }
 
-extern "C" void vtkSeedRepresentation__RemoveLastHandle__0(void* self) {
+extern "C" void vtkSeedRepresentation__RemoveLastHandle__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->RemoveLastHandle();
 }
 
-extern "C" void vtkSeedRepresentation__RemoveActiveHandle__0(void* self) {
+extern "C" void vtkSeedRepresentation__RemoveActiveHandle__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->RemoveActiveHandle();
 }
 
-extern "C" void vtkSeedRepresentation__RemoveHandle__0(void* self, int32_t n) {
+extern "C" void vtkSeedRepresentation__RemoveHandle__0(void* self, int32_t n) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->RemoveHandle(n);
 }
 
-extern "C" void vtkSeedRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkSeedRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" int32_t vtkSeedRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkSeedRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkSeedRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkSeedRepresentation__GetActors__0(void* self, void* arg0) {
+extern "C" void vtkSeedRepresentation__GetActors__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSeedRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(arg0));
 }

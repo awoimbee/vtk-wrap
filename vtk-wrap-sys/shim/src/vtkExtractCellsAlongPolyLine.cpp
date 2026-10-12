@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExtractCellsAlongPolyLine__vtk_wrap_new() { return static_cast<void*>(vtkExtractCellsAlongPolyLine::New()); }
+extern "C" void* vtkExtractCellsAlongPolyLine__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExtractCellsAlongPolyLine::New()); }
 
-extern "C" int32_t vtkExtractCellsAlongPolyLine__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExtractCellsAlongPolyLine__IsTypeOf__0(const char* type_) noexcept {
   return vtkExtractCellsAlongPolyLine::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExtractCellsAlongPolyLine__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExtractCellsAlongPolyLine__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractCellsAlongPolyLine*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExtractCellsAlongPolyLine__SafeDownCast__0(void* o) {
+extern "C" void* vtkExtractCellsAlongPolyLine__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExtractCellsAlongPolyLine::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExtractCellsAlongPolyLine__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExtractCellsAlongPolyLine__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExtractCellsAlongPolyLine::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExtractCellsAlongPolyLine__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExtractCellsAlongPolyLine__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractCellsAlongPolyLine*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkExtractCellsAlongPolyLine__SetSourceConnection__0(void* self, void* input) {
+extern "C" void vtkExtractCellsAlongPolyLine__SetSourceConnection__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkExtractCellsAlongPolyLine*>(self)->SetSourceConnection(static_cast<vtkAlgorithmOutput*>(input));
 }
 
-extern "C" void vtkExtractCellsAlongPolyLine__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkExtractCellsAlongPolyLine__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkExtractCellsAlongPolyLine*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkExtractCellsAlongPolyLine__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkExtractCellsAlongPolyLine__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkExtractCellsAlongPolyLine*>(self)->GetOutputPointsPrecision();
 }

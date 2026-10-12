@@ -7,56 +7,56 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkPolyLineRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkPolyLineRepresentation::New()); }
+extern "C" void* vtkPolyLineRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyLineRepresentation::New()); }
 
-extern "C" int32_t vtkPolyLineRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyLineRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyLineRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyLineRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyLineRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyLineRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyLineRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyLineRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyLineRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyLineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyLineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyLineRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyLineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyLineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyLineRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolyLineRepresentation__GetPolyData__0(void* self, void* pd) {
+extern "C" void vtkPolyLineRepresentation__GetPolyData__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkPolyLineRepresentation*>(self)->GetPolyData(static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void vtkPolyLineRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) {
+extern "C" void vtkPolyLineRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) noexcept {
   (void)self;
   static_cast<vtkPolyLineRepresentation*>(self)->SetNumberOfHandles(npts);
 }
 
-extern "C" void* vtkPolyLineRepresentation__GetHandlePositions__0(void* self) {
+extern "C" void* vtkPolyLineRepresentation__GetHandlePositions__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPolyLineRepresentation*>(self)->GetHandlePositions());
 }
 
-extern "C" double vtkPolyLineRepresentation__GetSummedLength__0(void* self) {
+extern "C" double vtkPolyLineRepresentation__GetSummedLength__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolyLineRepresentation*>(self)->GetSummedLength();
 }
 
-extern "C" void vtkPolyLineRepresentation__InitializeHandles__0(void* self, void* points) {
+extern "C" void vtkPolyLineRepresentation__InitializeHandles__0(void* self, void* points) noexcept {
   (void)self;
   static_cast<vtkPolyLineRepresentation*>(self)->InitializeHandles(static_cast<vtkPoints*>(points));
 }
 
-extern "C" void vtkPolyLineRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkPolyLineRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPolyLineRepresentation*>(self)->BuildRepresentation();
 }

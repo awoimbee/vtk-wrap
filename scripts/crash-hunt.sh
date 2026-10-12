@@ -11,7 +11,7 @@
 # calls, each of which is then reproduced in plain C++ to decide whether the
 # fault is in vtk-wrap or in VTK itself.
 #
-# Requires `cargo build -p vtk-wrap --test smoke` to have been run first.
+# Requires `cargo build -p vtk-wrap --test smoke --features crash-hunt` to have been run first.
 
 set -uo pipefail
 
@@ -22,7 +22,7 @@ MAX_ROUNDS="${MAX_ROUNDS:-2000}"
 
 BIN="$(find "$REPO_ROOT/target/debug/deps" -maxdepth 1 -type f -perm +111 -name 'smoke-*' | head -1)"
 if [[ -z "$BIN" ]]; then
-  echo "error: build the smoke test first: cargo build -p vtk-wrap --test smoke" >&2
+  echo "error: build the smoke test first: cargo build -p vtk-wrap --test smoke --features crash-hunt" >&2
   exit 1
 fi
 

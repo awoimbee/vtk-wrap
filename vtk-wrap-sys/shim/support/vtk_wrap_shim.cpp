@@ -10,7 +10,7 @@
 
 #include <vtkObjectBase.h>
 
-extern "C" void vtk_wrap_register(void* obj)
+extern "C" void vtk_wrap_register(void* obj) noexcept
 {
   if (obj)
   {
@@ -18,7 +18,7 @@ extern "C" void vtk_wrap_register(void* obj)
   }
 }
 
-extern "C" void vtk_wrap_delete(void* obj)
+extern "C" void vtk_wrap_delete(void* obj) noexcept
 {
   if (obj)
   {
@@ -26,7 +26,7 @@ extern "C" void vtk_wrap_delete(void* obj)
   }
 }
 
-extern "C" char* vtk_wrap_strdup(const char* s)
+extern "C" char* vtk_wrap_strdup(const char* s) noexcept
 {
   if (!s)
   {
@@ -41,7 +41,7 @@ extern "C" char* vtk_wrap_strdup(const char* s)
   return p;
 }
 
-extern "C" void vtk_wrap_free(void* p)
+extern "C" void vtk_wrap_free(void* p) noexcept
 {
   std::free(p);
 }

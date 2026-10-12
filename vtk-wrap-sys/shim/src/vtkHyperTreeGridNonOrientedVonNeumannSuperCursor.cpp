@@ -5,31 +5,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__vtk_wrap_new() { return static_cast<void*>(vtkHyperTreeGridNonOrientedVonNeumannSuperCursor::New()); }
+extern "C" void* vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHyperTreeGridNonOrientedVonNeumannSuperCursor::New()); }
 
-extern "C" int32_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__IsTypeOf__0(const char* type_) noexcept {
   return vtkHyperTreeGridNonOrientedVonNeumannSuperCursor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridNonOrientedVonNeumannSuperCursor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__SafeDownCast__0(void* o) {
+extern "C" void* vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHyperTreeGridNonOrientedVonNeumannSuperCursor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHyperTreeGridNonOrientedVonNeumannSuperCursor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridNonOrientedVonNeumannSuperCursor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__Initialize__0(void* self, void* grid, int64_t treeIndex, bool create) {
+extern "C" void vtkHyperTreeGridNonOrientedVonNeumannSuperCursor__Initialize__0(void* self, void* grid, int64_t treeIndex, bool create) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridNonOrientedVonNeumannSuperCursor*>(self)->Initialize(static_cast<vtkHyperTreeGrid*>(grid), treeIndex, create);
 }

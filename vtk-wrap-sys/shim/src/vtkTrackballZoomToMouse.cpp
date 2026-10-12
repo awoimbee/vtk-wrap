@@ -6,36 +6,36 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTrackballZoomToMouse__vtk_wrap_new() { return static_cast<void*>(vtkTrackballZoomToMouse::New()); }
+extern "C" void* vtkTrackballZoomToMouse__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrackballZoomToMouse::New()); }
 
-extern "C" int32_t vtkTrackballZoomToMouse__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrackballZoomToMouse__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrackballZoomToMouse::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrackballZoomToMouse__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrackballZoomToMouse__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballZoomToMouse*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrackballZoomToMouse__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrackballZoomToMouse__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrackballZoomToMouse::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrackballZoomToMouse__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrackballZoomToMouse__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrackballZoomToMouse::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrackballZoomToMouse__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrackballZoomToMouse__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballZoomToMouse*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTrackballZoomToMouse__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballZoomToMouse__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoomToMouse*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballZoomToMouse__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballZoomToMouse__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoomToMouse*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }

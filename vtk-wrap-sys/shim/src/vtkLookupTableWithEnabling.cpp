@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLookupTableWithEnabling__vtk_wrap_new() { return static_cast<void*>(vtkLookupTableWithEnabling::New()); }
+extern "C" void* vtkLookupTableWithEnabling__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLookupTableWithEnabling::New()); }
 
-extern "C" int32_t vtkLookupTableWithEnabling__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLookupTableWithEnabling__IsTypeOf__0(const char* type_) noexcept {
   return vtkLookupTableWithEnabling::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLookupTableWithEnabling__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLookupTableWithEnabling__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLookupTableWithEnabling*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLookupTableWithEnabling__SafeDownCast__0(void* o) {
+extern "C" void* vtkLookupTableWithEnabling__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLookupTableWithEnabling::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLookupTableWithEnabling__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLookupTableWithEnabling__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLookupTableWithEnabling::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLookupTableWithEnabling__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLookupTableWithEnabling__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLookupTableWithEnabling*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkLookupTableWithEnabling__GetEnabledArray__0(void* self) {
+extern "C" void* vtkLookupTableWithEnabling__GetEnabledArray__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLookupTableWithEnabling*>(self)->GetEnabledArray());
 }
 
-extern "C" void vtkLookupTableWithEnabling__SetEnabledArray__0(void* self, void* enabledArray) {
+extern "C" void vtkLookupTableWithEnabling__SetEnabledArray__0(void* self, void* enabledArray) noexcept {
   (void)self;
   static_cast<vtkLookupTableWithEnabling*>(self)->SetEnabledArray(static_cast<vtkDataArray*>(enabledArray));
 }

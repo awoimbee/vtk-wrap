@@ -5,51 +5,51 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkPointFillPass__vtk_wrap_new() { return static_cast<void*>(vtkPointFillPass::New()); }
+extern "C" void* vtkPointFillPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointFillPass::New()); }
 
-extern "C" int32_t vtkPointFillPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointFillPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointFillPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointFillPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointFillPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointFillPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointFillPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointFillPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointFillPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointFillPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointFillPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointFillPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointFillPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointFillPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointFillPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPointFillPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkPointFillPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkPointFillPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void vtkPointFillPass__SetCandidatePointRatio__0(void* self, float _arg) {
+extern "C" void vtkPointFillPass__SetCandidatePointRatio__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkPointFillPass*>(self)->SetCandidatePointRatio(_arg);
 }
 
-extern "C" float vtkPointFillPass__GetCandidatePointRatio__0(void* self) {
+extern "C" float vtkPointFillPass__GetCandidatePointRatio__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointFillPass*>(self)->GetCandidatePointRatio();
 }
 
-extern "C" void vtkPointFillPass__SetMinimumCandidateAngle__0(void* self, float _arg) {
+extern "C" void vtkPointFillPass__SetMinimumCandidateAngle__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkPointFillPass*>(self)->SetMinimumCandidateAngle(_arg);
 }
 
-extern "C" float vtkPointFillPass__GetMinimumCandidateAngle__0(void* self) {
+extern "C" float vtkPointFillPass__GetMinimumCandidateAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointFillPass*>(self)->GetMinimumCandidateAngle();
 }

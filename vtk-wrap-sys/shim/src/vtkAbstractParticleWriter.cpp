@@ -4,74 +4,74 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractParticleWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractParticleWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractParticleWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractParticleWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractParticleWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractParticleWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractParticleWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractParticleWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractParticleWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractParticleWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractParticleWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractParticleWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractParticleWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractParticleWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractParticleWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractParticleWriter__SetTimeStep__0(void* self, int32_t _arg) {
+extern "C" void vtkAbstractParticleWriter__SetTimeStep__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetTimeStep(_arg);
 }
 
-extern "C" int32_t vtkAbstractParticleWriter__GetTimeStep__0(void* self) {
+extern "C" int32_t vtkAbstractParticleWriter__GetTimeStep__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractParticleWriter*>(self)->GetTimeStep();
 }
 
-extern "C" void vtkAbstractParticleWriter__SetTimeValue__0(void* self, double _arg) {
+extern "C" void vtkAbstractParticleWriter__SetTimeValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetTimeValue(_arg);
 }
 
-extern "C" double vtkAbstractParticleWriter__GetTimeValue__0(void* self) {
+extern "C" double vtkAbstractParticleWriter__GetTimeValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractParticleWriter*>(self)->GetTimeValue();
 }
 
-extern "C" void vtkAbstractParticleWriter__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkAbstractParticleWriter__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkAbstractParticleWriter__SetCollectiveIO__0(void* self, int32_t _arg) {
+extern "C" void vtkAbstractParticleWriter__SetCollectiveIO__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetCollectiveIO(_arg);
 }
 
-extern "C" int32_t vtkAbstractParticleWriter__GetCollectiveIO__0(void* self) {
+extern "C" int32_t vtkAbstractParticleWriter__GetCollectiveIO__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractParticleWriter*>(self)->GetCollectiveIO();
 }
 
-extern "C" void vtkAbstractParticleWriter__SetWriteModeToCollective__0(void* self) {
+extern "C" void vtkAbstractParticleWriter__SetWriteModeToCollective__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetWriteModeToCollective();
 }
 
-extern "C" void vtkAbstractParticleWriter__SetWriteModeToIndependent__0(void* self) {
+extern "C" void vtkAbstractParticleWriter__SetWriteModeToIndependent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->SetWriteModeToIndependent();
 }
 
-extern "C" void vtkAbstractParticleWriter__CloseFile__0(void* self) {
+extern "C" void vtkAbstractParticleWriter__CloseFile__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractParticleWriter*>(self)->CloseFile();
 }

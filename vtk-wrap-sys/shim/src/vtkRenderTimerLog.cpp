@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRenderTimerLog__vtk_wrap_new() { return static_cast<void*>(vtkRenderTimerLog::New()); }
+extern "C" void* vtkRenderTimerLog__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRenderTimerLog::New()); }
 
-extern "C" int32_t vtkRenderTimerLog__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRenderTimerLog__IsTypeOf__0(const char* type_) noexcept {
   return vtkRenderTimerLog::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRenderTimerLog__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRenderTimerLog__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRenderTimerLog__SafeDownCast__0(void* o) {
+extern "C" void* vtkRenderTimerLog__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRenderTimerLog::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRenderTimerLog__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRenderTimerLog__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRenderTimerLog::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRenderTimerLog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRenderTimerLog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkRenderTimerLog__IsSupported__0(void* self) {
+extern "C" bool vtkRenderTimerLog__IsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->IsSupported();
 }
 
-extern "C" void vtkRenderTimerLog__MarkFrame__0(void* self) {
+extern "C" void vtkRenderTimerLog__MarkFrame__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->MarkFrame();
 }
 
-extern "C" void vtkRenderTimerLog__MarkStartEvent__0(void* self, const char* name) {
+extern "C" void vtkRenderTimerLog__MarkStartEvent__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->MarkStartEvent(std::string(name));
 }
 
-extern "C" void vtkRenderTimerLog__MarkEndEvent__0(void* self) {
+extern "C" void vtkRenderTimerLog__MarkEndEvent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->MarkEndEvent();
 }
 
-extern "C" bool vtkRenderTimerLog__FrameReady__0(void* self) {
+extern "C" bool vtkRenderTimerLog__FrameReady__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->FrameReady();
 }
 
-extern "C" void vtkRenderTimerLog__SetLoggingEnabled__0(void* self, bool _arg) {
+extern "C" void vtkRenderTimerLog__SetLoggingEnabled__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->SetLoggingEnabled(_arg);
 }
 
-extern "C" bool vtkRenderTimerLog__GetLoggingEnabled__0(void* self) {
+extern "C" bool vtkRenderTimerLog__GetLoggingEnabled__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->GetLoggingEnabled();
 }
 
-extern "C" void vtkRenderTimerLog__LoggingEnabledOn__0(void* self) {
+extern "C" void vtkRenderTimerLog__LoggingEnabledOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->LoggingEnabledOn();
 }
 
-extern "C" void vtkRenderTimerLog__LoggingEnabledOff__0(void* self) {
+extern "C" void vtkRenderTimerLog__LoggingEnabledOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->LoggingEnabledOff();
 }
 
-extern "C" void vtkRenderTimerLog__SetFrameLimit__0(void* self, uint32_t _arg) {
+extern "C" void vtkRenderTimerLog__SetFrameLimit__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->SetFrameLimit(_arg);
 }
 
-extern "C" uint32_t vtkRenderTimerLog__GetFrameLimit__0(void* self) {
+extern "C" uint32_t vtkRenderTimerLog__GetFrameLimit__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRenderTimerLog*>(self)->GetFrameLimit();
 }
 
-extern "C" void vtkRenderTimerLog__ReleaseGraphicsResources__0(void* self) {
+extern "C" void vtkRenderTimerLog__ReleaseGraphicsResources__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderTimerLog*>(self)->ReleaseGraphicsResources();
 }

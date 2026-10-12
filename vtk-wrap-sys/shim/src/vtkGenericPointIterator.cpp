@@ -4,49 +4,49 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkGenericPointIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGenericPointIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkGenericPointIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGenericPointIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGenericPointIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGenericPointIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGenericPointIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkGenericPointIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGenericPointIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGenericPointIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGenericPointIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGenericPointIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGenericPointIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGenericPointIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGenericPointIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGenericPointIterator__Begin__0(void* self) {
+extern "C" void vtkGenericPointIterator__Begin__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGenericPointIterator*>(self)->Begin();
 }
 
-extern "C" int32_t vtkGenericPointIterator__IsAtEnd__0(void* self) {
+extern "C" int32_t vtkGenericPointIterator__IsAtEnd__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericPointIterator*>(self)->IsAtEnd();
 }
 
-extern "C" void vtkGenericPointIterator__Next__0(void* self) {
+extern "C" void vtkGenericPointIterator__Next__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGenericPointIterator*>(self)->Next();
 }
 
-extern "C" void vtkGenericPointIterator__GetPosition__0(void* self, double* x) {
+extern "C" void vtkGenericPointIterator__GetPosition__0(void* self, double* x) noexcept {
   (void)self;
   static_cast<vtkGenericPointIterator*>(self)->GetPosition(x);
 }
 
-extern "C" int64_t vtkGenericPointIterator__GetId__0(void* self) {
+extern "C" int64_t vtkGenericPointIterator__GetId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericPointIterator*>(self)->GetId();
 }

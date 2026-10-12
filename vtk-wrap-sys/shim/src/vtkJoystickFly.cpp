@@ -6,79 +6,79 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" int32_t vtkJoystickFly__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkJoystickFly__IsTypeOf__0(const char* type_) noexcept {
   return vtkJoystickFly::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkJoystickFly__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkJoystickFly__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJoystickFly*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkJoystickFly__SafeDownCast__0(void* o) {
+extern "C" void* vtkJoystickFly__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkJoystickFly::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkJoystickFly__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkJoystickFly__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkJoystickFly::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkJoystickFly__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkJoystickFly__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJoystickFly*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkJoystickFly__StartInteraction__0(void* self) {
+extern "C" void vtkJoystickFly__StartInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->StartInteraction();
 }
 
-extern "C" void vtkJoystickFly__EndInteraction__0(void* self) {
+extern "C" void vtkJoystickFly__EndInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->EndInteraction();
 }
 
-extern "C" void vtkJoystickFly__OnKeyDown__0(void* self, void* rwi) {
+extern "C" void vtkJoystickFly__OnKeyDown__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->OnKeyDown(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkJoystickFly__OnKeyUp__0(void* self, void* rwi) {
+extern "C" void vtkJoystickFly__OnKeyUp__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->OnKeyUp(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkJoystickFly__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkJoystickFly__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkJoystickFly__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkJoystickFly__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkJoystickFly__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkJoystickFly__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->OnButtonUp(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkJoystickFly__SetFlySpeed__0(void* self, double _arg) {
+extern "C" void vtkJoystickFly__SetFlySpeed__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkJoystickFly*>(self)->SetFlySpeed(_arg);
 }
 
-extern "C" double vtkJoystickFly__GetFlySpeedMinValue__0(void* self) {
+extern "C" double vtkJoystickFly__GetFlySpeedMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJoystickFly*>(self)->GetFlySpeedMinValue();
 }
 
-extern "C" double vtkJoystickFly__GetFlySpeedMaxValue__0(void* self) {
+extern "C" double vtkJoystickFly__GetFlySpeedMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJoystickFly*>(self)->GetFlySpeedMaxValue();
 }
 
-extern "C" double vtkJoystickFly__GetFlySpeed__0(void* self) {
+extern "C" double vtkJoystickFly__GetFlySpeed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJoystickFly*>(self)->GetFlySpeed();
 }

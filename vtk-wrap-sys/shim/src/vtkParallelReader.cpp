@@ -6,69 +6,69 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkParallelReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkParallelReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkParallelReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkParallelReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkParallelReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkParallelReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkParallelReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkParallelReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkParallelReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkParallelReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkParallelReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkParallelReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkParallelReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkParallelReader__AddFileName__0(void* self, const char* fname) {
+extern "C" void vtkParallelReader__AddFileName__0(void* self, const char* fname) noexcept {
   (void)self;
   static_cast<vtkParallelReader*>(self)->AddFileName(fname);
 }
 
-extern "C" void vtkParallelReader__ClearFileNames__0(void* self) {
+extern "C" void vtkParallelReader__ClearFileNames__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelReader*>(self)->ClearFileNames();
 }
 
-extern "C" int32_t vtkParallelReader__GetNumberOfFileNames__0(void* self) {
+extern "C" int32_t vtkParallelReader__GetNumberOfFileNames__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->GetNumberOfFileNames();
 }
 
-extern "C" const char* vtkParallelReader__GetFileName__0(void* self, int32_t i) {
+extern "C" const char* vtkParallelReader__GetFileName__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->GetFileName(i);
 }
 
-extern "C" const char* vtkParallelReader__GetCurrentFileName__0(void* self) {
+extern "C" const char* vtkParallelReader__GetCurrentFileName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->GetCurrentFileName();
 }
 
-extern "C" int32_t vtkParallelReader__ReadMetaData__0(void* self, void* metadata) {
+extern "C" int32_t vtkParallelReader__ReadMetaData__0(void* self, void* metadata) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->ReadMetaData(static_cast<vtkInformation*>(metadata));
 }
 
-extern "C" int32_t vtkParallelReader__ReadMesh__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkParallelReader__ReadMesh__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->ReadMesh(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkParallelReader__ReadPoints__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkParallelReader__ReadPoints__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->ReadPoints(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkParallelReader__ReadArrays__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkParallelReader__ReadArrays__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkParallelReader*>(self)->ReadArrays(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }

@@ -4,34 +4,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkTextCodec__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextCodec__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextCodec::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextCodec__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextCodec__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextCodec*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextCodec__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextCodec__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextCodec::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextCodec__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextCodec__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextCodec::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextCodec__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextCodec__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextCodec*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkTextCodec__Name__0(void* self) {
+extern "C" const char* vtkTextCodec__Name__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextCodec*>(self)->Name();
 }
 
-extern "C" bool vtkTextCodec__CanHandle__0(void* self, const char* NameString) {
+extern "C" bool vtkTextCodec__CanHandle__0(void* self, const char* NameString) noexcept {
   (void)self;
   return static_cast<vtkTextCodec*>(self)->CanHandle(NameString);
 }

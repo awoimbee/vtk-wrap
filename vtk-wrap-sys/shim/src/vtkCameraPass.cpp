@@ -6,51 +6,51 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkCameraPass__vtk_wrap_new() { return static_cast<void*>(vtkCameraPass::New()); }
+extern "C" void* vtkCameraPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCameraPass::New()); }
 
-extern "C" int32_t vtkCameraPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCameraPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkCameraPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCameraPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCameraPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCameraPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkCameraPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCameraPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCameraPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCameraPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCameraPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCameraPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCameraPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCameraPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkCameraPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkCameraPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkCameraPass__GetDelegatePass__0(void* self) {
+extern "C" void* vtkCameraPass__GetDelegatePass__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCameraPass*>(self)->GetDelegatePass());
 }
 
-extern "C" void vtkCameraPass__SetDelegatePass__0(void* self, void* delegatePass) {
+extern "C" void vtkCameraPass__SetDelegatePass__0(void* self, void* delegatePass) noexcept {
   (void)self;
   static_cast<vtkCameraPass*>(self)->SetDelegatePass(static_cast<vtkRenderPass*>(delegatePass));
 }
 
-extern "C" void vtkCameraPass__SetAspectRatioOverride__0(void* self, double _arg) {
+extern "C" void vtkCameraPass__SetAspectRatioOverride__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCameraPass*>(self)->SetAspectRatioOverride(_arg);
 }
 
-extern "C" double vtkCameraPass__GetAspectRatioOverride__0(void* self) {
+extern "C" double vtkCameraPass__GetAspectRatioOverride__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCameraPass*>(self)->GetAspectRatioOverride();
 }

@@ -8,46 +8,46 @@
 #include "vtkTable.h"
 #include <string>
 
-extern "C" void* vtkContextMapper2D__vtk_wrap_new() { return static_cast<void*>(vtkContextMapper2D::New()); }
+extern "C" void* vtkContextMapper2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContextMapper2D::New()); }
 
-extern "C" int32_t vtkContextMapper2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContextMapper2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkContextMapper2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContextMapper2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContextMapper2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextMapper2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContextMapper2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkContextMapper2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContextMapper2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContextMapper2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContextMapper2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContextMapper2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContextMapper2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContextMapper2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextMapper2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContextMapper2D__SetInputData__0(void* self, void* input) {
+extern "C" void vtkContextMapper2D__SetInputData__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkContextMapper2D*>(self)->SetInputData(static_cast<vtkTable*>(input));
 }
 
-extern "C" void* vtkContextMapper2D__GetInput__0(void* self) {
+extern "C" void* vtkContextMapper2D__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextMapper2D*>(self)->GetInput());
 }
 
-extern "C" void* vtkContextMapper2D__GetInputArrayToProcess__0(void* self, int32_t idx, void* input) {
+extern "C" void* vtkContextMapper2D__GetInputArrayToProcess__0(void* self, int32_t idx, void* input) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextMapper2D*>(self)->GetInputArrayToProcess(idx, static_cast<vtkDataObject*>(input)));
 }
 
-extern "C" void* vtkContextMapper2D__GetInputAbstractArrayToProcess__0(void* self, int32_t idx, void* input) {
+extern "C" void* vtkContextMapper2D__GetInputAbstractArrayToProcess__0(void* self, int32_t idx, void* input) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextMapper2D*>(self)->GetInputAbstractArrayToProcess(idx, static_cast<vtkDataObject*>(input)));
 }

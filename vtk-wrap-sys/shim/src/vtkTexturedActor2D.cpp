@@ -8,66 +8,66 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkTexturedActor2D__vtk_wrap_new() { return static_cast<void*>(vtkTexturedActor2D::New()); }
+extern "C" void* vtkTexturedActor2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTexturedActor2D::New()); }
 
-extern "C" int32_t vtkTexturedActor2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTexturedActor2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkTexturedActor2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTexturedActor2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTexturedActor2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTexturedActor2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkTexturedActor2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTexturedActor2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTexturedActor2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTexturedActor2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTexturedActor2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTexturedActor2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTexturedActor2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTexturedActor2D__SetTexture__0(void* self, void* texture) {
+extern "C" void vtkTexturedActor2D__SetTexture__0(void* self, void* texture) noexcept {
   (void)self;
   static_cast<vtkTexturedActor2D*>(self)->SetTexture(static_cast<vtkTexture*>(texture));
 }
 
-extern "C" void* vtkTexturedActor2D__GetTexture__0(void* self) {
+extern "C" void* vtkTexturedActor2D__GetTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedActor2D*>(self)->GetTexture());
 }
 
-extern "C" void vtkTexturedActor2D__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkTexturedActor2D__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkTexturedActor2D*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }
 
-extern "C" int32_t vtkTexturedActor2D__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkTexturedActor2D__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkTexturedActor2D__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkTexturedActor2D__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkTexturedActor2D__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkTexturedActor2D__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" unsigned long vtkTexturedActor2D__GetMTime__0(void* self) {
+extern "C" unsigned long vtkTexturedActor2D__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTexturedActor2D*>(self)->GetMTime();
 }
 
-extern "C" void vtkTexturedActor2D__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkTexturedActor2D__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkTexturedActor2D*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }

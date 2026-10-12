@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPointSetCellIterator__vtk_wrap_new() { return static_cast<void*>(vtkPointSetCellIterator::New()); }
+extern "C" void* vtkPointSetCellIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointSetCellIterator::New()); }
 
-extern "C" int32_t vtkPointSetCellIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointSetCellIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointSetCellIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointSetCellIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointSetCellIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointSetCellIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointSetCellIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointSetCellIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointSetCellIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointSetCellIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointSetCellIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointSetCellIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointSetCellIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointSetCellIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointSetCellIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkPointSetCellIterator__IsDoneWithTraversal__0(void* self) {
+extern "C" bool vtkPointSetCellIterator__IsDoneWithTraversal__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSetCellIterator*>(self)->IsDoneWithTraversal();
 }
 
-extern "C" int64_t vtkPointSetCellIterator__GetCellId__0(void* self) {
+extern "C" int64_t vtkPointSetCellIterator__GetCellId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSetCellIterator*>(self)->GetCellId();
 }

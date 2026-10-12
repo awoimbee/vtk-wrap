@@ -4,41 +4,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridCellIterator__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridCellIterator::New()); }
+extern "C" void* vtkUnstructuredGridCellIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridCellIterator::New()); }
 
-extern "C" int32_t vtkUnstructuredGridCellIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridCellIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridCellIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridCellIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridCellIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridCellIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridCellIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridCellIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridCellIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridCellIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridCellIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridCellIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridCellIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridCellIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridCellIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkUnstructuredGridCellIterator__IsDoneWithTraversal__0(void* self) {
+extern "C" bool vtkUnstructuredGridCellIterator__IsDoneWithTraversal__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridCellIterator*>(self)->IsDoneWithTraversal();
 }
 
-extern "C" int64_t vtkUnstructuredGridCellIterator__GetCellId__0(void* self) {
+extern "C" int64_t vtkUnstructuredGridCellIterator__GetCellId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridCellIterator*>(self)->GetCellId();
 }
 
-extern "C" void vtkUnstructuredGridCellIterator__GoToCell__0(void* self, int64_t cellId) {
+extern "C" void vtkUnstructuredGridCellIterator__GoToCell__0(void* self, int64_t cellId) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridCellIterator*>(self)->GoToCell(cellId);
 }

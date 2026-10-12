@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCachedStreamingDemandDrivenPipeline__vtk_wrap_new() { return static_cast<void*>(vtkCachedStreamingDemandDrivenPipeline::New()); }
+extern "C" void* vtkCachedStreamingDemandDrivenPipeline__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCachedStreamingDemandDrivenPipeline::New()); }
 
-extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__IsTypeOf__0(const char* type_) noexcept {
   return vtkCachedStreamingDemandDrivenPipeline::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCachedStreamingDemandDrivenPipeline*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCachedStreamingDemandDrivenPipeline__SafeDownCast__0(void* o) {
+extern "C" void* vtkCachedStreamingDemandDrivenPipeline__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCachedStreamingDemandDrivenPipeline::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCachedStreamingDemandDrivenPipeline__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCachedStreamingDemandDrivenPipeline__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCachedStreamingDemandDrivenPipeline::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCachedStreamingDemandDrivenPipeline__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCachedStreamingDemandDrivenPipeline__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCachedStreamingDemandDrivenPipeline*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCachedStreamingDemandDrivenPipeline__SetCacheSize__0(void* self, int32_t size) {
+extern "C" void vtkCachedStreamingDemandDrivenPipeline__SetCacheSize__0(void* self, int32_t size) noexcept {
   (void)self;
   static_cast<vtkCachedStreamingDemandDrivenPipeline*>(self)->SetCacheSize(size);
 }
 
-extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__GetCacheSize__0(void* self) {
+extern "C" int32_t vtkCachedStreamingDemandDrivenPipeline__GetCacheSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCachedStreamingDemandDrivenPipeline*>(self)->GetCacheSize();
 }

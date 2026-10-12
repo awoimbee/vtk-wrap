@@ -5,36 +5,36 @@
 #include "vtkTransform.h"
 #include <string>
 
-extern "C" void* vtkTransformCollection__vtk_wrap_new() { return static_cast<void*>(vtkTransformCollection::New()); }
+extern "C" void* vtkTransformCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTransformCollection::New()); }
 
-extern "C" int32_t vtkTransformCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTransformCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkTransformCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTransformCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTransformCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTransformCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkTransformCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTransformCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTransformCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTransformCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTransformCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTransformCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTransformCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTransformCollection__AddItem__0(void* self, void* arg0) {
+extern "C" void vtkTransformCollection__AddItem__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTransformCollection*>(self)->AddItem(static_cast<vtkTransform*>(arg0));
 }
 
-extern "C" void* vtkTransformCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkTransformCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTransformCollection*>(self)->GetNextItem());
 }

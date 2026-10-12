@@ -6,35 +6,35 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLLabeledContourMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLLabeledContourMapper::New()); }
+extern "C" void* vtkOpenGLLabeledContourMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLLabeledContourMapper::New()); }
 
-extern "C" void* vtkOpenGLLabeledContourMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLLabeledContourMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLLabeledContourMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLLabeledContourMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLLabeledContourMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLLabeledContourMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLLabeledContourMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLLabeledContourMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLabeledContourMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLLabeledContourMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLLabeledContourMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLLabeledContourMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLLabeledContourMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLLabeledContourMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLLabeledContourMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLLabeledContourMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLLabeledContourMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLabeledContourMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLLabeledContourMapper__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkOpenGLLabeledContourMapper__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkOpenGLLabeledContourMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }

@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStructuredGridGeometryFilter__vtk_wrap_new() { return static_cast<void*>(vtkStructuredGridGeometryFilter::New()); }
+extern "C" void* vtkStructuredGridGeometryFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredGridGeometryFilter::New()); }
 
-extern "C" int32_t vtkStructuredGridGeometryFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredGridGeometryFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredGridGeometryFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredGridGeometryFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredGridGeometryFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridGeometryFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredGridGeometryFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredGridGeometryFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredGridGeometryFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredGridGeometryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredGridGeometryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredGridGeometryFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredGridGeometryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredGridGeometryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridGeometryFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStructuredGridGeometryFilter__SetExtent__0(void* self, int32_t iMin, int32_t iMax, int32_t jMin, int32_t jMax, int32_t kMin, int32_t kMax) {
+extern "C" void vtkStructuredGridGeometryFilter__SetExtent__0(void* self, int32_t iMin, int32_t iMax, int32_t jMin, int32_t jMax, int32_t kMin, int32_t kMax) noexcept {
   (void)self;
   static_cast<vtkStructuredGridGeometryFilter*>(self)->SetExtent(iMin, iMax, jMin, jMax, kMin, kMax);
 }
 
-extern "C" void vtkStructuredGridGeometryFilter__SetExtent__1(void* self, int32_t* extent) {
+extern "C" void vtkStructuredGridGeometryFilter__SetExtent__1(void* self, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkStructuredGridGeometryFilter*>(self)->SetExtent(extent);
 }

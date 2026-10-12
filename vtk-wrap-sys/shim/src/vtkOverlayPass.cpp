@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOverlayPass__vtk_wrap_new() { return static_cast<void*>(vtkOverlayPass::New()); }
+extern "C" void* vtkOverlayPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOverlayPass::New()); }
 
-extern "C" int32_t vtkOverlayPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOverlayPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkOverlayPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOverlayPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOverlayPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverlayPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOverlayPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkOverlayPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOverlayPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOverlayPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOverlayPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOverlayPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOverlayPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOverlayPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverlayPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

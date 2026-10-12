@@ -4,136 +4,136 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDiskSource__vtk_wrap_new() { return static_cast<void*>(vtkDiskSource::New()); }
+extern "C" void* vtkDiskSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDiskSource::New()); }
 
-extern "C" int32_t vtkDiskSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDiskSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkDiskSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDiskSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDiskSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDiskSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkDiskSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDiskSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDiskSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDiskSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDiskSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDiskSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDiskSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDiskSource__SetInnerRadius__0(void* self, double _arg) {
+extern "C" void vtkDiskSource__SetInnerRadius__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetInnerRadius(_arg);
 }
 
-extern "C" double vtkDiskSource__GetInnerRadiusMinValue__0(void* self) {
+extern "C" double vtkDiskSource__GetInnerRadiusMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetInnerRadiusMinValue();
 }
 
-extern "C" double vtkDiskSource__GetInnerRadiusMaxValue__0(void* self) {
+extern "C" double vtkDiskSource__GetInnerRadiusMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetInnerRadiusMaxValue();
 }
 
-extern "C" double vtkDiskSource__GetInnerRadius__0(void* self) {
+extern "C" double vtkDiskSource__GetInnerRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetInnerRadius();
 }
 
-extern "C" void vtkDiskSource__SetOuterRadius__0(void* self, double _arg) {
+extern "C" void vtkDiskSource__SetOuterRadius__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetOuterRadius(_arg);
 }
 
-extern "C" double vtkDiskSource__GetOuterRadiusMinValue__0(void* self) {
+extern "C" double vtkDiskSource__GetOuterRadiusMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetOuterRadiusMinValue();
 }
 
-extern "C" double vtkDiskSource__GetOuterRadiusMaxValue__0(void* self) {
+extern "C" double vtkDiskSource__GetOuterRadiusMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetOuterRadiusMaxValue();
 }
 
-extern "C" double vtkDiskSource__GetOuterRadius__0(void* self) {
+extern "C" double vtkDiskSource__GetOuterRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetOuterRadius();
 }
 
-extern "C" void vtkDiskSource__SetRadialResolution__0(void* self, int32_t _arg) {
+extern "C" void vtkDiskSource__SetRadialResolution__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetRadialResolution(_arg);
 }
 
-extern "C" int32_t vtkDiskSource__GetRadialResolutionMinValue__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetRadialResolutionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetRadialResolutionMinValue();
 }
 
-extern "C" int32_t vtkDiskSource__GetRadialResolutionMaxValue__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetRadialResolutionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetRadialResolutionMaxValue();
 }
 
-extern "C" int32_t vtkDiskSource__GetRadialResolution__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetRadialResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetRadialResolution();
 }
 
-extern "C" void vtkDiskSource__SetCircumferentialResolution__0(void* self, int32_t _arg) {
+extern "C" void vtkDiskSource__SetCircumferentialResolution__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetCircumferentialResolution(_arg);
 }
 
-extern "C" int32_t vtkDiskSource__GetCircumferentialResolutionMinValue__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetCircumferentialResolutionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetCircumferentialResolutionMinValue();
 }
 
-extern "C" int32_t vtkDiskSource__GetCircumferentialResolutionMaxValue__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetCircumferentialResolutionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetCircumferentialResolutionMaxValue();
 }
 
-extern "C" int32_t vtkDiskSource__GetCircumferentialResolution__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetCircumferentialResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetCircumferentialResolution();
 }
 
-extern "C" void vtkDiskSource__SetCenter__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkDiskSource__SetCenter__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetCenter(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkDiskSource__SetCenter__1(void* self, const double* _arg) {
+extern "C" void vtkDiskSource__SetCenter__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetCenter(_arg);
 }
 
-extern "C" void vtkDiskSource__SetNormal__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkDiskSource__SetNormal__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetNormal(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkDiskSource__SetNormal__1(void* self, const double* _arg) {
+extern "C" void vtkDiskSource__SetNormal__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetNormal(_arg);
 }
 
-extern "C" void vtkDiskSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkDiskSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiskSource*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkDiskSource__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkDiskSource__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiskSource*>(self)->GetOutputPointsPrecision();
 }

@@ -7,40 +7,40 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkOpenGLSkybox__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLSkybox::New()); }
+extern "C" void* vtkOpenGLSkybox__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLSkybox::New()); }
 
-extern "C" void* vtkOpenGLSkybox__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLSkybox__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLSkybox::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLSkybox__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLSkybox__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLSkybox::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLSkybox__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLSkybox__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLSkybox*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLSkybox__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLSkybox__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLSkybox::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLSkybox__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLSkybox__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLSkybox::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLSkybox__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLSkybox__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLSkybox*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLSkybox__Render__0(void* self, void* ren, void* mapper) {
+extern "C" void vtkOpenGLSkybox__Render__0(void* self, void* ren, void* mapper) noexcept {
   (void)self;
   static_cast<vtkOpenGLSkybox*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkMapper*>(mapper));
 }
 
-extern "C" void vtkOpenGLSkybox__SetMapper__0(void* self, void* mapper) {
+extern "C" void vtkOpenGLSkybox__SetMapper__0(void* self, void* mapper) noexcept {
   (void)self;
   static_cast<vtkOpenGLSkybox*>(self)->SetMapper(static_cast<vtkMapper*>(mapper));
 }

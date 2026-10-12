@@ -3,85 +3,85 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkObjectBase__vtk_wrap_new() { return static_cast<void*>(vtkObjectBase::New()); }
+extern "C" void* vtkObjectBase__vtk_wrap_new() noexcept { return static_cast<void*>(vtkObjectBase::New()); }
 
-extern "C" const char* vtkObjectBase__GetClassName__0(void* self) {
+extern "C" const char* vtkObjectBase__GetClassName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->GetClassName();
 }
 
-extern "C" char* vtkObjectBase__GetObjectDescription__0(void* self) {
+extern "C" char* vtkObjectBase__GetObjectDescription__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkObjectBase*>(self)->GetObjectDescription()).c_str());
 }
 
-extern "C" int32_t vtkObjectBase__IsTypeOf__0(const char* name) {
+extern "C" int32_t vtkObjectBase__IsTypeOf__0(const char* name) noexcept {
   return vtkObjectBase::IsTypeOf(name);
 }
 
-extern "C" int32_t vtkObjectBase__IsA__0(void* self, const char* name) {
+extern "C" int32_t vtkObjectBase__IsA__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->IsA(name);
 }
 
-extern "C" int64_t vtkObjectBase__GetNumberOfGenerationsFromBaseType__0(const char* name) {
+extern "C" int64_t vtkObjectBase__GetNumberOfGenerationsFromBaseType__0(const char* name) noexcept {
   return vtkObjectBase::GetNumberOfGenerationsFromBaseType(name);
 }
 
-extern "C" int64_t vtkObjectBase__GetNumberOfGenerationsFromBase__0(void* self, const char* name) {
+extern "C" int64_t vtkObjectBase__GetNumberOfGenerationsFromBase__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->GetNumberOfGenerationsFromBase(name);
 }
 
-extern "C" void vtkObjectBase__Delete__0(void* self) {
+extern "C" void vtkObjectBase__Delete__0(void* self) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->Delete();
 }
 
-extern "C" void vtkObjectBase__FastDelete__0(void* self) {
+extern "C" void vtkObjectBase__FastDelete__0(void* self) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->FastDelete();
 }
 
-extern "C" void vtkObjectBase__InitializeObjectBase__0(void* self) {
+extern "C" void vtkObjectBase__InitializeObjectBase__0(void* self) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->InitializeObjectBase();
 }
 
-extern "C" void vtkObjectBase__Register__0(void* self, void* o) {
+extern "C" void vtkObjectBase__Register__0(void* self, void* o) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->Register(static_cast<vtkObjectBase*>(o));
 }
 
-extern "C" void vtkObjectBase__UnRegister__0(void* self, void* o) {
+extern "C" void vtkObjectBase__UnRegister__0(void* self, void* o) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->UnRegister(static_cast<vtkObjectBase*>(o));
 }
 
-extern "C" bool vtkObjectBase__UsesGarbageCollector__0(void* self) {
+extern "C" bool vtkObjectBase__UsesGarbageCollector__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->UsesGarbageCollector();
 }
 
-extern "C" int32_t vtkObjectBase__GetReferenceCount__0(void* self) {
+extern "C" int32_t vtkObjectBase__GetReferenceCount__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->GetReferenceCount();
 }
 
-extern "C" void vtkObjectBase__SetReferenceCount__0(void* self, int32_t arg0) {
+extern "C" void vtkObjectBase__SetReferenceCount__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkObjectBase*>(self)->SetReferenceCount(arg0);
 }
 
-extern "C" void vtkObjectBase__SetMemkindDirectory__0(const char* directoryname) {
+extern "C" void vtkObjectBase__SetMemkindDirectory__0(const char* directoryname) noexcept {
   vtkObjectBase::SetMemkindDirectory(directoryname);
 }
 
-extern "C" bool vtkObjectBase__GetUsingMemkind__0() {
+extern "C" bool vtkObjectBase__GetUsingMemkind__0() noexcept {
   return vtkObjectBase::GetUsingMemkind();
 }
 
-extern "C" bool vtkObjectBase__GetIsInMemkind__0(void* self) {
+extern "C" bool vtkObjectBase__GetIsInMemkind__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkObjectBase*>(self)->GetIsInMemkind();
 }

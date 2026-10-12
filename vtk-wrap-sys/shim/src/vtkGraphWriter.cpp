@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphWriter__vtk_wrap_new() { return static_cast<void*>(vtkGraphWriter::New()); }
+extern "C" void* vtkGraphWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphWriter::New()); }
 
-extern "C" int32_t vtkGraphWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkGraphWriter__GetInput__0(void* self) {
+extern "C" void* vtkGraphWriter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphWriter*>(self)->GetInput());
 }
 
-extern "C" void* vtkGraphWriter__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkGraphWriter__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphWriter*>(self)->GetInput(port));
 }

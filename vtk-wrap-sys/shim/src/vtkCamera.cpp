@@ -10,601 +10,601 @@
 #include "vtkTransform.h"
 #include <string>
 
-extern "C" void* vtkCamera__vtk_wrap_new() { return static_cast<void*>(vtkCamera::New()); }
+extern "C" void* vtkCamera__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCamera::New()); }
 
-extern "C" int32_t vtkCamera__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCamera__IsTypeOf__0(const char* type_) noexcept {
   return vtkCamera::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCamera__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCamera__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCamera__SafeDownCast__0(void* o) {
+extern "C" void* vtkCamera__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCamera::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCamera::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCamera__SetPosition__0(void* self, double x, double y, double z) {
+extern "C" void vtkCamera__SetPosition__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetPosition(x, y, z);
 }
 
-extern "C" void vtkCamera__SetPosition__1(void* self, const double* a) {
+extern "C" void vtkCamera__SetPosition__1(void* self, const double* a) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetPosition(a);
 }
 
-extern "C" void vtkCamera__SetFocalPoint__0(void* self, double x, double y, double z) {
+extern "C" void vtkCamera__SetFocalPoint__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetFocalPoint(x, y, z);
 }
 
-extern "C" void vtkCamera__SetFocalPoint__1(void* self, const double* a) {
+extern "C" void vtkCamera__SetFocalPoint__1(void* self, const double* a) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetFocalPoint(a);
 }
 
-extern "C" void vtkCamera__SetViewUp__0(void* self, double vx, double vy, double vz) {
+extern "C" void vtkCamera__SetViewUp__0(void* self, double vx, double vy, double vz) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetViewUp(vx, vy, vz);
 }
 
-extern "C" void vtkCamera__SetViewUp__1(void* self, const double* a) {
+extern "C" void vtkCamera__SetViewUp__1(void* self, const double* a) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetViewUp(a);
 }
 
-extern "C" void vtkCamera__OrthogonalizeViewUp__0(void* self) {
+extern "C" void vtkCamera__OrthogonalizeViewUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->OrthogonalizeViewUp();
 }
 
-extern "C" void vtkCamera__SetDistance__0(void* self, double arg0) {
+extern "C" void vtkCamera__SetDistance__0(void* self, double arg0) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetDistance(arg0);
 }
 
-extern "C" double vtkCamera__GetDistance__0(void* self) {
+extern "C" double vtkCamera__GetDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetDistance();
 }
 
-extern "C" void vtkCamera__Dolly__0(void* self, double value) {
+extern "C" void vtkCamera__Dolly__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Dolly(value);
 }
 
-extern "C" void vtkCamera__SetRoll__0(void* self, double angle) {
+extern "C" void vtkCamera__SetRoll__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetRoll(angle);
 }
 
-extern "C" double vtkCamera__GetRoll__0(void* self) {
+extern "C" double vtkCamera__GetRoll__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetRoll();
 }
 
-extern "C" void vtkCamera__Roll__0(void* self, double angle) {
+extern "C" void vtkCamera__Roll__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Roll(angle);
 }
 
-extern "C" void vtkCamera__Azimuth__0(void* self, double angle) {
+extern "C" void vtkCamera__Azimuth__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Azimuth(angle);
 }
 
-extern "C" void vtkCamera__Yaw__0(void* self, double angle) {
+extern "C" void vtkCamera__Yaw__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Yaw(angle);
 }
 
-extern "C" void vtkCamera__Elevation__0(void* self, double angle) {
+extern "C" void vtkCamera__Elevation__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Elevation(angle);
 }
 
-extern "C" void vtkCamera__Pitch__0(void* self, double angle) {
+extern "C" void vtkCamera__Pitch__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Pitch(angle);
 }
 
-extern "C" void vtkCamera__SetParallelProjection__0(void* self, int32_t flag) {
+extern "C" void vtkCamera__SetParallelProjection__0(void* self, int32_t flag) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetParallelProjection(flag);
 }
 
-extern "C" int32_t vtkCamera__GetParallelProjection__0(void* self) {
+extern "C" int32_t vtkCamera__GetParallelProjection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetParallelProjection();
 }
 
-extern "C" void vtkCamera__ParallelProjectionOn__0(void* self) {
+extern "C" void vtkCamera__ParallelProjectionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ParallelProjectionOn();
 }
 
-extern "C" void vtkCamera__ParallelProjectionOff__0(void* self) {
+extern "C" void vtkCamera__ParallelProjectionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ParallelProjectionOff();
 }
 
-extern "C" void vtkCamera__SetUseHorizontalViewAngle__0(void* self, int32_t flag) {
+extern "C" void vtkCamera__SetUseHorizontalViewAngle__0(void* self, int32_t flag) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUseHorizontalViewAngle(flag);
 }
 
-extern "C" int32_t vtkCamera__GetUseHorizontalViewAngle__0(void* self) {
+extern "C" int32_t vtkCamera__GetUseHorizontalViewAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetUseHorizontalViewAngle();
 }
 
-extern "C" void vtkCamera__UseHorizontalViewAngleOn__0(void* self) {
+extern "C" void vtkCamera__UseHorizontalViewAngleOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseHorizontalViewAngleOn();
 }
 
-extern "C" void vtkCamera__UseHorizontalViewAngleOff__0(void* self) {
+extern "C" void vtkCamera__UseHorizontalViewAngleOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseHorizontalViewAngleOff();
 }
 
-extern "C" void vtkCamera__SetViewAngle__0(void* self, double angle) {
+extern "C" void vtkCamera__SetViewAngle__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetViewAngle(angle);
 }
 
-extern "C" double vtkCamera__GetViewAngle__0(void* self) {
+extern "C" double vtkCamera__GetViewAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetViewAngle();
 }
 
-extern "C" void vtkCamera__SetParallelScale__0(void* self, double scale) {
+extern "C" void vtkCamera__SetParallelScale__0(void* self, double scale) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetParallelScale(scale);
 }
 
-extern "C" double vtkCamera__GetParallelScale__0(void* self) {
+extern "C" double vtkCamera__GetParallelScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetParallelScale();
 }
 
-extern "C" void vtkCamera__Zoom__0(void* self, double factor) {
+extern "C" void vtkCamera__Zoom__0(void* self, double factor) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Zoom(factor);
 }
 
-extern "C" void vtkCamera__SetClippingRange__0(void* self, double dNear, double dFar) {
+extern "C" void vtkCamera__SetClippingRange__0(void* self, double dNear, double dFar) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetClippingRange(dNear, dFar);
 }
 
-extern "C" void vtkCamera__SetClippingRange__1(void* self, const double* a) {
+extern "C" void vtkCamera__SetClippingRange__1(void* self, const double* a) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetClippingRange(a);
 }
 
-extern "C" void vtkCamera__SetThickness__0(void* self, double arg0) {
+extern "C" void vtkCamera__SetThickness__0(void* self, double arg0) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetThickness(arg0);
 }
 
-extern "C" double vtkCamera__GetThickness__0(void* self) {
+extern "C" double vtkCamera__GetThickness__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetThickness();
 }
 
-extern "C" void vtkCamera__SetWindowCenter__0(void* self, double x, double y) {
+extern "C" void vtkCamera__SetWindowCenter__0(void* self, double x, double y) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetWindowCenter(x, y);
 }
 
-extern "C" void vtkCamera__SetObliqueAngles__0(void* self, double alpha, double beta) {
+extern "C" void vtkCamera__SetObliqueAngles__0(void* self, double alpha, double beta) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetObliqueAngles(alpha, beta);
 }
 
-extern "C" void vtkCamera__ApplyTransform__0(void* self, void* t) {
+extern "C" void vtkCamera__ApplyTransform__0(void* self, void* t) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ApplyTransform(static_cast<vtkTransform*>(t));
 }
 
-extern "C" void vtkCamera__SetViewShear__0(void* self, double dxdz, double dydz, double center) {
+extern "C" void vtkCamera__SetViewShear__0(void* self, double dxdz, double dydz, double center) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetViewShear(dxdz, dydz, center);
 }
 
-extern "C" void vtkCamera__SetViewShear__1(void* self, double* d) {
+extern "C" void vtkCamera__SetViewShear__1(void* self, double* d) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetViewShear(d);
 }
 
-extern "C" void vtkCamera__SetEyeAngle__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetEyeAngle__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetEyeAngle(_arg);
 }
 
-extern "C" double vtkCamera__GetEyeAngle__0(void* self) {
+extern "C" double vtkCamera__GetEyeAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetEyeAngle();
 }
 
-extern "C" void vtkCamera__SetFocalDisk__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetFocalDisk__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetFocalDisk(_arg);
 }
 
-extern "C" double vtkCamera__GetFocalDisk__0(void* self) {
+extern "C" double vtkCamera__GetFocalDisk__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetFocalDisk();
 }
 
-extern "C" void vtkCamera__SetFocalDistance__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetFocalDistance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetFocalDistance(_arg);
 }
 
-extern "C" double vtkCamera__GetFocalDistance__0(void* self) {
+extern "C" double vtkCamera__GetFocalDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetFocalDistance();
 }
 
-extern "C" void vtkCamera__SetUseOffAxisProjection__0(void* self, int32_t _arg) {
+extern "C" void vtkCamera__SetUseOffAxisProjection__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUseOffAxisProjection(_arg);
 }
 
-extern "C" int32_t vtkCamera__GetUseOffAxisProjection__0(void* self) {
+extern "C" int32_t vtkCamera__GetUseOffAxisProjection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetUseOffAxisProjection();
 }
 
-extern "C" void vtkCamera__UseOffAxisProjectionOn__0(void* self) {
+extern "C" void vtkCamera__UseOffAxisProjectionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseOffAxisProjectionOn();
 }
 
-extern "C" void vtkCamera__UseOffAxisProjectionOff__0(void* self) {
+extern "C" void vtkCamera__UseOffAxisProjectionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseOffAxisProjectionOff();
 }
 
-extern "C" double vtkCamera__GetOffAxisClippingAdjustment__0(void* self) {
+extern "C" double vtkCamera__GetOffAxisClippingAdjustment__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetOffAxisClippingAdjustment();
 }
 
-extern "C" void vtkCamera__SetScreenBottomLeft__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkCamera__SetScreenBottomLeft__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenBottomLeft(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkCamera__SetScreenBottomLeft__1(void* self, const double* _arg) {
+extern "C" void vtkCamera__SetScreenBottomLeft__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenBottomLeft(_arg);
 }
 
-extern "C" void vtkCamera__SetScreenBottomRight__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkCamera__SetScreenBottomRight__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenBottomRight(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkCamera__SetScreenBottomRight__1(void* self, const double* _arg) {
+extern "C" void vtkCamera__SetScreenBottomRight__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenBottomRight(_arg);
 }
 
-extern "C" void vtkCamera__SetScreenTopRight__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkCamera__SetScreenTopRight__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenTopRight(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkCamera__SetScreenTopRight__1(void* self, const double* _arg) {
+extern "C" void vtkCamera__SetScreenTopRight__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetScreenTopRight(_arg);
 }
 
-extern "C" void vtkCamera__SetEyeSeparation__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetEyeSeparation__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetEyeSeparation(_arg);
 }
 
-extern "C" double vtkCamera__GetEyeSeparation__0(void* self) {
+extern "C" double vtkCamera__GetEyeSeparation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetEyeSeparation();
 }
 
-extern "C" void vtkCamera__SetEyePosition__0(void* self, double* eyePosition) {
+extern "C" void vtkCamera__SetEyePosition__0(void* self, double* eyePosition) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetEyePosition(eyePosition);
 }
 
-extern "C" void vtkCamera__GetEyePosition__0(void* self, double* eyePosition) {
+extern "C" void vtkCamera__GetEyePosition__0(void* self, double* eyePosition) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->GetEyePosition(eyePosition);
 }
 
-extern "C" void vtkCamera__GetStereoEyePosition__0(void* self, double* eyePosition) {
+extern "C" void vtkCamera__GetStereoEyePosition__0(void* self, double* eyePosition) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->GetStereoEyePosition(eyePosition);
 }
 
-extern "C" void vtkCamera__GetEyePlaneNormal__0(void* self, double* normal) {
+extern "C" void vtkCamera__GetEyePlaneNormal__0(void* self, double* normal) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->GetEyePlaneNormal(normal);
 }
 
-extern "C" void vtkCamera__SetEyeTransformMatrix__0(void* self, void* matrix) {
+extern "C" void vtkCamera__SetEyeTransformMatrix__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetEyeTransformMatrix(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkCamera__SetEyeTransformMatrix__1(void* self, const double* elements) {
+extern "C" void vtkCamera__SetEyeTransformMatrix__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetEyeTransformMatrix(elements);
 }
 
-extern "C" void* vtkCamera__GetEyeTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetEyeTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetEyeTransformMatrix());
 }
 
-extern "C" void vtkCamera__SetModelTransformMatrix__0(void* self, void* matrix) {
+extern "C" void vtkCamera__SetModelTransformMatrix__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetModelTransformMatrix(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkCamera__SetModelTransformMatrix__1(void* self, const double* elements) {
+extern "C" void vtkCamera__SetModelTransformMatrix__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetModelTransformMatrix(elements);
 }
 
-extern "C" void* vtkCamera__GetModelTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetModelTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetModelTransformMatrix());
 }
 
-extern "C" void* vtkCamera__GetModelViewTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetModelViewTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetModelViewTransformMatrix());
 }
 
-extern "C" void* vtkCamera__GetModelViewTransformObject__0(void* self) {
+extern "C" void* vtkCamera__GetModelViewTransformObject__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetModelViewTransformObject());
 }
 
-extern "C" void* vtkCamera__GetViewTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetViewTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetViewTransformMatrix());
 }
 
-extern "C" void* vtkCamera__GetViewTransformObject__0(void* self) {
+extern "C" void* vtkCamera__GetViewTransformObject__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetViewTransformObject());
 }
 
-extern "C" void vtkCamera__SetExplicitProjectionTransformMatrix__0(void* self, void* arg0) {
+extern "C" void vtkCamera__SetExplicitProjectionTransformMatrix__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetExplicitProjectionTransformMatrix(static_cast<vtkMatrix4x4*>(arg0));
 }
 
-extern "C" void* vtkCamera__GetExplicitProjectionTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetExplicitProjectionTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetExplicitProjectionTransformMatrix());
 }
 
-extern "C" void vtkCamera__SetUseExplicitProjectionTransformMatrix__0(void* self, bool _arg) {
+extern "C" void vtkCamera__SetUseExplicitProjectionTransformMatrix__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUseExplicitProjectionTransformMatrix(_arg);
 }
 
-extern "C" bool vtkCamera__GetUseExplicitProjectionTransformMatrix__0(void* self) {
+extern "C" bool vtkCamera__GetUseExplicitProjectionTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetUseExplicitProjectionTransformMatrix();
 }
 
-extern "C" void vtkCamera__UseExplicitProjectionTransformMatrixOn__0(void* self) {
+extern "C" void vtkCamera__UseExplicitProjectionTransformMatrixOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseExplicitProjectionTransformMatrixOn();
 }
 
-extern "C" void vtkCamera__UseExplicitProjectionTransformMatrixOff__0(void* self) {
+extern "C" void vtkCamera__UseExplicitProjectionTransformMatrixOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseExplicitProjectionTransformMatrixOff();
 }
 
-extern "C" void vtkCamera__SetExplicitAspectRatio__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetExplicitAspectRatio__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetExplicitAspectRatio(_arg);
 }
 
-extern "C" double vtkCamera__GetExplicitAspectRatio__0(void* self) {
+extern "C" double vtkCamera__GetExplicitAspectRatio__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetExplicitAspectRatio();
 }
 
-extern "C" void vtkCamera__SetUseExplicitAspectRatio__0(void* self, bool _arg) {
+extern "C" void vtkCamera__SetUseExplicitAspectRatio__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUseExplicitAspectRatio(_arg);
 }
 
-extern "C" bool vtkCamera__GetUseExplicitAspectRatio__0(void* self) {
+extern "C" bool vtkCamera__GetUseExplicitAspectRatio__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetUseExplicitAspectRatio();
 }
 
-extern "C" void vtkCamera__UseExplicitAspectRatioOn__0(void* self) {
+extern "C" void vtkCamera__UseExplicitAspectRatioOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseExplicitAspectRatioOn();
 }
 
-extern "C" void vtkCamera__UseExplicitAspectRatioOff__0(void* self) {
+extern "C" void vtkCamera__UseExplicitAspectRatioOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UseExplicitAspectRatioOff();
 }
 
-extern "C" void* vtkCamera__GetProjectionTransformMatrix__0(void* self, double aspect, double nearz, double farz) {
+extern "C" void* vtkCamera__GetProjectionTransformMatrix__0(void* self, double aspect, double nearz, double farz) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetProjectionTransformMatrix(aspect, nearz, farz));
 }
 
-extern "C" void* vtkCamera__GetProjectionTransformObject__0(void* self, double aspect, double nearz, double farz) {
+extern "C" void* vtkCamera__GetProjectionTransformObject__0(void* self, double aspect, double nearz, double farz) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetProjectionTransformObject(aspect, nearz, farz));
 }
 
-extern "C" void* vtkCamera__GetCompositeProjectionTransformMatrix__0(void* self, double aspect, double nearz, double farz) {
+extern "C" void* vtkCamera__GetCompositeProjectionTransformMatrix__0(void* self, double aspect, double nearz, double farz) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetCompositeProjectionTransformMatrix(aspect, nearz, farz));
 }
 
-extern "C" void* vtkCamera__GetProjectionTransformMatrix__1(void* self, void* ren) {
+extern "C" void* vtkCamera__GetProjectionTransformMatrix__1(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetProjectionTransformMatrix(static_cast<vtkRenderer*>(ren)));
 }
 
-extern "C" void vtkCamera__SetUserViewTransform__0(void* self, void* transform) {
+extern "C" void vtkCamera__SetUserViewTransform__0(void* self, void* transform) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUserViewTransform(static_cast<vtkHomogeneousTransform*>(transform));
 }
 
-extern "C" void* vtkCamera__GetUserViewTransform__0(void* self) {
+extern "C" void* vtkCamera__GetUserViewTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetUserViewTransform());
 }
 
-extern "C" void vtkCamera__SetUserTransform__0(void* self, void* transform) {
+extern "C" void vtkCamera__SetUserTransform__0(void* self, void* transform) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUserTransform(static_cast<vtkHomogeneousTransform*>(transform));
 }
 
-extern "C" void* vtkCamera__GetUserTransform__0(void* self) {
+extern "C" void* vtkCamera__GetUserTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetUserTransform());
 }
 
-extern "C" void vtkCamera__Render__0(void* self, void* arg0) {
+extern "C" void vtkCamera__Render__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->Render(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" unsigned long vtkCamera__GetViewingRaysMTime__0(void* self) {
+extern "C" unsigned long vtkCamera__GetViewingRaysMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetViewingRaysMTime();
 }
 
-extern "C" void vtkCamera__ViewingRaysModified__0(void* self) {
+extern "C" void vtkCamera__ViewingRaysModified__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ViewingRaysModified();
 }
 
-extern "C" void vtkCamera__GetFrustumPlanes__0(void* self, double aspect, double* planes) {
+extern "C" void vtkCamera__GetFrustumPlanes__0(void* self, double aspect, double* planes) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->GetFrustumPlanes(aspect, planes);
 }
 
-extern "C" void vtkCamera__UpdateIdealShiftScale__0(void* self, double aspect) {
+extern "C" void vtkCamera__UpdateIdealShiftScale__0(void* self, double aspect) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UpdateIdealShiftScale(aspect);
 }
 
-extern "C" double vtkCamera__GetFocalPointScale__0(void* self) {
+extern "C" double vtkCamera__GetFocalPointScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetFocalPointScale();
 }
 
-extern "C" double vtkCamera__GetNearPlaneScale__0(void* self) {
+extern "C" double vtkCamera__GetNearPlaneScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetNearPlaneScale();
 }
 
-extern "C" void vtkCamera__SetShiftScaleThreshold__0(void* self, double _arg) {
+extern "C" void vtkCamera__SetShiftScaleThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetShiftScaleThreshold(_arg);
 }
 
-extern "C" double vtkCamera__GetShiftScaleThreshold__0(void* self) {
+extern "C" double vtkCamera__GetShiftScaleThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetShiftScaleThreshold();
 }
 
-extern "C" void vtkCamera__ComputeViewPlaneNormal__0(void* self) {
+extern "C" void vtkCamera__ComputeViewPlaneNormal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ComputeViewPlaneNormal();
 }
 
-extern "C" void* vtkCamera__GetCameraLightTransformMatrix__0(void* self) {
+extern "C" void* vtkCamera__GetCameraLightTransformMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetCameraLightTransformMatrix());
 }
 
-extern "C" void vtkCamera__UpdateViewport__0(void* self, void* ren) {
+extern "C" void vtkCamera__UpdateViewport__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->UpdateViewport(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" int32_t vtkCamera__GetStereo__0(void* self) {
+extern "C" int32_t vtkCamera__GetStereo__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetStereo();
 }
 
-extern "C" void vtkCamera__SetLeftEye__0(void* self, int32_t _arg) {
+extern "C" void vtkCamera__SetLeftEye__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetLeftEye(_arg);
 }
 
-extern "C" int32_t vtkCamera__GetLeftEye__0(void* self) {
+extern "C" int32_t vtkCamera__GetLeftEye__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetLeftEye();
 }
 
-extern "C" void vtkCamera__ShallowCopy__0(void* self, void* source) {
+extern "C" void vtkCamera__ShallowCopy__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->ShallowCopy(static_cast<vtkCamera*>(source));
 }
 
-extern "C" void vtkCamera__DeepCopy__0(void* self, void* source) {
+extern "C" void vtkCamera__DeepCopy__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->DeepCopy(static_cast<vtkCamera*>(source));
 }
 
-extern "C" void vtkCamera__SetFreezeFocalPoint__0(void* self, bool _arg) {
+extern "C" void vtkCamera__SetFreezeFocalPoint__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetFreezeFocalPoint(_arg);
 }
 
-extern "C" bool vtkCamera__GetFreezeFocalPoint__0(void* self) {
+extern "C" bool vtkCamera__GetFreezeFocalPoint__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetFreezeFocalPoint();
 }
 
-extern "C" void vtkCamera__SetUseScissor__0(void* self, bool _arg) {
+extern "C" void vtkCamera__SetUseScissor__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetUseScissor(_arg);
 }
 
-extern "C" bool vtkCamera__GetUseScissor__0(void* self) {
+extern "C" bool vtkCamera__GetUseScissor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCamera*>(self)->GetUseScissor();
 }
 
-extern "C" void* vtkCamera__GetInformation__0(void* self) {
+extern "C" void* vtkCamera__GetInformation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCamera*>(self)->GetInformation());
 }
 
-extern "C" void vtkCamera__SetInformation__0(void* self, void* arg0) {
+extern "C" void vtkCamera__SetInformation__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCamera*>(self)->SetInformation(static_cast<vtkInformation*>(arg0));
 }

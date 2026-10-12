@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMetaImageWriter__vtk_wrap_new() { return static_cast<void*>(vtkMetaImageWriter::New()); }
+extern "C" void* vtkMetaImageWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMetaImageWriter::New()); }
 
-extern "C" int32_t vtkMetaImageWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMetaImageWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMetaImageWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMetaImageWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMetaImageWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMetaImageWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMetaImageWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMetaImageWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMetaImageWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMetaImageWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMetaImageWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMetaImageWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMetaImageWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMetaImageWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMetaImageWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMetaImageWriter__SetFileName__0(void* self, const char* fname) {
+extern "C" void vtkMetaImageWriter__SetFileName__0(void* self, const char* fname) noexcept {
   (void)self;
   static_cast<vtkMetaImageWriter*>(self)->SetFileName(fname);
 }
 
-extern "C" void vtkMetaImageWriter__SetRAWFileName__0(void* self, const char* fname) {
+extern "C" void vtkMetaImageWriter__SetRAWFileName__0(void* self, const char* fname) noexcept {
   (void)self;
   static_cast<vtkMetaImageWriter*>(self)->SetRAWFileName(fname);
 }
 
-extern "C" void vtkMetaImageWriter__SetCompression__0(void* self, bool compress) {
+extern "C" void vtkMetaImageWriter__SetCompression__0(void* self, bool compress) noexcept {
   (void)self;
   static_cast<vtkMetaImageWriter*>(self)->SetCompression(compress);
 }
 
-extern "C" bool vtkMetaImageWriter__GetCompression__0(void* self) {
+extern "C" bool vtkMetaImageWriter__GetCompression__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageWriter*>(self)->GetCompression();
 }
 
-extern "C" void vtkMetaImageWriter__Write__0(void* self) {
+extern "C" void vtkMetaImageWriter__Write__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMetaImageWriter*>(self)->Write();
 }

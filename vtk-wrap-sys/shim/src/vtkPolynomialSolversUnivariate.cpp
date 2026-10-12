@@ -4,35 +4,35 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPolynomialSolversUnivariate__vtk_wrap_new() { return static_cast<void*>(vtkPolynomialSolversUnivariate::New()); }
+extern "C" void* vtkPolynomialSolversUnivariate__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolynomialSolversUnivariate::New()); }
 
-extern "C" int32_t vtkPolynomialSolversUnivariate__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolynomialSolversUnivariate__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolynomialSolversUnivariate::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolynomialSolversUnivariate__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolynomialSolversUnivariate__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolynomialSolversUnivariate*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolynomialSolversUnivariate__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolynomialSolversUnivariate__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolynomialSolversUnivariate::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolynomialSolversUnivariate__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolynomialSolversUnivariate__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolynomialSolversUnivariate::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolynomialSolversUnivariate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolynomialSolversUnivariate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolynomialSolversUnivariate*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolynomialSolversUnivariate__SetDivisionTolerance__0(double tol) {
+extern "C" void vtkPolynomialSolversUnivariate__SetDivisionTolerance__0(double tol) noexcept {
   vtkPolynomialSolversUnivariate::SetDivisionTolerance(tol);
 }
 
-extern "C" double vtkPolynomialSolversUnivariate__GetDivisionTolerance__0() {
+extern "C" double vtkPolynomialSolversUnivariate__GetDivisionTolerance__0() noexcept {
   return vtkPolynomialSolversUnivariate::GetDivisionTolerance();
 }
 

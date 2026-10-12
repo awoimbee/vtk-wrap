@@ -4,39 +4,39 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkResourceStream__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkResourceStream__IsTypeOf__0(const char* type_) noexcept {
   return vtkResourceStream::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkResourceStream__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkResourceStream__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResourceStream*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkResourceStream__SafeDownCast__0(void* o) {
+extern "C" void* vtkResourceStream__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkResourceStream::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkResourceStream::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResourceStream*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkResourceStream__EndOfStream__0(void* self) {
+extern "C" bool vtkResourceStream__EndOfStream__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResourceStream*>(self)->EndOfStream();
 }
 
-extern "C" int64_t vtkResourceStream__Tell__0(void* self) {
+extern "C" int64_t vtkResourceStream__Tell__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResourceStream*>(self)->Tell();
 }
 
-extern "C" bool vtkResourceStream__SupportSeek__0(void* self) {
+extern "C" bool vtkResourceStream__SupportSeek__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResourceStream*>(self)->SupportSeek();
 }

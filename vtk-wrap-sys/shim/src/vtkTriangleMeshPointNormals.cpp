@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTriangleMeshPointNormals__vtk_wrap_new() { return static_cast<void*>(vtkTriangleMeshPointNormals::New()); }
+extern "C" void* vtkTriangleMeshPointNormals__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTriangleMeshPointNormals::New()); }
 
-extern "C" int32_t vtkTriangleMeshPointNormals__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTriangleMeshPointNormals__IsTypeOf__0(const char* type_) noexcept {
   return vtkTriangleMeshPointNormals::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTriangleMeshPointNormals__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTriangleMeshPointNormals__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangleMeshPointNormals*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTriangleMeshPointNormals__SafeDownCast__0(void* o) {
+extern "C" void* vtkTriangleMeshPointNormals__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTriangleMeshPointNormals::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTriangleMeshPointNormals__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTriangleMeshPointNormals__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTriangleMeshPointNormals::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTriangleMeshPointNormals__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTriangleMeshPointNormals__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangleMeshPointNormals*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

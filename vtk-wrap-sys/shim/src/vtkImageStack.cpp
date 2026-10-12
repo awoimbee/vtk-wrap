@@ -14,141 +14,141 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkImageStack__vtk_wrap_new() { return static_cast<void*>(vtkImageStack::New()); }
+extern "C" void* vtkImageStack__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageStack::New()); }
 
-extern "C" int32_t vtkImageStack__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageStack__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageStack::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageStack__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageStack__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageStack__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageStack__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageStack::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageStack__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageStack__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageStack::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageStack__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageStack__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageStack__AddImage__0(void* self, void* prop) {
+extern "C" void vtkImageStack__AddImage__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->AddImage(static_cast<vtkImageSlice*>(prop));
 }
 
-extern "C" void vtkImageStack__RemoveImage__0(void* self, void* prop) {
+extern "C" void vtkImageStack__RemoveImage__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->RemoveImage(static_cast<vtkImageSlice*>(prop));
 }
 
-extern "C" int32_t vtkImageStack__HasImage__0(void* self, void* prop) {
+extern "C" int32_t vtkImageStack__HasImage__0(void* self, void* prop) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->HasImage(static_cast<vtkImageSlice*>(prop));
 }
 
-extern "C" void* vtkImageStack__GetImages__0(void* self) {
+extern "C" void* vtkImageStack__GetImages__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStack*>(self)->GetImages());
 }
 
-extern "C" void vtkImageStack__SetActiveLayer__0(void* self, int32_t _arg) {
+extern "C" void vtkImageStack__SetActiveLayer__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->SetActiveLayer(_arg);
 }
 
-extern "C" int32_t vtkImageStack__GetActiveLayer__0(void* self) {
+extern "C" int32_t vtkImageStack__GetActiveLayer__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->GetActiveLayer();
 }
 
-extern "C" void* vtkImageStack__GetActiveImage__0(void* self) {
+extern "C" void* vtkImageStack__GetActiveImage__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStack*>(self)->GetActiveImage());
 }
 
-extern "C" void* vtkImageStack__GetMapper__0(void* self) {
+extern "C" void* vtkImageStack__GetMapper__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStack*>(self)->GetMapper());
 }
 
-extern "C" void* vtkImageStack__GetProperty__0(void* self) {
+extern "C" void* vtkImageStack__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStack*>(self)->GetProperty());
 }
 
-extern "C" void vtkImageStack__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkImageStack__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->GetBounds(bounds);
 }
 
-extern "C" unsigned long vtkImageStack__GetMTime__0(void* self) {
+extern "C" unsigned long vtkImageStack__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->GetMTime();
 }
 
-extern "C" unsigned long vtkImageStack__GetRedrawMTime__0(void* self) {
+extern "C" unsigned long vtkImageStack__GetRedrawMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->GetRedrawMTime();
 }
 
-extern "C" void vtkImageStack__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkImageStack__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkImageStack__GetImages__1(void* self, void* arg0) {
+extern "C" void vtkImageStack__GetImages__1(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->GetImages(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" int32_t vtkImageStack__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkImageStack__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkImageStack__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkImageStack__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkImageStack__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkImageStack__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkImageStack__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkImageStack__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkImageStack__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkImageStack__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }
 
-extern "C" void vtkImageStack__InitPathTraversal__0(void* self) {
+extern "C" void vtkImageStack__InitPathTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->InitPathTraversal();
 }
 
-extern "C" void* vtkImageStack__GetNextPath__0(void* self) {
+extern "C" void* vtkImageStack__GetNextPath__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStack*>(self)->GetNextPath());
 }
 
-extern "C" int32_t vtkImageStack__GetNumberOfPaths__0(void* self) {
+extern "C" int32_t vtkImageStack__GetNumberOfPaths__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageStack*>(self)->GetNumberOfPaths();
 }
 
-extern "C" void vtkImageStack__BuildPaths__0(void* self, void* paths, void* path) {
+extern "C" void vtkImageStack__BuildPaths__0(void* self, void* paths, void* path) noexcept {
   (void)self;
   static_cast<vtkImageStack*>(self)->BuildPaths(static_cast<vtkAssemblyPaths*>(paths), static_cast<vtkAssemblyPath*>(path));
 }

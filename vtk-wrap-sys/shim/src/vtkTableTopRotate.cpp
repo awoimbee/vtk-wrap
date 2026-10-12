@@ -6,81 +6,81 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTableTopRotate__vtk_wrap_new() { return static_cast<void*>(vtkTableTopRotate::New()); }
+extern "C" void* vtkTableTopRotate__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTableTopRotate::New()); }
 
-extern "C" int32_t vtkTableTopRotate__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTableTopRotate__IsTypeOf__0(const char* type_) noexcept {
   return vtkTableTopRotate::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTableTopRotate__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTableTopRotate__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableTopRotate*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTableTopRotate__SafeDownCast__0(void* o) {
+extern "C" void* vtkTableTopRotate__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTableTopRotate::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTableTopRotate__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTableTopRotate__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTableTopRotate::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTableTopRotate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTableTopRotate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableTopRotate*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTableTopRotate__StartInteraction__0(void* self) {
+extern "C" void vtkTableTopRotate__StartInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->StartInteraction();
 }
 
-extern "C" void vtkTableTopRotate__EndInteraction__0(void* self) {
+extern "C" void vtkTableTopRotate__EndInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->EndInteraction();
 }
 
-extern "C" void vtkTableTopRotate__OnKeyDown__0(void* self, void* rwi) {
+extern "C" void vtkTableTopRotate__OnKeyDown__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->OnKeyDown(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTableTopRotate__OnKeyUp__0(void* self, void* rwi) {
+extern "C" void vtkTableTopRotate__OnKeyUp__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->OnKeyUp(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTableTopRotate__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTableTopRotate__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTableTopRotate__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTableTopRotate__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTableTopRotate__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTableTopRotate__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->OnButtonUp(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTableTopRotate__SetSimultaneouslyAdjustAzimuthElevation__0(void* self, bool _arg) {
+extern "C" void vtkTableTopRotate__SetSimultaneouslyAdjustAzimuthElevation__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->SetSimultaneouslyAdjustAzimuthElevation(_arg);
 }
 
-extern "C" bool vtkTableTopRotate__GetSimultaneouslyAdjustAzimuthElevation__0(void* self) {
+extern "C" bool vtkTableTopRotate__GetSimultaneouslyAdjustAzimuthElevation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableTopRotate*>(self)->GetSimultaneouslyAdjustAzimuthElevation();
 }
 
-extern "C" void vtkTableTopRotate__SimultaneouslyAdjustAzimuthElevationOn__0(void* self) {
+extern "C" void vtkTableTopRotate__SimultaneouslyAdjustAzimuthElevationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->SimultaneouslyAdjustAzimuthElevationOn();
 }
 
-extern "C" void vtkTableTopRotate__SimultaneouslyAdjustAzimuthElevationOff__0(void* self) {
+extern "C" void vtkTableTopRotate__SimultaneouslyAdjustAzimuthElevationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableTopRotate*>(self)->SimultaneouslyAdjustAzimuthElevationOff();
 }

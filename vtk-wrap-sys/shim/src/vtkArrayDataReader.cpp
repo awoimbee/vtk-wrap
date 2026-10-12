@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkArrayDataReader__vtk_wrap_new() { return static_cast<void*>(vtkArrayDataReader::New()); }
+extern "C" void* vtkArrayDataReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkArrayDataReader::New()); }
 
-extern "C" int32_t vtkArrayDataReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkArrayDataReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkArrayDataReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkArrayDataReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkArrayDataReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayDataReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkArrayDataReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkArrayDataReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkArrayDataReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkArrayDataReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkArrayDataReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkArrayDataReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkArrayDataReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkArrayDataReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayDataReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkArrayDataReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkArrayDataReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkArrayDataReader*>(self)->SetFileName(_arg);
 }
 
-extern "C" char* vtkArrayDataReader__GetInputString__0(void* self) {
+extern "C" char* vtkArrayDataReader__GetInputString__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkArrayDataReader*>(self)->GetInputString()).c_str());
 }
 
-extern "C" void vtkArrayDataReader__SetReadFromInputString__0(void* self, bool _arg) {
+extern "C" void vtkArrayDataReader__SetReadFromInputString__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkArrayDataReader*>(self)->SetReadFromInputString(_arg);
 }
 
-extern "C" bool vtkArrayDataReader__GetReadFromInputString__0(void* self) {
+extern "C" bool vtkArrayDataReader__GetReadFromInputString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayDataReader*>(self)->GetReadFromInputString();
 }
 
-extern "C" void vtkArrayDataReader__ReadFromInputStringOn__0(void* self) {
+extern "C" void vtkArrayDataReader__ReadFromInputStringOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataReader*>(self)->ReadFromInputStringOn();
 }
 
-extern "C" void vtkArrayDataReader__ReadFromInputStringOff__0(void* self) {
+extern "C" void vtkArrayDataReader__ReadFromInputStringOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataReader*>(self)->ReadFromInputStringOff();
 }

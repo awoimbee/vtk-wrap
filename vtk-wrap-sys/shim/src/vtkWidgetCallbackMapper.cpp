@@ -5,41 +5,41 @@
 #include "vtkWidgetEventTranslator.h"
 #include <string>
 
-extern "C" void* vtkWidgetCallbackMapper__vtk_wrap_new() { return static_cast<void*>(vtkWidgetCallbackMapper::New()); }
+extern "C" void* vtkWidgetCallbackMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWidgetCallbackMapper::New()); }
 
-extern "C" int32_t vtkWidgetCallbackMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWidgetCallbackMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkWidgetCallbackMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWidgetCallbackMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWidgetCallbackMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWidgetCallbackMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWidgetCallbackMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkWidgetCallbackMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWidgetCallbackMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWidgetCallbackMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWidgetCallbackMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWidgetCallbackMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWidgetCallbackMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWidgetCallbackMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWidgetCallbackMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkWidgetCallbackMapper__SetEventTranslator__0(void* self, void* t) {
+extern "C" void vtkWidgetCallbackMapper__SetEventTranslator__0(void* self, void* t) noexcept {
   (void)self;
   static_cast<vtkWidgetCallbackMapper*>(self)->SetEventTranslator(static_cast<vtkWidgetEventTranslator*>(t));
 }
 
-extern "C" void* vtkWidgetCallbackMapper__GetEventTranslator__0(void* self) {
+extern "C" void* vtkWidgetCallbackMapper__GetEventTranslator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkWidgetCallbackMapper*>(self)->GetEventTranslator());
 }
 
-extern "C" void vtkWidgetCallbackMapper__InvokeCallback__0(void* self, unsigned long widgetEvent) {
+extern "C" void vtkWidgetCallbackMapper__InvokeCallback__0(void* self, unsigned long widgetEvent) noexcept {
   (void)self;
   static_cast<vtkWidgetCallbackMapper*>(self)->InvokeCallback(widgetEvent);
 }

@@ -5,36 +5,36 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLGlyph3DHelper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLGlyph3DHelper::New()); }
+extern "C" void* vtkOpenGLGlyph3DHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLGlyph3DHelper::New()); }
 
-extern "C" int32_t vtkOpenGLGlyph3DHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLGlyph3DHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLGlyph3DHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLGlyph3DHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLGlyph3DHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLGlyph3DHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLGlyph3DHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLGlyph3DHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLGlyph3DHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLGlyph3DHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLGlyph3DHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLGlyph3DHelper__SetLODColoring__0(void* self, bool val) {
+extern "C" void vtkOpenGLGlyph3DHelper__SetLODColoring__0(void* self, bool val) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DHelper*>(self)->SetLODColoring(val);
 }
 
-extern "C" void vtkOpenGLGlyph3DHelper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLGlyph3DHelper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DHelper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }

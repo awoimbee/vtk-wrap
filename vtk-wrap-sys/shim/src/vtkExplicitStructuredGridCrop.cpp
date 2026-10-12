@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExplicitStructuredGridCrop__vtk_wrap_new() { return static_cast<void*>(vtkExplicitStructuredGridCrop::New()); }
+extern "C" void* vtkExplicitStructuredGridCrop__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExplicitStructuredGridCrop::New()); }
 
-extern "C" int32_t vtkExplicitStructuredGridCrop__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExplicitStructuredGridCrop__IsTypeOf__0(const char* type_) noexcept {
   return vtkExplicitStructuredGridCrop::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExplicitStructuredGridCrop__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExplicitStructuredGridCrop__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExplicitStructuredGridCrop*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExplicitStructuredGridCrop__SafeDownCast__0(void* o) {
+extern "C" void* vtkExplicitStructuredGridCrop__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExplicitStructuredGridCrop::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExplicitStructuredGridCrop__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExplicitStructuredGridCrop__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExplicitStructuredGridCrop::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExplicitStructuredGridCrop__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExplicitStructuredGridCrop__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExplicitStructuredGridCrop*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkExplicitStructuredGridCrop__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) {
+extern "C" void vtkExplicitStructuredGridCrop__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) noexcept {
   (void)self;
   static_cast<vtkExplicitStructuredGridCrop*>(self)->SetOutputWholeExtent(extent, static_cast<vtkInformation*>(outInfo));
 }
 
-extern "C" void vtkExplicitStructuredGridCrop__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) {
+extern "C" void vtkExplicitStructuredGridCrop__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) noexcept {
   (void)self;
   static_cast<vtkExplicitStructuredGridCrop*>(self)->SetOutputWholeExtent(minX, maxX, minY, maxY, minZ, maxZ);
 }
 
-extern "C" void vtkExplicitStructuredGridCrop__GetOutputWholeExtent__0(void* self, int32_t* extent) {
+extern "C" void vtkExplicitStructuredGridCrop__GetOutputWholeExtent__0(void* self, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkExplicitStructuredGridCrop*>(self)->GetOutputWholeExtent(extent);
 }
 
-extern "C" void vtkExplicitStructuredGridCrop__ResetOutputWholeExtent__0(void* self) {
+extern "C" void vtkExplicitStructuredGridCrop__ResetOutputWholeExtent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExplicitStructuredGridCrop*>(self)->ResetOutputWholeExtent();
 }

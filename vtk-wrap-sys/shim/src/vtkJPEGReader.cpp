@@ -5,46 +5,46 @@
 #include "vtkResourceStream.h"
 #include <string>
 
-extern "C" void* vtkJPEGReader__vtk_wrap_new() { return static_cast<void*>(vtkJPEGReader::New()); }
+extern "C" void* vtkJPEGReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkJPEGReader::New()); }
 
-extern "C" int32_t vtkJPEGReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkJPEGReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkJPEGReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkJPEGReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkJPEGReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkJPEGReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkJPEGReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkJPEGReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkJPEGReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkJPEGReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkJPEGReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkJPEGReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkJPEGReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkJPEGReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkJPEGReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" int32_t vtkJPEGReader__CanReadFile__1(void* self, void* stream) {
+extern "C" int32_t vtkJPEGReader__CanReadFile__1(void* self, void* stream) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" const char* vtkJPEGReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkJPEGReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkJPEGReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkJPEGReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJPEGReader*>(self)->GetDescriptiveName();
 }

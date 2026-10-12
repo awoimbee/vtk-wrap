@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPointConnectivityFilter__vtk_wrap_new() { return static_cast<void*>(vtkPointConnectivityFilter::New()); }
+extern "C" void* vtkPointConnectivityFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointConnectivityFilter::New()); }
 
-extern "C" int32_t vtkPointConnectivityFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointConnectivityFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointConnectivityFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointConnectivityFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointConnectivityFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointConnectivityFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointConnectivityFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointConnectivityFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointConnectivityFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointConnectivityFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointConnectivityFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointConnectivityFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointConnectivityFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointConnectivityFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointConnectivityFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

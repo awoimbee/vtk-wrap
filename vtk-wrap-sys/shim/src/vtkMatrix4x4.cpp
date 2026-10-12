@@ -4,172 +4,172 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMatrix4x4__vtk_wrap_new() { return static_cast<void*>(vtkMatrix4x4::New()); }
+extern "C" void* vtkMatrix4x4__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMatrix4x4::New()); }
 
-extern "C" int32_t vtkMatrix4x4__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMatrix4x4__IsTypeOf__0(const char* type_) noexcept {
   return vtkMatrix4x4::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMatrix4x4__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMatrix4x4__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMatrix4x4*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMatrix4x4__SafeDownCast__0(void* o) {
+extern "C" void* vtkMatrix4x4__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMatrix4x4::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMatrix4x4__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMatrix4x4__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMatrix4x4::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMatrix4x4__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMatrix4x4__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMatrix4x4*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMatrix4x4__DeepCopy__0(void* self, void* source) {
+extern "C" void vtkMatrix4x4__DeepCopy__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->DeepCopy(static_cast<vtkMatrix4x4*>(source));
 }
 
-extern "C" void vtkMatrix4x4__DeepCopy__1(double* destination, void* source) {
+extern "C" void vtkMatrix4x4__DeepCopy__1(double* destination, void* source) noexcept {
   vtkMatrix4x4::DeepCopy(destination, static_cast<vtkMatrix4x4*>(source));
 }
 
-extern "C" void vtkMatrix4x4__DeepCopy__2(double* destination, const double* source) {
+extern "C" void vtkMatrix4x4__DeepCopy__2(double* destination, const double* source) noexcept {
   vtkMatrix4x4::DeepCopy(destination, source);
 }
 
-extern "C" void vtkMatrix4x4__DeepCopy__3(void* self, const double* elements) {
+extern "C" void vtkMatrix4x4__DeepCopy__3(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->DeepCopy(elements);
 }
 
-extern "C" void vtkMatrix4x4__Zero__0(void* self) {
+extern "C" void vtkMatrix4x4__Zero__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->Zero();
 }
 
-extern "C" void vtkMatrix4x4__Zero__1(double* elements) {
+extern "C" void vtkMatrix4x4__Zero__1(double* elements) noexcept {
   vtkMatrix4x4::Zero(elements);
 }
 
-extern "C" void vtkMatrix4x4__Identity__0(void* self) {
+extern "C" void vtkMatrix4x4__Identity__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->Identity();
 }
 
-extern "C" void vtkMatrix4x4__Identity__1(double* elements) {
+extern "C" void vtkMatrix4x4__Identity__1(double* elements) noexcept {
   vtkMatrix4x4::Identity(elements);
 }
 
-extern "C" bool vtkMatrix4x4__IsIdentity__0(void* self) {
+extern "C" bool vtkMatrix4x4__IsIdentity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMatrix4x4*>(self)->IsIdentity();
 }
 
-extern "C" void vtkMatrix4x4__Invert__0(void* in_, void* out) {
+extern "C" void vtkMatrix4x4__Invert__0(void* in_, void* out) noexcept {
   vtkMatrix4x4::Invert(static_cast<vtkMatrix4x4*>(in_), static_cast<vtkMatrix4x4*>(out));
 }
 
-extern "C" void vtkMatrix4x4__Invert__1(void* self) {
+extern "C" void vtkMatrix4x4__Invert__1(void* self) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->Invert();
 }
 
-extern "C" void vtkMatrix4x4__Invert__2(const double* inElements, double* outElements) {
+extern "C" void vtkMatrix4x4__Invert__2(const double* inElements, double* outElements) noexcept {
   vtkMatrix4x4::Invert(inElements, outElements);
 }
 
-extern "C" void vtkMatrix4x4__Transpose__0(void* in_, void* out) {
+extern "C" void vtkMatrix4x4__Transpose__0(void* in_, void* out) noexcept {
   vtkMatrix4x4::Transpose(static_cast<vtkMatrix4x4*>(in_), static_cast<vtkMatrix4x4*>(out));
 }
 
-extern "C" void vtkMatrix4x4__Transpose__1(void* self) {
+extern "C" void vtkMatrix4x4__Transpose__1(void* self) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->Transpose();
 }
 
-extern "C" void vtkMatrix4x4__Transpose__2(const double* inElements, double* outElements) {
+extern "C" void vtkMatrix4x4__Transpose__2(const double* inElements, double* outElements) noexcept {
   vtkMatrix4x4::Transpose(inElements, outElements);
 }
 
-extern "C" void vtkMatrix4x4__MatrixFromRotation__0(double angle, double x, double y, double z, void* result) {
+extern "C" void vtkMatrix4x4__MatrixFromRotation__0(double angle, double x, double y, double z, void* result) noexcept {
   vtkMatrix4x4::MatrixFromRotation(angle, x, y, z, static_cast<vtkMatrix4x4*>(result));
 }
 
-extern "C" void vtkMatrix4x4__MatrixFromRotation__1(double angle, double x, double y, double z, double* matrix) {
+extern "C" void vtkMatrix4x4__MatrixFromRotation__1(double angle, double x, double y, double z, double* matrix) noexcept {
   vtkMatrix4x4::MatrixFromRotation(angle, x, y, z, matrix);
 }
 
-extern "C" void vtkMatrix4x4__PoseToMatrix__0(double* pos, double* ori, void* mat) {
+extern "C" void vtkMatrix4x4__PoseToMatrix__0(double* pos, double* ori, void* mat) noexcept {
   vtkMatrix4x4::PoseToMatrix(pos, ori, static_cast<vtkMatrix4x4*>(mat));
 }
 
-extern "C" void vtkMatrix4x4__MultiplyPoint__0(void* self, const float* in_, float* out) {
+extern "C" void vtkMatrix4x4__MultiplyPoint__0(void* self, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->MultiplyPoint(in_, out);
 }
 
-extern "C" void vtkMatrix4x4__MultiplyPoint__1(void* self, const double* in_, double* out) {
+extern "C" void vtkMatrix4x4__MultiplyPoint__1(void* self, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->MultiplyPoint(in_, out);
 }
 
-extern "C" void vtkMatrix4x4__MultiplyPoint__2(const double* elements, const float* in_, float* out) {
+extern "C" void vtkMatrix4x4__MultiplyPoint__2(const double* elements, const float* in_, float* out) noexcept {
   vtkMatrix4x4::MultiplyPoint(elements, in_, out);
 }
 
-extern "C" void vtkMatrix4x4__MultiplyPoint__3(const double* elements, const double* in_, double* out) {
+extern "C" void vtkMatrix4x4__MultiplyPoint__3(const double* elements, const double* in_, double* out) noexcept {
   vtkMatrix4x4::MultiplyPoint(elements, in_, out);
 }
 
-extern "C" void vtkMatrix4x4__Multiply4x4__0(void* a, void* b, void* c) {
+extern "C" void vtkMatrix4x4__Multiply4x4__0(void* a, void* b, void* c) noexcept {
   vtkMatrix4x4::Multiply4x4(static_cast<vtkMatrix4x4*>(a), static_cast<vtkMatrix4x4*>(b), static_cast<vtkMatrix4x4*>(c));
 }
 
-extern "C" void vtkMatrix4x4__Multiply4x4__1(const double* a, const double* b, double* c) {
+extern "C" void vtkMatrix4x4__Multiply4x4__1(const double* a, const double* b, double* c) noexcept {
   vtkMatrix4x4::Multiply4x4(a, b, c);
 }
 
-extern "C" void vtkMatrix4x4__Multiply4x4__2(const double* a, const double* b, float* c) {
+extern "C" void vtkMatrix4x4__Multiply4x4__2(const double* a, const double* b, float* c) noexcept {
   vtkMatrix4x4::Multiply4x4(a, b, c);
 }
 
-extern "C" void vtkMatrix4x4__MultiplyAndTranspose4x4__0(const double* a, const double* b, float* c) {
+extern "C" void vtkMatrix4x4__MultiplyAndTranspose4x4__0(const double* a, const double* b, float* c) noexcept {
   vtkMatrix4x4::MultiplyAndTranspose4x4(a, b, c);
 }
 
-extern "C" void vtkMatrix4x4__Adjoint__0(void* self, void* in_, void* out) {
+extern "C" void vtkMatrix4x4__Adjoint__0(void* self, void* in_, void* out) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->Adjoint(static_cast<vtkMatrix4x4*>(in_), static_cast<vtkMatrix4x4*>(out));
 }
 
-extern "C" void vtkMatrix4x4__Adjoint__1(const double* inElements, double* outElements) {
+extern "C" void vtkMatrix4x4__Adjoint__1(const double* inElements, double* outElements) noexcept {
   vtkMatrix4x4::Adjoint(inElements, outElements);
 }
 
-extern "C" double vtkMatrix4x4__Determinant__0(void* self) {
+extern "C" double vtkMatrix4x4__Determinant__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMatrix4x4*>(self)->Determinant();
 }
 
-extern "C" double vtkMatrix4x4__Determinant__1(const double* elements) {
+extern "C" double vtkMatrix4x4__Determinant__1(const double* elements) noexcept {
   return vtkMatrix4x4::Determinant(elements);
 }
 
-extern "C" void vtkMatrix4x4__SetElement__0(void* self, int32_t i, int32_t j, double value) {
+extern "C" void vtkMatrix4x4__SetElement__0(void* self, int32_t i, int32_t j, double value) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->SetElement(i, j, value);
 }
 
-extern "C" double vtkMatrix4x4__GetElement__0(void* self, int32_t i, int32_t j) {
+extern "C" double vtkMatrix4x4__GetElement__0(void* self, int32_t i, int32_t j) noexcept {
   (void)self;
   return static_cast<vtkMatrix4x4*>(self)->GetElement(i, j);
 }
 
-extern "C" void vtkMatrix4x4__SetData__0(void* self, const double* data) {
+extern "C" void vtkMatrix4x4__SetData__0(void* self, const double* data) noexcept {
   (void)self;
   static_cast<vtkMatrix4x4*>(self)->SetData(data);
 }

@@ -4,76 +4,76 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkThresholdPoints__vtk_wrap_new() { return static_cast<void*>(vtkThresholdPoints::New()); }
+extern "C" void* vtkThresholdPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkThresholdPoints::New()); }
 
-extern "C" int32_t vtkThresholdPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkThresholdPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkThresholdPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkThresholdPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkThresholdPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkThresholdPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkThresholdPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkThresholdPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkThresholdPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkThresholdPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkThresholdPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkThresholdPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkThresholdPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkThresholdPoints__SetThresholdFunction__0(void* self, int32_t function) {
+extern "C" void vtkThresholdPoints__SetThresholdFunction__0(void* self, int32_t function) noexcept {
   (void)self;
   static_cast<vtkThresholdPoints*>(self)->SetThresholdFunction(function);
 }
 
-extern "C" int32_t vtkThresholdPoints__GetThresholdFunction__0(void* self) {
+extern "C" int32_t vtkThresholdPoints__GetThresholdFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetThresholdFunction();
 }
 
-extern "C" void vtkThresholdPoints__SetUpperThreshold__0(void* self, double _arg) {
+extern "C" void vtkThresholdPoints__SetUpperThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkThresholdPoints*>(self)->SetUpperThreshold(_arg);
 }
 
-extern "C" double vtkThresholdPoints__GetUpperThreshold__0(void* self) {
+extern "C" double vtkThresholdPoints__GetUpperThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetUpperThreshold();
 }
 
-extern "C" void vtkThresholdPoints__SetLowerThreshold__0(void* self, double _arg) {
+extern "C" void vtkThresholdPoints__SetLowerThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkThresholdPoints*>(self)->SetLowerThreshold(_arg);
 }
 
-extern "C" double vtkThresholdPoints__GetLowerThreshold__0(void* self) {
+extern "C" double vtkThresholdPoints__GetLowerThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetLowerThreshold();
 }
 
-extern "C" void vtkThresholdPoints__SetInputArrayComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkThresholdPoints__SetInputArrayComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkThresholdPoints*>(self)->SetInputArrayComponent(_arg);
 }
 
-extern "C" int32_t vtkThresholdPoints__GetInputArrayComponent__0(void* self) {
+extern "C" int32_t vtkThresholdPoints__GetInputArrayComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetInputArrayComponent();
 }
 
-extern "C" void vtkThresholdPoints__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkThresholdPoints__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkThresholdPoints*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkThresholdPoints__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkThresholdPoints__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdPoints*>(self)->GetOutputPointsPrecision();
 }

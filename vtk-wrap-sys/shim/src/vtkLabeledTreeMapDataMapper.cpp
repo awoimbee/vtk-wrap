@@ -7,96 +7,96 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkLabeledTreeMapDataMapper__vtk_wrap_new() { return static_cast<void*>(vtkLabeledTreeMapDataMapper::New()); }
+extern "C" void* vtkLabeledTreeMapDataMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLabeledTreeMapDataMapper::New()); }
 
-extern "C" int32_t vtkLabeledTreeMapDataMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLabeledTreeMapDataMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkLabeledTreeMapDataMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLabeledTreeMapDataMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLabeledTreeMapDataMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabeledTreeMapDataMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLabeledTreeMapDataMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkLabeledTreeMapDataMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLabeledTreeMapDataMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLabeledTreeMapDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLabeledTreeMapDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLabeledTreeMapDataMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLabeledTreeMapDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLabeledTreeMapDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__RenderOpaqueGeometry__0(void* self, void* viewport, void* actor) {
+extern "C" void vtkLabeledTreeMapDataMapper__RenderOpaqueGeometry__0(void* self, void* viewport, void* actor) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__RenderOverlay__0(void* self, void* viewport, void* actor) {
+extern "C" void vtkLabeledTreeMapDataMapper__RenderOverlay__0(void* self, void* viewport, void* actor) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void* vtkLabeledTreeMapDataMapper__GetInputTree__0(void* self) {
+extern "C" void* vtkLabeledTreeMapDataMapper__GetInputTree__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetInputTree());
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetRectanglesArrayName__0(void* self, const char* name) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetRectanglesArrayName__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetRectanglesArrayName(name);
 }
 
-extern "C" int32_t vtkLabeledTreeMapDataMapper__GetClipTextMode__0(void* self) {
+extern "C" int32_t vtkLabeledTreeMapDataMapper__GetClipTextMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetClipTextMode();
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetClipTextMode__0(void* self, int32_t _arg) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetClipTextMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetClipTextMode(_arg);
 }
 
-extern "C" int32_t vtkLabeledTreeMapDataMapper__GetChildMotion__0(void* self) {
+extern "C" int32_t vtkLabeledTreeMapDataMapper__GetChildMotion__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetChildMotion();
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetChildMotion__0(void* self, int32_t _arg) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetChildMotion__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetChildMotion(_arg);
 }
 
-extern "C" int32_t vtkLabeledTreeMapDataMapper__GetDynamicLevel__0(void* self) {
+extern "C" int32_t vtkLabeledTreeMapDataMapper__GetDynamicLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetDynamicLevel();
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetDynamicLevel__0(void* self, int32_t _arg) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetDynamicLevel__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetDynamicLevel(_arg);
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetFontSizeRange__0(void* self, int32_t maxSize, int32_t minSize, int32_t delta) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetFontSizeRange__0(void* self, int32_t maxSize, int32_t minSize, int32_t delta) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetFontSizeRange(maxSize, minSize, delta);
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__GetFontSizeRange__0(void* self, int32_t* range) {
+extern "C" void vtkLabeledTreeMapDataMapper__GetFontSizeRange__0(void* self, int32_t* range) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetFontSizeRange(range);
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__SetLevelRange__0(void* self, int32_t startLevel, int32_t endLevel) {
+extern "C" void vtkLabeledTreeMapDataMapper__SetLevelRange__0(void* self, int32_t startLevel, int32_t endLevel) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->SetLevelRange(startLevel, endLevel);
 }
 
-extern "C" void vtkLabeledTreeMapDataMapper__GetLevelRange__0(void* self, int32_t* range) {
+extern "C" void vtkLabeledTreeMapDataMapper__GetLevelRange__0(void* self, int32_t* range) noexcept {
   (void)self;
   static_cast<vtkLabeledTreeMapDataMapper*>(self)->GetLevelRange(range);
 }

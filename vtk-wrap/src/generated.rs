@@ -6,6 +6,12 @@
 //! generated code can refer to base classes and argument types by their
 //! bare names.  A disabled module's file is never parsed.
 
+//! Unaudited VTK handles. All native methods and constructors are unsafe.
+//!
+//! Handles own a reference: clone retains it and drop releases it. Native
+//! calls must preserve those references and obey VTK's lifetime and thread
+//! requirements. Handles are neither Send nor Sync. No Default is provided.
+
 use ::core::ffi::c_void;
 use ::core::ptr::NonNull;
 

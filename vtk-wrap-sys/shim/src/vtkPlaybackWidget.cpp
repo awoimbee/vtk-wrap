@@ -5,36 +5,36 @@
 #include "vtkPlaybackRepresentation.h"
 #include <string>
 
-extern "C" void* vtkPlaybackWidget__vtk_wrap_new() { return static_cast<void*>(vtkPlaybackWidget::New()); }
+extern "C" void* vtkPlaybackWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPlaybackWidget::New()); }
 
-extern "C" int32_t vtkPlaybackWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPlaybackWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkPlaybackWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPlaybackWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPlaybackWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaybackWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPlaybackWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkPlaybackWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPlaybackWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPlaybackWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPlaybackWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPlaybackWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPlaybackWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPlaybackWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaybackWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPlaybackWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkPlaybackWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkPlaybackWidget*>(self)->SetRepresentation(static_cast<vtkPlaybackRepresentation*>(r));
 }
 
-extern "C" void vtkPlaybackWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkPlaybackWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPlaybackWidget*>(self)->CreateDefaultRepresentation();
 }

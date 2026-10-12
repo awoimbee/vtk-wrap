@@ -5,61 +5,61 @@
 #include "vtkTable.h"
 #include <string>
 
-extern "C" void* vtkVolumeContourSpectrumFilter__vtk_wrap_new() { return static_cast<void*>(vtkVolumeContourSpectrumFilter::New()); }
+extern "C" void* vtkVolumeContourSpectrumFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolumeContourSpectrumFilter::New()); }
 
-extern "C" int32_t vtkVolumeContourSpectrumFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolumeContourSpectrumFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolumeContourSpectrumFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolumeContourSpectrumFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolumeContourSpectrumFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeContourSpectrumFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolumeContourSpectrumFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolumeContourSpectrumFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolumeContourSpectrumFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolumeContourSpectrumFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolumeContourSpectrumFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolumeContourSpectrumFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolumeContourSpectrumFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolumeContourSpectrumFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeContourSpectrumFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolumeContourSpectrumFilter__SetArcId__0(void* self, int64_t _arg) {
+extern "C" void vtkVolumeContourSpectrumFilter__SetArcId__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeContourSpectrumFilter*>(self)->SetArcId(_arg);
 }
 
-extern "C" int64_t vtkVolumeContourSpectrumFilter__GetArcId__0(void* self) {
+extern "C" int64_t vtkVolumeContourSpectrumFilter__GetArcId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeContourSpectrumFilter*>(self)->GetArcId();
 }
 
-extern "C" void vtkVolumeContourSpectrumFilter__SetNumberOfSamples__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeContourSpectrumFilter__SetNumberOfSamples__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeContourSpectrumFilter*>(self)->SetNumberOfSamples(_arg);
 }
 
-extern "C" int32_t vtkVolumeContourSpectrumFilter__GetNumberOfSamples__0(void* self) {
+extern "C" int32_t vtkVolumeContourSpectrumFilter__GetNumberOfSamples__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeContourSpectrumFilter*>(self)->GetNumberOfSamples();
 }
 
-extern "C" void vtkVolumeContourSpectrumFilter__SetFieldId__0(void* self, int64_t _arg) {
+extern "C" void vtkVolumeContourSpectrumFilter__SetFieldId__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeContourSpectrumFilter*>(self)->SetFieldId(_arg);
 }
 
-extern "C" int64_t vtkVolumeContourSpectrumFilter__GetFieldId__0(void* self) {
+extern "C" int64_t vtkVolumeContourSpectrumFilter__GetFieldId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeContourSpectrumFilter*>(self)->GetFieldId();
 }
 
-extern "C" void* vtkVolumeContourSpectrumFilter__GetOutput__0(void* self) {
+extern "C" void* vtkVolumeContourSpectrumFilter__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolumeContourSpectrumFilter*>(self)->GetOutput());
 }

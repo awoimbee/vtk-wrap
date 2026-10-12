@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInteractorStyleJoystickActor__vtk_wrap_new() { return static_cast<void*>(vtkInteractorStyleJoystickActor::New()); }
+extern "C" void* vtkInteractorStyleJoystickActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInteractorStyleJoystickActor::New()); }
 
-extern "C" int32_t vtkInteractorStyleJoystickActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorStyleJoystickActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorStyleJoystickActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorStyleJoystickActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorStyleJoystickActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleJoystickActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorStyleJoystickActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorStyleJoystickActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorStyleJoystickActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorStyleJoystickActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorStyleJoystickActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorStyleJoystickActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorStyleJoystickActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorStyleJoystickActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleJoystickActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnMouseMove__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnMouseMove__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnMouseMove();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnLeftButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnLeftButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnLeftButtonDown();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnLeftButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnLeftButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnLeftButtonUp();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnMiddleButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnMiddleButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnMiddleButtonDown();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnMiddleButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnMiddleButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnMiddleButtonUp();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnRightButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnRightButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnRightButtonDown();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__OnRightButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__OnRightButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->OnRightButtonUp();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__Rotate__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__Rotate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->Rotate();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__Spin__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__Spin__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->Spin();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__Pan__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__Pan__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->Pan();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__Dolly__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__Dolly__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->Dolly();
 }
 
-extern "C" void vtkInteractorStyleJoystickActor__UniformScale__0(void* self) {
+extern "C" void vtkInteractorStyleJoystickActor__UniformScale__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleJoystickActor*>(self)->UniformScale();
 }

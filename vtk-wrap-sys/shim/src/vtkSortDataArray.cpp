@@ -6,67 +6,67 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSortDataArray__vtk_wrap_new() { return static_cast<void*>(vtkSortDataArray::New()); }
+extern "C" void* vtkSortDataArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSortDataArray::New()); }
 
-extern "C" int32_t vtkSortDataArray__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSortDataArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkSortDataArray::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSortDataArray__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSortDataArray__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSortDataArray*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSortDataArray__SafeDownCast__0(void* o) {
+extern "C" void* vtkSortDataArray__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSortDataArray::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSortDataArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSortDataArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSortDataArray::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSortDataArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSortDataArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSortDataArray*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSortDataArray__Sort__0(void* keys) {
+extern "C" void vtkSortDataArray__Sort__0(void* keys) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkIdList*>(keys));
 }
 
-extern "C" void vtkSortDataArray__Sort__1(void* keys) {
+extern "C" void vtkSortDataArray__Sort__1(void* keys) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys));
 }
 
-extern "C" void vtkSortDataArray__Sort__2(void* keys, int32_t dir) {
+extern "C" void vtkSortDataArray__Sort__2(void* keys, int32_t dir) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkIdList*>(keys), dir);
 }
 
-extern "C" void vtkSortDataArray__Sort__3(void* keys, int32_t dir) {
+extern "C" void vtkSortDataArray__Sort__3(void* keys, int32_t dir) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys), dir);
 }
 
-extern "C" void vtkSortDataArray__Sort__4(void* keys, void* values) {
+extern "C" void vtkSortDataArray__Sort__4(void* keys, void* values) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys), static_cast<vtkAbstractArray*>(values));
 }
 
-extern "C" void vtkSortDataArray__Sort__5(void* keys, void* values) {
+extern "C" void vtkSortDataArray__Sort__5(void* keys, void* values) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys), static_cast<vtkIdList*>(values));
 }
 
-extern "C" void vtkSortDataArray__Sort__6(void* keys, void* values, int32_t dir) {
+extern "C" void vtkSortDataArray__Sort__6(void* keys, void* values, int32_t dir) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys), static_cast<vtkAbstractArray*>(values), dir);
 }
 
-extern "C" void vtkSortDataArray__Sort__7(void* keys, void* values, int32_t dir) {
+extern "C" void vtkSortDataArray__Sort__7(void* keys, void* values, int32_t dir) noexcept {
   vtkSortDataArray::Sort(static_cast<vtkAbstractArray*>(keys), static_cast<vtkIdList*>(values), dir);
 }
 
-extern "C" void vtkSortDataArray__SortArrayByComponent__0(void* arr, int32_t k) {
+extern "C" void vtkSortDataArray__SortArrayByComponent__0(void* arr, int32_t k) noexcept {
   vtkSortDataArray::SortArrayByComponent(static_cast<vtkAbstractArray*>(arr), k);
 }
 
-extern "C" void vtkSortDataArray__SortArrayByComponent__1(void* arr, int32_t k, int32_t dir) {
+extern "C" void vtkSortDataArray__SortArrayByComponent__1(void* arr, int32_t k, int32_t dir) noexcept {
   vtkSortDataArray::SortArrayByComponent(static_cast<vtkAbstractArray*>(arr), k, dir);
 }
 

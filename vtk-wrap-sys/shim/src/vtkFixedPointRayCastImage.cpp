@@ -4,146 +4,146 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFixedPointRayCastImage__vtk_wrap_new() { return static_cast<void*>(vtkFixedPointRayCastImage::New()); }
+extern "C" void* vtkFixedPointRayCastImage__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFixedPointRayCastImage::New()); }
 
-extern "C" int32_t vtkFixedPointRayCastImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFixedPointRayCastImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkFixedPointRayCastImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFixedPointRayCastImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFixedPointRayCastImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFixedPointRayCastImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkFixedPointRayCastImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFixedPointRayCastImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFixedPointRayCastImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFixedPointRayCastImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFixedPointRayCastImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFixedPointRayCastImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFixedPointRayCastImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageViewportSize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetImageViewportSize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageViewportSize(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageViewportSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetImageViewportSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageViewportSize(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageMemorySize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetImageMemorySize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageMemorySize(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageMemorySize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetImageMemorySize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageMemorySize(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageInUseSize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetImageInUseSize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageInUseSize(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageInUseSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetImageInUseSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageInUseSize(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageOrigin__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetImageOrigin__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageOrigin(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageOrigin__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetImageOrigin__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageOrigin(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetImageSampleDistance__0(void* self, float _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetImageSampleDistance__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetImageSampleDistance(_arg);
 }
 
-extern "C" float vtkFixedPointRayCastImage__GetImageSampleDistance__0(void* self) {
+extern "C" float vtkFixedPointRayCastImage__GetImageSampleDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetImageSampleDistance();
 }
 
-extern "C" void vtkFixedPointRayCastImage__AllocateImage__0(void* self) {
+extern "C" void vtkFixedPointRayCastImage__AllocateImage__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->AllocateImage();
 }
 
-extern "C" void vtkFixedPointRayCastImage__ClearImage__0(void* self) {
+extern "C" void vtkFixedPointRayCastImage__ClearImage__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->ClearImage();
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetZBufferSize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetZBufferSize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetZBufferSize(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetZBufferSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetZBufferSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetZBufferSize(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetZBufferOrigin__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkFixedPointRayCastImage__SetZBufferOrigin__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetZBufferOrigin(_arg1, _arg2);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetZBufferOrigin__1(void* self, const int32_t* _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetZBufferOrigin__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetZBufferOrigin(_arg);
 }
 
-extern "C" void vtkFixedPointRayCastImage__SetUseZBuffer__0(void* self, int32_t _arg) {
+extern "C" void vtkFixedPointRayCastImage__SetUseZBuffer__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->SetUseZBuffer(_arg);
 }
 
-extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBufferMinValue__0(void* self) {
+extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBufferMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetUseZBufferMinValue();
 }
 
-extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBufferMaxValue__0(void* self) {
+extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBufferMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetUseZBufferMaxValue();
 }
 
-extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBuffer__0(void* self) {
+extern "C" int32_t vtkFixedPointRayCastImage__GetUseZBuffer__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetUseZBuffer();
 }
 
-extern "C" void vtkFixedPointRayCastImage__UseZBufferOn__0(void* self) {
+extern "C" void vtkFixedPointRayCastImage__UseZBufferOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->UseZBufferOn();
 }
 
-extern "C" void vtkFixedPointRayCastImage__UseZBufferOff__0(void* self) {
+extern "C" void vtkFixedPointRayCastImage__UseZBufferOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->UseZBufferOff();
 }
 
-extern "C" float vtkFixedPointRayCastImage__GetZBufferValue__0(void* self, int32_t x, int32_t y) {
+extern "C" float vtkFixedPointRayCastImage__GetZBufferValue__0(void* self, int32_t x, int32_t y) noexcept {
   (void)self;
   return static_cast<vtkFixedPointRayCastImage*>(self)->GetZBufferValue(x, y);
 }
 
-extern "C" void vtkFixedPointRayCastImage__AllocateZBuffer__0(void* self) {
+extern "C" void vtkFixedPointRayCastImage__AllocateZBuffer__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFixedPointRayCastImage*>(self)->AllocateZBuffer();
 }

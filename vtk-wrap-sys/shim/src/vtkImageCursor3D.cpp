@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageCursor3D__vtk_wrap_new() { return static_cast<void*>(vtkImageCursor3D::New()); }
+extern "C" void* vtkImageCursor3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageCursor3D::New()); }
 
-extern "C" int32_t vtkImageCursor3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageCursor3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageCursor3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageCursor3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageCursor3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageCursor3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageCursor3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageCursor3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageCursor3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageCursor3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageCursor3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageCursor3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageCursor3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageCursor3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageCursor3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageCursor3D__SetCursorPosition__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkImageCursor3D__SetCursorPosition__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkImageCursor3D*>(self)->SetCursorPosition(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkImageCursor3D__SetCursorPosition__1(void* self, const double* _arg) {
+extern "C" void vtkImageCursor3D__SetCursorPosition__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkImageCursor3D*>(self)->SetCursorPosition(_arg);
 }
 
-extern "C" void vtkImageCursor3D__SetCursorValue__0(void* self, double _arg) {
+extern "C" void vtkImageCursor3D__SetCursorValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageCursor3D*>(self)->SetCursorValue(_arg);
 }
 
-extern "C" double vtkImageCursor3D__GetCursorValue__0(void* self) {
+extern "C" double vtkImageCursor3D__GetCursorValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageCursor3D*>(self)->GetCursorValue();
 }
 
-extern "C" void vtkImageCursor3D__SetCursorRadius__0(void* self, int32_t _arg) {
+extern "C" void vtkImageCursor3D__SetCursorRadius__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageCursor3D*>(self)->SetCursorRadius(_arg);
 }
 
-extern "C" int32_t vtkImageCursor3D__GetCursorRadius__0(void* self) {
+extern "C" int32_t vtkImageCursor3D__GetCursorRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageCursor3D*>(self)->GetCursorRadius();
 }

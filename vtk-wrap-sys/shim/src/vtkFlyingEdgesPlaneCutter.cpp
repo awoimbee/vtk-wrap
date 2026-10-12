@@ -5,91 +5,91 @@
 #include "vtkPlane.h"
 #include <string>
 
-extern "C" void* vtkFlyingEdgesPlaneCutter__vtk_wrap_new() { return static_cast<void*>(vtkFlyingEdgesPlaneCutter::New()); }
+extern "C" void* vtkFlyingEdgesPlaneCutter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFlyingEdgesPlaneCutter::New()); }
 
-extern "C" int32_t vtkFlyingEdgesPlaneCutter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFlyingEdgesPlaneCutter__IsTypeOf__0(const char* type_) noexcept {
   return vtkFlyingEdgesPlaneCutter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFlyingEdgesPlaneCutter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFlyingEdgesPlaneCutter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFlyingEdgesPlaneCutter__SafeDownCast__0(void* o) {
+extern "C" void* vtkFlyingEdgesPlaneCutter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFlyingEdgesPlaneCutter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFlyingEdgesPlaneCutter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFlyingEdgesPlaneCutter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFlyingEdgesPlaneCutter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFlyingEdgesPlaneCutter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFlyingEdgesPlaneCutter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkFlyingEdgesPlaneCutter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkFlyingEdgesPlaneCutter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetMTime();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__SetPlane__0(void* self, void* arg0) {
+extern "C" void vtkFlyingEdgesPlaneCutter__SetPlane__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->SetPlane(static_cast<vtkPlane*>(arg0));
 }
 
-extern "C" void* vtkFlyingEdgesPlaneCutter__GetPlane__0(void* self) {
+extern "C" void* vtkFlyingEdgesPlaneCutter__GetPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetPlane());
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__SetComputeNormals__0(void* self, int32_t _arg) {
+extern "C" void vtkFlyingEdgesPlaneCutter__SetComputeNormals__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->SetComputeNormals(_arg);
 }
 
-extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetComputeNormals__0(void* self) {
+extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetComputeNormals__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetComputeNormals();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__ComputeNormalsOn__0(void* self) {
+extern "C" void vtkFlyingEdgesPlaneCutter__ComputeNormalsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->ComputeNormalsOn();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__ComputeNormalsOff__0(void* self) {
+extern "C" void vtkFlyingEdgesPlaneCutter__ComputeNormalsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->ComputeNormalsOff();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__SetInterpolateAttributes__0(void* self, int32_t _arg) {
+extern "C" void vtkFlyingEdgesPlaneCutter__SetInterpolateAttributes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->SetInterpolateAttributes(_arg);
 }
 
-extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetInterpolateAttributes__0(void* self) {
+extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetInterpolateAttributes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetInterpolateAttributes();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__InterpolateAttributesOn__0(void* self) {
+extern "C" void vtkFlyingEdgesPlaneCutter__InterpolateAttributesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->InterpolateAttributesOn();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__InterpolateAttributesOff__0(void* self) {
+extern "C" void vtkFlyingEdgesPlaneCutter__InterpolateAttributesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->InterpolateAttributesOff();
 }
 
-extern "C" void vtkFlyingEdgesPlaneCutter__SetArrayComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkFlyingEdgesPlaneCutter__SetArrayComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFlyingEdgesPlaneCutter*>(self)->SetArrayComponent(_arg);
 }
 
-extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetArrayComponent__0(void* self) {
+extern "C" int32_t vtkFlyingEdgesPlaneCutter__GetArrayComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFlyingEdgesPlaneCutter*>(self)->GetArrayComponent();
 }

@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphToPoints__vtk_wrap_new() { return static_cast<void*>(vtkGraphToPoints::New()); }
+extern "C" void* vtkGraphToPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphToPoints::New()); }
 
-extern "C" int32_t vtkGraphToPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphToPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphToPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphToPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphToPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphToPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphToPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphToPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphToPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphToPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphToPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphToPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphToPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphToPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphToPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

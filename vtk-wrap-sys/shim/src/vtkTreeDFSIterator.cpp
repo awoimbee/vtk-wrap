@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTreeDFSIterator__vtk_wrap_new() { return static_cast<void*>(vtkTreeDFSIterator::New()); }
+extern "C" void* vtkTreeDFSIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTreeDFSIterator::New()); }
 
-extern "C" int32_t vtkTreeDFSIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTreeDFSIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkTreeDFSIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTreeDFSIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTreeDFSIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeDFSIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTreeDFSIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkTreeDFSIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTreeDFSIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTreeDFSIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTreeDFSIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTreeDFSIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTreeDFSIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTreeDFSIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeDFSIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTreeDFSIterator__SetMode__0(void* self, int32_t mode) {
+extern "C" void vtkTreeDFSIterator__SetMode__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkTreeDFSIterator*>(self)->SetMode(mode);
 }
 
-extern "C" int32_t vtkTreeDFSIterator__GetMode__0(void* self) {
+extern "C" int32_t vtkTreeDFSIterator__GetMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTreeDFSIterator*>(self)->GetMode();
 }

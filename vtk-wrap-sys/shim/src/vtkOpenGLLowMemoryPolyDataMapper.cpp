@@ -9,145 +9,145 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLLowMemoryPolyDataMapper::New()); }
+extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLLowMemoryPolyDataMapper::New()); }
 
-extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLLowMemoryPolyDataMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLLowMemoryPolyDataMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLLowMemoryPolyDataMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLLowMemoryPolyDataMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLLowMemoryPolyDataMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLLowMemoryPolyDataMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLLowMemoryPolyDataMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLLowMemoryPolyDataMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLLowMemoryPolyDataMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ShallowCopy__0(void* self, void* m) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ShallowCopy__0(void* self, void* m) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->ShallowCopy(static_cast<vtkAbstractMapper*>(m));
 }
 
-extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetMaximumNumberOfTriangles__0(void* self, void* ren) {
+extern "C" int64_t vtkOpenGLLowMemoryPolyDataMapper__GetMaximumNumberOfTriangles__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->GetMaximumNumberOfTriangles(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPiece__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPiece__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RenderPiece(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceStart__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceStart__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RenderPieceStart(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceDraw__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceDraw__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RenderPieceDraw(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceFinish__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RenderPieceFinish__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RenderPieceFinish(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetPopulateSelectionSettings__0(void* self) {
+extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetPopulateSelectionSettings__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->GetPopulateSelectionSettings();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetPopulateSelectionSettings__0(void* self, bool v) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetPopulateSelectionSettings__0(void* self, bool v) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->SetPopulateSelectionSettings(v);
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetVBOShiftScaleMethod__0(void* self, int32_t method) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetVBOShiftScaleMethod__0(void* self, int32_t method) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->SetVBOShiftScaleMethod(method);
 }
 
-extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetSupportsSelection__0(void* self) {
+extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetSupportsSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->GetSupportsSelection();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetUseIndexedRendering__0(void* self, bool _arg) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__SetUseIndexedRendering__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->SetUseIndexedRendering(_arg);
 }
 
-extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetUseIndexedRendering__0(void* self) {
+extern "C" bool vtkOpenGLLowMemoryPolyDataMapper__GetUseIndexedRendering__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->GetUseIndexedRendering();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__UseIndexedRenderingOn__0(void* self) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__UseIndexedRenderingOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->UseIndexedRenderingOn();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__UseIndexedRenderingOff__0(void* self) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__UseIndexedRenderingOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->UseIndexedRenderingOff();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ResetModsToDefault__0(void* self) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__ResetModsToDefault__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->ResetModsToDefault();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__AddMod__0(void* self, const char* className) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__AddMod__0(void* self, const char* className) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->AddMod(std::string(className));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveMod__0(void* self, const char* className) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveMod__0(void* self, const char* className) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RemoveMod(std::string(className));
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveAllMods__0(void* self) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveAllMods__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RemoveAllMods();
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__MapDataArrayToVertexAttribute__0(void* self, const char* vertexAttributeName, const char* dataArrayName, int32_t fieldAssociation, int32_t componentno) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__MapDataArrayToVertexAttribute__0(void* self, const char* vertexAttributeName, const char* dataArrayName, int32_t fieldAssociation, int32_t componentno) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->MapDataArrayToVertexAttribute(vertexAttributeName, dataArrayName, fieldAssociation, componentno);
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__MapDataArrayToMultiTextureAttribute__0(void* self, const char* tname, const char* dataArrayName, int32_t fieldAssociation, int32_t componentno) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__MapDataArrayToMultiTextureAttribute__0(void* self, const char* tname, const char* dataArrayName, int32_t fieldAssociation, int32_t componentno) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->MapDataArrayToMultiTextureAttribute(tname, dataArrayName, fieldAssociation, componentno);
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveVertexAttributeMapping__0(void* self, const char* vertexAttributeName) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveVertexAttributeMapping__0(void* self, const char* vertexAttributeName) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RemoveVertexAttributeMapping(vertexAttributeName);
 }
 
-extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveAllVertexAttributeMappings__0(void* self) {
+extern "C" void vtkOpenGLLowMemoryPolyDataMapper__RemoveAllVertexAttributeMappings__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLLowMemoryPolyDataMapper*>(self)->RemoveAllVertexAttributeMappings();
 }

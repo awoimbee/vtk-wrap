@@ -7,186 +7,186 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkBinCellDataFilter__vtk_wrap_new() { return static_cast<void*>(vtkBinCellDataFilter::New()); }
+extern "C" void* vtkBinCellDataFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBinCellDataFilter::New()); }
 
-extern "C" int32_t vtkBinCellDataFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBinCellDataFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkBinCellDataFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBinCellDataFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBinCellDataFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBinCellDataFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkBinCellDataFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBinCellDataFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBinCellDataFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBinCellDataFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBinCellDataFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBinCellDataFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBinCellDataFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBinCellDataFilter__SetValue__0(void* self, int32_t i, double value) {
+extern "C" void vtkBinCellDataFilter__SetValue__0(void* self, int32_t i, double value) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetValue(i, value);
 }
 
-extern "C" double vtkBinCellDataFilter__GetValue__0(void* self, int32_t i) {
+extern "C" double vtkBinCellDataFilter__GetValue__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetValue(i);
 }
 
-extern "C" void vtkBinCellDataFilter__SetNumberOfBins__0(void* self, int32_t numBins) {
+extern "C" void vtkBinCellDataFilter__SetNumberOfBins__0(void* self, int32_t numBins) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetNumberOfBins(numBins);
 }
 
-extern "C" int64_t vtkBinCellDataFilter__GetNumberOfBins__0(void* self) {
+extern "C" int64_t vtkBinCellDataFilter__GetNumberOfBins__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetNumberOfBins();
 }
 
-extern "C" void vtkBinCellDataFilter__GenerateValues__0(void* self, int32_t numBins, double* range) {
+extern "C" void vtkBinCellDataFilter__GenerateValues__0(void* self, int32_t numBins, double* range) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->GenerateValues(numBins, range);
 }
 
-extern "C" void vtkBinCellDataFilter__GenerateValues__1(void* self, int32_t numBins, double rangeStart, double rangeEnd) {
+extern "C" void vtkBinCellDataFilter__GenerateValues__1(void* self, int32_t numBins, double rangeStart, double rangeEnd) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->GenerateValues(numBins, rangeStart, rangeEnd);
 }
 
-extern "C" void vtkBinCellDataFilter__SetSourceData__0(void* self, void* source) {
+extern "C" void vtkBinCellDataFilter__SetSourceData__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetSourceData(static_cast<vtkDataObject*>(source));
 }
 
-extern "C" void* vtkBinCellDataFilter__GetSource__0(void* self) {
+extern "C" void* vtkBinCellDataFilter__GetSource__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBinCellDataFilter*>(self)->GetSource());
 }
 
-extern "C" void vtkBinCellDataFilter__SetSourceConnection__0(void* self, void* algOutput) {
+extern "C" void vtkBinCellDataFilter__SetSourceConnection__0(void* self, void* algOutput) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetSourceConnection(static_cast<vtkAlgorithmOutput*>(algOutput));
 }
 
-extern "C" void vtkBinCellDataFilter__SetSpatialMatch__0(void* self, int32_t _arg) {
+extern "C" void vtkBinCellDataFilter__SetSpatialMatch__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetSpatialMatch(_arg);
 }
 
-extern "C" int32_t vtkBinCellDataFilter__GetSpatialMatch__0(void* self) {
+extern "C" int32_t vtkBinCellDataFilter__GetSpatialMatch__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetSpatialMatch();
 }
 
-extern "C" void vtkBinCellDataFilter__SpatialMatchOn__0(void* self) {
+extern "C" void vtkBinCellDataFilter__SpatialMatchOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SpatialMatchOn();
 }
 
-extern "C" void vtkBinCellDataFilter__SpatialMatchOff__0(void* self) {
+extern "C" void vtkBinCellDataFilter__SpatialMatchOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SpatialMatchOff();
 }
 
-extern "C" void vtkBinCellDataFilter__SetStoreNumberOfNonzeroBins__0(void* self, bool _arg) {
+extern "C" void vtkBinCellDataFilter__SetStoreNumberOfNonzeroBins__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetStoreNumberOfNonzeroBins(_arg);
 }
 
-extern "C" void vtkBinCellDataFilter__StoreNumberOfNonzeroBinsOn__0(void* self) {
+extern "C" void vtkBinCellDataFilter__StoreNumberOfNonzeroBinsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->StoreNumberOfNonzeroBinsOn();
 }
 
-extern "C" void vtkBinCellDataFilter__StoreNumberOfNonzeroBinsOff__0(void* self) {
+extern "C" void vtkBinCellDataFilter__StoreNumberOfNonzeroBinsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->StoreNumberOfNonzeroBinsOff();
 }
 
-extern "C" bool vtkBinCellDataFilter__GetStoreNumberOfNonzeroBins__0(void* self) {
+extern "C" bool vtkBinCellDataFilter__GetStoreNumberOfNonzeroBins__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetStoreNumberOfNonzeroBins();
 }
 
-extern "C" void vtkBinCellDataFilter__SetNumberOfNonzeroBinsArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkBinCellDataFilter__SetNumberOfNonzeroBinsArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetNumberOfNonzeroBinsArrayName(_arg);
 }
 
-extern "C" void vtkBinCellDataFilter__SetTolerance__0(void* self, double _arg) {
+extern "C" void vtkBinCellDataFilter__SetTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetTolerance(_arg);
 }
 
-extern "C" double vtkBinCellDataFilter__GetTolerance__0(void* self) {
+extern "C" double vtkBinCellDataFilter__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetTolerance();
 }
 
-extern "C" void vtkBinCellDataFilter__SetComputeTolerance__0(void* self, bool _arg) {
+extern "C" void vtkBinCellDataFilter__SetComputeTolerance__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetComputeTolerance(_arg);
 }
 
-extern "C" void vtkBinCellDataFilter__ComputeToleranceOn__0(void* self) {
+extern "C" void vtkBinCellDataFilter__ComputeToleranceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->ComputeToleranceOn();
 }
 
-extern "C" void vtkBinCellDataFilter__ComputeToleranceOff__0(void* self) {
+extern "C" void vtkBinCellDataFilter__ComputeToleranceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->ComputeToleranceOff();
 }
 
-extern "C" bool vtkBinCellDataFilter__GetComputeTolerance__0(void* self) {
+extern "C" bool vtkBinCellDataFilter__GetComputeTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetComputeTolerance();
 }
 
-extern "C" void vtkBinCellDataFilter__SetArrayComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkBinCellDataFilter__SetArrayComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetArrayComponent(_arg);
 }
 
-extern "C" int32_t vtkBinCellDataFilter__GetArrayComponent__0(void* self) {
+extern "C" int32_t vtkBinCellDataFilter__GetArrayComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetArrayComponent();
 }
 
-extern "C" void vtkBinCellDataFilter__SetCellOverlapMethod__0(void* self, int32_t _arg) {
+extern "C" void vtkBinCellDataFilter__SetCellOverlapMethod__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetCellOverlapMethod(_arg);
 }
 
-extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethodMinValue__0(void* self) {
+extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethodMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetCellOverlapMethodMinValue();
 }
 
-extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethodMaxValue__0(void* self) {
+extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethodMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetCellOverlapMethodMaxValue();
 }
 
-extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethod__0(void* self) {
+extern "C" int32_t vtkBinCellDataFilter__GetCellOverlapMethod__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBinCellDataFilter*>(self)->GetCellOverlapMethod();
 }
 
-extern "C" void vtkBinCellDataFilter__SetCellLocator__0(void* self, void* cellLocator) {
+extern "C" void vtkBinCellDataFilter__SetCellLocator__0(void* self, void* cellLocator) noexcept {
   (void)self;
   static_cast<vtkBinCellDataFilter*>(self)->SetCellLocator(static_cast<vtkAbstractCellLocator*>(cellLocator));
 }
 
-extern "C" void* vtkBinCellDataFilter__GetCellLocator__0(void* self) {
+extern "C" void* vtkBinCellDataFilter__GetCellLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBinCellDataFilter*>(self)->GetCellLocator());
 }

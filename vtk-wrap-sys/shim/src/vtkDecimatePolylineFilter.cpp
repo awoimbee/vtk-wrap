@@ -5,91 +5,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDecimatePolylineFilter__vtk_wrap_new() { return static_cast<void*>(vtkDecimatePolylineFilter::New()); }
+extern "C" void* vtkDecimatePolylineFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDecimatePolylineFilter::New()); }
 
-extern "C" int32_t vtkDecimatePolylineFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDecimatePolylineFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDecimatePolylineFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDecimatePolylineFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDecimatePolylineFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDecimatePolylineFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDecimatePolylineFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDecimatePolylineFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDecimatePolylineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDecimatePolylineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDecimatePolylineFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDecimatePolylineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDecimatePolylineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDecimatePolylineFilter__SetTargetReduction__0(void* self, double _arg) {
+extern "C" void vtkDecimatePolylineFilter__SetTargetReduction__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDecimatePolylineFilter*>(self)->SetTargetReduction(_arg);
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetTargetReductionMinValue__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetTargetReductionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetTargetReductionMinValue();
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetTargetReductionMaxValue__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetTargetReductionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetTargetReductionMaxValue();
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetTargetReduction__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetTargetReduction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetTargetReduction();
 }
 
-extern "C" void vtkDecimatePolylineFilter__SetMaximumError__0(void* self, double _arg) {
+extern "C" void vtkDecimatePolylineFilter__SetMaximumError__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDecimatePolylineFilter*>(self)->SetMaximumError(_arg);
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetMaximumErrorMinValue__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetMaximumErrorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetMaximumErrorMinValue();
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetMaximumErrorMaxValue__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetMaximumErrorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetMaximumErrorMaxValue();
 }
 
-extern "C" double vtkDecimatePolylineFilter__GetMaximumError__0(void* self) {
+extern "C" double vtkDecimatePolylineFilter__GetMaximumError__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetMaximumError();
 }
 
-extern "C" void vtkDecimatePolylineFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkDecimatePolylineFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDecimatePolylineFilter*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkDecimatePolylineFilter__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkDecimatePolylineFilter__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" void vtkDecimatePolylineFilter__SetDecimationStrategy__0(void* self, void* _arg) {
+extern "C" void vtkDecimatePolylineFilter__SetDecimationStrategy__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkDecimatePolylineFilter*>(self)->SetDecimationStrategy(static_cast<vtkDecimatePolylineStrategy*>(_arg));
 }
 
-extern "C" void* vtkDecimatePolylineFilter__GetDecimationStrategy__0(void* self) {
+extern "C" void* vtkDecimatePolylineFilter__GetDecimationStrategy__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDecimatePolylineFilter*>(self)->GetDecimationStrategy());
 }
 
-extern "C" unsigned long vtkDecimatePolylineFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkDecimatePolylineFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineFilter*>(self)->GetMTime();
 }

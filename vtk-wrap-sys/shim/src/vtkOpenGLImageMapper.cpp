@@ -9,50 +9,50 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLImageMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLImageMapper::New()); }
+extern "C" void* vtkOpenGLImageMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLImageMapper::New()); }
 
-extern "C" void* vtkOpenGLImageMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLImageMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLImageMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLImageMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLImageMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLImageMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLImageMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLImageMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLImageMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLImageMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLImageMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLImageMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLImageMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLImageMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLImageMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLImageMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLImageMapper__RenderOverlay__0(void* self, void* viewport, void* actor) {
+extern "C" void vtkOpenGLImageMapper__RenderOverlay__0(void* self, void* viewport, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageMapper*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void vtkOpenGLImageMapper__RenderData__0(void* self, void* viewport, void* data, void* actor) {
+extern "C" void vtkOpenGLImageMapper__RenderData__0(void* self, void* viewport, void* data, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageMapper*>(self)->RenderData(static_cast<vtkViewport*>(viewport), static_cast<vtkImageData*>(data), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void vtkOpenGLImageMapper__DrawPixels__0(void* self, void* viewport, int32_t width, int32_t height, int32_t numComponents, void* data) {
+extern "C" void vtkOpenGLImageMapper__DrawPixels__0(void* self, void* viewport, int32_t width, int32_t height, int32_t numComponents, void* data) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageMapper*>(self)->DrawPixels(static_cast<vtkViewport*>(viewport), width, height, numComponents, data);
 }
 
-extern "C" void vtkOpenGLImageMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkOpenGLImageMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

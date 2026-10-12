@@ -6,231 +6,231 @@
 #include "vtkScalarTree.h"
 #include <string>
 
-extern "C" void* vtkContourFilter__vtk_wrap_new() { return static_cast<void*>(vtkContourFilter::New()); }
+extern "C" void* vtkContourFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContourFilter::New()); }
 
-extern "C" int32_t vtkContourFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContourFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkContourFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContourFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContourFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContourFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkContourFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContourFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContourFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContourFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContourFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContourFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContourFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContourFilter__SetValue__0(void* self, int32_t i, double value) {
+extern "C" void vtkContourFilter__SetValue__0(void* self, int32_t i, double value) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetValue(i, value);
 }
 
-extern "C" double vtkContourFilter__GetValue__0(void* self, int32_t i) {
+extern "C" double vtkContourFilter__GetValue__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetValue(i);
 }
 
-extern "C" void vtkContourFilter__SetNumberOfContours__0(void* self, int32_t number) {
+extern "C" void vtkContourFilter__SetNumberOfContours__0(void* self, int32_t number) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetNumberOfContours(number);
 }
 
-extern "C" int32_t vtkContourFilter__GetNumberOfContours__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetNumberOfContours__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetNumberOfContours();
 }
 
-extern "C" void vtkContourFilter__GenerateValues__0(void* self, int32_t numContours, double* range) {
+extern "C" void vtkContourFilter__GenerateValues__0(void* self, int32_t numContours, double* range) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->GenerateValues(numContours, range);
 }
 
-extern "C" void vtkContourFilter__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) {
+extern "C" void vtkContourFilter__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->GenerateValues(numContours, rangeStart, rangeEnd);
 }
 
-extern "C" unsigned long vtkContourFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkContourFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetMTime();
 }
 
-extern "C" void vtkContourFilter__SetComputeNormals__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetComputeNormals__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetComputeNormals(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetComputeNormals__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetComputeNormals__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetComputeNormals();
 }
 
-extern "C" void vtkContourFilter__ComputeNormalsOn__0(void* self) {
+extern "C" void vtkContourFilter__ComputeNormalsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeNormalsOn();
 }
 
-extern "C" void vtkContourFilter__ComputeNormalsOff__0(void* self) {
+extern "C" void vtkContourFilter__ComputeNormalsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeNormalsOff();
 }
 
-extern "C" void vtkContourFilter__SetComputeGradients__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetComputeGradients__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetComputeGradients(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetComputeGradients__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetComputeGradients__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetComputeGradients();
 }
 
-extern "C" void vtkContourFilter__ComputeGradientsOn__0(void* self) {
+extern "C" void vtkContourFilter__ComputeGradientsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeGradientsOn();
 }
 
-extern "C" void vtkContourFilter__ComputeGradientsOff__0(void* self) {
+extern "C" void vtkContourFilter__ComputeGradientsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeGradientsOff();
 }
 
-extern "C" void vtkContourFilter__SetComputeScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetComputeScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetComputeScalars(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetComputeScalars__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetComputeScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetComputeScalars();
 }
 
-extern "C" void vtkContourFilter__ComputeScalarsOn__0(void* self) {
+extern "C" void vtkContourFilter__ComputeScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeScalarsOn();
 }
 
-extern "C" void vtkContourFilter__ComputeScalarsOff__0(void* self) {
+extern "C" void vtkContourFilter__ComputeScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->ComputeScalarsOff();
 }
 
-extern "C" void vtkContourFilter__SetUseScalarTree__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetUseScalarTree__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetUseScalarTree(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetUseScalarTree__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetUseScalarTree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetUseScalarTree();
 }
 
-extern "C" void vtkContourFilter__UseScalarTreeOn__0(void* self) {
+extern "C" void vtkContourFilter__UseScalarTreeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->UseScalarTreeOn();
 }
 
-extern "C" void vtkContourFilter__UseScalarTreeOff__0(void* self) {
+extern "C" void vtkContourFilter__UseScalarTreeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->UseScalarTreeOff();
 }
 
-extern "C" void vtkContourFilter__SetScalarTree__0(void* self, void* arg0) {
+extern "C" void vtkContourFilter__SetScalarTree__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetScalarTree(static_cast<vtkScalarTree*>(arg0));
 }
 
-extern "C" void* vtkContourFilter__GetScalarTree__0(void* self) {
+extern "C" void* vtkContourFilter__GetScalarTree__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContourFilter*>(self)->GetScalarTree());
 }
 
-extern "C" void vtkContourFilter__SetLocator__0(void* self, void* locator) {
+extern "C" void vtkContourFilter__SetLocator__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetLocator(static_cast<vtkIncrementalPointLocator*>(locator));
 }
 
-extern "C" void* vtkContourFilter__GetLocator__0(void* self) {
+extern "C" void* vtkContourFilter__GetLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContourFilter*>(self)->GetLocator());
 }
 
-extern "C" void vtkContourFilter__CreateDefaultLocator__0(void* self) {
+extern "C" void vtkContourFilter__CreateDefaultLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->CreateDefaultLocator();
 }
 
-extern "C" void vtkContourFilter__SetArrayComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetArrayComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetArrayComponent(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetArrayComponent__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetArrayComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetArrayComponent();
 }
 
-extern "C" void vtkContourFilter__SetGenerateTriangles__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetGenerateTriangles__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetGenerateTriangles(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetGenerateTriangles__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetGenerateTriangles__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetGenerateTriangles();
 }
 
-extern "C" void vtkContourFilter__GenerateTrianglesOn__0(void* self) {
+extern "C" void vtkContourFilter__GenerateTrianglesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->GenerateTrianglesOn();
 }
 
-extern "C" void vtkContourFilter__GenerateTrianglesOff__0(void* self) {
+extern "C" void vtkContourFilter__GenerateTrianglesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->GenerateTrianglesOff();
 }
 
-extern "C" void vtkContourFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkContourFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkContourFilter__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkContourFilter__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" void vtkContourFilter__SetFastMode__0(void* self, bool _arg) {
+extern "C" void vtkContourFilter__SetFastMode__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetFastMode(_arg);
 }
 
-extern "C" bool vtkContourFilter__GetFastMode__0(void* self) {
+extern "C" bool vtkContourFilter__GetFastMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourFilter*>(self)->GetFastMode();
 }
 
-extern "C" void vtkContourFilter__FastModeOn__0(void* self) {
+extern "C" void vtkContourFilter__FastModeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->FastModeOn();
 }
 
-extern "C" void vtkContourFilter__FastModeOff__0(void* self) {
+extern "C" void vtkContourFilter__FastModeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->FastModeOff();
 }
 
-extern "C" void vtkContourFilter__SetInputArray__0(void* self, const char* name) {
+extern "C" void vtkContourFilter__SetInputArray__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkContourFilter*>(self)->SetInputArray(std::string(name));
 }

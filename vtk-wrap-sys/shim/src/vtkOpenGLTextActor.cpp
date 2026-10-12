@@ -6,35 +6,35 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkOpenGLTextActor__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLTextActor::New()); }
+extern "C" void* vtkOpenGLTextActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLTextActor::New()); }
 
-extern "C" void* vtkOpenGLTextActor__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLTextActor__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLTextActor::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLTextActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLTextActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLTextActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLTextActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLTextActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLTextActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLTextActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLTextActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLTextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLTextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLTextActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLTextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLTextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkOpenGLTextActor__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkOpenGLTextActor__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextActor*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }

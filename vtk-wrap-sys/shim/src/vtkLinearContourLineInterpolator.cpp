@@ -6,31 +6,31 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkLinearContourLineInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkLinearContourLineInterpolator::New()); }
+extern "C" void* vtkLinearContourLineInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLinearContourLineInterpolator::New()); }
 
-extern "C" int32_t vtkLinearContourLineInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLinearContourLineInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkLinearContourLineInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLinearContourLineInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLinearContourLineInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLinearContourLineInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLinearContourLineInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkLinearContourLineInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLinearContourLineInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLinearContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLinearContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLinearContourLineInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLinearContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLinearContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLinearContourLineInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkLinearContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) {
+extern "C" int32_t vtkLinearContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) noexcept {
   (void)self;
   return static_cast<vtkLinearContourLineInterpolator*>(self)->InterpolateLine(static_cast<vtkRenderer*>(ren), static_cast<vtkContourRepresentation*>(rep), idx1, idx2);
 }

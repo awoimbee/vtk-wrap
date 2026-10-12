@@ -6,51 +6,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageToPoints__vtk_wrap_new() { return static_cast<void*>(vtkImageToPoints::New()); }
+extern "C" void* vtkImageToPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageToPoints::New()); }
 
-extern "C" int32_t vtkImageToPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageToPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageToPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageToPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageToPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageToPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageToPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageToPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageToPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageToPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageToPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageToPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageToPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageToPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageToPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageToPoints__SetStencilConnection__0(void* self, void* port) {
+extern "C" void vtkImageToPoints__SetStencilConnection__0(void* self, void* port) noexcept {
   (void)self;
   static_cast<vtkImageToPoints*>(self)->SetStencilConnection(static_cast<vtkAlgorithmOutput*>(port));
 }
 
-extern "C" void* vtkImageToPoints__GetStencilConnection__0(void* self) {
+extern "C" void* vtkImageToPoints__GetStencilConnection__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageToPoints*>(self)->GetStencilConnection());
 }
 
-extern "C" void vtkImageToPoints__SetStencilData__0(void* self, void* stencil) {
+extern "C" void vtkImageToPoints__SetStencilData__0(void* self, void* stencil) noexcept {
   (void)self;
   static_cast<vtkImageToPoints*>(self)->SetStencilData(static_cast<vtkImageStencilData*>(stencil));
 }
 
-extern "C" void vtkImageToPoints__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkImageToPoints__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageToPoints*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkImageToPoints__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkImageToPoints__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageToPoints*>(self)->GetOutputPointsPrecision();
 }

@@ -5,36 +5,36 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkPolyDataCollection__vtk_wrap_new() { return static_cast<void*>(vtkPolyDataCollection::New()); }
+extern "C" void* vtkPolyDataCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyDataCollection::New()); }
 
-extern "C" int32_t vtkPolyDataCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyDataCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyDataCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyDataCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyDataCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyDataCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyDataCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyDataCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyDataCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyDataCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyDataCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyDataCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyDataCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolyDataCollection__AddItem__0(void* self, void* pd) {
+extern "C" void vtkPolyDataCollection__AddItem__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkPolyDataCollection*>(self)->AddItem(static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void* vtkPolyDataCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkPolyDataCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPolyDataCollection*>(self)->GetNextItem());
 }

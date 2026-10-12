@@ -6,31 +6,31 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkOSPRayVolumeInterface__vtk_wrap_new() { return static_cast<void*>(vtkOSPRayVolumeInterface::New()); }
+extern "C" void* vtkOSPRayVolumeInterface__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOSPRayVolumeInterface::New()); }
 
-extern "C" int32_t vtkOSPRayVolumeInterface__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOSPRayVolumeInterface__IsTypeOf__0(const char* type_) noexcept {
   return vtkOSPRayVolumeInterface::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOSPRayVolumeInterface__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOSPRayVolumeInterface__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOSPRayVolumeInterface*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOSPRayVolumeInterface__SafeDownCast__0(void* o) {
+extern "C" void* vtkOSPRayVolumeInterface__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOSPRayVolumeInterface::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOSPRayVolumeInterface__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOSPRayVolumeInterface__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOSPRayVolumeInterface::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOSPRayVolumeInterface__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOSPRayVolumeInterface__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOSPRayVolumeInterface*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOSPRayVolumeInterface__Render__0(void* self, void* arg0, void* arg1) {
+extern "C" void vtkOSPRayVolumeInterface__Render__0(void* self, void* arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkOSPRayVolumeInterface*>(self)->Render(static_cast<vtkRenderer*>(arg0), static_cast<vtkVolume*>(arg1));
 }

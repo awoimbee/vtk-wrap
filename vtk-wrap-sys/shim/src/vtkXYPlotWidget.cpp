@@ -5,41 +5,41 @@
 #include "vtkXYPlotActor.h"
 #include <string>
 
-extern "C" void* vtkXYPlotWidget__vtk_wrap_new() { return static_cast<void*>(vtkXYPlotWidget::New()); }
+extern "C" void* vtkXYPlotWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkXYPlotWidget::New()); }
 
-extern "C" int32_t vtkXYPlotWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkXYPlotWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkXYPlotWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkXYPlotWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkXYPlotWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkXYPlotWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkXYPlotWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkXYPlotWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkXYPlotWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkXYPlotWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkXYPlotWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkXYPlotWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkXYPlotWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkXYPlotWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkXYPlotWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkXYPlotWidget__SetXYPlotActor__0(void* self, void* arg0) {
+extern "C" void vtkXYPlotWidget__SetXYPlotActor__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkXYPlotWidget*>(self)->SetXYPlotActor(static_cast<vtkXYPlotActor*>(arg0));
 }
 
-extern "C" void* vtkXYPlotWidget__GetXYPlotActor__0(void* self) {
+extern "C" void* vtkXYPlotWidget__GetXYPlotActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkXYPlotWidget*>(self)->GetXYPlotActor());
 }
 
-extern "C" void vtkXYPlotWidget__SetEnabled__0(void* self, int32_t arg0) {
+extern "C" void vtkXYPlotWidget__SetEnabled__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkXYPlotWidget*>(self)->SetEnabled(arg0);
 }

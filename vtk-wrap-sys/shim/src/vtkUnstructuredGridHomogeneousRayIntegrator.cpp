@@ -7,46 +7,46 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridHomogeneousRayIntegrator__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridHomogeneousRayIntegrator::New()); }
+extern "C" void* vtkUnstructuredGridHomogeneousRayIntegrator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridHomogeneousRayIntegrator::New()); }
 
-extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridHomogeneousRayIntegrator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridHomogeneousRayIntegrator__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridHomogeneousRayIntegrator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridHomogeneousRayIntegrator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridHomogeneousRayIntegrator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridHomogeneousRayIntegrator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridHomogeneousRayIntegrator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridHomogeneousRayIntegrator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridHomogeneousRayIntegrator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__Initialize__0(void* self, void* volume, void* scalars) {
+extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__Initialize__0(void* self, void* volume, void* scalars) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->Initialize(static_cast<vtkVolume*>(volume), static_cast<vtkDataArray*>(scalars));
 }
 
-extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__Integrate__0(void* self, void* intersectionLengths, void* nearIntersections, void* farIntersections, float* color) {
+extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__Integrate__0(void* self, void* intersectionLengths, void* nearIntersections, void* farIntersections, float* color) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->Integrate(static_cast<vtkDoubleArray*>(intersectionLengths), static_cast<vtkDataArray*>(nearIntersections), static_cast<vtkDataArray*>(farIntersections), color);
 }
 
-extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__SetTransferFunctionTableSize__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridHomogeneousRayIntegrator__SetTransferFunctionTableSize__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->SetTransferFunctionTableSize(_arg);
 }
 
-extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__GetTransferFunctionTableSize__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridHomogeneousRayIntegrator__GetTransferFunctionTableSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridHomogeneousRayIntegrator*>(self)->GetTransferFunctionTableSize();
 }

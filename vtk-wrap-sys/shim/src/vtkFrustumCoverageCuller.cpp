@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFrustumCoverageCuller__vtk_wrap_new() { return static_cast<void*>(vtkFrustumCoverageCuller::New()); }
+extern "C" void* vtkFrustumCoverageCuller__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFrustumCoverageCuller::New()); }
 
-extern "C" int32_t vtkFrustumCoverageCuller__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFrustumCoverageCuller__IsTypeOf__0(const char* type_) noexcept {
   return vtkFrustumCoverageCuller::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFrustumCoverageCuller__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFrustumCoverageCuller__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFrustumCoverageCuller__SafeDownCast__0(void* o) {
+extern "C" void* vtkFrustumCoverageCuller__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFrustumCoverageCuller::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFrustumCoverageCuller__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFrustumCoverageCuller__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFrustumCoverageCuller::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFrustumCoverageCuller__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFrustumCoverageCuller__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetMinimumCoverage__0(void* self, double _arg) {
+extern "C" void vtkFrustumCoverageCuller__SetMinimumCoverage__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetMinimumCoverage(_arg);
 }
 
-extern "C" double vtkFrustumCoverageCuller__GetMinimumCoverage__0(void* self) {
+extern "C" double vtkFrustumCoverageCuller__GetMinimumCoverage__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetMinimumCoverage();
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetMaximumCoverage__0(void* self, double _arg) {
+extern "C" void vtkFrustumCoverageCuller__SetMaximumCoverage__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetMaximumCoverage(_arg);
 }
 
-extern "C" double vtkFrustumCoverageCuller__GetMaximumCoverage__0(void* self) {
+extern "C" double vtkFrustumCoverageCuller__GetMaximumCoverage__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetMaximumCoverage();
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetSortingStyle__0(void* self, int32_t _arg) {
+extern "C" void vtkFrustumCoverageCuller__SetSortingStyle__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetSortingStyle(_arg);
 }
 
-extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyleMinValue__0(void* self) {
+extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyleMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetSortingStyleMinValue();
 }
 
-extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyleMaxValue__0(void* self) {
+extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyleMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetSortingStyleMaxValue();
 }
 
-extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyle__0(void* self) {
+extern "C" int32_t vtkFrustumCoverageCuller__GetSortingStyle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetSortingStyle();
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToNone__0(void* self) {
+extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToNone__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetSortingStyleToNone();
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToBackToFront__0(void* self) {
+extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToBackToFront__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetSortingStyleToBackToFront();
 }
 
-extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToFrontToBack__0(void* self) {
+extern "C" void vtkFrustumCoverageCuller__SetSortingStyleToFrontToBack__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFrustumCoverageCuller*>(self)->SetSortingStyleToFrontToBack();
 }
 
-extern "C" const char* vtkFrustumCoverageCuller__GetSortingStyleAsString__0(void* self) {
+extern "C" const char* vtkFrustumCoverageCuller__GetSortingStyleAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustumCoverageCuller*>(self)->GetSortingStyleAsString();
 }

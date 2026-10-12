@@ -6,81 +6,81 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkImageActorPointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkImageActorPointPlacer::New()); }
+extern "C" void* vtkImageActorPointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageActorPointPlacer::New()); }
 
-extern "C" int32_t vtkImageActorPointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageActorPointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageActorPointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageActorPointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageActorPointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageActorPointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageActorPointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageActorPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageActorPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageActorPointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageActorPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageActorPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkImageActorPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkImageActorPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkImageActorPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkImageActorPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__UpdateWorldPosition__0(void* self, void* ren, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkImageActorPointPlacer__UpdateWorldPosition__0(void* self, void* ren, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->UpdateWorldPosition(static_cast<vtkRenderer*>(ren), worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkImageActorPointPlacer__UpdateInternalState__0(void* self) {
+extern "C" int32_t vtkImageActorPointPlacer__UpdateInternalState__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActorPointPlacer*>(self)->UpdateInternalState();
 }
 
-extern "C" void vtkImageActorPointPlacer__SetImageActor__0(void* self, void* arg0) {
+extern "C" void vtkImageActorPointPlacer__SetImageActor__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageActorPointPlacer*>(self)->SetImageActor(static_cast<vtkImageActor*>(arg0));
 }
 
-extern "C" void* vtkImageActorPointPlacer__GetImageActor__0(void* self) {
+extern "C" void* vtkImageActorPointPlacer__GetImageActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageActorPointPlacer*>(self)->GetImageActor());
 }
 
-extern "C" void vtkImageActorPointPlacer__SetBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) {
+extern "C" void vtkImageActorPointPlacer__SetBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) noexcept {
   (void)self;
   static_cast<vtkImageActorPointPlacer*>(self)->SetBounds(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkImageActorPointPlacer__SetBounds__1(void* self, const double* _arg) {
+extern "C" void vtkImageActorPointPlacer__SetBounds__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkImageActorPointPlacer*>(self)->SetBounds(_arg);
 }
 
-extern "C" void vtkImageActorPointPlacer__SetWorldTolerance__0(void* self, double tol) {
+extern "C" void vtkImageActorPointPlacer__SetWorldTolerance__0(void* self, double tol) noexcept {
   (void)self;
   static_cast<vtkImageActorPointPlacer*>(self)->SetWorldTolerance(tol);
 }

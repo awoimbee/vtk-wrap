@@ -5,36 +5,36 @@
 #include "vtkStructuredPoints.h"
 #include <string>
 
-extern "C" void* vtkStructuredPointsCollection__vtk_wrap_new() { return static_cast<void*>(vtkStructuredPointsCollection::New()); }
+extern "C" void* vtkStructuredPointsCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredPointsCollection::New()); }
 
-extern "C" int32_t vtkStructuredPointsCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredPointsCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredPointsCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredPointsCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredPointsCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredPointsCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredPointsCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredPointsCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredPointsCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredPointsCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredPointsCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredPointsCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredPointsCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredPointsCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredPointsCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStructuredPointsCollection__AddItem__0(void* self, void* ds) {
+extern "C" void vtkStructuredPointsCollection__AddItem__0(void* self, void* ds) noexcept {
   (void)self;
   static_cast<vtkStructuredPointsCollection*>(self)->AddItem(static_cast<vtkStructuredPoints*>(ds));
 }
 
-extern "C" void* vtkStructuredPointsCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkStructuredPointsCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStructuredPointsCollection*>(self)->GetNextItem());
 }

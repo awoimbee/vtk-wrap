@@ -8,86 +8,86 @@
 #include "vtkTextPropertyCollection.h"
 #include <string>
 
-extern "C" void* vtkLabeledContourPolyDataItem__vtk_wrap_new() { return static_cast<void*>(vtkLabeledContourPolyDataItem::New()); }
+extern "C" void* vtkLabeledContourPolyDataItem__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLabeledContourPolyDataItem::New()); }
 
-extern "C" int32_t vtkLabeledContourPolyDataItem__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLabeledContourPolyDataItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkLabeledContourPolyDataItem::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLabeledContourPolyDataItem__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLabeledContourPolyDataItem__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabeledContourPolyDataItem*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLabeledContourPolyDataItem__SafeDownCast__0(void* o) {
+extern "C" void* vtkLabeledContourPolyDataItem__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLabeledContourPolyDataItem::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLabeledContourPolyDataItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLabeledContourPolyDataItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLabeledContourPolyDataItem::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLabeledContourPolyDataItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLabeledContourPolyDataItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabeledContourPolyDataItem*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkLabeledContourPolyDataItem__Paint__0(void* self, void* painter) {
+extern "C" bool vtkLabeledContourPolyDataItem__Paint__0(void* self, void* painter) noexcept {
   (void)self;
   return static_cast<vtkLabeledContourPolyDataItem*>(self)->Paint(static_cast<vtkContext2D*>(painter));
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__SetTextProperty__0(void* self, void* tprop) {
+extern "C" void vtkLabeledContourPolyDataItem__SetTextProperty__0(void* self, void* tprop) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->SetTextProperty(static_cast<vtkTextProperty*>(tprop));
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__SetTextProperties__0(void* self, void* coll) {
+extern "C" void vtkLabeledContourPolyDataItem__SetTextProperties__0(void* self, void* coll) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->SetTextProperties(static_cast<vtkTextPropertyCollection*>(coll));
 }
 
-extern "C" void* vtkLabeledContourPolyDataItem__GetTextProperties__0(void* self) {
+extern "C" void* vtkLabeledContourPolyDataItem__GetTextProperties__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabeledContourPolyDataItem*>(self)->GetTextProperties());
 }
 
-extern "C" void* vtkLabeledContourPolyDataItem__GetTextPropertyMapping__0(void* self) {
+extern "C" void* vtkLabeledContourPolyDataItem__GetTextPropertyMapping__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabeledContourPolyDataItem*>(self)->GetTextPropertyMapping());
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__SetTextPropertyMapping__0(void* self, void* mapping) {
+extern "C" void vtkLabeledContourPolyDataItem__SetTextPropertyMapping__0(void* self, void* mapping) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->SetTextPropertyMapping(static_cast<vtkDoubleArray*>(mapping));
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__SetLabelVisibility__0(void* self, bool _arg) {
+extern "C" void vtkLabeledContourPolyDataItem__SetLabelVisibility__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->SetLabelVisibility(_arg);
 }
 
-extern "C" bool vtkLabeledContourPolyDataItem__GetLabelVisibility__0(void* self) {
+extern "C" bool vtkLabeledContourPolyDataItem__GetLabelVisibility__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabeledContourPolyDataItem*>(self)->GetLabelVisibility();
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__LabelVisibilityOn__0(void* self) {
+extern "C" void vtkLabeledContourPolyDataItem__LabelVisibilityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->LabelVisibilityOn();
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__LabelVisibilityOff__0(void* self) {
+extern "C" void vtkLabeledContourPolyDataItem__LabelVisibilityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->LabelVisibilityOff();
 }
 
-extern "C" void vtkLabeledContourPolyDataItem__SetSkipDistance__0(void* self, double _arg) {
+extern "C" void vtkLabeledContourPolyDataItem__SetSkipDistance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkLabeledContourPolyDataItem*>(self)->SetSkipDistance(_arg);
 }
 
-extern "C" double vtkLabeledContourPolyDataItem__GetSkipDistance__0(void* self) {
+extern "C" double vtkLabeledContourPolyDataItem__GetSkipDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabeledContourPolyDataItem*>(self)->GetSkipDistance();
 }

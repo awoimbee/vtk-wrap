@@ -4,55 +4,55 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTextRenderer__vtk_wrap_new() { return static_cast<void*>(vtkTextRenderer::New()); }
+extern "C" void* vtkTextRenderer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTextRenderer::New()); }
 
-extern "C" int32_t vtkTextRenderer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextRenderer__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextRenderer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextRenderer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextRenderer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRenderer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextRenderer__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextRenderer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextRenderer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextRenderer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextRenderer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextRenderer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextRenderer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextRenderer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRenderer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTextRenderer__GetInstance__0() {
+extern "C" void* vtkTextRenderer__GetInstance__0() noexcept {
   return static_cast<void*>(vtkTextRenderer::GetInstance());
 }
 
-extern "C" void vtkTextRenderer__SetDefaultBackend__0(void* self, int32_t _arg) {
+extern "C" void vtkTextRenderer__SetDefaultBackend__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTextRenderer*>(self)->SetDefaultBackend(_arg);
 }
 
-extern "C" int32_t vtkTextRenderer__GetDefaultBackend__0(void* self) {
+extern "C" int32_t vtkTextRenderer__GetDefaultBackend__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRenderer*>(self)->GetDefaultBackend();
 }
 
-extern "C" bool vtkTextRenderer__FreeTypeIsSupported__0(void* self) {
+extern "C" bool vtkTextRenderer__FreeTypeIsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRenderer*>(self)->FreeTypeIsSupported();
 }
 
-extern "C" bool vtkTextRenderer__MathTextIsSupported__0(void* self) {
+extern "C" bool vtkTextRenderer__MathTextIsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRenderer*>(self)->MathTextIsSupported();
 }
 
-extern "C" void vtkTextRenderer__SetScaleToPowerOfTwo__0(void* self, bool scale) {
+extern "C" void vtkTextRenderer__SetScaleToPowerOfTwo__0(void* self, bool scale) noexcept {
   (void)self;
   static_cast<vtkTextRenderer*>(self)->SetScaleToPowerOfTwo(scale);
 }

@@ -8,40 +8,40 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLES30PolyDataMapper2D__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLES30PolyDataMapper2D::New()); }
+extern "C" void* vtkOpenGLES30PolyDataMapper2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLES30PolyDataMapper2D::New()); }
 
-extern "C" int32_t vtkOpenGLES30PolyDataMapper2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLES30PolyDataMapper2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLES30PolyDataMapper2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLES30PolyDataMapper2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLES30PolyDataMapper2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLES30PolyDataMapper2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLES30PolyDataMapper2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLES30PolyDataMapper2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLES30PolyDataMapper2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLES30PolyDataMapper2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLES30PolyDataMapper2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLES30PolyDataMapper2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLES30PolyDataMapper2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLES30PolyDataMapper2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLES30PolyDataMapper2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOpenGLES30PolyDataMapper2D__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLES30PolyDataMapper2D__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLES30PolyDataMapper2D::CreateOverrideAttributes());
 }
 
-extern "C" void vtkOpenGLES30PolyDataMapper2D__RenderOverlay__0(void* self, void* viewport, void* actor) {
+extern "C" void vtkOpenGLES30PolyDataMapper2D__RenderOverlay__0(void* self, void* viewport, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLES30PolyDataMapper2D*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport), static_cast<vtkActor2D*>(actor));
 }
 
-extern "C" void vtkOpenGLES30PolyDataMapper2D__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkOpenGLES30PolyDataMapper2D__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOpenGLES30PolyDataMapper2D*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

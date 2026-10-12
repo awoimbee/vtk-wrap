@@ -6,165 +6,165 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__vtk_wrap_new() { return static_cast<void*>(vtkVolumeRayCastSpaceLeapingImageFilter::New()); }
+extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolumeRayCastSpaceLeapingImageFilter::New()); }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolumeRayCastSpaceLeapingImageFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolumeRayCastSpaceLeapingImageFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolumeRayCastSpaceLeapingImageFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetCurrentScalars__0(void* self, void* arg0) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetCurrentScalars__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetCurrentScalars(static_cast<vtkDataArray*>(arg0));
 }
 
-extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__GetCurrentScalars__0(void* self) {
+extern "C" void* vtkVolumeRayCastSpaceLeapingImageFilter__GetCurrentScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetCurrentScalars());
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetIndependentComponents__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetIndependentComponents__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetIndependentComponents(_arg);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetIndependentComponents__0(void* self) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetIndependentComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetIndependentComponents();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetComputeGradientOpacity__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetComputeGradientOpacity__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetComputeGradientOpacity(_arg);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetComputeGradientOpacity__0(void* self) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetComputeGradientOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetComputeGradientOpacity();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeGradientOpacityOn__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeGradientOpacityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->ComputeGradientOpacityOn();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeGradientOpacityOff__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeGradientOpacityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->ComputeGradientOpacityOff();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetComputeMinMax__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetComputeMinMax__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetComputeMinMax(_arg);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetComputeMinMax__0(void* self) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetComputeMinMax__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetComputeMinMax();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeMinMaxOn__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeMinMaxOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->ComputeMinMaxOn();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeMinMaxOff__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeMinMaxOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->ComputeMinMaxOff();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetUpdateGradientOpacityFlags__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetUpdateGradientOpacityFlags__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetUpdateGradientOpacityFlags(_arg);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetUpdateGradientOpacityFlags__0(void* self) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetUpdateGradientOpacityFlags__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetUpdateGradientOpacityFlags();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__UpdateGradientOpacityFlagsOn__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__UpdateGradientOpacityFlagsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->UpdateGradientOpacityFlagsOn();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__UpdateGradientOpacityFlagsOff__0(void* self) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__UpdateGradientOpacityFlagsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->UpdateGradientOpacityFlagsOff();
 }
 
-extern "C" unsigned long vtkVolumeRayCastSpaceLeapingImageFilter__GetLastMinMaxBuildTime__0(void* self) {
+extern "C" unsigned long vtkVolumeRayCastSpaceLeapingImageFilter__GetLastMinMaxBuildTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetLastMinMaxBuildTime();
 }
 
-extern "C" unsigned long vtkVolumeRayCastSpaceLeapingImageFilter__GetLastMinMaxFlagTime__0(void* self) {
+extern "C" unsigned long vtkVolumeRayCastSpaceLeapingImageFilter__GetLastMinMaxFlagTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetLastMinMaxFlagTime();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableShift__0(void* self, float _arg1, float _arg2, float _arg3, float _arg4) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableShift__0(void* self, float _arg1, float _arg2, float _arg3, float _arg4) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableShift(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableShift__1(void* self, const float* _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableShift__1(void* self, const float* _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableShift(_arg);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableScale__0(void* self, float _arg1, float _arg2, float _arg3, float _arg4) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableScale__0(void* self, float _arg1, float _arg2, float _arg3, float _arg4) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableScale(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableScale__1(void* self, const float* _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableScale__1(void* self, const float* _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableScale(_arg);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableSize__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableSize__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableSize(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetTableSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetTableSize(_arg);
 }
 
-extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfIndependentComponents__0(void* self) {
+extern "C" int32_t vtkVolumeRayCastSpaceLeapingImageFilter__GetNumberOfIndependentComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->GetNumberOfIndependentComponents();
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetCache__0(void* self, void* imageCache) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__SetCache__0(void* self, void* imageCache) noexcept {
   (void)self;
   static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->SetCache(static_cast<vtkImageData*>(imageCache));
 }
 
-extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeInputExtentsForOutput__0(int32_t* inExt, int32_t* inDim, int32_t* outExt, void* inData) {
+extern "C" void vtkVolumeRayCastSpaceLeapingImageFilter__ComputeInputExtentsForOutput__0(int32_t* inExt, int32_t* inDim, int32_t* outExt, void* inData) noexcept {
   vtkVolumeRayCastSpaceLeapingImageFilter::ComputeInputExtentsForOutput(inExt, inDim, outExt, static_cast<vtkImageData*>(inData));
 }
 
-extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__ComputeOffset__0(void* self, const int32_t* ext, const int32_t* wholeExt, int32_t nComponents) {
+extern "C" int64_t vtkVolumeRayCastSpaceLeapingImageFilter__ComputeOffset__0(void* self, const int32_t* ext, const int32_t* wholeExt, int32_t nComponents) noexcept {
   (void)self;
   return static_cast<vtkVolumeRayCastSpaceLeapingImageFilter*>(self)->ComputeOffset(ext, wholeExt, nComponents);
 }

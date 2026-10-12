@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkReverseSense__vtk_wrap_new() { return static_cast<void*>(vtkReverseSense::New()); }
+extern "C" void* vtkReverseSense__vtk_wrap_new() noexcept { return static_cast<void*>(vtkReverseSense::New()); }
 
-extern "C" int32_t vtkReverseSense__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkReverseSense__IsTypeOf__0(const char* type_) noexcept {
   return vtkReverseSense::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkReverseSense__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkReverseSense__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReverseSense*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkReverseSense__SafeDownCast__0(void* o) {
+extern "C" void* vtkReverseSense__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkReverseSense::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkReverseSense__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkReverseSense__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkReverseSense::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkReverseSense__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkReverseSense__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReverseSense*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkReverseSense__SetReverseCells__0(void* self, int32_t _arg) {
+extern "C" void vtkReverseSense__SetReverseCells__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->SetReverseCells(_arg);
 }
 
-extern "C" int32_t vtkReverseSense__GetReverseCells__0(void* self) {
+extern "C" int32_t vtkReverseSense__GetReverseCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkReverseSense*>(self)->GetReverseCells();
 }
 
-extern "C" void vtkReverseSense__ReverseCellsOn__0(void* self) {
+extern "C" void vtkReverseSense__ReverseCellsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->ReverseCellsOn();
 }
 
-extern "C" void vtkReverseSense__ReverseCellsOff__0(void* self) {
+extern "C" void vtkReverseSense__ReverseCellsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->ReverseCellsOff();
 }
 
-extern "C" void vtkReverseSense__SetReverseNormals__0(void* self, int32_t _arg) {
+extern "C" void vtkReverseSense__SetReverseNormals__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->SetReverseNormals(_arg);
 }
 
-extern "C" int32_t vtkReverseSense__GetReverseNormals__0(void* self) {
+extern "C" int32_t vtkReverseSense__GetReverseNormals__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkReverseSense*>(self)->GetReverseNormals();
 }
 
-extern "C" void vtkReverseSense__ReverseNormalsOn__0(void* self) {
+extern "C" void vtkReverseSense__ReverseNormalsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->ReverseNormalsOn();
 }
 
-extern "C" void vtkReverseSense__ReverseNormalsOff__0(void* self) {
+extern "C" void vtkReverseSense__ReverseNormalsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkReverseSense*>(self)->ReverseNormalsOff();
 }

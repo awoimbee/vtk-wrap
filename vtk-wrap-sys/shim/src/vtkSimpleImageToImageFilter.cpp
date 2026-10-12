@@ -4,24 +4,24 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkSimpleImageToImageFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSimpleImageToImageFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkSimpleImageToImageFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSimpleImageToImageFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSimpleImageToImageFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleImageToImageFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSimpleImageToImageFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkSimpleImageToImageFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSimpleImageToImageFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSimpleImageToImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSimpleImageToImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSimpleImageToImageFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSimpleImageToImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSimpleImageToImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleImageToImageFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

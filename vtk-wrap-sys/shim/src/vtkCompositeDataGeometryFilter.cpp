@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCompositeDataGeometryFilter__vtk_wrap_new() { return static_cast<void*>(vtkCompositeDataGeometryFilter::New()); }
+extern "C" void* vtkCompositeDataGeometryFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompositeDataGeometryFilter::New()); }
 
-extern "C" int32_t vtkCompositeDataGeometryFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeDataGeometryFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeDataGeometryFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeDataGeometryFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeDataGeometryFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataGeometryFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeDataGeometryFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeDataGeometryFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeDataGeometryFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeDataGeometryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeDataGeometryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeDataGeometryFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeDataGeometryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeDataGeometryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataGeometryFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

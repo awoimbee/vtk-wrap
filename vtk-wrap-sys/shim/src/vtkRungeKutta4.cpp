@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRungeKutta4__vtk_wrap_new() { return static_cast<void*>(vtkRungeKutta4::New()); }
+extern "C" void* vtkRungeKutta4__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRungeKutta4::New()); }
 
-extern "C" int32_t vtkRungeKutta4__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRungeKutta4__IsTypeOf__0(const char* type_) noexcept {
   return vtkRungeKutta4::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRungeKutta4__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRungeKutta4__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRungeKutta4*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRungeKutta4__SafeDownCast__0(void* o) {
+extern "C" void* vtkRungeKutta4__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRungeKutta4::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRungeKutta4__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRungeKutta4__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRungeKutta4::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRungeKutta4__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRungeKutta4__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRungeKutta4*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

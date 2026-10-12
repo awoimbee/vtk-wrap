@@ -6,51 +6,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMatrixToLinearTransform__vtk_wrap_new() { return static_cast<void*>(vtkMatrixToLinearTransform::New()); }
+extern "C" void* vtkMatrixToLinearTransform__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMatrixToLinearTransform::New()); }
 
-extern "C" int32_t vtkMatrixToLinearTransform__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMatrixToLinearTransform__IsTypeOf__0(const char* type_) noexcept {
   return vtkMatrixToLinearTransform::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMatrixToLinearTransform__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMatrixToLinearTransform__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMatrixToLinearTransform*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMatrixToLinearTransform__SafeDownCast__0(void* o) {
+extern "C" void* vtkMatrixToLinearTransform__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMatrixToLinearTransform::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMatrixToLinearTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMatrixToLinearTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMatrixToLinearTransform::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMatrixToLinearTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMatrixToLinearTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMatrixToLinearTransform*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMatrixToLinearTransform__SetInput__0(void* self, void* arg0) {
+extern "C" void vtkMatrixToLinearTransform__SetInput__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMatrixToLinearTransform*>(self)->SetInput(static_cast<vtkMatrix4x4*>(arg0));
 }
 
-extern "C" void* vtkMatrixToLinearTransform__GetInput__0(void* self) {
+extern "C" void* vtkMatrixToLinearTransform__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMatrixToLinearTransform*>(self)->GetInput());
 }
 
-extern "C" void vtkMatrixToLinearTransform__Inverse__0(void* self) {
+extern "C" void vtkMatrixToLinearTransform__Inverse__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMatrixToLinearTransform*>(self)->Inverse();
 }
 
-extern "C" unsigned long vtkMatrixToLinearTransform__GetMTime__0(void* self) {
+extern "C" unsigned long vtkMatrixToLinearTransform__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMatrixToLinearTransform*>(self)->GetMTime();
 }
 
-extern "C" void* vtkMatrixToLinearTransform__MakeTransform__0(void* self) {
+extern "C" void* vtkMatrixToLinearTransform__MakeTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMatrixToLinearTransform*>(self)->MakeTransform());
 }

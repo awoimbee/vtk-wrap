@@ -6,40 +6,40 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkOpenGLCamera__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLCamera::New()); }
+extern "C" void* vtkOpenGLCamera__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLCamera::New()); }
 
-extern "C" void* vtkOpenGLCamera__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLCamera__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLCamera::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLCamera__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLCamera__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLCamera::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLCamera__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLCamera__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCamera*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLCamera__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLCamera__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLCamera::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLCamera::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCamera*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLCamera__Render__0(void* self, void* ren) {
+extern "C" void vtkOpenGLCamera__Render__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkOpenGLCamera*>(self)->Render(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkOpenGLCamera__UpdateViewport__0(void* self, void* ren) {
+extern "C" void vtkOpenGLCamera__UpdateViewport__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkOpenGLCamera*>(self)->UpdateViewport(static_cast<vtkRenderer*>(ren));
 }

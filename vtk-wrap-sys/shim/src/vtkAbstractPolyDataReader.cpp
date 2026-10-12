@@ -5,44 +5,44 @@
 #include "vtkResourceStream.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractPolyDataReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractPolyDataReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractPolyDataReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractPolyDataReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractPolyDataReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolyDataReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractPolyDataReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractPolyDataReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractPolyDataReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractPolyDataReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractPolyDataReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractPolyDataReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractPolyDataReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractPolyDataReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolyDataReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractPolyDataReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkAbstractPolyDataReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractPolyDataReader*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkAbstractPolyDataReader__SetStream__0(void* self, void* _arg) {
+extern "C" void vtkAbstractPolyDataReader__SetStream__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractPolyDataReader*>(self)->SetStream(static_cast<vtkResourceStream*>(_arg));
 }
 
-extern "C" void* vtkAbstractPolyDataReader__GetStream__0(void* self) {
+extern "C" void* vtkAbstractPolyDataReader__GetStream__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolyDataReader*>(self)->GetStream());
 }
 
-extern "C" unsigned long vtkAbstractPolyDataReader__GetMTime__0(void* self) {
+extern "C" unsigned long vtkAbstractPolyDataReader__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolyDataReader*>(self)->GetMTime();
 }

@@ -7,91 +7,91 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkCellCentersPointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkCellCentersPointPlacer::New()); }
+extern "C" void* vtkCellCentersPointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellCentersPointPlacer::New()); }
 
-extern "C" int32_t vtkCellCentersPointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellCentersPointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellCentersPointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellCentersPointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellCentersPointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellCentersPointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellCentersPointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellCentersPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellCentersPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellCentersPointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellCentersPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellCentersPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCellCentersPointPlacer__AddProp__0(void* self, void* arg0) {
+extern "C" void vtkCellCentersPointPlacer__AddProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCellCentersPointPlacer*>(self)->AddProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkCellCentersPointPlacer__RemoveViewProp__0(void* self, void* prop) {
+extern "C" void vtkCellCentersPointPlacer__RemoveViewProp__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkCellCentersPointPlacer*>(self)->RemoveViewProp(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkCellCentersPointPlacer__RemoveAllProps__0(void* self) {
+extern "C" void vtkCellCentersPointPlacer__RemoveAllProps__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellCentersPointPlacer*>(self)->RemoveAllProps();
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__HasProp__0(void* self, void* arg0) {
+extern "C" int32_t vtkCellCentersPointPlacer__HasProp__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->HasProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__GetNumberOfProps__0(void* self) {
+extern "C" int32_t vtkCellCentersPointPlacer__GetNumberOfProps__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->GetNumberOfProps();
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkCellCentersPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkCellCentersPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkCellCentersPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) {
+extern "C" int32_t vtkCellCentersPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->ValidateDisplayPosition(static_cast<vtkRenderer*>(arg0), displayPos);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkCellCentersPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" void* vtkCellCentersPointPlacer__GetCellPicker__0(void* self) {
+extern "C" void* vtkCellCentersPointPlacer__GetCellPicker__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellCentersPointPlacer*>(self)->GetCellPicker());
 }
 
-extern "C" void vtkCellCentersPointPlacer__SetMode__0(void* self, int32_t _arg) {
+extern "C" void vtkCellCentersPointPlacer__SetMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellCentersPointPlacer*>(self)->SetMode(_arg);
 }
 
-extern "C" int32_t vtkCellCentersPointPlacer__GetMode__0(void* self) {
+extern "C" int32_t vtkCellCentersPointPlacer__GetMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellCentersPointPlacer*>(self)->GetMode();
 }

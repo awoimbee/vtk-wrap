@@ -5,66 +5,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageClip__vtk_wrap_new() { return static_cast<void*>(vtkImageClip::New()); }
+extern "C" void* vtkImageClip__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageClip::New()); }
 
-extern "C" int32_t vtkImageClip__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageClip__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageClip::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageClip__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageClip__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageClip*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageClip__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageClip__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageClip::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageClip__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageClip__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageClip::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageClip__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageClip__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageClip*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageClip__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) {
+extern "C" void vtkImageClip__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->SetOutputWholeExtent(extent, static_cast<vtkInformation*>(outInfo));
 }
 
-extern "C" void vtkImageClip__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) {
+extern "C" void vtkImageClip__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->SetOutputWholeExtent(minX, maxX, minY, maxY, minZ, maxZ);
 }
 
-extern "C" void vtkImageClip__GetOutputWholeExtent__0(void* self, int32_t* extent) {
+extern "C" void vtkImageClip__GetOutputWholeExtent__0(void* self, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->GetOutputWholeExtent(extent);
 }
 
-extern "C" void vtkImageClip__ResetOutputWholeExtent__0(void* self) {
+extern "C" void vtkImageClip__ResetOutputWholeExtent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->ResetOutputWholeExtent();
 }
 
-extern "C" void vtkImageClip__SetClipData__0(void* self, int32_t _arg) {
+extern "C" void vtkImageClip__SetClipData__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->SetClipData(_arg);
 }
 
-extern "C" int32_t vtkImageClip__GetClipData__0(void* self) {
+extern "C" int32_t vtkImageClip__GetClipData__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageClip*>(self)->GetClipData();
 }
 
-extern "C" void vtkImageClip__ClipDataOn__0(void* self) {
+extern "C" void vtkImageClip__ClipDataOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->ClipDataOn();
 }
 
-extern "C" void vtkImageClip__ClipDataOff__0(void* self) {
+extern "C" void vtkImageClip__ClipDataOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageClip*>(self)->ClipDataOff();
 }

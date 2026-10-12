@@ -5,86 +5,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkCommand__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCommand__IsTypeOf__0(const char* type_) noexcept {
   return vtkCommand::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCommand__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCommand__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCommand*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCommand__SafeDownCast__0(void* o) {
+extern "C" void* vtkCommand__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCommand::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCommand__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCommand__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCommand::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCommand__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCommand__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCommand*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCommand__UnRegister__0(void* self) {
+extern "C" void vtkCommand__UnRegister__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->UnRegister();
 }
 
-extern "C" void vtkCommand__Execute__0(void* self, void* caller, unsigned long eventId, void* callData) {
+extern "C" void vtkCommand__Execute__0(void* self, void* caller, unsigned long eventId, void* callData) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->Execute(static_cast<vtkObject*>(caller), eventId, callData);
 }
 
-extern "C" const char* vtkCommand__GetStringFromEventId__0(unsigned long event) {
+extern "C" const char* vtkCommand__GetStringFromEventId__0(unsigned long event) noexcept {
   return vtkCommand::GetStringFromEventId(event);
 }
 
-extern "C" unsigned long vtkCommand__GetEventIdFromString__0(const char* event) {
+extern "C" unsigned long vtkCommand__GetEventIdFromString__0(const char* event) noexcept {
   return vtkCommand::GetEventIdFromString(event);
 }
 
-extern "C" bool vtkCommand__EventHasData__0(unsigned long event) {
+extern "C" bool vtkCommand__EventHasData__0(unsigned long event) noexcept {
   return vtkCommand::EventHasData(event);
 }
 
-extern "C" void vtkCommand__SetAbortFlag__0(void* self, int32_t f) {
+extern "C" void vtkCommand__SetAbortFlag__0(void* self, int32_t f) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->SetAbortFlag(f);
 }
 
-extern "C" int32_t vtkCommand__GetAbortFlag__0(void* self) {
+extern "C" int32_t vtkCommand__GetAbortFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCommand*>(self)->GetAbortFlag();
 }
 
-extern "C" void vtkCommand__AbortFlagOn__0(void* self) {
+extern "C" void vtkCommand__AbortFlagOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->AbortFlagOn();
 }
 
-extern "C" void vtkCommand__AbortFlagOff__0(void* self) {
+extern "C" void vtkCommand__AbortFlagOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->AbortFlagOff();
 }
 
-extern "C" void vtkCommand__SetPassiveObserver__0(void* self, int32_t f) {
+extern "C" void vtkCommand__SetPassiveObserver__0(void* self, int32_t f) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->SetPassiveObserver(f);
 }
 
-extern "C" int32_t vtkCommand__GetPassiveObserver__0(void* self) {
+extern "C" int32_t vtkCommand__GetPassiveObserver__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCommand*>(self)->GetPassiveObserver();
 }
 
-extern "C" void vtkCommand__PassiveObserverOn__0(void* self) {
+extern "C" void vtkCommand__PassiveObserverOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->PassiveObserverOn();
 }
 
-extern "C" void vtkCommand__PassiveObserverOff__0(void* self) {
+extern "C" void vtkCommand__PassiveObserverOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCommand*>(self)->PassiveObserverOff();
 }

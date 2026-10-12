@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRenderWidget__vtk_wrap_new() { return static_cast<void*>(vtkRenderWidget::New()); }
+extern "C" void* vtkRenderWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRenderWidget::New()); }
 
-extern "C" int32_t vtkRenderWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRenderWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkRenderWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRenderWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRenderWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRenderWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkRenderWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRenderWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRenderWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRenderWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRenderWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRenderWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRenderWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkRenderWidget__SetName__0(void* self, const char* name) {
+extern "C" void vtkRenderWidget__SetName__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkRenderWidget*>(self)->SetName(std::string(name));
 }
 
-extern "C" char* vtkRenderWidget__GetName__0(void* self) {
+extern "C" char* vtkRenderWidget__GetName__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkRenderWidget*>(self)->GetName()).c_str());
 }
 
-extern "C" void vtkRenderWidget__Render__0(void* self) {
+extern "C" void vtkRenderWidget__Render__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderWidget*>(self)->Render();
 }
 
-extern "C" void vtkRenderWidget__MakeCurrent__0(void* self) {
+extern "C" void vtkRenderWidget__MakeCurrent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderWidget*>(self)->MakeCurrent();
 }
 
-extern "C" void vtkRenderWidget__Initialize__0(void* self) {
+extern "C" void vtkRenderWidget__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderWidget*>(self)->Initialize();
 }
 
-extern "C" void vtkRenderWidget__Start__0(void* self) {
+extern "C" void vtkRenderWidget__Start__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRenderWidget*>(self)->Start();
 }

@@ -10,110 +10,110 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkCompositeDataSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeDataSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeDataSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeDataSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeDataSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeDataSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeDataSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeDataSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeDataSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCompositeDataSet__NewIterator__0(void* self) {
+extern "C" void* vtkCompositeDataSet__NewIterator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompositeDataSet*>(self)->NewIterator());
 }
 
-extern "C" int32_t vtkCompositeDataSet__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkCompositeDataSet__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkCompositeDataSet__CopyStructure__0(void* self, void* input) {
+extern "C" void vtkCompositeDataSet__CopyStructure__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkCompositeDataSet*>(self)->CopyStructure(static_cast<vtkCompositeDataSet*>(input));
 }
 
-extern "C" void vtkCompositeDataSet__SetDataSet__0(void* self, void* iter, void* dataObj) {
+extern "C" void vtkCompositeDataSet__SetDataSet__0(void* self, void* iter, void* dataObj) noexcept {
   (void)self;
   static_cast<vtkCompositeDataSet*>(self)->SetDataSet(static_cast<vtkCompositeDataIterator*>(iter), static_cast<vtkDataObject*>(dataObj));
 }
 
-extern "C" void* vtkCompositeDataSet__GetDataSet__0(void* self, void* iter) {
+extern "C" void* vtkCompositeDataSet__GetDataSet__0(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompositeDataSet*>(self)->GetDataSet(static_cast<vtkCompositeDataIterator*>(iter)));
 }
 
-extern "C" void* vtkCompositeDataSet__GetDataSet__1(void* self, uint32_t flatIndex) {
+extern "C" void* vtkCompositeDataSet__GetDataSet__1(void* self, uint32_t flatIndex) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompositeDataSet*>(self)->GetDataSet(flatIndex));
 }
 
-extern "C" unsigned long vtkCompositeDataSet__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkCompositeDataSet__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetActualMemorySize();
 }
 
-extern "C" void* vtkCompositeDataSet__GetData__0(void* info) {
+extern "C" void* vtkCompositeDataSet__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkCompositeDataSet::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkCompositeDataSet__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkCompositeDataSet__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkCompositeDataSet::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" void vtkCompositeDataSet__Initialize__0(void* self) {
+extern "C" void vtkCompositeDataSet__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompositeDataSet*>(self)->Initialize();
 }
 
-extern "C" void vtkCompositeDataSet__CompositeShallowCopy__0(void* self, void* src) {
+extern "C" void vtkCompositeDataSet__CompositeShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkCompositeDataSet*>(self)->CompositeShallowCopy(static_cast<vtkCompositeDataSet*>(src));
 }
 
-extern "C" int64_t vtkCompositeDataSet__GetNumberOfPoints__0(void* self) {
+extern "C" int64_t vtkCompositeDataSet__GetNumberOfPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetNumberOfPoints();
 }
 
-extern "C" int64_t vtkCompositeDataSet__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkCompositeDataSet__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetNumberOfCells();
 }
 
-extern "C" int64_t vtkCompositeDataSet__GetNumberOfElements__0(void* self, int32_t type_) {
+extern "C" int64_t vtkCompositeDataSet__GetNumberOfElements__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->GetNumberOfElements(type_);
 }
 
-extern "C" void vtkCompositeDataSet__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkCompositeDataSet__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkCompositeDataSet*>(self)->GetBounds(bounds);
 }
 
-extern "C" void* vtkCompositeDataSet__NAME__0() {
+extern "C" void* vtkCompositeDataSet__NAME__0() noexcept {
   return static_cast<void*>(vtkCompositeDataSet::NAME());
 }
 
-extern "C" void* vtkCompositeDataSet__CURRENT_PROCESS_CAN_LOAD_BLOCK__0() {
+extern "C" void* vtkCompositeDataSet__CURRENT_PROCESS_CAN_LOAD_BLOCK__0() noexcept {
   return static_cast<void*>(vtkCompositeDataSet::CURRENT_PROCESS_CAN_LOAD_BLOCK());
 }
 
-extern "C" bool vtkCompositeDataSet__SupportsGhostArray__0(void* self, int32_t type_) {
+extern "C" bool vtkCompositeDataSet__SupportsGhostArray__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataSet*>(self)->SupportsGhostArray(type_);
 }

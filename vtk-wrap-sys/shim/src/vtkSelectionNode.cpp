@@ -12,223 +12,223 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSelectionNode__vtk_wrap_new() { return static_cast<void*>(vtkSelectionNode::New()); }
+extern "C" void* vtkSelectionNode__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSelectionNode::New()); }
 
-extern "C" int32_t vtkSelectionNode__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSelectionNode__IsTypeOf__0(const char* type_) noexcept {
   return vtkSelectionNode::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSelectionNode__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSelectionNode__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSelectionNode__SafeDownCast__0(void* o) {
+extern "C" void* vtkSelectionNode__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSelectionNode::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSelectionNode__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSelectionNode__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSelectionNode::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSelectionNode__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSelectionNode__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSelectionNode__Initialize__0(void* self) {
+extern "C" void vtkSelectionNode__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->Initialize();
 }
 
-extern "C" void vtkSelectionNode__SetSelectionList__0(void* self, void* arg0) {
+extern "C" void vtkSelectionNode__SetSelectionList__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SetSelectionList(static_cast<vtkAbstractArray*>(arg0));
 }
 
-extern "C" void* vtkSelectionNode__GetSelectionList__0(void* self) {
+extern "C" void* vtkSelectionNode__GetSelectionList__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSelectionNode*>(self)->GetSelectionList());
 }
 
-extern "C" void vtkSelectionNode__SetSelectionData__0(void* self, void* data) {
+extern "C" void vtkSelectionNode__SetSelectionData__0(void* self, void* data) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SetSelectionData(static_cast<vtkDataSetAttributes*>(data));
 }
 
-extern "C" void* vtkSelectionNode__GetSelectionData__0(void* self) {
+extern "C" void* vtkSelectionNode__GetSelectionData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSelectionNode*>(self)->GetSelectionData());
 }
 
-extern "C" void* vtkSelectionNode__GetProperties__0(void* self) {
+extern "C" void* vtkSelectionNode__GetProperties__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSelectionNode*>(self)->GetProperties());
 }
 
-extern "C" void vtkSelectionNode__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkSelectionNode__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->DeepCopy(static_cast<vtkSelectionNode*>(src));
 }
 
-extern "C" void vtkSelectionNode__ShallowCopy__0(void* self, void* src) {
+extern "C" void vtkSelectionNode__ShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->ShallowCopy(static_cast<vtkSelectionNode*>(src));
 }
 
-extern "C" unsigned long vtkSelectionNode__GetMTime__0(void* self) {
+extern "C" unsigned long vtkSelectionNode__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->GetMTime();
 }
 
-extern "C" void* vtkSelectionNode__CONTENT_TYPE__0() {
+extern "C" void* vtkSelectionNode__CONTENT_TYPE__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CONTENT_TYPE());
 }
 
-extern "C" void vtkSelectionNode__SetContentType__0(void* self, int32_t type_) {
+extern "C" void vtkSelectionNode__SetContentType__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SetContentType(type_);
 }
 
-extern "C" int32_t vtkSelectionNode__GetContentType__0(void* self) {
+extern "C" int32_t vtkSelectionNode__GetContentType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->GetContentType();
 }
 
-extern "C" const char* vtkSelectionNode__GetContentTypeAsString__0(int32_t type_) {
+extern "C" const char* vtkSelectionNode__GetContentTypeAsString__0(int32_t type_) noexcept {
   return vtkSelectionNode::GetContentTypeAsString(type_);
 }
 
-extern "C" void* vtkSelectionNode__FIELD_TYPE__0() {
+extern "C" void* vtkSelectionNode__FIELD_TYPE__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::FIELD_TYPE());
 }
 
-extern "C" void vtkSelectionNode__SetFieldType__0(void* self, int32_t type_) {
+extern "C" void vtkSelectionNode__SetFieldType__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SetFieldType(type_);
 }
 
-extern "C" int32_t vtkSelectionNode__GetFieldType__0(void* self) {
+extern "C" int32_t vtkSelectionNode__GetFieldType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->GetFieldType();
 }
 
-extern "C" const char* vtkSelectionNode__GetFieldTypeAsString__0(int32_t type_) {
+extern "C" const char* vtkSelectionNode__GetFieldTypeAsString__0(int32_t type_) noexcept {
   return vtkSelectionNode::GetFieldTypeAsString(type_);
 }
 
-extern "C" int32_t vtkSelectionNode__GetFieldTypeFromString__0(const char* type_) {
+extern "C" int32_t vtkSelectionNode__GetFieldTypeFromString__0(const char* type_) noexcept {
   return vtkSelectionNode::GetFieldTypeFromString(type_);
 }
 
-extern "C" int32_t vtkSelectionNode__ConvertSelectionFieldToAttributeType__0(int32_t val) {
+extern "C" int32_t vtkSelectionNode__ConvertSelectionFieldToAttributeType__0(int32_t val) noexcept {
   return vtkSelectionNode::ConvertSelectionFieldToAttributeType(val);
 }
 
-extern "C" int32_t vtkSelectionNode__ConvertAttributeTypeToSelectionField__0(int32_t val) {
+extern "C" int32_t vtkSelectionNode__ConvertAttributeTypeToSelectionField__0(int32_t val) noexcept {
   return vtkSelectionNode::ConvertAttributeTypeToSelectionField(val);
 }
 
-extern "C" void vtkSelectionNode__SetQueryString__0(void* self, const char* _arg) {
+extern "C" void vtkSelectionNode__SetQueryString__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SetQueryString(_arg);
 }
 
-extern "C" void* vtkSelectionNode__EPSILON__0() {
+extern "C" void* vtkSelectionNode__EPSILON__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::EPSILON());
 }
 
-extern "C" void* vtkSelectionNode__ZBUFFER_VALUE__0() {
+extern "C" void* vtkSelectionNode__ZBUFFER_VALUE__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::ZBUFFER_VALUE());
 }
 
-extern "C" void* vtkSelectionNode__CONTAINING_CELLS__0() {
+extern "C" void* vtkSelectionNode__CONTAINING_CELLS__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CONTAINING_CELLS());
 }
 
-extern "C" void* vtkSelectionNode__CONNECTED_LAYERS__0() {
+extern "C" void* vtkSelectionNode__CONNECTED_LAYERS__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CONNECTED_LAYERS());
 }
 
-extern "C" void* vtkSelectionNode__CONNECTED_LAYERS_REMOVE_SEED__0() {
+extern "C" void* vtkSelectionNode__CONNECTED_LAYERS_REMOVE_SEED__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CONNECTED_LAYERS_REMOVE_SEED());
 }
 
-extern "C" void* vtkSelectionNode__CONNECTED_LAYERS_REMOVE_INTERMEDIATE_LAYERS__0() {
+extern "C" void* vtkSelectionNode__CONNECTED_LAYERS_REMOVE_INTERMEDIATE_LAYERS__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CONNECTED_LAYERS_REMOVE_INTERMEDIATE_LAYERS());
 }
 
-extern "C" void* vtkSelectionNode__COMPONENT_NUMBER__0() {
+extern "C" void* vtkSelectionNode__COMPONENT_NUMBER__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::COMPONENT_NUMBER());
 }
 
-extern "C" void* vtkSelectionNode__INVERSE__0() {
+extern "C" void* vtkSelectionNode__INVERSE__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::INVERSE());
 }
 
-extern "C" void* vtkSelectionNode__PIXEL_COUNT__0() {
+extern "C" void* vtkSelectionNode__PIXEL_COUNT__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::PIXEL_COUNT());
 }
 
-extern "C" void* vtkSelectionNode__SOURCE__0() {
+extern "C" void* vtkSelectionNode__SOURCE__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::SOURCE());
 }
 
-extern "C" void* vtkSelectionNode__SOURCE_ID__0() {
+extern "C" void* vtkSelectionNode__SOURCE_ID__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::SOURCE_ID());
 }
 
-extern "C" void* vtkSelectionNode__PROP__0() {
+extern "C" void* vtkSelectionNode__PROP__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::PROP());
 }
 
-extern "C" void* vtkSelectionNode__PROP_ID__0() {
+extern "C" void* vtkSelectionNode__PROP_ID__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::PROP_ID());
 }
 
-extern "C" void* vtkSelectionNode__PROCESS_ID__0() {
+extern "C" void* vtkSelectionNode__PROCESS_ID__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::PROCESS_ID());
 }
 
-extern "C" void* vtkSelectionNode__ASSEMBLY_NAME__0() {
+extern "C" void* vtkSelectionNode__ASSEMBLY_NAME__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::ASSEMBLY_NAME());
 }
 
-extern "C" void* vtkSelectionNode__SELECTORS__0() {
+extern "C" void* vtkSelectionNode__SELECTORS__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::SELECTORS());
 }
 
-extern "C" void* vtkSelectionNode__COMPOSITE_INDEX__0() {
+extern "C" void* vtkSelectionNode__COMPOSITE_INDEX__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::COMPOSITE_INDEX());
 }
 
-extern "C" void* vtkSelectionNode__HIERARCHICAL_LEVEL__0() {
+extern "C" void* vtkSelectionNode__HIERARCHICAL_LEVEL__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::HIERARCHICAL_LEVEL());
 }
 
-extern "C" void* vtkSelectionNode__HIERARCHICAL_INDEX__0() {
+extern "C" void* vtkSelectionNode__HIERARCHICAL_INDEX__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::HIERARCHICAL_INDEX());
 }
 
-extern "C" void* vtkSelectionNode__CELLGRID_CELL_TYPE_INDEX__0() {
+extern "C" void* vtkSelectionNode__CELLGRID_CELL_TYPE_INDEX__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CELLGRID_CELL_TYPE_INDEX());
 }
 
-extern "C" void* vtkSelectionNode__CELLGRID_SOURCE_SPECIFICATION_INDEX__0() {
+extern "C" void* vtkSelectionNode__CELLGRID_SOURCE_SPECIFICATION_INDEX__0() noexcept {
   return static_cast<void*>(vtkSelectionNode::CELLGRID_SOURCE_SPECIFICATION_INDEX());
 }
 
-extern "C" void vtkSelectionNode__UnionSelectionList__0(void* self, void* other) {
+extern "C" void vtkSelectionNode__UnionSelectionList__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->UnionSelectionList(static_cast<vtkSelectionNode*>(other));
 }
 
-extern "C" void vtkSelectionNode__SubtractSelectionList__0(void* self, void* other) {
+extern "C" void vtkSelectionNode__SubtractSelectionList__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkSelectionNode*>(self)->SubtractSelectionList(static_cast<vtkSelectionNode*>(other));
 }
 
-extern "C" bool vtkSelectionNode__EqualProperties__0(void* self, void* other, bool fullcompare) {
+extern "C" bool vtkSelectionNode__EqualProperties__0(void* self, void* other, bool fullcompare) noexcept {
   (void)self;
   return static_cast<vtkSelectionNode*>(self)->EqualProperties(static_cast<vtkSelectionNode*>(other), fullcompare);
 }

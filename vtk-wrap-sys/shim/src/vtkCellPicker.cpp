@@ -7,146 +7,146 @@
 #include "vtkTexture.h"
 #include <string>
 
-extern "C" void* vtkCellPicker__vtk_wrap_new() { return static_cast<void*>(vtkCellPicker::New()); }
+extern "C" void* vtkCellPicker__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellPicker::New()); }
 
-extern "C" int32_t vtkCellPicker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellPicker__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellPicker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellPicker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellPicker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellPicker__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellPicker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellPicker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellPicker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkCellPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) {
+extern "C" int32_t vtkCellPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->Pick(selectionX, selectionY, selectionZ, static_cast<vtkRenderer*>(renderer));
 }
 
-extern "C" int32_t vtkCellPicker__Pick3DRay__0(void* self, double* selectionPt, double* orient, void* ren) {
+extern "C" int32_t vtkCellPicker__Pick3DRay__0(void* self, double* selectionPt, double* orient, void* ren) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->Pick3DRay(selectionPt, orient, static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkCellPicker__AddLocator__0(void* self, void* locator) {
+extern "C" void vtkCellPicker__AddLocator__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->AddLocator(static_cast<vtkAbstractCellLocator*>(locator));
 }
 
-extern "C" void vtkCellPicker__RemoveLocator__0(void* self, void* locator) {
+extern "C" void vtkCellPicker__RemoveLocator__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->RemoveLocator(static_cast<vtkAbstractCellLocator*>(locator));
 }
 
-extern "C" void vtkCellPicker__RemoveAllLocators__0(void* self) {
+extern "C" void vtkCellPicker__RemoveAllLocators__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->RemoveAllLocators();
 }
 
-extern "C" void vtkCellPicker__SetVolumeOpacityIsovalue__0(void* self, double _arg) {
+extern "C" void vtkCellPicker__SetVolumeOpacityIsovalue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->SetVolumeOpacityIsovalue(_arg);
 }
 
-extern "C" double vtkCellPicker__GetVolumeOpacityIsovalue__0(void* self) {
+extern "C" double vtkCellPicker__GetVolumeOpacityIsovalue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetVolumeOpacityIsovalue();
 }
 
-extern "C" void vtkCellPicker__SetUseVolumeGradientOpacity__0(void* self, int32_t _arg) {
+extern "C" void vtkCellPicker__SetUseVolumeGradientOpacity__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->SetUseVolumeGradientOpacity(_arg);
 }
 
-extern "C" void vtkCellPicker__UseVolumeGradientOpacityOn__0(void* self) {
+extern "C" void vtkCellPicker__UseVolumeGradientOpacityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->UseVolumeGradientOpacityOn();
 }
 
-extern "C" void vtkCellPicker__UseVolumeGradientOpacityOff__0(void* self) {
+extern "C" void vtkCellPicker__UseVolumeGradientOpacityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->UseVolumeGradientOpacityOff();
 }
 
-extern "C" int32_t vtkCellPicker__GetUseVolumeGradientOpacity__0(void* self) {
+extern "C" int32_t vtkCellPicker__GetUseVolumeGradientOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetUseVolumeGradientOpacity();
 }
 
-extern "C" void vtkCellPicker__SetPickClippingPlanes__0(void* self, int32_t _arg) {
+extern "C" void vtkCellPicker__SetPickClippingPlanes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->SetPickClippingPlanes(_arg);
 }
 
-extern "C" void vtkCellPicker__PickClippingPlanesOn__0(void* self) {
+extern "C" void vtkCellPicker__PickClippingPlanesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->PickClippingPlanesOn();
 }
 
-extern "C" void vtkCellPicker__PickClippingPlanesOff__0(void* self) {
+extern "C" void vtkCellPicker__PickClippingPlanesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->PickClippingPlanesOff();
 }
 
-extern "C" int32_t vtkCellPicker__GetPickClippingPlanes__0(void* self) {
+extern "C" int32_t vtkCellPicker__GetPickClippingPlanes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetPickClippingPlanes();
 }
 
-extern "C" int32_t vtkCellPicker__GetClippingPlaneId__0(void* self) {
+extern "C" int32_t vtkCellPicker__GetClippingPlaneId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetClippingPlaneId();
 }
 
-extern "C" int64_t vtkCellPicker__GetPointId__0(void* self) {
+extern "C" int64_t vtkCellPicker__GetPointId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetPointId();
 }
 
-extern "C" int64_t vtkCellPicker__GetCellId__0(void* self) {
+extern "C" int64_t vtkCellPicker__GetCellId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetCellId();
 }
 
-extern "C" int32_t vtkCellPicker__GetSubId__0(void* self) {
+extern "C" int32_t vtkCellPicker__GetSubId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetSubId();
 }
 
-extern "C" void* vtkCellPicker__GetTexture__0(void* self) {
+extern "C" void* vtkCellPicker__GetTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellPicker*>(self)->GetTexture());
 }
 
-extern "C" void vtkCellPicker__SetPickTextureData__0(void* self, int32_t _arg) {
+extern "C" void vtkCellPicker__SetPickTextureData__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->SetPickTextureData(_arg);
 }
 
-extern "C" void vtkCellPicker__PickTextureDataOn__0(void* self) {
+extern "C" void vtkCellPicker__PickTextureDataOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->PickTextureDataOn();
 }
 
-extern "C" void vtkCellPicker__PickTextureDataOff__0(void* self) {
+extern "C" void vtkCellPicker__PickTextureDataOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellPicker*>(self)->PickTextureDataOff();
 }
 
-extern "C" int32_t vtkCellPicker__GetPickTextureData__0(void* self) {
+extern "C" int32_t vtkCellPicker__GetPickTextureData__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellPicker*>(self)->GetPickTextureData();
 }

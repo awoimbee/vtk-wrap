@@ -6,99 +6,99 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkSimpleReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSimpleReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkSimpleReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSimpleReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSimpleReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSimpleReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkSimpleReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSimpleReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSimpleReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSimpleReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSimpleReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSimpleReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSimpleReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSimpleReader__AddFileName__0(void* self, const char* fname) {
+extern "C" void vtkSimpleReader__AddFileName__0(void* self, const char* fname) noexcept {
   (void)self;
   static_cast<vtkSimpleReader*>(self)->AddFileName(fname);
 }
 
-extern "C" void vtkSimpleReader__ClearFileNames__0(void* self) {
+extern "C" void vtkSimpleReader__ClearFileNames__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSimpleReader*>(self)->ClearFileNames();
 }
 
-extern "C" int32_t vtkSimpleReader__GetNumberOfFileNames__0(void* self) {
+extern "C" int32_t vtkSimpleReader__GetNumberOfFileNames__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->GetNumberOfFileNames();
 }
 
-extern "C" const char* vtkSimpleReader__GetFileName__0(void* self, int32_t i) {
+extern "C" const char* vtkSimpleReader__GetFileName__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->GetFileName(i);
 }
 
-extern "C" const char* vtkSimpleReader__GetCurrentFileName__0(void* self) {
+extern "C" const char* vtkSimpleReader__GetCurrentFileName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->GetCurrentFileName();
 }
 
-extern "C" int32_t vtkSimpleReader__ReadTimeDependentMetaData__0(void* self, int32_t timestep, void* metadata) {
+extern "C" int32_t vtkSimpleReader__ReadTimeDependentMetaData__0(void* self, int32_t timestep, void* metadata) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadTimeDependentMetaData(timestep, static_cast<vtkInformation*>(metadata));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadMetaData__0(void* self, void* metadata) {
+extern "C" int32_t vtkSimpleReader__ReadMetaData__0(void* self, void* metadata) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadMetaData(static_cast<vtkInformation*>(metadata));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadMesh__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadMesh__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadMesh(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadPoints__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadPoints__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadPoints(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadArrays__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadArrays__0(void* self, int32_t piece, int32_t npieces, int32_t nghosts, int32_t timestep, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadArrays(piece, npieces, nghosts, timestep, static_cast<vtkDataObject*>(output));
 }
 
-extern "C" double vtkSimpleReader__GetTimeValue__0(void* self, const char* fname) {
+extern "C" double vtkSimpleReader__GetTimeValue__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->GetTimeValue(std::string(fname));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadMetaDataSimple__0(void* self, const char* arg0, void* arg1) {
+extern "C" int32_t vtkSimpleReader__ReadMetaDataSimple__0(void* self, const char* arg0, void* arg1) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadMetaDataSimple(std::string(arg0), static_cast<vtkInformation*>(arg1));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadPointsSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadPointsSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadPointsSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }
 
-extern "C" int32_t vtkSimpleReader__ReadArraysSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkSimpleReader__ReadArraysSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkSimpleReader*>(self)->ReadArraysSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkBlockIdScalars__vtk_wrap_new() { return static_cast<void*>(vtkBlockIdScalars::New()); }
+extern "C" void* vtkBlockIdScalars__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBlockIdScalars::New()); }
 
-extern "C" int32_t vtkBlockIdScalars__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBlockIdScalars__IsTypeOf__0(const char* type_) noexcept {
   return vtkBlockIdScalars::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBlockIdScalars__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBlockIdScalars__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBlockIdScalars*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBlockIdScalars__SafeDownCast__0(void* o) {
+extern "C" void* vtkBlockIdScalars__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBlockIdScalars::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBlockIdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBlockIdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBlockIdScalars::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBlockIdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBlockIdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBlockIdScalars*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBlockIdScalars__SetTraverseSubTree__0(void* self, bool _arg) {
+extern "C" void vtkBlockIdScalars__SetTraverseSubTree__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->SetTraverseSubTree(_arg);
 }
 
-extern "C" bool vtkBlockIdScalars__GetTraverseSubTree__0(void* self) {
+extern "C" bool vtkBlockIdScalars__GetTraverseSubTree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBlockIdScalars*>(self)->GetTraverseSubTree();
 }
 
-extern "C" void vtkBlockIdScalars__TraverseSubTreeOn__0(void* self) {
+extern "C" void vtkBlockIdScalars__TraverseSubTreeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->TraverseSubTreeOn();
 }
 
-extern "C" void vtkBlockIdScalars__TraverseSubTreeOff__0(void* self) {
+extern "C" void vtkBlockIdScalars__TraverseSubTreeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->TraverseSubTreeOff();
 }
 
-extern "C" void vtkBlockIdScalars__SetVisitOnlyLeaves__0(void* self, bool _arg) {
+extern "C" void vtkBlockIdScalars__SetVisitOnlyLeaves__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->SetVisitOnlyLeaves(_arg);
 }
 
-extern "C" bool vtkBlockIdScalars__GetVisitOnlyLeaves__0(void* self) {
+extern "C" bool vtkBlockIdScalars__GetVisitOnlyLeaves__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBlockIdScalars*>(self)->GetVisitOnlyLeaves();
 }
 
-extern "C" void vtkBlockIdScalars__VisitOnlyLeavesOn__0(void* self) {
+extern "C" void vtkBlockIdScalars__VisitOnlyLeavesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->VisitOnlyLeavesOn();
 }
 
-extern "C" void vtkBlockIdScalars__VisitOnlyLeavesOff__0(void* self) {
+extern "C" void vtkBlockIdScalars__VisitOnlyLeavesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBlockIdScalars*>(self)->VisitOnlyLeavesOff();
 }

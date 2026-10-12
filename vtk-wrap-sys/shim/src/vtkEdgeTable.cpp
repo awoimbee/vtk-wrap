@@ -5,76 +5,76 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkEdgeTable__vtk_wrap_new() { return static_cast<void*>(vtkEdgeTable::New()); }
+extern "C" void* vtkEdgeTable__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEdgeTable::New()); }
 
-extern "C" int32_t vtkEdgeTable__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEdgeTable__IsTypeOf__0(const char* type_) noexcept {
   return vtkEdgeTable::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEdgeTable__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEdgeTable__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEdgeTable__SafeDownCast__0(void* o) {
+extern "C" void* vtkEdgeTable__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEdgeTable::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEdgeTable__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEdgeTable__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEdgeTable::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEdgeTable__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEdgeTable__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEdgeTable__Initialize__0(void* self) {
+extern "C" void vtkEdgeTable__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEdgeTable*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkEdgeTable__InitEdgeInsertion__0(void* self, int64_t numPoints, int32_t storeAttributes) {
+extern "C" int32_t vtkEdgeTable__InitEdgeInsertion__0(void* self, int64_t numPoints, int32_t storeAttributes) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->InitEdgeInsertion(numPoints, storeAttributes);
 }
 
-extern "C" int64_t vtkEdgeTable__InsertEdge__0(void* self, int64_t p1, int64_t p2) {
+extern "C" int64_t vtkEdgeTable__InsertEdge__0(void* self, int64_t p1, int64_t p2) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->InsertEdge(p1, p2);
 }
 
-extern "C" void vtkEdgeTable__InsertEdge__1(void* self, int64_t p1, int64_t p2, int64_t attributeId) {
+extern "C" void vtkEdgeTable__InsertEdge__1(void* self, int64_t p1, int64_t p2, int64_t attributeId) noexcept {
   (void)self;
   static_cast<vtkEdgeTable*>(self)->InsertEdge(p1, p2, attributeId);
 }
 
-extern "C" void vtkEdgeTable__InsertEdge__2(void* self, int64_t p1, int64_t p2, void* ptr) {
+extern "C" void vtkEdgeTable__InsertEdge__2(void* self, int64_t p1, int64_t p2, void* ptr) noexcept {
   (void)self;
   static_cast<vtkEdgeTable*>(self)->InsertEdge(p1, p2, ptr);
 }
 
-extern "C" int64_t vtkEdgeTable__IsEdge__0(void* self, int64_t p1, int64_t p2) {
+extern "C" int64_t vtkEdgeTable__IsEdge__0(void* self, int64_t p1, int64_t p2) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->IsEdge(p1, p2);
 }
 
-extern "C" int32_t vtkEdgeTable__InitPointInsertion__0(void* self, void* newPts, int64_t estSize) {
+extern "C" int32_t vtkEdgeTable__InitPointInsertion__0(void* self, void* newPts, int64_t estSize) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->InitPointInsertion(static_cast<vtkPoints*>(newPts), estSize);
 }
 
-extern "C" int64_t vtkEdgeTable__GetNumberOfEdges__0(void* self) {
+extern "C" int64_t vtkEdgeTable__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEdgeTable*>(self)->GetNumberOfEdges();
 }
 
-extern "C" void vtkEdgeTable__InitTraversal__0(void* self) {
+extern "C" void vtkEdgeTable__InitTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEdgeTable*>(self)->InitTraversal();
 }
 
-extern "C" void vtkEdgeTable__Reset__0(void* self) {
+extern "C" void vtkEdgeTable__Reset__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEdgeTable*>(self)->Reset();
 }

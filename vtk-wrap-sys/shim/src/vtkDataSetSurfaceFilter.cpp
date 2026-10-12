@@ -6,186 +6,186 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkDataSetSurfaceFilter__vtk_wrap_new() { return static_cast<void*>(vtkDataSetSurfaceFilter::New()); }
+extern "C" void* vtkDataSetSurfaceFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetSurfaceFilter::New()); }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataSetSurfaceFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataSetSurfaceFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataSetSurfaceFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataSetSurfaceFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataSetSurfaceFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataSetSurfaceFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataSetSurfaceFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataSetSurfaceFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataSetSurfaceFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataSetSurfaceFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataSetSurfaceFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetPieceInvariant__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetPieceInvariant__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetPieceInvariant(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetPieceInvariant__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetPieceInvariant__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetPieceInvariant();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetPassThroughCellIds__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetPassThroughCellIds__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetPassThroughCellIds(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetPassThroughCellIds__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetPassThroughCellIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetPassThroughCellIds();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__PassThroughCellIdsOn__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__PassThroughCellIdsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->PassThroughCellIdsOn();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__PassThroughCellIdsOff__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__PassThroughCellIdsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->PassThroughCellIdsOff();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetPassThroughPointIds__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetPassThroughPointIds__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetPassThroughPointIds(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetPassThroughPointIds__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetPassThroughPointIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetPassThroughPointIds();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__PassThroughPointIdsOn__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__PassThroughPointIdsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->PassThroughPointIdsOn();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__PassThroughPointIdsOff__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__PassThroughPointIdsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->PassThroughPointIdsOff();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetFastMode__0(void* self, bool _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetFastMode__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetFastMode(_arg);
 }
 
-extern "C" bool vtkDataSetSurfaceFilter__GetFastMode__0(void* self) {
+extern "C" bool vtkDataSetSurfaceFilter__GetFastMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetFastMode();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__FastModeOn__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__FastModeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->FastModeOn();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__FastModeOff__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__FastModeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->FastModeOff();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetOriginalCellIdsName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetOriginalCellIdsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetOriginalCellIdsName(_arg);
 }
 
-extern "C" const char* vtkDataSetSurfaceFilter__GetOriginalCellIdsName__0(void* self) {
+extern "C" const char* vtkDataSetSurfaceFilter__GetOriginalCellIdsName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetOriginalCellIdsName();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetOriginalPointIdsName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetOriginalPointIdsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetOriginalPointIdsName(_arg);
 }
 
-extern "C" const char* vtkDataSetSurfaceFilter__GetOriginalPointIdsName__0(void* self) {
+extern "C" const char* vtkDataSetSurfaceFilter__GetOriginalPointIdsName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetOriginalPointIdsName();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetNonlinearSubdivisionLevel__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetNonlinearSubdivisionLevel__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetNonlinearSubdivisionLevel(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetNonlinearSubdivisionLevel__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetNonlinearSubdivisionLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetNonlinearSubdivisionLevel();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetMatchBoundariesIgnoringCellOrder__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetMatchBoundariesIgnoringCellOrder__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetMatchBoundariesIgnoringCellOrder(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetMatchBoundariesIgnoringCellOrder__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetMatchBoundariesIgnoringCellOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetMatchBoundariesIgnoringCellOrder();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetAllowInterpolation__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetAllowInterpolation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetAllowInterpolation(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetAllowInterpolation__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetAllowInterpolation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetAllowInterpolation();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__AllowInterpolationOn__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__AllowInterpolationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->AllowInterpolationOn();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__AllowInterpolationOff__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__AllowInterpolationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->AllowInterpolationOff();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__SetDelegation__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetSurfaceFilter__SetDelegation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->SetDelegation(_arg);
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__GetDelegation__0(void* self) {
+extern "C" int32_t vtkDataSetSurfaceFilter__GetDelegation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->GetDelegation();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__DelegationOn__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__DelegationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->DelegationOn();
 }
 
-extern "C" void vtkDataSetSurfaceFilter__DelegationOff__0(void* self) {
+extern "C" void vtkDataSetSurfaceFilter__DelegationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetSurfaceFilter*>(self)->DelegationOff();
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__UnstructuredGridExecute__0(void* self, void* input, void* output) {
+extern "C" int32_t vtkDataSetSurfaceFilter__UnstructuredGridExecute__0(void* self, void* input, void* output) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->UnstructuredGridExecute(static_cast<vtkDataSet*>(input), static_cast<vtkPolyData*>(output));
 }
 
-extern "C" int32_t vtkDataSetSurfaceFilter__DataSetExecute__0(void* self, void* input, void* output) {
+extern "C" int32_t vtkDataSetSurfaceFilter__DataSetExecute__0(void* self, void* input, void* output) noexcept {
   (void)self;
   return static_cast<vtkDataSetSurfaceFilter*>(self)->DataSetExecute(static_cast<vtkDataSet*>(input), static_cast<vtkPolyData*>(output));
 }

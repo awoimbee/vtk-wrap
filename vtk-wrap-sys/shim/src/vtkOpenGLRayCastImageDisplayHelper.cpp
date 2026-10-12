@@ -8,36 +8,36 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLRayCastImageDisplayHelper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLRayCastImageDisplayHelper::New()); }
+extern "C" void* vtkOpenGLRayCastImageDisplayHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLRayCastImageDisplayHelper::New()); }
 
-extern "C" int32_t vtkOpenGLRayCastImageDisplayHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLRayCastImageDisplayHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLRayCastImageDisplayHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLRayCastImageDisplayHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLRayCastImageDisplayHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLRayCastImageDisplayHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLRayCastImageDisplayHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLRayCastImageDisplayHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLRayCastImageDisplayHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLRayCastImageDisplayHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLRayCastImageDisplayHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLRayCastImageDisplayHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLRayCastImageDisplayHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLRayCastImageDisplayHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLRayCastImageDisplayHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLRayCastImageDisplayHelper__RenderTexture__0(void* self, void* vol, void* ren, void* image, float requestedDepth) {
+extern "C" void vtkOpenGLRayCastImageDisplayHelper__RenderTexture__0(void* self, void* vol, void* ren, void* image, float requestedDepth) noexcept {
   (void)self;
   static_cast<vtkOpenGLRayCastImageDisplayHelper*>(self)->RenderTexture(static_cast<vtkVolume*>(vol), static_cast<vtkRenderer*>(ren), static_cast<vtkFixedPointRayCastImage*>(image), requestedDepth);
 }
 
-extern "C" void vtkOpenGLRayCastImageDisplayHelper__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkOpenGLRayCastImageDisplayHelper__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkOpenGLRayCastImageDisplayHelper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }

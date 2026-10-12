@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAnimateModes__vtk_wrap_new() { return static_cast<void*>(vtkAnimateModes::New()); }
+extern "C" void* vtkAnimateModes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAnimateModes::New()); }
 
-extern "C" int32_t vtkAnimateModes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAnimateModes__IsTypeOf__0(const char* type_) noexcept {
   return vtkAnimateModes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAnimateModes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAnimateModes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAnimateModes__SafeDownCast__0(void* o) {
+extern "C" void* vtkAnimateModes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAnimateModes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAnimateModes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAnimateModes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAnimateModes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAnimateModes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAnimateModes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAnimateModes__SetAnimateVibrations__0(void* self, bool _arg) {
+extern "C" void vtkAnimateModes__SetAnimateVibrations__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->SetAnimateVibrations(_arg);
 }
 
-extern "C" bool vtkAnimateModes__GetAnimateVibrations__0(void* self) {
+extern "C" bool vtkAnimateModes__GetAnimateVibrations__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetAnimateVibrations();
 }
 
-extern "C" void vtkAnimateModes__AnimateVibrationsOn__0(void* self) {
+extern "C" void vtkAnimateModes__AnimateVibrationsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->AnimateVibrationsOn();
 }
 
-extern "C" void vtkAnimateModes__AnimateVibrationsOff__0(void* self) {
+extern "C" void vtkAnimateModes__AnimateVibrationsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->AnimateVibrationsOff();
 }
 
-extern "C" void vtkAnimateModes__SetModeShape__0(void* self, int32_t _arg) {
+extern "C" void vtkAnimateModes__SetModeShape__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->SetModeShape(_arg);
 }
 
-extern "C" int32_t vtkAnimateModes__GetModeShapeMinValue__0(void* self) {
+extern "C" int32_t vtkAnimateModes__GetModeShapeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetModeShapeMinValue();
 }
 
-extern "C" int32_t vtkAnimateModes__GetModeShapeMaxValue__0(void* self) {
+extern "C" int32_t vtkAnimateModes__GetModeShapeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetModeShapeMaxValue();
 }
 
-extern "C" int32_t vtkAnimateModes__GetModeShape__0(void* self) {
+extern "C" int32_t vtkAnimateModes__GetModeShape__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetModeShape();
 }
 
-extern "C" void vtkAnimateModes__SetDisplacementPreapplied__0(void* self, bool _arg) {
+extern "C" void vtkAnimateModes__SetDisplacementPreapplied__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->SetDisplacementPreapplied(_arg);
 }
 
-extern "C" bool vtkAnimateModes__GetDisplacementPreapplied__0(void* self) {
+extern "C" bool vtkAnimateModes__GetDisplacementPreapplied__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetDisplacementPreapplied();
 }
 
-extern "C" void vtkAnimateModes__DisplacementPreappliedOn__0(void* self) {
+extern "C" void vtkAnimateModes__DisplacementPreappliedOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->DisplacementPreappliedOn();
 }
 
-extern "C" void vtkAnimateModes__DisplacementPreappliedOff__0(void* self) {
+extern "C" void vtkAnimateModes__DisplacementPreappliedOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->DisplacementPreappliedOff();
 }
 
-extern "C" void vtkAnimateModes__SetDisplacementMagnitude__0(void* self, double _arg) {
+extern "C" void vtkAnimateModes__SetDisplacementMagnitude__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkAnimateModes*>(self)->SetDisplacementMagnitude(_arg);
 }
 
-extern "C" double vtkAnimateModes__GetDisplacementMagnitude__0(void* self) {
+extern "C" double vtkAnimateModes__GetDisplacementMagnitude__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimateModes*>(self)->GetDisplacementMagnitude();
 }

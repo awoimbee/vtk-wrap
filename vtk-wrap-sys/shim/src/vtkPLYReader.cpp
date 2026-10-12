@@ -6,104 +6,104 @@
 #include "vtkStringArray.h"
 #include <string>
 
-extern "C" void* vtkPLYReader__vtk_wrap_new() { return static_cast<void*>(vtkPLYReader::New()); }
+extern "C" void* vtkPLYReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPLYReader::New()); }
 
-extern "C" int32_t vtkPLYReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPLYReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkPLYReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPLYReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPLYReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPLYReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkPLYReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPLYReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPLYReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPLYReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPLYReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPLYReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPLYReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPLYReader__CanReadFile__0(const char* filename) {
+extern "C" int32_t vtkPLYReader__CanReadFile__0(const char* filename) noexcept {
   return vtkPLYReader::CanReadFile(filename);
 }
 
-extern "C" bool vtkPLYReader__CanReadFile__1(void* stream) {
+extern "C" bool vtkPLYReader__CanReadFile__1(void* stream) noexcept {
   return vtkPLYReader::CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" void* vtkPLYReader__GetComments__0(void* self) {
+extern "C" void* vtkPLYReader__GetComments__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPLYReader*>(self)->GetComments());
 }
 
-extern "C" float vtkPLYReader__GetFaceTextureTolerance__0(void* self) {
+extern "C" float vtkPLYReader__GetFaceTextureTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->GetFaceTextureTolerance();
 }
 
-extern "C" void vtkPLYReader__SetFaceTextureTolerance__0(void* self, float _arg) {
+extern "C" void vtkPLYReader__SetFaceTextureTolerance__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->SetFaceTextureTolerance(_arg);
 }
 
-extern "C" void vtkPLYReader__SetReadFromInputString__0(void* self, bool _arg) {
+extern "C" void vtkPLYReader__SetReadFromInputString__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->SetReadFromInputString(_arg);
 }
 
-extern "C" bool vtkPLYReader__GetReadFromInputString__0(void* self) {
+extern "C" bool vtkPLYReader__GetReadFromInputString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->GetReadFromInputString();
 }
 
-extern "C" void vtkPLYReader__ReadFromInputStringOn__0(void* self) {
+extern "C" void vtkPLYReader__ReadFromInputStringOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->ReadFromInputStringOn();
 }
 
-extern "C" void vtkPLYReader__ReadFromInputStringOff__0(void* self) {
+extern "C" void vtkPLYReader__ReadFromInputStringOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->ReadFromInputStringOff();
 }
 
-extern "C" void vtkPLYReader__SetInputString__0(void* self, const char* s) {
+extern "C" void vtkPLYReader__SetInputString__0(void* self, const char* s) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->SetInputString(std::string(s));
 }
 
-extern "C" void vtkPLYReader__SetReadFromInputStream__0(void* self, bool _arg) {
+extern "C" void vtkPLYReader__SetReadFromInputStream__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->SetReadFromInputStream(_arg);
 }
 
-extern "C" bool vtkPLYReader__GetReadFromInputStream__0(void* self) {
+extern "C" bool vtkPLYReader__GetReadFromInputStream__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->GetReadFromInputStream();
 }
 
-extern "C" void vtkPLYReader__ReadFromInputStreamOn__0(void* self) {
+extern "C" void vtkPLYReader__ReadFromInputStreamOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->ReadFromInputStreamOn();
 }
 
-extern "C" void vtkPLYReader__ReadFromInputStreamOff__0(void* self) {
+extern "C" void vtkPLYReader__ReadFromInputStreamOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->ReadFromInputStreamOff();
 }
 
-extern "C" bool vtkPLYReader__GetDuplicatePointsForFaceTexture__0(void* self) {
+extern "C" bool vtkPLYReader__GetDuplicatePointsForFaceTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPLYReader*>(self)->GetDuplicatePointsForFaceTexture();
 }
 
-extern "C" void vtkPLYReader__SetDuplicatePointsForFaceTexture__0(void* self, bool _arg) {
+extern "C" void vtkPLYReader__SetDuplicatePointsForFaceTexture__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPLYReader*>(self)->SetDuplicatePointsForFaceTexture(_arg);
 }

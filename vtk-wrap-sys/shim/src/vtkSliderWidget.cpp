@@ -5,96 +5,96 @@
 #include "vtkSliderRepresentation.h"
 #include <string>
 
-extern "C" void* vtkSliderWidget__vtk_wrap_new() { return static_cast<void*>(vtkSliderWidget::New()); }
+extern "C" void* vtkSliderWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSliderWidget::New()); }
 
-extern "C" int32_t vtkSliderWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSliderWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkSliderWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSliderWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSliderWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSliderWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkSliderWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSliderWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSliderWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSliderWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSliderWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSliderWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSliderWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSliderWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkSliderWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetRepresentation(static_cast<vtkSliderRepresentation*>(r));
 }
 
-extern "C" void* vtkSliderWidget__GetSliderRepresentation__0(void* self) {
+extern "C" void* vtkSliderWidget__GetSliderRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSliderWidget*>(self)->GetSliderRepresentation());
 }
 
-extern "C" void vtkSliderWidget__SetAnimationMode__0(void* self, int32_t _arg) {
+extern "C" void vtkSliderWidget__SetAnimationMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetAnimationMode(_arg);
 }
 
-extern "C" int32_t vtkSliderWidget__GetAnimationModeMinValue__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetAnimationModeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetAnimationModeMinValue();
 }
 
-extern "C" int32_t vtkSliderWidget__GetAnimationModeMaxValue__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetAnimationModeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetAnimationModeMaxValue();
 }
 
-extern "C" int32_t vtkSliderWidget__GetAnimationMode__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetAnimationMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetAnimationMode();
 }
 
-extern "C" void vtkSliderWidget__SetAnimationModeToOff__0(void* self) {
+extern "C" void vtkSliderWidget__SetAnimationModeToOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetAnimationModeToOff();
 }
 
-extern "C" void vtkSliderWidget__SetAnimationModeToJump__0(void* self) {
+extern "C" void vtkSliderWidget__SetAnimationModeToJump__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetAnimationModeToJump();
 }
 
-extern "C" void vtkSliderWidget__SetAnimationModeToAnimate__0(void* self) {
+extern "C" void vtkSliderWidget__SetAnimationModeToAnimate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetAnimationModeToAnimate();
 }
 
-extern "C" void vtkSliderWidget__SetNumberOfAnimationSteps__0(void* self, int32_t _arg) {
+extern "C" void vtkSliderWidget__SetNumberOfAnimationSteps__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->SetNumberOfAnimationSteps(_arg);
 }
 
-extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationStepsMinValue__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationStepsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetNumberOfAnimationStepsMinValue();
 }
 
-extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationStepsMaxValue__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationStepsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetNumberOfAnimationStepsMaxValue();
 }
 
-extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationSteps__0(void* self) {
+extern "C" int32_t vtkSliderWidget__GetNumberOfAnimationSteps__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSliderWidget*>(self)->GetNumberOfAnimationSteps();
 }
 
-extern "C" void vtkSliderWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkSliderWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSliderWidget*>(self)->CreateDefaultRepresentation();
 }

@@ -6,36 +6,36 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLContextActor__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLContextActor::New()); }
+extern "C" void* vtkOpenGLContextActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLContextActor::New()); }
 
-extern "C" int32_t vtkOpenGLContextActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLContextActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLContextActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLContextActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLContextActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLContextActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLContextActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLContextActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLContextActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLContextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLContextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLContextActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLContextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLContextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLContextActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLContextActor__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLContextActor__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLContextActor*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" int32_t vtkOpenGLContextActor__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkOpenGLContextActor__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkOpenGLContextActor*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }

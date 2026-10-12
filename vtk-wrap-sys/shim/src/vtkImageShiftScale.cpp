@@ -4,126 +4,126 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageShiftScale__vtk_wrap_new() { return static_cast<void*>(vtkImageShiftScale::New()); }
+extern "C" void* vtkImageShiftScale__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageShiftScale::New()); }
 
-extern "C" int32_t vtkImageShiftScale__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageShiftScale__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageShiftScale::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageShiftScale__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageShiftScale__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageShiftScale__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageShiftScale__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageShiftScale::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageShiftScale__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageShiftScale__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageShiftScale::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageShiftScale__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageShiftScale__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageShiftScale__SetShift__0(void* self, double _arg) {
+extern "C" void vtkImageShiftScale__SetShift__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetShift(_arg);
 }
 
-extern "C" double vtkImageShiftScale__GetShift__0(void* self) {
+extern "C" double vtkImageShiftScale__GetShift__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->GetShift();
 }
 
-extern "C" void vtkImageShiftScale__SetScale__0(void* self, double _arg) {
+extern "C" void vtkImageShiftScale__SetScale__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetScale(_arg);
 }
 
-extern "C" double vtkImageShiftScale__GetScale__0(void* self) {
+extern "C" double vtkImageShiftScale__GetScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->GetScale();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarType__0(void* self, int32_t _arg) {
+extern "C" void vtkImageShiftScale__SetOutputScalarType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarType(_arg);
 }
 
-extern "C" int32_t vtkImageShiftScale__GetOutputScalarType__0(void* self) {
+extern "C" int32_t vtkImageShiftScale__GetOutputScalarType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->GetOutputScalarType();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToDouble__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToDouble__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToDouble();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToFloat__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToFloat__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToFloat();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToLong__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToLong();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedLong__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToUnsignedLong();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToInt__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToInt();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedInt__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToUnsignedInt();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToShort__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToShort();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedShort__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToUnsignedShort();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToChar__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToChar();
 }
 
-extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedChar__0(void* self) {
+extern "C" void vtkImageShiftScale__SetOutputScalarTypeToUnsignedChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetOutputScalarTypeToUnsignedChar();
 }
 
-extern "C" void vtkImageShiftScale__SetClampOverflow__0(void* self, int32_t _arg) {
+extern "C" void vtkImageShiftScale__SetClampOverflow__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->SetClampOverflow(_arg);
 }
 
-extern "C" int32_t vtkImageShiftScale__GetClampOverflow__0(void* self) {
+extern "C" int32_t vtkImageShiftScale__GetClampOverflow__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageShiftScale*>(self)->GetClampOverflow();
 }
 
-extern "C" void vtkImageShiftScale__ClampOverflowOn__0(void* self) {
+extern "C" void vtkImageShiftScale__ClampOverflowOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->ClampOverflowOn();
 }
 
-extern "C" void vtkImageShiftScale__ClampOverflowOff__0(void* self) {
+extern "C" void vtkImageShiftScale__ClampOverflowOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageShiftScale*>(self)->ClampOverflowOff();
 }

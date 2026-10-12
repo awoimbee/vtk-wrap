@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAlgorithmOutput__vtk_wrap_new() { return static_cast<void*>(vtkAlgorithmOutput::New()); }
+extern "C" void* vtkAlgorithmOutput__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAlgorithmOutput::New()); }
 
-extern "C" int32_t vtkAlgorithmOutput__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAlgorithmOutput__IsTypeOf__0(const char* type_) noexcept {
   return vtkAlgorithmOutput::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAlgorithmOutput__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAlgorithmOutput__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAlgorithmOutput*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAlgorithmOutput__SafeDownCast__0(void* o) {
+extern "C" void* vtkAlgorithmOutput__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAlgorithmOutput::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAlgorithmOutput__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAlgorithmOutput__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAlgorithmOutput::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAlgorithmOutput__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAlgorithmOutput__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAlgorithmOutput*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAlgorithmOutput__SetIndex__0(void* self, int32_t index) {
+extern "C" void vtkAlgorithmOutput__SetIndex__0(void* self, int32_t index) noexcept {
   (void)self;
   static_cast<vtkAlgorithmOutput*>(self)->SetIndex(index);
 }
 
-extern "C" int32_t vtkAlgorithmOutput__GetIndex__0(void* self) {
+extern "C" int32_t vtkAlgorithmOutput__GetIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAlgorithmOutput*>(self)->GetIndex();
 }
 
-extern "C" void* vtkAlgorithmOutput__GetProducer__0(void* self) {
+extern "C" void* vtkAlgorithmOutput__GetProducer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAlgorithmOutput*>(self)->GetProducer());
 }
 
-extern "C" void vtkAlgorithmOutput__SetProducer__0(void* self, void* producer) {
+extern "C" void vtkAlgorithmOutput__SetProducer__0(void* self, void* producer) noexcept {
   (void)self;
   static_cast<vtkAlgorithmOutput*>(self)->SetProducer(static_cast<vtkAlgorithm*>(producer));
 }

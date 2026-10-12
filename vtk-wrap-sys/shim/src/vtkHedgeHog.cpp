@@ -4,71 +4,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkHedgeHog__vtk_wrap_new() { return static_cast<void*>(vtkHedgeHog::New()); }
+extern "C" void* vtkHedgeHog__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHedgeHog::New()); }
 
-extern "C" int32_t vtkHedgeHog__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHedgeHog__IsTypeOf__0(const char* type_) noexcept {
   return vtkHedgeHog::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHedgeHog__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHedgeHog__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHedgeHog__SafeDownCast__0(void* o) {
+extern "C" void* vtkHedgeHog__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHedgeHog::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHedgeHog__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHedgeHog__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHedgeHog::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHedgeHog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHedgeHog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkHedgeHog__SetScaleFactor__0(void* self, double _arg) {
+extern "C" void vtkHedgeHog__SetScaleFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkHedgeHog*>(self)->SetScaleFactor(_arg);
 }
 
-extern "C" double vtkHedgeHog__GetScaleFactor__0(void* self) {
+extern "C" double vtkHedgeHog__GetScaleFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->GetScaleFactor();
 }
 
-extern "C" void vtkHedgeHog__SetVectorMode__0(void* self, int32_t _arg) {
+extern "C" void vtkHedgeHog__SetVectorMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkHedgeHog*>(self)->SetVectorMode(_arg);
 }
 
-extern "C" int32_t vtkHedgeHog__GetVectorMode__0(void* self) {
+extern "C" int32_t vtkHedgeHog__GetVectorMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->GetVectorMode();
 }
 
-extern "C" void vtkHedgeHog__SetVectorModeToUseVector__0(void* self) {
+extern "C" void vtkHedgeHog__SetVectorModeToUseVector__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHedgeHog*>(self)->SetVectorModeToUseVector();
 }
 
-extern "C" void vtkHedgeHog__SetVectorModeToUseNormal__0(void* self) {
+extern "C" void vtkHedgeHog__SetVectorModeToUseNormal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHedgeHog*>(self)->SetVectorModeToUseNormal();
 }
 
-extern "C" const char* vtkHedgeHog__GetVectorModeAsString__0(void* self) {
+extern "C" const char* vtkHedgeHog__GetVectorModeAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->GetVectorModeAsString();
 }
 
-extern "C" void vtkHedgeHog__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkHedgeHog__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkHedgeHog*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkHedgeHog__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkHedgeHog__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHedgeHog*>(self)->GetOutputPointsPrecision();
 }

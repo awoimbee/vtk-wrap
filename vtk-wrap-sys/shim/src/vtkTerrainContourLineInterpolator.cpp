@@ -7,41 +7,41 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTerrainContourLineInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkTerrainContourLineInterpolator::New()); }
+extern "C" void* vtkTerrainContourLineInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTerrainContourLineInterpolator::New()); }
 
-extern "C" int32_t vtkTerrainContourLineInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTerrainContourLineInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkTerrainContourLineInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTerrainContourLineInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTerrainContourLineInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTerrainContourLineInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTerrainContourLineInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkTerrainContourLineInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTerrainContourLineInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTerrainContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTerrainContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTerrainContourLineInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTerrainContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTerrainContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTerrainContourLineInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkTerrainContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) {
+extern "C" int32_t vtkTerrainContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) noexcept {
   (void)self;
   return static_cast<vtkTerrainContourLineInterpolator*>(self)->InterpolateLine(static_cast<vtkRenderer*>(ren), static_cast<vtkContourRepresentation*>(rep), idx1, idx2);
 }
 
-extern "C" void vtkTerrainContourLineInterpolator__SetImageData__0(void* self, void* arg0) {
+extern "C" void vtkTerrainContourLineInterpolator__SetImageData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTerrainContourLineInterpolator*>(self)->SetImageData(static_cast<vtkImageData*>(arg0));
 }
 
-extern "C" void* vtkTerrainContourLineInterpolator__GetImageData__0(void* self) {
+extern "C" void* vtkTerrainContourLineInterpolator__GetImageData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTerrainContourLineInterpolator*>(self)->GetImageData());
 }

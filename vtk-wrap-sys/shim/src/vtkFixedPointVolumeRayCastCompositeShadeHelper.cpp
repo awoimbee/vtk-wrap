@@ -6,31 +6,31 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkFixedPointVolumeRayCastCompositeShadeHelper__vtk_wrap_new() { return static_cast<void*>(vtkFixedPointVolumeRayCastCompositeShadeHelper::New()); }
+extern "C" void* vtkFixedPointVolumeRayCastCompositeShadeHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFixedPointVolumeRayCastCompositeShadeHelper::New()); }
 
-extern "C" int32_t vtkFixedPointVolumeRayCastCompositeShadeHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFixedPointVolumeRayCastCompositeShadeHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkFixedPointVolumeRayCastCompositeShadeHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFixedPointVolumeRayCastCompositeShadeHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFixedPointVolumeRayCastCompositeShadeHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointVolumeRayCastCompositeShadeHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFixedPointVolumeRayCastCompositeShadeHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkFixedPointVolumeRayCastCompositeShadeHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFixedPointVolumeRayCastCompositeShadeHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFixedPointVolumeRayCastCompositeShadeHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFixedPointVolumeRayCastCompositeShadeHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFixedPointVolumeRayCastCompositeShadeHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFixedPointVolumeRayCastCompositeShadeHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFixedPointVolumeRayCastCompositeShadeHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointVolumeRayCastCompositeShadeHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFixedPointVolumeRayCastCompositeShadeHelper__GenerateImage__0(void* self, int32_t threadID, int32_t threadCount, void* vol, void* mapper) {
+extern "C" void vtkFixedPointVolumeRayCastCompositeShadeHelper__GenerateImage__0(void* self, int32_t threadID, int32_t threadCount, void* vol, void* mapper) noexcept {
   (void)self;
   static_cast<vtkFixedPointVolumeRayCastCompositeShadeHelper*>(self)->GenerateImage(threadID, threadCount, static_cast<vtkVolume*>(vol), static_cast<vtkFixedPointVolumeRayCastMapper*>(mapper));
 }

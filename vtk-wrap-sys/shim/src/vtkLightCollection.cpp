@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLightCollection__vtk_wrap_new() { return static_cast<void*>(vtkLightCollection::New()); }
+extern "C" void* vtkLightCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLightCollection::New()); }
 
-extern "C" int32_t vtkLightCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLightCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkLightCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLightCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLightCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLightCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLightCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkLightCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLightCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLightCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLightCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLightCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLightCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLightCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLightCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLightCollection__AddItem__0(void* self, void* a) {
+extern "C" void vtkLightCollection__AddItem__0(void* self, void* a) noexcept {
   (void)self;
   static_cast<vtkLightCollection*>(self)->AddItem(static_cast<vtkLight*>(a));
 }
 
-extern "C" void* vtkLightCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkLightCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLightCollection*>(self)->GetNextItem());
 }

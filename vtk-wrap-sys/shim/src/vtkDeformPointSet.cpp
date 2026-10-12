@@ -6,61 +6,61 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkDeformPointSet__vtk_wrap_new() { return static_cast<void*>(vtkDeformPointSet::New()); }
+extern "C" void* vtkDeformPointSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDeformPointSet::New()); }
 
-extern "C" int32_t vtkDeformPointSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDeformPointSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkDeformPointSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDeformPointSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDeformPointSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDeformPointSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDeformPointSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkDeformPointSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDeformPointSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDeformPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDeformPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDeformPointSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDeformPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDeformPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDeformPointSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDeformPointSet__SetControlMeshData__0(void* self, void* controlMesh) {
+extern "C" void vtkDeformPointSet__SetControlMeshData__0(void* self, void* controlMesh) noexcept {
   (void)self;
   static_cast<vtkDeformPointSet*>(self)->SetControlMeshData(static_cast<vtkPolyData*>(controlMesh));
 }
 
-extern "C" void* vtkDeformPointSet__GetControlMeshData__0(void* self) {
+extern "C" void* vtkDeformPointSet__GetControlMeshData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDeformPointSet*>(self)->GetControlMeshData());
 }
 
-extern "C" void vtkDeformPointSet__SetControlMeshConnection__0(void* self, void* algOutput) {
+extern "C" void vtkDeformPointSet__SetControlMeshConnection__0(void* self, void* algOutput) noexcept {
   (void)self;
   static_cast<vtkDeformPointSet*>(self)->SetControlMeshConnection(static_cast<vtkAlgorithmOutput*>(algOutput));
 }
 
-extern "C" void vtkDeformPointSet__SetInitializeWeights__0(void* self, int32_t _arg) {
+extern "C" void vtkDeformPointSet__SetInitializeWeights__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDeformPointSet*>(self)->SetInitializeWeights(_arg);
 }
 
-extern "C" int32_t vtkDeformPointSet__GetInitializeWeights__0(void* self) {
+extern "C" int32_t vtkDeformPointSet__GetInitializeWeights__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDeformPointSet*>(self)->GetInitializeWeights();
 }
 
-extern "C" void vtkDeformPointSet__InitializeWeightsOn__0(void* self) {
+extern "C" void vtkDeformPointSet__InitializeWeightsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDeformPointSet*>(self)->InitializeWeightsOn();
 }
 
-extern "C" void vtkDeformPointSet__InitializeWeightsOff__0(void* self) {
+extern "C" void vtkDeformPointSet__InitializeWeightsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDeformPointSet*>(self)->InitializeWeightsOff();
 }

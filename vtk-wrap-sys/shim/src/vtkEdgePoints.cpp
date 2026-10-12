@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkEdgePoints__vtk_wrap_new() { return static_cast<void*>(vtkEdgePoints::New()); }
+extern "C" void* vtkEdgePoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEdgePoints::New()); }
 
-extern "C" int32_t vtkEdgePoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEdgePoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkEdgePoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEdgePoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEdgePoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgePoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEdgePoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkEdgePoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEdgePoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEdgePoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEdgePoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEdgePoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEdgePoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEdgePoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgePoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEdgePoints__SetValue__0(void* self, double _arg) {
+extern "C" void vtkEdgePoints__SetValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkEdgePoints*>(self)->SetValue(_arg);
 }
 
-extern "C" double vtkEdgePoints__GetValue__0(void* self) {
+extern "C" double vtkEdgePoints__GetValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEdgePoints*>(self)->GetValue();
 }

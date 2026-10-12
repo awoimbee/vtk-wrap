@@ -5,46 +5,46 @@
 #include "vtkResourceStream.h"
 #include <string>
 
-extern "C" void* vtkTGAReader__vtk_wrap_new() { return static_cast<void*>(vtkTGAReader::New()); }
+extern "C" void* vtkTGAReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTGAReader::New()); }
 
-extern "C" int32_t vtkTGAReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTGAReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkTGAReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTGAReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTGAReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTGAReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkTGAReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTGAReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTGAReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTGAReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTGAReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTGAReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTGAReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkTGAReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkTGAReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" int32_t vtkTGAReader__CanReadFile__1(void* self, void* stream) {
+extern "C" int32_t vtkTGAReader__CanReadFile__1(void* self, void* stream) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" const char* vtkTGAReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkTGAReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkTGAReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkTGAReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTGAReader*>(self)->GetDescriptiveName();
 }

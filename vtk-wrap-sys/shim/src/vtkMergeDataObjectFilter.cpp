@@ -5,61 +5,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMergeDataObjectFilter__vtk_wrap_new() { return static_cast<void*>(vtkMergeDataObjectFilter::New()); }
+extern "C" void* vtkMergeDataObjectFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMergeDataObjectFilter::New()); }
 
-extern "C" int32_t vtkMergeDataObjectFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMergeDataObjectFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMergeDataObjectFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMergeDataObjectFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMergeDataObjectFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeDataObjectFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMergeDataObjectFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMergeDataObjectFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMergeDataObjectFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMergeDataObjectFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMergeDataObjectFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMergeDataObjectFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMergeDataObjectFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMergeDataObjectFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeDataObjectFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMergeDataObjectFilter__SetDataObjectInputData__0(void* self, void* object) {
+extern "C" void vtkMergeDataObjectFilter__SetDataObjectInputData__0(void* self, void* object) noexcept {
   (void)self;
   static_cast<vtkMergeDataObjectFilter*>(self)->SetDataObjectInputData(static_cast<vtkDataObject*>(object));
 }
 
-extern "C" void* vtkMergeDataObjectFilter__GetDataObject__0(void* self) {
+extern "C" void* vtkMergeDataObjectFilter__GetDataObject__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMergeDataObjectFilter*>(self)->GetDataObject());
 }
 
-extern "C" void vtkMergeDataObjectFilter__SetOutputField__0(void* self, int32_t _arg) {
+extern "C" void vtkMergeDataObjectFilter__SetOutputField__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMergeDataObjectFilter*>(self)->SetOutputField(_arg);
 }
 
-extern "C" int32_t vtkMergeDataObjectFilter__GetOutputField__0(void* self) {
+extern "C" int32_t vtkMergeDataObjectFilter__GetOutputField__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeDataObjectFilter*>(self)->GetOutputField();
 }
 
-extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToDataObjectField__0(void* self) {
+extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToDataObjectField__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeDataObjectFilter*>(self)->SetOutputFieldToDataObjectField();
 }
 
-extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToPointDataField__0(void* self) {
+extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToPointDataField__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeDataObjectFilter*>(self)->SetOutputFieldToPointDataField();
 }
 
-extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToCellDataField__0(void* self) {
+extern "C" void vtkMergeDataObjectFilter__SetOutputFieldToCellDataField__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeDataObjectFilter*>(self)->SetOutputFieldToCellDataField();
 }

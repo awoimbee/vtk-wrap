@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSpatialRepresentationFilter__vtk_wrap_new() { return static_cast<void*>(vtkSpatialRepresentationFilter::New()); }
+extern "C" void* vtkSpatialRepresentationFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSpatialRepresentationFilter::New()); }
 
-extern "C" int32_t vtkSpatialRepresentationFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSpatialRepresentationFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkSpatialRepresentationFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSpatialRepresentationFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSpatialRepresentationFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSpatialRepresentationFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSpatialRepresentationFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkSpatialRepresentationFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSpatialRepresentationFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSpatialRepresentationFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSpatialRepresentationFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSpatialRepresentationFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSpatialRepresentationFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSpatialRepresentationFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSpatialRepresentationFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSpatialRepresentationFilter__SetSpatialRepresentation__0(void* self, void* arg0) {
+extern "C" void vtkSpatialRepresentationFilter__SetSpatialRepresentation__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->SetSpatialRepresentation(static_cast<vtkLocator*>(arg0));
 }
 
-extern "C" void* vtkSpatialRepresentationFilter__GetSpatialRepresentation__0(void* self) {
+extern "C" void* vtkSpatialRepresentationFilter__GetSpatialRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSpatialRepresentationFilter*>(self)->GetSpatialRepresentation());
 }
 
-extern "C" int32_t vtkSpatialRepresentationFilter__GetMaximumLevel__0(void* self) {
+extern "C" int32_t vtkSpatialRepresentationFilter__GetMaximumLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSpatialRepresentationFilter*>(self)->GetMaximumLevel();
 }
 
-extern "C" void vtkSpatialRepresentationFilter__AddLevel__0(void* self, int32_t level) {
+extern "C" void vtkSpatialRepresentationFilter__AddLevel__0(void* self, int32_t level) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->AddLevel(level);
 }
 
-extern "C" void vtkSpatialRepresentationFilter__ResetLevels__0(void* self) {
+extern "C" void vtkSpatialRepresentationFilter__ResetLevels__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->ResetLevels();
 }
 
-extern "C" void vtkSpatialRepresentationFilter__SetGenerateLeaves__0(void* self, bool _arg) {
+extern "C" void vtkSpatialRepresentationFilter__SetGenerateLeaves__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->SetGenerateLeaves(_arg);
 }
 
-extern "C" bool vtkSpatialRepresentationFilter__GetGenerateLeaves__0(void* self) {
+extern "C" bool vtkSpatialRepresentationFilter__GetGenerateLeaves__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSpatialRepresentationFilter*>(self)->GetGenerateLeaves();
 }
 
-extern "C" void vtkSpatialRepresentationFilter__GenerateLeavesOn__0(void* self) {
+extern "C" void vtkSpatialRepresentationFilter__GenerateLeavesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->GenerateLeavesOn();
 }
 
-extern "C" void vtkSpatialRepresentationFilter__GenerateLeavesOff__0(void* self) {
+extern "C" void vtkSpatialRepresentationFilter__GenerateLeavesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSpatialRepresentationFilter*>(self)->GenerateLeavesOff();
 }

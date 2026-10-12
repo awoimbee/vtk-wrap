@@ -5,43 +5,43 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationDoubleKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationDoubleKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationDoubleKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationDoubleKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationDoubleKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationDoubleKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationDoubleKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationDoubleKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationDoubleKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationDoubleKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationDoubleKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationDoubleKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationDoubleKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationDoubleKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationDoubleKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationDoubleKey__MakeKey__0(const char* name, const char* location) {
+extern "C" void* vtkInformationDoubleKey__MakeKey__0(const char* name, const char* location) noexcept {
   return static_cast<void*>(vtkInformationDoubleKey::MakeKey(name, location));
 }
 
-extern "C" void vtkInformationDoubleKey__Set__0(void* self, void* info, double arg1) {
+extern "C" void vtkInformationDoubleKey__Set__0(void* self, void* info, double arg1) noexcept {
   (void)self;
   static_cast<vtkInformationDoubleKey*>(self)->Set(static_cast<vtkInformation*>(info), arg1);
 }
 
-extern "C" double vtkInformationDoubleKey__Get__0(void* self, void* info) {
+extern "C" double vtkInformationDoubleKey__Get__0(void* self, void* info) noexcept {
   (void)self;
   return static_cast<vtkInformationDoubleKey*>(self)->Get(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationDoubleKey__ShallowCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationDoubleKey__ShallowCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationDoubleKey*>(self)->ShallowCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }

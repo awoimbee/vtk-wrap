@@ -6,41 +6,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLagrangeTriangle__vtk_wrap_new() { return static_cast<void*>(vtkLagrangeTriangle::New()); }
+extern "C" void* vtkLagrangeTriangle__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLagrangeTriangle::New()); }
 
-extern "C" int32_t vtkLagrangeTriangle__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLagrangeTriangle__IsTypeOf__0(const char* type_) noexcept {
   return vtkLagrangeTriangle::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLagrangeTriangle__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLagrangeTriangle__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeTriangle*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLagrangeTriangle__SafeDownCast__0(void* o) {
+extern "C" void* vtkLagrangeTriangle__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLagrangeTriangle::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLagrangeTriangle__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLagrangeTriangle__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLagrangeTriangle::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLagrangeTriangle__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLagrangeTriangle__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeTriangle*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkLagrangeTriangle__GetCellType__0(void* self) {
+extern "C" int32_t vtkLagrangeTriangle__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLagrangeTriangle*>(self)->GetCellType();
 }
 
-extern "C" void* vtkLagrangeTriangle__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkLagrangeTriangle__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeTriangle*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkLagrangeTriangle__GetEdgeCell__0(void* self) {
+extern "C" void* vtkLagrangeTriangle__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeTriangle*>(self)->GetEdgeCell());
 }

@@ -12,7 +12,7 @@ extend-exclude = [
   # Generated C++ shim and its CMake source list.
   "vtk-wrap-sys/shim/CMakeLists.txt",
   "vtk-wrap-sys/shim/src/",
-  # Generated FFI declarations, safe wrappers and smoke test (one file per
+  # Generated FFI declarations, unsafe handle wrappers and smoke test (one file per
   # VTK module, plus the include-list index next to each group).
   "vtk-wrap-sys/src/generated.rs",
   "vtk-wrap-sys/src/generated/",

@@ -9,66 +9,66 @@
 #include "vtkShaderProgram.h"
 #include <string>
 
-extern "C" void* vtkGLSLModLight__vtk_wrap_new() { return static_cast<void*>(vtkGLSLModLight::New()); }
+extern "C" void* vtkGLSLModLight__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGLSLModLight::New()); }
 
-extern "C" int32_t vtkGLSLModLight__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLSLModLight__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLSLModLight::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLSLModLight__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLSLModLight__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLSLModLight__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLSLModLight__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLSLModLight::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLSLModLight__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLSLModLight__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLSLModLight::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLSLModLight__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLSLModLight__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGLSLModLight__SetUsePBRTextures__0(void* self, bool _arg) {
+extern "C" void vtkGLSLModLight__SetUsePBRTextures__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkGLSLModLight*>(self)->SetUsePBRTextures(_arg);
 }
 
-extern "C" bool vtkGLSLModLight__GetUsePBRTextures__0(void* self) {
+extern "C" bool vtkGLSLModLight__GetUsePBRTextures__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->GetUsePBRTextures();
 }
 
-extern "C" void vtkGLSLModLight__SetUseAnisotropy__0(void* self, bool _arg) {
+extern "C" void vtkGLSLModLight__SetUseAnisotropy__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkGLSLModLight*>(self)->SetUseAnisotropy(_arg);
 }
 
-extern "C" bool vtkGLSLModLight__GetUseAnisotropy__0(void* self) {
+extern "C" bool vtkGLSLModLight__GetUseAnisotropy__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->GetUseAnisotropy();
 }
 
-extern "C" void vtkGLSLModLight__SetUseClearCoat__0(void* self, bool _arg) {
+extern "C" void vtkGLSLModLight__SetUseClearCoat__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkGLSLModLight*>(self)->SetUseClearCoat(_arg);
 }
 
-extern "C" bool vtkGLSLModLight__GetUseClearCoat__0(void* self) {
+extern "C" bool vtkGLSLModLight__GetUseClearCoat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->GetUseClearCoat();
 }
 
-extern "C" bool vtkGLSLModLight__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) {
+extern "C" bool vtkGLSLModLight__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->SetShaderParameters(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" bool vtkGLSLModLight__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) {
+extern "C" bool vtkGLSLModLight__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) noexcept {
   (void)self;
   return static_cast<vtkGLSLModLight*>(self)->IsUpToDate(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor));
 }

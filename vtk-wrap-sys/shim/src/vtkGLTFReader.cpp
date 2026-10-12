@@ -9,176 +9,179 @@
 #include "vtkURILoader.h"
 #include <string>
 
-extern "C" void* vtkGLTFReader__vtk_wrap_new() { return static_cast<void*>(vtkGLTFReader::New()); }
+extern "C" void* vtkGLTFReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGLTFReader::New()); }
 
-extern "C" int32_t vtkGLTFReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLTFReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLTFReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLTFReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLTFReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLTFReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLTFReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLTFReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLTFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLTFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLTFReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLTFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLTFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkGLTFReader__GetNumberOfTextures__0(void* self) {
+extern "C" int64_t vtkGLTFReader__GetNumberOfTextures__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetNumberOfTextures();
 }
 
-extern "C" void* vtkGLTFReader__GetTexture__0(void* self, int64_t textureIndex) {
+extern "C" void* vtkGLTFReader__GetTexture__0(void* self, int64_t textureIndex) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkGLTFReader*>(self)->GetTexture(textureIndex)).GetPointer());
+  auto result = static_cast<vtkGLTFReader*>(self)->GetTexture(textureIndex);
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void vtkGLTFReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkGLTFReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkGLTFReader__SetStream__0(void* self, void* _arg) {
+extern "C" void vtkGLTFReader__SetStream__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetStream(static_cast<vtkResourceStream*>(_arg));
 }
 
-extern "C" void* vtkGLTFReader__GetStream__0(void* self) {
+extern "C" void* vtkGLTFReader__GetStream__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGLTFReader*>(self)->GetStream());
 }
 
-extern "C" void vtkGLTFReader__SetGLBStart__0(void* self, int64_t _arg) {
+extern "C" void vtkGLTFReader__SetGLBStart__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetGLBStart(_arg);
 }
 
-extern "C" int64_t vtkGLTFReader__GetGLBStart__0(void* self) {
+extern "C" int64_t vtkGLTFReader__GetGLBStart__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetGLBStart();
 }
 
-extern "C" void vtkGLTFReader__SetURILoader__0(void* self, void* _arg) {
+extern "C" void vtkGLTFReader__SetURILoader__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetURILoader(static_cast<vtkURILoader*>(_arg));
 }
 
-extern "C" void* vtkGLTFReader__GetURILoader__0(void* self) {
+extern "C" void* vtkGLTFReader__GetURILoader__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGLTFReader*>(self)->GetURILoader());
 }
 
-extern "C" void vtkGLTFReader__SetApplyDeformationsToGeometry__0(void* self, bool flag) {
+extern "C" void vtkGLTFReader__SetApplyDeformationsToGeometry__0(void* self, bool flag) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetApplyDeformationsToGeometry(flag);
 }
 
-extern "C" bool vtkGLTFReader__GetApplyDeformationsToGeometry__0(void* self) {
+extern "C" bool vtkGLTFReader__GetApplyDeformationsToGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetApplyDeformationsToGeometry();
 }
 
-extern "C" void vtkGLTFReader__ApplyDeformationsToGeometryOn__0(void* self) {
+extern "C" void vtkGLTFReader__ApplyDeformationsToGeometryOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->ApplyDeformationsToGeometryOn();
 }
 
-extern "C" void vtkGLTFReader__ApplyDeformationsToGeometryOff__0(void* self) {
+extern "C" void vtkGLTFReader__ApplyDeformationsToGeometryOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->ApplyDeformationsToGeometryOff();
 }
 
-extern "C" int64_t vtkGLTFReader__GetNumberOfAnimations__0(void* self) {
+extern "C" int64_t vtkGLTFReader__GetNumberOfAnimations__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetNumberOfAnimations();
 }
 
-extern "C" char* vtkGLTFReader__GetAnimationName__0(void* self, int64_t animationIndex) {
+extern "C" char* vtkGLTFReader__GetAnimationName__0(void* self, int64_t animationIndex) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkGLTFReader*>(self)->GetAnimationName(animationIndex)).c_str());
 }
 
-extern "C" float vtkGLTFReader__GetAnimationDuration__0(void* self, int64_t animationIndex) {
+extern "C" float vtkGLTFReader__GetAnimationDuration__0(void* self, int64_t animationIndex) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetAnimationDuration(animationIndex);
 }
 
-extern "C" void vtkGLTFReader__EnableAnimation__0(void* self, int64_t animationIndex) {
+extern "C" void vtkGLTFReader__EnableAnimation__0(void* self, int64_t animationIndex) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->EnableAnimation(animationIndex);
 }
 
-extern "C" void vtkGLTFReader__DisableAnimation__0(void* self, int64_t animationIndex) {
+extern "C" void vtkGLTFReader__DisableAnimation__0(void* self, int64_t animationIndex) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->DisableAnimation(animationIndex);
 }
 
-extern "C" bool vtkGLTFReader__IsAnimationEnabled__0(void* self, int64_t animationIndex) {
+extern "C" bool vtkGLTFReader__IsAnimationEnabled__0(void* self, int64_t animationIndex) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->IsAnimationEnabled(animationIndex);
 }
 
-extern "C" char* vtkGLTFReader__GetSceneName__0(void* self, int64_t sceneIndex) {
+extern "C" char* vtkGLTFReader__GetSceneName__0(void* self, int64_t sceneIndex) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkGLTFReader*>(self)->GetSceneName(sceneIndex)).c_str());
 }
 
-extern "C" int64_t vtkGLTFReader__GetNumberOfScenes__0(void* self) {
+extern "C" int64_t vtkGLTFReader__GetNumberOfScenes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetNumberOfScenes();
 }
 
-extern "C" int64_t vtkGLTFReader__GetCurrentScene__0(void* self) {
+extern "C" int64_t vtkGLTFReader__GetCurrentScene__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetCurrentScene();
 }
 
-extern "C" void vtkGLTFReader__SetCurrentScene__0(void* self, int64_t _arg) {
+extern "C" void vtkGLTFReader__SetCurrentScene__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetCurrentScene(_arg);
 }
 
-extern "C" void vtkGLTFReader__SetScene__0(void* self, const char* scene) {
+extern "C" void vtkGLTFReader__SetScene__0(void* self, const char* scene) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetScene(std::string(scene));
 }
 
-extern "C" uint32_t vtkGLTFReader__GetFrameRate__0(void* self) {
+extern "C" uint32_t vtkGLTFReader__GetFrameRate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetFrameRate();
 }
 
-extern "C" void vtkGLTFReader__SetFrameRate__0(void* self, uint32_t _arg) {
+extern "C" void vtkGLTFReader__SetFrameRate__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetFrameRate(_arg);
 }
 
-extern "C" void vtkGLTFReader__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkGLTFReader__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkGLTFReader*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkGLTFReader__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkGLTFReader__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGLTFReader*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" void* vtkGLTFReader__GetAllSceneNames__0(void* self) {
+extern "C" void* vtkGLTFReader__GetAllSceneNames__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGLTFReader*>(self)->GetAllSceneNames());
 }
 
-extern "C" void* vtkGLTFReader__GetAnimationSelection__0(void* self) {
+extern "C" void* vtkGLTFReader__GetAnimationSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGLTFReader*>(self)->GetAnimationSelection());
 }

@@ -4,55 +4,55 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStructuredExtent__vtk_wrap_new() { return static_cast<void*>(vtkStructuredExtent::New()); }
+extern "C" void* vtkStructuredExtent__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredExtent::New()); }
 
-extern "C" int32_t vtkStructuredExtent__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredExtent__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredExtent::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredExtent__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredExtent__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredExtent*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredExtent__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredExtent__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredExtent::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredExtent__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredExtent__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredExtent::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredExtent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredExtent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredExtent*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStructuredExtent__Clamp__0(int32_t* ext, const int32_t* wholeExt) {
+extern "C" void vtkStructuredExtent__Clamp__0(int32_t* ext, const int32_t* wholeExt) noexcept {
   vtkStructuredExtent::Clamp(ext, wholeExt);
 }
 
-extern "C" bool vtkStructuredExtent__StrictlySmaller__0(const int32_t* ext, const int32_t* wholeExt) {
+extern "C" bool vtkStructuredExtent__StrictlySmaller__0(const int32_t* ext, const int32_t* wholeExt) noexcept {
   return vtkStructuredExtent::StrictlySmaller(ext, wholeExt);
 }
 
-extern "C" bool vtkStructuredExtent__Smaller__0(const int32_t* ext, const int32_t* wholeExt) {
+extern "C" bool vtkStructuredExtent__Smaller__0(const int32_t* ext, const int32_t* wholeExt) noexcept {
   return vtkStructuredExtent::Smaller(ext, wholeExt);
 }
 
-extern "C" void vtkStructuredExtent__Grow__0(int32_t* ext, int32_t count) {
+extern "C" void vtkStructuredExtent__Grow__0(int32_t* ext, int32_t count) noexcept {
   vtkStructuredExtent::Grow(ext, count);
 }
 
-extern "C" void vtkStructuredExtent__Grow__1(int32_t* ext, int32_t count, int32_t* wholeExt) {
+extern "C" void vtkStructuredExtent__Grow__1(int32_t* ext, int32_t count, int32_t* wholeExt) noexcept {
   vtkStructuredExtent::Grow(ext, count, wholeExt);
 }
 
-extern "C" void vtkStructuredExtent__Transform__0(int32_t* ext, int32_t* wholeExt) {
+extern "C" void vtkStructuredExtent__Transform__0(int32_t* ext, int32_t* wholeExt) noexcept {
   vtkStructuredExtent::Transform(ext, wholeExt);
 }
 
-extern "C" void vtkStructuredExtent__GetDimensions__0(const int32_t* ext, int32_t* dims) {
+extern "C" void vtkStructuredExtent__GetDimensions__0(const int32_t* ext, int32_t* dims) noexcept {
   vtkStructuredExtent::GetDimensions(ext, dims);
 }
 

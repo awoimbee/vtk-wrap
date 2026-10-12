@@ -6,99 +6,99 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPentagonalPrism__vtk_wrap_new() { return static_cast<void*>(vtkPentagonalPrism::New()); }
+extern "C" void* vtkPentagonalPrism__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPentagonalPrism::New()); }
 
-extern "C" int32_t vtkPentagonalPrism__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPentagonalPrism__IsTypeOf__0(const char* type_) noexcept {
   return vtkPentagonalPrism::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPentagonalPrism__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPentagonalPrism__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPentagonalPrism__SafeDownCast__0(void* o) {
+extern "C" void* vtkPentagonalPrism__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPentagonalPrism::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPentagonalPrism__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPentagonalPrism__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPentagonalPrism::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPentagonalPrism__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPentagonalPrism__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkPentagonalPrism__GetCentroid__0(void* self, double* centroid) {
+extern "C" bool vtkPentagonalPrism__GetCentroid__0(void* self, double* centroid) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetCentroid(centroid);
 }
 
-extern "C" bool vtkPentagonalPrism__IsInsideOut__0(void* self) {
+extern "C" bool vtkPentagonalPrism__IsInsideOut__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->IsInsideOut();
 }
 
-extern "C" int32_t vtkPentagonalPrism__GetCellType__0(void* self) {
+extern "C" int32_t vtkPentagonalPrism__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkPentagonalPrism__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkPentagonalPrism__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkPentagonalPrism__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkPentagonalPrism__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkPentagonalPrism__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkPentagonalPrism__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkPentagonalPrism__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkPentagonalPrism__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPentagonalPrism*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkPentagonalPrism__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkPentagonalPrism__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPentagonalPrism*>(self)->GetFace(faceId));
 }
 
-extern "C" int32_t vtkPentagonalPrism__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkPentagonalPrism__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" int32_t vtkPentagonalPrism__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkPentagonalPrism__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int32_t vtkPentagonalPrism__GetParametricCenter__0(void* self, double* pcoords) {
+extern "C" int32_t vtkPentagonalPrism__GetParametricCenter__0(void* self, double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkPentagonalPrism*>(self)->GetParametricCenter(pcoords);
 }
 
-extern "C" void vtkPentagonalPrism__InterpolationFunctions__0(const double* pcoords, double* weights) {
+extern "C" void vtkPentagonalPrism__InterpolationFunctions__0(const double* pcoords, double* weights) noexcept {
   vtkPentagonalPrism::InterpolationFunctions(pcoords, weights);
 }
 
-extern "C" void vtkPentagonalPrism__InterpolationDerivs__0(const double* pcoords, double* derivs) {
+extern "C" void vtkPentagonalPrism__InterpolationDerivs__0(const double* pcoords, double* derivs) noexcept {
   vtkPentagonalPrism::InterpolationDerivs(pcoords, derivs);
 }
 
-extern "C" void vtkPentagonalPrism__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) {
+extern "C" void vtkPentagonalPrism__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) noexcept {
   (void)self;
   static_cast<vtkPentagonalPrism*>(self)->InterpolateFunctions(pcoords, weights);
 }
 
-extern "C" void vtkPentagonalPrism__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) {
+extern "C" void vtkPentagonalPrism__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) noexcept {
   (void)self;
   static_cast<vtkPentagonalPrism*>(self)->InterpolateDerivs(pcoords, derivs);
 }

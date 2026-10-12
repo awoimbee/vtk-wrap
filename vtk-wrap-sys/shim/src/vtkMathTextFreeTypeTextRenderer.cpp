@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMathTextFreeTypeTextRenderer__vtk_wrap_new() { return static_cast<void*>(vtkMathTextFreeTypeTextRenderer::New()); }
+extern "C" void* vtkMathTextFreeTypeTextRenderer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMathTextFreeTypeTextRenderer::New()); }
 
-extern "C" int32_t vtkMathTextFreeTypeTextRenderer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMathTextFreeTypeTextRenderer__IsTypeOf__0(const char* type_) noexcept {
   return vtkMathTextFreeTypeTextRenderer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMathTextFreeTypeTextRenderer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMathTextFreeTypeTextRenderer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMathTextFreeTypeTextRenderer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMathTextFreeTypeTextRenderer__SafeDownCast__0(void* o) {
+extern "C" void* vtkMathTextFreeTypeTextRenderer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMathTextFreeTypeTextRenderer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMathTextFreeTypeTextRenderer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMathTextFreeTypeTextRenderer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMathTextFreeTypeTextRenderer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMathTextFreeTypeTextRenderer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMathTextFreeTypeTextRenderer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMathTextFreeTypeTextRenderer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkMathTextFreeTypeTextRenderer__FreeTypeIsSupported__0(void* self) {
+extern "C" bool vtkMathTextFreeTypeTextRenderer__FreeTypeIsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMathTextFreeTypeTextRenderer*>(self)->FreeTypeIsSupported();
 }
 
-extern "C" bool vtkMathTextFreeTypeTextRenderer__MathTextIsSupported__0(void* self) {
+extern "C" bool vtkMathTextFreeTypeTextRenderer__MathTextIsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMathTextFreeTypeTextRenderer*>(self)->MathTextIsSupported();
 }

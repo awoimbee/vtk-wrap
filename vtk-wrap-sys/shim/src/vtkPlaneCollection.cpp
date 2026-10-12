@@ -5,41 +5,41 @@
 #include "vtkPlane.h"
 #include <string>
 
-extern "C" void* vtkPlaneCollection__vtk_wrap_new() { return static_cast<void*>(vtkPlaneCollection::New()); }
+extern "C" void* vtkPlaneCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPlaneCollection::New()); }
 
-extern "C" int32_t vtkPlaneCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPlaneCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkPlaneCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPlaneCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPlaneCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaneCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPlaneCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkPlaneCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPlaneCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPlaneCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPlaneCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPlaneCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPlaneCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPlaneCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaneCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPlaneCollection__AddItem__0(void* self, void* arg0) {
+extern "C" void vtkPlaneCollection__AddItem__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPlaneCollection*>(self)->AddItem(static_cast<vtkPlane*>(arg0));
 }
 
-extern "C" void* vtkPlaneCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkPlaneCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPlaneCollection*>(self)->GetNextItem());
 }
 
-extern "C" void* vtkPlaneCollection__GetItem__0(void* self, int32_t i) {
+extern "C" void* vtkPlaneCollection__GetItem__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPlaneCollection*>(self)->GetItem(i));
 }

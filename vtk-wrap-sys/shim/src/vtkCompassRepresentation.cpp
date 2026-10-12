@@ -11,206 +11,206 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkCompassRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkCompassRepresentation::New()); }
+extern "C" void* vtkCompassRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompassRepresentation::New()); }
 
-extern "C" int32_t vtkCompassRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompassRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompassRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompassRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompassRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompassRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompassRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompassRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompassRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompassRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompassRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompassRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompassRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCompassRepresentation__GetPoint1Coordinate__0(void* self) {
+extern "C" void* vtkCompassRepresentation__GetPoint1Coordinate__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompassRepresentation*>(self)->GetPoint1Coordinate());
 }
 
-extern "C" void* vtkCompassRepresentation__GetPoint2Coordinate__0(void* self) {
+extern "C" void* vtkCompassRepresentation__GetPoint2Coordinate__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompassRepresentation*>(self)->GetPoint2Coordinate());
 }
 
-extern "C" void* vtkCompassRepresentation__GetRingProperty__0(void* self) {
+extern "C" void* vtkCompassRepresentation__GetRingProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompassRepresentation*>(self)->GetRingProperty());
 }
 
-extern "C" void* vtkCompassRepresentation__GetSelectedProperty__0(void* self) {
+extern "C" void* vtkCompassRepresentation__GetSelectedProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompassRepresentation*>(self)->GetSelectedProperty());
 }
 
-extern "C" void* vtkCompassRepresentation__GetLabelProperty__0(void* self) {
+extern "C" void* vtkCompassRepresentation__GetLabelProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompassRepresentation*>(self)->GetLabelProperty());
 }
 
-extern "C" void vtkCompassRepresentation__PlaceWidget__0(void* self, double* bounds) {
+extern "C" void vtkCompassRepresentation__PlaceWidget__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->PlaceWidget(bounds);
 }
 
-extern "C" void vtkCompassRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkCompassRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkCompassRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCompassRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->StartWidgetInteraction(eventPos);
 }
 
-extern "C" void vtkCompassRepresentation__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCompassRepresentation__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" void vtkCompassRepresentation__TiltWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCompassRepresentation__TiltWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->TiltWidgetInteraction(eventPos);
 }
 
-extern "C" void vtkCompassRepresentation__DistanceWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCompassRepresentation__DistanceWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->DistanceWidgetInteraction(eventPos);
 }
 
-extern "C" int32_t vtkCompassRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkCompassRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkCompassRepresentation__Highlight__0(void* self, int32_t arg0) {
+extern "C" void vtkCompassRepresentation__Highlight__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->Highlight(arg0);
 }
 
-extern "C" void vtkCompassRepresentation__GetActors__0(void* self, void* propCollection) {
+extern "C" void vtkCompassRepresentation__GetActors__0(void* self, void* propCollection) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(propCollection));
 }
 
-extern "C" void vtkCompassRepresentation__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkCompassRepresentation__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" int32_t vtkCompassRepresentation__RenderOverlay__0(void* self, void* viewPort) {
+extern "C" int32_t vtkCompassRepresentation__RenderOverlay__0(void* self, void* viewPort) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewPort));
 }
 
-extern "C" int32_t vtkCompassRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkCompassRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" void vtkCompassRepresentation__SetHeading__0(void* self, double heading) {
+extern "C" void vtkCompassRepresentation__SetHeading__0(void* self, double heading) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetHeading(heading);
 }
 
-extern "C" double vtkCompassRepresentation__GetHeading__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetHeading__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetHeading();
 }
 
-extern "C" void vtkCompassRepresentation__SetTilt__0(void* self, double tilt) {
+extern "C" void vtkCompassRepresentation__SetTilt__0(void* self, double tilt) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetTilt(tilt);
 }
 
-extern "C" double vtkCompassRepresentation__GetTilt__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetTilt__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetTilt();
 }
 
-extern "C" void vtkCompassRepresentation__SetMaximumTiltAngle__0(void* self, double angle) {
+extern "C" void vtkCompassRepresentation__SetMaximumTiltAngle__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetMaximumTiltAngle(angle);
 }
 
-extern "C" double vtkCompassRepresentation__GetMaximumTiltAngle__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetMaximumTiltAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetMaximumTiltAngle();
 }
 
-extern "C" void vtkCompassRepresentation__SetMinimumTiltAngle__0(void* self, double angle) {
+extern "C" void vtkCompassRepresentation__SetMinimumTiltAngle__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetMinimumTiltAngle(angle);
 }
 
-extern "C" double vtkCompassRepresentation__GetMinimumTiltAngle__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetMinimumTiltAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetMinimumTiltAngle();
 }
 
-extern "C" void vtkCompassRepresentation__UpdateTilt__0(void* self, double deltaTilt) {
+extern "C" void vtkCompassRepresentation__UpdateTilt__0(void* self, double deltaTilt) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->UpdateTilt(deltaTilt);
 }
 
-extern "C" void vtkCompassRepresentation__EndTilt__0(void* self) {
+extern "C" void vtkCompassRepresentation__EndTilt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->EndTilt();
 }
 
-extern "C" void vtkCompassRepresentation__SetDistance__0(void* self, double distance) {
+extern "C" void vtkCompassRepresentation__SetDistance__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetDistance(distance);
 }
 
-extern "C" double vtkCompassRepresentation__GetDistance__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetDistance();
 }
 
-extern "C" void vtkCompassRepresentation__SetMaximumDistance__0(void* self, double distance) {
+extern "C" void vtkCompassRepresentation__SetMaximumDistance__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetMaximumDistance(distance);
 }
 
-extern "C" double vtkCompassRepresentation__GetMaximumDistance__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetMaximumDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetMaximumDistance();
 }
 
-extern "C" void vtkCompassRepresentation__SetMinimumDistance__0(void* self, double distance) {
+extern "C" void vtkCompassRepresentation__SetMinimumDistance__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetMinimumDistance(distance);
 }
 
-extern "C" double vtkCompassRepresentation__GetMinimumDistance__0(void* self) {
+extern "C" double vtkCompassRepresentation__GetMinimumDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassRepresentation*>(self)->GetMinimumDistance();
 }
 
-extern "C" void vtkCompassRepresentation__UpdateDistance__0(void* self, double deltaDistance) {
+extern "C" void vtkCompassRepresentation__UpdateDistance__0(void* self, double deltaDistance) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->UpdateDistance(deltaDistance);
 }
 
-extern "C" void vtkCompassRepresentation__EndDistance__0(void* self) {
+extern "C" void vtkCompassRepresentation__EndDistance__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->EndDistance();
 }
 
-extern "C" void vtkCompassRepresentation__SetRenderer__0(void* self, void* renderer) {
+extern "C" void vtkCompassRepresentation__SetRenderer__0(void* self, void* renderer) noexcept {
   (void)self;
   static_cast<vtkCompassRepresentation*>(self)->SetRenderer(static_cast<vtkRenderer*>(renderer));
 }

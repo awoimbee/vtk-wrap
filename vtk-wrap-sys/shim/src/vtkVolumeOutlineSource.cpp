@@ -5,126 +5,126 @@
 #include "vtkVolumeMapper.h"
 #include <string>
 
-extern "C" void* vtkVolumeOutlineSource__vtk_wrap_new() { return static_cast<void*>(vtkVolumeOutlineSource::New()); }
+extern "C" void* vtkVolumeOutlineSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolumeOutlineSource::New()); }
 
-extern "C" int32_t vtkVolumeOutlineSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolumeOutlineSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolumeOutlineSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolumeOutlineSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolumeOutlineSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolumeOutlineSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolumeOutlineSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolumeOutlineSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolumeOutlineSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolumeOutlineSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolumeOutlineSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolumeOutlineSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolumeOutlineSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolumeOutlineSource__SetVolumeMapper__0(void* self, void* mapper) {
+extern "C" void vtkVolumeOutlineSource__SetVolumeMapper__0(void* self, void* mapper) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetVolumeMapper(static_cast<vtkVolumeMapper*>(mapper));
 }
 
-extern "C" void* vtkVolumeOutlineSource__GetVolumeMapper__0(void* self) {
+extern "C" void* vtkVolumeOutlineSource__GetVolumeMapper__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolumeOutlineSource*>(self)->GetVolumeMapper());
 }
 
-extern "C" void vtkVolumeOutlineSource__SetGenerateScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeOutlineSource__SetGenerateScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetGenerateScalars(_arg);
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateScalarsOn__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateScalarsOn();
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateScalarsOff__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateScalarsOff();
 }
 
-extern "C" int32_t vtkVolumeOutlineSource__GetGenerateScalars__0(void* self) {
+extern "C" int32_t vtkVolumeOutlineSource__GetGenerateScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->GetGenerateScalars();
 }
 
-extern "C" void vtkVolumeOutlineSource__SetGenerateOutline__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeOutlineSource__SetGenerateOutline__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetGenerateOutline(_arg);
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateOutlineOn__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateOutlineOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateOutlineOn();
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateOutlineOff__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateOutlineOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateOutlineOff();
 }
 
-extern "C" int32_t vtkVolumeOutlineSource__GetGenerateOutline__0(void* self) {
+extern "C" int32_t vtkVolumeOutlineSource__GetGenerateOutline__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->GetGenerateOutline();
 }
 
-extern "C" void vtkVolumeOutlineSource__SetGenerateFaces__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeOutlineSource__SetGenerateFaces__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetGenerateFaces(_arg);
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateFacesOn__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateFacesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateFacesOn();
 }
 
-extern "C" void vtkVolumeOutlineSource__GenerateFacesOff__0(void* self) {
+extern "C" void vtkVolumeOutlineSource__GenerateFacesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->GenerateFacesOff();
 }
 
-extern "C" int32_t vtkVolumeOutlineSource__GetGenerateFaces__0(void* self) {
+extern "C" int32_t vtkVolumeOutlineSource__GetGenerateFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->GetGenerateFaces();
 }
 
-extern "C" void vtkVolumeOutlineSource__SetColor__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkVolumeOutlineSource__SetColor__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetColor(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkVolumeOutlineSource__SetColor__1(void* self, const double* _arg) {
+extern "C" void vtkVolumeOutlineSource__SetColor__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetColor(_arg);
 }
 
-extern "C" void vtkVolumeOutlineSource__SetActivePlaneId__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumeOutlineSource__SetActivePlaneId__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetActivePlaneId(_arg);
 }
 
-extern "C" int32_t vtkVolumeOutlineSource__GetActivePlaneId__0(void* self) {
+extern "C" int32_t vtkVolumeOutlineSource__GetActivePlaneId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumeOutlineSource*>(self)->GetActivePlaneId();
 }
 
-extern "C" void vtkVolumeOutlineSource__SetActivePlaneColor__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkVolumeOutlineSource__SetActivePlaneColor__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetActivePlaneColor(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkVolumeOutlineSource__SetActivePlaneColor__1(void* self, const double* _arg) {
+extern "C" void vtkVolumeOutlineSource__SetActivePlaneColor__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkVolumeOutlineSource*>(self)->SetActivePlaneColor(_arg);
 }

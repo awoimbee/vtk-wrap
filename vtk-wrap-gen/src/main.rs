@@ -1,6 +1,6 @@
 //! `vtk-wrap-gen` turns the XML API description produced by
 //! [WrapVTK](https://github.com/dgobbi/WrapVTK)'s `vtkWrapXML` tool into a
-//! C++ shim, raw Rust FFI declarations and safe Rust wrappers.
+//! C++ shim, raw Rust FFI declarations and unsafe Rust handle wrappers.
 //!
 //! It can produce that XML itself: point it at VTK and it clones (or reuses)
 //! WrapVTK, builds `vtkWrapXML`, runs it, and then generates the bindings.  A

@@ -6,41 +6,41 @@
 #include "vtkStructuredPoints.h"
 #include <string>
 
-extern "C" void* vtkImageToStructuredPoints__vtk_wrap_new() { return static_cast<void*>(vtkImageToStructuredPoints::New()); }
+extern "C" void* vtkImageToStructuredPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageToStructuredPoints::New()); }
 
-extern "C" int32_t vtkImageToStructuredPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageToStructuredPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageToStructuredPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageToStructuredPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageToStructuredPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageToStructuredPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageToStructuredPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageToStructuredPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageToStructuredPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageToStructuredPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageToStructuredPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageToStructuredPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageToStructuredPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageToStructuredPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageToStructuredPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageToStructuredPoints__SetVectorInputData__0(void* self, void* input) {
+extern "C" void vtkImageToStructuredPoints__SetVectorInputData__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkImageToStructuredPoints*>(self)->SetVectorInputData(static_cast<vtkImageData*>(input));
 }
 
-extern "C" void* vtkImageToStructuredPoints__GetVectorInput__0(void* self) {
+extern "C" void* vtkImageToStructuredPoints__GetVectorInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageToStructuredPoints*>(self)->GetVectorInput());
 }
 
-extern "C" void* vtkImageToStructuredPoints__GetStructuredPointsOutput__0(void* self) {
+extern "C" void* vtkImageToStructuredPoints__GetStructuredPointsOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageToStructuredPoints*>(self)->GetStructuredPointsOutput());
 }

@@ -7,34 +7,34 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" int32_t vtkUnstructuredGridVolumeRayIntegrator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridVolumeRayIntegrator__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridVolumeRayIntegrator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridVolumeRayIntegrator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridVolumeRayIntegrator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridVolumeRayIntegrator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridVolumeRayIntegrator__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridVolumeRayIntegrator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridVolumeRayIntegrator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridVolumeRayIntegrator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridVolumeRayIntegrator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridVolumeRayIntegrator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridVolumeRayIntegrator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridVolumeRayIntegrator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridVolumeRayIntegrator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridVolumeRayIntegrator__Initialize__0(void* self, void* volume, void* scalars) {
+extern "C" void vtkUnstructuredGridVolumeRayIntegrator__Initialize__0(void* self, void* volume, void* scalars) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeRayIntegrator*>(self)->Initialize(static_cast<vtkVolume*>(volume), static_cast<vtkDataArray*>(scalars));
 }
 
-extern "C" void vtkUnstructuredGridVolumeRayIntegrator__Integrate__0(void* self, void* intersectionLengths, void* nearIntersections, void* farIntersections, float* color) {
+extern "C" void vtkUnstructuredGridVolumeRayIntegrator__Integrate__0(void* self, void* intersectionLengths, void* nearIntersections, void* farIntersections, float* color) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeRayIntegrator*>(self)->Integrate(static_cast<vtkDoubleArray*>(intersectionLengths), static_cast<vtkDataArray*>(nearIntersections), static_cast<vtkDataArray*>(farIntersections), color);
 }

@@ -6,46 +6,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMultiBlockDataSetAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkMultiBlockDataSetAlgorithm::New()); }
+extern "C" void* vtkMultiBlockDataSetAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiBlockDataSetAlgorithm::New()); }
 
-extern "C" int32_t vtkMultiBlockDataSetAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiBlockDataSetAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiBlockDataSetAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiBlockDataSetAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiBlockDataSetAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiBlockDataSetAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiBlockDataSetAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiBlockDataSetAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiBlockDataSetAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiBlockDataSetAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiBlockDataSetAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiBlockDataSetAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiBlockDataSetAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkMultiBlockDataSetAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkMultiBlockDataSetAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkMultiBlockDataSetAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkMultiBlockDataSetAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkMultiBlockDataSetAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkMultiBlockDataSetAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkMultiBlockDataSetAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkMultiBlockDataSetAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkMultiBlockDataSetAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

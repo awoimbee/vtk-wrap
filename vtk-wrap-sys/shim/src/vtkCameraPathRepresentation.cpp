@@ -6,56 +6,56 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkCameraPathRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkCameraPathRepresentation::New()); }
+extern "C" void* vtkCameraPathRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCameraPathRepresentation::New()); }
 
-extern "C" int32_t vtkCameraPathRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCameraPathRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkCameraPathRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCameraPathRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCameraPathRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraPathRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCameraPathRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkCameraPathRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCameraPathRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCameraPathRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCameraPathRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCameraPathRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCameraPathRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCameraPathRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraPathRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCameraPathRepresentation__SetDirectional__0(void* self, bool val) {
+extern "C" void vtkCameraPathRepresentation__SetDirectional__0(void* self, bool val) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->SetDirectional(val);
 }
 
-extern "C" void vtkCameraPathRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) {
+extern "C" void vtkCameraPathRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->SetNumberOfHandles(npts);
 }
 
-extern "C" void vtkCameraPathRepresentation__InitializeHandles__0(void* self, void* points) {
+extern "C" void vtkCameraPathRepresentation__InitializeHandles__0(void* self, void* points) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->InitializeHandles(static_cast<vtkPoints*>(points));
 }
 
-extern "C" void vtkCameraPathRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkCameraPathRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkCameraPathRepresentation__AddCameraAt__0(void* self, void* camera, int32_t index) {
+extern "C" void vtkCameraPathRepresentation__AddCameraAt__0(void* self, void* camera, int32_t index) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->AddCameraAt(static_cast<vtkCamera*>(camera), index);
 }
 
-extern "C" void vtkCameraPathRepresentation__DeleteCameraAt__0(void* self, int32_t index) {
+extern "C" void vtkCameraPathRepresentation__DeleteCameraAt__0(void* self, int32_t index) noexcept {
   (void)self;
   static_cast<vtkCameraPathRepresentation*>(self)->DeleteCameraAt(index);
 }

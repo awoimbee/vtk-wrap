@@ -5,96 +5,96 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkCellTypes__vtk_wrap_new() { return static_cast<void*>(vtkCellTypes::New()); }
+extern "C" void* vtkCellTypes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellTypes::New()); }
 
-extern "C" int32_t vtkCellTypes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellTypes__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellTypes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellTypes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellTypes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellTypes__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellTypes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellTypes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellTypes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellTypes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellTypes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellTypes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellTypes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkCellTypes__Allocate__0(void* self, int64_t sz, int64_t ext) {
+extern "C" int32_t vtkCellTypes__Allocate__0(void* self, int64_t sz, int64_t ext) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->Allocate(sz, ext);
 }
 
-extern "C" void vtkCellTypes__InsertCell__0(void* self, int64_t id, uint8_t type_) {
+extern "C" void vtkCellTypes__InsertCell__0(void* self, int64_t id, uint8_t type_) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->InsertCell(id, type_);
 }
 
-extern "C" int64_t vtkCellTypes__InsertNextCell__0(void* self, uint8_t type_) {
+extern "C" int64_t vtkCellTypes__InsertNextCell__0(void* self, uint8_t type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->InsertNextCell(type_);
 }
 
-extern "C" void vtkCellTypes__SetCellTypes__0(void* self, int64_t ncells, void* cellTypes) {
+extern "C" void vtkCellTypes__SetCellTypes__0(void* self, int64_t ncells, void* cellTypes) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->SetCellTypes(ncells, static_cast<vtkUnsignedCharArray*>(cellTypes));
 }
 
-extern "C" void vtkCellTypes__DeleteCell__0(void* self, int64_t cellId) {
+extern "C" void vtkCellTypes__DeleteCell__0(void* self, int64_t cellId) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->DeleteCell(cellId);
 }
 
-extern "C" int64_t vtkCellTypes__GetNumberOfTypes__0(void* self) {
+extern "C" int64_t vtkCellTypes__GetNumberOfTypes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->GetNumberOfTypes();
 }
 
-extern "C" int32_t vtkCellTypes__IsType__0(void* self, uint8_t type_) {
+extern "C" int32_t vtkCellTypes__IsType__0(void* self, uint8_t type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->IsType(type_);
 }
 
-extern "C" int64_t vtkCellTypes__InsertNextType__0(void* self, uint8_t type_) {
+extern "C" int64_t vtkCellTypes__InsertNextType__0(void* self, uint8_t type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->InsertNextType(type_);
 }
 
-extern "C" uint8_t vtkCellTypes__GetCellType__0(void* self, int64_t cellId) {
+extern "C" uint8_t vtkCellTypes__GetCellType__0(void* self, int64_t cellId) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->GetCellType(cellId);
 }
 
-extern "C" void vtkCellTypes__Squeeze__0(void* self) {
+extern "C" void vtkCellTypes__Squeeze__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->Squeeze();
 }
 
-extern "C" void vtkCellTypes__Reset__0(void* self) {
+extern "C" void vtkCellTypes__Reset__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->Reset();
 }
 
-extern "C" unsigned long vtkCellTypes__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkCellTypes__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypes*>(self)->GetActualMemorySize();
 }
 
-extern "C" void vtkCellTypes__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkCellTypes__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkCellTypes*>(self)->DeepCopy(static_cast<vtkCellTypes*>(src));
 }
 
-extern "C" void* vtkCellTypes__GetCellTypesArray__0(void* self) {
+extern "C" void* vtkCellTypes__GetCellTypesArray__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellTypes*>(self)->GetCellTypesArray());
 }

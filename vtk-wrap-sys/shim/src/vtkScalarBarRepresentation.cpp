@@ -8,111 +8,111 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkScalarBarRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkScalarBarRepresentation::New()); }
+extern "C" void* vtkScalarBarRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkScalarBarRepresentation::New()); }
 
-extern "C" int32_t vtkScalarBarRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkScalarBarRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkScalarBarRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkScalarBarRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkScalarBarRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkScalarBarRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkScalarBarRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkScalarBarRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkScalarBarRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkScalarBarRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkScalarBarRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkScalarBarRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkScalarBarRepresentation__GetScalarBarActor__0(void* self) {
+extern "C" void* vtkScalarBarRepresentation__GetScalarBarActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarBarRepresentation*>(self)->GetScalarBarActor());
 }
 
-extern "C" void vtkScalarBarRepresentation__SetScalarBarActor__0(void* self, void* arg0) {
+extern "C" void vtkScalarBarRepresentation__SetScalarBarActor__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->SetScalarBarActor(static_cast<vtkScalarBarActor*>(arg0));
 }
 
-extern "C" void vtkScalarBarRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkScalarBarRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkScalarBarRepresentation__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkScalarBarRepresentation__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" void vtkScalarBarRepresentation__GetSize__0(void* self, double* size) {
+extern "C" void vtkScalarBarRepresentation__GetSize__0(void* self, double* size) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->GetSize(size);
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__GetVisibility__0(void* self) {
+extern "C" int32_t vtkScalarBarRepresentation__GetVisibility__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->GetVisibility();
 }
 
-extern "C" void vtkScalarBarRepresentation__SetVisibility__0(void* self, int32_t arg0) {
+extern "C" void vtkScalarBarRepresentation__SetVisibility__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->SetVisibility(arg0);
 }
 
-extern "C" void vtkScalarBarRepresentation__GetActors2D__0(void* self, void* collection) {
+extern "C" void vtkScalarBarRepresentation__GetActors2D__0(void* self, void* collection) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->GetActors2D(static_cast<vtkPropCollection*>(collection));
 }
 
-extern "C" void vtkScalarBarRepresentation__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkScalarBarRepresentation__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkScalarBarRepresentation__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkScalarBarRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkScalarBarRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkScalarBarRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkScalarBarRepresentation__SetAutoOrient__0(void* self, bool _arg) {
+extern "C" void vtkScalarBarRepresentation__SetAutoOrient__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->SetAutoOrient(_arg);
 }
 
-extern "C" bool vtkScalarBarRepresentation__GetAutoOrient__0(void* self) {
+extern "C" bool vtkScalarBarRepresentation__GetAutoOrient__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->GetAutoOrient();
 }
 
-extern "C" void vtkScalarBarRepresentation__SetOrientation__0(void* self, int32_t orient) {
+extern "C" void vtkScalarBarRepresentation__SetOrientation__0(void* self, int32_t orient) noexcept {
   (void)self;
   static_cast<vtkScalarBarRepresentation*>(self)->SetOrientation(orient);
 }
 
-extern "C" int32_t vtkScalarBarRepresentation__GetOrientation__0(void* self) {
+extern "C" int32_t vtkScalarBarRepresentation__GetOrientation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarRepresentation*>(self)->GetOrientation();
 }

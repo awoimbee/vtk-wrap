@@ -8,50 +8,50 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLProperty__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLProperty::New()); }
+extern "C" void* vtkOpenGLProperty__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLProperty::New()); }
 
-extern "C" void* vtkOpenGLProperty__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLProperty__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLProperty::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLProperty__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLProperty__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLProperty::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLProperty__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLProperty__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProperty*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLProperty__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLProperty__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLProperty::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLProperty__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLProperty__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLProperty::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLProperty__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLProperty__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLProperty*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLProperty__Render__0(void* self, void* a, void* ren) {
+extern "C" void vtkOpenGLProperty__Render__0(void* self, void* a, void* ren) noexcept {
   (void)self;
   static_cast<vtkOpenGLProperty*>(self)->Render(static_cast<vtkActor*>(a), static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkOpenGLProperty__BackfaceRender__0(void* self, void* a, void* ren) {
+extern "C" void vtkOpenGLProperty__BackfaceRender__0(void* self, void* a, void* ren) noexcept {
   (void)self;
   static_cast<vtkOpenGLProperty*>(self)->BackfaceRender(static_cast<vtkActor*>(a), static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkOpenGLProperty__PostRender__0(void* self, void* a, void* r) {
+extern "C" void vtkOpenGLProperty__PostRender__0(void* self, void* a, void* r) noexcept {
   (void)self;
   static_cast<vtkOpenGLProperty*>(self)->PostRender(static_cast<vtkActor*>(a), static_cast<vtkRenderer*>(r));
 }
 
-extern "C" void vtkOpenGLProperty__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkOpenGLProperty__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkOpenGLProperty*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }

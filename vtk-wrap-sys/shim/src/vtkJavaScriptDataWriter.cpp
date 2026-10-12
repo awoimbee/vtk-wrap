@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkJavaScriptDataWriter__vtk_wrap_new() { return static_cast<void*>(vtkJavaScriptDataWriter::New()); }
+extern "C" void* vtkJavaScriptDataWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkJavaScriptDataWriter::New()); }
 
-extern "C" int32_t vtkJavaScriptDataWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkJavaScriptDataWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkJavaScriptDataWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkJavaScriptDataWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkJavaScriptDataWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJavaScriptDataWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkJavaScriptDataWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkJavaScriptDataWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkJavaScriptDataWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkJavaScriptDataWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkJavaScriptDataWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkJavaScriptDataWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkJavaScriptDataWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkJavaScriptDataWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJavaScriptDataWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkJavaScriptDataWriter__SetVariableName__0(void* self, const char* _arg) {
+extern "C" void vtkJavaScriptDataWriter__SetVariableName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkJavaScriptDataWriter*>(self)->SetVariableName(_arg);
 }
 
-extern "C" void vtkJavaScriptDataWriter__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkJavaScriptDataWriter__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkJavaScriptDataWriter*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkJavaScriptDataWriter__SetIncludeFieldNames__0(void* self, bool _arg) {
+extern "C" void vtkJavaScriptDataWriter__SetIncludeFieldNames__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkJavaScriptDataWriter*>(self)->SetIncludeFieldNames(_arg);
 }
 
-extern "C" bool vtkJavaScriptDataWriter__GetIncludeFieldNames__0(void* self) {
+extern "C" bool vtkJavaScriptDataWriter__GetIncludeFieldNames__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkJavaScriptDataWriter*>(self)->GetIncludeFieldNames();
 }

@@ -6,174 +6,174 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUniforms__vtk_wrap_new() { return static_cast<void*>(vtkUniforms::New()); }
+extern "C" void* vtkUniforms__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniforms::New()); }
 
-extern "C" int32_t vtkUniforms__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniforms__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniforms::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniforms__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniforms__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniforms__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniforms__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniforms::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniforms__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniforms__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniforms::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniforms__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniforms__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkUniforms__GetUniformListMTime__0(void* self) {
+extern "C" unsigned long vtkUniforms__GetUniformListMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformListMTime();
 }
 
-extern "C" char* vtkUniforms__ScalarTypeToString__0(int32_t scalarType) {
+extern "C" char* vtkUniforms__ScalarTypeToString__0(int32_t scalarType) noexcept {
   return vtk_wrap_strdup((vtkUniforms::ScalarTypeToString(scalarType)).c_str());
 }
 
-extern "C" int32_t vtkUniforms__StringToScalarType__0(const char* s) {
+extern "C" int32_t vtkUniforms__StringToScalarType__0(const char* s) noexcept {
   return vtkUniforms::StringToScalarType(std::string(s));
 }
 
-extern "C" void vtkUniforms__RemoveUniform__0(void* self, const char* name) {
+extern "C" void vtkUniforms__RemoveUniform__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->RemoveUniform(name);
 }
 
-extern "C" void vtkUniforms__RemoveAllUniforms__0(void* self) {
+extern "C" void vtkUniforms__RemoveAllUniforms__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->RemoveAllUniforms();
 }
 
-extern "C" void vtkUniforms__SetUniformi__0(void* self, const char* name, int32_t v) {
+extern "C" void vtkUniforms__SetUniformi__0(void* self, const char* name, int32_t v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniformi(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniformf__0(void* self, const char* name, float v) {
+extern "C" void vtkUniforms__SetUniformf__0(void* self, const char* name, float v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniformf(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform2i__0(void* self, const char* name, const int32_t* v) {
+extern "C" void vtkUniforms__SetUniform2i__0(void* self, const char* name, const int32_t* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform2i(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform2f__0(void* self, const char* name, const float* v) {
+extern "C" void vtkUniforms__SetUniform2f__0(void* self, const char* name, const float* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform2f(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform3f__0(void* self, const char* name, const float* v) {
+extern "C" void vtkUniforms__SetUniform3f__0(void* self, const char* name, const float* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform3f(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform4f__0(void* self, const char* name, const float* v) {
+extern "C" void vtkUniforms__SetUniform4f__0(void* self, const char* name, const float* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform4f(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform3f__1(void* self, const char* name, const double* v) {
+extern "C" void vtkUniforms__SetUniform3f__1(void* self, const char* name, const double* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform3f(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform3uc__0(void* self, const char* name, const uint8_t* v) {
+extern "C" void vtkUniforms__SetUniform3uc__0(void* self, const char* name, const uint8_t* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform3uc(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniform4uc__0(void* self, const char* name, const uint8_t* v) {
+extern "C" void vtkUniforms__SetUniform4uc__0(void* self, const char* name, const uint8_t* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniform4uc(name, v);
 }
 
-extern "C" void vtkUniforms__SetUniformMatrix__0(void* self, const char* name, void* v) {
+extern "C" void vtkUniforms__SetUniformMatrix__0(void* self, const char* name, void* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniformMatrix(name, static_cast<vtkMatrix3x3*>(v));
 }
 
-extern "C" void vtkUniforms__SetUniformMatrix__1(void* self, const char* name, void* v) {
+extern "C" void vtkUniforms__SetUniformMatrix__1(void* self, const char* name, void* v) noexcept {
   (void)self;
   static_cast<vtkUniforms*>(self)->SetUniformMatrix(name, static_cast<vtkMatrix4x4*>(v));
 }
 
-extern "C" bool vtkUniforms__GetUniform2i__0(void* self, const char* name, int32_t* v) {
+extern "C" bool vtkUniforms__GetUniform2i__0(void* self, const char* name, int32_t* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform2i(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform2f__0(void* self, const char* name, float* v) {
+extern "C" bool vtkUniforms__GetUniform2f__0(void* self, const char* name, float* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform2f(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform3f__0(void* self, const char* name, float* v) {
+extern "C" bool vtkUniforms__GetUniform3f__0(void* self, const char* name, float* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform3f(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform4f__0(void* self, const char* name, float* v) {
+extern "C" bool vtkUniforms__GetUniform4f__0(void* self, const char* name, float* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform4f(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform3f__1(void* self, const char* name, double* v) {
+extern "C" bool vtkUniforms__GetUniform3f__1(void* self, const char* name, double* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform3f(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform3uc__0(void* self, const char* name, uint8_t* v) {
+extern "C" bool vtkUniforms__GetUniform3uc__0(void* self, const char* name, uint8_t* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform3uc(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniform4uc__0(void* self, const char* name, uint8_t* v) {
+extern "C" bool vtkUniforms__GetUniform4uc__0(void* self, const char* name, uint8_t* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniform4uc(name, v);
 }
 
-extern "C" bool vtkUniforms__GetUniformMatrix__0(void* self, const char* name, void* v) {
+extern "C" bool vtkUniforms__GetUniformMatrix__0(void* self, const char* name, void* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformMatrix(name, static_cast<vtkMatrix3x3*>(v));
 }
 
-extern "C" bool vtkUniforms__GetUniformMatrix__1(void* self, const char* name, void* v) {
+extern "C" bool vtkUniforms__GetUniformMatrix__1(void* self, const char* name, void* v) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformMatrix(name, static_cast<vtkMatrix4x4*>(v));
 }
 
-extern "C" int32_t vtkUniforms__GetNumberOfUniforms__0(void* self) {
+extern "C" int32_t vtkUniforms__GetNumberOfUniforms__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetNumberOfUniforms();
 }
 
-extern "C" const char* vtkUniforms__GetNthUniformName__0(void* self, int64_t uniformIndex) {
+extern "C" const char* vtkUniforms__GetNthUniformName__0(void* self, int64_t uniformIndex) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetNthUniformName(uniformIndex);
 }
 
-extern "C" int32_t vtkUniforms__GetUniformScalarType__0(void* self, const char* name) {
+extern "C" int32_t vtkUniforms__GetUniformScalarType__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformScalarType(name);
 }
 
-extern "C" int32_t vtkUniforms__GetUniformNumberOfComponents__0(void* self, const char* name) {
+extern "C" int32_t vtkUniforms__GetUniformNumberOfComponents__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformNumberOfComponents(name);
 }
 
-extern "C" int32_t vtkUniforms__GetUniformNumberOfTuples__0(void* self, const char* name) {
+extern "C" int32_t vtkUniforms__GetUniformNumberOfTuples__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkUniforms*>(self)->GetUniformNumberOfTuples(name);
 }

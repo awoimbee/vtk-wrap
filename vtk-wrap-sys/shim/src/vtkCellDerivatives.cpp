@@ -4,91 +4,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellDerivatives__vtk_wrap_new() { return static_cast<void*>(vtkCellDerivatives::New()); }
+extern "C" void* vtkCellDerivatives__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellDerivatives::New()); }
 
-extern "C" int32_t vtkCellDerivatives__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellDerivatives__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellDerivatives::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellDerivatives__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellDerivatives__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellDerivatives__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellDerivatives__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellDerivatives::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellDerivatives__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellDerivatives__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellDerivatives::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellDerivatives__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellDerivatives__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCellDerivatives__SetVectorMode__0(void* self, int32_t _arg) {
+extern "C" void vtkCellDerivatives__SetVectorMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetVectorMode(_arg);
 }
 
-extern "C" int32_t vtkCellDerivatives__GetVectorMode__0(void* self) {
+extern "C" int32_t vtkCellDerivatives__GetVectorMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->GetVectorMode();
 }
 
-extern "C" void vtkCellDerivatives__SetVectorModeToPassVectors__0(void* self) {
+extern "C" void vtkCellDerivatives__SetVectorModeToPassVectors__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetVectorModeToPassVectors();
 }
 
-extern "C" void vtkCellDerivatives__SetVectorModeToComputeGradient__0(void* self) {
+extern "C" void vtkCellDerivatives__SetVectorModeToComputeGradient__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetVectorModeToComputeGradient();
 }
 
-extern "C" void vtkCellDerivatives__SetVectorModeToComputeVorticity__0(void* self) {
+extern "C" void vtkCellDerivatives__SetVectorModeToComputeVorticity__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetVectorModeToComputeVorticity();
 }
 
-extern "C" const char* vtkCellDerivatives__GetVectorModeAsString__0(void* self) {
+extern "C" const char* vtkCellDerivatives__GetVectorModeAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->GetVectorModeAsString();
 }
 
-extern "C" void vtkCellDerivatives__SetTensorMode__0(void* self, int32_t _arg) {
+extern "C" void vtkCellDerivatives__SetTensorMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetTensorMode(_arg);
 }
 
-extern "C" int32_t vtkCellDerivatives__GetTensorMode__0(void* self) {
+extern "C" int32_t vtkCellDerivatives__GetTensorMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->GetTensorMode();
 }
 
-extern "C" void vtkCellDerivatives__SetTensorModeToPassTensors__0(void* self) {
+extern "C" void vtkCellDerivatives__SetTensorModeToPassTensors__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetTensorModeToPassTensors();
 }
 
-extern "C" void vtkCellDerivatives__SetTensorModeToComputeGradient__0(void* self) {
+extern "C" void vtkCellDerivatives__SetTensorModeToComputeGradient__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetTensorModeToComputeGradient();
 }
 
-extern "C" void vtkCellDerivatives__SetTensorModeToComputeStrain__0(void* self) {
+extern "C" void vtkCellDerivatives__SetTensorModeToComputeStrain__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetTensorModeToComputeStrain();
 }
 
-extern "C" void vtkCellDerivatives__SetTensorModeToComputeGreenLagrangeStrain__0(void* self) {
+extern "C" void vtkCellDerivatives__SetTensorModeToComputeGreenLagrangeStrain__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellDerivatives*>(self)->SetTensorModeToComputeGreenLagrangeStrain();
 }
 
-extern "C" const char* vtkCellDerivatives__GetTensorModeAsString__0(void* self) {
+extern "C" const char* vtkCellDerivatives__GetTensorModeAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellDerivatives*>(self)->GetTensorModeAsString();
 }

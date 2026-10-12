@@ -5,41 +5,41 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkSplineRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkSplineRepresentation::New()); }
+extern "C" void* vtkSplineRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSplineRepresentation::New()); }
 
-extern "C" int32_t vtkSplineRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSplineRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkSplineRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSplineRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSplineRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplineRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSplineRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkSplineRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSplineRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSplineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSplineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSplineRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSplineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSplineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplineRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSplineRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) {
+extern "C" void vtkSplineRepresentation__SetNumberOfHandles__0(void* self, int32_t npts) noexcept {
   (void)self;
   static_cast<vtkSplineRepresentation*>(self)->SetNumberOfHandles(npts);
 }
 
-extern "C" void vtkSplineRepresentation__InitializeHandles__0(void* self, void* points) {
+extern "C" void vtkSplineRepresentation__InitializeHandles__0(void* self, void* points) noexcept {
   (void)self;
   static_cast<vtkSplineRepresentation*>(self)->InitializeHandles(static_cast<vtkPoints*>(points));
 }
 
-extern "C" void vtkSplineRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkSplineRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSplineRepresentation*>(self)->BuildRepresentation();
 }

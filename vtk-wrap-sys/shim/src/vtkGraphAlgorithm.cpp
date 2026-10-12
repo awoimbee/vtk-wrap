@@ -6,46 +6,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkGraphAlgorithm::New()); }
+extern "C" void* vtkGraphAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphAlgorithm::New()); }
 
-extern "C" int32_t vtkGraphAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkGraphAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkGraphAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkGraphAlgorithm__GetOutput__1(void* self, int32_t index) {
+extern "C" void* vtkGraphAlgorithm__GetOutput__1(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphAlgorithm*>(self)->GetOutput(index));
 }
 
-extern "C" void vtkGraphAlgorithm__SetInputData__0(void* self, void* obj) {
+extern "C" void vtkGraphAlgorithm__SetInputData__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkGraphAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(obj));
 }
 
-extern "C" void vtkGraphAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) {
+extern "C" void vtkGraphAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) noexcept {
   (void)self;
   static_cast<vtkGraphAlgorithm*>(self)->SetInputData(index, static_cast<vtkDataObject*>(obj));
 }

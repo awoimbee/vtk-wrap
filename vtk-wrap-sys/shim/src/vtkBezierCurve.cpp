@@ -6,41 +6,41 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" void* vtkBezierCurve__vtk_wrap_new() { return static_cast<void*>(vtkBezierCurve::New()); }
+extern "C" void* vtkBezierCurve__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBezierCurve::New()); }
 
-extern "C" int32_t vtkBezierCurve__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBezierCurve__IsTypeOf__0(const char* type_) noexcept {
   return vtkBezierCurve::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBezierCurve__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBezierCurve__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBezierCurve*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBezierCurve__SafeDownCast__0(void* o) {
+extern "C" void* vtkBezierCurve__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBezierCurve::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBezierCurve__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBezierCurve__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBezierCurve::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBezierCurve__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBezierCurve__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBezierCurve*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkBezierCurve__GetCellType__0(void* self) {
+extern "C" int32_t vtkBezierCurve__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBezierCurve*>(self)->GetCellType();
 }
 
-extern "C" void vtkBezierCurve__SetRationalWeightsFromPointData__0(void* self, void* point_data, int64_t numPts) {
+extern "C" void vtkBezierCurve__SetRationalWeightsFromPointData__0(void* self, void* point_data, int64_t numPts) noexcept {
   (void)self;
   static_cast<vtkBezierCurve*>(self)->SetRationalWeightsFromPointData(static_cast<vtkPointData*>(point_data), numPts);
 }
 
-extern "C" void* vtkBezierCurve__GetRationalWeights__0(void* self) {
+extern "C" void* vtkBezierCurve__GetRationalWeights__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierCurve*>(self)->GetRationalWeights());
 }

@@ -6,81 +6,81 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTrackballZoom__vtk_wrap_new() { return static_cast<void*>(vtkTrackballZoom::New()); }
+extern "C" void* vtkTrackballZoom__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrackballZoom::New()); }
 
-extern "C" int32_t vtkTrackballZoom__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrackballZoom__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrackballZoom::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrackballZoom__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrackballZoom__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballZoom*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrackballZoom__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrackballZoom__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrackballZoom::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrackballZoom__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrackballZoom__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrackballZoom::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrackballZoom__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrackballZoom__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballZoom*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTrackballZoom__StartInteraction__0(void* self) {
+extern "C" void vtkTrackballZoom__StartInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->StartInteraction();
 }
 
-extern "C" void vtkTrackballZoom__EndInteraction__0(void* self) {
+extern "C" void vtkTrackballZoom__EndInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->EndInteraction();
 }
 
-extern "C" void vtkTrackballZoom__OnKeyDown__0(void* self, void* rwi) {
+extern "C" void vtkTrackballZoom__OnKeyDown__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->OnKeyDown(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballZoom__OnKeyUp__0(void* self, void* rwi) {
+extern "C" void vtkTrackballZoom__OnKeyUp__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->OnKeyUp(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballZoom__OnButtonUp__0(void* self, int32_t arg0, int32_t arg1, void* arg2, void* arg3) {
+extern "C" void vtkTrackballZoom__OnButtonUp__0(void* self, int32_t arg0, int32_t arg1, void* arg2, void* arg3) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->OnButtonUp(arg0, arg1, static_cast<vtkRenderer*>(arg2), static_cast<vtkRenderWindowInteractor*>(arg3));
 }
 
-extern "C" void vtkTrackballZoom__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballZoom__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballZoom__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballZoom__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballZoom__SetUseDollyForPerspectiveProjection__0(void* self, bool _arg) {
+extern "C" void vtkTrackballZoom__SetUseDollyForPerspectiveProjection__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->SetUseDollyForPerspectiveProjection(_arg);
 }
 
-extern "C" bool vtkTrackballZoom__GetUseDollyForPerspectiveProjection__0(void* self) {
+extern "C" bool vtkTrackballZoom__GetUseDollyForPerspectiveProjection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTrackballZoom*>(self)->GetUseDollyForPerspectiveProjection();
 }
 
-extern "C" void vtkTrackballZoom__UseDollyForPerspectiveProjectionOn__0(void* self) {
+extern "C" void vtkTrackballZoom__UseDollyForPerspectiveProjectionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->UseDollyForPerspectiveProjectionOn();
 }
 
-extern "C" void vtkTrackballZoom__UseDollyForPerspectiveProjectionOff__0(void* self) {
+extern "C" void vtkTrackballZoom__UseDollyForPerspectiveProjectionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballZoom*>(self)->UseDollyForPerspectiveProjectionOff();
 }

@@ -4,84 +4,84 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkHandleSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHandleSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkHandleSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHandleSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHandleSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHandleSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHandleSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkHandleSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHandleSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHandleSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHandleSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkHandleSource__SetDirectional__0(void* self, bool _arg) {
+extern "C" void vtkHandleSource__SetDirectional__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetDirectional(_arg);
 }
 
-extern "C" bool vtkHandleSource__GetDirectional__0(void* self) {
+extern "C" bool vtkHandleSource__GetDirectional__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHandleSource*>(self)->GetDirectional();
 }
 
-extern "C" void vtkHandleSource__DirectionalOn__0(void* self) {
+extern "C" void vtkHandleSource__DirectionalOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->DirectionalOn();
 }
 
-extern "C" void vtkHandleSource__DirectionalOff__0(void* self) {
+extern "C" void vtkHandleSource__DirectionalOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->DirectionalOff();
 }
 
-extern "C" void vtkHandleSource__SetPosition__0(void* self, const double* pos) {
+extern "C" void vtkHandleSource__SetPosition__0(void* self, const double* pos) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetPosition(pos);
 }
 
-extern "C" void vtkHandleSource__SetPosition__1(void* self, double xPos, double yPos, double zPos) {
+extern "C" void vtkHandleSource__SetPosition__1(void* self, double xPos, double yPos, double zPos) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetPosition(xPos, yPos, zPos);
 }
 
-extern "C" void vtkHandleSource__GetPosition__0(void* self, double* pos) {
+extern "C" void vtkHandleSource__GetPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->GetPosition(pos);
 }
 
-extern "C" void vtkHandleSource__SetDirection__0(void* self, const double* dir) {
+extern "C" void vtkHandleSource__SetDirection__0(void* self, const double* dir) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetDirection(dir);
 }
 
-extern "C" void vtkHandleSource__SetDirection__1(void* self, double xDir, double yDir, double zDir) {
+extern "C" void vtkHandleSource__SetDirection__1(void* self, double xDir, double yDir, double zDir) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetDirection(xDir, yDir, zDir);
 }
 
-extern "C" void vtkHandleSource__GetDirection__0(void* self, double* dir) {
+extern "C" void vtkHandleSource__GetDirection__0(void* self, double* dir) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->GetDirection(dir);
 }
 
-extern "C" void vtkHandleSource__SetSize__0(void* self, double _arg) {
+extern "C" void vtkHandleSource__SetSize__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkHandleSource*>(self)->SetSize(_arg);
 }
 
-extern "C" double vtkHandleSource__GetSize__0(void* self) {
+extern "C" double vtkHandleSource__GetSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHandleSource*>(self)->GetSize();
 }

@@ -9,111 +9,111 @@
 #include "vtkTypeUInt64Array.h"
 #include <string>
 
-extern "C" void* vtkCellGridEvaluator__vtk_wrap_new() { return static_cast<void*>(vtkCellGridEvaluator::New()); }
+extern "C" void* vtkCellGridEvaluator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellGridEvaluator::New()); }
 
-extern "C" int32_t vtkCellGridEvaluator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridEvaluator__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridEvaluator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridEvaluator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridEvaluator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridEvaluator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridEvaluator__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridEvaluator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridEvaluator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridEvaluator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridEvaluator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridEvaluator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridEvaluator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridEvaluator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridEvaluator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCellGridEvaluator__SetCellAttribute__0(void* self, void* _arg) {
+extern "C" void vtkCellGridEvaluator__SetCellAttribute__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkCellGridEvaluator*>(self)->SetCellAttribute(static_cast<vtkCellAttribute*>(_arg));
 }
 
-extern "C" void* vtkCellGridEvaluator__GetCellAttribute__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetCellAttribute__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetCellAttribute());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetInputPoints__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetInputPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetInputPoints());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetClassifierCellTypes__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetClassifierCellTypes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetClassifierCellTypes());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetClassifierCellOffsets__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetClassifierCellOffsets__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetClassifierCellOffsets());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetClassifierPointIDs__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetClassifierPointIDs__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetClassifierPointIDs());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetClassifierCellIndices__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetClassifierCellIndices__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetClassifierCellIndices());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetClassifierPointParameters__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetClassifierPointParameters__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetClassifierPointParameters());
 }
 
-extern "C" void* vtkCellGridEvaluator__GetInterpolatedValues__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetInterpolatedValues__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetInterpolatedValues());
 }
 
-extern "C" void vtkCellGridEvaluator__ClassifyPoints__0(void* self, void* points) {
+extern "C" void vtkCellGridEvaluator__ClassifyPoints__0(void* self, void* points) noexcept {
   (void)self;
   static_cast<vtkCellGridEvaluator*>(self)->ClassifyPoints(static_cast<vtkDataArray*>(points));
 }
 
-extern "C" void vtkCellGridEvaluator__InterpolatePoints__0(void* self, void* points) {
+extern "C" void vtkCellGridEvaluator__InterpolatePoints__0(void* self, void* points) noexcept {
   (void)self;
   static_cast<vtkCellGridEvaluator*>(self)->InterpolatePoints(static_cast<vtkDataArray*>(points));
 }
 
-extern "C" void vtkCellGridEvaluator__InterpolateCellParameters__0(void* self, void* cellTypes, void* cellOffsets, void* cellIndices, void* pointParameters) {
+extern "C" void vtkCellGridEvaluator__InterpolateCellParameters__0(void* self, void* cellTypes, void* cellOffsets, void* cellIndices, void* pointParameters) noexcept {
   (void)self;
   static_cast<vtkCellGridEvaluator*>(self)->InterpolateCellParameters(static_cast<vtkTypeUInt32Array*>(cellTypes), static_cast<vtkTypeUInt64Array*>(cellOffsets), static_cast<vtkTypeUInt64Array*>(cellIndices), static_cast<vtkDataArray*>(pointParameters));
 }
 
-extern "C" bool vtkCellGridEvaluator__Initialize__0(void* self) {
+extern "C" bool vtkCellGridEvaluator__Initialize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridEvaluator*>(self)->Initialize();
 }
 
-extern "C" void vtkCellGridEvaluator__StartPass__0(void* self) {
+extern "C" void vtkCellGridEvaluator__StartPass__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellGridEvaluator*>(self)->StartPass();
 }
 
-extern "C" bool vtkCellGridEvaluator__IsAnotherPassRequired__0(void* self) {
+extern "C" bool vtkCellGridEvaluator__IsAnotherPassRequired__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridEvaluator*>(self)->IsAnotherPassRequired();
 }
 
-extern "C" bool vtkCellGridEvaluator__Finalize__0(void* self) {
+extern "C" bool vtkCellGridEvaluator__Finalize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridEvaluator*>(self)->Finalize();
 }
 
-extern "C" void* vtkCellGridEvaluator__GetLocator__0(void* self) {
+extern "C" void* vtkCellGridEvaluator__GetLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridEvaluator*>(self)->GetLocator());
 }

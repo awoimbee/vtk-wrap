@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkVertexGlyphFilter__vtk_wrap_new() { return static_cast<void*>(vtkVertexGlyphFilter::New()); }
+extern "C" void* vtkVertexGlyphFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVertexGlyphFilter::New()); }
 
-extern "C" int32_t vtkVertexGlyphFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVertexGlyphFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkVertexGlyphFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVertexGlyphFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVertexGlyphFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVertexGlyphFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVertexGlyphFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkVertexGlyphFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVertexGlyphFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVertexGlyphFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVertexGlyphFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVertexGlyphFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVertexGlyphFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVertexGlyphFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVertexGlyphFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkContourValues__vtk_wrap_new() { return static_cast<void*>(vtkContourValues::New()); }
+extern "C" void* vtkContourValues__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContourValues::New()); }
 
-extern "C" int32_t vtkContourValues__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContourValues__IsTypeOf__0(const char* type_) noexcept {
   return vtkContourValues::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContourValues__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContourValues__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContourValues*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContourValues__SafeDownCast__0(void* o) {
+extern "C" void* vtkContourValues__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContourValues::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContourValues__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContourValues__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContourValues::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContourValues__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContourValues__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContourValues*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContourValues__SetValue__0(void* self, int32_t i, double value) {
+extern "C" void vtkContourValues__SetValue__0(void* self, int32_t i, double value) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->SetValue(i, value);
 }
 
-extern "C" double vtkContourValues__GetValue__0(void* self, int32_t i) {
+extern "C" double vtkContourValues__GetValue__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkContourValues*>(self)->GetValue(i);
 }
 
-extern "C" void* vtkContourValues__GetContours__0(void* self) {
+extern "C" void* vtkContourValues__GetContours__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContourValues*>(self)->GetContours());
 }
 
-extern "C" void vtkContourValues__SetContours__0(void* self, void* arg0) {
+extern "C" void vtkContourValues__SetContours__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->SetContours(static_cast<vtkDoubleArray*>(arg0));
 }
 
-extern "C" void vtkContourValues__SetNumberOfContours__0(void* self, int32_t number) {
+extern "C" void vtkContourValues__SetNumberOfContours__0(void* self, int32_t number) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->SetNumberOfContours(number);
 }
 
-extern "C" int32_t vtkContourValues__GetNumberOfContours__0(void* self) {
+extern "C" int32_t vtkContourValues__GetNumberOfContours__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContourValues*>(self)->GetNumberOfContours();
 }
 
-extern "C" void vtkContourValues__GenerateValues__0(void* self, int32_t numContours, double* range) {
+extern "C" void vtkContourValues__GenerateValues__0(void* self, int32_t numContours, double* range) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->GenerateValues(numContours, range);
 }
 
-extern "C" void vtkContourValues__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) {
+extern "C" void vtkContourValues__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->GenerateValues(numContours, rangeStart, rangeEnd);
 }
 
-extern "C" void vtkContourValues__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkContourValues__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkContourValues*>(self)->DeepCopy(static_cast<vtkContourValues*>(other));
 }

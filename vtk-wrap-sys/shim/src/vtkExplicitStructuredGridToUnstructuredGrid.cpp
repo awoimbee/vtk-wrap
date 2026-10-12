@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExplicitStructuredGridToUnstructuredGrid__vtk_wrap_new() { return static_cast<void*>(vtkExplicitStructuredGridToUnstructuredGrid::New()); }
+extern "C" void* vtkExplicitStructuredGridToUnstructuredGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExplicitStructuredGridToUnstructuredGrid::New()); }
 
-extern "C" int32_t vtkExplicitStructuredGridToUnstructuredGrid__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExplicitStructuredGridToUnstructuredGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkExplicitStructuredGridToUnstructuredGrid::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExplicitStructuredGridToUnstructuredGrid__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExplicitStructuredGridToUnstructuredGrid__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExplicitStructuredGridToUnstructuredGrid*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExplicitStructuredGridToUnstructuredGrid__SafeDownCast__0(void* o) {
+extern "C" void* vtkExplicitStructuredGridToUnstructuredGrid__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExplicitStructuredGridToUnstructuredGrid::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExplicitStructuredGridToUnstructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExplicitStructuredGridToUnstructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExplicitStructuredGridToUnstructuredGrid::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExplicitStructuredGridToUnstructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExplicitStructuredGridToUnstructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExplicitStructuredGridToUnstructuredGrid*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

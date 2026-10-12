@@ -5,101 +5,101 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkPointsProjectedHull__vtk_wrap_new() { return static_cast<void*>(vtkPointsProjectedHull::New()); }
+extern "C" void* vtkPointsProjectedHull__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointsProjectedHull::New()); }
 
-extern "C" int32_t vtkPointsProjectedHull__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointsProjectedHull__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointsProjectedHull::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointsProjectedHull__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointsProjectedHull__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointsProjectedHull__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointsProjectedHull::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointsProjectedHull__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointsProjectedHull__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointsProjectedHull::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointsProjectedHull__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointsProjectedHull__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__0(void* self, void* R) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__0(void* self, void* R) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionX(static_cast<vtkPoints*>(R));
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__1(void* self, float ymin, float ymax, float zmin, float zmax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__1(void* self, float ymin, float ymax, float zmin, float zmax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionX(ymin, ymax, zmin, zmax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__2(void* self, double ymin, double ymax, double zmin, double zmax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionX__2(void* self, double ymin, double ymax, double zmin, double zmax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionX(ymin, ymax, zmin, zmax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__0(void* self, void* R) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__0(void* self, void* R) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionY(static_cast<vtkPoints*>(R));
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__1(void* self, float zmin, float zmax, float xmin, float xmax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__1(void* self, float zmin, float zmax, float xmin, float xmax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionY(zmin, zmax, xmin, xmax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__2(void* self, double zmin, double zmax, double xmin, double xmax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionY__2(void* self, double zmin, double zmax, double xmin, double xmax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionY(zmin, zmax, xmin, xmax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__0(void* self, void* R) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__0(void* self, void* R) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionZ(static_cast<vtkPoints*>(R));
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__1(void* self, float xmin, float xmax, float ymin, float ymax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__1(void* self, float xmin, float xmax, float ymin, float ymax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionZ(xmin, xmax, ymin, ymax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__2(void* self, double xmin, double xmax, double ymin, double ymax) {
+extern "C" int32_t vtkPointsProjectedHull__RectangleIntersectionZ__2(void* self, double xmin, double xmax, double ymin, double ymax) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->RectangleIntersectionZ(xmin, xmax, ymin, ymax);
 }
 
-extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullX__0(void* self) {
+extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullX__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->GetSizeCCWHullX();
 }
 
-extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullY__0(void* self) {
+extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullY__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->GetSizeCCWHullY();
 }
 
-extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullZ__0(void* self) {
+extern "C" int32_t vtkPointsProjectedHull__GetSizeCCWHullZ__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointsProjectedHull*>(self)->GetSizeCCWHullZ();
 }
 
-extern "C" void vtkPointsProjectedHull__Initialize__0(void* self) {
+extern "C" void vtkPointsProjectedHull__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointsProjectedHull*>(self)->Initialize();
 }
 
-extern "C" void vtkPointsProjectedHull__Reset__0(void* self) {
+extern "C" void vtkPointsProjectedHull__Reset__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointsProjectedHull*>(self)->Reset();
 }
 
-extern "C" void vtkPointsProjectedHull__Update__0(void* self) {
+extern "C" void vtkPointsProjectedHull__Update__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointsProjectedHull*>(self)->Update();
 }

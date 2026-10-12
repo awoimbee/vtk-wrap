@@ -8,90 +8,90 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLGlyph3DMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLGlyph3DMapper::New()); }
+extern "C" void* vtkOpenGLGlyph3DMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLGlyph3DMapper::New()); }
 
-extern "C" void* vtkOpenGLGlyph3DMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLGlyph3DMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLGlyph3DMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLGlyph3DMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLGlyph3DMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLGlyph3DMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLGlyph3DMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLGlyph3DMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLGlyph3DMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLGlyph3DMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLGlyph3DMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLGlyph3DMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__Render__0(void* self, void* ren, void* a) {
+extern "C" void vtkOpenGLGlyph3DMapper__Render__0(void* self, void* ren, void* a) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkActor*>(a));
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLGlyph3DMapper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DMapper__GetMaxNumberOfLOD__0(void* self) {
+extern "C" int64_t vtkOpenGLGlyph3DMapper__GetMaxNumberOfLOD__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetMaxNumberOfLOD();
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__SetNumberOfLOD__0(void* self, int64_t nb) {
+extern "C" void vtkOpenGLGlyph3DMapper__SetNumberOfLOD__0(void* self, int64_t nb) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->SetNumberOfLOD(nb);
 }
 
-extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfLOD__0(void* self) {
+extern "C" int64_t vtkOpenGLGlyph3DMapper__GetNumberOfLOD__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetNumberOfLOD();
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__SetLODDistanceAndTargetReduction__0(void* self, int64_t index, float distance, float targetReduction) {
+extern "C" void vtkOpenGLGlyph3DMapper__SetLODDistanceAndTargetReduction__0(void* self, int64_t index, float distance, float targetReduction) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->SetLODDistanceAndTargetReduction(index, distance, targetReduction);
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__SetLODDistance__0(void* self, int64_t index, float distance) {
+extern "C" void vtkOpenGLGlyph3DMapper__SetLODDistance__0(void* self, int64_t index, float distance) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->SetLODDistance(index, distance);
 }
 
-extern "C" void vtkOpenGLGlyph3DMapper__SetLODTargetReduction__0(void* self, int64_t index, float targetReduction) {
+extern "C" void vtkOpenGLGlyph3DMapper__SetLODTargetReduction__0(void* self, int64_t index, float targetReduction) noexcept {
   (void)self;
   static_cast<vtkOpenGLGlyph3DMapper*>(self)->SetLODTargetReduction(index, targetReduction);
 }
 
-extern "C" float vtkOpenGLGlyph3DMapper__GetLODDistance__0(void* self, int64_t index) {
+extern "C" float vtkOpenGLGlyph3DMapper__GetLODDistance__0(void* self, int64_t index) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetLODDistance(index);
 }
 
-extern "C" float vtkOpenGLGlyph3DMapper__GetLODTargetReduction__0(void* self, int64_t index) {
+extern "C" float vtkOpenGLGlyph3DMapper__GetLODTargetReduction__0(void* self, int64_t index) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetLODTargetReduction(index);
 }
 
-extern "C" int32_t vtkOpenGLGlyph3DMapper__GetNumberOfLODDistances__0(void* self) {
+extern "C" int32_t vtkOpenGLGlyph3DMapper__GetNumberOfLODDistances__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetNumberOfLODDistances();
 }
 
-extern "C" int32_t vtkOpenGLGlyph3DMapper__GetNumberOfLODTargetReductions__0(void* self) {
+extern "C" int32_t vtkOpenGLGlyph3DMapper__GetNumberOfLODTargetReductions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGlyph3DMapper*>(self)->GetNumberOfLODTargetReductions();
 }

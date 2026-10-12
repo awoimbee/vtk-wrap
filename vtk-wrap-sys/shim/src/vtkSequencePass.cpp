@@ -6,41 +6,41 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkSequencePass__vtk_wrap_new() { return static_cast<void*>(vtkSequencePass::New()); }
+extern "C" void* vtkSequencePass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSequencePass::New()); }
 
-extern "C" int32_t vtkSequencePass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSequencePass__IsTypeOf__0(const char* type_) noexcept {
   return vtkSequencePass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSequencePass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSequencePass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSequencePass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSequencePass__SafeDownCast__0(void* o) {
+extern "C" void* vtkSequencePass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSequencePass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSequencePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSequencePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSequencePass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSequencePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSequencePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSequencePass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSequencePass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkSequencePass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkSequencePass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkSequencePass__GetPasses__0(void* self) {
+extern "C" void* vtkSequencePass__GetPasses__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSequencePass*>(self)->GetPasses());
 }
 
-extern "C" void vtkSequencePass__SetPasses__0(void* self, void* passes) {
+extern "C" void vtkSequencePass__SetPasses__0(void* self, void* passes) noexcept {
   (void)self;
   static_cast<vtkSequencePass*>(self)->SetPasses(static_cast<vtkRenderPassCollection*>(passes));
 }

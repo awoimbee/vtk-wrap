@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSLCReader__vtk_wrap_new() { return static_cast<void*>(vtkSLCReader::New()); }
+extern "C" void* vtkSLCReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSLCReader::New()); }
 
-extern "C" int32_t vtkSLCReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSLCReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkSLCReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSLCReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSLCReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSLCReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkSLCReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSLCReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSLCReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSLCReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSLCReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSLCReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSLCReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkSLCReader__GetError__0(void* self) {
+extern "C" int32_t vtkSLCReader__GetError__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->GetError();
 }
 
-extern "C" int32_t vtkSLCReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkSLCReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" const char* vtkSLCReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkSLCReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkSLCReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkSLCReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSLCReader*>(self)->GetDescriptiveName();
 }

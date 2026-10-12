@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMRCReader__vtk_wrap_new() { return static_cast<void*>(vtkMRCReader::New()); }
+extern "C" void* vtkMRCReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMRCReader::New()); }
 
-extern "C" int32_t vtkMRCReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMRCReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkMRCReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMRCReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMRCReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMRCReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMRCReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkMRCReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMRCReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMRCReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMRCReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMRCReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMRCReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMRCReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMRCReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMRCReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkMRCReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMRCReader*>(self)->SetFileName(_arg);
 }

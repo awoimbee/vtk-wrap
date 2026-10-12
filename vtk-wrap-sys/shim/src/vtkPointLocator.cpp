@@ -7,151 +7,151 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkPointLocator__vtk_wrap_new() { return static_cast<void*>(vtkPointLocator::New()); }
+extern "C" void* vtkPointLocator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointLocator::New()); }
 
-extern "C" int32_t vtkPointLocator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointLocator__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointLocator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointLocator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointLocator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointLocator__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointLocator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointLocator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointLocator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPointLocator__SetDivisions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) {
+extern "C" void vtkPointLocator__SetDivisions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->SetDivisions(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkPointLocator__SetDivisions__1(void* self, const int32_t* _arg) {
+extern "C" void vtkPointLocator__SetDivisions__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->SetDivisions(_arg);
 }
 
-extern "C" void vtkPointLocator__SetNumberOfPointsPerBucket__0(void* self, int32_t _arg) {
+extern "C" void vtkPointLocator__SetNumberOfPointsPerBucket__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->SetNumberOfPointsPerBucket(_arg);
 }
 
-extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucketMinValue__0(void* self) {
+extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucketMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->GetNumberOfPointsPerBucketMinValue();
 }
 
-extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucketMaxValue__0(void* self) {
+extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucketMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->GetNumberOfPointsPerBucketMaxValue();
 }
 
-extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucket__0(void* self) {
+extern "C" int32_t vtkPointLocator__GetNumberOfPointsPerBucket__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->GetNumberOfPointsPerBucket();
 }
 
-extern "C" int64_t vtkPointLocator__FindClosestPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkPointLocator__FindClosestPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->FindClosestPoint(x);
 }
 
-extern "C" int32_t vtkPointLocator__InitPointInsertion__0(void* self, void* newPts, const double* bounds) {
+extern "C" int32_t vtkPointLocator__InitPointInsertion__0(void* self, void* newPts, const double* bounds) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->InitPointInsertion(static_cast<vtkPoints*>(newPts), bounds);
 }
 
-extern "C" int32_t vtkPointLocator__InitPointInsertion__1(void* self, void* newPts, const double* bounds, int64_t estNumPts) {
+extern "C" int32_t vtkPointLocator__InitPointInsertion__1(void* self, void* newPts, const double* bounds, int64_t estNumPts) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->InitPointInsertion(static_cast<vtkPoints*>(newPts), bounds, estNumPts);
 }
 
-extern "C" void vtkPointLocator__InsertPoint__0(void* self, int64_t ptId, const double* x) {
+extern "C" void vtkPointLocator__InsertPoint__0(void* self, int64_t ptId, const double* x) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->InsertPoint(ptId, x);
 }
 
-extern "C" int64_t vtkPointLocator__InsertNextPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkPointLocator__InsertNextPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->InsertNextPoint(x);
 }
 
-extern "C" int64_t vtkPointLocator__IsInsertedPoint__0(void* self, double x, double y, double z) {
+extern "C" int64_t vtkPointLocator__IsInsertedPoint__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->IsInsertedPoint(x, y, z);
 }
 
-extern "C" int64_t vtkPointLocator__IsInsertedPoint__1(void* self, const double* x) {
+extern "C" int64_t vtkPointLocator__IsInsertedPoint__1(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->IsInsertedPoint(x);
 }
 
-extern "C" int64_t vtkPointLocator__FindClosestInsertedPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkPointLocator__FindClosestInsertedPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkPointLocator*>(self)->FindClosestInsertedPoint(x);
 }
 
-extern "C" void vtkPointLocator__FindClosestNPoints__0(void* self, int32_t N, const double* x, void* result) {
+extern "C" void vtkPointLocator__FindClosestNPoints__0(void* self, int32_t N, const double* x, void* result) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->FindClosestNPoints(N, x, static_cast<vtkIdList*>(result));
 }
 
-extern "C" void vtkPointLocator__FindDistributedPoints__0(void* self, int32_t N, const double* x, void* result, int32_t M) {
+extern "C" void vtkPointLocator__FindDistributedPoints__0(void* self, int32_t N, const double* x, void* result, int32_t M) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->FindDistributedPoints(N, x, static_cast<vtkIdList*>(result), M);
 }
 
-extern "C" void vtkPointLocator__FindDistributedPoints__1(void* self, int32_t N, double x, double y, double z, void* result, int32_t M) {
+extern "C" void vtkPointLocator__FindDistributedPoints__1(void* self, int32_t N, double x, double y, double z, void* result, int32_t M) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->FindDistributedPoints(N, x, y, z, static_cast<vtkIdList*>(result), M);
 }
 
-extern "C" void vtkPointLocator__FindPointsWithinRadius__0(void* self, double R, const double* x, void* result) {
+extern "C" void vtkPointLocator__FindPointsWithinRadius__0(void* self, double R, const double* x, void* result) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->FindPointsWithinRadius(R, x, static_cast<vtkIdList*>(result));
 }
 
-extern "C" void* vtkPointLocator__GetPointsInBucket__0(void* self, const double* x, int32_t* ijk) {
+extern "C" void* vtkPointLocator__GetPointsInBucket__0(void* self, const double* x, int32_t* ijk) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointLocator*>(self)->GetPointsInBucket(x, ijk));
 }
 
-extern "C" void* vtkPointLocator__GetPoints__0(void* self) {
+extern "C" void* vtkPointLocator__GetPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointLocator*>(self)->GetPoints());
 }
 
-extern "C" void vtkPointLocator__Initialize__0(void* self) {
+extern "C" void vtkPointLocator__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->Initialize();
 }
 
-extern "C" void vtkPointLocator__FreeSearchStructure__0(void* self) {
+extern "C" void vtkPointLocator__FreeSearchStructure__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->FreeSearchStructure();
 }
 
-extern "C" void vtkPointLocator__BuildLocator__0(void* self) {
+extern "C" void vtkPointLocator__BuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->BuildLocator();
 }
 
-extern "C" void vtkPointLocator__ForceBuildLocator__0(void* self) {
+extern "C" void vtkPointLocator__ForceBuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->ForceBuildLocator();
 }
 
-extern "C" void vtkPointLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) {
+extern "C" void vtkPointLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) noexcept {
   (void)self;
   static_cast<vtkPointLocator*>(self)->GenerateRepresentation(level, static_cast<vtkPolyData*>(pd));
 }

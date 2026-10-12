@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOpenGLCellToVTKCellMap__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLCellToVTKCellMap::New()); }
+extern "C" void* vtkOpenGLCellToVTKCellMap__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLCellToVTKCellMap::New()); }
 
-extern "C" int32_t vtkOpenGLCellToVTKCellMap__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLCellToVTKCellMap__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLCellToVTKCellMap::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLCellToVTKCellMap__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLCellToVTKCellMap__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLCellToVTKCellMap__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLCellToVTKCellMap__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLCellToVTKCellMap::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLCellToVTKCellMap::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkOpenGLCellToVTKCellMap__ConvertOpenGLCellIdToVTKCellId__0(void* self, bool pointPicking, int64_t openGLId) {
+extern "C" int64_t vtkOpenGLCellToVTKCellMap__ConvertOpenGLCellIdToVTKCellId__0(void* self, bool pointPicking, int64_t openGLId) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->ConvertOpenGLCellIdToVTKCellId(pointPicking, openGLId);
 }
 
-extern "C" size_t vtkOpenGLCellToVTKCellMap__GetSize__0(void* self) {
+extern "C" size_t vtkOpenGLCellToVTKCellMap__GetSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->GetSize();
 }
 
-extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetValue__0(void* self, size_t i) {
+extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetValue__0(void* self, size_t i) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->GetValue(i);
 }
 
-extern "C" void vtkOpenGLCellToVTKCellMap__SetStartOffset__0(void* self, int64_t start) {
+extern "C" void vtkOpenGLCellToVTKCellMap__SetStartOffset__0(void* self, int64_t start) noexcept {
   (void)self;
   static_cast<vtkOpenGLCellToVTKCellMap*>(self)->SetStartOffset(start);
 }
 
-extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetFinalOffset__0(void* self) {
+extern "C" int64_t vtkOpenGLCellToVTKCellMap__GetFinalOffset__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellToVTKCellMap*>(self)->GetFinalOffset();
 }

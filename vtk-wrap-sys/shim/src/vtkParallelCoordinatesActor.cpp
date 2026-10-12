@@ -9,146 +9,146 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkParallelCoordinatesActor__vtk_wrap_new() { return static_cast<void*>(vtkParallelCoordinatesActor::New()); }
+extern "C" void* vtkParallelCoordinatesActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkParallelCoordinatesActor::New()); }
 
-extern "C" int32_t vtkParallelCoordinatesActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkParallelCoordinatesActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkParallelCoordinatesActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkParallelCoordinatesActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkParallelCoordinatesActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkParallelCoordinatesActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkParallelCoordinatesActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkParallelCoordinatesActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkParallelCoordinatesActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkParallelCoordinatesActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkParallelCoordinatesActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkParallelCoordinatesActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetIndependentVariables__0(void* self, int32_t _arg) {
+extern "C" void vtkParallelCoordinatesActor__SetIndependentVariables__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetIndependentVariables(_arg);
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariablesMinValue__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariablesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetIndependentVariablesMinValue();
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariablesMaxValue__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariablesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetIndependentVariablesMaxValue();
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariables__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetIndependentVariables__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetIndependentVariables();
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetIndependentVariablesToColumns__0(void* self) {
+extern "C" void vtkParallelCoordinatesActor__SetIndependentVariablesToColumns__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetIndependentVariablesToColumns();
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetIndependentVariablesToRows__0(void* self) {
+extern "C" void vtkParallelCoordinatesActor__SetIndependentVariablesToRows__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetIndependentVariablesToRows();
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetTitle__0(void* self, const char* _arg) {
+extern "C" void vtkParallelCoordinatesActor__SetTitle__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetTitle(_arg);
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetNumberOfLabels__0(void* self, int32_t _arg) {
+extern "C" void vtkParallelCoordinatesActor__SetNumberOfLabels__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetNumberOfLabels(_arg);
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabelsMinValue__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabelsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetNumberOfLabelsMinValue();
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabelsMaxValue__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabelsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetNumberOfLabelsMaxValue();
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabels__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__GetNumberOfLabels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->GetNumberOfLabels();
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetLabelFormat__0(void* self, const char* _arg) {
+extern "C" void vtkParallelCoordinatesActor__SetLabelFormat__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetLabelFormat(_arg);
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetTitleTextProperty__0(void* self, void* p) {
+extern "C" void vtkParallelCoordinatesActor__SetTitleTextProperty__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetTitleTextProperty(static_cast<vtkTextProperty*>(p));
 }
 
-extern "C" void* vtkParallelCoordinatesActor__GetTitleTextProperty__0(void* self) {
+extern "C" void* vtkParallelCoordinatesActor__GetTitleTextProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkParallelCoordinatesActor*>(self)->GetTitleTextProperty());
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetLabelTextProperty__0(void* self, void* p) {
+extern "C" void vtkParallelCoordinatesActor__SetLabelTextProperty__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetLabelTextProperty(static_cast<vtkTextProperty*>(p));
 }
 
-extern "C" void* vtkParallelCoordinatesActor__GetLabelTextProperty__0(void* self) {
+extern "C" void* vtkParallelCoordinatesActor__GetLabelTextProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkParallelCoordinatesActor*>(self)->GetLabelTextProperty());
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkParallelCoordinatesActor__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkParallelCoordinatesActor__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkParallelCoordinatesActor__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkParallelCoordinatesActor__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkParallelCoordinatesActor__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelCoordinatesActor*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetInputConnection__0(void* self, void* arg0) {
+extern "C" void vtkParallelCoordinatesActor__SetInputConnection__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetInputConnection(static_cast<vtkAlgorithmOutput*>(arg0));
 }
 
-extern "C" void vtkParallelCoordinatesActor__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkParallelCoordinatesActor__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void* vtkParallelCoordinatesActor__GetInput__0(void* self) {
+extern "C" void* vtkParallelCoordinatesActor__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkParallelCoordinatesActor*>(self)->GetInput());
 }
 
-extern "C" void vtkParallelCoordinatesActor__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkParallelCoordinatesActor__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkParallelCoordinatesActor*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

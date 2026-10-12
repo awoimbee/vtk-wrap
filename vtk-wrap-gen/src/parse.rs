@@ -439,8 +439,8 @@ pub struct BuildOptions {
 /// `vtkCompositeTypeInt32Array`, ...) the interface exposes a backend that a
 /// plain C++ consumer cannot construct, so the accessors dereference an
 /// uninitialised member.  `vtkAffineTypeFloat32Array::GetSlope()` segfaults in
-/// plain C++ with no vtk-wrap involved, so these classes must not be reachable from
-/// the safe API.  The classic typed arrays (`vtkShortArray` and friends) use
+/// plain C++ with no vtk-wrap involved, so these classes must not be wrapped.
+/// The classic typed arrays (`vtkShortArray` and friends) use
 /// `vtkCreateWrappedArrayInterface` instead and are unaffected.
 const BACKEND_INTERFACE_MACROS: &[&str] = &[
     "vtkCreateAffineWrappedArrayInterface",
@@ -473,7 +473,7 @@ pub fn build_api(xml_dir: &Path, opts: &BuildOptions) -> Result<Api> {
     // deprecated.  VTK's deprecated classes are obsolete compatibility shims
     // (e.g. `vtkAffineCharArray`, which VTK itself documents as superseded by
     // `vtkAffineTypeCharArray`); several of them segfault inside VTK even in
-    // pure C++, so they must not be reachable from the safe API.
+    // pure C++, so they must not be wrapped.
     // VTK's wrapper-only array shims (see `BACKEND_INTERFACE_MACROS`).
     let shims: BTreeSet<String> = match &opts.vtk_include {
         Some(dir) => raws

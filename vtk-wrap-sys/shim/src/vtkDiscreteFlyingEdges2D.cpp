@@ -4,91 +4,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDiscreteFlyingEdges2D__vtk_wrap_new() { return static_cast<void*>(vtkDiscreteFlyingEdges2D::New()); }
+extern "C" void* vtkDiscreteFlyingEdges2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDiscreteFlyingEdges2D::New()); }
 
-extern "C" int32_t vtkDiscreteFlyingEdges2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDiscreteFlyingEdges2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkDiscreteFlyingEdges2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDiscreteFlyingEdges2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDiscreteFlyingEdges2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDiscreteFlyingEdges2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkDiscreteFlyingEdges2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDiscreteFlyingEdges2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDiscreteFlyingEdges2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkDiscreteFlyingEdges2D__GetMTime__0(void* self) {
+extern "C" unsigned long vtkDiscreteFlyingEdges2D__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetMTime();
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__SetValue__0(void* self, int32_t i, double value) {
+extern "C" void vtkDiscreteFlyingEdges2D__SetValue__0(void* self, int32_t i, double value) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->SetValue(i, value);
 }
 
-extern "C" double vtkDiscreteFlyingEdges2D__GetValue__0(void* self, int32_t i) {
+extern "C" double vtkDiscreteFlyingEdges2D__GetValue__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetValue(i);
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__SetNumberOfContours__0(void* self, int32_t number) {
+extern "C" void vtkDiscreteFlyingEdges2D__SetNumberOfContours__0(void* self, int32_t number) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->SetNumberOfContours(number);
 }
 
-extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfContours__0(void* self) {
+extern "C" int64_t vtkDiscreteFlyingEdges2D__GetNumberOfContours__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetNumberOfContours();
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__GenerateValues__0(void* self, int32_t numContours, double* range) {
+extern "C" void vtkDiscreteFlyingEdges2D__GenerateValues__0(void* self, int32_t numContours, double* range) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->GenerateValues(numContours, range);
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) {
+extern "C" void vtkDiscreteFlyingEdges2D__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->GenerateValues(numContours, rangeStart, rangeEnd);
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__SetComputeScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkDiscreteFlyingEdges2D__SetComputeScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->SetComputeScalars(_arg);
 }
 
-extern "C" int32_t vtkDiscreteFlyingEdges2D__GetComputeScalars__0(void* self) {
+extern "C" int32_t vtkDiscreteFlyingEdges2D__GetComputeScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetComputeScalars();
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__ComputeScalarsOn__0(void* self) {
+extern "C" void vtkDiscreteFlyingEdges2D__ComputeScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->ComputeScalarsOn();
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__ComputeScalarsOff__0(void* self) {
+extern "C" void vtkDiscreteFlyingEdges2D__ComputeScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->ComputeScalarsOff();
 }
 
-extern "C" void vtkDiscreteFlyingEdges2D__SetArrayComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkDiscreteFlyingEdges2D__SetArrayComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiscreteFlyingEdges2D*>(self)->SetArrayComponent(_arg);
 }
 
-extern "C" int32_t vtkDiscreteFlyingEdges2D__GetArrayComponent__0(void* self) {
+extern "C" int32_t vtkDiscreteFlyingEdges2D__GetArrayComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiscreteFlyingEdges2D*>(self)->GetArrayComponent();
 }

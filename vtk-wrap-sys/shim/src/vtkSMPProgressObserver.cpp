@@ -5,36 +5,36 @@
 #include "vtkProgressObserver.h"
 #include <string>
 
-extern "C" void* vtkSMPProgressObserver__vtk_wrap_new() { return static_cast<void*>(vtkSMPProgressObserver::New()); }
+extern "C" void* vtkSMPProgressObserver__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSMPProgressObserver::New()); }
 
-extern "C" int32_t vtkSMPProgressObserver__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSMPProgressObserver__IsTypeOf__0(const char* type_) noexcept {
   return vtkSMPProgressObserver::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSMPProgressObserver__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSMPProgressObserver__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSMPProgressObserver*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSMPProgressObserver__SafeDownCast__0(void* o) {
+extern "C" void* vtkSMPProgressObserver__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSMPProgressObserver::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSMPProgressObserver__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSMPProgressObserver__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSMPProgressObserver::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSMPProgressObserver__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSMPProgressObserver__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSMPProgressObserver*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSMPProgressObserver__UpdateProgress__0(void* self, double progress) {
+extern "C" void vtkSMPProgressObserver__UpdateProgress__0(void* self, double progress) noexcept {
   (void)self;
   static_cast<vtkSMPProgressObserver*>(self)->UpdateProgress(progress);
 }
 
-extern "C" void* vtkSMPProgressObserver__GetLocalObserver__0(void* self) {
+extern "C" void* vtkSMPProgressObserver__GetLocalObserver__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSMPProgressObserver*>(self)->GetLocalObserver());
 }

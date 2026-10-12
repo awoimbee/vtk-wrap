@@ -5,111 +5,111 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAnimationScene__vtk_wrap_new() { return static_cast<void*>(vtkAnimationScene::New()); }
+extern "C" void* vtkAnimationScene__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAnimationScene::New()); }
 
-extern "C" int32_t vtkAnimationScene__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAnimationScene__IsTypeOf__0(const char* type_) noexcept {
   return vtkAnimationScene::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAnimationScene__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAnimationScene__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAnimationScene__SafeDownCast__0(void* o) {
+extern "C" void* vtkAnimationScene__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAnimationScene::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAnimationScene__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAnimationScene__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAnimationScene::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAnimationScene__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAnimationScene__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAnimationScene__SetPlayMode__0(void* self, int32_t _arg) {
+extern "C" void vtkAnimationScene__SetPlayMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetPlayMode(_arg);
 }
 
-extern "C" void vtkAnimationScene__SetModeToSequence__0(void* self) {
+extern "C" void vtkAnimationScene__SetModeToSequence__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetModeToSequence();
 }
 
-extern "C" void vtkAnimationScene__SetModeToRealTime__0(void* self) {
+extern "C" void vtkAnimationScene__SetModeToRealTime__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetModeToRealTime();
 }
 
-extern "C" int32_t vtkAnimationScene__GetPlayMode__0(void* self) {
+extern "C" int32_t vtkAnimationScene__GetPlayMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->GetPlayMode();
 }
 
-extern "C" void vtkAnimationScene__SetFrameRate__0(void* self, double _arg) {
+extern "C" void vtkAnimationScene__SetFrameRate__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetFrameRate(_arg);
 }
 
-extern "C" double vtkAnimationScene__GetFrameRate__0(void* self) {
+extern "C" double vtkAnimationScene__GetFrameRate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->GetFrameRate();
 }
 
-extern "C" void vtkAnimationScene__AddCue__0(void* self, void* cue) {
+extern "C" void vtkAnimationScene__AddCue__0(void* self, void* cue) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->AddCue(static_cast<vtkAnimationCue*>(cue));
 }
 
-extern "C" void vtkAnimationScene__RemoveCue__0(void* self, void* cue) {
+extern "C" void vtkAnimationScene__RemoveCue__0(void* self, void* cue) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->RemoveCue(static_cast<vtkAnimationCue*>(cue));
 }
 
-extern "C" void vtkAnimationScene__RemoveAllCues__0(void* self) {
+extern "C" void vtkAnimationScene__RemoveAllCues__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->RemoveAllCues();
 }
 
-extern "C" int32_t vtkAnimationScene__GetNumberOfCues__0(void* self) {
+extern "C" int32_t vtkAnimationScene__GetNumberOfCues__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->GetNumberOfCues();
 }
 
-extern "C" void vtkAnimationScene__Play__0(void* self) {
+extern "C" void vtkAnimationScene__Play__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->Play();
 }
 
-extern "C" void vtkAnimationScene__Stop__0(void* self) {
+extern "C" void vtkAnimationScene__Stop__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->Stop();
 }
 
-extern "C" void vtkAnimationScene__SetLoop__0(void* self, int32_t _arg) {
+extern "C" void vtkAnimationScene__SetLoop__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetLoop(_arg);
 }
 
-extern "C" int32_t vtkAnimationScene__GetLoop__0(void* self) {
+extern "C" int32_t vtkAnimationScene__GetLoop__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->GetLoop();
 }
 
-extern "C" void vtkAnimationScene__SetAnimationTime__0(void* self, double time) {
+extern "C" void vtkAnimationScene__SetAnimationTime__0(void* self, double time) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetAnimationTime(time);
 }
 
-extern "C" void vtkAnimationScene__SetTimeMode__0(void* self, int32_t mode) {
+extern "C" void vtkAnimationScene__SetTimeMode__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkAnimationScene*>(self)->SetTimeMode(mode);
 }
 
-extern "C" int32_t vtkAnimationScene__IsInPlay__0(void* self) {
+extern "C" int32_t vtkAnimationScene__IsInPlay__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnimationScene*>(self)->IsInPlay();
 }

@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLagrangeInterpolation__vtk_wrap_new() { return static_cast<void*>(vtkLagrangeInterpolation::New()); }
+extern "C" void* vtkLagrangeInterpolation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLagrangeInterpolation::New()); }
 
-extern "C" int32_t vtkLagrangeInterpolation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLagrangeInterpolation__IsTypeOf__0(const char* type_) noexcept {
   return vtkLagrangeInterpolation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLagrangeInterpolation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLagrangeInterpolation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeInterpolation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLagrangeInterpolation__SafeDownCast__0(void* o) {
+extern "C" void* vtkLagrangeInterpolation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLagrangeInterpolation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLagrangeInterpolation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLagrangeInterpolation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLagrangeInterpolation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLagrangeInterpolation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLagrangeInterpolation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeInterpolation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

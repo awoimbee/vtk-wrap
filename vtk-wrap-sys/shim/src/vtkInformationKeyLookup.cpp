@@ -5,31 +5,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInformationKeyLookup__vtk_wrap_new() { return static_cast<void*>(vtkInformationKeyLookup::New()); }
+extern "C" void* vtkInformationKeyLookup__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInformationKeyLookup::New()); }
 
-extern "C" int32_t vtkInformationKeyLookup__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationKeyLookup__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationKeyLookup::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationKeyLookup__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationKeyLookup__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationKeyLookup*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationKeyLookup__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationKeyLookup__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationKeyLookup::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationKeyLookup__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationKeyLookup__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationKeyLookup::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationKeyLookup__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationKeyLookup__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationKeyLookup*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationKeyLookup__Find__0(const char* name, const char* location) {
+extern "C" void* vtkInformationKeyLookup__Find__0(const char* name, const char* location) noexcept {
   return static_cast<void*>(vtkInformationKeyLookup::Find(std::string(name), std::string(location)));
 }
 

@@ -4,201 +4,201 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageSincInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkImageSincInterpolator::New()); }
+extern "C" void* vtkImageSincInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageSincInterpolator::New()); }
 
-extern "C" int32_t vtkImageSincInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageSincInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageSincInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageSincInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageSincInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageSincInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageSincInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageSincInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageSincInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageSincInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageSincInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageSincInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageSincInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunction__0(void* self, int32_t mode) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunction__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunction(mode);
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToLanczos__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToLanczos__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToLanczos();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToKaiser__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToKaiser__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToKaiser();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToCosine__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToCosine__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToCosine();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToHann__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToHann__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToHann();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToHamming__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToHamming__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToHamming();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackman__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackman__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToBlackman();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanHarris3__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanHarris3__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToBlackmanHarris3();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanHarris4__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanHarris4__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToBlackmanHarris4();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToNuttall__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToNuttall__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToNuttall();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanNuttall3__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanNuttall3__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToBlackmanNuttall3();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanNuttall4__0(void* self) {
+extern "C" void vtkImageSincInterpolator__SetWindowFunctionToBlackmanNuttall4__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowFunctionToBlackmanNuttall4();
 }
 
-extern "C" int32_t vtkImageSincInterpolator__GetWindowFunction__0(void* self) {
+extern "C" int32_t vtkImageSincInterpolator__GetWindowFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetWindowFunction();
 }
 
-extern "C" const char* vtkImageSincInterpolator__GetWindowFunctionAsString__0(void* self) {
+extern "C" const char* vtkImageSincInterpolator__GetWindowFunctionAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetWindowFunctionAsString();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowHalfWidth__0(void* self, int32_t n) {
+extern "C" void vtkImageSincInterpolator__SetWindowHalfWidth__0(void* self, int32_t n) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowHalfWidth(n);
 }
 
-extern "C" int32_t vtkImageSincInterpolator__GetWindowHalfWidth__0(void* self) {
+extern "C" int32_t vtkImageSincInterpolator__GetWindowHalfWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetWindowHalfWidth();
 }
 
-extern "C" void vtkImageSincInterpolator__SetUseWindowParameter__0(void* self, int32_t val) {
+extern "C" void vtkImageSincInterpolator__SetUseWindowParameter__0(void* self, int32_t val) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetUseWindowParameter(val);
 }
 
-extern "C" void vtkImageSincInterpolator__UseWindowParameterOn__0(void* self) {
+extern "C" void vtkImageSincInterpolator__UseWindowParameterOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->UseWindowParameterOn();
 }
 
-extern "C" void vtkImageSincInterpolator__UseWindowParameterOff__0(void* self) {
+extern "C" void vtkImageSincInterpolator__UseWindowParameterOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->UseWindowParameterOff();
 }
 
-extern "C" int32_t vtkImageSincInterpolator__GetUseWindowParameter__0(void* self) {
+extern "C" int32_t vtkImageSincInterpolator__GetUseWindowParameter__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetUseWindowParameter();
 }
 
-extern "C" void vtkImageSincInterpolator__SetWindowParameter__0(void* self, double param) {
+extern "C" void vtkImageSincInterpolator__SetWindowParameter__0(void* self, double param) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetWindowParameter(param);
 }
 
-extern "C" double vtkImageSincInterpolator__GetWindowParameter__0(void* self) {
+extern "C" double vtkImageSincInterpolator__GetWindowParameter__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetWindowParameter();
 }
 
-extern "C" void vtkImageSincInterpolator__ComputeSupportSize__0(void* self, const double* matrix, int32_t* support) {
+extern "C" void vtkImageSincInterpolator__ComputeSupportSize__0(void* self, const double* matrix, int32_t* support) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->ComputeSupportSize(matrix, support);
 }
 
-extern "C" void vtkImageSincInterpolator__SetBlurFactors__0(void* self, double x, double y, double z) {
+extern "C" void vtkImageSincInterpolator__SetBlurFactors__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetBlurFactors(x, y, z);
 }
 
-extern "C" void vtkImageSincInterpolator__SetBlurFactors__1(void* self, const double* f) {
+extern "C" void vtkImageSincInterpolator__SetBlurFactors__1(void* self, const double* f) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetBlurFactors(f);
 }
 
-extern "C" void vtkImageSincInterpolator__GetBlurFactors__0(void* self, double* f) {
+extern "C" void vtkImageSincInterpolator__GetBlurFactors__0(void* self, double* f) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->GetBlurFactors(f);
 }
 
-extern "C" void vtkImageSincInterpolator__SetAntialiasing__0(void* self, int32_t antialiasing) {
+extern "C" void vtkImageSincInterpolator__SetAntialiasing__0(void* self, int32_t antialiasing) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetAntialiasing(antialiasing);
 }
 
-extern "C" void vtkImageSincInterpolator__AntialiasingOn__0(void* self) {
+extern "C" void vtkImageSincInterpolator__AntialiasingOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->AntialiasingOn();
 }
 
-extern "C" void vtkImageSincInterpolator__AntialiasingOff__0(void* self) {
+extern "C" void vtkImageSincInterpolator__AntialiasingOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->AntialiasingOff();
 }
 
-extern "C" int32_t vtkImageSincInterpolator__GetAntialiasing__0(void* self) {
+extern "C" int32_t vtkImageSincInterpolator__GetAntialiasing__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetAntialiasing();
 }
 
-extern "C" void vtkImageSincInterpolator__SetRenormalization__0(void* self, int32_t renormalization) {
+extern "C" void vtkImageSincInterpolator__SetRenormalization__0(void* self, int32_t renormalization) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->SetRenormalization(renormalization);
 }
 
-extern "C" void vtkImageSincInterpolator__RenormalizationOn__0(void* self) {
+extern "C" void vtkImageSincInterpolator__RenormalizationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->RenormalizationOn();
 }
 
-extern "C" void vtkImageSincInterpolator__RenormalizationOff__0(void* self) {
+extern "C" void vtkImageSincInterpolator__RenormalizationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSincInterpolator*>(self)->RenormalizationOff();
 }
 
-extern "C" int32_t vtkImageSincInterpolator__GetRenormalization__0(void* self) {
+extern "C" int32_t vtkImageSincInterpolator__GetRenormalization__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->GetRenormalization();
 }
 
-extern "C" bool vtkImageSincInterpolator__IsSeparable__0(void* self) {
+extern "C" bool vtkImageSincInterpolator__IsSeparable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSincInterpolator*>(self)->IsSeparable();
 }

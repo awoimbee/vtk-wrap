@@ -4,34 +4,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkImageIterateFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageIterateFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageIterateFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageIterateFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageIterateFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageIterateFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageIterateFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageIterateFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageIterateFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageIterateFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageIterateFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageIterateFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageIterateFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageIterateFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageIterateFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkImageIterateFilter__GetIteration__0(void* self) {
+extern "C" int32_t vtkImageIterateFilter__GetIteration__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageIterateFilter*>(self)->GetIteration();
 }
 
-extern "C" int32_t vtkImageIterateFilter__GetNumberOfIterations__0(void* self) {
+extern "C" int32_t vtkImageIterateFilter__GetNumberOfIterations__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageIterateFilter*>(self)->GetNumberOfIterations();
 }

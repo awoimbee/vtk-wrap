@@ -8,7 +8,7 @@
 // The call to `vtk_wrap_register` makes the linker pull the shim in, which in turn
 // pulls in the static VTK archives.
 
-extern "C" void vtk_wrap_register(void* obj);
+extern "C" void vtk_wrap_register(void* obj) noexcept;
 
 int main()
 {

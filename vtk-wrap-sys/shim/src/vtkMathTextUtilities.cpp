@@ -7,69 +7,69 @@
 #include "vtkTextProperty.h"
 #include <string>
 
-extern "C" void* vtkMathTextUtilities__vtk_wrap_new() { return static_cast<void*>(vtkMathTextUtilities::New()); }
+extern "C" void* vtkMathTextUtilities__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMathTextUtilities::New()); }
 
-extern "C" int32_t vtkMathTextUtilities__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMathTextUtilities__IsTypeOf__0(const char* type_) noexcept {
   return vtkMathTextUtilities::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMathTextUtilities__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMathTextUtilities__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMathTextUtilities__SafeDownCast__0(void* o) {
+extern "C" void* vtkMathTextUtilities__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMathTextUtilities::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMathTextUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMathTextUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMathTextUtilities::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMathTextUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMathTextUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkMathTextUtilities__IsAvailable__0(void* self) {
+extern "C" bool vtkMathTextUtilities__IsAvailable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->IsAvailable();
 }
 
-extern "C" void* vtkMathTextUtilities__GetInstance__0() {
+extern "C" void* vtkMathTextUtilities__GetInstance__0() noexcept {
   return static_cast<void*>(vtkMathTextUtilities::GetInstance());
 }
 
-extern "C" void vtkMathTextUtilities__SetInstance__0(void* instance) {
+extern "C" void vtkMathTextUtilities__SetInstance__0(void* instance) noexcept {
   vtkMathTextUtilities::SetInstance(static_cast<vtkMathTextUtilities*>(instance));
 }
 
-extern "C" bool vtkMathTextUtilities__GetBoundingBox__0(void* self, void* tprop, const char* str, int32_t dpi, int32_t* bbox) {
+extern "C" bool vtkMathTextUtilities__GetBoundingBox__0(void* self, void* tprop, const char* str, int32_t dpi, int32_t* bbox) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->GetBoundingBox(static_cast<vtkTextProperty*>(tprop), str, dpi, bbox);
 }
 
-extern "C" bool vtkMathTextUtilities__RenderString__0(void* self, const char* str, void* data, void* tprop, int32_t dpi, int32_t* textDims) {
+extern "C" bool vtkMathTextUtilities__RenderString__0(void* self, const char* str, void* data, void* tprop, int32_t dpi, int32_t* textDims) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->RenderString(str, static_cast<vtkImageData*>(data), static_cast<vtkTextProperty*>(tprop), dpi, textDims);
 }
 
-extern "C" bool vtkMathTextUtilities__StringToPath__0(void* self, const char* str, void* path, void* tprop, int32_t dpi) {
+extern "C" bool vtkMathTextUtilities__StringToPath__0(void* self, const char* str, void* path, void* tprop, int32_t dpi) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->StringToPath(str, static_cast<vtkPath*>(path), static_cast<vtkTextProperty*>(tprop), dpi);
 }
 
-extern "C" int32_t vtkMathTextUtilities__GetConstrainedFontSize__0(void* self, const char* str, void* tprop, int32_t targetWidth, int32_t targetHeight, int32_t dpi) {
+extern "C" int32_t vtkMathTextUtilities__GetConstrainedFontSize__0(void* self, const char* str, void* tprop, int32_t targetWidth, int32_t targetHeight, int32_t dpi) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->GetConstrainedFontSize(str, static_cast<vtkTextProperty*>(tprop), targetWidth, targetHeight, dpi);
 }
 
-extern "C" bool vtkMathTextUtilities__GetScaleToPowerOfTwo__0(void* self) {
+extern "C" bool vtkMathTextUtilities__GetScaleToPowerOfTwo__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMathTextUtilities*>(self)->GetScaleToPowerOfTwo();
 }
 
-extern "C" void vtkMathTextUtilities__SetScaleToPowerOfTwo__0(void* self, bool scale) {
+extern "C" void vtkMathTextUtilities__SetScaleToPowerOfTwo__0(void* self, bool scale) noexcept {
   (void)self;
   static_cast<vtkMathTextUtilities*>(self)->SetScaleToPowerOfTwo(scale);
 }

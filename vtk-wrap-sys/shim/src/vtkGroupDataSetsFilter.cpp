@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGroupDataSetsFilter__vtk_wrap_new() { return static_cast<void*>(vtkGroupDataSetsFilter::New()); }
+extern "C" void* vtkGroupDataSetsFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGroupDataSetsFilter::New()); }
 
-extern "C" int32_t vtkGroupDataSetsFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGroupDataSetsFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkGroupDataSetsFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGroupDataSetsFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGroupDataSetsFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGroupDataSetsFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGroupDataSetsFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkGroupDataSetsFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGroupDataSetsFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGroupDataSetsFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGroupDataSetsFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGroupDataSetsFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGroupDataSetsFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGroupDataSetsFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGroupDataSetsFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetOutputType__0(void* self, int32_t _arg) {
+extern "C" void vtkGroupDataSetsFilter__SetOutputType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetOutputType(_arg);
 }
 
-extern "C" int32_t vtkGroupDataSetsFilter__GetOutputType__0(void* self) {
+extern "C" int32_t vtkGroupDataSetsFilter__GetOutputType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGroupDataSetsFilter*>(self)->GetOutputType();
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToPartitionedDataSet__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToPartitionedDataSet__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetOutputTypeToPartitionedDataSet();
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToPartitionedDataSetCollection__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToPartitionedDataSetCollection__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetOutputTypeToPartitionedDataSetCollection();
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToMultiBlockDataSet__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__SetOutputTypeToMultiBlockDataSet__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetOutputTypeToMultiBlockDataSet();
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetInputName__0(void* self, int32_t index, const char* name) {
+extern "C" void vtkGroupDataSetsFilter__SetInputName__0(void* self, int32_t index, const char* name) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetInputName(index, name);
 }
 
-extern "C" const char* vtkGroupDataSetsFilter__GetInputName__0(void* self, int32_t index) {
+extern "C" const char* vtkGroupDataSetsFilter__GetInputName__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkGroupDataSetsFilter*>(self)->GetInputName(index);
 }
 
-extern "C" void vtkGroupDataSetsFilter__ClearInputNames__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__ClearInputNames__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->ClearInputNames();
 }
 
-extern "C" void vtkGroupDataSetsFilter__SetCombineFirstLayerMultiblock__0(void* self, bool _arg) {
+extern "C" void vtkGroupDataSetsFilter__SetCombineFirstLayerMultiblock__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->SetCombineFirstLayerMultiblock(_arg);
 }
 
-extern "C" bool vtkGroupDataSetsFilter__GetCombineFirstLayerMultiblock__0(void* self) {
+extern "C" bool vtkGroupDataSetsFilter__GetCombineFirstLayerMultiblock__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGroupDataSetsFilter*>(self)->GetCombineFirstLayerMultiblock();
 }
 
-extern "C" void vtkGroupDataSetsFilter__CombineFirstLayerMultiblockOn__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__CombineFirstLayerMultiblockOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->CombineFirstLayerMultiblockOn();
 }
 
-extern "C" void vtkGroupDataSetsFilter__CombineFirstLayerMultiblockOff__0(void* self) {
+extern "C" void vtkGroupDataSetsFilter__CombineFirstLayerMultiblockOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGroupDataSetsFilter*>(self)->CombineFirstLayerMultiblockOff();
 }

@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMultiBlockDataGroupFilter__vtk_wrap_new() { return static_cast<void*>(vtkMultiBlockDataGroupFilter::New()); }
+extern "C" void* vtkMultiBlockDataGroupFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiBlockDataGroupFilter::New()); }
 
-extern "C" int32_t vtkMultiBlockDataGroupFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiBlockDataGroupFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiBlockDataGroupFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiBlockDataGroupFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiBlockDataGroupFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockDataGroupFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiBlockDataGroupFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiBlockDataGroupFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiBlockDataGroupFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiBlockDataGroupFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiBlockDataGroupFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiBlockDataGroupFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiBlockDataGroupFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiBlockDataGroupFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockDataGroupFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMultiBlockDataGroupFilter__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkMultiBlockDataGroupFilter__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMultiBlockDataGroupFilter*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkMultiBlockDataGroupFilter__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkMultiBlockDataGroupFilter__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkMultiBlockDataGroupFilter*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

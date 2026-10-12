@@ -5,31 +5,31 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkSobelGradientMagnitudePass__vtk_wrap_new() { return static_cast<void*>(vtkSobelGradientMagnitudePass::New()); }
+extern "C" void* vtkSobelGradientMagnitudePass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSobelGradientMagnitudePass::New()); }
 
-extern "C" int32_t vtkSobelGradientMagnitudePass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSobelGradientMagnitudePass__IsTypeOf__0(const char* type_) noexcept {
   return vtkSobelGradientMagnitudePass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSobelGradientMagnitudePass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSobelGradientMagnitudePass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSobelGradientMagnitudePass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSobelGradientMagnitudePass__SafeDownCast__0(void* o) {
+extern "C" void* vtkSobelGradientMagnitudePass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSobelGradientMagnitudePass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSobelGradientMagnitudePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSobelGradientMagnitudePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSobelGradientMagnitudePass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSobelGradientMagnitudePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSobelGradientMagnitudePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSobelGradientMagnitudePass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSobelGradientMagnitudePass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkSobelGradientMagnitudePass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkSobelGradientMagnitudePass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }

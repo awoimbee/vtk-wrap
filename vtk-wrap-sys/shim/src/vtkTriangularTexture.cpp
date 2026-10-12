@@ -4,76 +4,76 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTriangularTexture__vtk_wrap_new() { return static_cast<void*>(vtkTriangularTexture::New()); }
+extern "C" void* vtkTriangularTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTriangularTexture::New()); }
 
-extern "C" int32_t vtkTriangularTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTriangularTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkTriangularTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTriangularTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTriangularTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTriangularTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkTriangularTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTriangularTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTriangularTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTriangularTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTriangularTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTriangularTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTriangularTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTriangularTexture__SetScaleFactor__0(void* self, double _arg) {
+extern "C" void vtkTriangularTexture__SetScaleFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkTriangularTexture*>(self)->SetScaleFactor(_arg);
 }
 
-extern "C" double vtkTriangularTexture__GetScaleFactor__0(void* self) {
+extern "C" double vtkTriangularTexture__GetScaleFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetScaleFactor();
 }
 
-extern "C" void vtkTriangularTexture__SetXSize__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangularTexture__SetXSize__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangularTexture*>(self)->SetXSize(_arg);
 }
 
-extern "C" int32_t vtkTriangularTexture__GetXSize__0(void* self) {
+extern "C" int32_t vtkTriangularTexture__GetXSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetXSize();
 }
 
-extern "C" void vtkTriangularTexture__SetYSize__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangularTexture__SetYSize__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangularTexture*>(self)->SetYSize(_arg);
 }
 
-extern "C" int32_t vtkTriangularTexture__GetYSize__0(void* self) {
+extern "C" int32_t vtkTriangularTexture__GetYSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetYSize();
 }
 
-extern "C" void vtkTriangularTexture__SetTexturePattern__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangularTexture__SetTexturePattern__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangularTexture*>(self)->SetTexturePattern(_arg);
 }
 
-extern "C" int32_t vtkTriangularTexture__GetTexturePatternMinValue__0(void* self) {
+extern "C" int32_t vtkTriangularTexture__GetTexturePatternMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetTexturePatternMinValue();
 }
 
-extern "C" int32_t vtkTriangularTexture__GetTexturePatternMaxValue__0(void* self) {
+extern "C" int32_t vtkTriangularTexture__GetTexturePatternMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetTexturePatternMaxValue();
 }
 
-extern "C" int32_t vtkTriangularTexture__GetTexturePattern__0(void* self) {
+extern "C" int32_t vtkTriangularTexture__GetTexturePattern__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangularTexture*>(self)->GetTexturePattern();
 }

@@ -7,56 +7,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDGRenderResponder__vtk_wrap_new() { return static_cast<void*>(vtkDGRenderResponder::New()); }
+extern "C" void* vtkDGRenderResponder__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDGRenderResponder::New()); }
 
-extern "C" int32_t vtkDGRenderResponder__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDGRenderResponder__IsTypeOf__0(const char* type_) noexcept {
   return vtkDGRenderResponder::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDGRenderResponder__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDGRenderResponder__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDGRenderResponder*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDGRenderResponder__SafeDownCast__0(void* o) {
+extern "C" void* vtkDGRenderResponder__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDGRenderResponder::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDGRenderResponder__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDGRenderResponder__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDGRenderResponder::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDGRenderResponder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDGRenderResponder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDGRenderResponder*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkDGRenderResponder__Query__0(void* self, void* request, void* metadata, void* caches) {
+extern "C" bool vtkDGRenderResponder__Query__0(void* self, void* request, void* metadata, void* caches) noexcept {
   (void)self;
   return static_cast<vtkDGRenderResponder*>(self)->Query(static_cast<vtkCellGridRenderRequest*>(request), static_cast<vtkCellMetadata*>(metadata), static_cast<vtkCellGridResponders*>(caches));
 }
 
-extern "C" void vtkDGRenderResponder__AddMod__0(void* self, const char* className) {
+extern "C" void vtkDGRenderResponder__AddMod__0(void* self, const char* className) noexcept {
   (void)self;
   static_cast<vtkDGRenderResponder*>(self)->AddMod(std::string(className));
 }
 
-extern "C" void vtkDGRenderResponder__RemoveMod__0(void* self, const char* className) {
+extern "C" void vtkDGRenderResponder__RemoveMod__0(void* self, const char* className) noexcept {
   (void)self;
   static_cast<vtkDGRenderResponder*>(self)->RemoveMod(std::string(className));
 }
 
-extern "C" void vtkDGRenderResponder__RemoveAllMods__0(void* self) {
+extern "C" void vtkDGRenderResponder__RemoveAllMods__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDGRenderResponder*>(self)->RemoveAllMods();
 }
 
-extern "C" void vtkDGRenderResponder__ResetModsToDefault__0(void* self) {
+extern "C" void vtkDGRenderResponder__ResetModsToDefault__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDGRenderResponder*>(self)->ResetModsToDefault();
 }
 
-extern "C" void vtkDGRenderResponder__SetVisualizeTessellation__0(bool value) {
+extern "C" void vtkDGRenderResponder__SetVisualizeTessellation__0(bool value) noexcept {
   vtkDGRenderResponder::SetVisualizeTessellation(value);
 }
 

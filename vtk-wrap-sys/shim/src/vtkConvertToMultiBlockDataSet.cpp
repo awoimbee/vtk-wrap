@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkConvertToMultiBlockDataSet__vtk_wrap_new() { return static_cast<void*>(vtkConvertToMultiBlockDataSet::New()); }
+extern "C" void* vtkConvertToMultiBlockDataSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkConvertToMultiBlockDataSet::New()); }
 
-extern "C" int32_t vtkConvertToMultiBlockDataSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkConvertToMultiBlockDataSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkConvertToMultiBlockDataSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkConvertToMultiBlockDataSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkConvertToMultiBlockDataSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkConvertToMultiBlockDataSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkConvertToMultiBlockDataSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkConvertToMultiBlockDataSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkConvertToMultiBlockDataSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkConvertToMultiBlockDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkConvertToMultiBlockDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkConvertToMultiBlockDataSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkConvertToMultiBlockDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkConvertToMultiBlockDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkConvertToMultiBlockDataSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUniformGridAMRIterator__vtk_wrap_new() { return static_cast<void*>(vtkUniformGridAMRIterator::New()); }
+extern "C" void* vtkUniformGridAMRIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniformGridAMRIterator::New()); }
 
-extern "C" int32_t vtkUniformGridAMRIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniformGridAMRIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniformGridAMRIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniformGridAMRIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniformGridAMRIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniformGridAMRIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniformGridAMRIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniformGridAMRIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniformGridAMRIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniformGridAMRIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniformGridAMRIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniformGridAMRIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniformGridAMRIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUniformGridAMRIterator__GoToFirstItem__0(void* self) {
+extern "C" void vtkUniformGridAMRIterator__GoToFirstItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniformGridAMRIterator*>(self)->GoToFirstItem();
 }
 
-extern "C" void vtkUniformGridAMRIterator__GoToNextItem__0(void* self) {
+extern "C" void vtkUniformGridAMRIterator__GoToNextItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniformGridAMRIterator*>(self)->GoToNextItem();
 }
 
-extern "C" uint32_t vtkUniformGridAMRIterator__GetCurrentLevel__0(void* self) {
+extern "C" uint32_t vtkUniformGridAMRIterator__GetCurrentLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRIterator*>(self)->GetCurrentLevel();
 }
 
-extern "C" uint32_t vtkUniformGridAMRIterator__GetCurrentIndex__0(void* self) {
+extern "C" uint32_t vtkUniformGridAMRIterator__GetCurrentIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRIterator*>(self)->GetCurrentIndex();
 }
 
-extern "C" void* vtkUniformGridAMRIterator__GetCurrentMetaData__0(void* self) {
+extern "C" void* vtkUniformGridAMRIterator__GetCurrentMetaData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformGridAMRIterator*>(self)->GetCurrentMetaData());
 }

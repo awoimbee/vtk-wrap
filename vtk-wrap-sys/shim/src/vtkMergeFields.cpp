@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMergeFields__vtk_wrap_new() { return static_cast<void*>(vtkMergeFields::New()); }
+extern "C" void* vtkMergeFields__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMergeFields::New()); }
 
-extern "C" int32_t vtkMergeFields__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMergeFields__IsTypeOf__0(const char* type_) noexcept {
   return vtkMergeFields::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMergeFields__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMergeFields__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeFields*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMergeFields__SafeDownCast__0(void* o) {
+extern "C" void* vtkMergeFields__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMergeFields::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMergeFields__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMergeFields__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMergeFields::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMergeFields__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMergeFields__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeFields*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMergeFields__SetOutputField__0(void* self, const char* name, int32_t fieldLoc) {
+extern "C" void vtkMergeFields__SetOutputField__0(void* self, const char* name, int32_t fieldLoc) noexcept {
   (void)self;
   static_cast<vtkMergeFields*>(self)->SetOutputField(name, fieldLoc);
 }
 
-extern "C" void vtkMergeFields__SetOutputField__1(void* self, const char* name, const char* fieldLoc) {
+extern "C" void vtkMergeFields__SetOutputField__1(void* self, const char* name, const char* fieldLoc) noexcept {
   (void)self;
   static_cast<vtkMergeFields*>(self)->SetOutputField(name, fieldLoc);
 }
 
-extern "C" void vtkMergeFields__Merge__0(void* self, int32_t component, const char* arrayName, int32_t sourceComp) {
+extern "C" void vtkMergeFields__Merge__0(void* self, int32_t component, const char* arrayName, int32_t sourceComp) noexcept {
   (void)self;
   static_cast<vtkMergeFields*>(self)->Merge(component, arrayName, sourceComp);
 }
 
-extern "C" void vtkMergeFields__SetNumberOfComponents__0(void* self, int32_t _arg) {
+extern "C" void vtkMergeFields__SetNumberOfComponents__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMergeFields*>(self)->SetNumberOfComponents(_arg);
 }
 
-extern "C" int32_t vtkMergeFields__GetNumberOfComponents__0(void* self) {
+extern "C" int32_t vtkMergeFields__GetNumberOfComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeFields*>(self)->GetNumberOfComponents();
 }

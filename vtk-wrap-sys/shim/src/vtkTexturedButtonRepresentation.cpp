@@ -12,161 +12,161 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkTexturedButtonRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkTexturedButtonRepresentation::New()); }
+extern "C" void* vtkTexturedButtonRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTexturedButtonRepresentation::New()); }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTexturedButtonRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkTexturedButtonRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTexturedButtonRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkTexturedButtonRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTexturedButtonRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTexturedButtonRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTexturedButtonRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTexturedButtonRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTexturedButtonRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTexturedButtonRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetButtonGeometry__0(void* self, void* pd) {
+extern "C" void vtkTexturedButtonRepresentation__SetButtonGeometry__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetButtonGeometry(static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetButtonGeometryConnection__0(void* self, void* algOutput) {
+extern "C" void vtkTexturedButtonRepresentation__SetButtonGeometryConnection__0(void* self, void* algOutput) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetButtonGeometryConnection(static_cast<vtkAlgorithmOutput*>(algOutput));
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__GetButtonGeometry__0(void* self) {
+extern "C" void* vtkTexturedButtonRepresentation__GetButtonGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedButtonRepresentation*>(self)->GetButtonGeometry());
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetFollowCamera__0(void* self, int32_t _arg) {
+extern "C" void vtkTexturedButtonRepresentation__SetFollowCamera__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetFollowCamera(_arg);
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__GetFollowCamera__0(void* self) {
+extern "C" int32_t vtkTexturedButtonRepresentation__GetFollowCamera__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->GetFollowCamera();
 }
 
-extern "C" void vtkTexturedButtonRepresentation__FollowCameraOn__0(void* self) {
+extern "C" void vtkTexturedButtonRepresentation__FollowCameraOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->FollowCameraOn();
 }
 
-extern "C" void vtkTexturedButtonRepresentation__FollowCameraOff__0(void* self) {
+extern "C" void vtkTexturedButtonRepresentation__FollowCameraOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->FollowCameraOff();
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetProperty__0(void* self, void* p) {
+extern "C" void vtkTexturedButtonRepresentation__SetProperty__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetProperty(static_cast<vtkProperty*>(p));
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__GetProperty__0(void* self) {
+extern "C" void* vtkTexturedButtonRepresentation__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedButtonRepresentation*>(self)->GetProperty());
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetHoveringProperty__0(void* self, void* p) {
+extern "C" void vtkTexturedButtonRepresentation__SetHoveringProperty__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetHoveringProperty(static_cast<vtkProperty*>(p));
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__GetHoveringProperty__0(void* self) {
+extern "C" void* vtkTexturedButtonRepresentation__GetHoveringProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedButtonRepresentation*>(self)->GetHoveringProperty());
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetSelectingProperty__0(void* self, void* p) {
+extern "C" void vtkTexturedButtonRepresentation__SetSelectingProperty__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetSelectingProperty(static_cast<vtkProperty*>(p));
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__GetSelectingProperty__0(void* self) {
+extern "C" void* vtkTexturedButtonRepresentation__GetSelectingProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedButtonRepresentation*>(self)->GetSelectingProperty());
 }
 
-extern "C" void vtkTexturedButtonRepresentation__SetButtonTexture__0(void* self, int32_t i, void* image) {
+extern "C" void vtkTexturedButtonRepresentation__SetButtonTexture__0(void* self, int32_t i, void* image) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->SetButtonTexture(i, static_cast<vtkImageData*>(image));
 }
 
-extern "C" void* vtkTexturedButtonRepresentation__GetButtonTexture__0(void* self, int32_t i) {
+extern "C" void* vtkTexturedButtonRepresentation__GetButtonTexture__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTexturedButtonRepresentation*>(self)->GetButtonTexture(i));
 }
 
-extern "C" void vtkTexturedButtonRepresentation__PlaceWidget__0(void* self, double scale, double* point, double* normal) {
+extern "C" void vtkTexturedButtonRepresentation__PlaceWidget__0(void* self, double scale, double* point, double* normal) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->PlaceWidget(scale, point, normal);
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkTexturedButtonRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkTexturedButtonRepresentation__PlaceWidget__1(void* self, double* bounds) {
+extern "C" void vtkTexturedButtonRepresentation__PlaceWidget__1(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->PlaceWidget(bounds);
 }
 
-extern "C" void vtkTexturedButtonRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkTexturedButtonRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkTexturedButtonRepresentation__Highlight__0(void* self, int32_t state) {
+extern "C" void vtkTexturedButtonRepresentation__Highlight__0(void* self, int32_t state) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->Highlight(state);
 }
 
-extern "C" void vtkTexturedButtonRepresentation__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkTexturedButtonRepresentation__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkTexturedButtonRepresentation__GetActors__0(void* self, void* pc) {
+extern "C" void vtkTexturedButtonRepresentation__GetActors__0(void* self, void* pc) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(pc));
 }
 
-extern "C" void vtkTexturedButtonRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkTexturedButtonRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkTexturedButtonRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkTexturedButtonRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkTexturedButtonRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkTexturedButtonRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTexturedButtonRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkTexturedButtonRepresentation__RegisterPickers__0(void* self) {
+extern "C" void vtkTexturedButtonRepresentation__RegisterPickers__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTexturedButtonRepresentation*>(self)->RegisterPickers();
 }

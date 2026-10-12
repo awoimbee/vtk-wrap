@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDateToNumeric__vtk_wrap_new() { return static_cast<void*>(vtkDateToNumeric::New()); }
+extern "C" void* vtkDateToNumeric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDateToNumeric::New()); }
 
-extern "C" int32_t vtkDateToNumeric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDateToNumeric__IsTypeOf__0(const char* type_) noexcept {
   return vtkDateToNumeric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDateToNumeric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDateToNumeric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDateToNumeric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDateToNumeric__SafeDownCast__0(void* o) {
+extern "C" void* vtkDateToNumeric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDateToNumeric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDateToNumeric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDateToNumeric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDateToNumeric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDateToNumeric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDateToNumeric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDateToNumeric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDateToNumeric__SetDateFormat__0(void* self, const char* _arg) {
+extern "C" void vtkDateToNumeric__SetDateFormat__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDateToNumeric*>(self)->SetDateFormat(_arg);
 }

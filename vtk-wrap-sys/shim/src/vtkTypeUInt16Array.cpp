@@ -5,31 +5,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTypeUInt16Array__vtk_wrap_new() { return static_cast<void*>(vtkTypeUInt16Array::New()); }
+extern "C" void* vtkTypeUInt16Array__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTypeUInt16Array::New()); }
 
-extern "C" int32_t vtkTypeUInt16Array__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTypeUInt16Array__IsTypeOf__0(const char* type_) noexcept {
   return vtkTypeUInt16Array::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTypeUInt16Array__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTypeUInt16Array__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTypeUInt16Array*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTypeUInt16Array__SafeDownCast__0(void* o) {
+extern "C" void* vtkTypeUInt16Array__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTypeUInt16Array::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTypeUInt16Array__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTypeUInt16Array__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTypeUInt16Array::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTypeUInt16Array__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTypeUInt16Array__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTypeUInt16Array*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTypeUInt16Array__FastDownCast__0(void* source) {
+extern "C" void* vtkTypeUInt16Array__FastDownCast__0(void* source) noexcept {
   return static_cast<void*>(vtkTypeUInt16Array::FastDownCast(static_cast<vtkAbstractArray*>(source)));
 }
 

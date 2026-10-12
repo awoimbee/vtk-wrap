@@ -5,39 +5,39 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkContextItem__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContextItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkContextItem::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContextItem__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContextItem__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextItem*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContextItem__SafeDownCast__0(void* o) {
+extern "C" void* vtkContextItem__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContextItem::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContextItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContextItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContextItem::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContextItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContextItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextItem*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkContextItem__GetOpacity__0(void* self) {
+extern "C" double vtkContextItem__GetOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContextItem*>(self)->GetOpacity();
 }
 
-extern "C" void vtkContextItem__SetOpacity__0(void* self, double _arg) {
+extern "C" void vtkContextItem__SetOpacity__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkContextItem*>(self)->SetOpacity(_arg);
 }
 
-extern "C" void vtkContextItem__SetTransform__0(void* self, void* arg0) {
+extern "C" void vtkContextItem__SetTransform__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkContextItem*>(self)->SetTransform(static_cast<vtkContextTransform*>(arg0));
 }

@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSphericalHarmonics__vtk_wrap_new() { return static_cast<void*>(vtkSphericalHarmonics::New()); }
+extern "C" void* vtkSphericalHarmonics__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSphericalHarmonics::New()); }
 
-extern "C" int32_t vtkSphericalHarmonics__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSphericalHarmonics__IsTypeOf__0(const char* type_) noexcept {
   return vtkSphericalHarmonics::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSphericalHarmonics__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSphericalHarmonics__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphericalHarmonics*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSphericalHarmonics__SafeDownCast__0(void* o) {
+extern "C" void* vtkSphericalHarmonics__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSphericalHarmonics::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSphericalHarmonics__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSphericalHarmonics__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSphericalHarmonics::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSphericalHarmonics__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSphericalHarmonics__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphericalHarmonics*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

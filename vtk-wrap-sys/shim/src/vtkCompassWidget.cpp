@@ -5,96 +5,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCompassWidget__vtk_wrap_new() { return static_cast<void*>(vtkCompassWidget::New()); }
+extern "C" void* vtkCompassWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompassWidget::New()); }
 
-extern "C" int32_t vtkCompassWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompassWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompassWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompassWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompassWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompassWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompassWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompassWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompassWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompassWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompassWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompassWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompassWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCompassWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkCompassWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetRepresentation(static_cast<vtkCompassRepresentation*>(r));
 }
 
-extern "C" void vtkCompassWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkCompassWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" double vtkCompassWidget__GetHeading__0(void* self) {
+extern "C" double vtkCompassWidget__GetHeading__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetHeading();
 }
 
-extern "C" void vtkCompassWidget__SetHeading__0(void* self, double v) {
+extern "C" void vtkCompassWidget__SetHeading__0(void* self, double v) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetHeading(v);
 }
 
-extern "C" double vtkCompassWidget__GetTilt__0(void* self) {
+extern "C" double vtkCompassWidget__GetTilt__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetTilt();
 }
 
-extern "C" void vtkCompassWidget__SetTilt__0(void* self, double tilt) {
+extern "C" void vtkCompassWidget__SetTilt__0(void* self, double tilt) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetTilt(tilt);
 }
 
-extern "C" double vtkCompassWidget__GetDistance__0(void* self) {
+extern "C" double vtkCompassWidget__GetDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetDistance();
 }
 
-extern "C" void vtkCompassWidget__SetDistance__0(void* self, double distance) {
+extern "C" void vtkCompassWidget__SetDistance__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetDistance(distance);
 }
 
-extern "C" int32_t vtkCompassWidget__GetTimerDuration__0(void* self) {
+extern "C" int32_t vtkCompassWidget__GetTimerDuration__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetTimerDuration();
 }
 
-extern "C" void vtkCompassWidget__SetTimerDuration__0(void* self, int32_t _arg) {
+extern "C" void vtkCompassWidget__SetTimerDuration__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetTimerDuration(_arg);
 }
 
-extern "C" double vtkCompassWidget__GetTiltSpeed__0(void* self) {
+extern "C" double vtkCompassWidget__GetTiltSpeed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetTiltSpeed();
 }
 
-extern "C" void vtkCompassWidget__SetTiltSpeed__0(void* self, double _arg) {
+extern "C" void vtkCompassWidget__SetTiltSpeed__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetTiltSpeed(_arg);
 }
 
-extern "C" double vtkCompassWidget__GetDistanceSpeed__0(void* self) {
+extern "C" double vtkCompassWidget__GetDistanceSpeed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompassWidget*>(self)->GetDistanceSpeed();
 }
 
-extern "C" void vtkCompassWidget__SetDistanceSpeed__0(void* self, double _arg) {
+extern "C" void vtkCompassWidget__SetDistanceSpeed__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCompassWidget*>(self)->SetDistanceSpeed(_arg);
 }

@@ -5,36 +5,36 @@
 #include "vtkTree.h"
 #include <string>
 
-extern "C" void* vtkTreeWriter__vtk_wrap_new() { return static_cast<void*>(vtkTreeWriter::New()); }
+extern "C" void* vtkTreeWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTreeWriter::New()); }
 
-extern "C" int32_t vtkTreeWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTreeWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkTreeWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTreeWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTreeWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTreeWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkTreeWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTreeWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTreeWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTreeWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTreeWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTreeWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTreeWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTreeWriter__GetInput__0(void* self) {
+extern "C" void* vtkTreeWriter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTreeWriter*>(self)->GetInput());
 }
 
-extern "C" void* vtkTreeWriter__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkTreeWriter__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTreeWriter*>(self)->GetInput(port));
 }

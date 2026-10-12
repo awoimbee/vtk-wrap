@@ -6,46 +6,46 @@
 #include "vtkStatisticalModel.h"
 #include <string>
 
-extern "C" void* vtkLegacyStatisticalModelReader__vtk_wrap_new() { return static_cast<void*>(vtkLegacyStatisticalModelReader::New()); }
+extern "C" void* vtkLegacyStatisticalModelReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLegacyStatisticalModelReader::New()); }
 
-extern "C" int32_t vtkLegacyStatisticalModelReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLegacyStatisticalModelReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkLegacyStatisticalModelReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLegacyStatisticalModelReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLegacyStatisticalModelReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLegacyStatisticalModelReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLegacyStatisticalModelReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkLegacyStatisticalModelReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLegacyStatisticalModelReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLegacyStatisticalModelReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLegacyStatisticalModelReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLegacyStatisticalModelReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLegacyStatisticalModelReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLegacyStatisticalModelReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLegacyStatisticalModelReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkLegacyStatisticalModelReader__GetOutput__0(void* self) {
+extern "C" void* vtkLegacyStatisticalModelReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLegacyStatisticalModelReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkLegacyStatisticalModelReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkLegacyStatisticalModelReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLegacyStatisticalModelReader*>(self)->GetOutput(idx));
 }
 
-extern "C" void vtkLegacyStatisticalModelReader__SetOutput__0(void* self, void* output) {
+extern "C" void vtkLegacyStatisticalModelReader__SetOutput__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkLegacyStatisticalModelReader*>(self)->SetOutput(static_cast<vtkStatisticalModel*>(output));
 }
 
-extern "C" int32_t vtkLegacyStatisticalModelReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkLegacyStatisticalModelReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkLegacyStatisticalModelReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

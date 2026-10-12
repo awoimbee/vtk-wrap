@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUniformGridPartitioner__vtk_wrap_new() { return static_cast<void*>(vtkUniformGridPartitioner::New()); }
+extern "C" void* vtkUniformGridPartitioner__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniformGridPartitioner::New()); }
 
-extern "C" int32_t vtkUniformGridPartitioner__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniformGridPartitioner__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniformGridPartitioner::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniformGridPartitioner__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniformGridPartitioner__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridPartitioner*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniformGridPartitioner__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniformGridPartitioner__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniformGridPartitioner::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniformGridPartitioner__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniformGridPartitioner__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniformGridPartitioner::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniformGridPartitioner__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniformGridPartitioner__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridPartitioner*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkUniformGridPartitioner__GetNumberOfPartitions__0(void* self) {
+extern "C" int32_t vtkUniformGridPartitioner__GetNumberOfPartitions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridPartitioner*>(self)->GetNumberOfPartitions();
 }
 
-extern "C" void vtkUniformGridPartitioner__SetNumberOfPartitions__0(void* self, int32_t _arg) {
+extern "C" void vtkUniformGridPartitioner__SetNumberOfPartitions__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUniformGridPartitioner*>(self)->SetNumberOfPartitions(_arg);
 }
 
-extern "C" int32_t vtkUniformGridPartitioner__GetNumberOfGhostLayers__0(void* self) {
+extern "C" int32_t vtkUniformGridPartitioner__GetNumberOfGhostLayers__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridPartitioner*>(self)->GetNumberOfGhostLayers();
 }
 
-extern "C" void vtkUniformGridPartitioner__SetNumberOfGhostLayers__0(void* self, int32_t _arg) {
+extern "C" void vtkUniformGridPartitioner__SetNumberOfGhostLayers__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUniformGridPartitioner*>(self)->SetNumberOfGhostLayers(_arg);
 }
 
-extern "C" int32_t vtkUniformGridPartitioner__GetDuplicateNodes__0(void* self) {
+extern "C" int32_t vtkUniformGridPartitioner__GetDuplicateNodes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridPartitioner*>(self)->GetDuplicateNodes();
 }
 
-extern "C" void vtkUniformGridPartitioner__SetDuplicateNodes__0(void* self, int32_t _arg) {
+extern "C" void vtkUniformGridPartitioner__SetDuplicateNodes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUniformGridPartitioner*>(self)->SetDuplicateNodes(_arg);
 }
 
-extern "C" void vtkUniformGridPartitioner__DuplicateNodesOn__0(void* self) {
+extern "C" void vtkUniformGridPartitioner__DuplicateNodesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniformGridPartitioner*>(self)->DuplicateNodesOn();
 }
 
-extern "C" void vtkUniformGridPartitioner__DuplicateNodesOff__0(void* self) {
+extern "C" void vtkUniformGridPartitioner__DuplicateNodesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniformGridPartitioner*>(self)->DuplicateNodesOff();
 }

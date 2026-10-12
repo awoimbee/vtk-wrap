@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTubeBender__vtk_wrap_new() { return static_cast<void*>(vtkTubeBender::New()); }
+extern "C" void* vtkTubeBender__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTubeBender::New()); }
 
-extern "C" int32_t vtkTubeBender__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTubeBender__IsTypeOf__0(const char* type_) noexcept {
   return vtkTubeBender::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTubeBender__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTubeBender__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTubeBender*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTubeBender__SafeDownCast__0(void* o) {
+extern "C" void* vtkTubeBender__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTubeBender::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTubeBender__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTubeBender__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTubeBender::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTubeBender__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTubeBender__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTubeBender*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTubeBender__SetRadius__0(void* self, double _arg) {
+extern "C" void vtkTubeBender__SetRadius__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkTubeBender*>(self)->SetRadius(_arg);
 }
 
-extern "C" double vtkTubeBender__GetRadiusMinValue__0(void* self) {
+extern "C" double vtkTubeBender__GetRadiusMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTubeBender*>(self)->GetRadiusMinValue();
 }
 
-extern "C" double vtkTubeBender__GetRadiusMaxValue__0(void* self) {
+extern "C" double vtkTubeBender__GetRadiusMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTubeBender*>(self)->GetRadiusMaxValue();
 }
 
-extern "C" double vtkTubeBender__GetRadius__0(void* self) {
+extern "C" double vtkTubeBender__GetRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTubeBender*>(self)->GetRadius();
 }

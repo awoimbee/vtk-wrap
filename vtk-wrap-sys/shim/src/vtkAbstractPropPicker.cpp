@@ -12,69 +12,69 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractPropPicker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractPropPicker__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractPropPicker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractPropPicker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractPropPicker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPropPicker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractPropPicker__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractPropPicker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractPropPicker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractPropPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractPropPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractPropPicker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractPropPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractPropPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPropPicker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractPropPicker__SetPath__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPropPicker__SetPath__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPropPicker*>(self)->SetPath(static_cast<vtkAssemblyPath*>(arg0));
 }
 
-extern "C" void* vtkAbstractPropPicker__GetPath__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetPath__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetPath());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetViewProp__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetViewProp__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetViewProp());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetProp3D__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetProp3D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetProp3D());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetActor__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetActor());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetActor2D__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetActor2D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetActor2D());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetVolume__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetVolume__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetVolume());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetAssembly__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetAssembly__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetAssembly());
 }
 
-extern "C" void* vtkAbstractPropPicker__GetPropAssembly__0(void* self) {
+extern "C" void* vtkAbstractPropPicker__GetPropAssembly__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPropPicker*>(self)->GetPropAssembly());
 }

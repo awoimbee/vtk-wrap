@@ -6,91 +6,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageSSIM__vtk_wrap_new() { return static_cast<void*>(vtkImageSSIM::New()); }
+extern "C" void* vtkImageSSIM__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageSSIM::New()); }
 
-extern "C" int32_t vtkImageSSIM__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageSSIM__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageSSIM::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageSSIM__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageSSIM__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageSSIM*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageSSIM__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageSSIM__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageSSIM::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageSSIM__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageSSIM__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageSSIM::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageSSIM__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageSSIM__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageSSIM*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageSSIM__SetImageConnection__0(void* self, void* output) {
+extern "C" void vtkImageSSIM__SetImageConnection__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetImageConnection(static_cast<vtkAlgorithmOutput*>(output));
 }
 
-extern "C" void vtkImageSSIM__SetImageData__0(void* self, void* image) {
+extern "C" void vtkImageSSIM__SetImageData__0(void* self, void* image) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetImageData(static_cast<vtkDataObject*>(image));
 }
 
-extern "C" void vtkImageSSIM__SetInputToLab__0(void* self) {
+extern "C" void vtkImageSSIM__SetInputToLab__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetInputToLab();
 }
 
-extern "C" void vtkImageSSIM__SetInputToRGB__0(void* self) {
+extern "C" void vtkImageSSIM__SetInputToRGB__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetInputToRGB();
 }
 
-extern "C" void vtkImageSSIM__SetInputToRGBA__0(void* self) {
+extern "C" void vtkImageSSIM__SetInputToRGBA__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetInputToRGBA();
 }
 
-extern "C" void vtkImageSSIM__SetInputToGrayscale__0(void* self) {
+extern "C" void vtkImageSSIM__SetInputToGrayscale__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetInputToGrayscale();
 }
 
-extern "C" void vtkImageSSIM__SetInputToAuto__0(void* self) {
+extern "C" void vtkImageSSIM__SetInputToAuto__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetInputToAuto();
 }
 
-extern "C" void vtkImageSSIM__SetClampNegativeValues__0(void* self, bool _arg) {
+extern "C" void vtkImageSSIM__SetClampNegativeValues__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetClampNegativeValues(_arg);
 }
 
-extern "C" bool vtkImageSSIM__GetClampNegativeValues__0(void* self) {
+extern "C" bool vtkImageSSIM__GetClampNegativeValues__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSSIM*>(self)->GetClampNegativeValues();
 }
 
-extern "C" void vtkImageSSIM__ClampNegativeValuesOn__0(void* self) {
+extern "C" void vtkImageSSIM__ClampNegativeValuesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->ClampNegativeValuesOn();
 }
 
-extern "C" void vtkImageSSIM__ClampNegativeValuesOff__0(void* self) {
+extern "C" void vtkImageSSIM__ClampNegativeValuesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->ClampNegativeValuesOff();
 }
 
-extern "C" void vtkImageSSIM__SetPatchRadius__0(void* self, double _arg) {
+extern "C" void vtkImageSSIM__SetPatchRadius__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageSSIM*>(self)->SetPatchRadius(_arg);
 }
 
-extern "C" double vtkImageSSIM__GetPatchRadius__0(void* self) {
+extern "C" double vtkImageSSIM__GetPatchRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageSSIM*>(self)->GetPatchRadius();
 }

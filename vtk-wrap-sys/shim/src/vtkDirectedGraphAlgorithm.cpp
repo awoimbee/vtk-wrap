@@ -6,46 +6,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDirectedGraphAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkDirectedGraphAlgorithm::New()); }
+extern "C" void* vtkDirectedGraphAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDirectedGraphAlgorithm::New()); }
 
-extern "C" int32_t vtkDirectedGraphAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDirectedGraphAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkDirectedGraphAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDirectedGraphAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDirectedGraphAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraphAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDirectedGraphAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkDirectedGraphAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDirectedGraphAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDirectedGraphAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDirectedGraphAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDirectedGraphAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDirectedGraphAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDirectedGraphAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraphAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkDirectedGraphAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkDirectedGraphAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDirectedGraphAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkDirectedGraphAlgorithm__GetOutput__1(void* self, int32_t index) {
+extern "C" void* vtkDirectedGraphAlgorithm__GetOutput__1(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDirectedGraphAlgorithm*>(self)->GetOutput(index));
 }
 
-extern "C" void vtkDirectedGraphAlgorithm__SetInputData__0(void* self, void* obj) {
+extern "C" void vtkDirectedGraphAlgorithm__SetInputData__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkDirectedGraphAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(obj));
 }
 
-extern "C" void vtkDirectedGraphAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) {
+extern "C" void vtkDirectedGraphAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) noexcept {
   (void)self;
   static_cast<vtkDirectedGraphAlgorithm*>(self)->SetInputData(index, static_cast<vtkDataObject*>(obj));
 }

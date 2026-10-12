@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRectilinearGridPartitioner__vtk_wrap_new() { return static_cast<void*>(vtkRectilinearGridPartitioner::New()); }
+extern "C" void* vtkRectilinearGridPartitioner__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRectilinearGridPartitioner::New()); }
 
-extern "C" int32_t vtkRectilinearGridPartitioner__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRectilinearGridPartitioner__IsTypeOf__0(const char* type_) noexcept {
   return vtkRectilinearGridPartitioner::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRectilinearGridPartitioner__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRectilinearGridPartitioner__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridPartitioner*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRectilinearGridPartitioner__SafeDownCast__0(void* o) {
+extern "C" void* vtkRectilinearGridPartitioner__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRectilinearGridPartitioner::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRectilinearGridPartitioner__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRectilinearGridPartitioner__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRectilinearGridPartitioner::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRectilinearGridPartitioner__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRectilinearGridPartitioner__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridPartitioner*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkRectilinearGridPartitioner__GetNumberOfPartitions__0(void* self) {
+extern "C" int32_t vtkRectilinearGridPartitioner__GetNumberOfPartitions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridPartitioner*>(self)->GetNumberOfPartitions();
 }
 
-extern "C" void vtkRectilinearGridPartitioner__SetNumberOfPartitions__0(void* self, int32_t _arg) {
+extern "C" void vtkRectilinearGridPartitioner__SetNumberOfPartitions__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridPartitioner*>(self)->SetNumberOfPartitions(_arg);
 }
 
-extern "C" int32_t vtkRectilinearGridPartitioner__GetNumberOfGhostLayers__0(void* self) {
+extern "C" int32_t vtkRectilinearGridPartitioner__GetNumberOfGhostLayers__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridPartitioner*>(self)->GetNumberOfGhostLayers();
 }
 
-extern "C" void vtkRectilinearGridPartitioner__SetNumberOfGhostLayers__0(void* self, int32_t _arg) {
+extern "C" void vtkRectilinearGridPartitioner__SetNumberOfGhostLayers__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridPartitioner*>(self)->SetNumberOfGhostLayers(_arg);
 }
 
-extern "C" int32_t vtkRectilinearGridPartitioner__GetDuplicateNodes__0(void* self) {
+extern "C" int32_t vtkRectilinearGridPartitioner__GetDuplicateNodes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridPartitioner*>(self)->GetDuplicateNodes();
 }
 
-extern "C" void vtkRectilinearGridPartitioner__SetDuplicateNodes__0(void* self, int32_t _arg) {
+extern "C" void vtkRectilinearGridPartitioner__SetDuplicateNodes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridPartitioner*>(self)->SetDuplicateNodes(_arg);
 }
 
-extern "C" void vtkRectilinearGridPartitioner__DuplicateNodesOn__0(void* self) {
+extern "C" void vtkRectilinearGridPartitioner__DuplicateNodesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridPartitioner*>(self)->DuplicateNodesOn();
 }
 
-extern "C" void vtkRectilinearGridPartitioner__DuplicateNodesOff__0(void* self) {
+extern "C" void vtkRectilinearGridPartitioner__DuplicateNodesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridPartitioner*>(self)->DuplicateNodesOff();
 }

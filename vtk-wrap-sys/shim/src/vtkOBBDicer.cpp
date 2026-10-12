@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOBBDicer__vtk_wrap_new() { return static_cast<void*>(vtkOBBDicer::New()); }
+extern "C" void* vtkOBBDicer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOBBDicer::New()); }
 
-extern "C" int32_t vtkOBBDicer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOBBDicer__IsTypeOf__0(const char* type_) noexcept {
   return vtkOBBDicer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOBBDicer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOBBDicer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOBBDicer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOBBDicer__SafeDownCast__0(void* o) {
+extern "C" void* vtkOBBDicer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOBBDicer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOBBDicer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOBBDicer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOBBDicer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOBBDicer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOBBDicer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOBBDicer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -9,96 +9,96 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkResliceCursorLineRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkResliceCursorLineRepresentation::New()); }
+extern "C" void* vtkResliceCursorLineRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkResliceCursorLineRepresentation::New()); }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkResliceCursorLineRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkResliceCursorLineRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkResliceCursorLineRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkResliceCursorLineRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkResliceCursorLineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkResliceCursorLineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkResliceCursorLineRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkResliceCursorLineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkResliceCursorLineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkResliceCursorLineRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__StartWidgetInteraction__0(void* self, double* startEventPos) {
+extern "C" void vtkResliceCursorLineRepresentation__StartWidgetInteraction__0(void* self, double* startEventPos) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->StartWidgetInteraction(startEventPos);
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__WidgetInteraction__0(void* self, double* e) {
+extern "C" void vtkResliceCursorLineRepresentation__WidgetInteraction__0(void* self, double* e) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->WidgetInteraction(e);
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__Highlight__0(void* self, int32_t highlightOn) {
+extern "C" void vtkResliceCursorLineRepresentation__Highlight__0(void* self, int32_t highlightOn) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->Highlight(highlightOn);
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkResliceCursorLineRepresentation__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkResliceCursorLineRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkResliceCursorLineRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResliceCursorLineRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void* vtkResliceCursorLineRepresentation__GetResliceCursorActor__0(void* self) {
+extern "C" void* vtkResliceCursorLineRepresentation__GetResliceCursorActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkResliceCursorLineRepresentation*>(self)->GetResliceCursorActor());
 }
 
-extern "C" void* vtkResliceCursorLineRepresentation__GetResliceCursor__0(void* self) {
+extern "C" void* vtkResliceCursorLineRepresentation__GetResliceCursor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkResliceCursorLineRepresentation*>(self)->GetResliceCursor());
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__SetUserMatrix__0(void* self, void* matrix) {
+extern "C" void vtkResliceCursorLineRepresentation__SetUserMatrix__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->SetUserMatrix(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkResliceCursorLineRepresentation__SetTolerance__0(void* self, int32_t t) {
+extern "C" void vtkResliceCursorLineRepresentation__SetTolerance__0(void* self, int32_t t) noexcept {
   (void)self;
   static_cast<vtkResliceCursorLineRepresentation*>(self)->SetTolerance(t);
 }

@@ -7,116 +7,116 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkPBRPrefilterTexture__vtk_wrap_new() { return static_cast<void*>(vtkPBRPrefilterTexture::New()); }
+extern "C" void* vtkPBRPrefilterTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPBRPrefilterTexture::New()); }
 
-extern "C" int32_t vtkPBRPrefilterTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPBRPrefilterTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkPBRPrefilterTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPBRPrefilterTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPBRPrefilterTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPBRPrefilterTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkPBRPrefilterTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPBRPrefilterTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPBRPrefilterTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPBRPrefilterTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPBRPrefilterTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPBRPrefilterTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPBRPrefilterTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPBRPrefilterTexture__SetInputTexture__0(void* self, void* arg0) {
+extern "C" void vtkPBRPrefilterTexture__SetInputTexture__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->SetInputTexture(static_cast<vtkOpenGLTexture*>(arg0));
 }
 
-extern "C" void* vtkPBRPrefilterTexture__GetInputTexture__0(void* self) {
+extern "C" void* vtkPBRPrefilterTexture__GetInputTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPBRPrefilterTexture*>(self)->GetInputTexture());
 }
 
-extern "C" void vtkPBRPrefilterTexture__Load__0(void* self, void* arg0) {
+extern "C" void vtkPBRPrefilterTexture__Load__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->Load(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void vtkPBRPrefilterTexture__Render__0(void* self, void* ren) {
+extern "C" void vtkPBRPrefilterTexture__Render__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->Render(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterSize__0(void* self) {
+extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetPrefilterSize();
 }
 
-extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterLevels__0(void* self) {
+extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterLevels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetPrefilterLevels();
 }
 
-extern "C" void vtkPBRPrefilterTexture__SetPrefilterLevels__0(void* self, uint32_t _arg) {
+extern "C" void vtkPBRPrefilterTexture__SetPrefilterLevels__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->SetPrefilterLevels(_arg);
 }
 
-extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterMaxSamples__0(void* self) {
+extern "C" uint32_t vtkPBRPrefilterTexture__GetPrefilterMaxSamples__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetPrefilterMaxSamples();
 }
 
-extern "C" void vtkPBRPrefilterTexture__SetPrefilterMaxSamples__0(void* self, uint32_t _arg) {
+extern "C" void vtkPBRPrefilterTexture__SetPrefilterMaxSamples__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->SetPrefilterMaxSamples(_arg);
 }
 
-extern "C" bool vtkPBRPrefilterTexture__GetConvertToLinear__0(void* self) {
+extern "C" bool vtkPBRPrefilterTexture__GetConvertToLinear__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetConvertToLinear();
 }
 
-extern "C" void vtkPBRPrefilterTexture__SetConvertToLinear__0(void* self, bool _arg) {
+extern "C" void vtkPBRPrefilterTexture__SetConvertToLinear__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->SetConvertToLinear(_arg);
 }
 
-extern "C" void vtkPBRPrefilterTexture__ConvertToLinearOn__0(void* self) {
+extern "C" void vtkPBRPrefilterTexture__ConvertToLinearOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->ConvertToLinearOn();
 }
 
-extern "C" void vtkPBRPrefilterTexture__ConvertToLinearOff__0(void* self) {
+extern "C" void vtkPBRPrefilterTexture__ConvertToLinearOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->ConvertToLinearOff();
 }
 
-extern "C" bool vtkPBRPrefilterTexture__GetHalfPrecision__0(void* self) {
+extern "C" bool vtkPBRPrefilterTexture__GetHalfPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRPrefilterTexture*>(self)->GetHalfPrecision();
 }
 
-extern "C" void vtkPBRPrefilterTexture__SetHalfPrecision__0(void* self, bool _arg) {
+extern "C" void vtkPBRPrefilterTexture__SetHalfPrecision__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->SetHalfPrecision(_arg);
 }
 
-extern "C" void vtkPBRPrefilterTexture__HalfPrecisionOn__0(void* self) {
+extern "C" void vtkPBRPrefilterTexture__HalfPrecisionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->HalfPrecisionOn();
 }
 
-extern "C" void vtkPBRPrefilterTexture__HalfPrecisionOff__0(void* self) {
+extern "C" void vtkPBRPrefilterTexture__HalfPrecisionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->HalfPrecisionOff();
 }
 
-extern "C" void vtkPBRPrefilterTexture__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkPBRPrefilterTexture__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPBRPrefilterTexture*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

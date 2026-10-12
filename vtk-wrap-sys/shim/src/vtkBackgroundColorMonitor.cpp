@@ -5,36 +5,36 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkBackgroundColorMonitor__vtk_wrap_new() { return static_cast<void*>(vtkBackgroundColorMonitor::New()); }
+extern "C" void* vtkBackgroundColorMonitor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBackgroundColorMonitor::New()); }
 
-extern "C" int32_t vtkBackgroundColorMonitor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBackgroundColorMonitor__IsTypeOf__0(const char* type_) noexcept {
   return vtkBackgroundColorMonitor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBackgroundColorMonitor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBackgroundColorMonitor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBackgroundColorMonitor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBackgroundColorMonitor__SafeDownCast__0(void* o) {
+extern "C" void* vtkBackgroundColorMonitor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBackgroundColorMonitor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBackgroundColorMonitor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBackgroundColorMonitor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBackgroundColorMonitor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBackgroundColorMonitor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBackgroundColorMonitor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBackgroundColorMonitor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkBackgroundColorMonitor__StateChanged__0(void* self, void* ren) {
+extern "C" bool vtkBackgroundColorMonitor__StateChanged__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<vtkBackgroundColorMonitor*>(self)->StateChanged(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkBackgroundColorMonitor__Update__0(void* self, void* ren) {
+extern "C" void vtkBackgroundColorMonitor__Update__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkBackgroundColorMonitor*>(self)->Update(static_cast<vtkRenderer*>(ren));
 }

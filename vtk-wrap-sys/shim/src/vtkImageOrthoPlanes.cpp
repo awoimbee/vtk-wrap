@@ -6,51 +6,51 @@
 #include "vtkTransform.h"
 #include <string>
 
-extern "C" void* vtkImageOrthoPlanes__vtk_wrap_new() { return static_cast<void*>(vtkImageOrthoPlanes::New()); }
+extern "C" void* vtkImageOrthoPlanes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageOrthoPlanes::New()); }
 
-extern "C" int32_t vtkImageOrthoPlanes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageOrthoPlanes__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageOrthoPlanes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageOrthoPlanes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageOrthoPlanes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageOrthoPlanes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageOrthoPlanes__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageOrthoPlanes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageOrthoPlanes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageOrthoPlanes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageOrthoPlanes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageOrthoPlanes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageOrthoPlanes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageOrthoPlanes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageOrthoPlanes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageOrthoPlanes__SetPlane__0(void* self, int32_t i, void* imagePlaneWidget) {
+extern "C" void vtkImageOrthoPlanes__SetPlane__0(void* self, int32_t i, void* imagePlaneWidget) noexcept {
   (void)self;
   static_cast<vtkImageOrthoPlanes*>(self)->SetPlane(i, static_cast<vtkImagePlaneWidget*>(imagePlaneWidget));
 }
 
-extern "C" void* vtkImageOrthoPlanes__GetPlane__0(void* self, int32_t i) {
+extern "C" void* vtkImageOrthoPlanes__GetPlane__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageOrthoPlanes*>(self)->GetPlane(i));
 }
 
-extern "C" void vtkImageOrthoPlanes__ResetPlanes__0(void* self) {
+extern "C" void vtkImageOrthoPlanes__ResetPlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageOrthoPlanes*>(self)->ResetPlanes();
 }
 
-extern "C" void* vtkImageOrthoPlanes__GetTransform__0(void* self) {
+extern "C" void* vtkImageOrthoPlanes__GetTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageOrthoPlanes*>(self)->GetTransform());
 }
 
-extern "C" void vtkImageOrthoPlanes__HandlePlaneEvent__0(void* self, void* imagePlaneWidget) {
+extern "C" void vtkImageOrthoPlanes__HandlePlaneEvent__0(void* self, void* imagePlaneWidget) noexcept {
   (void)self;
   static_cast<vtkImageOrthoPlanes*>(self)->HandlePlaneEvent(static_cast<vtkImagePlaneWidget*>(imagePlaneWidget));
 }

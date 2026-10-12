@@ -4,91 +4,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkWindowLevelLookupTable__vtk_wrap_new() { return static_cast<void*>(vtkWindowLevelLookupTable::New()); }
+extern "C" void* vtkWindowLevelLookupTable__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWindowLevelLookupTable::New()); }
 
-extern "C" int32_t vtkWindowLevelLookupTable__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWindowLevelLookupTable__IsTypeOf__0(const char* type_) noexcept {
   return vtkWindowLevelLookupTable::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWindowLevelLookupTable__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWindowLevelLookupTable__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWindowLevelLookupTable*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWindowLevelLookupTable__SafeDownCast__0(void* o) {
+extern "C" void* vtkWindowLevelLookupTable__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWindowLevelLookupTable::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWindowLevelLookupTable__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWindowLevelLookupTable__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWindowLevelLookupTable::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWindowLevelLookupTable__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWindowLevelLookupTable__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWindowLevelLookupTable*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkWindowLevelLookupTable__ForceBuild__0(void* self) {
+extern "C" void vtkWindowLevelLookupTable__ForceBuild__0(void* self) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->ForceBuild();
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetWindow__0(void* self, double window) {
+extern "C" void vtkWindowLevelLookupTable__SetWindow__0(void* self, double window) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetWindow(window);
 }
 
-extern "C" double vtkWindowLevelLookupTable__GetWindow__0(void* self) {
+extern "C" double vtkWindowLevelLookupTable__GetWindow__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWindowLevelLookupTable*>(self)->GetWindow();
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetLevel__0(void* self, double level) {
+extern "C" void vtkWindowLevelLookupTable__SetLevel__0(void* self, double level) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetLevel(level);
 }
 
-extern "C" double vtkWindowLevelLookupTable__GetLevel__0(void* self) {
+extern "C" double vtkWindowLevelLookupTable__GetLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWindowLevelLookupTable*>(self)->GetLevel();
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetInverseVideo__0(void* self, int32_t iv) {
+extern "C" void vtkWindowLevelLookupTable__SetInverseVideo__0(void* self, int32_t iv) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetInverseVideo(iv);
 }
 
-extern "C" int32_t vtkWindowLevelLookupTable__GetInverseVideo__0(void* self) {
+extern "C" int32_t vtkWindowLevelLookupTable__GetInverseVideo__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWindowLevelLookupTable*>(self)->GetInverseVideo();
 }
 
-extern "C" void vtkWindowLevelLookupTable__InverseVideoOn__0(void* self) {
+extern "C" void vtkWindowLevelLookupTable__InverseVideoOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->InverseVideoOn();
 }
 
-extern "C" void vtkWindowLevelLookupTable__InverseVideoOff__0(void* self) {
+extern "C" void vtkWindowLevelLookupTable__InverseVideoOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->InverseVideoOff();
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetMinimumTableValue__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) {
+extern "C" void vtkWindowLevelLookupTable__SetMinimumTableValue__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetMinimumTableValue(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetMinimumTableValue__1(void* self, const double* _arg) {
+extern "C" void vtkWindowLevelLookupTable__SetMinimumTableValue__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetMinimumTableValue(_arg);
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetMaximumTableValue__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) {
+extern "C" void vtkWindowLevelLookupTable__SetMaximumTableValue__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetMaximumTableValue(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkWindowLevelLookupTable__SetMaximumTableValue__1(void* self, const double* _arg) {
+extern "C" void vtkWindowLevelLookupTable__SetMaximumTableValue__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkWindowLevelLookupTable*>(self)->SetMaximumTableValue(_arg);
 }

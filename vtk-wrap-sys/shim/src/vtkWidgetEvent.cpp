@@ -4,35 +4,35 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkWidgetEvent__vtk_wrap_new() { return static_cast<void*>(vtkWidgetEvent::New()); }
+extern "C" void* vtkWidgetEvent__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWidgetEvent::New()); }
 
-extern "C" int32_t vtkWidgetEvent__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWidgetEvent__IsTypeOf__0(const char* type_) noexcept {
   return vtkWidgetEvent::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWidgetEvent__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWidgetEvent__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWidgetEvent*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWidgetEvent__SafeDownCast__0(void* o) {
+extern "C" void* vtkWidgetEvent__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWidgetEvent::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWidgetEvent__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWidgetEvent__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWidgetEvent::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWidgetEvent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWidgetEvent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWidgetEvent*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkWidgetEvent__GetStringFromEventId__0(unsigned long event) {
+extern "C" const char* vtkWidgetEvent__GetStringFromEventId__0(unsigned long event) noexcept {
   return vtkWidgetEvent::GetStringFromEventId(event);
 }
 
-extern "C" unsigned long vtkWidgetEvent__GetEventIdFromString__0(const char* event) {
+extern "C" unsigned long vtkWidgetEvent__GetEventIdFromString__0(const char* event) noexcept {
   return vtkWidgetEvent::GetEventIdFromString(event);
 }
 

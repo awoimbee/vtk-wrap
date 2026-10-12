@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkButtonWidget__vtk_wrap_new() { return static_cast<void*>(vtkButtonWidget::New()); }
+extern "C" void* vtkButtonWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkButtonWidget::New()); }
 
-extern "C" int32_t vtkButtonWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkButtonWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkButtonWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkButtonWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkButtonWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkButtonWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkButtonWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkButtonWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkButtonWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkButtonWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkButtonWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkButtonWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkButtonWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkButtonWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkButtonWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkButtonWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkButtonWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkButtonWidget*>(self)->SetRepresentation(static_cast<vtkButtonRepresentation*>(r));
 }
 
-extern "C" void* vtkButtonWidget__GetButtonRepresentation__0(void* self) {
+extern "C" void* vtkButtonWidget__GetButtonRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkButtonWidget*>(self)->GetButtonRepresentation());
 }
 
-extern "C" void vtkButtonWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkButtonWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkButtonWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkButtonWidget__SetEnabled__0(void* self, int32_t arg0) {
+extern "C" void vtkButtonWidget__SetEnabled__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkButtonWidget*>(self)->SetEnabled(arg0);
 }

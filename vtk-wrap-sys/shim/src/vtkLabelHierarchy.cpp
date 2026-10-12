@@ -17,186 +17,186 @@
 #include "vtkTextProperty.h"
 #include <string>
 
-extern "C" void* vtkLabelHierarchy__vtk_wrap_new() { return static_cast<void*>(vtkLabelHierarchy::New()); }
+extern "C" void* vtkLabelHierarchy__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLabelHierarchy::New()); }
 
-extern "C" int32_t vtkLabelHierarchy__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLabelHierarchy__IsTypeOf__0(const char* type_) noexcept {
   return vtkLabelHierarchy::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLabelHierarchy__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLabelHierarchy__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLabelHierarchy__SafeDownCast__0(void* o) {
+extern "C" void* vtkLabelHierarchy__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLabelHierarchy::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLabelHierarchy__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLabelHierarchy__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLabelHierarchy::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLabelHierarchy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLabelHierarchy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLabelHierarchy__SetPoints__0(void* self, void* arg0) {
+extern "C" void vtkLabelHierarchy__SetPoints__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetPoints(static_cast<vtkPoints*>(arg0));
 }
 
-extern "C" void vtkLabelHierarchy__ComputeHierarchy__0(void* self) {
+extern "C" void vtkLabelHierarchy__ComputeHierarchy__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->ComputeHierarchy();
 }
 
-extern "C" void vtkLabelHierarchy__SetTargetLabelCount__0(void* self, int32_t _arg) {
+extern "C" void vtkLabelHierarchy__SetTargetLabelCount__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetTargetLabelCount(_arg);
 }
 
-extern "C" int32_t vtkLabelHierarchy__GetTargetLabelCount__0(void* self) {
+extern "C" int32_t vtkLabelHierarchy__GetTargetLabelCount__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetTargetLabelCount();
 }
 
-extern "C" void vtkLabelHierarchy__SetMaximumDepth__0(void* self, int32_t depth) {
+extern "C" void vtkLabelHierarchy__SetMaximumDepth__0(void* self, int32_t depth) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetMaximumDepth(depth);
 }
 
-extern "C" int32_t vtkLabelHierarchy__GetMaximumDepth__0(void* self) {
+extern "C" int32_t vtkLabelHierarchy__GetMaximumDepth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetMaximumDepth();
 }
 
-extern "C" void vtkLabelHierarchy__SetTextProperty__0(void* self, void* tprop) {
+extern "C" void vtkLabelHierarchy__SetTextProperty__0(void* self, void* tprop) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetTextProperty(static_cast<vtkTextProperty*>(tprop));
 }
 
-extern "C" void* vtkLabelHierarchy__GetTextProperty__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetTextProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetTextProperty());
 }
 
-extern "C" void vtkLabelHierarchy__SetPriorities__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetPriorities__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetPriorities(static_cast<vtkDataArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetPriorities__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetPriorities__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetPriorities());
 }
 
-extern "C" void vtkLabelHierarchy__SetLabels__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetLabels__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetLabels(static_cast<vtkAbstractArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetLabels__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetLabels__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetLabels());
 }
 
-extern "C" void vtkLabelHierarchy__SetOrientations__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetOrientations__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetOrientations(static_cast<vtkDataArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetOrientations__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetOrientations__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetOrientations());
 }
 
-extern "C" void vtkLabelHierarchy__SetIconIndices__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetIconIndices__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetIconIndices(static_cast<vtkIntArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetIconIndices__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetIconIndices__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetIconIndices());
 }
 
-extern "C" void vtkLabelHierarchy__SetSizes__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetSizes__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetSizes(static_cast<vtkDataArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetSizes__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetSizes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetSizes());
 }
 
-extern "C" void vtkLabelHierarchy__SetBoundedSizes__0(void* self, void* arr) {
+extern "C" void vtkLabelHierarchy__SetBoundedSizes__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->SetBoundedSizes(static_cast<vtkDataArray*>(arr));
 }
 
-extern "C" void* vtkLabelHierarchy__GetBoundedSizes__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetBoundedSizes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetBoundedSizes());
 }
 
-extern "C" void* vtkLabelHierarchy__NewIterator__0(void* self, int32_t type_, void* ren, void* cam, double* frustumPlanes, bool positionsAsNormals, float* bucketSize) {
+extern "C" void* vtkLabelHierarchy__NewIterator__0(void* self, int32_t type_, void* ren, void* cam, double* frustumPlanes, bool positionsAsNormals, float* bucketSize) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->NewIterator(type_, static_cast<vtkRenderer*>(ren), static_cast<vtkCamera*>(cam), frustumPlanes, positionsAsNormals, bucketSize));
 }
 
-extern "C" void vtkLabelHierarchy__GetDiscreteNodeCoordinatesFromWorldPoint__0(void* self, int32_t* ijk, double* pt, int32_t level) {
+extern "C" void vtkLabelHierarchy__GetDiscreteNodeCoordinatesFromWorldPoint__0(void* self, int32_t* ijk, double* pt, int32_t level) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->GetDiscreteNodeCoordinatesFromWorldPoint(ijk, pt, level);
 }
 
-extern "C" int64_t vtkLabelHierarchy__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkLabelHierarchy__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetNumberOfCells();
 }
 
-extern "C" void* vtkLabelHierarchy__GetCell__0(void* self, int64_t arg0) {
+extern "C" void* vtkLabelHierarchy__GetCell__0(void* self, int64_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetCell(arg0));
 }
 
-extern "C" void vtkLabelHierarchy__GetCell__1(void* self, int64_t arg0, void* arg1) {
+extern "C" void vtkLabelHierarchy__GetCell__1(void* self, int64_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->GetCell(arg0, static_cast<vtkGenericCell*>(arg1));
 }
 
-extern "C" int32_t vtkLabelHierarchy__GetCellType__0(void* self, int64_t arg0) {
+extern "C" int32_t vtkLabelHierarchy__GetCellType__0(void* self, int64_t arg0) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetCellType(arg0);
 }
 
-extern "C" void vtkLabelHierarchy__GetCellPoints__0(void* self, int64_t arg0, void* arg1) {
+extern "C" void vtkLabelHierarchy__GetCellPoints__0(void* self, int64_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->GetCellPoints(arg0, static_cast<vtkIdList*>(arg1));
 }
 
-extern "C" void vtkLabelHierarchy__GetPointCells__0(void* self, int64_t arg0, void* arg1) {
+extern "C" void vtkLabelHierarchy__GetPointCells__0(void* self, int64_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchy*>(self)->GetPointCells(arg0, static_cast<vtkIdList*>(arg1));
 }
 
-extern "C" int32_t vtkLabelHierarchy__GetMaxCellSize__0(void* self) {
+extern "C" int32_t vtkLabelHierarchy__GetMaxCellSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchy*>(self)->GetMaxCellSize();
 }
 
-extern "C" void* vtkLabelHierarchy__GetCenterPts__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetCenterPts__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetCenterPts());
 }
 
-extern "C" void* vtkLabelHierarchy__GetCoincidentPoints__0(void* self) {
+extern "C" void* vtkLabelHierarchy__GetCoincidentPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchy*>(self)->GetCoincidentPoints());
 }
 
-extern "C" void vtkLabelHierarchy__GetAnchorFrustumPlanes__0(double* frustumPlanes, void* ren, void* anchorTransform) {
+extern "C" void vtkLabelHierarchy__GetAnchorFrustumPlanes__0(double* frustumPlanes, void* ren, void* anchorTransform) noexcept {
   vtkLabelHierarchy::GetAnchorFrustumPlanes(frustumPlanes, static_cast<vtkRenderer*>(ren), static_cast<vtkCoordinate*>(anchorTransform));
 }
 

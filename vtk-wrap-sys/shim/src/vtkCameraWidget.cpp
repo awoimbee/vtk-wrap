@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCameraWidget__vtk_wrap_new() { return static_cast<void*>(vtkCameraWidget::New()); }
+extern "C" void* vtkCameraWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCameraWidget::New()); }
 
-extern "C" int32_t vtkCameraWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCameraWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkCameraWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCameraWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCameraWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCameraWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkCameraWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCameraWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCameraWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCameraWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCameraWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCameraWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCameraWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCameraWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkCameraWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkCameraWidget*>(self)->SetRepresentation(static_cast<vtkCameraRepresentation*>(r));
 }
 
-extern "C" void vtkCameraWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkCameraWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCameraWidget*>(self)->CreateDefaultRepresentation();
 }

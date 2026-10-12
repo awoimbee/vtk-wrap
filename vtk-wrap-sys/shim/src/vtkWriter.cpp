@@ -5,49 +5,49 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkWriter__Write__0(void* self) {
+extern "C" int32_t vtkWriter__Write__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWriter*>(self)->Write();
 }
 
-extern "C" void vtkWriter__SetInputData__0(void* self, void* input) {
+extern "C" void vtkWriter__SetInputData__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkWriter*>(self)->SetInputData(static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void vtkWriter__SetInputData__1(void* self, int32_t index, void* input) {
+extern "C" void vtkWriter__SetInputData__1(void* self, int32_t index, void* input) noexcept {
   (void)self;
   static_cast<vtkWriter*>(self)->SetInputData(index, static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void* vtkWriter__GetInput__0(void* self) {
+extern "C" void* vtkWriter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkWriter*>(self)->GetInput());
 }
 
-extern "C" void* vtkWriter__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkWriter__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkWriter*>(self)->GetInput(port));
 }

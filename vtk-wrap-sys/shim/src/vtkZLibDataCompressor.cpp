@@ -4,41 +4,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkZLibDataCompressor__vtk_wrap_new() { return static_cast<void*>(vtkZLibDataCompressor::New()); }
+extern "C" void* vtkZLibDataCompressor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkZLibDataCompressor::New()); }
 
-extern "C" int32_t vtkZLibDataCompressor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkZLibDataCompressor__IsTypeOf__0(const char* type_) noexcept {
   return vtkZLibDataCompressor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkZLibDataCompressor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkZLibDataCompressor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkZLibDataCompressor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkZLibDataCompressor__SafeDownCast__0(void* o) {
+extern "C" void* vtkZLibDataCompressor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkZLibDataCompressor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkZLibDataCompressor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkZLibDataCompressor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkZLibDataCompressor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkZLibDataCompressor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkZLibDataCompressor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkZLibDataCompressor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" size_t vtkZLibDataCompressor__GetMaximumCompressionSpace__0(void* self, size_t size) {
+extern "C" size_t vtkZLibDataCompressor__GetMaximumCompressionSpace__0(void* self, size_t size) noexcept {
   (void)self;
   return static_cast<vtkZLibDataCompressor*>(self)->GetMaximumCompressionSpace(size);
 }
 
-extern "C" int32_t vtkZLibDataCompressor__GetCompressionLevel__0(void* self) {
+extern "C" int32_t vtkZLibDataCompressor__GetCompressionLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkZLibDataCompressor*>(self)->GetCompressionLevel();
 }
 
-extern "C" void vtkZLibDataCompressor__SetCompressionLevel__0(void* self, int32_t compressionLevel) {
+extern "C" void vtkZLibDataCompressor__SetCompressionLevel__0(void* self, int32_t compressionLevel) noexcept {
   (void)self;
   static_cast<vtkZLibDataCompressor*>(self)->SetCompressionLevel(compressionLevel);
 }

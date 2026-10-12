@@ -6,46 +6,46 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkOpenGLSphereMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLSphereMapper::New()); }
+extern "C" void* vtkOpenGLSphereMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLSphereMapper::New()); }
 
-extern "C" int32_t vtkOpenGLSphereMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLSphereMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLSphereMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLSphereMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLSphereMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLSphereMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLSphereMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLSphereMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLSphereMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLSphereMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLSphereMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLSphereMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLSphereMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLSphereMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLSphereMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLSphereMapper__SetScaleArray__0(void* self, const char* _arg) {
+extern "C" void vtkOpenGLSphereMapper__SetScaleArray__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLSphereMapper*>(self)->SetScaleArray(_arg);
 }
 
-extern "C" void vtkOpenGLSphereMapper__SetRadius__0(void* self, float _arg) {
+extern "C" void vtkOpenGLSphereMapper__SetRadius__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLSphereMapper*>(self)->SetRadius(_arg);
 }
 
-extern "C" float vtkOpenGLSphereMapper__GetRadius__0(void* self) {
+extern "C" float vtkOpenGLSphereMapper__GetRadius__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLSphereMapper*>(self)->GetRadius();
 }
 
-extern "C" void vtkOpenGLSphereMapper__Render__0(void* self, void* ren, void* act) {
+extern "C" void vtkOpenGLSphereMapper__Render__0(void* self, void* ren, void* act) noexcept {
   (void)self;
   static_cast<vtkOpenGLSphereMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkActor*>(act));
 }

@@ -4,101 +4,101 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridQuadricDecimation__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridQuadricDecimation::New()); }
+extern "C" void* vtkUnstructuredGridQuadricDecimation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridQuadricDecimation::New()); }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridQuadricDecimation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridQuadricDecimation__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridQuadricDecimation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridQuadricDecimation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridQuadricDecimation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridQuadricDecimation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridQuadricDecimation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridQuadricDecimation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridQuadricDecimation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetTargetReduction__0(void* self, double _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetTargetReduction__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetTargetReduction(_arg);
 }
 
-extern "C" double vtkUnstructuredGridQuadricDecimation__GetTargetReduction__0(void* self) {
+extern "C" double vtkUnstructuredGridQuadricDecimation__GetTargetReduction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetTargetReduction();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfTetsOutput__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfTetsOutput__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetNumberOfTetsOutput(_arg);
 }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfTetsOutput__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfTetsOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetNumberOfTetsOutput();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfEdgesToDecimate__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfEdgesToDecimate__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetNumberOfEdgesToDecimate(_arg);
 }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfEdgesToDecimate__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfEdgesToDecimate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetNumberOfEdgesToDecimate();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfCandidates__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetNumberOfCandidates__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetNumberOfCandidates(_arg);
 }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfCandidates__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetNumberOfCandidates__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetNumberOfCandidates();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetAutoAddCandidates__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetAutoAddCandidates__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetAutoAddCandidates(_arg);
 }
 
-extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetAutoAddCandidates__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridQuadricDecimation__GetAutoAddCandidates__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetAutoAddCandidates();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetAutoAddCandidatesThreshold__0(void* self, double _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetAutoAddCandidatesThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetAutoAddCandidatesThreshold(_arg);
 }
 
-extern "C" double vtkUnstructuredGridQuadricDecimation__GetAutoAddCandidatesThreshold__0(void* self) {
+extern "C" double vtkUnstructuredGridQuadricDecimation__GetAutoAddCandidatesThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetAutoAddCandidatesThreshold();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetBoundaryWeight__0(void* self, double _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetBoundaryWeight__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetBoundaryWeight(_arg);
 }
 
-extern "C" double vtkUnstructuredGridQuadricDecimation__GetBoundaryWeight__0(void* self) {
+extern "C" double vtkUnstructuredGridQuadricDecimation__GetBoundaryWeight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->GetBoundaryWeight();
 }
 
-extern "C" void vtkUnstructuredGridQuadricDecimation__SetScalarsName__0(void* self, const char* _arg) {
+extern "C" void vtkUnstructuredGridQuadricDecimation__SetScalarsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridQuadricDecimation*>(self)->SetScalarsName(_arg);
 }

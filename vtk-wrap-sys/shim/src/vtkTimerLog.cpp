@@ -4,117 +4,117 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTimerLog__vtk_wrap_new() { return static_cast<void*>(vtkTimerLog::New()); }
+extern "C" void* vtkTimerLog__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTimerLog::New()); }
 
-extern "C" int32_t vtkTimerLog__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTimerLog__IsTypeOf__0(const char* type_) noexcept {
   return vtkTimerLog::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTimerLog__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTimerLog__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTimerLog*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTimerLog__SafeDownCast__0(void* o) {
+extern "C" void* vtkTimerLog__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTimerLog::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTimerLog__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTimerLog__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTimerLog::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTimerLog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTimerLog__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTimerLog*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTimerLog__SetLogging__0(int32_t v) {
+extern "C" void vtkTimerLog__SetLogging__0(int32_t v) noexcept {
   vtkTimerLog::SetLogging(v);
 }
 
-extern "C" int32_t vtkTimerLog__GetLogging__0() {
+extern "C" int32_t vtkTimerLog__GetLogging__0() noexcept {
   return vtkTimerLog::GetLogging();
 }
 
-extern "C" void vtkTimerLog__LoggingOn__0() {
+extern "C" void vtkTimerLog__LoggingOn__0() noexcept {
   vtkTimerLog::LoggingOn();
 }
 
-extern "C" void vtkTimerLog__LoggingOff__0() {
+extern "C" void vtkTimerLog__LoggingOff__0() noexcept {
   vtkTimerLog::LoggingOff();
 }
 
-extern "C" void vtkTimerLog__SetMaxEntries__0(int32_t a) {
+extern "C" void vtkTimerLog__SetMaxEntries__0(int32_t a) noexcept {
   vtkTimerLog::SetMaxEntries(a);
 }
 
-extern "C" int32_t vtkTimerLog__GetMaxEntries__0() {
+extern "C" int32_t vtkTimerLog__GetMaxEntries__0() noexcept {
   return vtkTimerLog::GetMaxEntries();
 }
 
-extern "C" void vtkTimerLog__DumpLog__0(const char* filename) {
+extern "C" void vtkTimerLog__DumpLog__0(const char* filename) noexcept {
   vtkTimerLog::DumpLog(filename);
 }
 
-extern "C" void vtkTimerLog__MarkStartEvent__0(const char* EventString) {
+extern "C" void vtkTimerLog__MarkStartEvent__0(const char* EventString) noexcept {
   vtkTimerLog::MarkStartEvent(EventString);
 }
 
-extern "C" void vtkTimerLog__MarkEndEvent__0(const char* EventString) {
+extern "C" void vtkTimerLog__MarkEndEvent__0(const char* EventString) noexcept {
   vtkTimerLog::MarkEndEvent(EventString);
 }
 
-extern "C" void vtkTimerLog__InsertTimedEvent__0(const char* EventString, double time, int32_t cpuTicks) {
+extern "C" void vtkTimerLog__InsertTimedEvent__0(const char* EventString, double time, int32_t cpuTicks) noexcept {
   vtkTimerLog::InsertTimedEvent(EventString, time, cpuTicks);
 }
 
-extern "C" int32_t vtkTimerLog__GetNumberOfEvents__0() {
+extern "C" int32_t vtkTimerLog__GetNumberOfEvents__0() noexcept {
   return vtkTimerLog::GetNumberOfEvents();
 }
 
-extern "C" int32_t vtkTimerLog__GetEventIndent__0(int32_t i) {
+extern "C" int32_t vtkTimerLog__GetEventIndent__0(int32_t i) noexcept {
   return vtkTimerLog::GetEventIndent(i);
 }
 
-extern "C" double vtkTimerLog__GetEventWallTime__0(int32_t i) {
+extern "C" double vtkTimerLog__GetEventWallTime__0(int32_t i) noexcept {
   return vtkTimerLog::GetEventWallTime(i);
 }
 
-extern "C" const char* vtkTimerLog__GetEventString__0(int32_t i) {
+extern "C" const char* vtkTimerLog__GetEventString__0(int32_t i) noexcept {
   return vtkTimerLog::GetEventString(i);
 }
 
-extern "C" void vtkTimerLog__MarkEvent__0(const char* EventString) {
+extern "C" void vtkTimerLog__MarkEvent__0(const char* EventString) noexcept {
   vtkTimerLog::MarkEvent(EventString);
 }
 
-extern "C" void vtkTimerLog__ResetLog__0() {
+extern "C" void vtkTimerLog__ResetLog__0() noexcept {
   vtkTimerLog::ResetLog();
 }
 
-extern "C" void vtkTimerLog__CleanupLog__0() {
+extern "C" void vtkTimerLog__CleanupLog__0() noexcept {
   vtkTimerLog::CleanupLog();
 }
 
-extern "C" double vtkTimerLog__GetUniversalTime__0() {
+extern "C" double vtkTimerLog__GetUniversalTime__0() noexcept {
   return vtkTimerLog::GetUniversalTime();
 }
 
-extern "C" double vtkTimerLog__GetCPUTime__0() {
+extern "C" double vtkTimerLog__GetCPUTime__0() noexcept {
   return vtkTimerLog::GetCPUTime();
 }
 
-extern "C" void vtkTimerLog__StartTimer__0(void* self) {
+extern "C" void vtkTimerLog__StartTimer__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTimerLog*>(self)->StartTimer();
 }
 
-extern "C" void vtkTimerLog__StopTimer__0(void* self) {
+extern "C" void vtkTimerLog__StopTimer__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTimerLog*>(self)->StopTimer();
 }
 
-extern "C" double vtkTimerLog__GetElapsedTime__0(void* self) {
+extern "C" double vtkTimerLog__GetElapsedTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTimerLog*>(self)->GetElapsedTime();
 }

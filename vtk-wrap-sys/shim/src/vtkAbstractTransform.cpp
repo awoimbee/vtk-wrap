@@ -6,129 +6,129 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractTransform__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractTransform__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractTransform::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractTransform__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractTransform__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractTransform*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractTransform__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractTransform__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractTransform::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractTransform::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractTransform*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractTransform__TransformPoint__0(void* self, const float* in_, float* out) {
+extern "C" void vtkAbstractTransform__TransformPoint__0(void* self, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformPoint(in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformPoint__1(void* self, const double* in_, double* out) {
+extern "C" void vtkAbstractTransform__TransformPoint__1(void* self, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformPoint(in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformNormalAtPoint__0(void* self, const float* point, const float* in_, float* out) {
+extern "C" void vtkAbstractTransform__TransformNormalAtPoint__0(void* self, const float* point, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformNormalAtPoint(point, in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformNormalAtPoint__1(void* self, const double* point, const double* in_, double* out) {
+extern "C" void vtkAbstractTransform__TransformNormalAtPoint__1(void* self, const double* point, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformNormalAtPoint(point, in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformVectorAtPoint__0(void* self, const float* point, const float* in_, float* out) {
+extern "C" void vtkAbstractTransform__TransformVectorAtPoint__0(void* self, const float* point, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformVectorAtPoint(point, in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformVectorAtPoint__1(void* self, const double* point, const double* in_, double* out) {
+extern "C" void vtkAbstractTransform__TransformVectorAtPoint__1(void* self, const double* point, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformVectorAtPoint(point, in_, out);
 }
 
-extern "C" void vtkAbstractTransform__TransformPoints__0(void* self, void* inPts, void* outPts) {
+extern "C" void vtkAbstractTransform__TransformPoints__0(void* self, void* inPts, void* outPts) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformPoints(static_cast<vtkPoints*>(inPts), static_cast<vtkPoints*>(outPts));
 }
 
-extern "C" void vtkAbstractTransform__TransformVectors__0(void* self, void* inArray, void* outArray) {
+extern "C" void vtkAbstractTransform__TransformVectors__0(void* self, void* inArray, void* outArray) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformVectors(static_cast<vtkDataArray*>(inArray), static_cast<vtkDataArray*>(outArray));
 }
 
-extern "C" void vtkAbstractTransform__TransformNormals__0(void* self, void* inArray, void* outArray) {
+extern "C" void vtkAbstractTransform__TransformNormals__0(void* self, void* inArray, void* outArray) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->TransformNormals(static_cast<vtkDataArray*>(inArray), static_cast<vtkDataArray*>(outArray));
 }
 
-extern "C" void* vtkAbstractTransform__GetInverse__0(void* self) {
+extern "C" void* vtkAbstractTransform__GetInverse__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractTransform*>(self)->GetInverse());
 }
 
-extern "C" void vtkAbstractTransform__SetInverse__0(void* self, void* transform) {
+extern "C" void vtkAbstractTransform__SetInverse__0(void* self, void* transform) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->SetInverse(static_cast<vtkAbstractTransform*>(transform));
 }
 
-extern "C" void vtkAbstractTransform__Inverse__0(void* self) {
+extern "C" void vtkAbstractTransform__Inverse__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->Inverse();
 }
 
-extern "C" void vtkAbstractTransform__DeepCopy__0(void* self, void* arg0) {
+extern "C" void vtkAbstractTransform__DeepCopy__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->DeepCopy(static_cast<vtkAbstractTransform*>(arg0));
 }
 
-extern "C" void vtkAbstractTransform__Update__0(void* self) {
+extern "C" void vtkAbstractTransform__Update__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->Update();
 }
 
-extern "C" void vtkAbstractTransform__InternalTransformPoint__0(void* self, const float* in_, float* out) {
+extern "C" void vtkAbstractTransform__InternalTransformPoint__0(void* self, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->InternalTransformPoint(in_, out);
 }
 
-extern "C" void vtkAbstractTransform__InternalTransformPoint__1(void* self, const double* in_, double* out) {
+extern "C" void vtkAbstractTransform__InternalTransformPoint__1(void* self, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->InternalTransformPoint(in_, out);
 }
 
-extern "C" void* vtkAbstractTransform__MakeTransform__0(void* self) {
+extern "C" void* vtkAbstractTransform__MakeTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractTransform*>(self)->MakeTransform());
 }
 
-extern "C" int32_t vtkAbstractTransform__CircuitCheck__0(void* self, void* transform) {
+extern "C" int32_t vtkAbstractTransform__CircuitCheck__0(void* self, void* transform) noexcept {
   (void)self;
   return static_cast<vtkAbstractTransform*>(self)->CircuitCheck(static_cast<vtkAbstractTransform*>(transform));
 }
 
-extern "C" unsigned long vtkAbstractTransform__GetMTime__0(void* self) {
+extern "C" unsigned long vtkAbstractTransform__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractTransform*>(self)->GetMTime();
 }
 
-extern "C" void vtkAbstractTransform__Modified__0(void* self) {
+extern "C" void vtkAbstractTransform__Modified__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->Modified();
 }
 
-extern "C" void vtkAbstractTransform__UnRegister__0(void* self, void* O) {
+extern "C" void vtkAbstractTransform__UnRegister__0(void* self, void* O) noexcept {
   (void)self;
   static_cast<vtkAbstractTransform*>(self)->UnRegister(static_cast<vtkObjectBase*>(O));
 }

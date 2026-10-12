@@ -8,74 +8,74 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkArrayData__vtk_wrap_new() { return static_cast<void*>(vtkArrayData::New()); }
+extern "C" void* vtkArrayData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkArrayData::New()); }
 
-extern "C" int32_t vtkArrayData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkArrayData__IsTypeOf__0(const char* type_) noexcept {
   return vtkArrayData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkArrayData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkArrayData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkArrayData__SafeDownCast__0(void* o) {
+extern "C" void* vtkArrayData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkArrayData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkArrayData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkArrayData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkArrayData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkArrayData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkArrayData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkArrayData__GetData__0(void* info) {
+extern "C" void* vtkArrayData__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkArrayData::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkArrayData__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkArrayData__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkArrayData::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" void vtkArrayData__AddArray__0(void* self, void* arg0) {
+extern "C" void vtkArrayData__AddArray__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkArrayData*>(self)->AddArray(static_cast<vtkArray*>(arg0));
 }
 
-extern "C" void vtkArrayData__ClearArrays__0(void* self) {
+extern "C" void vtkArrayData__ClearArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayData*>(self)->ClearArrays();
 }
 
-extern "C" int64_t vtkArrayData__GetNumberOfArrays__0(void* self) {
+extern "C" int64_t vtkArrayData__GetNumberOfArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayData*>(self)->GetNumberOfArrays();
 }
 
-extern "C" void* vtkArrayData__GetArray__0(void* self, int64_t index) {
+extern "C" void* vtkArrayData__GetArray__0(void* self, int64_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkArrayData*>(self)->GetArray(index));
 }
 
-extern "C" void* vtkArrayData__GetArrayByName__0(void* self, const char* name) {
+extern "C" void* vtkArrayData__GetArrayByName__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkArrayData*>(self)->GetArrayByName(name));
 }
 
-extern "C" int32_t vtkArrayData__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkArrayData__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayData*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkArrayData__ShallowCopy__0(void* self, void* other) {
+extern "C" void vtkArrayData__ShallowCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkArrayData*>(self)->ShallowCopy(static_cast<vtkDataObject*>(other));
 }
 
-extern "C" void vtkArrayData__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkArrayData__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkArrayData*>(self)->DeepCopy(static_cast<vtkDataObject*>(other));
 }

@@ -7,229 +7,229 @@
 #include "vtkRenderWindowInteractor.h"
 #include <string>
 
-extern "C" int32_t vtkDistanceRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDistanceRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkDistanceRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDistanceRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDistanceRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDistanceRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkDistanceRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDistanceRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDistanceRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDistanceRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDistanceRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDistanceRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDistanceRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkDistanceRepresentation__GetDistance__0(void* self) {
+extern "C" double vtkDistanceRepresentation__GetDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetDistance();
 }
 
-extern "C" void vtkDistanceRepresentation__GetPoint1WorldPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__GetPoint1WorldPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->GetPoint1WorldPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__GetPoint2WorldPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__GetPoint2WorldPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->GetPoint2WorldPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint1DisplayPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__SetPoint1DisplayPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint1DisplayPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint2DisplayPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__SetPoint2DisplayPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint2DisplayPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__GetPoint1DisplayPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__GetPoint1DisplayPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->GetPoint1DisplayPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__GetPoint2DisplayPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__GetPoint2DisplayPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->GetPoint2DisplayPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint1WorldPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__SetPoint1WorldPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint1WorldPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint2WorldPosition__0(void* self, double* pos) {
+extern "C" void vtkDistanceRepresentation__SetPoint2WorldPosition__0(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint2WorldPosition(pos);
 }
 
-extern "C" void vtkDistanceRepresentation__SetHandleRepresentation__0(void* self, void* handle) {
+extern "C" void vtkDistanceRepresentation__SetHandleRepresentation__0(void* self, void* handle) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetHandleRepresentation(static_cast<vtkHandleRepresentation*>(handle));
 }
 
-extern "C" void vtkDistanceRepresentation__InstantiateHandleRepresentation__0(void* self) {
+extern "C" void vtkDistanceRepresentation__InstantiateHandleRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->InstantiateHandleRepresentation();
 }
 
-extern "C" void* vtkDistanceRepresentation__GetPoint1Representation__0(void* self) {
+extern "C" void* vtkDistanceRepresentation__GetPoint1Representation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDistanceRepresentation*>(self)->GetPoint1Representation());
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint1Representation__0(void* self, void* obj) {
+extern "C" void vtkDistanceRepresentation__SetPoint1Representation__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint1Representation(static_cast<vtkHandleRepresentation*>(obj));
 }
 
-extern "C" void* vtkDistanceRepresentation__GetPoint2Representation__0(void* self) {
+extern "C" void* vtkDistanceRepresentation__GetPoint2Representation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDistanceRepresentation*>(self)->GetPoint2Representation());
 }
 
-extern "C" void vtkDistanceRepresentation__SetPoint2Representation__0(void* self, void* obj) {
+extern "C" void vtkDistanceRepresentation__SetPoint2Representation__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetPoint2Representation(static_cast<vtkHandleRepresentation*>(obj));
 }
 
-extern "C" void vtkDistanceRepresentation__SetTolerance__0(void* self, int32_t _arg) {
+extern "C" void vtkDistanceRepresentation__SetTolerance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetTolerance(_arg);
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetToleranceMinValue__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetToleranceMinValue();
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetToleranceMaxValue__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetToleranceMaxValue();
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetTolerance__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetTolerance();
 }
 
-extern "C" void vtkDistanceRepresentation__SetLabelFormat__0(void* self, const char* _arg) {
+extern "C" void vtkDistanceRepresentation__SetLabelFormat__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetLabelFormat(_arg);
 }
 
-extern "C" void vtkDistanceRepresentation__SetScale__0(void* self, double _arg) {
+extern "C" void vtkDistanceRepresentation__SetScale__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetScale(_arg);
 }
 
-extern "C" double vtkDistanceRepresentation__GetScale__0(void* self) {
+extern "C" double vtkDistanceRepresentation__GetScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetScale();
 }
 
-extern "C" void vtkDistanceRepresentation__SetRulerMode__0(void* self, int32_t _arg) {
+extern "C" void vtkDistanceRepresentation__SetRulerMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetRulerMode(_arg);
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetRulerMode__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetRulerMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetRulerMode();
 }
 
-extern "C" void vtkDistanceRepresentation__RulerModeOn__0(void* self) {
+extern "C" void vtkDistanceRepresentation__RulerModeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->RulerModeOn();
 }
 
-extern "C" void vtkDistanceRepresentation__RulerModeOff__0(void* self) {
+extern "C" void vtkDistanceRepresentation__RulerModeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->RulerModeOff();
 }
 
-extern "C" void vtkDistanceRepresentation__SetRulerDistance__0(void* self, double _arg) {
+extern "C" void vtkDistanceRepresentation__SetRulerDistance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetRulerDistance(_arg);
 }
 
-extern "C" double vtkDistanceRepresentation__GetRulerDistanceMinValue__0(void* self) {
+extern "C" double vtkDistanceRepresentation__GetRulerDistanceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetRulerDistanceMinValue();
 }
 
-extern "C" double vtkDistanceRepresentation__GetRulerDistanceMaxValue__0(void* self) {
+extern "C" double vtkDistanceRepresentation__GetRulerDistanceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetRulerDistanceMaxValue();
 }
 
-extern "C" double vtkDistanceRepresentation__GetRulerDistance__0(void* self) {
+extern "C" double vtkDistanceRepresentation__GetRulerDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetRulerDistance();
 }
 
-extern "C" void vtkDistanceRepresentation__SetNumberOfRulerTicks__0(void* self, int32_t _arg) {
+extern "C" void vtkDistanceRepresentation__SetNumberOfRulerTicks__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->SetNumberOfRulerTicks(_arg);
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicksMinValue__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicksMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetNumberOfRulerTicksMinValue();
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicksMaxValue__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicksMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetNumberOfRulerTicksMaxValue();
 }
 
-extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicks__0(void* self) {
+extern "C" int32_t vtkDistanceRepresentation__GetNumberOfRulerTicks__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->GetNumberOfRulerTicks();
 }
 
-extern "C" void vtkDistanceRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkDistanceRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" int32_t vtkDistanceRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkDistanceRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkDistanceRepresentation__StartWidgetInteraction__0(void* self, double* e) {
+extern "C" void vtkDistanceRepresentation__StartWidgetInteraction__0(void* self, double* e) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->StartWidgetInteraction(e);
 }
 
-extern "C" void vtkDistanceRepresentation__WidgetInteraction__0(void* self, double* e) {
+extern "C" void vtkDistanceRepresentation__WidgetInteraction__0(void* self, double* e) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->WidgetInteraction(e);
 }
 
-extern "C" void vtkDistanceRepresentation__StartComplexInteraction__0(void* self, void* iren, void* widget, unsigned long event, void* calldata) {
+extern "C" void vtkDistanceRepresentation__StartComplexInteraction__0(void* self, void* iren, void* widget, unsigned long event, void* calldata) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->StartComplexInteraction(static_cast<vtkRenderWindowInteractor*>(iren), static_cast<vtkAbstractWidget*>(widget), event, calldata);
 }
 
-extern "C" void vtkDistanceRepresentation__ComplexInteraction__0(void* self, void* iren, void* widget, unsigned long event, void* calldata) {
+extern "C" void vtkDistanceRepresentation__ComplexInteraction__0(void* self, void* iren, void* widget, unsigned long event, void* calldata) noexcept {
   (void)self;
   static_cast<vtkDistanceRepresentation*>(self)->ComplexInteraction(static_cast<vtkRenderWindowInteractor*>(iren), static_cast<vtkAbstractWidget*>(widget), event, calldata);
 }
 
-extern "C" int32_t vtkDistanceRepresentation__ComputeComplexInteractionState__0(void* self, void* iren, void* widget, unsigned long event, void* calldata, int32_t modify) {
+extern "C" int32_t vtkDistanceRepresentation__ComputeComplexInteractionState__0(void* self, void* iren, void* widget, unsigned long event, void* calldata, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkDistanceRepresentation*>(self)->ComputeComplexInteractionState(static_cast<vtkRenderWindowInteractor*>(iren), static_cast<vtkAbstractWidget*>(widget), event, calldata, modify);
 }

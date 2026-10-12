@@ -6,76 +6,76 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLabelHierarchyAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkLabelHierarchyAlgorithm::New()); }
+extern "C" void* vtkLabelHierarchyAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLabelHierarchyAlgorithm::New()); }
 
-extern "C" int32_t vtkLabelHierarchyAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLabelHierarchyAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkLabelHierarchyAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLabelHierarchyAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLabelHierarchyAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchyAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkLabelHierarchyAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLabelHierarchyAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLabelHierarchyAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLabelHierarchyAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLabelHierarchyAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLabelHierarchyAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLabelHierarchyAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkLabelHierarchyAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkLabelHierarchyAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkLabelHierarchyAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkLabelHierarchyAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchyAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__GetInput__0(void* self) {
+extern "C" void* vtkLabelHierarchyAlgorithm__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetInput());
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkLabelHierarchyAlgorithm__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetInput(port));
 }
 
-extern "C" void* vtkLabelHierarchyAlgorithm__GetLabelHierarchyInput__0(void* self, int32_t port) {
+extern "C" void* vtkLabelHierarchyAlgorithm__GetLabelHierarchyInput__0(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelHierarchyAlgorithm*>(self)->GetLabelHierarchyInput(port));
 }
 
-extern "C" void vtkLabelHierarchyAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkLabelHierarchyAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchyAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkLabelHierarchyAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkLabelHierarchyAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchyAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkLabelHierarchyAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkLabelHierarchyAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchyAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkLabelHierarchyAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkLabelHierarchyAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLabelHierarchyAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

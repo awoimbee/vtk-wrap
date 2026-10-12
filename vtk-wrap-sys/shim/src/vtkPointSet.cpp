@@ -15,209 +15,209 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkPointSet__vtk_wrap_new() { return static_cast<void*>(vtkPointSet::New()); }
+extern "C" void* vtkPointSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointSet::New()); }
 
-extern "C" void* vtkPointSet__ExtendedNew__0() {
+extern "C" void* vtkPointSet__ExtendedNew__0() noexcept {
   return static_cast<void*>(vtkPointSet::ExtendedNew());
 }
 
-extern "C" int32_t vtkPointSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPointSet__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkPointSet__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkPointSet__SetEditable__0(void* self, bool _arg) {
+extern "C" void vtkPointSet__SetEditable__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->SetEditable(_arg);
 }
 
-extern "C" bool vtkPointSet__GetEditable__0(void* self) {
+extern "C" bool vtkPointSet__GetEditable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetEditable();
 }
 
-extern "C" void vtkPointSet__EditableOn__0(void* self) {
+extern "C" void vtkPointSet__EditableOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->EditableOn();
 }
 
-extern "C" void vtkPointSet__EditableOff__0(void* self) {
+extern "C" void vtkPointSet__EditableOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->EditableOff();
 }
 
-extern "C" void vtkPointSet__Initialize__0(void* self) {
+extern "C" void vtkPointSet__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->Initialize();
 }
 
-extern "C" void vtkPointSet__CopyStructure__0(void* self, void* pd) {
+extern "C" void vtkPointSet__CopyStructure__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->CopyStructure(static_cast<vtkDataSet*>(pd));
 }
 
-extern "C" int64_t vtkPointSet__GetNumberOfPoints__0(void* self) {
+extern "C" int64_t vtkPointSet__GetNumberOfPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetNumberOfPoints();
 }
 
-extern "C" void vtkPointSet__GetPoint__0(void* self, int64_t ptId, double* x) {
+extern "C" void vtkPointSet__GetPoint__0(void* self, int64_t ptId, double* x) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->GetPoint(ptId, x);
 }
 
-extern "C" int64_t vtkPointSet__FindPoint__0(void* self, double* x) {
+extern "C" int64_t vtkPointSet__FindPoint__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->FindPoint(x);
 }
 
-extern "C" int64_t vtkPointSet__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkPointSet__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetNumberOfCells();
 }
 
-extern "C" int32_t vtkPointSet__GetMaxCellSize__0(void* self) {
+extern "C" int32_t vtkPointSet__GetMaxCellSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetMaxCellSize();
 }
 
-extern "C" void* vtkPointSet__GetCell__0(void* self, int64_t arg0) {
+extern "C" void* vtkPointSet__GetCell__0(void* self, int64_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointSet*>(self)->GetCell(arg0));
 }
 
-extern "C" void vtkPointSet__GetCellPoints__0(void* self, int64_t arg0, void* idList) {
+extern "C" void vtkPointSet__GetCellPoints__0(void* self, int64_t arg0, void* idList) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->GetCellPoints(arg0, static_cast<vtkIdList*>(idList));
 }
 
-extern "C" void vtkPointSet__GetPointCells__0(void* self, int64_t arg0, void* idList) {
+extern "C" void vtkPointSet__GetPointCells__0(void* self, int64_t arg0, void* idList) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->GetPointCells(arg0, static_cast<vtkIdList*>(idList));
 }
 
-extern "C" void vtkPointSet__GetCell__1(void* self, int64_t arg0, void* cell) {
+extern "C" void vtkPointSet__GetCell__1(void* self, int64_t arg0, void* cell) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->GetCell(arg0, static_cast<vtkGenericCell*>(cell));
 }
 
-extern "C" int32_t vtkPointSet__GetCellType__0(void* self, int64_t arg0) {
+extern "C" int32_t vtkPointSet__GetCellType__0(void* self, int64_t arg0) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetCellType(arg0);
 }
 
-extern "C" int64_t vtkPointSet__GetCellSize__0(void* self, int64_t arg0) {
+extern "C" int64_t vtkPointSet__GetCellSize__0(void* self, int64_t arg0) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetCellSize(arg0);
 }
 
-extern "C" void* vtkPointSet__NewCellIterator__0(void* self) {
+extern "C" void* vtkPointSet__NewCellIterator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointSet*>(self)->NewCellIterator());
 }
 
-extern "C" void vtkPointSet__BuildPointLocator__0(void* self) {
+extern "C" void vtkPointSet__BuildPointLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->BuildPointLocator();
 }
 
-extern "C" void vtkPointSet__BuildCellLocator__0(void* self) {
+extern "C" void vtkPointSet__BuildCellLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->BuildCellLocator();
 }
 
-extern "C" void vtkPointSet__SetPointLocator__0(void* self, void* arg0) {
+extern "C" void vtkPointSet__SetPointLocator__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->SetPointLocator(static_cast<vtkAbstractPointLocator*>(arg0));
 }
 
-extern "C" void* vtkPointSet__GetPointLocator__0(void* self) {
+extern "C" void* vtkPointSet__GetPointLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointSet*>(self)->GetPointLocator());
 }
 
-extern "C" void vtkPointSet__SetCellLocator__0(void* self, void* arg0) {
+extern "C" void vtkPointSet__SetCellLocator__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->SetCellLocator(static_cast<vtkAbstractCellLocator*>(arg0));
 }
 
-extern "C" void* vtkPointSet__GetCellLocator__0(void* self) {
+extern "C" void* vtkPointSet__GetCellLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointSet*>(self)->GetCellLocator());
 }
 
-extern "C" unsigned long vtkPointSet__GetMTime__0(void* self) {
+extern "C" unsigned long vtkPointSet__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetMTime();
 }
 
-extern "C" void vtkPointSet__ComputeBounds__0(void* self) {
+extern "C" void vtkPointSet__ComputeBounds__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->ComputeBounds();
 }
 
-extern "C" void vtkPointSet__Squeeze__0(void* self) {
+extern "C" void vtkPointSet__Squeeze__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->Squeeze();
 }
 
-extern "C" void vtkPointSet__SetPoints__0(void* self, void* arg0) {
+extern "C" void vtkPointSet__SetPoints__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->SetPoints(static_cast<vtkPoints*>(arg0));
 }
 
-extern "C" void* vtkPointSet__GetPoints__0(void* self) {
+extern "C" void* vtkPointSet__GetPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointSet*>(self)->GetPoints());
 }
 
-extern "C" unsigned long vtkPointSet__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkPointSet__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->GetActualMemorySize();
 }
 
-extern "C" void vtkPointSet__ShallowCopy__0(void* self, void* src) {
+extern "C" void vtkPointSet__ShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->ShallowCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" void vtkPointSet__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkPointSet__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkPointSet*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" bool vtkPointSet__UsesGarbageCollector__0(void* self) {
+extern "C" bool vtkPointSet__UsesGarbageCollector__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointSet*>(self)->UsesGarbageCollector();
 }
 
-extern "C" void* vtkPointSet__GetData__0(void* info) {
+extern "C" void* vtkPointSet__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkPointSet::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkPointSet__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkPointSet__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkPointSet::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 

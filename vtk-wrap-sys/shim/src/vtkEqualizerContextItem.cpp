@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkEqualizerContextItem__vtk_wrap_new() { return static_cast<void*>(vtkEqualizerContextItem::New()); }
+extern "C" void* vtkEqualizerContextItem__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEqualizerContextItem::New()); }
 
-extern "C" int32_t vtkEqualizerContextItem__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEqualizerContextItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkEqualizerContextItem::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEqualizerContextItem__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEqualizerContextItem__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEqualizerContextItem*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEqualizerContextItem__SafeDownCast__0(void* o) {
+extern "C" void* vtkEqualizerContextItem__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEqualizerContextItem::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEqualizerContextItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEqualizerContextItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEqualizerContextItem::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEqualizerContextItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEqualizerContextItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEqualizerContextItem*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkEqualizerContextItem__Paint__0(void* self, void* painter) {
+extern "C" bool vtkEqualizerContextItem__Paint__0(void* self, void* painter) noexcept {
   (void)self;
   return static_cast<vtkEqualizerContextItem*>(self)->Paint(static_cast<vtkContext2D*>(painter));
 }
 
-extern "C" void vtkEqualizerContextItem__SetPoints__0(void* self, const char* points) {
+extern "C" void vtkEqualizerContextItem__SetPoints__0(void* self, const char* points) noexcept {
   (void)self;
   static_cast<vtkEqualizerContextItem*>(self)->SetPoints(std::string(points));
 }
 
-extern "C" char* vtkEqualizerContextItem__GetPoints__0(void* self) {
+extern "C" char* vtkEqualizerContextItem__GetPoints__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkEqualizerContextItem*>(self)->GetPoints()).c_str());
 }

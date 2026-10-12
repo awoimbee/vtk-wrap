@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkBlankStructuredGridWithImage__vtk_wrap_new() { return static_cast<void*>(vtkBlankStructuredGridWithImage::New()); }
+extern "C" void* vtkBlankStructuredGridWithImage__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBlankStructuredGridWithImage::New()); }
 
-extern "C" int32_t vtkBlankStructuredGridWithImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBlankStructuredGridWithImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkBlankStructuredGridWithImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBlankStructuredGridWithImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBlankStructuredGridWithImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBlankStructuredGridWithImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBlankStructuredGridWithImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkBlankStructuredGridWithImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBlankStructuredGridWithImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBlankStructuredGridWithImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBlankStructuredGridWithImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBlankStructuredGridWithImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBlankStructuredGridWithImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBlankStructuredGridWithImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBlankStructuredGridWithImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBlankStructuredGridWithImage__SetBlankingInputData__0(void* self, void* input) {
+extern "C" void vtkBlankStructuredGridWithImage__SetBlankingInputData__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkBlankStructuredGridWithImage*>(self)->SetBlankingInputData(static_cast<vtkImageData*>(input));
 }
 
-extern "C" void* vtkBlankStructuredGridWithImage__GetBlankingInput__0(void* self) {
+extern "C" void* vtkBlankStructuredGridWithImage__GetBlankingInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBlankStructuredGridWithImage*>(self)->GetBlankingInput());
 }

@@ -8,96 +8,96 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkClosedSurfacePointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkClosedSurfacePointPlacer::New()); }
+extern "C" void* vtkClosedSurfacePointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkClosedSurfacePointPlacer::New()); }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkClosedSurfacePointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkClosedSurfacePointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkClosedSurfacePointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkClosedSurfacePointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkClosedSurfacePointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkClosedSurfacePointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkClosedSurfacePointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkClosedSurfacePointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkClosedSurfacePointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__AddBoundingPlane__0(void* self, void* plane) {
+extern "C" void vtkClosedSurfacePointPlacer__AddBoundingPlane__0(void* self, void* plane) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->AddBoundingPlane(static_cast<vtkPlane*>(plane));
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__RemoveBoundingPlane__0(void* self, void* plane) {
+extern "C" void vtkClosedSurfacePointPlacer__RemoveBoundingPlane__0(void* self, void* plane) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->RemoveBoundingPlane(static_cast<vtkPlane*>(plane));
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__RemoveAllBoundingPlanes__0(void* self) {
+extern "C" void vtkClosedSurfacePointPlacer__RemoveAllBoundingPlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->RemoveAllBoundingPlanes();
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__SetBoundingPlanes__0(void* self, void* arg0) {
+extern "C" void vtkClosedSurfacePointPlacer__SetBoundingPlanes__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->SetBoundingPlanes(static_cast<vtkPlaneCollection*>(arg0));
 }
 
-extern "C" void* vtkClosedSurfacePointPlacer__GetBoundingPlanes__0(void* self) {
+extern "C" void* vtkClosedSurfacePointPlacer__GetBoundingPlanes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkClosedSurfacePointPlacer*>(self)->GetBoundingPlanes());
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__SetBoundingPlanes__1(void* self, void* planes) {
+extern "C" void vtkClosedSurfacePointPlacer__SetBoundingPlanes__1(void* self, void* planes) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->SetBoundingPlanes(static_cast<vtkPlanes*>(planes));
 }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkClosedSurfacePointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkClosedSurfacePointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" void vtkClosedSurfacePointPlacer__SetMinimumDistance__0(void* self, double _arg) {
+extern "C" void vtkClosedSurfacePointPlacer__SetMinimumDistance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkClosedSurfacePointPlacer*>(self)->SetMinimumDistance(_arg);
 }
 
-extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistanceMinValue__0(void* self) {
+extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistanceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->GetMinimumDistanceMinValue();
 }
 
-extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistanceMaxValue__0(void* self) {
+extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistanceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->GetMinimumDistanceMaxValue();
 }
 
-extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistance__0(void* self) {
+extern "C" double vtkClosedSurfacePointPlacer__GetMinimumDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkClosedSurfacePointPlacer*>(self)->GetMinimumDistance();
 }

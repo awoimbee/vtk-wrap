@@ -5,131 +5,131 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkDistancePolyDataFilter__vtk_wrap_new() { return static_cast<void*>(vtkDistancePolyDataFilter::New()); }
+extern "C" void* vtkDistancePolyDataFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDistancePolyDataFilter::New()); }
 
-extern "C" int32_t vtkDistancePolyDataFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDistancePolyDataFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDistancePolyDataFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDistancePolyDataFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDistancePolyDataFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDistancePolyDataFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDistancePolyDataFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDistancePolyDataFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDistancePolyDataFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDistancePolyDataFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDistancePolyDataFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDistancePolyDataFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDistancePolyDataFilter__SetSignedDistance__0(void* self, int32_t _arg) {
+extern "C" void vtkDistancePolyDataFilter__SetSignedDistance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SetSignedDistance(_arg);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__GetSignedDistance__0(void* self) {
+extern "C" int32_t vtkDistancePolyDataFilter__GetSignedDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetSignedDistance();
 }
 
-extern "C" void vtkDistancePolyDataFilter__SignedDistanceOn__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__SignedDistanceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SignedDistanceOn();
 }
 
-extern "C" void vtkDistancePolyDataFilter__SignedDistanceOff__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__SignedDistanceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SignedDistanceOff();
 }
 
-extern "C" void vtkDistancePolyDataFilter__SetNegateDistance__0(void* self, int32_t _arg) {
+extern "C" void vtkDistancePolyDataFilter__SetNegateDistance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SetNegateDistance(_arg);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__GetNegateDistance__0(void* self) {
+extern "C" int32_t vtkDistancePolyDataFilter__GetNegateDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetNegateDistance();
 }
 
-extern "C" void vtkDistancePolyDataFilter__NegateDistanceOn__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__NegateDistanceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->NegateDistanceOn();
 }
 
-extern "C" void vtkDistancePolyDataFilter__NegateDistanceOff__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__NegateDistanceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->NegateDistanceOff();
 }
 
-extern "C" void vtkDistancePolyDataFilter__SetComputeSecondDistance__0(void* self, int32_t _arg) {
+extern "C" void vtkDistancePolyDataFilter__SetComputeSecondDistance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SetComputeSecondDistance(_arg);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__GetComputeSecondDistance__0(void* self) {
+extern "C" int32_t vtkDistancePolyDataFilter__GetComputeSecondDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetComputeSecondDistance();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeSecondDistanceOn__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeSecondDistanceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeSecondDistanceOn();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeSecondDistanceOff__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeSecondDistanceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeSecondDistanceOff();
 }
 
-extern "C" void* vtkDistancePolyDataFilter__GetSecondDistanceOutput__0(void* self) {
+extern "C" void* vtkDistancePolyDataFilter__GetSecondDistanceOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDistancePolyDataFilter*>(self)->GetSecondDistanceOutput());
 }
 
-extern "C" void vtkDistancePolyDataFilter__SetComputeCellCenterDistance__0(void* self, int32_t _arg) {
+extern "C" void vtkDistancePolyDataFilter__SetComputeCellCenterDistance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SetComputeCellCenterDistance(_arg);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__GetComputeCellCenterDistance__0(void* self) {
+extern "C" int32_t vtkDistancePolyDataFilter__GetComputeCellCenterDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetComputeCellCenterDistance();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeCellCenterDistanceOn__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeCellCenterDistanceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeCellCenterDistanceOn();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeCellCenterDistanceOff__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeCellCenterDistanceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeCellCenterDistanceOff();
 }
 
-extern "C" void vtkDistancePolyDataFilter__SetComputeDirection__0(void* self, int32_t _arg) {
+extern "C" void vtkDistancePolyDataFilter__SetComputeDirection__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->SetComputeDirection(_arg);
 }
 
-extern "C" int32_t vtkDistancePolyDataFilter__GetComputeDirection__0(void* self) {
+extern "C" int32_t vtkDistancePolyDataFilter__GetComputeDirection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDistancePolyDataFilter*>(self)->GetComputeDirection();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeDirectionOn__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeDirectionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeDirectionOn();
 }
 
-extern "C" void vtkDistancePolyDataFilter__ComputeDirectionOff__0(void* self) {
+extern "C" void vtkDistancePolyDataFilter__ComputeDirectionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDistancePolyDataFilter*>(self)->ComputeDirectionOff();
 }

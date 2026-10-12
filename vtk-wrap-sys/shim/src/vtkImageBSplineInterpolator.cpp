@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageBSplineInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkImageBSplineInterpolator::New()); }
+extern "C" void* vtkImageBSplineInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageBSplineInterpolator::New()); }
 
-extern "C" int32_t vtkImageBSplineInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageBSplineInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageBSplineInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageBSplineInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageBSplineInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageBSplineInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageBSplineInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageBSplineInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageBSplineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageBSplineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageBSplineInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageBSplineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageBSplineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageBSplineInterpolator__SetSplineDegree__0(void* self, int32_t degree) {
+extern "C" void vtkImageBSplineInterpolator__SetSplineDegree__0(void* self, int32_t degree) noexcept {
   (void)self;
   static_cast<vtkImageBSplineInterpolator*>(self)->SetSplineDegree(degree);
 }
 
-extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegree__0(void* self) {
+extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->GetSplineDegree();
 }
 
-extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegreeMinValue__0(void* self) {
+extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegreeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->GetSplineDegreeMinValue();
 }
 
-extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegreeMaxValue__0(void* self) {
+extern "C" int32_t vtkImageBSplineInterpolator__GetSplineDegreeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->GetSplineDegreeMaxValue();
 }
 
-extern "C" void vtkImageBSplineInterpolator__ComputeSupportSize__0(void* self, const double* matrix, int32_t* size) {
+extern "C" void vtkImageBSplineInterpolator__ComputeSupportSize__0(void* self, const double* matrix, int32_t* size) noexcept {
   (void)self;
   static_cast<vtkImageBSplineInterpolator*>(self)->ComputeSupportSize(matrix, size);
 }
 
-extern "C" bool vtkImageBSplineInterpolator__IsSeparable__0(void* self) {
+extern "C" bool vtkImageBSplineInterpolator__IsSeparable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBSplineInterpolator*>(self)->IsSeparable();
 }

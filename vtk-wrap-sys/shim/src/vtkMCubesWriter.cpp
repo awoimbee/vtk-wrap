@@ -5,46 +5,46 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkMCubesWriter__vtk_wrap_new() { return static_cast<void*>(vtkMCubesWriter::New()); }
+extern "C" void* vtkMCubesWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMCubesWriter::New()); }
 
-extern "C" int32_t vtkMCubesWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMCubesWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMCubesWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMCubesWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMCubesWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMCubesWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMCubesWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMCubesWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMCubesWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMCubesWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMCubesWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMCubesWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMCubesWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMCubesWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMCubesWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMCubesWriter__SetLimitsFileName__0(void* self, const char* _arg) {
+extern "C" void vtkMCubesWriter__SetLimitsFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMCubesWriter*>(self)->SetLimitsFileName(_arg);
 }
 
-extern "C" void* vtkMCubesWriter__GetInput__0(void* self) {
+extern "C" void* vtkMCubesWriter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMCubesWriter*>(self)->GetInput());
 }
 
-extern "C" void* vtkMCubesWriter__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkMCubesWriter__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMCubesWriter*>(self)->GetInput(port));
 }
 
-extern "C" void vtkMCubesWriter__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkMCubesWriter__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMCubesWriter*>(self)->SetFileName(_arg);
 }

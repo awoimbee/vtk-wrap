@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInteractorStyleRubberBand3D__vtk_wrap_new() { return static_cast<void*>(vtkInteractorStyleRubberBand3D::New()); }
+extern "C" void* vtkInteractorStyleRubberBand3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInteractorStyleRubberBand3D::New()); }
 
-extern "C" int32_t vtkInteractorStyleRubberBand3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorStyleRubberBand3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorStyleRubberBand3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorStyleRubberBand3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorStyleRubberBand3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleRubberBand3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorStyleRubberBand3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorStyleRubberBand3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorStyleRubberBand3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorStyleRubberBand3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorStyleRubberBand3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorStyleRubberBand3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorStyleRubberBand3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorStyleRubberBand3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleRubberBand3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnLeftButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnLeftButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnLeftButtonDown();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnLeftButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnLeftButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnLeftButtonUp();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnMiddleButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnMiddleButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnMiddleButtonDown();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnMiddleButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnMiddleButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnMiddleButtonUp();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnRightButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnRightButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnRightButtonDown();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnRightButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnRightButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnRightButtonUp();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnMouseMove__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnMouseMove__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnMouseMove();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnMouseWheelForward__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnMouseWheelForward__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnMouseWheelForward();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__OnMouseWheelBackward__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__OnMouseWheelBackward__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->OnMouseWheelBackward();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__SetRenderOnMouseMove__0(void* self, bool _arg) {
+extern "C" void vtkInteractorStyleRubberBand3D__SetRenderOnMouseMove__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->SetRenderOnMouseMove(_arg);
 }
 
-extern "C" bool vtkInteractorStyleRubberBand3D__GetRenderOnMouseMove__0(void* self) {
+extern "C" bool vtkInteractorStyleRubberBand3D__GetRenderOnMouseMove__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleRubberBand3D*>(self)->GetRenderOnMouseMove();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__RenderOnMouseMoveOn__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__RenderOnMouseMoveOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->RenderOnMouseMoveOn();
 }
 
-extern "C" void vtkInteractorStyleRubberBand3D__RenderOnMouseMoveOff__0(void* self) {
+extern "C" void vtkInteractorStyleRubberBand3D__RenderOnMouseMoveOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleRubberBand3D*>(self)->RenderOnMouseMoveOff();
 }
 
-extern "C" int32_t vtkInteractorStyleRubberBand3D__GetInteraction__0(void* self) {
+extern "C" int32_t vtkInteractorStyleRubberBand3D__GetInteraction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleRubberBand3D*>(self)->GetInteraction();
 }

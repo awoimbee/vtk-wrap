@@ -5,161 +5,161 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageActor__vtk_wrap_new() { return static_cast<void*>(vtkImageActor::New()); }
+extern "C" void* vtkImageActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageActor::New()); }
 
-extern "C" int32_t vtkImageActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageActor__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkImageActor__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetInputData(static_cast<vtkImageData*>(arg0));
 }
 
-extern "C" void* vtkImageActor__GetInput__0(void* self) {
+extern "C" void* vtkImageActor__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageActor*>(self)->GetInput());
 }
 
-extern "C" void vtkImageActor__SetInterpolate__0(void* self, int32_t arg0) {
+extern "C" void vtkImageActor__SetInterpolate__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetInterpolate(arg0);
 }
 
-extern "C" int32_t vtkImageActor__GetInterpolate__0(void* self) {
+extern "C" int32_t vtkImageActor__GetInterpolate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetInterpolate();
 }
 
-extern "C" void vtkImageActor__InterpolateOn__0(void* self) {
+extern "C" void vtkImageActor__InterpolateOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->InterpolateOn();
 }
 
-extern "C" void vtkImageActor__InterpolateOff__0(void* self) {
+extern "C" void vtkImageActor__InterpolateOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->InterpolateOff();
 }
 
-extern "C" void vtkImageActor__SetOpacity__0(void* self, double arg0) {
+extern "C" void vtkImageActor__SetOpacity__0(void* self, double arg0) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetOpacity(arg0);
 }
 
-extern "C" double vtkImageActor__GetOpacity__0(void* self) {
+extern "C" double vtkImageActor__GetOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetOpacity();
 }
 
-extern "C" double vtkImageActor__GetOpacityMinValue__0(void* self) {
+extern "C" double vtkImageActor__GetOpacityMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetOpacityMinValue();
 }
 
-extern "C" double vtkImageActor__GetOpacityMaxValue__0(void* self) {
+extern "C" double vtkImageActor__GetOpacityMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetOpacityMaxValue();
 }
 
-extern "C" void vtkImageActor__SetDisplayExtent__0(void* self, const int32_t* extent) {
+extern "C" void vtkImageActor__SetDisplayExtent__0(void* self, const int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetDisplayExtent(extent);
 }
 
-extern "C" void vtkImageActor__SetDisplayExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) {
+extern "C" void vtkImageActor__SetDisplayExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetDisplayExtent(minX, maxX, minY, maxY, minZ, maxZ);
 }
 
-extern "C" void vtkImageActor__GetDisplayExtent__0(void* self, int32_t* extent) {
+extern "C" void vtkImageActor__GetDisplayExtent__0(void* self, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->GetDisplayExtent(extent);
 }
 
-extern "C" void vtkImageActor__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkImageActor__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->GetBounds(bounds);
 }
 
-extern "C" void vtkImageActor__GetDisplayBounds__0(void* self, double* bounds) {
+extern "C" void vtkImageActor__GetDisplayBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->GetDisplayBounds(bounds);
 }
 
-extern "C" int32_t vtkImageActor__GetSliceNumber__0(void* self) {
+extern "C" int32_t vtkImageActor__GetSliceNumber__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetSliceNumber();
 }
 
-extern "C" int32_t vtkImageActor__GetSliceNumberMax__0(void* self) {
+extern "C" int32_t vtkImageActor__GetSliceNumberMax__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetSliceNumberMax();
 }
 
-extern "C" int32_t vtkImageActor__GetSliceNumberMin__0(void* self) {
+extern "C" int32_t vtkImageActor__GetSliceNumberMin__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetSliceNumberMin();
 }
 
-extern "C" void vtkImageActor__SetZSlice__0(void* self, int32_t z) {
+extern "C" void vtkImageActor__SetZSlice__0(void* self, int32_t z) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetZSlice(z);
 }
 
-extern "C" int32_t vtkImageActor__GetZSlice__0(void* self) {
+extern "C" int32_t vtkImageActor__GetZSlice__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetZSlice();
 }
 
-extern "C" int32_t vtkImageActor__GetWholeZMin__0(void* self) {
+extern "C" int32_t vtkImageActor__GetWholeZMin__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetWholeZMin();
 }
 
-extern "C" int32_t vtkImageActor__GetWholeZMax__0(void* self) {
+extern "C" int32_t vtkImageActor__GetWholeZMax__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetWholeZMax();
 }
 
-extern "C" int32_t vtkImageActor__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkImageActor__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" bool vtkImageActor__GetForceOpaque__0(void* self) {
+extern "C" bool vtkImageActor__GetForceOpaque__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageActor*>(self)->GetForceOpaque();
 }
 
-extern "C" void vtkImageActor__SetForceOpaque__0(void* self, bool _arg) {
+extern "C" void vtkImageActor__SetForceOpaque__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->SetForceOpaque(_arg);
 }
 
-extern "C" void vtkImageActor__ForceOpaqueOn__0(void* self) {
+extern "C" void vtkImageActor__ForceOpaqueOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->ForceOpaqueOn();
 }
 
-extern "C" void vtkImageActor__ForceOpaqueOff__0(void* self) {
+extern "C" void vtkImageActor__ForceOpaqueOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageActor*>(self)->ForceOpaqueOff();
 }

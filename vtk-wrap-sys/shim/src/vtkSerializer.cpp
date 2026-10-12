@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSerializer__vtk_wrap_new() { return static_cast<void*>(vtkSerializer::New()); }
+extern "C" void* vtkSerializer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSerializer::New()); }
 
-extern "C" int32_t vtkSerializer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSerializer__IsTypeOf__0(const char* type_) noexcept {
   return vtkSerializer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSerializer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSerializer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSerializer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSerializer__SafeDownCast__0(void* o) {
+extern "C" void* vtkSerializer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSerializer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSerializer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSerializer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSerializer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSerializer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSerializer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSerializer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSerializer__SetContext__0(void* self, void* _arg) {
+extern "C" void vtkSerializer__SetContext__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkSerializer*>(self)->SetContext(static_cast<vtkMarshalContext*>(_arg));
 }
 
-extern "C" void* vtkSerializer__GetContext__0(void* self) {
+extern "C" void* vtkSerializer__GetContext__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSerializer*>(self)->GetContext());
 }

@@ -5,106 +5,106 @@
 #include "vtkStringArray.h"
 #include <string>
 
-extern "C" void* vtkSEPReader__vtk_wrap_new() { return static_cast<void*>(vtkSEPReader::New()); }
+extern "C" void* vtkSEPReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSEPReader::New()); }
 
-extern "C" int32_t vtkSEPReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSEPReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkSEPReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSEPReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSEPReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSEPReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkSEPReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSEPReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSEPReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSEPReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSEPReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSEPReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSEPReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSEPReader__SetFileName__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetFileName__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetFileName(arg);
 }
 
-extern "C" const char* vtkSEPReader__GetFileName__0(void* self) {
+extern "C" const char* vtkSEPReader__GetFileName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->GetFileName();
 }
 
-extern "C" int32_t vtkSEPReader__GetOutputGridDimension__0(void* self) {
+extern "C" int32_t vtkSEPReader__GetOutputGridDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->GetOutputGridDimension();
 }
 
-extern "C" void vtkSEPReader__SetOutputGridDimension__0(void* self, int32_t _arg) {
+extern "C" void vtkSEPReader__SetOutputGridDimension__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetOutputGridDimension(_arg);
 }
 
-extern "C" void vtkSEPReader__SetExtentSplitMode__0(void* self, int32_t _arg) {
+extern "C" void vtkSEPReader__SetExtentSplitMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetExtentSplitMode(_arg);
 }
 
-extern "C" int32_t vtkSEPReader__GetExtentSplitMode__0(void* self) {
+extern "C" int32_t vtkSEPReader__GetExtentSplitMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->GetExtentSplitMode();
 }
 
-extern "C" void* vtkSEPReader__GetAllDimensions__0(void* self) {
+extern "C" void* vtkSEPReader__GetAllDimensions__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSEPReader*>(self)->GetAllDimensions());
 }
 
-extern "C" void* vtkSEPReader__GetAllRanges__0(void* self) {
+extern "C" void* vtkSEPReader__GetAllRanges__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSEPReader*>(self)->GetAllRanges());
 }
 
-extern "C" void vtkSEPReader__SetXDimension__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetXDimension__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetXDimension(arg);
 }
 
-extern "C" void vtkSEPReader__SetYDimension__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetYDimension__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetYDimension(arg);
 }
 
-extern "C" void vtkSEPReader__SetZDimension__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetZDimension__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetZDimension(arg);
 }
 
-extern "C" void vtkSEPReader__SetFixedDimension1__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetFixedDimension1__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetFixedDimension1(arg);
 }
 
-extern "C" void vtkSEPReader__SetFixedDimension2__0(void* self, const char* arg) {
+extern "C" void vtkSEPReader__SetFixedDimension2__0(void* self, const char* arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetFixedDimension2(arg);
 }
 
-extern "C" void vtkSEPReader__SetFixedDimensionValue1__0(void* self, int32_t _arg) {
+extern "C" void vtkSEPReader__SetFixedDimensionValue1__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetFixedDimensionValue1(_arg);
 }
 
-extern "C" void vtkSEPReader__SetFixedDimensionValue2__0(void* self, int32_t _arg) {
+extern "C" void vtkSEPReader__SetFixedDimensionValue2__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSEPReader*>(self)->SetFixedDimensionValue2(_arg);
 }
 
-extern "C" bool vtkSEPReader__CanReadFile__0(void* self, const char* arg0) {
+extern "C" bool vtkSEPReader__CanReadFile__0(void* self, const char* arg0) noexcept {
   (void)self;
   return static_cast<vtkSEPReader*>(self)->CanReadFile(arg0);
 }

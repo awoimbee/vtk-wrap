@@ -10,83 +10,83 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkUnstructuredGridBase__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBase__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridBase::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridBase__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBase__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridBase__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridBase__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridBase::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridBase::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridBase__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridBase__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkUnstructuredGridBase__Allocate__0(void* self, int64_t numCells, int32_t extSize) {
+extern "C" void vtkUnstructuredGridBase__Allocate__0(void* self, int64_t numCells, int32_t extSize) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBase*>(self)->Allocate(numCells, extSize);
 }
 
-extern "C" void vtkUnstructuredGridBase__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkUnstructuredGridBase__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBase*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__0(void* self, int32_t type_, int64_t npts, const int64_t* ptIds) {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__0(void* self, int32_t type_, int64_t npts, const int64_t* ptIds) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds);
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__1(void* self, int32_t type_, void* ptIds) {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__1(void* self, int32_t type_, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__2(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, int64_t nfaces, const int64_t* faces) {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__2(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, int64_t nfaces, const int64_t* faces) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds, nfaces, faces);
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__3(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, void* faces) {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__3(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, void* faces) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds, static_cast<vtkCellArray*>(faces));
 }
 
-extern "C" void vtkUnstructuredGridBase__ReplaceCell__0(void* self, int64_t cellId, int32_t npts, const int64_t* pts) {
+extern "C" void vtkUnstructuredGridBase__ReplaceCell__0(void* self, int64_t cellId, int32_t npts, const int64_t* pts) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBase*>(self)->ReplaceCell(cellId, npts, pts);
 }
 
-extern "C" void vtkUnstructuredGridBase__GetIdsOfCellsOfType__0(void* self, int32_t type_, void* array) {
+extern "C" void vtkUnstructuredGridBase__GetIdsOfCellsOfType__0(void* self, int32_t type_, void* array) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBase*>(self)->GetIdsOfCellsOfType(type_, static_cast<vtkIdTypeArray*>(array));
 }
 
-extern "C" int32_t vtkUnstructuredGridBase__IsHomogeneous__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridBase__IsHomogeneous__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->IsHomogeneous();
 }
 
-extern "C" void* vtkUnstructuredGridBase__GetData__0(void* info) {
+extern "C" void* vtkUnstructuredGridBase__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkUnstructuredGridBase::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkUnstructuredGridBase__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkUnstructuredGridBase__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkUnstructuredGridBase::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 

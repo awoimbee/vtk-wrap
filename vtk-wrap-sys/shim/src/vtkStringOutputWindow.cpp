@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStringOutputWindow__vtk_wrap_new() { return static_cast<void*>(vtkStringOutputWindow::New()); }
+extern "C" void* vtkStringOutputWindow__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStringOutputWindow::New()); }
 
-extern "C" int32_t vtkStringOutputWindow__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStringOutputWindow__IsTypeOf__0(const char* type_) noexcept {
   return vtkStringOutputWindow::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStringOutputWindow__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStringOutputWindow__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStringOutputWindow*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStringOutputWindow__SafeDownCast__0(void* o) {
+extern "C" void* vtkStringOutputWindow__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStringOutputWindow::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStringOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStringOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStringOutputWindow::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStringOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStringOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStringOutputWindow*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStringOutputWindow__DisplayText__0(void* self, const char* arg0) {
+extern "C" void vtkStringOutputWindow__DisplayText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkStringOutputWindow*>(self)->DisplayText(arg0);
 }
 
-extern "C" char* vtkStringOutputWindow__GetOutput__0(void* self) {
+extern "C" char* vtkStringOutputWindow__GetOutput__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkStringOutputWindow*>(self)->GetOutput()).c_str());
 }

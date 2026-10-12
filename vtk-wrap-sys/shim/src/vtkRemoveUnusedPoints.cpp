@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRemoveUnusedPoints__vtk_wrap_new() { return static_cast<void*>(vtkRemoveUnusedPoints::New()); }
+extern "C" void* vtkRemoveUnusedPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRemoveUnusedPoints::New()); }
 
-extern "C" int32_t vtkRemoveUnusedPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRemoveUnusedPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkRemoveUnusedPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRemoveUnusedPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRemoveUnusedPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRemoveUnusedPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRemoveUnusedPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkRemoveUnusedPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRemoveUnusedPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRemoveUnusedPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRemoveUnusedPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRemoveUnusedPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRemoveUnusedPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRemoveUnusedPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRemoveUnusedPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkRemoveUnusedPoints__SetGenerateOriginalPointIds__0(void* self, bool _arg) {
+extern "C" void vtkRemoveUnusedPoints__SetGenerateOriginalPointIds__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkRemoveUnusedPoints*>(self)->SetGenerateOriginalPointIds(_arg);
 }
 
-extern "C" bool vtkRemoveUnusedPoints__GetGenerateOriginalPointIds__0(void* self) {
+extern "C" bool vtkRemoveUnusedPoints__GetGenerateOriginalPointIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRemoveUnusedPoints*>(self)->GetGenerateOriginalPointIds();
 }
 
-extern "C" void vtkRemoveUnusedPoints__GenerateOriginalPointIdsOn__0(void* self) {
+extern "C" void vtkRemoveUnusedPoints__GenerateOriginalPointIdsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRemoveUnusedPoints*>(self)->GenerateOriginalPointIdsOn();
 }
 
-extern "C" void vtkRemoveUnusedPoints__GenerateOriginalPointIdsOff__0(void* self) {
+extern "C" void vtkRemoveUnusedPoints__GenerateOriginalPointIdsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRemoveUnusedPoints*>(self)->GenerateOriginalPointIdsOff();
 }
 
-extern "C" void vtkRemoveUnusedPoints__SetOriginalPointIdsArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkRemoveUnusedPoints__SetOriginalPointIdsArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkRemoveUnusedPoints*>(self)->SetOriginalPointIdsArrayName(_arg);
 }

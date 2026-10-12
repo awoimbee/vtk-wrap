@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStructuredGridOutlineFilter__vtk_wrap_new() { return static_cast<void*>(vtkStructuredGridOutlineFilter::New()); }
+extern "C" void* vtkStructuredGridOutlineFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredGridOutlineFilter::New()); }
 
-extern "C" int32_t vtkStructuredGridOutlineFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredGridOutlineFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredGridOutlineFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredGridOutlineFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredGridOutlineFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridOutlineFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredGridOutlineFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredGridOutlineFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredGridOutlineFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredGridOutlineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredGridOutlineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredGridOutlineFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredGridOutlineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredGridOutlineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridOutlineFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageReader2Collection__vtk_wrap_new() { return static_cast<void*>(vtkImageReader2Collection::New()); }
+extern "C" void* vtkImageReader2Collection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageReader2Collection::New()); }
 
-extern "C" int32_t vtkImageReader2Collection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageReader2Collection__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageReader2Collection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageReader2Collection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageReader2Collection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageReader2Collection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageReader2Collection__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageReader2Collection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageReader2Collection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageReader2Collection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageReader2Collection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageReader2Collection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageReader2Collection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageReader2Collection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageReader2Collection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageReader2Collection__AddItem__0(void* self, void* arg0) {
+extern "C" void vtkImageReader2Collection__AddItem__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageReader2Collection*>(self)->AddItem(static_cast<vtkImageReader2*>(arg0));
 }
 
-extern "C" void* vtkImageReader2Collection__GetNextItem__0(void* self) {
+extern "C" void* vtkImageReader2Collection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageReader2Collection*>(self)->GetNextItem());
 }

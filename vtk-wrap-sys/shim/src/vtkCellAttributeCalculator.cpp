@@ -6,32 +6,35 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellAttributeCalculator__vtk_wrap_new() { return static_cast<void*>(vtkCellAttributeCalculator::New()); }
+extern "C" void* vtkCellAttributeCalculator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellAttributeCalculator::New()); }
 
-extern "C" int32_t vtkCellAttributeCalculator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellAttributeCalculator__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellAttributeCalculator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellAttributeCalculator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellAttributeCalculator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellAttributeCalculator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellAttributeCalculator__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellAttributeCalculator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellAttributeCalculator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellAttributeCalculator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellAttributeCalculator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellAttributeCalculator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellAttributeCalculator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellAttributeCalculator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellAttributeCalculator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCellAttributeCalculator__PrepareForGrid__0(void* self, void* cell, void* field) {
+extern "C" void* vtkCellAttributeCalculator__PrepareForGrid__0(void* self, void* cell, void* field) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkCellAttributeCalculator*>(self)->PrepareForGrid(static_cast<vtkCellMetadata*>(cell), static_cast<vtkCellAttribute*>(field))).GetPointer());
+  auto result = static_cast<vtkCellAttributeCalculator*>(self)->PrepareForGrid(static_cast<vtkCellMetadata*>(cell), static_cast<vtkCellAttribute*>(field));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 

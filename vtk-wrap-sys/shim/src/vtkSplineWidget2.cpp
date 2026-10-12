@@ -5,41 +5,41 @@
 #include "vtkSplineRepresentation.h"
 #include <string>
 
-extern "C" void* vtkSplineWidget2__vtk_wrap_new() { return static_cast<void*>(vtkSplineWidget2::New()); }
+extern "C" void* vtkSplineWidget2__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSplineWidget2::New()); }
 
-extern "C" int32_t vtkSplineWidget2__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSplineWidget2__IsTypeOf__0(const char* type_) noexcept {
   return vtkSplineWidget2::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSplineWidget2__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSplineWidget2__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplineWidget2*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSplineWidget2__SafeDownCast__0(void* o) {
+extern "C" void* vtkSplineWidget2__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSplineWidget2::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSplineWidget2__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSplineWidget2__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSplineWidget2::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSplineWidget2__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSplineWidget2__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSplineWidget2*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSplineWidget2__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkSplineWidget2__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkSplineWidget2*>(self)->SetRepresentation(static_cast<vtkSplineRepresentation*>(r));
 }
 
-extern "C" void vtkSplineWidget2__SetEnabled__0(void* self, int32_t enabling) {
+extern "C" void vtkSplineWidget2__SetEnabled__0(void* self, int32_t enabling) noexcept {
   (void)self;
   static_cast<vtkSplineWidget2*>(self)->SetEnabled(enabling);
 }
 
-extern "C" void vtkSplineWidget2__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkSplineWidget2__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSplineWidget2*>(self)->CreateDefaultRepresentation();
 }

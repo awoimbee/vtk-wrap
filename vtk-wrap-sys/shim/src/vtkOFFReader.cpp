@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOFFReader__vtk_wrap_new() { return static_cast<void*>(vtkOFFReader::New()); }
+extern "C" void* vtkOFFReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOFFReader::New()); }
 
-extern "C" int32_t vtkOFFReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOFFReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkOFFReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOFFReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOFFReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOFFReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOFFReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkOFFReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOFFReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOFFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOFFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOFFReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOFFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOFFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOFFReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

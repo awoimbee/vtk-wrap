@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkClientSocket__vtk_wrap_new() { return static_cast<void*>(vtkClientSocket::New()); }
+extern "C" void* vtkClientSocket__vtk_wrap_new() noexcept { return static_cast<void*>(vtkClientSocket::New()); }
 
-extern "C" int32_t vtkClientSocket__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkClientSocket__IsTypeOf__0(const char* type_) noexcept {
   return vtkClientSocket::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkClientSocket__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkClientSocket__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkClientSocket*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkClientSocket__SafeDownCast__0(void* o) {
+extern "C" void* vtkClientSocket__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkClientSocket::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkClientSocket__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkClientSocket__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkClientSocket::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkClientSocket__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkClientSocket__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkClientSocket*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkClientSocket__ConnectToServer__0(void* self, const char* hostname, int32_t port) {
+extern "C" int32_t vtkClientSocket__ConnectToServer__0(void* self, const char* hostname, int32_t port) noexcept {
   (void)self;
   return static_cast<vtkClientSocket*>(self)->ConnectToServer(hostname, port);
 }
 
-extern "C" bool vtkClientSocket__GetConnectingSide__0(void* self) {
+extern "C" bool vtkClientSocket__GetConnectingSide__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkClientSocket*>(self)->GetConnectingSide();
 }

@@ -5,44 +5,50 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkExecutionAggregator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExecutionAggregator__IsTypeOf__0(const char* type_) noexcept {
   return vtkExecutionAggregator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExecutionAggregator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExecutionAggregator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExecutionAggregator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExecutionAggregator__SafeDownCast__0(void* o) {
+extern "C" void* vtkExecutionAggregator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExecutionAggregator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExecutionAggregator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExecutionAggregator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExecutionAggregator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExecutionAggregator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExecutionAggregator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExecutionAggregator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkExecutionAggregator__RequestDataObject__0(void* self, void* input) {
+extern "C" void* vtkExecutionAggregator__RequestDataObject__0(void* self, void* input) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkExecutionAggregator*>(self)->RequestDataObject(static_cast<vtkDataObject*>(input))).GetPointer());
+  auto result = static_cast<vtkExecutionAggregator*>(self)->RequestDataObject(static_cast<vtkDataObject*>(input));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" bool vtkExecutionAggregator__Aggregate__0(void* self, void* input) {
+extern "C" bool vtkExecutionAggregator__Aggregate__0(void* self, void* input) noexcept {
   (void)self;
   return static_cast<vtkExecutionAggregator*>(self)->Aggregate(static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void* vtkExecutionAggregator__GetOutputDataObject__0(void* self) {
+extern "C" void* vtkExecutionAggregator__GetOutputDataObject__0(void* self) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkExecutionAggregator*>(self)->GetOutputDataObject()).GetPointer());
+  auto result = static_cast<vtkExecutionAggregator*>(self)->GetOutputDataObject();
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void vtkExecutionAggregator__Clear__0(void* self) {
+extern "C" void vtkExecutionAggregator__Clear__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExecutionAggregator*>(self)->Clear();
 }

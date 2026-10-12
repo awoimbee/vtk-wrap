@@ -6,47 +6,47 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageReader2Factory__vtk_wrap_new() { return static_cast<void*>(vtkImageReader2Factory::New()); }
+extern "C" void* vtkImageReader2Factory__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageReader2Factory::New()); }
 
-extern "C" int32_t vtkImageReader2Factory__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageReader2Factory__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageReader2Factory::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageReader2Factory__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageReader2Factory__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageReader2Factory*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageReader2Factory__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageReader2Factory__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageReader2Factory::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageReader2Factory__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageReader2Factory__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageReader2Factory::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageReader2Factory__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageReader2Factory__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageReader2Factory*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageReader2Factory__RegisterReader__0(void* r) {
+extern "C" void vtkImageReader2Factory__RegisterReader__0(void* r) noexcept {
   vtkImageReader2Factory::RegisterReader(static_cast<vtkImageReader2*>(r));
 }
 
-extern "C" void* vtkImageReader2Factory__CreateImageReader2__0(const char* path) {
+extern "C" void* vtkImageReader2Factory__CreateImageReader2__0(const char* path) noexcept {
   return static_cast<void*>(vtkImageReader2Factory::CreateImageReader2(path));
 }
 
-extern "C" void* vtkImageReader2Factory__CreateImageReader2FromExtension__0(const char* extension) {
+extern "C" void* vtkImageReader2Factory__CreateImageReader2FromExtension__0(const char* extension) noexcept {
   return static_cast<void*>(vtkImageReader2Factory::CreateImageReader2FromExtension(extension));
 }
 
-extern "C" void vtkImageReader2Factory__GetRegisteredReaders__0(void* arg0) {
+extern "C" void vtkImageReader2Factory__GetRegisteredReaders__0(void* arg0) noexcept {
   vtkImageReader2Factory::GetRegisteredReaders(static_cast<vtkImageReader2Collection*>(arg0));
 }
 
-extern "C" bool vtkImageReader2Factory__CheckExtensionIsInExtensions__0(const char* extension, const char* extensions) {
+extern "C" bool vtkImageReader2Factory__CheckExtensionIsInExtensions__0(const char* extension, const char* extensions) noexcept {
   return vtkImageReader2Factory::CheckExtensionIsInExtensions(extension, extensions);
 }
 

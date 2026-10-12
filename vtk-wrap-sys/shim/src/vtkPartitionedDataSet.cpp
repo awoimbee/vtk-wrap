@@ -9,89 +9,89 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPartitionedDataSet__vtk_wrap_new() { return static_cast<void*>(vtkPartitionedDataSet::New()); }
+extern "C" void* vtkPartitionedDataSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPartitionedDataSet::New()); }
 
-extern "C" int32_t vtkPartitionedDataSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPartitionedDataSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkPartitionedDataSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPartitionedDataSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPartitionedDataSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPartitionedDataSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkPartitionedDataSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPartitionedDataSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPartitionedDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPartitionedDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPartitionedDataSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPartitionedDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPartitionedDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPartitionedDataSet__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkPartitionedDataSet__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkPartitionedDataSet__SetNumberOfPartitions__0(void* self, uint32_t numPartitions) {
+extern "C" void vtkPartitionedDataSet__SetNumberOfPartitions__0(void* self, uint32_t numPartitions) noexcept {
   (void)self;
   static_cast<vtkPartitionedDataSet*>(self)->SetNumberOfPartitions(numPartitions);
 }
 
-extern "C" uint32_t vtkPartitionedDataSet__GetNumberOfPartitions__0(void* self) {
+extern "C" uint32_t vtkPartitionedDataSet__GetNumberOfPartitions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->GetNumberOfPartitions();
 }
 
-extern "C" void* vtkPartitionedDataSet__GetPartition__0(void* self, uint32_t idx) {
+extern "C" void* vtkPartitionedDataSet__GetPartition__0(void* self, uint32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPartitionedDataSet*>(self)->GetPartition(idx));
 }
 
-extern "C" void* vtkPartitionedDataSet__GetPartitionAsDataObject__0(void* self, uint32_t idx) {
+extern "C" void* vtkPartitionedDataSet__GetPartitionAsDataObject__0(void* self, uint32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPartitionedDataSet*>(self)->GetPartitionAsDataObject(idx));
 }
 
-extern "C" void vtkPartitionedDataSet__SetPartition__0(void* self, uint32_t idx, void* partition) {
+extern "C" void vtkPartitionedDataSet__SetPartition__0(void* self, uint32_t idx, void* partition) noexcept {
   (void)self;
   static_cast<vtkPartitionedDataSet*>(self)->SetPartition(idx, static_cast<vtkDataObject*>(partition));
 }
 
-extern "C" int32_t vtkPartitionedDataSet__HasMetaData__0(void* self, uint32_t idx) {
+extern "C" int32_t vtkPartitionedDataSet__HasMetaData__0(void* self, uint32_t idx) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->HasMetaData(idx);
 }
 
-extern "C" void* vtkPartitionedDataSet__GetMetaData__0(void* self, uint32_t idx) {
+extern "C" void* vtkPartitionedDataSet__GetMetaData__0(void* self, uint32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPartitionedDataSet*>(self)->GetMetaData(idx));
 }
 
-extern "C" void* vtkPartitionedDataSet__GetData__0(void* info) {
+extern "C" void* vtkPartitionedDataSet__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkPartitionedDataSet::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkPartitionedDataSet__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkPartitionedDataSet__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkPartitionedDataSet::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" void* vtkPartitionedDataSet__GetMetaData__1(void* self, void* iter) {
+extern "C" void* vtkPartitionedDataSet__GetMetaData__1(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPartitionedDataSet*>(self)->GetMetaData(static_cast<vtkCompositeDataIterator*>(iter)));
 }
 
-extern "C" int32_t vtkPartitionedDataSet__HasMetaData__1(void* self, void* iter) {
+extern "C" int32_t vtkPartitionedDataSet__HasMetaData__1(void* self, void* iter) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSet*>(self)->HasMetaData(static_cast<vtkCompositeDataIterator*>(iter));
 }
 
-extern "C" void vtkPartitionedDataSet__RemoveNullPartitions__0(void* self) {
+extern "C" void vtkPartitionedDataSet__RemoveNullPartitions__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPartitionedDataSet*>(self)->RemoveNullPartitions();
 }

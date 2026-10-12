@@ -5,56 +5,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLinearToQuadraticCellsFilter__vtk_wrap_new() { return static_cast<void*>(vtkLinearToQuadraticCellsFilter::New()); }
+extern "C" void* vtkLinearToQuadraticCellsFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLinearToQuadraticCellsFilter::New()); }
 
-extern "C" int32_t vtkLinearToQuadraticCellsFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLinearToQuadraticCellsFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkLinearToQuadraticCellsFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLinearToQuadraticCellsFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLinearToQuadraticCellsFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLinearToQuadraticCellsFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLinearToQuadraticCellsFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkLinearToQuadraticCellsFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLinearToQuadraticCellsFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLinearToQuadraticCellsFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLinearToQuadraticCellsFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLinearToQuadraticCellsFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLinearToQuadraticCellsFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLinearToQuadraticCellsFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLinearToQuadraticCellsFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLinearToQuadraticCellsFilter__SetLocator__0(void* self, void* locator) {
+extern "C" void vtkLinearToQuadraticCellsFilter__SetLocator__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkLinearToQuadraticCellsFilter*>(self)->SetLocator(static_cast<vtkIncrementalPointLocator*>(locator));
 }
 
-extern "C" void* vtkLinearToQuadraticCellsFilter__GetLocator__0(void* self) {
+extern "C" void* vtkLinearToQuadraticCellsFilter__GetLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLinearToQuadraticCellsFilter*>(self)->GetLocator());
 }
 
-extern "C" void vtkLinearToQuadraticCellsFilter__CreateDefaultLocator__0(void* self) {
+extern "C" void vtkLinearToQuadraticCellsFilter__CreateDefaultLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLinearToQuadraticCellsFilter*>(self)->CreateDefaultLocator();
 }
 
-extern "C" void vtkLinearToQuadraticCellsFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkLinearToQuadraticCellsFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLinearToQuadraticCellsFilter*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkLinearToQuadraticCellsFilter__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkLinearToQuadraticCellsFilter__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLinearToQuadraticCellsFilter*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" unsigned long vtkLinearToQuadraticCellsFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkLinearToQuadraticCellsFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLinearToQuadraticCellsFilter*>(self)->GetMTime();
 }

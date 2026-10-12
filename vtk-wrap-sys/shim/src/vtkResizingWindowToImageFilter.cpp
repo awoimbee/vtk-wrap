@@ -6,86 +6,86 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkResizingWindowToImageFilter__vtk_wrap_new() { return static_cast<void*>(vtkResizingWindowToImageFilter::New()); }
+extern "C" void* vtkResizingWindowToImageFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkResizingWindowToImageFilter::New()); }
 
-extern "C" int32_t vtkResizingWindowToImageFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkResizingWindowToImageFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkResizingWindowToImageFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkResizingWindowToImageFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkResizingWindowToImageFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResizingWindowToImageFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkResizingWindowToImageFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkResizingWindowToImageFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkResizingWindowToImageFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkResizingWindowToImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkResizingWindowToImageFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkResizingWindowToImageFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkResizingWindowToImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkResizingWindowToImageFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResizingWindowToImageFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetInput__0(void* self, void* input) {
+extern "C" void vtkResizingWindowToImageFilter__SetInput__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetInput(static_cast<vtkWindow*>(input));
 }
 
-extern "C" void* vtkResizingWindowToImageFilter__GetInput__0(void* self) {
+extern "C" void* vtkResizingWindowToImageFilter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkResizingWindowToImageFilter*>(self)->GetInput());
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetSize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkResizingWindowToImageFilter__SetSize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetSize(_arg1, _arg2);
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkResizingWindowToImageFilter__SetSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetSize(_arg);
 }
 
-extern "C" int32_t vtkResizingWindowToImageFilter__GetSizeLimit__0(void* self) {
+extern "C" int32_t vtkResizingWindowToImageFilter__GetSizeLimit__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResizingWindowToImageFilter*>(self)->GetSizeLimit();
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetSizeLimit__0(void* self, int32_t _arg) {
+extern "C" void vtkResizingWindowToImageFilter__SetSizeLimit__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetSizeLimit(_arg);
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetInputBufferType__0(void* self, int32_t _arg) {
+extern "C" void vtkResizingWindowToImageFilter__SetInputBufferType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetInputBufferType(_arg);
 }
 
-extern "C" int32_t vtkResizingWindowToImageFilter__GetInputBufferType__0(void* self) {
+extern "C" int32_t vtkResizingWindowToImageFilter__GetInputBufferType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResizingWindowToImageFilter*>(self)->GetInputBufferType();
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToRGB__0(void* self) {
+extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToRGB__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetInputBufferTypeToRGB();
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToRGBA__0(void* self) {
+extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToRGBA__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetInputBufferTypeToRGBA();
 }
 
-extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToZBuffer__0(void* self) {
+extern "C" void vtkResizingWindowToImageFilter__SetInputBufferTypeToZBuffer__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResizingWindowToImageFilter*>(self)->SetInputBufferTypeToZBuffer();
 }
 
-extern "C" void* vtkResizingWindowToImageFilter__GetOutput__0(void* self) {
+extern "C" void* vtkResizingWindowToImageFilter__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkResizingWindowToImageFilter*>(self)->GetOutput());
 }

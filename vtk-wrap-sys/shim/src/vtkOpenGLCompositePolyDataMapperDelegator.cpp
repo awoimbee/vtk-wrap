@@ -6,45 +6,45 @@
 #include "vtkOverrideAttribute.h"
 #include <string>
 
-extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLCompositePolyDataMapperDelegator::New()); }
+extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLCompositePolyDataMapperDelegator::New()); }
 
-extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLCompositePolyDataMapperDelegator::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLCompositePolyDataMapperDelegator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLCompositePolyDataMapperDelegator__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLCompositePolyDataMapperDelegator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLCompositePolyDataMapperDelegator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLCompositePolyDataMapperDelegator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCompositePolyDataMapperDelegator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLCompositePolyDataMapperDelegator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLCompositePolyDataMapperDelegator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLCompositePolyDataMapperDelegator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLCompositePolyDataMapperDelegator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLCompositePolyDataMapperDelegator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLCompositePolyDataMapperDelegator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLCompositePolyDataMapperDelegator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCompositePolyDataMapperDelegator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__ShallowCopy__0(void* self, void* mapper) {
+extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__ShallowCopy__0(void* self, void* mapper) noexcept {
   (void)self;
   static_cast<vtkOpenGLCompositePolyDataMapperDelegator*>(self)->ShallowCopy(static_cast<vtkCompositePolyDataMapper*>(mapper));
 }
 
-extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__ClearUnmarkedBatchElements__0(void* self) {
+extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__ClearUnmarkedBatchElements__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLCompositePolyDataMapperDelegator*>(self)->ClearUnmarkedBatchElements();
 }
 
-extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__UnmarkBatchElements__0(void* self) {
+extern "C" void vtkOpenGLCompositePolyDataMapperDelegator__UnmarkBatchElements__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLCompositePolyDataMapperDelegator*>(self)->UnmarkBatchElements();
 }

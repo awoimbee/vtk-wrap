@@ -4,76 +4,76 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFileOutputWindow__vtk_wrap_new() { return static_cast<void*>(vtkFileOutputWindow::New()); }
+extern "C" void* vtkFileOutputWindow__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFileOutputWindow::New()); }
 
-extern "C" int32_t vtkFileOutputWindow__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFileOutputWindow__IsTypeOf__0(const char* type_) noexcept {
   return vtkFileOutputWindow::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFileOutputWindow__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFileOutputWindow__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFileOutputWindow*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFileOutputWindow__SafeDownCast__0(void* o) {
+extern "C" void* vtkFileOutputWindow__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFileOutputWindow::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFileOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFileOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFileOutputWindow::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFileOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFileOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFileOutputWindow*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFileOutputWindow__DisplayText__0(void* self, const char* arg0) {
+extern "C" void vtkFileOutputWindow__DisplayText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->DisplayText(arg0);
 }
 
-extern "C" void vtkFileOutputWindow__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkFileOutputWindow__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkFileOutputWindow__SetFlush__0(void* self, int32_t _arg) {
+extern "C" void vtkFileOutputWindow__SetFlush__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->SetFlush(_arg);
 }
 
-extern "C" int32_t vtkFileOutputWindow__GetFlush__0(void* self) {
+extern "C" int32_t vtkFileOutputWindow__GetFlush__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFileOutputWindow*>(self)->GetFlush();
 }
 
-extern "C" void vtkFileOutputWindow__FlushOn__0(void* self) {
+extern "C" void vtkFileOutputWindow__FlushOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->FlushOn();
 }
 
-extern "C" void vtkFileOutputWindow__FlushOff__0(void* self) {
+extern "C" void vtkFileOutputWindow__FlushOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->FlushOff();
 }
 
-extern "C" void vtkFileOutputWindow__SetAppend__0(void* self, int32_t _arg) {
+extern "C" void vtkFileOutputWindow__SetAppend__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->SetAppend(_arg);
 }
 
-extern "C" int32_t vtkFileOutputWindow__GetAppend__0(void* self) {
+extern "C" int32_t vtkFileOutputWindow__GetAppend__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFileOutputWindow*>(self)->GetAppend();
 }
 
-extern "C" void vtkFileOutputWindow__AppendOn__0(void* self) {
+extern "C" void vtkFileOutputWindow__AppendOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->AppendOn();
 }
 
-extern "C" void vtkFileOutputWindow__AppendOff__0(void* self) {
+extern "C" void vtkFileOutputWindow__AppendOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFileOutputWindow*>(self)->AppendOff();
 }

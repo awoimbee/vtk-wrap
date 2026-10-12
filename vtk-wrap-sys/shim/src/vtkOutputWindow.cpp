@@ -4,129 +4,129 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOutputWindow__vtk_wrap_new() { return static_cast<void*>(vtkOutputWindow::New()); }
+extern "C" void* vtkOutputWindow__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOutputWindow::New()); }
 
-extern "C" int32_t vtkOutputWindow__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOutputWindow__IsTypeOf__0(const char* type_) noexcept {
   return vtkOutputWindow::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOutputWindow__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOutputWindow__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutputWindow*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOutputWindow__SafeDownCast__0(void* o) {
+extern "C" void* vtkOutputWindow__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOutputWindow::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOutputWindow__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOutputWindow::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOutputWindow__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutputWindow*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOutputWindow__GetInstance__0() {
+extern "C" void* vtkOutputWindow__GetInstance__0() noexcept {
   return static_cast<void*>(vtkOutputWindow::GetInstance());
 }
 
-extern "C" void vtkOutputWindow__SetInstance__0(void* instance) {
+extern "C" void vtkOutputWindow__SetInstance__0(void* instance) noexcept {
   vtkOutputWindow::SetInstance(static_cast<vtkOutputWindow*>(instance));
 }
 
-extern "C" void vtkOutputWindow__DisplayText__0(void* self, const char* arg0) {
+extern "C" void vtkOutputWindow__DisplayText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->DisplayText(arg0);
 }
 
-extern "C" void vtkOutputWindow__DisplayErrorText__0(void* self, const char* arg0) {
+extern "C" void vtkOutputWindow__DisplayErrorText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->DisplayErrorText(arg0);
 }
 
-extern "C" void vtkOutputWindow__DisplayWarningText__0(void* self, const char* arg0) {
+extern "C" void vtkOutputWindow__DisplayWarningText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->DisplayWarningText(arg0);
 }
 
-extern "C" void vtkOutputWindow__DisplayGenericWarningText__0(void* self, const char* arg0) {
+extern "C" void vtkOutputWindow__DisplayGenericWarningText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->DisplayGenericWarningText(arg0);
 }
 
-extern "C" void vtkOutputWindow__DisplayDebugText__0(void* self, const char* arg0) {
+extern "C" void vtkOutputWindow__DisplayDebugText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->DisplayDebugText(arg0);
 }
 
-extern "C" void vtkOutputWindow__PromptUserOn__0(void* self) {
+extern "C" void vtkOutputWindow__PromptUserOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->PromptUserOn();
 }
 
-extern "C" void vtkOutputWindow__PromptUserOff__0(void* self) {
+extern "C" void vtkOutputWindow__PromptUserOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->PromptUserOff();
 }
 
-extern "C" void vtkOutputWindow__SetPromptUser__0(void* self, bool _arg) {
+extern "C" void vtkOutputWindow__SetPromptUser__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetPromptUser(_arg);
 }
 
-extern "C" void vtkOutputWindow__ShowWindowOn__0(void* self) {
+extern "C" void vtkOutputWindow__ShowWindowOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->ShowWindowOn();
 }
 
-extern "C" void vtkOutputWindow__ShowWindowOff__0(void* self) {
+extern "C" void vtkOutputWindow__ShowWindowOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->ShowWindowOff();
 }
 
-extern "C" void vtkOutputWindow__SetShowWindow__0(void* self, bool _arg) {
+extern "C" void vtkOutputWindow__SetShowWindow__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetShowWindow(_arg);
 }
 
-extern "C" void vtkOutputWindow__SetDisplayMode__0(void* self, int32_t _arg) {
+extern "C" void vtkOutputWindow__SetDisplayMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetDisplayMode(_arg);
 }
 
-extern "C" int32_t vtkOutputWindow__GetDisplayModeMinValue__0(void* self) {
+extern "C" int32_t vtkOutputWindow__GetDisplayModeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutputWindow*>(self)->GetDisplayModeMinValue();
 }
 
-extern "C" int32_t vtkOutputWindow__GetDisplayModeMaxValue__0(void* self) {
+extern "C" int32_t vtkOutputWindow__GetDisplayModeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutputWindow*>(self)->GetDisplayModeMaxValue();
 }
 
-extern "C" int32_t vtkOutputWindow__GetDisplayMode__0(void* self) {
+extern "C" int32_t vtkOutputWindow__GetDisplayMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutputWindow*>(self)->GetDisplayMode();
 }
 
-extern "C" void vtkOutputWindow__SetDisplayModeToDefault__0(void* self) {
+extern "C" void vtkOutputWindow__SetDisplayModeToDefault__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetDisplayModeToDefault();
 }
 
-extern "C" void vtkOutputWindow__SetDisplayModeToNever__0(void* self) {
+extern "C" void vtkOutputWindow__SetDisplayModeToNever__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetDisplayModeToNever();
 }
 
-extern "C" void vtkOutputWindow__SetDisplayModeToAlways__0(void* self) {
+extern "C" void vtkOutputWindow__SetDisplayModeToAlways__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetDisplayModeToAlways();
 }
 
-extern "C" void vtkOutputWindow__SetDisplayModeToAlwaysStdErr__0(void* self) {
+extern "C" void vtkOutputWindow__SetDisplayModeToAlwaysStdErr__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOutputWindow*>(self)->SetDisplayModeToAlwaysStdErr();
 }

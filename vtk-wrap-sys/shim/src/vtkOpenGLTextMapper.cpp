@@ -7,35 +7,35 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkOpenGLTextMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLTextMapper::New()); }
+extern "C" void* vtkOpenGLTextMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLTextMapper::New()); }
 
-extern "C" void* vtkOpenGLTextMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLTextMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLTextMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLTextMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLTextMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLTextMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLTextMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLTextMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLTextMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLTextMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLTextMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLTextMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLTextMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLTextMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLTextMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLTextMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLTextMapper__RenderOverlay__0(void* self, void* vp, void* act) {
+extern "C" void vtkOpenGLTextMapper__RenderOverlay__0(void* self, void* vp, void* act) noexcept {
   (void)self;
   static_cast<vtkOpenGLTextMapper*>(self)->RenderOverlay(static_cast<vtkViewport*>(vp), static_cast<vtkActor2D*>(act));
 }

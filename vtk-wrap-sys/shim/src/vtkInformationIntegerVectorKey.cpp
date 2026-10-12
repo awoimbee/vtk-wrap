@@ -5,53 +5,53 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationIntegerVectorKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationIntegerVectorKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationIntegerVectorKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationIntegerVectorKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationIntegerVectorKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerVectorKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationIntegerVectorKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationIntegerVectorKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationIntegerVectorKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationIntegerVectorKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationIntegerVectorKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationIntegerVectorKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationIntegerVectorKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationIntegerVectorKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerVectorKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationIntegerVectorKey__MakeKey__0(const char* name, const char* location, int32_t length) {
+extern "C" void* vtkInformationIntegerVectorKey__MakeKey__0(const char* name, const char* location, int32_t length) noexcept {
   return static_cast<void*>(vtkInformationIntegerVectorKey::MakeKey(name, location, length));
 }
 
-extern "C" void vtkInformationIntegerVectorKey__Append__0(void* self, void* info, int32_t value) {
+extern "C" void vtkInformationIntegerVectorKey__Append__0(void* self, void* info, int32_t value) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerVectorKey*>(self)->Append(static_cast<vtkInformation*>(info), value);
 }
 
-extern "C" void vtkInformationIntegerVectorKey__Set__0(void* self, void* info) {
+extern "C" void vtkInformationIntegerVectorKey__Set__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerVectorKey*>(self)->Set(static_cast<vtkInformation*>(info));
 }
 
-extern "C" int32_t vtkInformationIntegerVectorKey__Get__0(void* self, void* info, int32_t idx) {
+extern "C" int32_t vtkInformationIntegerVectorKey__Get__0(void* self, void* info, int32_t idx) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerVectorKey*>(self)->Get(static_cast<vtkInformation*>(info), idx);
 }
 
-extern "C" int32_t vtkInformationIntegerVectorKey__Length__0(void* self, void* info) {
+extern "C" int32_t vtkInformationIntegerVectorKey__Length__0(void* self, void* info) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerVectorKey*>(self)->Length(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationIntegerVectorKey__ShallowCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationIntegerVectorKey__ShallowCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerVectorKey*>(self)->ShallowCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }

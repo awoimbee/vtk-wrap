@@ -6,61 +6,61 @@
 #include "vtkUnstructuredGridBase.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridBaseAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridBaseAlgorithm::New()); }
+extern "C" void* vtkUnstructuredGridBaseAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridBaseAlgorithm::New()); }
 
-extern "C" int32_t vtkUnstructuredGridBaseAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBaseAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridBaseAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridBaseAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBaseAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridBaseAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridBaseAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridBaseAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridBaseAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBaseAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridBaseAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridBaseAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBaseAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkUnstructuredGridBaseAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkUnstructuredGridBaseAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkUnstructuredGridBaseAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkUnstructuredGridBaseAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkUnstructuredGridBaseAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkUnstructuredGridBaseAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void vtkUnstructuredGridBaseAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkUnstructuredGridBaseAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkUnstructuredGridBaseAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkUnstructuredGridBaseAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkUnstructuredGridBaseAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkUnstructuredGridBaseAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkUnstructuredGridBaseAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkUnstructuredGridBaseAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBaseAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

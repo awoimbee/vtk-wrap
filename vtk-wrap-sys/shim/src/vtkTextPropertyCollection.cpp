@@ -5,46 +5,46 @@
 #include "vtkTextProperty.h"
 #include <string>
 
-extern "C" void* vtkTextPropertyCollection__vtk_wrap_new() { return static_cast<void*>(vtkTextPropertyCollection::New()); }
+extern "C" void* vtkTextPropertyCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTextPropertyCollection::New()); }
 
-extern "C" int32_t vtkTextPropertyCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextPropertyCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextPropertyCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextPropertyCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextPropertyCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextPropertyCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextPropertyCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextPropertyCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextPropertyCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextPropertyCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextPropertyCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextPropertyCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextPropertyCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextPropertyCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextPropertyCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTextPropertyCollection__AddItem__0(void* self, void* a) {
+extern "C" void vtkTextPropertyCollection__AddItem__0(void* self, void* a) noexcept {
   (void)self;
   static_cast<vtkTextPropertyCollection*>(self)->AddItem(static_cast<vtkTextProperty*>(a));
 }
 
-extern "C" void* vtkTextPropertyCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkTextPropertyCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTextPropertyCollection*>(self)->GetNextItem());
 }
 
-extern "C" void* vtkTextPropertyCollection__GetItem__0(void* self, int32_t idx) {
+extern "C" void* vtkTextPropertyCollection__GetItem__0(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTextPropertyCollection*>(self)->GetItem(idx));
 }
 
-extern "C" void* vtkTextPropertyCollection__GetLastItem__0(void* self) {
+extern "C" void* vtkTextPropertyCollection__GetLastItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTextPropertyCollection*>(self)->GetLastItem());
 }

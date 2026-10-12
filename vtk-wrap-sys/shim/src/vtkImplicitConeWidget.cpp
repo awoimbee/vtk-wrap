@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImplicitConeWidget__vtk_wrap_new() { return static_cast<void*>(vtkImplicitConeWidget::New()); }
+extern "C" void* vtkImplicitConeWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImplicitConeWidget::New()); }
 
-extern "C" int32_t vtkImplicitConeWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImplicitConeWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkImplicitConeWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImplicitConeWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImplicitConeWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitConeWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImplicitConeWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkImplicitConeWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImplicitConeWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImplicitConeWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImplicitConeWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImplicitConeWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImplicitConeWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImplicitConeWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitConeWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImplicitConeWidget__SetRepresentation__0(void* self, void* rep) {
+extern "C" void vtkImplicitConeWidget__SetRepresentation__0(void* self, void* rep) noexcept {
   (void)self;
   static_cast<vtkImplicitConeWidget*>(self)->SetRepresentation(static_cast<vtkImplicitConeRepresentation*>(rep));
 }
 
-extern "C" void* vtkImplicitConeWidget__GetConeRepresentation__0(void* self) {
+extern "C" void* vtkImplicitConeWidget__GetConeRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImplicitConeWidget*>(self)->GetConeRepresentation());
 }
 
-extern "C" void vtkImplicitConeWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkImplicitConeWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImplicitConeWidget*>(self)->CreateDefaultRepresentation();
 }

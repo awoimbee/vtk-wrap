@@ -6,40 +6,40 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDirectedAcyclicGraph__vtk_wrap_new() { return static_cast<void*>(vtkDirectedAcyclicGraph::New()); }
+extern "C" void* vtkDirectedAcyclicGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDirectedAcyclicGraph::New()); }
 
-extern "C" int32_t vtkDirectedAcyclicGraph__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDirectedAcyclicGraph__IsTypeOf__0(const char* type_) noexcept {
   return vtkDirectedAcyclicGraph::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDirectedAcyclicGraph__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDirectedAcyclicGraph__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedAcyclicGraph*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDirectedAcyclicGraph__SafeDownCast__0(void* o) {
+extern "C" void* vtkDirectedAcyclicGraph__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDirectedAcyclicGraph::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDirectedAcyclicGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDirectedAcyclicGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDirectedAcyclicGraph::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDirectedAcyclicGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDirectedAcyclicGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedAcyclicGraph*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkDirectedAcyclicGraph__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkDirectedAcyclicGraph__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDirectedAcyclicGraph*>(self)->GetDataObjectType();
 }
 
-extern "C" void* vtkDirectedAcyclicGraph__GetData__0(void* info) {
+extern "C" void* vtkDirectedAcyclicGraph__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkDirectedAcyclicGraph::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkDirectedAcyclicGraph__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkDirectedAcyclicGraph__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkDirectedAcyclicGraph::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 

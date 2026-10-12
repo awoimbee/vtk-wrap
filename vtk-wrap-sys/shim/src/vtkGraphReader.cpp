@@ -6,41 +6,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphReader__vtk_wrap_new() { return static_cast<void*>(vtkGraphReader::New()); }
+extern "C" void* vtkGraphReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphReader::New()); }
 
-extern "C" int32_t vtkGraphReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkGraphReader__GetOutput__0(void* self) {
+extern "C" void* vtkGraphReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkGraphReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkGraphReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGraphReader*>(self)->GetOutput(idx));
 }
 
-extern "C" int32_t vtkGraphReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkGraphReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkGraphReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

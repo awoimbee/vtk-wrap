@@ -11,129 +11,129 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" void* vtkTetra__vtk_wrap_new() { return static_cast<void*>(vtkTetra::New()); }
+extern "C" void* vtkTetra__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTetra::New()); }
 
-extern "C" int32_t vtkTetra__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTetra__IsTypeOf__0(const char* type_) noexcept {
   return vtkTetra::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTetra__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTetra__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTetra__SafeDownCast__0(void* o) {
+extern "C" void* vtkTetra__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTetra::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTetra__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTetra__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTetra::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTetra__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTetra__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkTetra__GetCentroid__0(void* self, double* centroid) {
+extern "C" bool vtkTetra__GetCentroid__0(void* self, double* centroid) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetCentroid(centroid);
 }
 
-extern "C" bool vtkTetra__IsInsideOut__0(void* self) {
+extern "C" bool vtkTetra__IsInsideOut__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->IsInsideOut();
 }
 
-extern "C" int32_t vtkTetra__GetCellType__0(void* self) {
+extern "C" int32_t vtkTetra__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkTetra__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkTetra__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkTetra__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkTetra__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkTetra__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkTetra__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTetra*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkTetra__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkTetra__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTetra*>(self)->GetFace(faceId));
 }
 
-extern "C" void vtkTetra__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkTetra__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkTetra*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkTetra__Clip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkTetra__Clip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkTetra*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(connectivity), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkTetra__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkTetra__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int32_t vtkTetra__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkTetra__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" int32_t vtkTetra__GetParametricCenter__0(void* self, double* pcoords) {
+extern "C" int32_t vtkTetra__GetParametricCenter__0(void* self, double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetParametricCenter(pcoords);
 }
 
-extern "C" double vtkTetra__GetParametricDistance__0(void* self, const double* pcoords) {
+extern "C" double vtkTetra__GetParametricDistance__0(void* self, const double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkTetra*>(self)->GetParametricDistance(pcoords);
 }
 
-extern "C" void vtkTetra__TetraCenter__0(double* p1, double* p2, double* p3, double* p4, double* center) {
+extern "C" void vtkTetra__TetraCenter__0(double* p1, double* p2, double* p3, double* p4, double* center) noexcept {
   vtkTetra::TetraCenter(p1, p2, p3, p4, center);
 }
 
-extern "C" double vtkTetra__Circumsphere__0(double* x1, double* x2, double* x3, double* x4, double* center) {
+extern "C" double vtkTetra__Circumsphere__0(double* x1, double* x2, double* x3, double* x4, double* center) noexcept {
   return vtkTetra::Circumsphere(x1, x2, x3, x4, center);
 }
 
-extern "C" double vtkTetra__Insphere__0(double* p1, double* p2, double* p3, double* p4, double* center) {
+extern "C" double vtkTetra__Insphere__0(double* p1, double* p2, double* p3, double* p4, double* center) noexcept {
   return vtkTetra::Insphere(p1, p2, p3, p4, center);
 }
 
-extern "C" int32_t vtkTetra__BarycentricCoords__0(double* x, double* x1, double* x2, double* x3, double* x4, double* bcoords) {
+extern "C" int32_t vtkTetra__BarycentricCoords__0(double* x, double* x1, double* x2, double* x3, double* x4, double* bcoords) noexcept {
   return vtkTetra::BarycentricCoords(x, x1, x2, x3, x4, bcoords);
 }
 
-extern "C" double vtkTetra__ComputeVolume__0(double* p1, double* p2, double* p3, double* p4) {
+extern "C" double vtkTetra__ComputeVolume__0(double* p1, double* p2, double* p3, double* p4) noexcept {
   return vtkTetra::ComputeVolume(p1, p2, p3, p4);
 }
 
-extern "C" void vtkTetra__InterpolationFunctions__0(const double* pcoords, double* weights) {
+extern "C" void vtkTetra__InterpolationFunctions__0(const double* pcoords, double* weights) noexcept {
   vtkTetra::InterpolationFunctions(pcoords, weights);
 }
 
-extern "C" void vtkTetra__InterpolationDerivs__0(const double* pcoords, double* derivs) {
+extern "C" void vtkTetra__InterpolationDerivs__0(const double* pcoords, double* derivs) noexcept {
   vtkTetra::InterpolationDerivs(pcoords, derivs);
 }
 
-extern "C" void vtkTetra__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) {
+extern "C" void vtkTetra__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) noexcept {
   (void)self;
   static_cast<vtkTetra*>(self)->InterpolateFunctions(pcoords, weights);
 }
 
-extern "C" void vtkTetra__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) {
+extern "C" void vtkTetra__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) noexcept {
   (void)self;
   static_cast<vtkTetra*>(self)->InterpolateDerivs(pcoords, derivs);
 }

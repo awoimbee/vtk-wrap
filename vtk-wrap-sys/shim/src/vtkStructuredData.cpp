@@ -9,149 +9,155 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" int32_t vtkStructuredData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredData__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredData__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkStructuredData__SetDimensions__0(int32_t* inDim, int32_t* dim) {
+extern "C" int32_t vtkStructuredData__SetDimensions__0(int32_t* inDim, int32_t* dim) noexcept {
   return vtkStructuredData::SetDimensions(inDim, dim);
 }
 
-extern "C" int32_t vtkStructuredData__SetExtent__0(int32_t* inExt, int32_t* ext) {
+extern "C" int32_t vtkStructuredData__SetExtent__0(int32_t* inExt, int32_t* ext) noexcept {
   return vtkStructuredData::SetExtent(inExt, ext);
 }
 
-extern "C" int32_t vtkStructuredData__GetDataDescription__0(int32_t* dims) {
+extern "C" int32_t vtkStructuredData__GetDataDescription__0(int32_t* dims) noexcept {
   return vtkStructuredData::GetDataDescription(dims);
 }
 
-extern "C" int32_t vtkStructuredData__GetDataDescriptionFromExtent__0(int32_t* ext) {
+extern "C" int32_t vtkStructuredData__GetDataDescriptionFromExtent__0(int32_t* ext) noexcept {
   return vtkStructuredData::GetDataDescriptionFromExtent(ext);
 }
 
-extern "C" int32_t vtkStructuredData__GetDataDimension__0(int32_t dataDescription) {
+extern "C" int32_t vtkStructuredData__GetDataDimension__0(int32_t dataDescription) noexcept {
   return vtkStructuredData::GetDataDimension(dataDescription);
 }
 
-extern "C" int32_t vtkStructuredData__GetDataDimension__1(int32_t* ext) {
+extern "C" int32_t vtkStructuredData__GetDataDimension__1(int32_t* ext) noexcept {
   return vtkStructuredData::GetDataDimension(ext);
 }
 
-extern "C" int64_t vtkStructuredData__GetNumberOfPoints__0(const int32_t* ext, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__GetNumberOfPoints__0(const int32_t* ext, int32_t dataDescription) noexcept {
   return vtkStructuredData::GetNumberOfPoints(ext, dataDescription);
 }
 
-extern "C" int64_t vtkStructuredData__GetNumberOfCells__0(const int32_t* ext, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__GetNumberOfCells__0(const int32_t* ext, int32_t dataDescription) noexcept {
   return vtkStructuredData::GetNumberOfCells(ext, dataDescription);
 }
 
-extern "C" void vtkStructuredData__GetCellExtentFromPointExtent__0(const int32_t* pntExtent, int32_t* cellExtent, int32_t dataDescription) {
+extern "C" void vtkStructuredData__GetCellExtentFromPointExtent__0(const int32_t* pntExtent, int32_t* cellExtent, int32_t dataDescription) noexcept {
   vtkStructuredData::GetCellExtentFromPointExtent(pntExtent, cellExtent, dataDescription);
 }
 
-extern "C" void vtkStructuredData__GetDimensionsFromExtent__0(const int32_t* ext, int32_t* dims, int32_t dataDescription) {
+extern "C" void vtkStructuredData__GetDimensionsFromExtent__0(const int32_t* ext, int32_t* dims, int32_t dataDescription) noexcept {
   vtkStructuredData::GetDimensionsFromExtent(ext, dims, dataDescription);
 }
 
-extern "C" bool vtkStructuredData__IsPointVisible__0(int64_t cellId, void* ghosts) {
+extern "C" bool vtkStructuredData__IsPointVisible__0(int64_t cellId, void* ghosts) noexcept {
   return vtkStructuredData::IsPointVisible(cellId, static_cast<vtkUnsignedCharArray*>(ghosts));
 }
 
-extern "C" bool vtkStructuredData__IsCellVisible__0(int64_t cellId, int32_t* dimensions, int32_t dataDescription, void* cellGhostArray, void* pointGhostArray) {
+extern "C" bool vtkStructuredData__IsCellVisible__0(int64_t cellId, int32_t* dimensions, int32_t dataDescription, void* cellGhostArray, void* pointGhostArray) noexcept {
   return vtkStructuredData::IsCellVisible(cellId, dimensions, dataDescription, static_cast<vtkUnsignedCharArray*>(cellGhostArray), static_cast<vtkUnsignedCharArray*>(pointGhostArray));
 }
 
-extern "C" void vtkStructuredData__GetCellDimensionsFromExtent__0(const int32_t* ext, int32_t* celldims, int32_t dataDescription) {
+extern "C" void vtkStructuredData__GetCellDimensionsFromExtent__0(const int32_t* ext, int32_t* celldims, int32_t dataDescription) noexcept {
   vtkStructuredData::GetCellDimensionsFromExtent(ext, celldims, dataDescription);
 }
 
-extern "C" void vtkStructuredData__GetCellDimensionsFromPointDimensions__0(const int32_t* pntdims, int32_t* cellDims) {
+extern "C" void vtkStructuredData__GetCellDimensionsFromPointDimensions__0(const int32_t* pntdims, int32_t* cellDims) noexcept {
   vtkStructuredData::GetCellDimensionsFromPointDimensions(pntdims, cellDims);
 }
 
-extern "C" void vtkStructuredData__GetLocalStructuredCoordinates__0(const int32_t* ijk, const int32_t* ext, int32_t* lijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__GetLocalStructuredCoordinates__0(const int32_t* ijk, const int32_t* ext, int32_t* lijk, int32_t dataDescription) noexcept {
   vtkStructuredData::GetLocalStructuredCoordinates(ijk, ext, lijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__GetGlobalStructuredCoordinates__0(const int32_t* lijk, const int32_t* ext, int32_t* ijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__GetGlobalStructuredCoordinates__0(const int32_t* lijk, const int32_t* ext, int32_t* ijk, int32_t dataDescription) noexcept {
   vtkStructuredData::GetGlobalStructuredCoordinates(lijk, ext, ijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__GetCellPoints__0(int64_t cellId, void* ptIds, int32_t dataDescription, int32_t* dim) {
+extern "C" void vtkStructuredData__GetCellPoints__0(int64_t cellId, void* ptIds, int32_t dataDescription, int32_t* dim) noexcept {
   vtkStructuredData::GetCellPoints(cellId, static_cast<vtkIdList*>(ptIds), dataDescription, dim);
 }
 
-extern "C" void vtkStructuredData__GetPointCells__0(int64_t ptId, void* cellIds, int32_t* dim) {
+extern "C" void vtkStructuredData__GetPointCells__0(int64_t ptId, void* cellIds, int32_t* dim) noexcept {
   vtkStructuredData::GetPointCells(ptId, static_cast<vtkIdList*>(cellIds), dim);
 }
 
-extern "C" void vtkStructuredData__GetCellNeighbors__0(int64_t cellId, void* ptIds, void* cellIds, int32_t* dim) {
+extern "C" void vtkStructuredData__GetCellNeighbors__0(int64_t cellId, void* ptIds, void* cellIds, int32_t* dim) noexcept {
   vtkStructuredData::GetCellNeighbors(cellId, static_cast<vtkIdList*>(ptIds), static_cast<vtkIdList*>(cellIds), dim);
 }
 
-extern "C" void vtkStructuredData__GetCellNeighbors__1(int64_t cellId, void* ptIds, void* cellIds, int32_t* dim, int32_t* seedLoc) {
+extern "C" void vtkStructuredData__GetCellNeighbors__1(int64_t cellId, void* ptIds, void* cellIds, int32_t* dim, int32_t* seedLoc) noexcept {
   vtkStructuredData::GetCellNeighbors(cellId, static_cast<vtkIdList*>(ptIds), static_cast<vtkIdList*>(cellIds), dim, seedLoc);
 }
 
-extern "C" int64_t vtkStructuredData__ComputePointIdForExtent__0(const int32_t* extent, const int32_t* ijk, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__ComputePointIdForExtent__0(const int32_t* extent, const int32_t* ijk, int32_t dataDescription) noexcept {
   return vtkStructuredData::ComputePointIdForExtent(extent, ijk, dataDescription);
 }
 
-extern "C" int64_t vtkStructuredData__ComputeCellIdForExtent__0(const int32_t* extent, const int32_t* ijk, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__ComputeCellIdForExtent__0(const int32_t* extent, const int32_t* ijk, int32_t dataDescription) noexcept {
   return vtkStructuredData::ComputeCellIdForExtent(extent, ijk, dataDescription);
 }
 
-extern "C" int64_t vtkStructuredData__ComputePointId__0(const int32_t* dim, const int32_t* ijk, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__ComputePointId__0(const int32_t* dim, const int32_t* ijk, int32_t dataDescription) noexcept {
   return vtkStructuredData::ComputePointId(dim, ijk, dataDescription);
 }
 
-extern "C" int64_t vtkStructuredData__ComputeCellId__0(const int32_t* dim, const int32_t* ijk, int32_t dataDescription) {
+extern "C" int64_t vtkStructuredData__ComputeCellId__0(const int32_t* dim, const int32_t* ijk, int32_t dataDescription) noexcept {
   return vtkStructuredData::ComputeCellId(dim, ijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__ComputeCellStructuredCoordsForExtent__0(int64_t cellIdx, const int32_t* ext, int32_t* ijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__ComputeCellStructuredCoordsForExtent__0(int64_t cellIdx, const int32_t* ext, int32_t* ijk, int32_t dataDescription) noexcept {
   vtkStructuredData::ComputeCellStructuredCoordsForExtent(cellIdx, ext, ijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__ComputeCellStructuredCoords__0(int64_t cellId, const int32_t* dim, int32_t* ijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__ComputeCellStructuredCoords__0(int64_t cellId, const int32_t* dim, int32_t* ijk, int32_t dataDescription) noexcept {
   vtkStructuredData::ComputeCellStructuredCoords(cellId, dim, ijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__ComputeCellStructuredMinMaxCoords__0(int64_t cellId, const int32_t* dim, int32_t* ijkMin, int32_t* ijkMax, int32_t dataDescription) {
+extern "C" void vtkStructuredData__ComputeCellStructuredMinMaxCoords__0(int64_t cellId, const int32_t* dim, int32_t* ijkMin, int32_t* ijkMax, int32_t dataDescription) noexcept {
   vtkStructuredData::ComputeCellStructuredMinMaxCoords(cellId, dim, ijkMin, ijkMax, dataDescription);
 }
 
-extern "C" void vtkStructuredData__ComputePointStructuredCoordsForExtent__0(int64_t ptId, const int32_t* ext, int32_t* ijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__ComputePointStructuredCoordsForExtent__0(int64_t ptId, const int32_t* ext, int32_t* ijk, int32_t dataDescription) noexcept {
   vtkStructuredData::ComputePointStructuredCoordsForExtent(ptId, ext, ijk, dataDescription);
 }
 
-extern "C" void vtkStructuredData__ComputePointStructuredCoords__0(int64_t ptId, const int32_t* dim, int32_t* ijk, int32_t dataDescription) {
+extern "C" void vtkStructuredData__ComputePointStructuredCoords__0(int64_t ptId, const int32_t* dim, int32_t* ijk, int32_t dataDescription) noexcept {
   vtkStructuredData::ComputePointStructuredCoords(ptId, dim, ijk, dataDescription);
 }
 
-extern "C" void* vtkStructuredData__GetCellArray__0(int32_t* extent, bool usePixelVoxelOrientation) {
-  return static_cast<void*>((vtkStructuredData::GetCellArray(extent, usePixelVoxelOrientation)).GetPointer());
+extern "C" void* vtkStructuredData__GetCellArray__0(int32_t* extent, bool usePixelVoxelOrientation) noexcept {
+  auto result = vtkStructuredData::GetCellArray(extent, usePixelVoxelOrientation);
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void* vtkStructuredData__GetPoints__0(void* xCoords, void* yCoords, void* zCoords, int32_t* extent, double* dirMatrix) {
-  return static_cast<void*>((vtkStructuredData::GetPoints(static_cast<vtkDataArray*>(xCoords), static_cast<vtkDataArray*>(yCoords), static_cast<vtkDataArray*>(zCoords), extent, dirMatrix)).GetPointer());
+extern "C" void* vtkStructuredData__GetPoints__0(void* xCoords, void* yCoords, void* zCoords, int32_t* extent, double* dirMatrix) noexcept {
+  auto result = vtkStructuredData::GetPoints(static_cast<vtkDataArray*>(xCoords), static_cast<vtkDataArray*>(yCoords), static_cast<vtkDataArray*>(zCoords), extent, dirMatrix);
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 

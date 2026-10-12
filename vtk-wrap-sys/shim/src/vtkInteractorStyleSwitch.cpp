@@ -7,81 +7,81 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkInteractorStyleSwitch__vtk_wrap_new() { return static_cast<void*>(vtkInteractorStyleSwitch::New()); }
+extern "C" void* vtkInteractorStyleSwitch__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInteractorStyleSwitch::New()); }
 
-extern "C" int32_t vtkInteractorStyleSwitch__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorStyleSwitch__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorStyleSwitch::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorStyleSwitch__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorStyleSwitch__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleSwitch*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorStyleSwitch__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorStyleSwitch__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorStyleSwitch::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorStyleSwitch__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorStyleSwitch__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorStyleSwitch::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorStyleSwitch__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorStyleSwitch__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleSwitch*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetInteractor__0(void* self, void* iren) {
+extern "C" void vtkInteractorStyleSwitch__SetInteractor__0(void* self, void* iren) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetInteractor(static_cast<vtkRenderWindowInteractor*>(iren));
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetAutoAdjustCameraClippingRange__0(void* self, int32_t value) {
+extern "C" void vtkInteractorStyleSwitch__SetAutoAdjustCameraClippingRange__0(void* self, int32_t value) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetAutoAdjustCameraClippingRange(value);
 }
 
-extern "C" void* vtkInteractorStyleSwitch__GetCurrentStyle__0(void* self) {
+extern "C" void* vtkInteractorStyleSwitch__GetCurrentStyle__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInteractorStyleSwitch*>(self)->GetCurrentStyle());
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToJoystickActor__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToJoystickActor__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentStyleToJoystickActor();
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToJoystickCamera__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToJoystickCamera__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentStyleToJoystickCamera();
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToTrackballActor__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToTrackballActor__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentStyleToTrackballActor();
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToTrackballCamera__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToTrackballCamera__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentStyleToTrackballCamera();
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToMultiTouchCamera__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentStyleToMultiTouchCamera__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentStyleToMultiTouchCamera();
 }
 
-extern "C" void vtkInteractorStyleSwitch__OnChar__0(void* self) {
+extern "C" void vtkInteractorStyleSwitch__OnChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->OnChar();
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetDefaultRenderer__0(void* self, void* arg0) {
+extern "C" void vtkInteractorStyleSwitch__SetDefaultRenderer__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetDefaultRenderer(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void vtkInteractorStyleSwitch__SetCurrentRenderer__0(void* self, void* arg0) {
+extern "C" void vtkInteractorStyleSwitch__SetCurrentRenderer__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleSwitch*>(self)->SetCurrentRenderer(static_cast<vtkRenderer*>(arg0));
 }

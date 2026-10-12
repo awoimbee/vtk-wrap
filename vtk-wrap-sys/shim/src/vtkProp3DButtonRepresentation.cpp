@@ -9,116 +9,116 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkProp3DButtonRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkProp3DButtonRepresentation::New()); }
+extern "C" void* vtkProp3DButtonRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProp3DButtonRepresentation::New()); }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProp3DButtonRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkProp3DButtonRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProp3DButtonRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProp3DButtonRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkProp3DButtonRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProp3DButtonRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProp3DButtonRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProp3DButtonRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProp3DButtonRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProp3DButtonRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProp3DButtonRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProp3DButtonRepresentation__SetButtonProp__0(void* self, int32_t i, void* prop) {
+extern "C" void vtkProp3DButtonRepresentation__SetButtonProp__0(void* self, int32_t i, void* prop) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->SetButtonProp(i, static_cast<vtkProp3D*>(prop));
 }
 
-extern "C" void* vtkProp3DButtonRepresentation__GetButtonProp__0(void* self, int32_t i) {
+extern "C" void* vtkProp3DButtonRepresentation__GetButtonProp__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DButtonRepresentation*>(self)->GetButtonProp(i));
 }
 
-extern "C" void vtkProp3DButtonRepresentation__SetFollowCamera__0(void* self, int32_t _arg) {
+extern "C" void vtkProp3DButtonRepresentation__SetFollowCamera__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->SetFollowCamera(_arg);
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__GetFollowCamera__0(void* self) {
+extern "C" int32_t vtkProp3DButtonRepresentation__GetFollowCamera__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->GetFollowCamera();
 }
 
-extern "C" void vtkProp3DButtonRepresentation__FollowCameraOn__0(void* self) {
+extern "C" void vtkProp3DButtonRepresentation__FollowCameraOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->FollowCameraOn();
 }
 
-extern "C" void vtkProp3DButtonRepresentation__FollowCameraOff__0(void* self) {
+extern "C" void vtkProp3DButtonRepresentation__FollowCameraOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->FollowCameraOff();
 }
 
-extern "C" void vtkProp3DButtonRepresentation__SetState__0(void* self, int32_t state) {
+extern "C" void vtkProp3DButtonRepresentation__SetState__0(void* self, int32_t state) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->SetState(state);
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkProp3DButtonRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkProp3DButtonRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkProp3DButtonRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkProp3DButtonRepresentation__PlaceWidget__0(void* self, double* bounds) {
+extern "C" void vtkProp3DButtonRepresentation__PlaceWidget__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->PlaceWidget(bounds);
 }
 
-extern "C" void vtkProp3DButtonRepresentation__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkProp3DButtonRepresentation__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkProp3DButtonRepresentation__GetActors__0(void* self, void* pc) {
+extern "C" void vtkProp3DButtonRepresentation__GetActors__0(void* self, void* pc) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(pc));
 }
 
-extern "C" void vtkProp3DButtonRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkProp3DButtonRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkProp3DButtonRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__RenderVolumetricGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkProp3DButtonRepresentation__RenderVolumetricGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->RenderVolumetricGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkProp3DButtonRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProp3DButtonRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkProp3DButtonRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProp3DButtonRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkProp3DButtonRepresentation__RegisterPickers__0(void* self) {
+extern "C" void vtkProp3DButtonRepresentation__RegisterPickers__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DButtonRepresentation*>(self)->RegisterPickers();
 }

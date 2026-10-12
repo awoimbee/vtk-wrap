@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataSetTriangleFilter__vtk_wrap_new() { return static_cast<void*>(vtkDataSetTriangleFilter::New()); }
+extern "C" void* vtkDataSetTriangleFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetTriangleFilter::New()); }
 
-extern "C" int32_t vtkDataSetTriangleFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataSetTriangleFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataSetTriangleFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataSetTriangleFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataSetTriangleFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetTriangleFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataSetTriangleFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataSetTriangleFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataSetTriangleFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataSetTriangleFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataSetTriangleFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataSetTriangleFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataSetTriangleFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataSetTriangleFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetTriangleFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataSetTriangleFilter__SetTetrahedraOnly__0(void* self, int32_t _arg) {
+extern "C" void vtkDataSetTriangleFilter__SetTetrahedraOnly__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetTriangleFilter*>(self)->SetTetrahedraOnly(_arg);
 }
 
-extern "C" int32_t vtkDataSetTriangleFilter__GetTetrahedraOnly__0(void* self) {
+extern "C" int32_t vtkDataSetTriangleFilter__GetTetrahedraOnly__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetTriangleFilter*>(self)->GetTetrahedraOnly();
 }
 
-extern "C" void vtkDataSetTriangleFilter__TetrahedraOnlyOn__0(void* self) {
+extern "C" void vtkDataSetTriangleFilter__TetrahedraOnlyOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetTriangleFilter*>(self)->TetrahedraOnlyOn();
 }
 
-extern "C" void vtkDataSetTriangleFilter__TetrahedraOnlyOff__0(void* self) {
+extern "C" void vtkDataSetTriangleFilter__TetrahedraOnlyOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataSetTriangleFilter*>(self)->TetrahedraOnlyOff();
 }

@@ -6,35 +6,35 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkOpenGLBillboardTextActor3D__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLBillboardTextActor3D::New()); }
+extern "C" void* vtkOpenGLBillboardTextActor3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLBillboardTextActor3D::New()); }
 
-extern "C" void* vtkOpenGLBillboardTextActor3D__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLBillboardTextActor3D__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLBillboardTextActor3D::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLBillboardTextActor3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLBillboardTextActor3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLBillboardTextActor3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLBillboardTextActor3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLBillboardTextActor3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBillboardTextActor3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLBillboardTextActor3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLBillboardTextActor3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLBillboardTextActor3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLBillboardTextActor3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLBillboardTextActor3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLBillboardTextActor3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLBillboardTextActor3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLBillboardTextActor3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBillboardTextActor3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkOpenGLBillboardTextActor3D__RenderTranslucentPolygonalGeometry__0(void* self, void* vp) {
+extern "C" int32_t vtkOpenGLBillboardTextActor3D__RenderTranslucentPolygonalGeometry__0(void* self, void* vp) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBillboardTextActor3D*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(vp));
 }
