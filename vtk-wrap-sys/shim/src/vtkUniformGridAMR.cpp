@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUniformGridAMR__vtk_wrap_new() { return static_cast<void*>(vtkUniformGridAMR::New()); }
+extern "C" void* vtkUniformGridAMR__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniformGridAMR::New()); }
 
-extern "C" int32_t vtkUniformGridAMR__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniformGridAMR__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniformGridAMR::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniformGridAMR__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniformGridAMR__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMR*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniformGridAMR__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniformGridAMR__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniformGridAMR::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniformGridAMR__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniformGridAMR__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniformGridAMR::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniformGridAMR__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniformGridAMR__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMR*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkUniformGridAMR__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkUniformGridAMR__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMR*>(self)->GetDataObjectType();
 }

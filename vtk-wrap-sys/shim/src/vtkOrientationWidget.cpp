@@ -5,36 +5,36 @@
 #include "vtkOrientationRepresentation.h"
 #include <string>
 
-extern "C" void* vtkOrientationWidget__vtk_wrap_new() { return static_cast<void*>(vtkOrientationWidget::New()); }
+extern "C" void* vtkOrientationWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOrientationWidget::New()); }
 
-extern "C" int32_t vtkOrientationWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOrientationWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkOrientationWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOrientationWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOrientationWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrientationWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOrientationWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkOrientationWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOrientationWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOrientationWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOrientationWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOrientationWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOrientationWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOrientationWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrientationWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOrientationWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkOrientationWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrientationWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkOrientationWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkOrientationWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkOrientationWidget*>(self)->SetRepresentation(static_cast<vtkOrientationRepresentation*>(r));
 }

@@ -1,0 +1,15 @@
+error[E0133]: call to unsafe function `vtkObject::new` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_constructor.rs:4:13
+  |
+4 |     let _ = vtkObject::new();
+  |             ^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `vtkObject::try_new` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_constructor.rs:5:13
+  |
+5 |     let _ = vtkObject::try_new();
+  |             ^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior

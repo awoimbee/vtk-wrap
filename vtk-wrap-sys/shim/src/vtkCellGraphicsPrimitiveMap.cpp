@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellGraphicsPrimitiveMap__vtk_wrap_new() { return static_cast<void*>(vtkCellGraphicsPrimitiveMap::New()); }
+extern "C" void* vtkCellGraphicsPrimitiveMap__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellGraphicsPrimitiveMap::New()); }
 
-extern "C" int32_t vtkCellGraphicsPrimitiveMap__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGraphicsPrimitiveMap__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGraphicsPrimitiveMap::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGraphicsPrimitiveMap__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGraphicsPrimitiveMap__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGraphicsPrimitiveMap*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGraphicsPrimitiveMap__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGraphicsPrimitiveMap__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGraphicsPrimitiveMap::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGraphicsPrimitiveMap__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGraphicsPrimitiveMap__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGraphicsPrimitiveMap::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGraphicsPrimitiveMap__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGraphicsPrimitiveMap__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGraphicsPrimitiveMap*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

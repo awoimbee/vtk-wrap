@@ -4,126 +4,126 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkIdList__vtk_wrap_new() { return static_cast<void*>(vtkIdList::New()); }
+extern "C" void* vtkIdList__vtk_wrap_new() noexcept { return static_cast<void*>(vtkIdList::New()); }
 
-extern "C" int32_t vtkIdList__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkIdList__IsTypeOf__0(const char* type_) noexcept {
   return vtkIdList::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkIdList__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkIdList__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkIdList__SafeDownCast__0(void* o) {
+extern "C" void* vtkIdList__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkIdList::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkIdList__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkIdList__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkIdList::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkIdList__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkIdList__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkIdList__Initialize__0(void* self) {
+extern "C" void vtkIdList__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkIdList__Reserve__0(void* self, int64_t size) {
+extern "C" int32_t vtkIdList__Reserve__0(void* self, int64_t size) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->Reserve(size);
 }
 
-extern "C" int64_t vtkIdList__GetNumberOfIds__0(void* self) {
+extern "C" int64_t vtkIdList__GetNumberOfIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->GetNumberOfIds();
 }
 
-extern "C" int64_t vtkIdList__GetId__0(void* self, int64_t i) {
+extern "C" int64_t vtkIdList__GetId__0(void* self, int64_t i) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->GetId(i);
 }
 
-extern "C" int64_t vtkIdList__FindIdLocation__0(void* self, int64_t id) {
+extern "C" int64_t vtkIdList__FindIdLocation__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->FindIdLocation(id);
 }
 
-extern "C" void vtkIdList__SetNumberOfIds__0(void* self, int64_t number) {
+extern "C" void vtkIdList__SetNumberOfIds__0(void* self, int64_t number) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->SetNumberOfIds(number);
 }
 
-extern "C" void vtkIdList__SetId__0(void* self, int64_t i, int64_t id) {
+extern "C" void vtkIdList__SetId__0(void* self, int64_t i, int64_t id) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->SetId(i, id);
 }
 
-extern "C" void vtkIdList__InsertId__0(void* self, int64_t i, int64_t id) {
+extern "C" void vtkIdList__InsertId__0(void* self, int64_t i, int64_t id) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->InsertId(i, id);
 }
 
-extern "C" int64_t vtkIdList__InsertNextId__0(void* self, int64_t id) {
+extern "C" int64_t vtkIdList__InsertNextId__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->InsertNextId(id);
 }
 
-extern "C" int64_t vtkIdList__InsertUniqueId__0(void* self, int64_t id) {
+extern "C" int64_t vtkIdList__InsertUniqueId__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->InsertUniqueId(id);
 }
 
-extern "C" void vtkIdList__Sort__0(void* self) {
+extern "C" void vtkIdList__Sort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->Sort();
 }
 
-extern "C" void vtkIdList__Fill__0(void* self, int64_t value) {
+extern "C" void vtkIdList__Fill__0(void* self, int64_t value) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->Fill(value);
 }
 
-extern "C" void vtkIdList__Reset__0(void* self) {
+extern "C" void vtkIdList__Reset__0(void* self) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->Reset();
 }
 
-extern "C" void vtkIdList__Squeeze__0(void* self) {
+extern "C" void vtkIdList__Squeeze__0(void* self) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->Squeeze();
 }
 
-extern "C" void vtkIdList__ShallowCopy__0(void* self, void* list) {
+extern "C" void vtkIdList__ShallowCopy__0(void* self, void* list) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->ShallowCopy(static_cast<vtkIdList*>(list));
 }
 
-extern "C" void vtkIdList__DeepCopy__0(void* self, void* ids) {
+extern "C" void vtkIdList__DeepCopy__0(void* self, void* ids) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->DeepCopy(static_cast<vtkIdList*>(ids));
 }
 
-extern "C" void vtkIdList__DeleteId__0(void* self, int64_t id) {
+extern "C" void vtkIdList__DeleteId__0(void* self, int64_t id) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->DeleteId(id);
 }
 
-extern "C" int64_t vtkIdList__IsId__0(void* self, int64_t id) {
+extern "C" int64_t vtkIdList__IsId__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->IsId(id);
 }
 
-extern "C" void vtkIdList__IntersectWith__0(void* self, void* otherIds) {
+extern "C" void vtkIdList__IntersectWith__0(void* self, void* otherIds) noexcept {
   (void)self;
   static_cast<vtkIdList*>(self)->IntersectWith(static_cast<vtkIdList*>(otherIds));
 }
 
-extern "C" int64_t vtkIdList__GetCapacity__0(void* self) {
+extern "C" int64_t vtkIdList__GetCapacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkIdList*>(self)->GetCapacity();
 }

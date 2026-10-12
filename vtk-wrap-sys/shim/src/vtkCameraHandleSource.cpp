@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCameraHandleSource__vtk_wrap_new() { return static_cast<void*>(vtkCameraHandleSource::New()); }
+extern "C" void* vtkCameraHandleSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCameraHandleSource::New()); }
 
-extern "C" int32_t vtkCameraHandleSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCameraHandleSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkCameraHandleSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCameraHandleSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCameraHandleSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraHandleSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCameraHandleSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkCameraHandleSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCameraHandleSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCameraHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCameraHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCameraHandleSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCameraHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCameraHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCameraHandleSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCameraHandleSource__SetCamera__0(void* self, void* cam) {
+extern "C" void vtkCameraHandleSource__SetCamera__0(void* self, void* cam) noexcept {
   (void)self;
   static_cast<vtkCameraHandleSource*>(self)->SetCamera(static_cast<vtkCamera*>(cam));
 }
 
-extern "C" void vtkCameraHandleSource__SetPosition__0(void* self, double xPos, double yPos, double zPos) {
+extern "C" void vtkCameraHandleSource__SetPosition__0(void* self, double xPos, double yPos, double zPos) noexcept {
   (void)self;
   static_cast<vtkCameraHandleSource*>(self)->SetPosition(xPos, yPos, zPos);
 }
 
-extern "C" void vtkCameraHandleSource__SetDirection__0(void* self, double xTarget, double yTarget, double zTarget) {
+extern "C" void vtkCameraHandleSource__SetDirection__0(void* self, double xTarget, double yTarget, double zTarget) noexcept {
   (void)self;
   static_cast<vtkCameraHandleSource*>(self)->SetDirection(xTarget, yTarget, zTarget);
 }

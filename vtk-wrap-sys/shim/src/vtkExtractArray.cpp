@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExtractArray__vtk_wrap_new() { return static_cast<void*>(vtkExtractArray::New()); }
+extern "C" void* vtkExtractArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExtractArray::New()); }
 
-extern "C" int32_t vtkExtractArray__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExtractArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkExtractArray::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExtractArray__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExtractArray__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractArray*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExtractArray__SafeDownCast__0(void* o) {
+extern "C" void* vtkExtractArray__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExtractArray::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExtractArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExtractArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExtractArray::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExtractArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExtractArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractArray*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkExtractArray__GetIndex__0(void* self) {
+extern "C" int64_t vtkExtractArray__GetIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkExtractArray*>(self)->GetIndex();
 }
 
-extern "C" void vtkExtractArray__SetIndex__0(void* self, int64_t _arg) {
+extern "C" void vtkExtractArray__SetIndex__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkExtractArray*>(self)->SetIndex(_arg);
 }

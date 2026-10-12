@@ -5,66 +5,66 @@
 #include "vtkResourceStream.h"
 #include <string>
 
-extern "C" void* vtkHDRReader__vtk_wrap_new() { return static_cast<void*>(vtkHDRReader::New()); }
+extern "C" void* vtkHDRReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHDRReader::New()); }
 
-extern "C" int32_t vtkHDRReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHDRReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkHDRReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHDRReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHDRReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHDRReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkHDRReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHDRReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHDRReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHDRReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHDRReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHDRReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHDRReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkHDRReader__GetFormat__0(void* self) {
+extern "C" int32_t vtkHDRReader__GetFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetFormat();
 }
 
-extern "C" double vtkHDRReader__GetGamma__0(void* self) {
+extern "C" double vtkHDRReader__GetGamma__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetGamma();
 }
 
-extern "C" double vtkHDRReader__GetExposure__0(void* self) {
+extern "C" double vtkHDRReader__GetExposure__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetExposure();
 }
 
-extern "C" double vtkHDRReader__GetPixelAspect__0(void* self) {
+extern "C" double vtkHDRReader__GetPixelAspect__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetPixelAspect();
 }
 
-extern "C" int32_t vtkHDRReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkHDRReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" int32_t vtkHDRReader__CanReadFile__1(void* self, void* stream) {
+extern "C" int32_t vtkHDRReader__CanReadFile__1(void* self, void* stream) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" const char* vtkHDRReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkHDRReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkHDRReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkHDRReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHDRReader*>(self)->GetDescriptiveName();
 }

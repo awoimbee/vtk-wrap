@@ -6,61 +6,61 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTrackballMoveActor__vtk_wrap_new() { return static_cast<void*>(vtkTrackballMoveActor::New()); }
+extern "C" void* vtkTrackballMoveActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrackballMoveActor::New()); }
 
-extern "C" int32_t vtkTrackballMoveActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrackballMoveActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrackballMoveActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrackballMoveActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrackballMoveActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballMoveActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrackballMoveActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrackballMoveActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrackballMoveActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrackballMoveActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrackballMoveActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrackballMoveActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrackballMoveActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrackballMoveActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballMoveActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTrackballMoveActor__StartInteraction__0(void* self) {
+extern "C" void vtkTrackballMoveActor__StartInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->StartInteraction();
 }
 
-extern "C" void vtkTrackballMoveActor__EndInteraction__0(void* self) {
+extern "C" void vtkTrackballMoveActor__EndInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->EndInteraction();
 }
 
-extern "C" void vtkTrackballMoveActor__OnKeyDown__0(void* self, void* rwi) {
+extern "C" void vtkTrackballMoveActor__OnKeyDown__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->OnKeyDown(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballMoveActor__OnKeyUp__0(void* self, void* rwi) {
+extern "C" void vtkTrackballMoveActor__OnKeyUp__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->OnKeyUp(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballMoveActor__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballMoveActor__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->OnButtonUp(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballMoveActor__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* iren) {
+extern "C" void vtkTrackballMoveActor__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* iren) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(iren));
 }
 
-extern "C" void vtkTrackballMoveActor__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* iren) {
+extern "C" void vtkTrackballMoveActor__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* iren) noexcept {
   (void)self;
   static_cast<vtkTrackballMoveActor*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(iren));
 }

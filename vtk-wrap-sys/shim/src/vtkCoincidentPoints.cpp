@@ -6,61 +6,61 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkCoincidentPoints__vtk_wrap_new() { return static_cast<void*>(vtkCoincidentPoints::New()); }
+extern "C" void* vtkCoincidentPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCoincidentPoints::New()); }
 
-extern "C" int32_t vtkCoincidentPoints__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCoincidentPoints__IsTypeOf__0(const char* type_) noexcept {
   return vtkCoincidentPoints::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCoincidentPoints__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCoincidentPoints__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCoincidentPoints*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCoincidentPoints__SafeDownCast__0(void* o) {
+extern "C" void* vtkCoincidentPoints__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCoincidentPoints::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCoincidentPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCoincidentPoints__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCoincidentPoints::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCoincidentPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCoincidentPoints__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCoincidentPoints*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCoincidentPoints__AddPoint__0(void* self, int64_t Id, const double* point) {
+extern "C" void vtkCoincidentPoints__AddPoint__0(void* self, int64_t Id, const double* point) noexcept {
   (void)self;
   static_cast<vtkCoincidentPoints*>(self)->AddPoint(Id, point);
 }
 
-extern "C" void* vtkCoincidentPoints__GetCoincidentPointIds__0(void* self, const double* point) {
+extern "C" void* vtkCoincidentPoints__GetCoincidentPointIds__0(void* self, const double* point) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCoincidentPoints*>(self)->GetCoincidentPointIds(point));
 }
 
-extern "C" void* vtkCoincidentPoints__GetNextCoincidentPointIds__0(void* self) {
+extern "C" void* vtkCoincidentPoints__GetNextCoincidentPointIds__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCoincidentPoints*>(self)->GetNextCoincidentPointIds());
 }
 
-extern "C" void vtkCoincidentPoints__InitTraversal__0(void* self) {
+extern "C" void vtkCoincidentPoints__InitTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCoincidentPoints*>(self)->InitTraversal();
 }
 
-extern "C" void vtkCoincidentPoints__RemoveNonCoincidentPoints__0(void* self) {
+extern "C" void vtkCoincidentPoints__RemoveNonCoincidentPoints__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCoincidentPoints*>(self)->RemoveNonCoincidentPoints();
 }
 
-extern "C" void vtkCoincidentPoints__Clear__0(void* self) {
+extern "C" void vtkCoincidentPoints__Clear__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCoincidentPoints*>(self)->Clear();
 }
 
-extern "C" void vtkCoincidentPoints__SpiralPoints__0(int64_t num, void* offsets) {
+extern "C" void vtkCoincidentPoints__SpiralPoints__0(int64_t num, void* offsets) noexcept {
   vtkCoincidentPoints::SpiralPoints(num, static_cast<vtkPoints*>(offsets));
 }
 

@@ -4,7 +4,7 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
-description = "Safe Rust bindings to the Visualization Toolkit (VTK)"
+description = "Unsafe Rust bindings to VTK"
 
 [lib]
 name = "vtk_wrap"
@@ -21,6 +21,9 @@ vtk-wrap-sys.workspace = true
 # and FiltersCore (the pipeline filters), plus the modules they require.
 [features]
 default = ["vtkCommonCore", "vtkCommonDataModel", "vtkFiltersCore"]
+# Deliberately unchecked native diagnostics; never enabled by default.
+crash-hunt = []
+raw-rendering-tests = []
 vtkCommonColor = ["vtk-wrap-sys/vtkCommonColor", "vtkCommonCore", "vtkCommonDataModel"]
 vtkCommonCore = ["vtk-wrap-sys/vtkCommonCore"]
 vtkCommonDataModel = ["vtk-wrap-sys/vtkCommonDataModel", "vtkCommonCore", "vtkCommonMath", "vtkCommonMisc", "vtkCommonSystem", "vtkCommonTransforms"]
@@ -69,7 +72,7 @@ required-features = ["vtkIOCore"]
 
 [[example]]
 name = "diag"
-required-features = ["vtkFiltersSources", "vtkRenderingCore"]
+required-features = ["vtkFiltersSources", "vtkRenderingOpenGL2"]
 
 # Derived from the generated `vtk-wrap-gen/tests/smoke.rs`.
 
@@ -78,6 +81,7 @@ required-features = ["vtkFiltersSources", "vtkRenderingCore"]
 [[test]]
 name = "smoke"
 harness = false
+required-features = ["crash-hunt"]
 
 [[test]]
 name = "pipeline"
@@ -92,4 +96,7 @@ required-features = ["vtkFiltersSources"]
 [[test]]
 name = "rendering"
 harness = false
-required-features = ["vtkRenderingOpenGL2"]
+required-features = ["vtkRenderingOpenGL2", "raw-rendering-tests"]
+
+[dev-dependencies]
+trybuild = "1"

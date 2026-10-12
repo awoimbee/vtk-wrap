@@ -5,36 +5,36 @@
 #include "vtkOverlappingAMR.h"
 #include <string>
 
-extern "C" void* vtkOverlappingAMRAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkOverlappingAMRAlgorithm::New()); }
+extern "C" void* vtkOverlappingAMRAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOverlappingAMRAlgorithm::New()); }
 
-extern "C" int32_t vtkOverlappingAMRAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOverlappingAMRAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkOverlappingAMRAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOverlappingAMRAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOverlappingAMRAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverlappingAMRAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOverlappingAMRAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkOverlappingAMRAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOverlappingAMRAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOverlappingAMRAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOverlappingAMRAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOverlappingAMRAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOverlappingAMRAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOverlappingAMRAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverlappingAMRAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOverlappingAMRAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkOverlappingAMRAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOverlappingAMRAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkOverlappingAMRAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkOverlappingAMRAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOverlappingAMRAlgorithm*>(self)->GetOutput(arg0));
 }

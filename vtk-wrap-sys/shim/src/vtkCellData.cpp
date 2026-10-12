@@ -4,30 +4,30 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellData__vtk_wrap_new() { return static_cast<void*>(vtkCellData::New()); }
+extern "C" void* vtkCellData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellData::New()); }
 
-extern "C" void* vtkCellData__ExtendedNew__0() {
+extern "C" void* vtkCellData__ExtendedNew__0() noexcept {
   return static_cast<void*>(vtkCellData::ExtendedNew());
 }
 
-extern "C" int32_t vtkCellData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellData__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellData__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

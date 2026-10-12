@@ -5,46 +5,46 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkViewDependentErrorMetric__vtk_wrap_new() { return static_cast<void*>(vtkViewDependentErrorMetric::New()); }
+extern "C" void* vtkViewDependentErrorMetric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkViewDependentErrorMetric::New()); }
 
-extern "C" int32_t vtkViewDependentErrorMetric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkViewDependentErrorMetric__IsTypeOf__0(const char* type_) noexcept {
   return vtkViewDependentErrorMetric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkViewDependentErrorMetric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkViewDependentErrorMetric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkViewDependentErrorMetric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkViewDependentErrorMetric__SafeDownCast__0(void* o) {
+extern "C" void* vtkViewDependentErrorMetric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkViewDependentErrorMetric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkViewDependentErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkViewDependentErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkViewDependentErrorMetric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkViewDependentErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkViewDependentErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkViewDependentErrorMetric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkViewDependentErrorMetric__GetPixelTolerance__0(void* self) {
+extern "C" double vtkViewDependentErrorMetric__GetPixelTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewDependentErrorMetric*>(self)->GetPixelTolerance();
 }
 
-extern "C" void vtkViewDependentErrorMetric__SetPixelTolerance__0(void* self, double value) {
+extern "C" void vtkViewDependentErrorMetric__SetPixelTolerance__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkViewDependentErrorMetric*>(self)->SetPixelTolerance(value);
 }
 
-extern "C" void* vtkViewDependentErrorMetric__GetViewport__0(void* self) {
+extern "C" void* vtkViewDependentErrorMetric__GetViewport__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewDependentErrorMetric*>(self)->GetViewport());
 }
 
-extern "C" void vtkViewDependentErrorMetric__SetViewport__0(void* self, void* viewport) {
+extern "C" void vtkViewDependentErrorMetric__SetViewport__0(void* self, void* viewport) noexcept {
   (void)self;
   static_cast<vtkViewDependentErrorMetric*>(self)->SetViewport(static_cast<vtkViewport*>(viewport));
 }

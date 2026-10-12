@@ -13,127 +13,127 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" int32_t vtkHigherOrderTetra__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHigherOrderTetra__IsTypeOf__0(const char* type_) noexcept {
   return vtkHigherOrderTetra::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHigherOrderTetra__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHigherOrderTetra__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHigherOrderTetra__SafeDownCast__0(void* o) {
+extern "C" void* vtkHigherOrderTetra__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHigherOrderTetra::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHigherOrderTetra__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHigherOrderTetra__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHigherOrderTetra::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHigherOrderTetra__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHigherOrderTetra__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkHigherOrderTetra__GetCellType__0(void* self) {
+extern "C" int32_t vtkHigherOrderTetra__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkHigherOrderTetra__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__RequiresInitialization__0(void* self) {
+extern "C" int32_t vtkHigherOrderTetra__RequiresInitialization__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->RequiresInitialization();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkHigherOrderTetra__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkHigherOrderTetra__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkHigherOrderTetra__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkHigherOrderTetra__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderTetra*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkHigherOrderTetra__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkHigherOrderTetra__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderTetra*>(self)->GetFace(faceId));
 }
 
-extern "C" void vtkHigherOrderTetra__Initialize__0(void* self) {
+extern "C" void vtkHigherOrderTetra__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderTetra*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkHigherOrderTetra__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" void vtkHigherOrderTetra__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkHigherOrderTetra__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkHigherOrderTetra*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkHigherOrderTetra__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkHigherOrderTetra__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkHigherOrderTetra*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkHigherOrderTetra__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkHigherOrderTetra__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" void vtkHigherOrderTetra__SetParametricCoords__0(void* self) {
+extern "C" void vtkHigherOrderTetra__SetParametricCoords__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderTetra*>(self)->SetParametricCoords();
 }
 
-extern "C" int32_t vtkHigherOrderTetra__GetParametricCenter__0(void* self, double* pcoords) {
+extern "C" int32_t vtkHigherOrderTetra__GetParametricCenter__0(void* self, double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetParametricCenter(pcoords);
 }
 
-extern "C" double vtkHigherOrderTetra__GetParametricDistance__0(void* self, const double* pcoords) {
+extern "C" double vtkHigherOrderTetra__GetParametricDistance__0(void* self, const double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetParametricDistance(pcoords);
 }
 
-extern "C" int64_t vtkHigherOrderTetra__GetOrder__0(void* self) {
+extern "C" int64_t vtkHigherOrderTetra__GetOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->GetOrder();
 }
 
-extern "C" int64_t vtkHigherOrderTetra__ComputeOrder__0(void* self) {
+extern "C" int64_t vtkHigherOrderTetra__ComputeOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderTetra*>(self)->ComputeOrder();
 }
 
-extern "C" int64_t vtkHigherOrderTetra__ComputeOrder__1(int64_t nPoints) {
+extern "C" int64_t vtkHigherOrderTetra__ComputeOrder__1(int64_t nPoints) noexcept {
   return vtkHigherOrderTetra::ComputeOrder(nPoints);
 }
 
-extern "C" bool vtkHigherOrderTetra__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) {
+extern "C" bool vtkHigherOrderTetra__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) noexcept {
   return vtkHigherOrderTetra::PointCountSupportsUniformOrder(pointsPerCell);
 }
 
-extern "C" void* vtkHigherOrderTetra__GetEdgeCell__0(void* self) {
+extern "C" void* vtkHigherOrderTetra__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderTetra*>(self)->GetEdgeCell());
 }
 
-extern "C" void* vtkHigherOrderTetra__GetFaceCell__0(void* self) {
+extern "C" void* vtkHigherOrderTetra__GetFaceCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderTetra*>(self)->GetFaceCell());
 }

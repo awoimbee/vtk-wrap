@@ -11,146 +11,146 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkVolume__vtk_wrap_new() { return static_cast<void*>(vtkVolume::New()); }
+extern "C" void* vtkVolume__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolume::New()); }
 
-extern "C" int32_t vtkVolume__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolume__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolume::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolume__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolume__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolume__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolume__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolume::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolume__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolume__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolume::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolume__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolume__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolume__SetMapper__0(void* self, void* mapper) {
+extern "C" void vtkVolume__SetMapper__0(void* self, void* mapper) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->SetMapper(static_cast<vtkAbstractVolumeMapper*>(mapper));
 }
 
-extern "C" void* vtkVolume__GetMapper__0(void* self) {
+extern "C" void* vtkVolume__GetMapper__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolume*>(self)->GetMapper());
 }
 
-extern "C" void vtkVolume__SetProperty__0(void* self, void* property) {
+extern "C" void vtkVolume__SetProperty__0(void* self, void* property) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->SetProperty(static_cast<vtkVolumeProperty*>(property));
 }
 
-extern "C" void* vtkVolume__GetProperty__0(void* self) {
+extern "C" void* vtkVolume__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolume*>(self)->GetProperty());
 }
 
-extern "C" void vtkVolume__GetVolumes__0(void* self, void* vc) {
+extern "C" void vtkVolume__GetVolumes__0(void* self, void* vc) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->GetVolumes(static_cast<vtkPropCollection*>(vc));
 }
 
-extern "C" void vtkVolume__Update__0(void* self) {
+extern "C" void vtkVolume__Update__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->Update();
 }
 
-extern "C" void vtkVolume__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkVolume__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->GetBounds(bounds);
 }
 
-extern "C" double vtkVolume__GetMinXBound__0(void* self) {
+extern "C" double vtkVolume__GetMinXBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMinXBound();
 }
 
-extern "C" double vtkVolume__GetMaxXBound__0(void* self) {
+extern "C" double vtkVolume__GetMaxXBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMaxXBound();
 }
 
-extern "C" double vtkVolume__GetMinYBound__0(void* self) {
+extern "C" double vtkVolume__GetMinYBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMinYBound();
 }
 
-extern "C" double vtkVolume__GetMaxYBound__0(void* self) {
+extern "C" double vtkVolume__GetMaxYBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMaxYBound();
 }
 
-extern "C" double vtkVolume__GetMinZBound__0(void* self) {
+extern "C" double vtkVolume__GetMinZBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMinZBound();
 }
 
-extern "C" double vtkVolume__GetMaxZBound__0(void* self) {
+extern "C" double vtkVolume__GetMaxZBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMaxZBound();
 }
 
-extern "C" unsigned long vtkVolume__GetMTime__0(void* self) {
+extern "C" unsigned long vtkVolume__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetMTime();
 }
 
-extern "C" unsigned long vtkVolume__GetRedrawMTime__0(void* self) {
+extern "C" unsigned long vtkVolume__GetRedrawMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetRedrawMTime();
 }
 
-extern "C" void vtkVolume__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkVolume__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" int32_t vtkVolume__RenderVolumetricGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkVolume__RenderVolumetricGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->RenderVolumetricGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void vtkVolume__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkVolume__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" float vtkVolume__GetGradientOpacityConstant__0(void* self, int32_t arg0) {
+extern "C" float vtkVolume__GetGradientOpacityConstant__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetGradientOpacityConstant(arg0);
 }
 
-extern "C" float vtkVolume__GetGradientOpacityConstant__1(void* self) {
+extern "C" float vtkVolume__GetGradientOpacityConstant__1(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetGradientOpacityConstant();
 }
 
-extern "C" float vtkVolume__GetArraySize__0(void* self) {
+extern "C" float vtkVolume__GetArraySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetArraySize();
 }
 
-extern "C" void vtkVolume__UpdateTransferFunctions__0(void* self, void* ren) {
+extern "C" void vtkVolume__UpdateTransferFunctions__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->UpdateTransferFunctions(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkVolume__UpdateScalarOpacityforSampleSize__0(void* self, void* ren, float sample_distance) {
+extern "C" void vtkVolume__UpdateScalarOpacityforSampleSize__0(void* self, void* ren, float sample_distance) noexcept {
   (void)self;
   static_cast<vtkVolume*>(self)->UpdateScalarOpacityforSampleSize(static_cast<vtkRenderer*>(ren), sample_distance);
 }
 
-extern "C" bool vtkVolume__GetSupportsSelection__0(void* self) {
+extern "C" bool vtkVolume__GetSupportsSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolume*>(self)->GetSupportsSelection();
 }

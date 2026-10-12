@@ -10,171 +10,171 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkMagnifierRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkMagnifierRepresentation::New()); }
+extern "C" void* vtkMagnifierRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMagnifierRepresentation::New()); }
 
-extern "C" int32_t vtkMagnifierRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMagnifierRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkMagnifierRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMagnifierRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMagnifierRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkMagnifierRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMagnifierRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMagnifierRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMagnifierRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMagnifierRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMagnifierRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMagnifierRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMagnifierRepresentation__SetRenderer__0(void* self, void* ren) {
+extern "C" void vtkMagnifierRepresentation__SetRenderer__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetRenderer(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkMagnifierRepresentation__SetMagnificationFactor__0(void* self, double _arg) {
+extern "C" void vtkMagnifierRepresentation__SetMagnificationFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetMagnificationFactor(_arg);
 }
 
-extern "C" double vtkMagnifierRepresentation__GetMagnificationFactorMinValue__0(void* self) {
+extern "C" double vtkMagnifierRepresentation__GetMagnificationFactorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetMagnificationFactorMinValue();
 }
 
-extern "C" double vtkMagnifierRepresentation__GetMagnificationFactorMaxValue__0(void* self) {
+extern "C" double vtkMagnifierRepresentation__GetMagnificationFactorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetMagnificationFactorMaxValue();
 }
 
-extern "C" double vtkMagnifierRepresentation__GetMagnificationFactor__0(void* self) {
+extern "C" double vtkMagnifierRepresentation__GetMagnificationFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetMagnificationFactor();
 }
 
-extern "C" void vtkMagnifierRepresentation__AddViewProp__0(void* self, void* arg0) {
+extern "C" void vtkMagnifierRepresentation__AddViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->AddViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void* vtkMagnifierRepresentation__GetViewProps__0(void* self) {
+extern "C" void* vtkMagnifierRepresentation__GetViewProps__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMagnifierRepresentation*>(self)->GetViewProps());
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__HasViewProp__0(void* self, void* arg0) {
+extern "C" int32_t vtkMagnifierRepresentation__HasViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->HasViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkMagnifierRepresentation__RemoveViewProp__0(void* self, void* arg0) {
+extern "C" void vtkMagnifierRepresentation__RemoveViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->RemoveViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkMagnifierRepresentation__RemoveAllViewProps__0(void* self) {
+extern "C" void vtkMagnifierRepresentation__RemoveAllViewProps__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->RemoveAllViewProps();
 }
 
-extern "C" void vtkMagnifierRepresentation__SetSize__0(void* self, int32_t _arg1, int32_t _arg2) {
+extern "C" void vtkMagnifierRepresentation__SetSize__0(void* self, int32_t _arg1, int32_t _arg2) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetSize(_arg1, _arg2);
 }
 
-extern "C" void vtkMagnifierRepresentation__SetSize__1(void* self, const int32_t* _arg) {
+extern "C" void vtkMagnifierRepresentation__SetSize__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetSize(_arg);
 }
 
-extern "C" void vtkMagnifierRepresentation__SetBorder__0(void* self, bool _arg) {
+extern "C" void vtkMagnifierRepresentation__SetBorder__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetBorder(_arg);
 }
 
-extern "C" bool vtkMagnifierRepresentation__GetBorder__0(void* self) {
+extern "C" bool vtkMagnifierRepresentation__GetBorder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetBorder();
 }
 
-extern "C" void vtkMagnifierRepresentation__BorderOn__0(void* self) {
+extern "C" void vtkMagnifierRepresentation__BorderOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->BorderOn();
 }
 
-extern "C" void vtkMagnifierRepresentation__BorderOff__0(void* self) {
+extern "C" void vtkMagnifierRepresentation__BorderOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->BorderOff();
 }
 
-extern "C" void* vtkMagnifierRepresentation__GetBorderProperty__0(void* self) {
+extern "C" void* vtkMagnifierRepresentation__GetBorderProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMagnifierRepresentation*>(self)->GetBorderProperty());
 }
 
-extern "C" void vtkMagnifierRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkMagnifierRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkMagnifierRepresentation__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkMagnifierRepresentation__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" void vtkMagnifierRepresentation__SetInteractionState__0(void* self, int32_t _arg) {
+extern "C" void vtkMagnifierRepresentation__SetInteractionState__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->SetInteractionState(_arg);
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__GetInteractionStateMinValue__0(void* self) {
+extern "C" int32_t vtkMagnifierRepresentation__GetInteractionStateMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetInteractionStateMinValue();
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__GetInteractionStateMaxValue__0(void* self) {
+extern "C" int32_t vtkMagnifierRepresentation__GetInteractionStateMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetInteractionStateMaxValue();
 }
 
-extern "C" void* vtkMagnifierRepresentation__GetMagnificationRenderer__0(void* self) {
+extern "C" void* vtkMagnifierRepresentation__GetMagnificationRenderer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMagnifierRepresentation*>(self)->GetMagnificationRenderer());
 }
 
-extern "C" void vtkMagnifierRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkMagnifierRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMagnifierRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkMagnifierRepresentation__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkMagnifierRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkMagnifierRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkMagnifierRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkMagnifierRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" unsigned long vtkMagnifierRepresentation__GetMTime__0(void* self) {
+extern "C" unsigned long vtkMagnifierRepresentation__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMagnifierRepresentation*>(self)->GetMTime();
 }

@@ -4,156 +4,156 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkVoxelModeller__vtk_wrap_new() { return static_cast<void*>(vtkVoxelModeller::New()); }
+extern "C" void* vtkVoxelModeller__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVoxelModeller::New()); }
 
-extern "C" int32_t vtkVoxelModeller__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVoxelModeller__IsTypeOf__0(const char* type_) noexcept {
   return vtkVoxelModeller::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVoxelModeller__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVoxelModeller__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVoxelModeller__SafeDownCast__0(void* o) {
+extern "C" void* vtkVoxelModeller__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVoxelModeller::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVoxelModeller__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVoxelModeller__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVoxelModeller::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVoxelModeller__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVoxelModeller__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkVoxelModeller__ComputeModelBounds__0(void* self, double* origin, double* spacing) {
+extern "C" double vtkVoxelModeller__ComputeModelBounds__0(void* self, double* origin, double* spacing) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->ComputeModelBounds(origin, spacing);
 }
 
-extern "C" void vtkVoxelModeller__SetSampleDimensions__0(void* self, int32_t i, int32_t j, int32_t k) {
+extern "C" void vtkVoxelModeller__SetSampleDimensions__0(void* self, int32_t i, int32_t j, int32_t k) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetSampleDimensions(i, j, k);
 }
 
-extern "C" void vtkVoxelModeller__SetSampleDimensions__1(void* self, int32_t* dim) {
+extern "C" void vtkVoxelModeller__SetSampleDimensions__1(void* self, int32_t* dim) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetSampleDimensions(dim);
 }
 
-extern "C" void vtkVoxelModeller__SetMaximumDistance__0(void* self, double _arg) {
+extern "C" void vtkVoxelModeller__SetMaximumDistance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetMaximumDistance(_arg);
 }
 
-extern "C" double vtkVoxelModeller__GetMaximumDistanceMinValue__0(void* self) {
+extern "C" double vtkVoxelModeller__GetMaximumDistanceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetMaximumDistanceMinValue();
 }
 
-extern "C" double vtkVoxelModeller__GetMaximumDistanceMaxValue__0(void* self) {
+extern "C" double vtkVoxelModeller__GetMaximumDistanceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetMaximumDistanceMaxValue();
 }
 
-extern "C" double vtkVoxelModeller__GetMaximumDistance__0(void* self) {
+extern "C" double vtkVoxelModeller__GetMaximumDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetMaximumDistance();
 }
 
-extern "C" void vtkVoxelModeller__SetModelBounds__0(void* self, const double* bounds) {
+extern "C" void vtkVoxelModeller__SetModelBounds__0(void* self, const double* bounds) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetModelBounds(bounds);
 }
 
-extern "C" void vtkVoxelModeller__SetModelBounds__1(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) {
+extern "C" void vtkVoxelModeller__SetModelBounds__1(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetModelBounds(xmin, xmax, ymin, ymax, zmin, zmax);
 }
 
-extern "C" void vtkVoxelModeller__SetScalarType__0(void* self, int32_t _arg) {
+extern "C" void vtkVoxelModeller__SetScalarType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarType(_arg);
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToFloat__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToFloat__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToFloat();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToDouble__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToDouble__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToDouble();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToInt__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToInt();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedInt__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToUnsignedInt();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToLong__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToLong();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedLong__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToUnsignedLong();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToShort__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToShort();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedShort__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToUnsignedShort();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedChar__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToUnsignedChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToUnsignedChar();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToChar__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToChar();
 }
 
-extern "C" void vtkVoxelModeller__SetScalarTypeToBit__0(void* self) {
+extern "C" void vtkVoxelModeller__SetScalarTypeToBit__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetScalarTypeToBit();
 }
 
-extern "C" int32_t vtkVoxelModeller__GetScalarType__0(void* self) {
+extern "C" int32_t vtkVoxelModeller__GetScalarType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetScalarType();
 }
 
-extern "C" void vtkVoxelModeller__SetForegroundValue__0(void* self, double _arg) {
+extern "C" void vtkVoxelModeller__SetForegroundValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetForegroundValue(_arg);
 }
 
-extern "C" double vtkVoxelModeller__GetForegroundValue__0(void* self) {
+extern "C" double vtkVoxelModeller__GetForegroundValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetForegroundValue();
 }
 
-extern "C" void vtkVoxelModeller__SetBackgroundValue__0(void* self, double _arg) {
+extern "C" void vtkVoxelModeller__SetBackgroundValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkVoxelModeller*>(self)->SetBackgroundValue(_arg);
 }
 
-extern "C" double vtkVoxelModeller__GetBackgroundValue__0(void* self) {
+extern "C" double vtkVoxelModeller__GetBackgroundValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVoxelModeller*>(self)->GetBackgroundValue();
 }

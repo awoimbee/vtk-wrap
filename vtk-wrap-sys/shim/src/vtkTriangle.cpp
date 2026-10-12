@@ -12,158 +12,158 @@
 #include "vtkQuadric.h"
 #include <string>
 
-extern "C" void* vtkTriangle__vtk_wrap_new() { return static_cast<void*>(vtkTriangle::New()); }
+extern "C" void* vtkTriangle__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTriangle::New()); }
 
-extern "C" int32_t vtkTriangle__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTriangle__IsTypeOf__0(const char* type_) noexcept {
   return vtkTriangle::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTriangle__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTriangle__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTriangle__SafeDownCast__0(void* o) {
+extern "C" void* vtkTriangle__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTriangle::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTriangle__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTriangle__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTriangle::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTriangle__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTriangle__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTriangle__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkTriangle__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTriangle*>(self)->GetEdge(edgeId));
 }
 
-extern "C" int32_t vtkTriangle__GetCellType__0(void* self) {
+extern "C" int32_t vtkTriangle__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkTriangle__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkTriangle__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkTriangle__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkTriangle__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkTriangle__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkTriangle__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkTriangle__GetFace__0(void* self, int32_t arg0) {
+extern "C" void* vtkTriangle__GetFace__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTriangle*>(self)->GetFace(arg0));
 }
 
-extern "C" int32_t vtkTriangle__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkTriangle__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" void vtkTriangle__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkTriangle__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkTriangle*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" int32_t vtkTriangle__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkTriangle__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" double vtkTriangle__ComputeArea__0(void* self) {
+extern "C" double vtkTriangle__ComputeArea__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->ComputeArea();
 }
 
-extern "C" void vtkTriangle__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkTriangle__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkTriangle*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" void vtkTriangle__InterpolationFunctions__0(const double* pcoords, double* sf) {
+extern "C" void vtkTriangle__InterpolationFunctions__0(const double* pcoords, double* sf) noexcept {
   vtkTriangle::InterpolationFunctions(pcoords, sf);
 }
 
-extern "C" void vtkTriangle__InterpolationDerivs__0(const double* pcoords, double* derivs) {
+extern "C" void vtkTriangle__InterpolationDerivs__0(const double* pcoords, double* derivs) noexcept {
   vtkTriangle::InterpolationDerivs(pcoords, derivs);
 }
 
-extern "C" void vtkTriangle__InterpolateFunctions__0(void* self, const double* pcoords, double* sf) {
+extern "C" void vtkTriangle__InterpolateFunctions__0(void* self, const double* pcoords, double* sf) noexcept {
   (void)self;
   static_cast<vtkTriangle*>(self)->InterpolateFunctions(pcoords, sf);
 }
 
-extern "C" void vtkTriangle__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) {
+extern "C" void vtkTriangle__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) noexcept {
   (void)self;
   static_cast<vtkTriangle*>(self)->InterpolateDerivs(pcoords, derivs);
 }
 
-extern "C" int32_t vtkTriangle__GetParametricCenter__0(void* self, double* pcoords) {
+extern "C" int32_t vtkTriangle__GetParametricCenter__0(void* self, double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetParametricCenter(pcoords);
 }
 
-extern "C" double vtkTriangle__GetParametricDistance__0(void* self, const double* pcoords) {
+extern "C" double vtkTriangle__GetParametricDistance__0(void* self, const double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkTriangle*>(self)->GetParametricDistance(pcoords);
 }
 
-extern "C" void vtkTriangle__TriangleCenter__0(const double* p1, const double* p2, const double* p3, double* center) {
+extern "C" void vtkTriangle__TriangleCenter__0(const double* p1, const double* p2, const double* p3, double* center) noexcept {
   vtkTriangle::TriangleCenter(p1, p2, p3, center);
 }
 
-extern "C" double vtkTriangle__TriangleArea__0(const double* p1, const double* p2, const double* p3) {
+extern "C" double vtkTriangle__TriangleArea__0(const double* p1, const double* p2, const double* p3) noexcept {
   return vtkTriangle::TriangleArea(p1, p2, p3);
 }
 
-extern "C" double vtkTriangle__Circumcircle__0(const double* p1, const double* p2, const double* p3, double* center) {
+extern "C" double vtkTriangle__Circumcircle__0(const double* p1, const double* p2, const double* p3, double* center) noexcept {
   return vtkTriangle::Circumcircle(p1, p2, p3, center);
 }
 
-extern "C" int32_t vtkTriangle__BarycentricCoords__0(const double* x, const double* x1, const double* x2, const double* x3, double* bcoords) {
+extern "C" int32_t vtkTriangle__BarycentricCoords__0(const double* x, const double* x1, const double* x2, const double* x3, double* bcoords) noexcept {
   return vtkTriangle::BarycentricCoords(x, x1, x2, x3, bcoords);
 }
 
-extern "C" int32_t vtkTriangle__ProjectTo2D__0(const double* x1, const double* x2, const double* x3, double* v1, double* v2, double* v3) {
+extern "C" int32_t vtkTriangle__ProjectTo2D__0(const double* x1, const double* x2, const double* x3, double* v1, double* v2, double* v3) noexcept {
   return vtkTriangle::ProjectTo2D(x1, x2, x3, v1, v2, v3);
 }
 
-extern "C" void vtkTriangle__ComputeNormal__0(const double* v1, const double* v2, const double* v3, double* n) {
+extern "C" void vtkTriangle__ComputeNormal__0(const double* v1, const double* v2, const double* v3, double* n) noexcept {
   vtkTriangle::ComputeNormal(v1, v2, v3, n);
 }
 
-extern "C" void vtkTriangle__ComputeNormalDirection__0(const double* v1, const double* v2, const double* v3, double* n) {
+extern "C" void vtkTriangle__ComputeNormalDirection__0(const double* v1, const double* v2, const double* v3, double* n) noexcept {
   vtkTriangle::ComputeNormalDirection(v1, v2, v3, n);
 }
 
-extern "C" int32_t vtkTriangle__TrianglesIntersect__0(const double* p1, const double* q1, const double* r1, const double* p2, const double* q2, const double* r2) {
+extern "C" int32_t vtkTriangle__TrianglesIntersect__0(const double* p1, const double* q1, const double* r1, const double* p2, const double* q2, const double* r2) noexcept {
   return vtkTriangle::TrianglesIntersect(p1, q1, r1, p2, q2, r2);
 }
 
-extern "C" int32_t vtkTriangle__PointInTriangle__0(const double* x, const double* x1, const double* x2, const double* x3, double tol2) {
+extern "C" int32_t vtkTriangle__PointInTriangle__0(const double* x, const double* x1, const double* x2, const double* x3, double tol2) noexcept {
   return vtkTriangle::PointInTriangle(x, x1, x2, x3, tol2);
 }
 
-extern "C" void vtkTriangle__ComputeQuadric__0(const double* x1, const double* x2, const double* x3, void* quadric) {
+extern "C" void vtkTriangle__ComputeQuadric__0(const double* x1, const double* x2, const double* x3, void* quadric) noexcept {
   vtkTriangle::ComputeQuadric(x1, x2, x3, static_cast<vtkQuadric*>(quadric));
 }
 
-extern "C" double vtkTriangle__DistanceToTriangle__0(const double* x, const double* p1, const double* p2, const double* p3) {
+extern "C" double vtkTriangle__DistanceToTriangle__0(const double* x, const double* p1, const double* p2, const double* p3) noexcept {
   return vtkTriangle::DistanceToTriangle(x, p1, p2, p3);
 }
 
-extern "C" double vtkTriangle__SolidAngle__0(const double* x, const double* p1, const double* p2, const double* p3) {
+extern "C" double vtkTriangle__SolidAngle__0(const double* x, const double* p1, const double* p2, const double* p3) noexcept {
   return vtkTriangle::SolidAngle(x, p1, p2, p3);
 }
 

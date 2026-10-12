@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFFT__vtk_wrap_new() { return static_cast<void*>(vtkFFT::New()); }
+extern "C" void* vtkFFT__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFFT::New()); }
 
-extern "C" int32_t vtkFFT__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFFT__IsTypeOf__0(const char* type_) noexcept {
   return vtkFFT::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFFT__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFFT__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFFT*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFFT__SafeDownCast__0(void* o) {
+extern "C" void* vtkFFT__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFFT::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFFT__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFFT__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFFT::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFFT__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFFT__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFFT*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

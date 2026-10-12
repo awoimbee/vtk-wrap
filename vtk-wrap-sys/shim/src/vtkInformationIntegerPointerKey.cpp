@@ -5,34 +5,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationIntegerPointerKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationIntegerPointerKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationIntegerPointerKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationIntegerPointerKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationIntegerPointerKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerPointerKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationIntegerPointerKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationIntegerPointerKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationIntegerPointerKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationIntegerPointerKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationIntegerPointerKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationIntegerPointerKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationIntegerPointerKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationIntegerPointerKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerPointerKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkInformationIntegerPointerKey__Length__0(void* self, void* info) {
+extern "C" int32_t vtkInformationIntegerPointerKey__Length__0(void* self, void* info) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerPointerKey*>(self)->Length(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationIntegerPointerKey__ShallowCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationIntegerPointerKey__ShallowCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerPointerKey*>(self)->ShallowCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }

@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTextRendererStringToImage__vtk_wrap_new() { return static_cast<void*>(vtkTextRendererStringToImage::New()); }
+extern "C" void* vtkTextRendererStringToImage__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTextRendererStringToImage::New()); }
 
-extern "C" int32_t vtkTextRendererStringToImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextRendererStringToImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextRendererStringToImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextRendererStringToImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextRendererStringToImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRendererStringToImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextRendererStringToImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextRendererStringToImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextRendererStringToImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextRendererStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextRendererStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextRendererStringToImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextRendererStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextRendererStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRendererStringToImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTextRendererStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) {
+extern "C" void vtkTextRendererStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) noexcept {
   (void)self;
   static_cast<vtkTextRendererStringToImage*>(self)->SetScaleToPowerOfTwo(scale);
 }
 
-extern "C" void vtkTextRendererStringToImage__DeepCopy__0(void* self, void* utility) {
+extern "C" void vtkTextRendererStringToImage__DeepCopy__0(void* self, void* utility) noexcept {
   (void)self;
   static_cast<vtkTextRendererStringToImage*>(self)->DeepCopy(static_cast<vtkTextRendererStringToImage*>(utility));
 }

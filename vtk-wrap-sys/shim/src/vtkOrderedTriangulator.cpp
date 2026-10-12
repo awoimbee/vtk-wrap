@@ -14,186 +14,186 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkOrderedTriangulator__vtk_wrap_new() { return static_cast<void*>(vtkOrderedTriangulator::New()); }
+extern "C" void* vtkOrderedTriangulator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOrderedTriangulator::New()); }
 
-extern "C" int32_t vtkOrderedTriangulator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOrderedTriangulator__IsTypeOf__0(const char* type_) noexcept {
   return vtkOrderedTriangulator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOrderedTriangulator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOrderedTriangulator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOrderedTriangulator__SafeDownCast__0(void* o) {
+extern "C" void* vtkOrderedTriangulator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOrderedTriangulator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOrderedTriangulator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOrderedTriangulator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOrderedTriangulator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOrderedTriangulator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOrderedTriangulator__InitTriangulation__0(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, int32_t numPts) {
+extern "C" void vtkOrderedTriangulator__InitTriangulation__0(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, int32_t numPts) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->InitTriangulation(xmin, xmax, ymin, ymax, zmin, zmax, numPts);
 }
 
-extern "C" void vtkOrderedTriangulator__InitTriangulation__1(void* self, double* bounds, int32_t numPts) {
+extern "C" void vtkOrderedTriangulator__InitTriangulation__1(void* self, double* bounds, int32_t numPts) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->InitTriangulation(bounds, numPts);
 }
 
-extern "C" int64_t vtkOrderedTriangulator__InsertPoint__0(void* self, int64_t id, double* x, double* p, int32_t type_) {
+extern "C" int64_t vtkOrderedTriangulator__InsertPoint__0(void* self, int64_t id, double* x, double* p, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->InsertPoint(id, x, p, type_);
 }
 
-extern "C" int64_t vtkOrderedTriangulator__InsertPoint__1(void* self, int64_t id, int64_t sortid, double* x, double* p, int32_t type_) {
+extern "C" int64_t vtkOrderedTriangulator__InsertPoint__1(void* self, int64_t id, int64_t sortid, double* x, double* p, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->InsertPoint(id, sortid, x, p, type_);
 }
 
-extern "C" int64_t vtkOrderedTriangulator__InsertPoint__2(void* self, int64_t id, int64_t sortid, int64_t sortid2, double* x, double* p, int32_t type_) {
+extern "C" int64_t vtkOrderedTriangulator__InsertPoint__2(void* self, int64_t id, int64_t sortid, int64_t sortid2, double* x, double* p, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->InsertPoint(id, sortid, sortid2, x, p, type_);
 }
 
-extern "C" void vtkOrderedTriangulator__Triangulate__0(void* self) {
+extern "C" void vtkOrderedTriangulator__Triangulate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->Triangulate();
 }
 
-extern "C" void vtkOrderedTriangulator__TemplateTriangulate__0(void* self, int32_t cellType, int32_t numPts, int32_t numEdges) {
+extern "C" void vtkOrderedTriangulator__TemplateTriangulate__0(void* self, int32_t cellType, int32_t numPts, int32_t numEdges) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->TemplateTriangulate(cellType, numPts, numEdges);
 }
 
-extern "C" void vtkOrderedTriangulator__UpdatePointType__0(void* self, int64_t internalId, int32_t type_) {
+extern "C" void vtkOrderedTriangulator__UpdatePointType__0(void* self, int64_t internalId, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->UpdatePointType(internalId, type_);
 }
 
-extern "C" int64_t vtkOrderedTriangulator__GetPointId__0(void* self, int64_t internalId) {
+extern "C" int64_t vtkOrderedTriangulator__GetPointId__0(void* self, int64_t internalId) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetPointId(internalId);
 }
 
-extern "C" int32_t vtkOrderedTriangulator__GetNumberOfPoints__0(void* self) {
+extern "C" int32_t vtkOrderedTriangulator__GetNumberOfPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetNumberOfPoints();
 }
 
-extern "C" void vtkOrderedTriangulator__SetUseTemplates__0(void* self, int32_t _arg) {
+extern "C" void vtkOrderedTriangulator__SetUseTemplates__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->SetUseTemplates(_arg);
 }
 
-extern "C" int32_t vtkOrderedTriangulator__GetUseTemplates__0(void* self) {
+extern "C" int32_t vtkOrderedTriangulator__GetUseTemplates__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetUseTemplates();
 }
 
-extern "C" void vtkOrderedTriangulator__UseTemplatesOn__0(void* self) {
+extern "C" void vtkOrderedTriangulator__UseTemplatesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->UseTemplatesOn();
 }
 
-extern "C" void vtkOrderedTriangulator__UseTemplatesOff__0(void* self) {
+extern "C" void vtkOrderedTriangulator__UseTemplatesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->UseTemplatesOff();
 }
 
-extern "C" void vtkOrderedTriangulator__SetPreSorted__0(void* self, int32_t _arg) {
+extern "C" void vtkOrderedTriangulator__SetPreSorted__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->SetPreSorted(_arg);
 }
 
-extern "C" int32_t vtkOrderedTriangulator__GetPreSorted__0(void* self) {
+extern "C" int32_t vtkOrderedTriangulator__GetPreSorted__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetPreSorted();
 }
 
-extern "C" void vtkOrderedTriangulator__PreSortedOn__0(void* self) {
+extern "C" void vtkOrderedTriangulator__PreSortedOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->PreSortedOn();
 }
 
-extern "C" void vtkOrderedTriangulator__PreSortedOff__0(void* self) {
+extern "C" void vtkOrderedTriangulator__PreSortedOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->PreSortedOff();
 }
 
-extern "C" void vtkOrderedTriangulator__SetUseTwoSortIds__0(void* self, int32_t _arg) {
+extern "C" void vtkOrderedTriangulator__SetUseTwoSortIds__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->SetUseTwoSortIds(_arg);
 }
 
-extern "C" int32_t vtkOrderedTriangulator__GetUseTwoSortIds__0(void* self) {
+extern "C" int32_t vtkOrderedTriangulator__GetUseTwoSortIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetUseTwoSortIds();
 }
 
-extern "C" void vtkOrderedTriangulator__UseTwoSortIdsOn__0(void* self) {
+extern "C" void vtkOrderedTriangulator__UseTwoSortIdsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->UseTwoSortIdsOn();
 }
 
-extern "C" void vtkOrderedTriangulator__UseTwoSortIdsOff__0(void* self) {
+extern "C" void vtkOrderedTriangulator__UseTwoSortIdsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->UseTwoSortIdsOff();
 }
 
-extern "C" int64_t vtkOrderedTriangulator__GetTetras__0(void* self, int32_t classification, void* ugrid) {
+extern "C" int64_t vtkOrderedTriangulator__GetTetras__0(void* self, int32_t classification, void* ugrid) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetTetras(classification, static_cast<vtkUnstructuredGrid*>(ugrid));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTetras__0(void* self, int32_t classification, void* ugrid) {
+extern "C" int64_t vtkOrderedTriangulator__AddTetras__0(void* self, int32_t classification, void* ugrid) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTetras(classification, static_cast<vtkUnstructuredGrid*>(ugrid));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTetras__1(void* self, int32_t classification, void* connectivity) {
+extern "C" int64_t vtkOrderedTriangulator__AddTetras__1(void* self, int32_t classification, void* connectivity) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTetras(classification, static_cast<vtkCellArray*>(connectivity));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTetras__2(void* self, int32_t classification, void* locator, void* outConnectivity, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" int64_t vtkOrderedTriangulator__AddTetras__2(void* self, int32_t classification, void* locator, void* outConnectivity, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTetras(classification, static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(outConnectivity), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTetras__3(void* self, int32_t classification, void* ptIds, void* pts) {
+extern "C" int64_t vtkOrderedTriangulator__AddTetras__3(void* self, int32_t classification, void* ptIds, void* pts) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTetras(classification, static_cast<vtkIdList*>(ptIds), static_cast<vtkPoints*>(pts));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTetras__4(void* self, int32_t classification, void* ptIds) {
+extern "C" int64_t vtkOrderedTriangulator__AddTetras__4(void* self, int32_t classification, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTetras(classification, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTriangles__0(void* self, void* connectivity) {
+extern "C" int64_t vtkOrderedTriangulator__AddTriangles__0(void* self, void* connectivity) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTriangles(static_cast<vtkCellArray*>(connectivity));
 }
 
-extern "C" int64_t vtkOrderedTriangulator__AddTriangles__1(void* self, int64_t id, void* connectivity) {
+extern "C" int64_t vtkOrderedTriangulator__AddTriangles__1(void* self, int64_t id, void* connectivity) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->AddTriangles(id, static_cast<vtkCellArray*>(connectivity));
 }
 
-extern "C" void vtkOrderedTriangulator__InitTetraTraversal__0(void* self) {
+extern "C" void vtkOrderedTriangulator__InitTetraTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOrderedTriangulator*>(self)->InitTetraTraversal();
 }
 
-extern "C" int32_t vtkOrderedTriangulator__GetNextTetra__0(void* self, int32_t classification, void* tet, void* cellScalars, void* tetScalars) {
+extern "C" int32_t vtkOrderedTriangulator__GetNextTetra__0(void* self, int32_t classification, void* tet, void* cellScalars, void* tetScalars) noexcept {
   (void)self;
   return static_cast<vtkOrderedTriangulator*>(self)->GetNextTetra(classification, static_cast<vtkTetra*>(tet), static_cast<vtkDataArray*>(cellScalars), static_cast<vtkDoubleArray*>(tetScalars));
 }

@@ -5,49 +5,49 @@
 #include "vtkStreamingTessellator.h"
 #include <string>
 
-extern "C" int32_t vtkEdgeSubdivisionCriterion__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEdgeSubdivisionCriterion__IsTypeOf__0(const char* type_) noexcept {
   return vtkEdgeSubdivisionCriterion::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEdgeSubdivisionCriterion__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEdgeSubdivisionCriterion__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEdgeSubdivisionCriterion__SafeDownCast__0(void* o) {
+extern "C" void* vtkEdgeSubdivisionCriterion__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEdgeSubdivisionCriterion::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEdgeSubdivisionCriterion__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEdgeSubdivisionCriterion__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEdgeSubdivisionCriterion::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEdgeSubdivisionCriterion__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEdgeSubdivisionCriterion__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkEdgeSubdivisionCriterion__PassField__0(void* self, int32_t sourceId, int32_t sourceSize, void* t) {
+extern "C" int32_t vtkEdgeSubdivisionCriterion__PassField__0(void* self, int32_t sourceId, int32_t sourceSize, void* t) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->PassField(sourceId, sourceSize, static_cast<vtkStreamingTessellator*>(t));
 }
 
-extern "C" void vtkEdgeSubdivisionCriterion__ResetFieldList__0(void* self) {
+extern "C" void vtkEdgeSubdivisionCriterion__ResetFieldList__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEdgeSubdivisionCriterion*>(self)->ResetFieldList();
 }
 
-extern "C" bool vtkEdgeSubdivisionCriterion__DontPassField__0(void* self, int32_t sourceId, void* t) {
+extern "C" bool vtkEdgeSubdivisionCriterion__DontPassField__0(void* self, int32_t sourceId, void* t) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->DontPassField(sourceId, static_cast<vtkStreamingTessellator*>(t));
 }
 
-extern "C" int32_t vtkEdgeSubdivisionCriterion__GetOutputField__0(void* self, int32_t fieldId) {
+extern "C" int32_t vtkEdgeSubdivisionCriterion__GetOutputField__0(void* self, int32_t fieldId) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->GetOutputField(fieldId);
 }
 
-extern "C" int32_t vtkEdgeSubdivisionCriterion__GetNumberOfFields__0(void* self) {
+extern "C" int32_t vtkEdgeSubdivisionCriterion__GetNumberOfFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEdgeSubdivisionCriterion*>(self)->GetNumberOfFields();
 }

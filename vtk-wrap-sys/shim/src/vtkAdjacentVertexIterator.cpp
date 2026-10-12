@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAdjacentVertexIterator__vtk_wrap_new() { return static_cast<void*>(vtkAdjacentVertexIterator::New()); }
+extern "C" void* vtkAdjacentVertexIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAdjacentVertexIterator::New()); }
 
-extern "C" int32_t vtkAdjacentVertexIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAdjacentVertexIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkAdjacentVertexIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAdjacentVertexIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAdjacentVertexIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAdjacentVertexIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAdjacentVertexIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkAdjacentVertexIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAdjacentVertexIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAdjacentVertexIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAdjacentVertexIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAdjacentVertexIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAdjacentVertexIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAdjacentVertexIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAdjacentVertexIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAdjacentVertexIterator__Initialize__0(void* self, void* g, int64_t v) {
+extern "C" void vtkAdjacentVertexIterator__Initialize__0(void* self, void* g, int64_t v) noexcept {
   (void)self;
   static_cast<vtkAdjacentVertexIterator*>(self)->Initialize(static_cast<vtkGraph*>(g), v);
 }
 
-extern "C" void* vtkAdjacentVertexIterator__GetGraph__0(void* self) {
+extern "C" void* vtkAdjacentVertexIterator__GetGraph__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAdjacentVertexIterator*>(self)->GetGraph());
 }
 
-extern "C" int64_t vtkAdjacentVertexIterator__GetVertex__0(void* self) {
+extern "C" int64_t vtkAdjacentVertexIterator__GetVertex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAdjacentVertexIterator*>(self)->GetVertex();
 }
 
-extern "C" int64_t vtkAdjacentVertexIterator__Next__0(void* self) {
+extern "C" int64_t vtkAdjacentVertexIterator__Next__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAdjacentVertexIterator*>(self)->Next();
 }
 
-extern "C" bool vtkAdjacentVertexIterator__HasNext__0(void* self) {
+extern "C" bool vtkAdjacentVertexIterator__HasNext__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAdjacentVertexIterator*>(self)->HasNext();
 }

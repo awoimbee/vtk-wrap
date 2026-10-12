@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkQuadratureSchemeDictionaryGenerator__vtk_wrap_new() { return static_cast<void*>(vtkQuadratureSchemeDictionaryGenerator::New()); }
+extern "C" void* vtkQuadratureSchemeDictionaryGenerator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuadratureSchemeDictionaryGenerator::New()); }
 
-extern "C" int32_t vtkQuadratureSchemeDictionaryGenerator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuadratureSchemeDictionaryGenerator__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuadratureSchemeDictionaryGenerator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuadratureSchemeDictionaryGenerator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuadratureSchemeDictionaryGenerator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadratureSchemeDictionaryGenerator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuadratureSchemeDictionaryGenerator__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuadratureSchemeDictionaryGenerator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuadratureSchemeDictionaryGenerator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuadratureSchemeDictionaryGenerator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuadratureSchemeDictionaryGenerator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuadratureSchemeDictionaryGenerator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuadratureSchemeDictionaryGenerator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuadratureSchemeDictionaryGenerator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadratureSchemeDictionaryGenerator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

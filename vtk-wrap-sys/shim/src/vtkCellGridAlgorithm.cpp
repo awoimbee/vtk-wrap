@@ -7,86 +7,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellGridAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkCellGridAlgorithm::New()); }
+extern "C" void* vtkCellGridAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellGridAlgorithm::New()); }
 
-extern "C" int32_t vtkCellGridAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkCellGridAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkCellGridAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkCellGridAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkCellGridAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetInput__0(void* self) {
+extern "C" void* vtkCellGridAlgorithm__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetInput());
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkCellGridAlgorithm__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetInput(port));
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetPolyDataInput__0(void* self, int32_t port) {
+extern "C" void* vtkCellGridAlgorithm__GetPolyDataInput__0(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetPolyDataInput(port));
 }
 
-extern "C" void vtkCellGridAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkCellGridAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkCellGridAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkCellGridAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkCellGridAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkCellGridAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkCellGridAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkCellGridAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkCellGridAlgorithm__SetInputAttributeToProcess__0(void* self, int32_t idx, int32_t port, int32_t connection, const char* name) {
+extern "C" void vtkCellGridAlgorithm__SetInputAttributeToProcess__0(void* self, int32_t idx, int32_t port, int32_t connection, const char* name) noexcept {
   (void)self;
   static_cast<vtkCellGridAlgorithm*>(self)->SetInputAttributeToProcess(idx, port, connection, name);
 }
 
-extern "C" void* vtkCellGridAlgorithm__GetInputCellAttributeToProcess__0(void* self, int32_t idx, void* input) {
+extern "C" void* vtkCellGridAlgorithm__GetInputCellAttributeToProcess__0(void* self, int32_t idx, void* input) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellGridAlgorithm*>(self)->GetInputCellAttributeToProcess(idx, static_cast<vtkCellGrid*>(input)));
 }

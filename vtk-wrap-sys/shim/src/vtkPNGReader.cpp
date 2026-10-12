@@ -6,96 +6,96 @@
 #include "vtkStringArray.h"
 #include <string>
 
-extern "C" void* vtkPNGReader__vtk_wrap_new() { return static_cast<void*>(vtkPNGReader::New()); }
+extern "C" void* vtkPNGReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPNGReader::New()); }
 
-extern "C" int32_t vtkPNGReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPNGReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkPNGReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPNGReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPNGReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPNGReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkPNGReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPNGReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPNGReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPNGReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPNGReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPNGReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPNGReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPNGReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkPNGReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" int32_t vtkPNGReader__CanReadFile__1(void* self, void* stream) {
+extern "C" int32_t vtkPNGReader__CanReadFile__1(void* self, void* stream) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" const char* vtkPNGReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkPNGReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkPNGReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkPNGReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetDescriptiveName();
 }
 
-extern "C" void vtkPNGReader__GetTextChunks__0(void* self, const char* key, int32_t* beginEndIndex) {
+extern "C" void vtkPNGReader__GetTextChunks__0(void* self, const char* key, int32_t* beginEndIndex) noexcept {
   (void)self;
   static_cast<vtkPNGReader*>(self)->GetTextChunks(key, beginEndIndex);
 }
 
-extern "C" const char* vtkPNGReader__GetTextKey__0(void* self, int32_t index) {
+extern "C" const char* vtkPNGReader__GetTextKey__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetTextKey(index);
 }
 
-extern "C" void* vtkPNGReader__GetTextKeys__0(void* self) {
+extern "C" void* vtkPNGReader__GetTextKeys__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPNGReader*>(self)->GetTextKeys());
 }
 
-extern "C" const char* vtkPNGReader__GetTextValue__0(void* self, int32_t index) {
+extern "C" const char* vtkPNGReader__GetTextValue__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetTextValue(index);
 }
 
-extern "C" void* vtkPNGReader__GetTextValues__0(void* self) {
+extern "C" void* vtkPNGReader__GetTextValues__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPNGReader*>(self)->GetTextValues());
 }
 
-extern "C" size_t vtkPNGReader__GetNumberOfTextChunks__0(void* self) {
+extern "C" size_t vtkPNGReader__GetNumberOfTextChunks__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetNumberOfTextChunks();
 }
 
-extern "C" void vtkPNGReader__SetReadSpacingFromFile__0(void* self, bool _arg) {
+extern "C" void vtkPNGReader__SetReadSpacingFromFile__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPNGReader*>(self)->SetReadSpacingFromFile(_arg);
 }
 
-extern "C" bool vtkPNGReader__GetReadSpacingFromFile__0(void* self) {
+extern "C" bool vtkPNGReader__GetReadSpacingFromFile__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPNGReader*>(self)->GetReadSpacingFromFile();
 }
 
-extern "C" void vtkPNGReader__ReadSpacingFromFileOn__0(void* self) {
+extern "C" void vtkPNGReader__ReadSpacingFromFileOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPNGReader*>(self)->ReadSpacingFromFileOn();
 }
 
-extern "C" void vtkPNGReader__ReadSpacingFromFileOff__0(void* self) {
+extern "C" void vtkPNGReader__ReadSpacingFromFileOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPNGReader*>(self)->ReadSpacingFromFileOff();
 }

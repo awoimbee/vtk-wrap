@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageImportExecutive__vtk_wrap_new() { return static_cast<void*>(vtkImageImportExecutive::New()); }
+extern "C" void* vtkImageImportExecutive__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageImportExecutive::New()); }
 
-extern "C" int32_t vtkImageImportExecutive__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageImportExecutive__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageImportExecutive::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageImportExecutive__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageImportExecutive__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageImportExecutive*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageImportExecutive__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageImportExecutive__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageImportExecutive::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageImportExecutive__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageImportExecutive__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageImportExecutive::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageImportExecutive__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageImportExecutive__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageImportExecutive*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

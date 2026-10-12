@@ -6,61 +6,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkSSAAPass__vtk_wrap_new() { return static_cast<void*>(vtkSSAAPass::New()); }
+extern "C" void* vtkSSAAPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSSAAPass::New()); }
 
-extern "C" int32_t vtkSSAAPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSSAAPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkSSAAPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSSAAPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSSAAPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSSAAPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSSAAPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkSSAAPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSSAAPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSSAAPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSSAAPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSSAAPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSSAAPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSSAAPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSSAAPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSSAAPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkSSAAPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkSSAAPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkSSAAPass__GetDelegatePass__0(void* self) {
+extern "C" void* vtkSSAAPass__GetDelegatePass__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSSAAPass*>(self)->GetDelegatePass());
 }
 
-extern "C" void vtkSSAAPass__SetDelegatePass__0(void* self, void* delegatePass) {
+extern "C" void vtkSSAAPass__SetDelegatePass__0(void* self, void* delegatePass) noexcept {
   (void)self;
   static_cast<vtkSSAAPass*>(self)->SetDelegatePass(static_cast<vtkRenderPass*>(delegatePass));
 }
 
-extern "C" void vtkSSAAPass__SetColorFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkSSAAPass__SetColorFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSSAAPass*>(self)->SetColorFormat(_arg);
 }
 
-extern "C" int32_t vtkSSAAPass__GetColorFormat__0(void* self) {
+extern "C" int32_t vtkSSAAPass__GetColorFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAAPass*>(self)->GetColorFormat();
 }
 
-extern "C" void vtkSSAAPass__SetDepthFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkSSAAPass__SetDepthFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSSAAPass*>(self)->SetDepthFormat(_arg);
 }
 
-extern "C" int32_t vtkSSAAPass__GetDepthFormat__0(void* self) {
+extern "C" int32_t vtkSSAAPass__GetDepthFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSSAAPass*>(self)->GetDepthFormat();
 }

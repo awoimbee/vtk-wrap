@@ -5,165 +5,165 @@
 #include "vtkTextProperty.h"
 #include <string>
 
-extern "C" int32_t vtkFreeTypeTools__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFreeTypeTools__IsTypeOf__0(const char* type_) noexcept {
   return vtkFreeTypeTools::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFreeTypeTools__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFreeTypeTools__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFreeTypeTools__SafeDownCast__0(void* o) {
+extern "C" void* vtkFreeTypeTools__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFreeTypeTools::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFreeTypeTools__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFreeTypeTools__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFreeTypeTools::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFreeTypeTools__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFreeTypeTools__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkFreeTypeTools__GetInstance__0() {
+extern "C" void* vtkFreeTypeTools__GetInstance__0() noexcept {
   return static_cast<void*>(vtkFreeTypeTools::GetInstance());
 }
 
-extern "C" void vtkFreeTypeTools__SetInstance__0(void* instance) {
+extern "C" void vtkFreeTypeTools__SetInstance__0(void* instance) noexcept {
   vtkFreeTypeTools::SetInstance(static_cast<vtkFreeTypeTools*>(instance));
 }
 
-extern "C" void vtkFreeTypeTools__SetDebugTextures__0(void* self, bool _arg) {
+extern "C" void vtkFreeTypeTools__SetDebugTextures__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetDebugTextures(_arg);
 }
 
-extern "C" bool vtkFreeTypeTools__GetDebugTextures__0(void* self) {
+extern "C" bool vtkFreeTypeTools__GetDebugTextures__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetDebugTextures();
 }
 
-extern "C" void vtkFreeTypeTools__DebugTexturesOn__0(void* self) {
+extern "C" void vtkFreeTypeTools__DebugTexturesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->DebugTexturesOn();
 }
 
-extern "C" void vtkFreeTypeTools__DebugTexturesOff__0(void* self) {
+extern "C" void vtkFreeTypeTools__DebugTexturesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->DebugTexturesOff();
 }
 
-extern "C" void vtkFreeTypeTools__SetMaximumNumberOfFaces__0(void* self, uint32_t _arg) {
+extern "C" void vtkFreeTypeTools__SetMaximumNumberOfFaces__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetMaximumNumberOfFaces(_arg);
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFacesMinValue__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFacesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfFacesMinValue();
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFacesMaxValue__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFacesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfFacesMaxValue();
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFaces__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfFaces();
 }
 
-extern "C" void vtkFreeTypeTools__SetMaximumNumberOfSizes__0(void* self, uint32_t _arg) {
+extern "C" void vtkFreeTypeTools__SetMaximumNumberOfSizes__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetMaximumNumberOfSizes(_arg);
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizesMinValue__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfSizesMinValue();
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizesMaxValue__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfSizesMaxValue();
 }
 
-extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizes__0(void* self) {
+extern "C" uint32_t vtkFreeTypeTools__GetMaximumNumberOfSizes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfSizes();
 }
 
-extern "C" void vtkFreeTypeTools__SetMaximumNumberOfBytes__0(void* self, unsigned long _arg) {
+extern "C" void vtkFreeTypeTools__SetMaximumNumberOfBytes__0(void* self, unsigned long _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetMaximumNumberOfBytes(_arg);
 }
 
-extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytesMinValue__0(void* self) {
+extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfBytesMinValue();
 }
 
-extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytesMaxValue__0(void* self) {
+extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfBytesMaxValue();
 }
 
-extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytes__0(void* self) {
+extern "C" unsigned long vtkFreeTypeTools__GetMaximumNumberOfBytes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetMaximumNumberOfBytes();
 }
 
-extern "C" uint16_t vtkFreeTypeTools__HashString__0(const char* str) {
+extern "C" uint16_t vtkFreeTypeTools__HashString__0(const char* str) noexcept {
   return vtkFreeTypeTools::HashString(str);
 }
 
-extern "C" uint32_t vtkFreeTypeTools__HashBuffer__0(void* buffer, size_t n, uint32_t hash) {
+extern "C" uint32_t vtkFreeTypeTools__HashBuffer__0(void* buffer, size_t n, uint32_t hash) noexcept {
   return vtkFreeTypeTools::HashBuffer(buffer, n, hash);
 }
 
-extern "C" void vtkFreeTypeTools__MapIdToTextProperty__0(void* self, size_t tprop_cache_id, void* tprop) {
+extern "C" void vtkFreeTypeTools__MapIdToTextProperty__0(void* self, size_t tprop_cache_id, void* tprop) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->MapIdToTextProperty(tprop_cache_id, static_cast<vtkTextProperty*>(tprop));
 }
 
-extern "C" void vtkFreeTypeTools__SetScaleToPowerTwo__0(void* self, bool _arg) {
+extern "C" void vtkFreeTypeTools__SetScaleToPowerTwo__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetScaleToPowerTwo(_arg);
 }
 
-extern "C" bool vtkFreeTypeTools__GetScaleToPowerTwo__0(void* self) {
+extern "C" bool vtkFreeTypeTools__GetScaleToPowerTwo__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetScaleToPowerTwo();
 }
 
-extern "C" void vtkFreeTypeTools__ScaleToPowerTwoOn__0(void* self) {
+extern "C" void vtkFreeTypeTools__ScaleToPowerTwoOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->ScaleToPowerTwoOn();
 }
 
-extern "C" void vtkFreeTypeTools__ScaleToPowerTwoOff__0(void* self) {
+extern "C" void vtkFreeTypeTools__ScaleToPowerTwoOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->ScaleToPowerTwoOff();
 }
 
-extern "C" void vtkFreeTypeTools__SetForceCompiledFonts__0(void* self, bool _arg) {
+extern "C" void vtkFreeTypeTools__SetForceCompiledFonts__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->SetForceCompiledFonts(_arg);
 }
 
-extern "C" bool vtkFreeTypeTools__GetForceCompiledFonts__0(void* self) {
+extern "C" bool vtkFreeTypeTools__GetForceCompiledFonts__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeTools*>(self)->GetForceCompiledFonts();
 }
 
-extern "C" void vtkFreeTypeTools__ForceCompiledFontsOn__0(void* self) {
+extern "C" void vtkFreeTypeTools__ForceCompiledFontsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->ForceCompiledFontsOn();
 }
 
-extern "C" void vtkFreeTypeTools__ForceCompiledFontsOff__0(void* self) {
+extern "C" void vtkFreeTypeTools__ForceCompiledFontsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFreeTypeTools*>(self)->ForceCompiledFontsOff();
 }

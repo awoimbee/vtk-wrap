@@ -7,29 +7,29 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkCellGridResponderBase__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridResponderBase__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridResponderBase::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridResponderBase__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridResponderBase__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridResponderBase*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridResponderBase__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridResponderBase__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridResponderBase::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridResponderBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridResponderBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridResponderBase::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridResponderBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridResponderBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridResponderBase*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCellGridResponderBase__EvaluateQuery__0(void* self, void* query, void* cellType, void* caches) {
+extern "C" bool vtkCellGridResponderBase__EvaluateQuery__0(void* self, void* query, void* cellType, void* caches) noexcept {
   (void)self;
   return static_cast<vtkCellGridResponderBase*>(self)->EvaluateQuery(static_cast<vtkCellGridQuery*>(query), static_cast<vtkCellMetadata*>(cellType), static_cast<vtkCellGridResponders*>(caches));
 }

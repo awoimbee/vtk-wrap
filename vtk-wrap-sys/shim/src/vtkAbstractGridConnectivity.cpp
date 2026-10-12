@@ -8,79 +8,79 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractGridConnectivity__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractGridConnectivity__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractGridConnectivity::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractGridConnectivity__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractGridConnectivity__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractGridConnectivity*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractGridConnectivity__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractGridConnectivity__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractGridConnectivity::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractGridConnectivity__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractGridConnectivity__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractGridConnectivity::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractGridConnectivity__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractGridConnectivity__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractGridConnectivity*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractGridConnectivity__SetNumberOfGhostLayers__0(void* self, uint32_t _arg) {
+extern "C" void vtkAbstractGridConnectivity__SetNumberOfGhostLayers__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractGridConnectivity*>(self)->SetNumberOfGhostLayers(_arg);
 }
 
-extern "C" uint32_t vtkAbstractGridConnectivity__GetNumberOfGhostLayers__0(void* self) {
+extern "C" uint32_t vtkAbstractGridConnectivity__GetNumberOfGhostLayers__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractGridConnectivity*>(self)->GetNumberOfGhostLayers();
 }
 
-extern "C" void vtkAbstractGridConnectivity__SetNumberOfGrids__0(void* self, uint32_t N) {
+extern "C" void vtkAbstractGridConnectivity__SetNumberOfGrids__0(void* self, uint32_t N) noexcept {
   (void)self;
   static_cast<vtkAbstractGridConnectivity*>(self)->SetNumberOfGrids(N);
 }
 
-extern "C" uint32_t vtkAbstractGridConnectivity__GetNumberOfGrids__0(void* self) {
+extern "C" uint32_t vtkAbstractGridConnectivity__GetNumberOfGrids__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractGridConnectivity*>(self)->GetNumberOfGrids();
 }
 
-extern "C" void vtkAbstractGridConnectivity__ComputeNeighbors__0(void* self) {
+extern "C" void vtkAbstractGridConnectivity__ComputeNeighbors__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractGridConnectivity*>(self)->ComputeNeighbors();
 }
 
-extern "C" void vtkAbstractGridConnectivity__CreateGhostLayers__0(void* self, int32_t N) {
+extern "C" void vtkAbstractGridConnectivity__CreateGhostLayers__0(void* self, int32_t N) noexcept {
   (void)self;
   static_cast<vtkAbstractGridConnectivity*>(self)->CreateGhostLayers(N);
 }
 
-extern "C" void* vtkAbstractGridConnectivity__GetGhostedPointGhostArray__0(void* self, int32_t gridID) {
+extern "C" void* vtkAbstractGridConnectivity__GetGhostedPointGhostArray__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractGridConnectivity*>(self)->GetGhostedPointGhostArray(gridID));
 }
 
-extern "C" void* vtkAbstractGridConnectivity__GetGhostedCellGhostArray__0(void* self, int32_t gridID) {
+extern "C" void* vtkAbstractGridConnectivity__GetGhostedCellGhostArray__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractGridConnectivity*>(self)->GetGhostedCellGhostArray(gridID));
 }
 
-extern "C" void* vtkAbstractGridConnectivity__GetGhostedGridPointData__0(void* self, int32_t gridID) {
+extern "C" void* vtkAbstractGridConnectivity__GetGhostedGridPointData__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractGridConnectivity*>(self)->GetGhostedGridPointData(gridID));
 }
 
-extern "C" void* vtkAbstractGridConnectivity__GetGhostedGridCellData__0(void* self, int32_t gridID) {
+extern "C" void* vtkAbstractGridConnectivity__GetGhostedGridCellData__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractGridConnectivity*>(self)->GetGhostedGridCellData(gridID));
 }
 
-extern "C" void* vtkAbstractGridConnectivity__GetGhostedPoints__0(void* self, int32_t gridID) {
+extern "C" void* vtkAbstractGridConnectivity__GetGhostedPoints__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractGridConnectivity*>(self)->GetGhostedPoints(gridID));
 }

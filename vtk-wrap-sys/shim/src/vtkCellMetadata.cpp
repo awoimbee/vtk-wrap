@@ -7,67 +7,67 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkCellMetadata__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellMetadata__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellMetadata::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellMetadata__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellMetadata__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellMetadata*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellMetadata__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellMetadata__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellMetadata::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellMetadata__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellMetadata__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellMetadata::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellMetadata__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellMetadata__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellMetadata*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCellMetadata__SetCellGrid__0(void* self, void* parent) {
+extern "C" bool vtkCellMetadata__SetCellGrid__0(void* self, void* parent) noexcept {
   (void)self;
   return static_cast<vtkCellMetadata*>(self)->SetCellGrid(static_cast<vtkCellGrid*>(parent));
 }
 
-extern "C" void* vtkCellMetadata__GetCellGrid__0(void* self) {
+extern "C" void* vtkCellMetadata__GetCellGrid__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellMetadata*>(self)->GetCellGrid());
 }
 
-extern "C" int64_t vtkCellMetadata__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkCellMetadata__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellMetadata*>(self)->GetNumberOfCells();
 }
 
-extern "C" bool vtkCellMetadata__Query__0(void* self, void* query) {
+extern "C" bool vtkCellMetadata__Query__0(void* self, void* query) noexcept {
   (void)self;
   return static_cast<vtkCellMetadata*>(self)->Query(static_cast<vtkCellGridQuery*>(query));
 }
 
-extern "C" void vtkCellMetadata__ShallowCopy__0(void* self, void* other) {
+extern "C" void vtkCellMetadata__ShallowCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkCellMetadata*>(self)->ShallowCopy(static_cast<vtkCellMetadata*>(other));
 }
 
-extern "C" void vtkCellMetadata__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkCellMetadata__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkCellMetadata*>(self)->DeepCopy(static_cast<vtkCellMetadata*>(other));
 }
 
-extern "C" void* vtkCellMetadata__GetResponders__0() {
+extern "C" void* vtkCellMetadata__GetResponders__0() noexcept {
   return static_cast<void*>(vtkCellMetadata::GetResponders());
 }
 
-extern "C" void vtkCellMetadata__ClearResponders__0() {
+extern "C" void vtkCellMetadata__ClearResponders__0() noexcept {
   vtkCellMetadata::ClearResponders();
 }
 
-extern "C" void* vtkCellMetadata__GetCaches__0(void* self) {
+extern "C" void* vtkCellMetadata__GetCaches__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellMetadata*>(self)->GetCaches());
 }

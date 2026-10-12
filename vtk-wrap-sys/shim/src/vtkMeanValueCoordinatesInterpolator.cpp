@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMeanValueCoordinatesInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkMeanValueCoordinatesInterpolator::New()); }
+extern "C" void* vtkMeanValueCoordinatesInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMeanValueCoordinatesInterpolator::New()); }
 
-extern "C" int32_t vtkMeanValueCoordinatesInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMeanValueCoordinatesInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkMeanValueCoordinatesInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMeanValueCoordinatesInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMeanValueCoordinatesInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMeanValueCoordinatesInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMeanValueCoordinatesInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkMeanValueCoordinatesInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMeanValueCoordinatesInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMeanValueCoordinatesInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMeanValueCoordinatesInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMeanValueCoordinatesInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMeanValueCoordinatesInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMeanValueCoordinatesInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMeanValueCoordinatesInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

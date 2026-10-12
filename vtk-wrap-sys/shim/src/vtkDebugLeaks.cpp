@@ -4,55 +4,55 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDebugLeaks__vtk_wrap_new() { return static_cast<void*>(vtkDebugLeaks::New()); }
+extern "C" void* vtkDebugLeaks__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDebugLeaks::New()); }
 
-extern "C" int32_t vtkDebugLeaks__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDebugLeaks__IsTypeOf__0(const char* type_) noexcept {
   return vtkDebugLeaks::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDebugLeaks__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDebugLeaks__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDebugLeaks*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDebugLeaks__SafeDownCast__0(void* o) {
+extern "C" void* vtkDebugLeaks__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDebugLeaks::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDebugLeaks__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDebugLeaks__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDebugLeaks::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDebugLeaks__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDebugLeaks__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDebugLeaks*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDebugLeaks__ConstructClass__0(void* object) {
+extern "C" void vtkDebugLeaks__ConstructClass__0(void* object) noexcept {
   vtkDebugLeaks::ConstructClass(static_cast<vtkObjectBase*>(object));
 }
 
-extern "C" void vtkDebugLeaks__ConstructClass__1(const char* className) {
+extern "C" void vtkDebugLeaks__ConstructClass__1(const char* className) noexcept {
   vtkDebugLeaks::ConstructClass(className);
 }
 
-extern "C" void vtkDebugLeaks__DestructClass__0(void* object) {
+extern "C" void vtkDebugLeaks__DestructClass__0(void* object) noexcept {
   vtkDebugLeaks::DestructClass(static_cast<vtkObjectBase*>(object));
 }
 
-extern "C" void vtkDebugLeaks__DestructClass__1(const char* className) {
+extern "C" void vtkDebugLeaks__DestructClass__1(const char* className) noexcept {
   vtkDebugLeaks::DestructClass(className);
 }
 
-extern "C" int32_t vtkDebugLeaks__PrintCurrentLeaks__0() {
+extern "C" int32_t vtkDebugLeaks__PrintCurrentLeaks__0() noexcept {
   return vtkDebugLeaks::PrintCurrentLeaks();
 }
 
-extern "C" int32_t vtkDebugLeaks__GetExitError__0() {
+extern "C" int32_t vtkDebugLeaks__GetExitError__0() noexcept {
   return vtkDebugLeaks::GetExitError();
 }
 
-extern "C" void vtkDebugLeaks__SetExitError__0(int32_t arg0) {
+extern "C" void vtkDebugLeaks__SetExitError__0(int32_t arg0) noexcept {
   vtkDebugLeaks::SetExitError(arg0);
 }
 

@@ -5,35 +5,35 @@
 #include "vtkOverrideAttribute.h"
 #include <string>
 
-extern "C" void* vtkDummyGPUInfoList__vtk_wrap_new() { return static_cast<void*>(vtkDummyGPUInfoList::New()); }
+extern "C" void* vtkDummyGPUInfoList__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDummyGPUInfoList::New()); }
 
-extern "C" void* vtkDummyGPUInfoList__CreateOverrideAttributes__0() {
+extern "C" void* vtkDummyGPUInfoList__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkDummyGPUInfoList::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkDummyGPUInfoList__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDummyGPUInfoList__IsTypeOf__0(const char* type_) noexcept {
   return vtkDummyGPUInfoList::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDummyGPUInfoList__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDummyGPUInfoList__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDummyGPUInfoList*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDummyGPUInfoList__SafeDownCast__0(void* o) {
+extern "C" void* vtkDummyGPUInfoList__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDummyGPUInfoList::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDummyGPUInfoList__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDummyGPUInfoList__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDummyGPUInfoList::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDummyGPUInfoList__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDummyGPUInfoList__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDummyGPUInfoList*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDummyGPUInfoList__Probe__0(void* self) {
+extern "C" void vtkDummyGPUInfoList__Probe__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDummyGPUInfoList*>(self)->Probe();
 }

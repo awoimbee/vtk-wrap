@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkThresholdScalars__vtk_wrap_new() { return static_cast<void*>(vtkThresholdScalars::New()); }
+extern "C" void* vtkThresholdScalars__vtk_wrap_new() noexcept { return static_cast<void*>(vtkThresholdScalars::New()); }
 
-extern "C" int32_t vtkThresholdScalars__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkThresholdScalars__IsTypeOf__0(const char* type_) noexcept {
   return vtkThresholdScalars::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkThresholdScalars__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkThresholdScalars__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkThresholdScalars*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkThresholdScalars__SafeDownCast__0(void* o) {
+extern "C" void* vtkThresholdScalars__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkThresholdScalars::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkThresholdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkThresholdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkThresholdScalars::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkThresholdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkThresholdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkThresholdScalars*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkThresholdScalars__AddInterval__0(void* self, double s0, double s1, int32_t labelId) {
+extern "C" int64_t vtkThresholdScalars__AddInterval__0(void* self, double s0, double s1, int32_t labelId) noexcept {
   (void)self;
   return static_cast<vtkThresholdScalars*>(self)->AddInterval(s0, s1, labelId);
 }
 
-extern "C" void vtkThresholdScalars__RemoveInterval__0(void* self, int64_t intervalId) {
+extern "C" void vtkThresholdScalars__RemoveInterval__0(void* self, int64_t intervalId) noexcept {
   (void)self;
   static_cast<vtkThresholdScalars*>(self)->RemoveInterval(intervalId);
 }
 
-extern "C" void vtkThresholdScalars__RemoveAllIntervals__0(void* self) {
+extern "C" void vtkThresholdScalars__RemoveAllIntervals__0(void* self) noexcept {
   (void)self;
   static_cast<vtkThresholdScalars*>(self)->RemoveAllIntervals();
 }
 
-extern "C" void vtkThresholdScalars__SetBackgroundLabel__0(void* self, int32_t _arg) {
+extern "C" void vtkThresholdScalars__SetBackgroundLabel__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkThresholdScalars*>(self)->SetBackgroundLabel(_arg);
 }
 
-extern "C" int32_t vtkThresholdScalars__GetBackgroundLabel__0(void* self) {
+extern "C" int32_t vtkThresholdScalars__GetBackgroundLabel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkThresholdScalars*>(self)->GetBackgroundLabel();
 }

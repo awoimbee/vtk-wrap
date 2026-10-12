@@ -13,84 +13,84 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkDataSetReader__vtk_wrap_new() { return static_cast<void*>(vtkDataSetReader::New()); }
+extern "C" void* vtkDataSetReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetReader::New()); }
 
-extern "C" int32_t vtkDataSetReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataSetReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataSetReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataSetReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataSetReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataSetReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataSetReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataSetReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataSetReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataSetReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataSetReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataSetReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataSetReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkDataSetReader__GetOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkDataSetReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkDataSetReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetOutput(idx));
 }
 
-extern "C" bool vtkDataSetReader__CanReadFile__0(const char* filename) {
+extern "C" bool vtkDataSetReader__CanReadFile__0(const char* filename) noexcept {
   return vtkDataSetReader::CanReadFile(filename);
 }
 
-extern "C" bool vtkDataSetReader__CanReadFile__1(void* stream) {
+extern "C" bool vtkDataSetReader__CanReadFile__1(void* stream) noexcept {
   return vtkDataSetReader::CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" void* vtkDataSetReader__GetPolyDataOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetPolyDataOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetPolyDataOutput());
 }
 
-extern "C" void* vtkDataSetReader__GetStructuredPointsOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetStructuredPointsOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetStructuredPointsOutput());
 }
 
-extern "C" void* vtkDataSetReader__GetStructuredGridOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetStructuredGridOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetStructuredGridOutput());
 }
 
-extern "C" void* vtkDataSetReader__GetUnstructuredGridOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetUnstructuredGridOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetUnstructuredGridOutput());
 }
 
-extern "C" void* vtkDataSetReader__GetRectilinearGridOutput__0(void* self) {
+extern "C" void* vtkDataSetReader__GetRectilinearGridOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataSetReader*>(self)->GetRectilinearGridOutput());
 }
 
-extern "C" int32_t vtkDataSetReader__ReadOutputType__0(void* self) {
+extern "C" int32_t vtkDataSetReader__ReadOutputType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetReader*>(self)->ReadOutputType();
 }
 
-extern "C" int32_t vtkDataSetReader__ReadMetaDataSimple__0(void* self, const char* fname, void* metadata) {
+extern "C" int32_t vtkDataSetReader__ReadMetaDataSimple__0(void* self, const char* fname, void* metadata) noexcept {
   (void)self;
   return static_cast<vtkDataSetReader*>(self)->ReadMetaDataSimple(std::string(fname), static_cast<vtkInformation*>(metadata));
 }
 
-extern "C" int32_t vtkDataSetReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkDataSetReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkDataSetReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

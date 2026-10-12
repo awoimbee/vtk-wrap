@@ -9,106 +9,106 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkHyperTreeGridMapper__vtk_wrap_new() { return static_cast<void*>(vtkHyperTreeGridMapper::New()); }
+extern "C" void* vtkHyperTreeGridMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHyperTreeGridMapper::New()); }
 
-extern "C" int32_t vtkHyperTreeGridMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHyperTreeGridMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkHyperTreeGridMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHyperTreeGridMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHyperTreeGridMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHyperTreeGridMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkHyperTreeGridMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHyperTreeGridMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHyperTreeGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHyperTreeGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHyperTreeGridMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHyperTreeGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHyperTreeGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkHyperTreeGridMapper__SetInputDataObject__0(void* self, int32_t port, void* input) {
+extern "C" void vtkHyperTreeGridMapper__SetInputDataObject__0(void* self, int32_t port, void* input) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->SetInputDataObject(port, static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void vtkHyperTreeGridMapper__SetInputDataObject__1(void* self, void* input) {
+extern "C" void vtkHyperTreeGridMapper__SetInputDataObject__1(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->SetInputDataObject(static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void vtkHyperTreeGridMapper__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkHyperTreeGridMapper__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->GetBounds(bounds);
 }
 
-extern "C" void vtkHyperTreeGridMapper__GetBoundsComposite__0(void* self, double* bounds) {
+extern "C" void vtkHyperTreeGridMapper__GetBoundsComposite__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->GetBoundsComposite(bounds);
 }
 
-extern "C" bool vtkHyperTreeGridMapper__GetUseAdaptiveDecimation__0(void* self) {
+extern "C" bool vtkHyperTreeGridMapper__GetUseAdaptiveDecimation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridMapper*>(self)->GetUseAdaptiveDecimation();
 }
 
-extern "C" void vtkHyperTreeGridMapper__SetUseAdaptiveDecimation__0(void* self, bool _arg) {
+extern "C" void vtkHyperTreeGridMapper__SetUseAdaptiveDecimation__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->SetUseAdaptiveDecimation(_arg);
 }
 
-extern "C" void vtkHyperTreeGridMapper__UseAdaptiveDecimationOn__0(void* self) {
+extern "C" void vtkHyperTreeGridMapper__UseAdaptiveDecimationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->UseAdaptiveDecimationOn();
 }
 
-extern "C" void vtkHyperTreeGridMapper__UseAdaptiveDecimationOff__0(void* self) {
+extern "C" void vtkHyperTreeGridMapper__UseAdaptiveDecimationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->UseAdaptiveDecimationOff();
 }
 
-extern "C" void vtkHyperTreeGridMapper__SetCompositeDataDisplayAttributes__0(void* self, void* attributes) {
+extern "C" void vtkHyperTreeGridMapper__SetCompositeDataDisplayAttributes__0(void* self, void* attributes) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->SetCompositeDataDisplayAttributes(static_cast<vtkCompositeDataDisplayAttributes*>(attributes));
 }
 
-extern "C" void* vtkHyperTreeGridMapper__GetCompositeDataDisplayAttributes__0(void* self) {
+extern "C" void* vtkHyperTreeGridMapper__GetCompositeDataDisplayAttributes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHyperTreeGridMapper*>(self)->GetCompositeDataDisplayAttributes());
 }
 
-extern "C" void vtkHyperTreeGridMapper__SetBlockVisibility__0(void* self, uint32_t index, bool visible) {
+extern "C" void vtkHyperTreeGridMapper__SetBlockVisibility__0(void* self, uint32_t index, bool visible) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->SetBlockVisibility(index, visible);
 }
 
-extern "C" bool vtkHyperTreeGridMapper__GetBlockVisibility__0(void* self, uint32_t index) {
+extern "C" bool vtkHyperTreeGridMapper__GetBlockVisibility__0(void* self, uint32_t index) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridMapper*>(self)->GetBlockVisibility(index);
 }
 
-extern "C" void vtkHyperTreeGridMapper__RemoveBlockVisibility__0(void* self, uint32_t index) {
+extern "C" void vtkHyperTreeGridMapper__RemoveBlockVisibility__0(void* self, uint32_t index) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->RemoveBlockVisibility(index);
 }
 
-extern "C" void vtkHyperTreeGridMapper__RemoveBlockVisibilities__0(void* self) {
+extern "C" void vtkHyperTreeGridMapper__RemoveBlockVisibilities__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->RemoveBlockVisibilities();
 }
 
-extern "C" void vtkHyperTreeGridMapper__Render__0(void* self, void* ren, void* act) {
+extern "C" void vtkHyperTreeGridMapper__Render__0(void* self, void* ren, void* act) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkActor*>(act));
 }
 
-extern "C" int32_t vtkHyperTreeGridMapper__FillInputPortInformation__0(void* self, int32_t port, void* info) {
+extern "C" int32_t vtkHyperTreeGridMapper__FillInputPortInformation__0(void* self, int32_t port, void* info) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridMapper*>(self)->FillInputPortInformation(port, static_cast<vtkInformation*>(info));
 }

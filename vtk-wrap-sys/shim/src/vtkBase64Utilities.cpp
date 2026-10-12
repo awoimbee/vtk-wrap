@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkBase64Utilities__vtk_wrap_new() { return static_cast<void*>(vtkBase64Utilities::New()); }
+extern "C" void* vtkBase64Utilities__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBase64Utilities::New()); }
 
-extern "C" int32_t vtkBase64Utilities__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBase64Utilities__IsTypeOf__0(const char* type_) noexcept {
   return vtkBase64Utilities::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBase64Utilities__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBase64Utilities__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBase64Utilities*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBase64Utilities__SafeDownCast__0(void* o) {
+extern "C" void* vtkBase64Utilities__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBase64Utilities::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBase64Utilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBase64Utilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBase64Utilities::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBase64Utilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBase64Utilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBase64Utilities*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

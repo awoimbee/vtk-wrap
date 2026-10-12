@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRearrangeFields__vtk_wrap_new() { return static_cast<void*>(vtkRearrangeFields::New()); }
+extern "C" void* vtkRearrangeFields__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRearrangeFields::New()); }
 
-extern "C" int32_t vtkRearrangeFields__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRearrangeFields__IsTypeOf__0(const char* type_) noexcept {
   return vtkRearrangeFields::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRearrangeFields__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRearrangeFields__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRearrangeFields__SafeDownCast__0(void* o) {
+extern "C" void* vtkRearrangeFields__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRearrangeFields::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRearrangeFields__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRearrangeFields__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRearrangeFields::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRearrangeFields__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRearrangeFields__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkRearrangeFields__AddOperation__0(void* self, int32_t operationType, int32_t attributeType, int32_t fromFieldLoc, int32_t toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__AddOperation__0(void* self, int32_t operationType, int32_t attributeType, int32_t fromFieldLoc, int32_t toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->AddOperation(operationType, attributeType, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" int32_t vtkRearrangeFields__AddOperation__1(void* self, int32_t operationType, const char* name, int32_t fromFieldLoc, int32_t toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__AddOperation__1(void* self, int32_t operationType, const char* name, int32_t fromFieldLoc, int32_t toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->AddOperation(operationType, name, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" int32_t vtkRearrangeFields__AddOperation__2(void* self, const char* operationType, const char* attributeType, const char* fromFieldLoc, const char* toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__AddOperation__2(void* self, const char* operationType, const char* attributeType, const char* fromFieldLoc, const char* toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->AddOperation(operationType, attributeType, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" int32_t vtkRearrangeFields__RemoveOperation__0(void* self, int32_t operationId) {
+extern "C" int32_t vtkRearrangeFields__RemoveOperation__0(void* self, int32_t operationId) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->RemoveOperation(operationId);
 }
 
-extern "C" int32_t vtkRearrangeFields__RemoveOperation__1(void* self, int32_t operationType, int32_t attributeType, int32_t fromFieldLoc, int32_t toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__RemoveOperation__1(void* self, int32_t operationType, int32_t attributeType, int32_t fromFieldLoc, int32_t toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->RemoveOperation(operationType, attributeType, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" int32_t vtkRearrangeFields__RemoveOperation__2(void* self, int32_t operationType, const char* name, int32_t fromFieldLoc, int32_t toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__RemoveOperation__2(void* self, int32_t operationType, const char* name, int32_t fromFieldLoc, int32_t toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->RemoveOperation(operationType, name, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" int32_t vtkRearrangeFields__RemoveOperation__3(void* self, const char* operationType, const char* attributeType, const char* fromFieldLoc, const char* toFieldLoc) {
+extern "C" int32_t vtkRearrangeFields__RemoveOperation__3(void* self, const char* operationType, const char* attributeType, const char* fromFieldLoc, const char* toFieldLoc) noexcept {
   (void)self;
   return static_cast<vtkRearrangeFields*>(self)->RemoveOperation(operationType, attributeType, fromFieldLoc, toFieldLoc);
 }
 
-extern "C" void vtkRearrangeFields__RemoveAllOperations__0(void* self) {
+extern "C" void vtkRearrangeFields__RemoveAllOperations__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRearrangeFields*>(self)->RemoveAllOperations();
 }

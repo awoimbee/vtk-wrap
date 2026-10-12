@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPostScriptWriter__vtk_wrap_new() { return static_cast<void*>(vtkPostScriptWriter::New()); }
+extern "C" void* vtkPostScriptWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPostScriptWriter::New()); }
 
-extern "C" int32_t vtkPostScriptWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPostScriptWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkPostScriptWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPostScriptWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPostScriptWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPostScriptWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPostScriptWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkPostScriptWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPostScriptWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPostScriptWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPostScriptWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPostScriptWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPostScriptWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPostScriptWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPostScriptWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

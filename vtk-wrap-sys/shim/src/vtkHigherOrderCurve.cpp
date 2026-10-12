@@ -11,113 +11,113 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" int32_t vtkHigherOrderCurve__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHigherOrderCurve__IsTypeOf__0(const char* type_) noexcept {
   return vtkHigherOrderCurve::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHigherOrderCurve__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHigherOrderCurve__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHigherOrderCurve__SafeDownCast__0(void* o) {
+extern "C" void* vtkHigherOrderCurve__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHigherOrderCurve::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHigherOrderCurve__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHigherOrderCurve__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHigherOrderCurve::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHigherOrderCurve__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHigherOrderCurve__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetCellType__0(void* self) {
+extern "C" int32_t vtkHigherOrderCurve__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkHigherOrderCurve__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__RequiresInitialization__0(void* self) {
+extern "C" int32_t vtkHigherOrderCurve__RequiresInitialization__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->RequiresInitialization();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkHigherOrderCurve__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkHigherOrderCurve__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkHigherOrderCurve__GetEdge__0(void* self, int32_t arg0) {
+extern "C" void* vtkHigherOrderCurve__GetEdge__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderCurve*>(self)->GetEdge(arg0));
 }
 
-extern "C" void* vtkHigherOrderCurve__GetFace__0(void* self, int32_t arg0) {
+extern "C" void* vtkHigherOrderCurve__GetFace__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderCurve*>(self)->GetFace(arg0));
 }
 
-extern "C" void vtkHigherOrderCurve__Initialize__0(void* self) {
+extern "C" void vtkHigherOrderCurve__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderCurve*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkHigherOrderCurve__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" void vtkHigherOrderCurve__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkHigherOrderCurve__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkHigherOrderCurve*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkHigherOrderCurve__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkHigherOrderCurve__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkHigherOrderCurve*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkHigherOrderCurve__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkHigherOrderCurve__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" void vtkHigherOrderCurve__SetParametricCoords__0(void* self) {
+extern "C" void vtkHigherOrderCurve__SetParametricCoords__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderCurve*>(self)->SetParametricCoords();
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetParametricCenter__0(void* self, double* center) {
+extern "C" int32_t vtkHigherOrderCurve__GetParametricCenter__0(void* self, double* center) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetParametricCenter(center);
 }
 
-extern "C" double vtkHigherOrderCurve__GetParametricDistance__0(void* self, const double* pcoords) {
+extern "C" double vtkHigherOrderCurve__GetParametricDistance__0(void* self, const double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetParametricDistance(pcoords);
 }
 
-extern "C" int32_t vtkHigherOrderCurve__GetOrder__0(void* self, int32_t i) {
+extern "C" int32_t vtkHigherOrderCurve__GetOrder__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->GetOrder(i);
 }
 
-extern "C" bool vtkHigherOrderCurve__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) {
+extern "C" bool vtkHigherOrderCurve__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) noexcept {
   return vtkHigherOrderCurve::PointCountSupportsUniformOrder(pointsPerCell);
 }
 
-extern "C" int32_t vtkHigherOrderCurve__PointIndexFromIJK__0(void* self, int32_t i, int32_t arg1, int32_t arg2) {
+extern "C" int32_t vtkHigherOrderCurve__PointIndexFromIJK__0(void* self, int32_t i, int32_t arg1, int32_t arg2) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderCurve*>(self)->PointIndexFromIJK(i, arg1, arg2);
 }

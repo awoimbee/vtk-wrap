@@ -5,30 +5,30 @@
 #include "vtkOverrideAttribute.h"
 #include <string>
 
-extern "C" void* vtkOpenGLLight__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLLight::New()); }
+extern "C" void* vtkOpenGLLight__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLLight::New()); }
 
-extern "C" void* vtkOpenGLLight__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLLight__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLLight::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLLight__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLLight__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLLight::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLLight__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLLight__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLight*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLLight__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLLight__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLLight::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLLight__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLLight__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLLight::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLLight__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLLight__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLLight*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

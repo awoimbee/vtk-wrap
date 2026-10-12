@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkShrinkFilter__vtk_wrap_new() { return static_cast<void*>(vtkShrinkFilter::New()); }
+extern "C" void* vtkShrinkFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkShrinkFilter::New()); }
 
-extern "C" int32_t vtkShrinkFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkShrinkFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkShrinkFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkShrinkFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkShrinkFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShrinkFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkShrinkFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkShrinkFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkShrinkFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkShrinkFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkShrinkFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkShrinkFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkShrinkFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkShrinkFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShrinkFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkShrinkFilter__SetShrinkFactor__0(void* self, double _arg) {
+extern "C" void vtkShrinkFilter__SetShrinkFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkShrinkFilter*>(self)->SetShrinkFactor(_arg);
 }
 
-extern "C" double vtkShrinkFilter__GetShrinkFactorMinValue__0(void* self) {
+extern "C" double vtkShrinkFilter__GetShrinkFactorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShrinkFilter*>(self)->GetShrinkFactorMinValue();
 }
 
-extern "C" double vtkShrinkFilter__GetShrinkFactorMaxValue__0(void* self) {
+extern "C" double vtkShrinkFilter__GetShrinkFactorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShrinkFilter*>(self)->GetShrinkFactorMaxValue();
 }
 
-extern "C" double vtkShrinkFilter__GetShrinkFactor__0(void* self) {
+extern "C" double vtkShrinkFilter__GetShrinkFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShrinkFilter*>(self)->GetShrinkFactor();
 }

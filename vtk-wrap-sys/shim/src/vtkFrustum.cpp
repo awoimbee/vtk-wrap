@@ -5,91 +5,91 @@
 #include "vtkPlane.h"
 #include <string>
 
-extern "C" void* vtkFrustum__vtk_wrap_new() { return static_cast<void*>(vtkFrustum::New()); }
+extern "C" void* vtkFrustum__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFrustum::New()); }
 
-extern "C" int32_t vtkFrustum__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFrustum__IsTypeOf__0(const char* type_) noexcept {
   return vtkFrustum::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFrustum__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFrustum__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFrustum__SafeDownCast__0(void* o) {
+extern "C" void* vtkFrustum__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFrustum::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFrustum__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFrustum__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFrustum::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFrustum__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFrustum__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkFrustum__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkFrustum__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkFrustum__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkFrustum__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkFrustum*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" double vtkFrustum__GetNearPlaneDistance__0(void* self) {
+extern "C" double vtkFrustum__GetNearPlaneDistance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->GetNearPlaneDistance();
 }
 
-extern "C" void vtkFrustum__SetNearPlaneDistance__0(void* self, double distance) {
+extern "C" void vtkFrustum__SetNearPlaneDistance__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkFrustum*>(self)->SetNearPlaneDistance(distance);
 }
 
-extern "C" double vtkFrustum__GetHorizontalAngle__0(void* self) {
+extern "C" double vtkFrustum__GetHorizontalAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->GetHorizontalAngle();
 }
 
-extern "C" void vtkFrustum__SetHorizontalAngle__0(void* self, double angleInDegrees) {
+extern "C" void vtkFrustum__SetHorizontalAngle__0(void* self, double angleInDegrees) noexcept {
   (void)self;
   static_cast<vtkFrustum*>(self)->SetHorizontalAngle(angleInDegrees);
 }
 
-extern "C" double vtkFrustum__GetVerticalAngle__0(void* self) {
+extern "C" double vtkFrustum__GetVerticalAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFrustum*>(self)->GetVerticalAngle();
 }
 
-extern "C" void vtkFrustum__SetVerticalAngle__0(void* self, double angleInDegrees) {
+extern "C" void vtkFrustum__SetVerticalAngle__0(void* self, double angleInDegrees) noexcept {
   (void)self;
   static_cast<vtkFrustum*>(self)->SetVerticalAngle(angleInDegrees);
 }
 
-extern "C" void* vtkFrustum__GetTopPlane__0(void* self) {
+extern "C" void* vtkFrustum__GetTopPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFrustum*>(self)->GetTopPlane());
 }
 
-extern "C" void* vtkFrustum__GetBottomPlane__0(void* self) {
+extern "C" void* vtkFrustum__GetBottomPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFrustum*>(self)->GetBottomPlane());
 }
 
-extern "C" void* vtkFrustum__GetRightPlane__0(void* self) {
+extern "C" void* vtkFrustum__GetRightPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFrustum*>(self)->GetRightPlane());
 }
 
-extern "C" void* vtkFrustum__GetLeftPlane__0(void* self) {
+extern "C" void* vtkFrustum__GetLeftPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFrustum*>(self)->GetLeftPlane());
 }
 
-extern "C" void* vtkFrustum__GetNearPlane__0(void* self) {
+extern "C" void* vtkFrustum__GetNearPlane__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFrustum*>(self)->GetNearPlane());
 }

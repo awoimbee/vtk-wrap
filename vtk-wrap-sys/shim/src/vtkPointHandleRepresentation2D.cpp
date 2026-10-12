@@ -11,121 +11,121 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkPointHandleRepresentation2D__vtk_wrap_new() { return static_cast<void*>(vtkPointHandleRepresentation2D::New()); }
+extern "C" void* vtkPointHandleRepresentation2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointHandleRepresentation2D::New()); }
 
-extern "C" int32_t vtkPointHandleRepresentation2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointHandleRepresentation2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointHandleRepresentation2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointHandleRepresentation2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointHandleRepresentation2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointHandleRepresentation2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointHandleRepresentation2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointHandleRepresentation2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointHandleRepresentation2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointHandleRepresentation2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointHandleRepresentation2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointHandleRepresentation2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointHandleRepresentation2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointHandleRepresentation2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointHandleRepresentation2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetCursorShape__0(void* self, void* cursorShape) {
+extern "C" void vtkPointHandleRepresentation2D__SetCursorShape__0(void* self, void* cursorShape) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetCursorShape(static_cast<vtkPolyData*>(cursorShape));
 }
 
-extern "C" void* vtkPointHandleRepresentation2D__GetCursorShape__0(void* self) {
+extern "C" void* vtkPointHandleRepresentation2D__GetCursorShape__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointHandleRepresentation2D*>(self)->GetCursorShape());
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetDisplayPosition__0(void* self, double* xyz) {
+extern "C" void vtkPointHandleRepresentation2D__SetDisplayPosition__0(void* self, double* xyz) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetDisplayPosition(xyz);
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetProperty__0(void* self, void* arg0) {
+extern "C" void vtkPointHandleRepresentation2D__SetProperty__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetProperty(static_cast<vtkProperty2D*>(arg0));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetSelectedProperty__0(void* self, void* arg0) {
+extern "C" void vtkPointHandleRepresentation2D__SetSelectedProperty__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetSelectedProperty(static_cast<vtkProperty2D*>(arg0));
 }
 
-extern "C" void* vtkPointHandleRepresentation2D__GetProperty__0(void* self) {
+extern "C" void* vtkPointHandleRepresentation2D__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointHandleRepresentation2D*>(self)->GetProperty());
 }
 
-extern "C" void* vtkPointHandleRepresentation2D__GetSelectedProperty__0(void* self) {
+extern "C" void* vtkPointHandleRepresentation2D__GetSelectedProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPointHandleRepresentation2D*>(self)->GetSelectedProperty());
 }
 
-extern "C" void vtkPointHandleRepresentation2D__BuildRepresentation__0(void* self) {
+extern "C" void vtkPointHandleRepresentation2D__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkPointHandleRepresentation2D__StartWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkPointHandleRepresentation2D__StartWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->StartWidgetInteraction(eventPos);
 }
 
-extern "C" void vtkPointHandleRepresentation2D__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkPointHandleRepresentation2D__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" int32_t vtkPointHandleRepresentation2D__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkPointHandleRepresentation2D__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkPointHandleRepresentation2D*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkPointHandleRepresentation2D__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkPointHandleRepresentation2D__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__DeepCopy__0(void* self, void* prop) {
+extern "C" void vtkPointHandleRepresentation2D__DeepCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->DeepCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__GetActors2D__0(void* self, void* arg0) {
+extern "C" void vtkPointHandleRepresentation2D__GetActors2D__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->GetActors2D(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkPointHandleRepresentation2D__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkPointHandleRepresentation2D__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkPointHandleRepresentation2D__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkPointHandleRepresentation2D*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__Highlight__0(void* self, int32_t highlight) {
+extern "C" void vtkPointHandleRepresentation2D__Highlight__0(void* self, int32_t highlight) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->Highlight(highlight);
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetPointPlacer__0(void* self, void* arg0) {
+extern "C" void vtkPointHandleRepresentation2D__SetPointPlacer__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetPointPlacer(static_cast<vtkPointPlacer*>(arg0));
 }
 
-extern "C" void vtkPointHandleRepresentation2D__SetVisibility__0(void* self, int32_t visible) {
+extern "C" void vtkPointHandleRepresentation2D__SetVisibility__0(void* self, int32_t visible) noexcept {
   (void)self;
   static_cast<vtkPointHandleRepresentation2D*>(self)->SetVisibility(visible);
 }

@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExtractEdges__vtk_wrap_new() { return static_cast<void*>(vtkExtractEdges::New()); }
+extern "C" void* vtkExtractEdges__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExtractEdges::New()); }
 
-extern "C" int32_t vtkExtractEdges__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExtractEdges__IsTypeOf__0(const char* type_) noexcept {
   return vtkExtractEdges::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExtractEdges__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExtractEdges__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractEdges*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExtractEdges__SafeDownCast__0(void* o) {
+extern "C" void* vtkExtractEdges__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExtractEdges::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExtractEdges__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExtractEdges__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExtractEdges::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExtractEdges__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExtractEdges__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractEdges*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkExtractEdges__SetUseAllPoints__0(void* self, bool _arg) {
+extern "C" void vtkExtractEdges__SetUseAllPoints__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkExtractEdges*>(self)->SetUseAllPoints(_arg);
 }
 
-extern "C" bool vtkExtractEdges__GetUseAllPoints__0(void* self) {
+extern "C" bool vtkExtractEdges__GetUseAllPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkExtractEdges*>(self)->GetUseAllPoints();
 }
 
-extern "C" void vtkExtractEdges__UseAllPointsOn__0(void* self) {
+extern "C" void vtkExtractEdges__UseAllPointsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExtractEdges*>(self)->UseAllPointsOn();
 }
 
-extern "C" void vtkExtractEdges__UseAllPointsOff__0(void* self) {
+extern "C" void vtkExtractEdges__UseAllPointsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExtractEdges*>(self)->UseAllPointsOff();
 }
 
-extern "C" unsigned long vtkExtractEdges__GetMTime__0(void* self) {
+extern "C" unsigned long vtkExtractEdges__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkExtractEdges*>(self)->GetMTime();
 }

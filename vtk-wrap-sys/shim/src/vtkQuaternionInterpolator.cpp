@@ -4,101 +4,101 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkQuaternionInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkQuaternionInterpolator::New()); }
+extern "C" void* vtkQuaternionInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuaternionInterpolator::New()); }
 
-extern "C" int32_t vtkQuaternionInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuaternionInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuaternionInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuaternionInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuaternionInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuaternionInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuaternionInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuaternionInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuaternionInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuaternionInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuaternionInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuaternionInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__GetNumberOfQuaternions__0(void* self) {
+extern "C" int32_t vtkQuaternionInterpolator__GetNumberOfQuaternions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetNumberOfQuaternions();
 }
 
-extern "C" double vtkQuaternionInterpolator__GetMinimumT__0(void* self) {
+extern "C" double vtkQuaternionInterpolator__GetMinimumT__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetMinimumT();
 }
 
-extern "C" double vtkQuaternionInterpolator__GetMaximumT__0(void* self) {
+extern "C" double vtkQuaternionInterpolator__GetMaximumT__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetMaximumT();
 }
 
-extern "C" void vtkQuaternionInterpolator__Initialize__0(void* self) {
+extern "C" void vtkQuaternionInterpolator__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->Initialize();
 }
 
-extern "C" void vtkQuaternionInterpolator__AddQuaternion__0(void* self, double t, double* q) {
+extern "C" void vtkQuaternionInterpolator__AddQuaternion__0(void* self, double t, double* q) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->AddQuaternion(t, q);
 }
 
-extern "C" void vtkQuaternionInterpolator__RemoveQuaternion__0(void* self, double t) {
+extern "C" void vtkQuaternionInterpolator__RemoveQuaternion__0(void* self, double t) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->RemoveQuaternion(t);
 }
 
-extern "C" void vtkQuaternionInterpolator__InterpolateQuaternion__0(void* self, double t, double* q) {
+extern "C" void vtkQuaternionInterpolator__InterpolateQuaternion__0(void* self, double t, double* q) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->InterpolateQuaternion(t, q);
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__GetSearchMethod__0(void* self) {
+extern "C" int32_t vtkQuaternionInterpolator__GetSearchMethod__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetSearchMethod();
 }
 
-extern "C" void vtkQuaternionInterpolator__SetSearchMethod__0(void* self, int32_t type_) {
+extern "C" void vtkQuaternionInterpolator__SetSearchMethod__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->SetSearchMethod(type_);
 }
 
-extern "C" void vtkQuaternionInterpolator__SetInterpolationType__0(void* self, int32_t _arg) {
+extern "C" void vtkQuaternionInterpolator__SetInterpolationType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->SetInterpolationType(_arg);
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationTypeMinValue__0(void* self) {
+extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationTypeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetInterpolationTypeMinValue();
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationTypeMaxValue__0(void* self) {
+extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationTypeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetInterpolationTypeMaxValue();
 }
 
-extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationType__0(void* self) {
+extern "C" int32_t vtkQuaternionInterpolator__GetInterpolationType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuaternionInterpolator*>(self)->GetInterpolationType();
 }
 
-extern "C" void vtkQuaternionInterpolator__SetInterpolationTypeToLinear__0(void* self) {
+extern "C" void vtkQuaternionInterpolator__SetInterpolationTypeToLinear__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->SetInterpolationTypeToLinear();
 }
 
-extern "C" void vtkQuaternionInterpolator__SetInterpolationTypeToSpline__0(void* self) {
+extern "C" void vtkQuaternionInterpolator__SetInterpolationTypeToSpline__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuaternionInterpolator*>(self)->SetInterpolationTypeToSpline();
 }

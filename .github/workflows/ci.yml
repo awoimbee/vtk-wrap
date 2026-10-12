@@ -144,12 +144,11 @@ jobs:
       # Builds: vtk-wrap-gen, vtk-wrap-sys (downloads + builds VTK, builds the shim),
       # vtk-wrap, and all test targets.
       - name: Build workspace and tests
-        run: cargo build --workspace --tests --locked
+        run: cargo build --workspace --tests --features vtk-wrap/vtkFiltersSources,vtk-wrap/vtkIOCore --locked
 
       # Cheap functional checks that do not need a window server.  The full
       # `smoke` sweep deliberately is not run here: it is a crash hunt that
       # walks into a known VTK segfault (see `scripts/crash-hunt.sh`).
       - name: Run fast tests
         run: |
-          cargo test -p vtk-wrap-gen --locked
-          cargo test -p vtk-wrap --test pipeline --locked
+          cargo test --workspace --features vtk-wrap/vtkFiltersSources,vtk-wrap/vtkIOCore --locked

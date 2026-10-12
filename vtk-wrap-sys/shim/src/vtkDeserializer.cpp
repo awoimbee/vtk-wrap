@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDeserializer__vtk_wrap_new() { return static_cast<void*>(vtkDeserializer::New()); }
+extern "C" void* vtkDeserializer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDeserializer::New()); }
 
-extern "C" int32_t vtkDeserializer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDeserializer__IsTypeOf__0(const char* type_) noexcept {
   return vtkDeserializer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDeserializer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDeserializer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDeserializer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDeserializer__SafeDownCast__0(void* o) {
+extern "C" void* vtkDeserializer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDeserializer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDeserializer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDeserializer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDeserializer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDeserializer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDeserializer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDeserializer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDeserializer__UnRegisterConstructor__0(void* self, const char* className) {
+extern "C" void vtkDeserializer__UnRegisterConstructor__0(void* self, const char* className) noexcept {
   (void)self;
   static_cast<vtkDeserializer*>(self)->UnRegisterConstructor(std::string(className));
 }
 
-extern "C" void vtkDeserializer__SetContext__0(void* self, void* _arg) {
+extern "C" void vtkDeserializer__SetContext__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkDeserializer*>(self)->SetContext(static_cast<vtkMarshalContext*>(_arg));
 }
 
-extern "C" void* vtkDeserializer__GetContext__0(void* self) {
+extern "C" void* vtkDeserializer__GetContext__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDeserializer*>(self)->GetContext());
 }

@@ -5,61 +5,61 @@
 #include "vtkScalarsToColors.h"
 #include <string>
 
-extern "C" void* vtkCellAttribute__vtk_wrap_new() { return static_cast<void*>(vtkCellAttribute::New()); }
+extern "C" void* vtkCellAttribute__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellAttribute::New()); }
 
-extern "C" int32_t vtkCellAttribute__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellAttribute__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellAttribute::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellAttribute__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellAttribute__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellAttribute*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellAttribute__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellAttribute__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellAttribute::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellAttribute__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellAttribute__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellAttribute::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellAttribute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellAttribute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellAttribute*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkCellAttribute__GetId__0(void* self) {
+extern "C" int32_t vtkCellAttribute__GetId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellAttribute*>(self)->GetId();
 }
 
-extern "C" void vtkCellAttribute__SetId__0(void* self, int32_t _arg) {
+extern "C" void vtkCellAttribute__SetId__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellAttribute*>(self)->SetId(_arg);
 }
 
-extern "C" int32_t vtkCellAttribute__GetNumberOfComponents__0(void* self) {
+extern "C" int32_t vtkCellAttribute__GetNumberOfComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellAttribute*>(self)->GetNumberOfComponents();
 }
 
-extern "C" void* vtkCellAttribute__GetColormap__0(void* self) {
+extern "C" void* vtkCellAttribute__GetColormap__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCellAttribute*>(self)->GetColormap());
 }
 
-extern "C" bool vtkCellAttribute__SetColormap__0(void* self, void* colormap) {
+extern "C" bool vtkCellAttribute__SetColormap__0(void* self, void* colormap) noexcept {
   (void)self;
   return static_cast<vtkCellAttribute*>(self)->SetColormap(static_cast<vtkScalarsToColors*>(colormap));
 }
 
-extern "C" void vtkCellAttribute__ShallowCopy__0(void* self, void* other, bool copyArrays) {
+extern "C" void vtkCellAttribute__ShallowCopy__0(void* self, void* other, bool copyArrays) noexcept {
   (void)self;
   static_cast<vtkCellAttribute*>(self)->ShallowCopy(static_cast<vtkCellAttribute*>(other), copyArrays);
 }
 
-extern "C" char* vtkCellAttribute__EncodeSpace__0(const char* base, uint32_t arg1, int32_t halfspace) {
+extern "C" char* vtkCellAttribute__EncodeSpace__0(const char* base, uint32_t arg1, int32_t halfspace) noexcept {
   return vtk_wrap_strdup((vtkCellAttribute::EncodeSpace(std::string(base), arg1, halfspace)).c_str());
 }
 

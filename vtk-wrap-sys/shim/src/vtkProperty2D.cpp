@@ -5,156 +5,156 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkProperty2D__vtk_wrap_new() { return static_cast<void*>(vtkProperty2D::New()); }
+extern "C" void* vtkProperty2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProperty2D::New()); }
 
-extern "C" int32_t vtkProperty2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProperty2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkProperty2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProperty2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProperty2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProperty2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkProperty2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProperty2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProperty2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProperty2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProperty2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProperty2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProperty2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProperty2D__DeepCopy__0(void* self, void* p) {
+extern "C" void vtkProperty2D__DeepCopy__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->DeepCopy(static_cast<vtkProperty2D*>(p));
 }
 
-extern "C" void vtkProperty2D__SetColor__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkProperty2D__SetColor__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetColor(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkProperty2D__SetColor__1(void* self, const double* _arg) {
+extern "C" void vtkProperty2D__SetColor__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetColor(_arg);
 }
 
-extern "C" double vtkProperty2D__GetOpacity__0(void* self) {
+extern "C" double vtkProperty2D__GetOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetOpacity();
 }
 
-extern "C" void vtkProperty2D__SetOpacity__0(void* self, double _arg) {
+extern "C" void vtkProperty2D__SetOpacity__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetOpacity(_arg);
 }
 
-extern "C" void vtkProperty2D__SetPointSize__0(void* self, float _arg) {
+extern "C" void vtkProperty2D__SetPointSize__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetPointSize(_arg);
 }
 
-extern "C" float vtkProperty2D__GetPointSizeMinValue__0(void* self) {
+extern "C" float vtkProperty2D__GetPointSizeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetPointSizeMinValue();
 }
 
-extern "C" float vtkProperty2D__GetPointSizeMaxValue__0(void* self) {
+extern "C" float vtkProperty2D__GetPointSizeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetPointSizeMaxValue();
 }
 
-extern "C" float vtkProperty2D__GetPointSize__0(void* self) {
+extern "C" float vtkProperty2D__GetPointSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetPointSize();
 }
 
-extern "C" void vtkProperty2D__SetLineWidth__0(void* self, float _arg) {
+extern "C" void vtkProperty2D__SetLineWidth__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetLineWidth(_arg);
 }
 
-extern "C" float vtkProperty2D__GetLineWidthMinValue__0(void* self) {
+extern "C" float vtkProperty2D__GetLineWidthMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineWidthMinValue();
 }
 
-extern "C" float vtkProperty2D__GetLineWidthMaxValue__0(void* self) {
+extern "C" float vtkProperty2D__GetLineWidthMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineWidthMaxValue();
 }
 
-extern "C" float vtkProperty2D__GetLineWidth__0(void* self) {
+extern "C" float vtkProperty2D__GetLineWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineWidth();
 }
 
-extern "C" void vtkProperty2D__SetLineStipplePattern__0(void* self, int32_t _arg) {
+extern "C" void vtkProperty2D__SetLineStipplePattern__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetLineStipplePattern(_arg);
 }
 
-extern "C" int32_t vtkProperty2D__GetLineStipplePattern__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetLineStipplePattern__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineStipplePattern();
 }
 
-extern "C" void vtkProperty2D__SetLineStippleRepeatFactor__0(void* self, int32_t _arg) {
+extern "C" void vtkProperty2D__SetLineStippleRepeatFactor__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetLineStippleRepeatFactor(_arg);
 }
 
-extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactorMinValue__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineStippleRepeatFactorMinValue();
 }
 
-extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactorMaxValue__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineStippleRepeatFactorMaxValue();
 }
 
-extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactor__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetLineStippleRepeatFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetLineStippleRepeatFactor();
 }
 
-extern "C" void vtkProperty2D__SetDisplayLocation__0(void* self, int32_t _arg) {
+extern "C" void vtkProperty2D__SetDisplayLocation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetDisplayLocation(_arg);
 }
 
-extern "C" int32_t vtkProperty2D__GetDisplayLocationMinValue__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetDisplayLocationMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetDisplayLocationMinValue();
 }
 
-extern "C" int32_t vtkProperty2D__GetDisplayLocationMaxValue__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetDisplayLocationMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetDisplayLocationMaxValue();
 }
 
-extern "C" int32_t vtkProperty2D__GetDisplayLocation__0(void* self) {
+extern "C" int32_t vtkProperty2D__GetDisplayLocation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProperty2D*>(self)->GetDisplayLocation();
 }
 
-extern "C" void vtkProperty2D__SetDisplayLocationToBackground__0(void* self) {
+extern "C" void vtkProperty2D__SetDisplayLocationToBackground__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetDisplayLocationToBackground();
 }
 
-extern "C" void vtkProperty2D__SetDisplayLocationToForeground__0(void* self) {
+extern "C" void vtkProperty2D__SetDisplayLocationToForeground__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->SetDisplayLocationToForeground();
 }
 
-extern "C" void vtkProperty2D__Render__0(void* self, void* viewport) {
+extern "C" void vtkProperty2D__Render__0(void* self, void* viewport) noexcept {
   (void)self;
   static_cast<vtkProperty2D*>(self)->Render(static_cast<vtkViewport*>(viewport));
 }

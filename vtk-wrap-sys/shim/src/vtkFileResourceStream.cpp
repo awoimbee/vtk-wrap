@@ -4,41 +4,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFileResourceStream__vtk_wrap_new() { return static_cast<void*>(vtkFileResourceStream::New()); }
+extern "C" void* vtkFileResourceStream__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFileResourceStream::New()); }
 
-extern "C" int32_t vtkFileResourceStream__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFileResourceStream__IsTypeOf__0(const char* type_) noexcept {
   return vtkFileResourceStream::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFileResourceStream__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFileResourceStream__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFileResourceStream*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFileResourceStream__SafeDownCast__0(void* o) {
+extern "C" void* vtkFileResourceStream__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFileResourceStream::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFileResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFileResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFileResourceStream::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFileResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFileResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFileResourceStream*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkFileResourceStream__Open__0(void* self, const char* path) {
+extern "C" bool vtkFileResourceStream__Open__0(void* self, const char* path) noexcept {
   (void)self;
   return static_cast<vtkFileResourceStream*>(self)->Open(path);
 }
 
-extern "C" bool vtkFileResourceStream__EndOfStream__0(void* self) {
+extern "C" bool vtkFileResourceStream__EndOfStream__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFileResourceStream*>(self)->EndOfStream();
 }
 
-extern "C" int64_t vtkFileResourceStream__Tell__0(void* self) {
+extern "C" int64_t vtkFileResourceStream__Tell__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFileResourceStream*>(self)->Tell();
 }

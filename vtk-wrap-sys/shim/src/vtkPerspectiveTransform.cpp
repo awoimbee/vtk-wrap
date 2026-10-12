@@ -7,226 +7,226 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPerspectiveTransform__vtk_wrap_new() { return static_cast<void*>(vtkPerspectiveTransform::New()); }
+extern "C" void* vtkPerspectiveTransform__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPerspectiveTransform::New()); }
 
-extern "C" int32_t vtkPerspectiveTransform__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPerspectiveTransform__IsTypeOf__0(const char* type_) noexcept {
   return vtkPerspectiveTransform::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPerspectiveTransform__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPerspectiveTransform__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPerspectiveTransform__SafeDownCast__0(void* o) {
+extern "C" void* vtkPerspectiveTransform__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPerspectiveTransform::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPerspectiveTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPerspectiveTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPerspectiveTransform::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPerspectiveTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPerspectiveTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPerspectiveTransform__Identity__0(void* self) {
+extern "C" void vtkPerspectiveTransform__Identity__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Identity();
 }
 
-extern "C" void vtkPerspectiveTransform__Inverse__0(void* self) {
+extern "C" void vtkPerspectiveTransform__Inverse__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Inverse();
 }
 
-extern "C" void vtkPerspectiveTransform__AdjustViewport__0(void* self, double oldXMin, double oldXMax, double oldYMin, double oldYMax, double newXMin, double newXMax, double newYMin, double newYMax) {
+extern "C" void vtkPerspectiveTransform__AdjustViewport__0(void* self, double oldXMin, double oldXMax, double oldYMin, double oldYMax, double newXMin, double newXMax, double newYMin, double newYMax) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->AdjustViewport(oldXMin, oldXMax, oldYMin, oldYMax, newXMin, newXMax, newYMin, newYMax);
 }
 
-extern "C" void vtkPerspectiveTransform__AdjustZBuffer__0(void* self, double oldNearZ, double oldFarZ, double newNearZ, double newFarZ) {
+extern "C" void vtkPerspectiveTransform__AdjustZBuffer__0(void* self, double oldNearZ, double oldFarZ, double newNearZ, double newFarZ) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->AdjustZBuffer(oldNearZ, oldFarZ, newNearZ, newFarZ);
 }
 
-extern "C" void vtkPerspectiveTransform__Ortho__0(void* self, double xmin, double xmax, double ymin, double ymax, double znear, double zfar) {
+extern "C" void vtkPerspectiveTransform__Ortho__0(void* self, double xmin, double xmax, double ymin, double ymax, double znear, double zfar) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Ortho(xmin, xmax, ymin, ymax, znear, zfar);
 }
 
-extern "C" void vtkPerspectiveTransform__Frustum__0(void* self, double xmin, double xmax, double ymin, double ymax, double znear, double zfar) {
+extern "C" void vtkPerspectiveTransform__Frustum__0(void* self, double xmin, double xmax, double ymin, double ymax, double znear, double zfar) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Frustum(xmin, xmax, ymin, ymax, znear, zfar);
 }
 
-extern "C" void vtkPerspectiveTransform__Perspective__0(void* self, double angle, double aspect, double znear, double zfar) {
+extern "C" void vtkPerspectiveTransform__Perspective__0(void* self, double angle, double aspect, double znear, double zfar) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Perspective(angle, aspect, znear, zfar);
 }
 
-extern "C" void vtkPerspectiveTransform__Shear__0(void* self, double dxdz, double dydz, double zplane) {
+extern "C" void vtkPerspectiveTransform__Shear__0(void* self, double dxdz, double dydz, double zplane) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Shear(dxdz, dydz, zplane);
 }
 
-extern "C" void vtkPerspectiveTransform__Stereo__0(void* self, double angle, double focaldistance) {
+extern "C" void vtkPerspectiveTransform__Stereo__0(void* self, double angle, double focaldistance) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Stereo(angle, focaldistance);
 }
 
-extern "C" void vtkPerspectiveTransform__SetupCamera__0(void* self, const double* position, const double* focalpoint, const double* viewup) {
+extern "C" void vtkPerspectiveTransform__SetupCamera__0(void* self, const double* position, const double* focalpoint, const double* viewup) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->SetupCamera(position, focalpoint, viewup);
 }
 
-extern "C" void vtkPerspectiveTransform__SetupCamera__1(void* self, double p0, double p1, double p2, double fp0, double fp1, double fp2, double vup0, double vup1, double vup2) {
+extern "C" void vtkPerspectiveTransform__SetupCamera__1(void* self, double p0, double p1, double p2, double fp0, double fp1, double fp2, double vup0, double vup1, double vup2) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->SetupCamera(p0, p1, p2, fp0, fp1, fp2, vup0, vup1, vup2);
 }
 
-extern "C" void vtkPerspectiveTransform__Translate__0(void* self, double x, double y, double z) {
+extern "C" void vtkPerspectiveTransform__Translate__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Translate(x, y, z);
 }
 
-extern "C" void vtkPerspectiveTransform__Translate__1(void* self, const double* x) {
+extern "C" void vtkPerspectiveTransform__Translate__1(void* self, const double* x) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Translate(x);
 }
 
-extern "C" void vtkPerspectiveTransform__Translate__2(void* self, const float* x) {
+extern "C" void vtkPerspectiveTransform__Translate__2(void* self, const float* x) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Translate(x);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateWXYZ__0(void* self, double angle, double x, double y, double z) {
+extern "C" void vtkPerspectiveTransform__RotateWXYZ__0(void* self, double angle, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateWXYZ(angle, x, y, z);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateWXYZ__1(void* self, double angle, const double* axis) {
+extern "C" void vtkPerspectiveTransform__RotateWXYZ__1(void* self, double angle, const double* axis) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateWXYZ(angle, axis);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateWXYZ__2(void* self, double angle, const float* axis) {
+extern "C" void vtkPerspectiveTransform__RotateWXYZ__2(void* self, double angle, const float* axis) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateWXYZ(angle, axis);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateX__0(void* self, double angle) {
+extern "C" void vtkPerspectiveTransform__RotateX__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateX(angle);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateY__0(void* self, double angle) {
+extern "C" void vtkPerspectiveTransform__RotateY__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateY(angle);
 }
 
-extern "C" void vtkPerspectiveTransform__RotateZ__0(void* self, double angle) {
+extern "C" void vtkPerspectiveTransform__RotateZ__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->RotateZ(angle);
 }
 
-extern "C" void vtkPerspectiveTransform__Scale__0(void* self, double x, double y, double z) {
+extern "C" void vtkPerspectiveTransform__Scale__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Scale(x, y, z);
 }
 
-extern "C" void vtkPerspectiveTransform__Scale__1(void* self, const double* s) {
+extern "C" void vtkPerspectiveTransform__Scale__1(void* self, const double* s) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Scale(s);
 }
 
-extern "C" void vtkPerspectiveTransform__Scale__2(void* self, const float* s) {
+extern "C" void vtkPerspectiveTransform__Scale__2(void* self, const float* s) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Scale(s);
 }
 
-extern "C" void vtkPerspectiveTransform__SetMatrix__0(void* self, void* matrix) {
+extern "C" void vtkPerspectiveTransform__SetMatrix__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->SetMatrix(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkPerspectiveTransform__SetMatrix__1(void* self, const double* elements) {
+extern "C" void vtkPerspectiveTransform__SetMatrix__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->SetMatrix(elements);
 }
 
-extern "C" void vtkPerspectiveTransform__Concatenate__0(void* self, void* matrix) {
+extern "C" void vtkPerspectiveTransform__Concatenate__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Concatenate(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkPerspectiveTransform__Concatenate__1(void* self, const double* elements) {
+extern "C" void vtkPerspectiveTransform__Concatenate__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Concatenate(elements);
 }
 
-extern "C" void vtkPerspectiveTransform__Concatenate__2(void* self, void* transform) {
+extern "C" void vtkPerspectiveTransform__Concatenate__2(void* self, void* transform) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Concatenate(static_cast<vtkHomogeneousTransform*>(transform));
 }
 
-extern "C" void vtkPerspectiveTransform__PreMultiply__0(void* self) {
+extern "C" void vtkPerspectiveTransform__PreMultiply__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->PreMultiply();
 }
 
-extern "C" void vtkPerspectiveTransform__PostMultiply__0(void* self) {
+extern "C" void vtkPerspectiveTransform__PostMultiply__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->PostMultiply();
 }
 
-extern "C" int32_t vtkPerspectiveTransform__GetNumberOfConcatenatedTransforms__0(void* self) {
+extern "C" int32_t vtkPerspectiveTransform__GetNumberOfConcatenatedTransforms__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->GetNumberOfConcatenatedTransforms();
 }
 
-extern "C" void* vtkPerspectiveTransform__GetConcatenatedTransform__0(void* self, int32_t i) {
+extern "C" void* vtkPerspectiveTransform__GetConcatenatedTransform__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPerspectiveTransform*>(self)->GetConcatenatedTransform(i));
 }
 
-extern "C" void vtkPerspectiveTransform__SetInput__0(void* self, void* input) {
+extern "C" void vtkPerspectiveTransform__SetInput__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->SetInput(static_cast<vtkHomogeneousTransform*>(input));
 }
 
-extern "C" void* vtkPerspectiveTransform__GetInput__0(void* self) {
+extern "C" void* vtkPerspectiveTransform__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPerspectiveTransform*>(self)->GetInput());
 }
 
-extern "C" int32_t vtkPerspectiveTransform__GetInverseFlag__0(void* self) {
+extern "C" int32_t vtkPerspectiveTransform__GetInverseFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->GetInverseFlag();
 }
 
-extern "C" void vtkPerspectiveTransform__Push__0(void* self) {
+extern "C" void vtkPerspectiveTransform__Push__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Push();
 }
 
-extern "C" void vtkPerspectiveTransform__Pop__0(void* self) {
+extern "C" void vtkPerspectiveTransform__Pop__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPerspectiveTransform*>(self)->Pop();
 }
 
-extern "C" void* vtkPerspectiveTransform__MakeTransform__0(void* self) {
+extern "C" void* vtkPerspectiveTransform__MakeTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPerspectiveTransform*>(self)->MakeTransform());
 }
 
-extern "C" int32_t vtkPerspectiveTransform__CircuitCheck__0(void* self, void* transform) {
+extern "C" int32_t vtkPerspectiveTransform__CircuitCheck__0(void* self, void* transform) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->CircuitCheck(static_cast<vtkAbstractTransform*>(transform));
 }
 
-extern "C" unsigned long vtkPerspectiveTransform__GetMTime__0(void* self) {
+extern "C" unsigned long vtkPerspectiveTransform__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPerspectiveTransform*>(self)->GetMTime();
 }

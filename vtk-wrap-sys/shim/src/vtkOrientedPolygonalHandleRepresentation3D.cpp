@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOrientedPolygonalHandleRepresentation3D__vtk_wrap_new() { return static_cast<void*>(vtkOrientedPolygonalHandleRepresentation3D::New()); }
+extern "C" void* vtkOrientedPolygonalHandleRepresentation3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOrientedPolygonalHandleRepresentation3D::New()); }
 
-extern "C" int32_t vtkOrientedPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOrientedPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkOrientedPolygonalHandleRepresentation3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOrientedPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOrientedPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrientedPolygonalHandleRepresentation3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOrientedPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkOrientedPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOrientedPolygonalHandleRepresentation3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOrientedPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOrientedPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOrientedPolygonalHandleRepresentation3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOrientedPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOrientedPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrientedPolygonalHandleRepresentation3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

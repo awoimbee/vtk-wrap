@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImplicitFunctionCollection__vtk_wrap_new() { return static_cast<void*>(vtkImplicitFunctionCollection::New()); }
+extern "C" void* vtkImplicitFunctionCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImplicitFunctionCollection::New()); }
 
-extern "C" int32_t vtkImplicitFunctionCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImplicitFunctionCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkImplicitFunctionCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImplicitFunctionCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImplicitFunctionCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunctionCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImplicitFunctionCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkImplicitFunctionCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImplicitFunctionCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImplicitFunctionCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImplicitFunctionCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImplicitFunctionCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImplicitFunctionCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImplicitFunctionCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunctionCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImplicitFunctionCollection__AddItem__0(void* self, void* arg0) {
+extern "C" void vtkImplicitFunctionCollection__AddItem__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImplicitFunctionCollection*>(self)->AddItem(static_cast<vtkImplicitFunction*>(arg0));
 }
 
-extern "C" void* vtkImplicitFunctionCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkImplicitFunctionCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImplicitFunctionCollection*>(self)->GetNextItem());
 }

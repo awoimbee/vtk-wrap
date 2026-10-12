@@ -6,46 +6,46 @@
 #include "vtkTree.h"
 #include <string>
 
-extern "C" void* vtkTreeReader__vtk_wrap_new() { return static_cast<void*>(vtkTreeReader::New()); }
+extern "C" void* vtkTreeReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTreeReader::New()); }
 
-extern "C" int32_t vtkTreeReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTreeReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkTreeReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTreeReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTreeReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTreeReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkTreeReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTreeReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTreeReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTreeReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTreeReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTreeReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTreeReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTreeReader__GetOutput__0(void* self) {
+extern "C" void* vtkTreeReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTreeReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkTreeReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkTreeReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTreeReader*>(self)->GetOutput(idx));
 }
 
-extern "C" void vtkTreeReader__SetOutput__0(void* self, void* output) {
+extern "C" void vtkTreeReader__SetOutput__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkTreeReader*>(self)->SetOutput(static_cast<vtkTree*>(output));
 }
 
-extern "C" int32_t vtkTreeReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkTreeReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkTreeReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

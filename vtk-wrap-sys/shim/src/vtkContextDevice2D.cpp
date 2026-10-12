@@ -13,181 +13,181 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkContextDevice2D__vtk_wrap_new() { return static_cast<void*>(vtkContextDevice2D::New()); }
+extern "C" void* vtkContextDevice2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContextDevice2D::New()); }
 
-extern "C" int32_t vtkContextDevice2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContextDevice2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkContextDevice2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContextDevice2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContextDevice2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContextDevice2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkContextDevice2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContextDevice2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContextDevice2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContextDevice2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContextDevice2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContextDevice2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContextDevice2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContextDevice2D__DrawEllipseWedge__0(void* self, float x, float y, float outRx, float outRy, float inRx, float inRy, float startAngle, float stopAngle) {
+extern "C" void vtkContextDevice2D__DrawEllipseWedge__0(void* self, float x, float y, float outRx, float outRy, float inRx, float inRy, float startAngle, float stopAngle) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->DrawEllipseWedge(x, y, outRx, outRy, inRx, inRy, startAngle, stopAngle);
 }
 
-extern "C" void vtkContextDevice2D__DrawEllipticArc__0(void* self, float x, float y, float rX, float rY, float startAngle, float stopAngle) {
+extern "C" void vtkContextDevice2D__DrawEllipticArc__0(void* self, float x, float y, float rX, float rY, float startAngle, float stopAngle) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->DrawEllipticArc(x, y, rX, rY, startAngle, stopAngle);
 }
 
-extern "C" void vtkContextDevice2D__ComputeJustifiedStringBounds__0(void* self, const char* string, float* bounds) {
+extern "C" void vtkContextDevice2D__ComputeJustifiedStringBounds__0(void* self, const char* string, float* bounds) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->ComputeJustifiedStringBounds(string, bounds);
 }
 
-extern "C" bool vtkContextDevice2D__MathTextIsSupported__0(void* self) {
+extern "C" bool vtkContextDevice2D__MathTextIsSupported__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->MathTextIsSupported();
 }
 
-extern "C" void vtkContextDevice2D__DrawImage__0(void* self, float* p, float scale, void* image) {
+extern "C" void vtkContextDevice2D__DrawImage__0(void* self, float* p, float scale, void* image) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->DrawImage(p, scale, static_cast<vtkImageData*>(image));
 }
 
-extern "C" void vtkContextDevice2D__DrawPolyData__0(void* self, float* p, float scale, void* polyData, void* colors, int32_t scalarMode) {
+extern "C" void vtkContextDevice2D__DrawPolyData__0(void* self, float* p, float scale, void* polyData, void* colors, int32_t scalarMode) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->DrawPolyData(p, scale, static_cast<vtkPolyData*>(polyData), static_cast<vtkUnsignedCharArray*>(colors), scalarMode);
 }
 
-extern "C" void vtkContextDevice2D__ApplyPen__0(void* self, void* pen) {
+extern "C" void vtkContextDevice2D__ApplyPen__0(void* self, void* pen) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->ApplyPen(static_cast<vtkPen*>(pen));
 }
 
-extern "C" void* vtkContextDevice2D__GetPen__0(void* self) {
+extern "C" void* vtkContextDevice2D__GetPen__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextDevice2D*>(self)->GetPen());
 }
 
-extern "C" void vtkContextDevice2D__ApplyBrush__0(void* self, void* brush) {
+extern "C" void vtkContextDevice2D__ApplyBrush__0(void* self, void* brush) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->ApplyBrush(static_cast<vtkBrush*>(brush));
 }
 
-extern "C" void* vtkContextDevice2D__GetBrush__0(void* self) {
+extern "C" void* vtkContextDevice2D__GetBrush__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextDevice2D*>(self)->GetBrush());
 }
 
-extern "C" void vtkContextDevice2D__ApplyTextProp__0(void* self, void* prop) {
+extern "C" void vtkContextDevice2D__ApplyTextProp__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->ApplyTextProp(static_cast<vtkTextProperty*>(prop));
 }
 
-extern "C" void* vtkContextDevice2D__GetTextProp__0(void* self) {
+extern "C" void* vtkContextDevice2D__GetTextProp__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextDevice2D*>(self)->GetTextProp());
 }
 
-extern "C" void vtkContextDevice2D__SetColor4__0(void* self, uint8_t* color) {
+extern "C" void vtkContextDevice2D__SetColor4__0(void* self, uint8_t* color) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetColor4(color);
 }
 
-extern "C" void vtkContextDevice2D__SetTexture__0(void* self, void* image, int32_t properties) {
+extern "C" void vtkContextDevice2D__SetTexture__0(void* self, void* image, int32_t properties) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetTexture(static_cast<vtkImageData*>(image), properties);
 }
 
-extern "C" void vtkContextDevice2D__SetPointSize__0(void* self, float size) {
+extern "C" void vtkContextDevice2D__SetPointSize__0(void* self, float size) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetPointSize(size);
 }
 
-extern "C" void vtkContextDevice2D__SetLineWidth__0(void* self, float width) {
+extern "C" void vtkContextDevice2D__SetLineWidth__0(void* self, float width) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetLineWidth(width);
 }
 
-extern "C" void vtkContextDevice2D__SetLineType__0(void* self, int32_t type_) {
+extern "C" void vtkContextDevice2D__SetLineType__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetLineType(type_);
 }
 
-extern "C" int32_t vtkContextDevice2D__GetWidth__0(void* self) {
+extern "C" int32_t vtkContextDevice2D__GetWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->GetWidth();
 }
 
-extern "C" int32_t vtkContextDevice2D__GetHeight__0(void* self) {
+extern "C" int32_t vtkContextDevice2D__GetHeight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->GetHeight();
 }
 
-extern "C" void vtkContextDevice2D__SetMatrix__0(void* self, void* m) {
+extern "C" void vtkContextDevice2D__SetMatrix__0(void* self, void* m) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->SetMatrix(static_cast<vtkMatrix3x3*>(m));
 }
 
-extern "C" void vtkContextDevice2D__GetMatrix__0(void* self, void* m) {
+extern "C" void vtkContextDevice2D__GetMatrix__0(void* self, void* m) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->GetMatrix(static_cast<vtkMatrix3x3*>(m));
 }
 
-extern "C" void vtkContextDevice2D__MultiplyMatrix__0(void* self, void* m) {
+extern "C" void vtkContextDevice2D__MultiplyMatrix__0(void* self, void* m) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->MultiplyMatrix(static_cast<vtkMatrix3x3*>(m));
 }
 
-extern "C" void vtkContextDevice2D__PushMatrix__0(void* self) {
+extern "C" void vtkContextDevice2D__PushMatrix__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->PushMatrix();
 }
 
-extern "C" void vtkContextDevice2D__PopMatrix__0(void* self) {
+extern "C" void vtkContextDevice2D__PopMatrix__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->PopMatrix();
 }
 
-extern "C" void vtkContextDevice2D__DisableClipping__0(void* self) {
+extern "C" void vtkContextDevice2D__DisableClipping__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->DisableClipping();
 }
 
-extern "C" void vtkContextDevice2D__EnableClipping__0(void* self, bool enable) {
+extern "C" void vtkContextDevice2D__EnableClipping__0(void* self, bool enable) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->EnableClipping(enable);
 }
 
-extern "C" void vtkContextDevice2D__Begin__0(void* self, void* arg0) {
+extern "C" void vtkContextDevice2D__Begin__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->Begin(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" void vtkContextDevice2D__End__0(void* self) {
+extern "C" void vtkContextDevice2D__End__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->End();
 }
 
-extern "C" bool vtkContextDevice2D__GetBufferIdMode__0(void* self) {
+extern "C" bool vtkContextDevice2D__GetBufferIdMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContextDevice2D*>(self)->GetBufferIdMode();
 }
 
-extern "C" void vtkContextDevice2D__BufferIdModeBegin__0(void* self, void* bufferId) {
+extern "C" void vtkContextDevice2D__BufferIdModeBegin__0(void* self, void* bufferId) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->BufferIdModeBegin(static_cast<vtkAbstractContextBufferId*>(bufferId));
 }
 
-extern "C" void vtkContextDevice2D__BufferIdModeEnd__0(void* self) {
+extern "C" void vtkContextDevice2D__BufferIdModeEnd__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContextDevice2D*>(self)->BufferIdModeEnd();
 }

@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMetaImageReader__vtk_wrap_new() { return static_cast<void*>(vtkMetaImageReader::New()); }
+extern "C" void* vtkMetaImageReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMetaImageReader::New()); }
 
-extern "C" int32_t vtkMetaImageReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMetaImageReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkMetaImageReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMetaImageReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMetaImageReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMetaImageReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkMetaImageReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMetaImageReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMetaImageReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMetaImageReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMetaImageReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMetaImageReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMetaImageReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkMetaImageReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkMetaImageReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkMetaImageReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkMetaImageReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetDescriptiveName();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetWidth__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetWidth();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetHeight__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetHeight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetHeight();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetNumberOfComponents__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetNumberOfComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetNumberOfComponents();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetPixelRepresentation__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetPixelRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetPixelRepresentation();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetDataByteOrder__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetDataByteOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetDataByteOrder();
 }
 
-extern "C" double vtkMetaImageReader__GetRescaleSlope__0(void* self) {
+extern "C" double vtkMetaImageReader__GetRescaleSlope__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetRescaleSlope();
 }
 
-extern "C" double vtkMetaImageReader__GetRescaleOffset__0(void* self) {
+extern "C" double vtkMetaImageReader__GetRescaleOffset__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetRescaleOffset();
 }
 
-extern "C" int32_t vtkMetaImageReader__GetBitsAllocated__0(void* self) {
+extern "C" int32_t vtkMetaImageReader__GetBitsAllocated__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetBitsAllocated();
 }
 
-extern "C" double vtkMetaImageReader__GetGantryAngle__0(void* self) {
+extern "C" double vtkMetaImageReader__GetGantryAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->GetGantryAngle();
 }
 
-extern "C" int32_t vtkMetaImageReader__CanReadFile__0(void* self, const char* name) {
+extern "C" int32_t vtkMetaImageReader__CanReadFile__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkMetaImageReader*>(self)->CanReadFile(name);
 }

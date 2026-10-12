@@ -7,91 +7,91 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkPBRIrradianceTexture__vtk_wrap_new() { return static_cast<void*>(vtkPBRIrradianceTexture::New()); }
+extern "C" void* vtkPBRIrradianceTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPBRIrradianceTexture::New()); }
 
-extern "C" int32_t vtkPBRIrradianceTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPBRIrradianceTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkPBRIrradianceTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPBRIrradianceTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPBRIrradianceTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPBRIrradianceTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPBRIrradianceTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkPBRIrradianceTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPBRIrradianceTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPBRIrradianceTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPBRIrradianceTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPBRIrradianceTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPBRIrradianceTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPBRIrradianceTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPBRIrradianceTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPBRIrradianceTexture__SetInputTexture__0(void* self, void* texture) {
+extern "C" void vtkPBRIrradianceTexture__SetInputTexture__0(void* self, void* texture) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->SetInputTexture(static_cast<vtkOpenGLTexture*>(texture));
 }
 
-extern "C" void* vtkPBRIrradianceTexture__GetInputTexture__0(void* self) {
+extern "C" void* vtkPBRIrradianceTexture__GetInputTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPBRIrradianceTexture*>(self)->GetInputTexture());
 }
 
-extern "C" void vtkPBRIrradianceTexture__Load__0(void* self, void* arg0) {
+extern "C" void vtkPBRIrradianceTexture__Load__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->Load(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void vtkPBRIrradianceTexture__Render__0(void* self, void* ren) {
+extern "C" void vtkPBRIrradianceTexture__Render__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->Render(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" uint32_t vtkPBRIrradianceTexture__GetIrradianceSize__0(void* self) {
+extern "C" uint32_t vtkPBRIrradianceTexture__GetIrradianceSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRIrradianceTexture*>(self)->GetIrradianceSize();
 }
 
-extern "C" void vtkPBRIrradianceTexture__SetIrradianceSize__0(void* self, uint32_t _arg) {
+extern "C" void vtkPBRIrradianceTexture__SetIrradianceSize__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->SetIrradianceSize(_arg);
 }
 
-extern "C" float vtkPBRIrradianceTexture__GetIrradianceStep__0(void* self) {
+extern "C" float vtkPBRIrradianceTexture__GetIrradianceStep__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRIrradianceTexture*>(self)->GetIrradianceStep();
 }
 
-extern "C" void vtkPBRIrradianceTexture__SetIrradianceStep__0(void* self, float _arg) {
+extern "C" void vtkPBRIrradianceTexture__SetIrradianceStep__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->SetIrradianceStep(_arg);
 }
 
-extern "C" bool vtkPBRIrradianceTexture__GetConvertToLinear__0(void* self) {
+extern "C" bool vtkPBRIrradianceTexture__GetConvertToLinear__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPBRIrradianceTexture*>(self)->GetConvertToLinear();
 }
 
-extern "C" void vtkPBRIrradianceTexture__SetConvertToLinear__0(void* self, bool _arg) {
+extern "C" void vtkPBRIrradianceTexture__SetConvertToLinear__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->SetConvertToLinear(_arg);
 }
 
-extern "C" void vtkPBRIrradianceTexture__ConvertToLinearOn__0(void* self) {
+extern "C" void vtkPBRIrradianceTexture__ConvertToLinearOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->ConvertToLinearOn();
 }
 
-extern "C" void vtkPBRIrradianceTexture__ConvertToLinearOff__0(void* self) {
+extern "C" void vtkPBRIrradianceTexture__ConvertToLinearOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->ConvertToLinearOff();
 }
 
-extern "C" void vtkPBRIrradianceTexture__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkPBRIrradianceTexture__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPBRIrradianceTexture*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

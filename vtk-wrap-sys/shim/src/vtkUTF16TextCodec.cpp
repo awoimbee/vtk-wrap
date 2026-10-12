@@ -4,41 +4,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUTF16TextCodec__vtk_wrap_new() { return static_cast<void*>(vtkUTF16TextCodec::New()); }
+extern "C" void* vtkUTF16TextCodec__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUTF16TextCodec::New()); }
 
-extern "C" int32_t vtkUTF16TextCodec__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUTF16TextCodec__IsTypeOf__0(const char* type_) noexcept {
   return vtkUTF16TextCodec::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUTF16TextCodec__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUTF16TextCodec__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUTF16TextCodec*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUTF16TextCodec__SafeDownCast__0(void* o) {
+extern "C" void* vtkUTF16TextCodec__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUTF16TextCodec::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUTF16TextCodec__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUTF16TextCodec__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUTF16TextCodec::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUTF16TextCodec__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUTF16TextCodec__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUTF16TextCodec*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkUTF16TextCodec__Name__0(void* self) {
+extern "C" const char* vtkUTF16TextCodec__Name__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUTF16TextCodec*>(self)->Name();
 }
 
-extern "C" bool vtkUTF16TextCodec__CanHandle__0(void* self, const char* NameString) {
+extern "C" bool vtkUTF16TextCodec__CanHandle__0(void* self, const char* NameString) noexcept {
   (void)self;
   return static_cast<vtkUTF16TextCodec*>(self)->CanHandle(NameString);
 }
 
-extern "C" void vtkUTF16TextCodec__SetBigEndian__0(void* self, bool arg0) {
+extern "C" void vtkUTF16TextCodec__SetBigEndian__0(void* self, bool arg0) noexcept {
   (void)self;
   static_cast<vtkUTF16TextCodec*>(self)->SetBigEndian(arg0);
 }

@@ -5,171 +5,171 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkAttributeSmoothingFilter__vtk_wrap_new() { return static_cast<void*>(vtkAttributeSmoothingFilter::New()); }
+extern "C" void* vtkAttributeSmoothingFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAttributeSmoothingFilter::New()); }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAttributeSmoothingFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkAttributeSmoothingFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAttributeSmoothingFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAttributeSmoothingFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkAttributeSmoothingFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAttributeSmoothingFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAttributeSmoothingFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAttributeSmoothingFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAttributeSmoothingFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAttributeSmoothingFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAttributeSmoothingFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetNumberOfIterations__0(void* self, int32_t _arg) {
+extern "C" void vtkAttributeSmoothingFilter__SetNumberOfIterations__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetNumberOfIterations(_arg);
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterationsMinValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterationsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetNumberOfIterationsMinValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterationsMaxValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterationsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetNumberOfIterationsMaxValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterations__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfIterations__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetNumberOfIterations();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetRelaxationFactor__0(void* self, double _arg) {
+extern "C" void vtkAttributeSmoothingFilter__SetRelaxationFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetRelaxationFactor(_arg);
 }
 
-extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactorMinValue__0(void* self) {
+extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetRelaxationFactorMinValue();
 }
 
-extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactorMaxValue__0(void* self) {
+extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetRelaxationFactorMaxValue();
 }
 
-extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactor__0(void* self) {
+extern "C" double vtkAttributeSmoothingFilter__GetRelaxationFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetRelaxationFactor();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategy__0(void* self, int32_t _arg) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategy__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingStrategy(_arg);
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategyMinValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategyMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetSmoothingStrategyMinValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategyMaxValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategyMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetSmoothingStrategyMaxValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategy__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetSmoothingStrategy__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetSmoothingStrategy();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAllPoints__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAllPoints__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingStrategyToAllPoints();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAllButBoundary__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAllButBoundary__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingStrategyToAllButBoundary();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAdjacentToBoundary__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToAdjacentToBoundary__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingStrategyToAdjacentToBoundary();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToSmoothingMask__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingStrategyToSmoothingMask__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingStrategyToSmoothingMask();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetSmoothingMask__0(void* self, void* _arg) {
+extern "C" void vtkAttributeSmoothingFilter__SetSmoothingMask__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetSmoothingMask(static_cast<vtkUnsignedCharArray*>(_arg));
 }
 
-extern "C" void* vtkAttributeSmoothingFilter__GetSmoothingMask__0(void* self) {
+extern "C" void* vtkAttributeSmoothingFilter__GetSmoothingMask__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAttributeSmoothingFilter*>(self)->GetSmoothingMask());
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetWeightsType__0(void* self, int32_t _arg) {
+extern "C" void vtkAttributeSmoothingFilter__SetWeightsType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetWeightsType(_arg);
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsTypeMinValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsTypeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetWeightsTypeMinValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsTypeMaxValue__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsTypeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetWeightsTypeMaxValue();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsType__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetWeightsType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetWeightsType();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToAverage__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToAverage__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetWeightsTypeToAverage();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToDistance__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToDistance__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetWeightsTypeToDistance();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToDistance2__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__SetWeightsTypeToDistance2__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->SetWeightsTypeToDistance2();
 }
 
-extern "C" void vtkAttributeSmoothingFilter__AddExcludedArray__0(void* self, const char* excludedArray) {
+extern "C" void vtkAttributeSmoothingFilter__AddExcludedArray__0(void* self, const char* excludedArray) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->AddExcludedArray(std::string(excludedArray));
 }
 
-extern "C" void vtkAttributeSmoothingFilter__ClearExcludedArrays__0(void* self) {
+extern "C" void vtkAttributeSmoothingFilter__ClearExcludedArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeSmoothingFilter*>(self)->ClearExcludedArrays();
 }
 
-extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfExcludedArrays__0(void* self) {
+extern "C" int32_t vtkAttributeSmoothingFilter__GetNumberOfExcludedArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetNumberOfExcludedArrays();
 }
 
-extern "C" const char* vtkAttributeSmoothingFilter__GetExcludedArray__0(void* self, int32_t i) {
+extern "C" const char* vtkAttributeSmoothingFilter__GetExcludedArray__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkAttributeSmoothingFilter*>(self)->GetExcludedArray(i);
 }

@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkQuadraturePointInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkQuadraturePointInterpolator::New()); }
+extern "C" void* vtkQuadraturePointInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuadraturePointInterpolator::New()); }
 
-extern "C" int32_t vtkQuadraturePointInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuadraturePointInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuadraturePointInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuadraturePointInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuadraturePointInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadraturePointInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuadraturePointInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuadraturePointInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuadraturePointInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuadraturePointInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuadraturePointInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuadraturePointInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuadraturePointInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuadraturePointInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadraturePointInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

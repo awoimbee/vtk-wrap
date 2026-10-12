@@ -6,106 +6,106 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkHull__vtk_wrap_new() { return static_cast<void*>(vtkHull::New()); }
+extern "C" void* vtkHull__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHull::New()); }
 
-extern "C" int32_t vtkHull__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHull__IsTypeOf__0(const char* type_) noexcept {
   return vtkHull::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHull__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHull__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHull__SafeDownCast__0(void* o) {
+extern "C" void* vtkHull__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHull::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHull__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHull__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHull::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHull__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHull__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkHull__RemoveAllPlanes__0(void* self) {
+extern "C" void vtkHull__RemoveAllPlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->RemoveAllPlanes();
 }
 
-extern "C" int32_t vtkHull__AddPlane__0(void* self, double A, double B, double C) {
+extern "C" int32_t vtkHull__AddPlane__0(void* self, double A, double B, double C) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->AddPlane(A, B, C);
 }
 
-extern "C" int32_t vtkHull__AddPlane__1(void* self, double* plane) {
+extern "C" int32_t vtkHull__AddPlane__1(void* self, double* plane) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->AddPlane(plane);
 }
 
-extern "C" void vtkHull__SetPlane__0(void* self, int32_t i, double A, double B, double C) {
+extern "C" void vtkHull__SetPlane__0(void* self, int32_t i, double A, double B, double C) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->SetPlane(i, A, B, C);
 }
 
-extern "C" void vtkHull__SetPlane__1(void* self, int32_t i, double* plane) {
+extern "C" void vtkHull__SetPlane__1(void* self, int32_t i, double* plane) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->SetPlane(i, plane);
 }
 
-extern "C" int32_t vtkHull__AddPlane__2(void* self, double A, double B, double C, double D) {
+extern "C" int32_t vtkHull__AddPlane__2(void* self, double A, double B, double C, double D) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->AddPlane(A, B, C, D);
 }
 
-extern "C" int32_t vtkHull__AddPlane__3(void* self, double* plane, double D) {
+extern "C" int32_t vtkHull__AddPlane__3(void* self, double* plane, double D) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->AddPlane(plane, D);
 }
 
-extern "C" void vtkHull__SetPlane__2(void* self, int32_t i, double A, double B, double C, double D) {
+extern "C" void vtkHull__SetPlane__2(void* self, int32_t i, double A, double B, double C, double D) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->SetPlane(i, A, B, C, D);
 }
 
-extern "C" void vtkHull__SetPlane__3(void* self, int32_t i, double* plane, double D) {
+extern "C" void vtkHull__SetPlane__3(void* self, int32_t i, double* plane, double D) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->SetPlane(i, plane, D);
 }
 
-extern "C" void vtkHull__SetPlanes__0(void* self, void* planes) {
+extern "C" void vtkHull__SetPlanes__0(void* self, void* planes) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->SetPlanes(static_cast<vtkPlanes*>(planes));
 }
 
-extern "C" int32_t vtkHull__GetNumberOfPlanes__0(void* self) {
+extern "C" int32_t vtkHull__GetNumberOfPlanes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHull*>(self)->GetNumberOfPlanes();
 }
 
-extern "C" void vtkHull__AddCubeVertexPlanes__0(void* self) {
+extern "C" void vtkHull__AddCubeVertexPlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->AddCubeVertexPlanes();
 }
 
-extern "C" void vtkHull__AddCubeEdgePlanes__0(void* self) {
+extern "C" void vtkHull__AddCubeEdgePlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->AddCubeEdgePlanes();
 }
 
-extern "C" void vtkHull__AddCubeFacePlanes__0(void* self) {
+extern "C" void vtkHull__AddCubeFacePlanes__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->AddCubeFacePlanes();
 }
 
-extern "C" void vtkHull__AddRecursiveSpherePlanes__0(void* self, int32_t level) {
+extern "C" void vtkHull__AddRecursiveSpherePlanes__0(void* self, int32_t level) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->AddRecursiveSpherePlanes(level);
 }
 
-extern "C" void vtkHull__GenerateHull__0(void* self, void* pd, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) {
+extern "C" void vtkHull__GenerateHull__0(void* self, void* pd, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) noexcept {
   (void)self;
   static_cast<vtkHull*>(self)->GenerateHull(static_cast<vtkPolyData*>(pd), xmin, xmax, ymin, ymax, zmin, zmax);
 }

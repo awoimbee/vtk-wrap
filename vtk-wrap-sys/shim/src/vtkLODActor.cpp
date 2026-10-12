@@ -10,86 +10,86 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkLODActor__vtk_wrap_new() { return static_cast<void*>(vtkLODActor::New()); }
+extern "C" void* vtkLODActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLODActor::New()); }
 
-extern "C" int32_t vtkLODActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLODActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkLODActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLODActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLODActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLODActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLODActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkLODActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLODActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLODActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLODActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLODActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLODActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLODActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLODActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLODActor__Render__0(void* self, void* arg0, void* arg1) {
+extern "C" void vtkLODActor__Render__0(void* self, void* arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->Render(static_cast<vtkRenderer*>(arg0), static_cast<vtkMapper*>(arg1));
 }
 
-extern "C" void vtkLODActor__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkLODActor__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkLODActor__AddLODMapper__0(void* self, void* mapper) {
+extern "C" void vtkLODActor__AddLODMapper__0(void* self, void* mapper) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->AddLODMapper(static_cast<vtkMapper*>(mapper));
 }
 
-extern "C" void vtkLODActor__SetLowResFilter__0(void* self, void* arg0) {
+extern "C" void vtkLODActor__SetLowResFilter__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->SetLowResFilter(static_cast<vtkPolyDataAlgorithm*>(arg0));
 }
 
-extern "C" void vtkLODActor__SetMediumResFilter__0(void* self, void* arg0) {
+extern "C" void vtkLODActor__SetMediumResFilter__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->SetMediumResFilter(static_cast<vtkPolyDataAlgorithm*>(arg0));
 }
 
-extern "C" void* vtkLODActor__GetLowResFilter__0(void* self) {
+extern "C" void* vtkLODActor__GetLowResFilter__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLODActor*>(self)->GetLowResFilter());
 }
 
-extern "C" void* vtkLODActor__GetMediumResFilter__0(void* self) {
+extern "C" void* vtkLODActor__GetMediumResFilter__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLODActor*>(self)->GetMediumResFilter());
 }
 
-extern "C" int32_t vtkLODActor__GetNumberOfCloudPoints__0(void* self) {
+extern "C" int32_t vtkLODActor__GetNumberOfCloudPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLODActor*>(self)->GetNumberOfCloudPoints();
 }
 
-extern "C" void vtkLODActor__SetNumberOfCloudPoints__0(void* self, int32_t _arg) {
+extern "C" void vtkLODActor__SetNumberOfCloudPoints__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->SetNumberOfCloudPoints(_arg);
 }
 
-extern "C" void* vtkLODActor__GetLODMappers__0(void* self) {
+extern "C" void* vtkLODActor__GetLODMappers__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLODActor*>(self)->GetLODMappers());
 }
 
-extern "C" void vtkLODActor__Modified__0(void* self) {
+extern "C" void vtkLODActor__Modified__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->Modified();
 }
 
-extern "C" void vtkLODActor__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkLODActor__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkLODActor*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }

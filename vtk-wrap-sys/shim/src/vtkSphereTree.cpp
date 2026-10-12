@@ -6,131 +6,131 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSphereTree__vtk_wrap_new() { return static_cast<void*>(vtkSphereTree::New()); }
+extern "C" void* vtkSphereTree__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSphereTree::New()); }
 
-extern "C" int32_t vtkSphereTree__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSphereTree__IsTypeOf__0(const char* type_) noexcept {
   return vtkSphereTree::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSphereTree__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSphereTree__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSphereTree__SafeDownCast__0(void* o) {
+extern "C" void* vtkSphereTree__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSphereTree::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSphereTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSphereTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSphereTree::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSphereTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSphereTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSphereTree__SetDataSet__0(void* self, void* arg0) {
+extern "C" void vtkSphereTree__SetDataSet__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SetDataSet(static_cast<vtkDataSet*>(arg0));
 }
 
-extern "C" void* vtkSphereTree__GetDataSet__0(void* self) {
+extern "C" void* vtkSphereTree__GetDataSet__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSphereTree*>(self)->GetDataSet());
 }
 
-extern "C" void vtkSphereTree__Build__0(void* self) {
+extern "C" void vtkSphereTree__Build__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->Build();
 }
 
-extern "C" void vtkSphereTree__Build__1(void* self, void* input) {
+extern "C" void vtkSphereTree__Build__1(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->Build(static_cast<vtkDataSet*>(input));
 }
 
-extern "C" void vtkSphereTree__SetBuildHierarchy__0(void* self, bool _arg) {
+extern "C" void vtkSphereTree__SetBuildHierarchy__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SetBuildHierarchy(_arg);
 }
 
-extern "C" bool vtkSphereTree__GetBuildHierarchy__0(void* self) {
+extern "C" bool vtkSphereTree__GetBuildHierarchy__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetBuildHierarchy();
 }
 
-extern "C" void vtkSphereTree__BuildHierarchyOn__0(void* self) {
+extern "C" void vtkSphereTree__BuildHierarchyOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->BuildHierarchyOn();
 }
 
-extern "C" void vtkSphereTree__BuildHierarchyOff__0(void* self) {
+extern "C" void vtkSphereTree__BuildHierarchyOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->BuildHierarchyOff();
 }
 
-extern "C" void vtkSphereTree__SelectPoint__0(void* self, double* point, void* cellIds) {
+extern "C" void vtkSphereTree__SelectPoint__0(void* self, double* point, void* cellIds) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SelectPoint(point, static_cast<vtkIdList*>(cellIds));
 }
 
-extern "C" void vtkSphereTree__SelectLine__0(void* self, double* origin, double* ray, void* cellIds) {
+extern "C" void vtkSphereTree__SelectLine__0(void* self, double* origin, double* ray, void* cellIds) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SelectLine(origin, ray, static_cast<vtkIdList*>(cellIds));
 }
 
-extern "C" void vtkSphereTree__SelectPlane__0(void* self, double* origin, double* normal, void* cellIds) {
+extern "C" void vtkSphereTree__SelectPlane__0(void* self, double* origin, double* normal, void* cellIds) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SelectPlane(origin, normal, static_cast<vtkIdList*>(cellIds));
 }
 
-extern "C" void vtkSphereTree__SetResolution__0(void* self, int32_t _arg) {
+extern "C" void vtkSphereTree__SetResolution__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SetResolution(_arg);
 }
 
-extern "C" int32_t vtkSphereTree__GetResolutionMinValue__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetResolutionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetResolutionMinValue();
 }
 
-extern "C" int32_t vtkSphereTree__GetResolutionMaxValue__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetResolutionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetResolutionMaxValue();
 }
 
-extern "C" int32_t vtkSphereTree__GetResolution__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetResolution();
 }
 
-extern "C" void vtkSphereTree__SetMaxLevel__0(void* self, int32_t _arg) {
+extern "C" void vtkSphereTree__SetMaxLevel__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSphereTree*>(self)->SetMaxLevel(_arg);
 }
 
-extern "C" int32_t vtkSphereTree__GetMaxLevelMinValue__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetMaxLevelMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetMaxLevelMinValue();
 }
 
-extern "C" int32_t vtkSphereTree__GetMaxLevelMaxValue__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetMaxLevelMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetMaxLevelMaxValue();
 }
 
-extern "C" int32_t vtkSphereTree__GetMaxLevel__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetMaxLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetMaxLevel();
 }
 
-extern "C" int32_t vtkSphereTree__GetNumberOfLevels__0(void* self) {
+extern "C" int32_t vtkSphereTree__GetNumberOfLevels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->GetNumberOfLevels();
 }
 
-extern "C" bool vtkSphereTree__UsesGarbageCollector__0(void* self) {
+extern "C" bool vtkSphereTree__UsesGarbageCollector__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSphereTree*>(self)->UsesGarbageCollector();
 }

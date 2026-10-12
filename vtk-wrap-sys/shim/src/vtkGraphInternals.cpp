@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGraphInternals__vtk_wrap_new() { return static_cast<void*>(vtkGraphInternals::New()); }
+extern "C" void* vtkGraphInternals__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphInternals::New()); }
 
-extern "C" int32_t vtkGraphInternals__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphInternals__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphInternals::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphInternals__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphInternals__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphInternals*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphInternals__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphInternals__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphInternals::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphInternals__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphInternals__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphInternals::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphInternals__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphInternals__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphInternals*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

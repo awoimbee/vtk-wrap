@@ -6,71 +6,71 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkImplicitProjectOnPlaneDistance__vtk_wrap_new() { return static_cast<void*>(vtkImplicitProjectOnPlaneDistance::New()); }
+extern "C" void* vtkImplicitProjectOnPlaneDistance__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImplicitProjectOnPlaneDistance::New()); }
 
-extern "C" int32_t vtkImplicitProjectOnPlaneDistance__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImplicitProjectOnPlaneDistance__IsTypeOf__0(const char* type_) noexcept {
   return vtkImplicitProjectOnPlaneDistance::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImplicitProjectOnPlaneDistance__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImplicitProjectOnPlaneDistance__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImplicitProjectOnPlaneDistance__SafeDownCast__0(void* o) {
+extern "C" void* vtkImplicitProjectOnPlaneDistance__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImplicitProjectOnPlaneDistance::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImplicitProjectOnPlaneDistance__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImplicitProjectOnPlaneDistance__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImplicitProjectOnPlaneDistance::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImplicitProjectOnPlaneDistance__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImplicitProjectOnPlaneDistance__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkImplicitProjectOnPlaneDistance__GetMTime__0(void* self) {
+extern "C" unsigned long vtkImplicitProjectOnPlaneDistance__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->GetMTime();
 }
 
-extern "C" double vtkImplicitProjectOnPlaneDistance__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkImplicitProjectOnPlaneDistance__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkImplicitProjectOnPlaneDistance__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkImplicitProjectOnPlaneDistance__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" void vtkImplicitProjectOnPlaneDistance__SetInput__0(void* self, void* input) {
+extern "C" void vtkImplicitProjectOnPlaneDistance__SetInput__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->SetInput(static_cast<vtkPolyData*>(input));
 }
 
-extern "C" double vtkImplicitProjectOnPlaneDistance__GetTolerance__0(void* self) {
+extern "C" double vtkImplicitProjectOnPlaneDistance__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->GetTolerance();
 }
 
-extern "C" void vtkImplicitProjectOnPlaneDistance__SetTolerance__0(void* self, double _arg) {
+extern "C" void vtkImplicitProjectOnPlaneDistance__SetTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->SetTolerance(_arg);
 }
 
-extern "C" void vtkImplicitProjectOnPlaneDistance__SetNorm__0(void* self, int32_t n) {
+extern "C" void vtkImplicitProjectOnPlaneDistance__SetNorm__0(void* self, int32_t n) noexcept {
   (void)self;
   static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->SetNorm(n);
 }
 
-extern "C" void* vtkImplicitProjectOnPlaneDistance__GetLocator__0(void* self) {
+extern "C" void* vtkImplicitProjectOnPlaneDistance__GetLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->GetLocator());
 }
 
-extern "C" void vtkImplicitProjectOnPlaneDistance__SetLocator__0(void* self, void* _arg) {
+extern "C" void vtkImplicitProjectOnPlaneDistance__SetLocator__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkImplicitProjectOnPlaneDistance*>(self)->SetLocator(static_cast<vtkAbstractCellLocator*>(_arg));
 }

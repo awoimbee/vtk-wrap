@@ -5,51 +5,51 @@
 #include "vtkPolyLine.h"
 #include <string>
 
-extern "C" void* vtkPolyPlane__vtk_wrap_new() { return static_cast<void*>(vtkPolyPlane::New()); }
+extern "C" void* vtkPolyPlane__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyPlane::New()); }
 
-extern "C" int32_t vtkPolyPlane__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyPlane__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyPlane::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyPlane__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyPlane__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyPlane*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyPlane__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyPlane__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyPlane::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyPlane__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyPlane__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyPlane::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyPlane__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyPlane__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyPlane*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkPolyPlane__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkPolyPlane__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkPolyPlane*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkPolyPlane__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkPolyPlane__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkPolyPlane*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" void vtkPolyPlane__SetPolyLine__0(void* self, void* arg0) {
+extern "C" void vtkPolyPlane__SetPolyLine__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPolyPlane*>(self)->SetPolyLine(static_cast<vtkPolyLine*>(arg0));
 }
 
-extern "C" void* vtkPolyPlane__GetPolyLine__0(void* self) {
+extern "C" void* vtkPolyPlane__GetPolyLine__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPolyPlane*>(self)->GetPolyLine());
 }
 
-extern "C" unsigned long vtkPolyPlane__GetMTime__0(void* self) {
+extern "C" unsigned long vtkPolyPlane__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolyPlane*>(self)->GetMTime();
 }

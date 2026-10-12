@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLogoWidget__vtk_wrap_new() { return static_cast<void*>(vtkLogoWidget::New()); }
+extern "C" void* vtkLogoWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLogoWidget::New()); }
 
-extern "C" int32_t vtkLogoWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLogoWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkLogoWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLogoWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLogoWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLogoWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLogoWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkLogoWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLogoWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLogoWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLogoWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLogoWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLogoWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLogoWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLogoWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkLogoWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkLogoWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkLogoWidget*>(self)->SetRepresentation(static_cast<vtkLogoRepresentation*>(r));
 }
 
-extern "C" void vtkLogoWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkLogoWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLogoWidget*>(self)->CreateDefaultRepresentation();
 }

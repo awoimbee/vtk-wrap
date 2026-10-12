@@ -6,41 +6,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLagrangeQuadrilateral__vtk_wrap_new() { return static_cast<void*>(vtkLagrangeQuadrilateral::New()); }
+extern "C" void* vtkLagrangeQuadrilateral__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLagrangeQuadrilateral::New()); }
 
-extern "C" int32_t vtkLagrangeQuadrilateral__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLagrangeQuadrilateral__IsTypeOf__0(const char* type_) noexcept {
   return vtkLagrangeQuadrilateral::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLagrangeQuadrilateral__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLagrangeQuadrilateral__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeQuadrilateral*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLagrangeQuadrilateral__SafeDownCast__0(void* o) {
+extern "C" void* vtkLagrangeQuadrilateral__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLagrangeQuadrilateral::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLagrangeQuadrilateral__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLagrangeQuadrilateral__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLagrangeQuadrilateral::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLagrangeQuadrilateral__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLagrangeQuadrilateral__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeQuadrilateral*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkLagrangeQuadrilateral__GetCellType__0(void* self) {
+extern "C" int32_t vtkLagrangeQuadrilateral__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLagrangeQuadrilateral*>(self)->GetCellType();
 }
 
-extern "C" void* vtkLagrangeQuadrilateral__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkLagrangeQuadrilateral__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeQuadrilateral*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkLagrangeQuadrilateral__GetEdgeCell__0(void* self) {
+extern "C" void* vtkLagrangeQuadrilateral__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeQuadrilateral*>(self)->GetEdgeCell());
 }

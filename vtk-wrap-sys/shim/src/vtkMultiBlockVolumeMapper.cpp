@@ -7,131 +7,131 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkMultiBlockVolumeMapper__vtk_wrap_new() { return static_cast<void*>(vtkMultiBlockVolumeMapper::New()); }
+extern "C" void* vtkMultiBlockVolumeMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiBlockVolumeMapper::New()); }
 
-extern "C" int32_t vtkMultiBlockVolumeMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiBlockVolumeMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiBlockVolumeMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiBlockVolumeMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiBlockVolumeMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiBlockVolumeMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiBlockVolumeMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiBlockVolumeMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiBlockVolumeMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiBlockVolumeMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiBlockVolumeMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiBlockVolumeMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiBlockVolumeMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SelectScalarArray__0(void* self, int32_t arrayNum) {
+extern "C" void vtkMultiBlockVolumeMapper__SelectScalarArray__0(void* self, int32_t arrayNum) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SelectScalarArray(arrayNum);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SelectScalarArray__1(void* self, const char* arrayName) {
+extern "C" void vtkMultiBlockVolumeMapper__SelectScalarArray__1(void* self, const char* arrayName) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SelectScalarArray(arrayName);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetScalarMode__0(void* self, int32_t ScalarMode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetScalarMode__0(void* self, int32_t ScalarMode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetScalarMode(ScalarMode);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetArrayAccessMode__0(void* self, int32_t accessMode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetArrayAccessMode__0(void* self, int32_t accessMode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetArrayAccessMode(accessMode);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__Render__0(void* self, void* ren, void* vol) {
+extern "C" void vtkMultiBlockVolumeMapper__Render__0(void* self, void* ren, void* vol) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkVolume*>(vol));
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkMultiBlockVolumeMapper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetVectorMode__0(void* self, int32_t mode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetVectorMode__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetVectorMode(mode);
 }
 
-extern "C" int32_t vtkMultiBlockVolumeMapper__GetVectorMode__0(void* self) {
+extern "C" int32_t vtkMultiBlockVolumeMapper__GetVectorMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->GetVectorMode();
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetVectorComponent__0(void* self, int32_t component) {
+extern "C" void vtkMultiBlockVolumeMapper__SetVectorComponent__0(void* self, int32_t component) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetVectorComponent(component);
 }
 
-extern "C" int32_t vtkMultiBlockVolumeMapper__GetVectorComponent__0(void* self) {
+extern "C" int32_t vtkMultiBlockVolumeMapper__GetVectorComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->GetVectorComponent();
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetBlendMode__0(void* self, int32_t mode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetBlendMode__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetBlendMode(mode);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetComputeNormalFromOpacity__0(void* self, bool val) {
+extern "C" void vtkMultiBlockVolumeMapper__SetComputeNormalFromOpacity__0(void* self, bool val) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetComputeNormalFromOpacity(val);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetGlobalIlluminationReach__0(void* self, float val) {
+extern "C" void vtkMultiBlockVolumeMapper__SetGlobalIlluminationReach__0(void* self, float val) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetGlobalIlluminationReach(val);
 }
 
-extern "C" float vtkMultiBlockVolumeMapper__GetGlobalIlluminationReach__0(void* self) {
+extern "C" float vtkMultiBlockVolumeMapper__GetGlobalIlluminationReach__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->GetGlobalIlluminationReach();
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetVolumetricScatteringBlending__0(void* self, float val) {
+extern "C" void vtkMultiBlockVolumeMapper__SetVolumetricScatteringBlending__0(void* self, float val) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetVolumetricScatteringBlending(val);
 }
 
-extern "C" float vtkMultiBlockVolumeMapper__GetVolumetricScatteringBlending__0(void* self) {
+extern "C" float vtkMultiBlockVolumeMapper__GetVolumetricScatteringBlending__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockVolumeMapper*>(self)->GetVolumetricScatteringBlending();
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetCropping__0(void* self, int32_t mode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetCropping__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetCropping(mode);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetCroppingRegionPlanes__0(void* self, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6) {
+extern "C" void vtkMultiBlockVolumeMapper__SetCroppingRegionPlanes__0(void* self, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetCroppingRegionPlanes(arg1, arg2, arg3, arg4, arg5, arg6);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetCroppingRegionFlags__0(void* self, int32_t mode) {
+extern "C" void vtkMultiBlockVolumeMapper__SetCroppingRegionFlags__0(void* self, int32_t mode) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetCroppingRegionFlags(mode);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetRequestedRenderMode__0(void* self, int32_t arg0) {
+extern "C" void vtkMultiBlockVolumeMapper__SetRequestedRenderMode__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetRequestedRenderMode(arg0);
 }
 
-extern "C" void vtkMultiBlockVolumeMapper__SetTransfer2DYAxisArray__0(void* self, const char* a) {
+extern "C" void vtkMultiBlockVolumeMapper__SetTransfer2DYAxisArray__0(void* self, const char* a) noexcept {
   (void)self;
   static_cast<vtkMultiBlockVolumeMapper*>(self)->SetTransfer2DYAxisArray(a);
 }

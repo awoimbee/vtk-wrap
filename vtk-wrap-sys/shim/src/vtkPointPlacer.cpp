@@ -5,106 +5,106 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkPointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkPointPlacer::New()); }
+extern "C" void* vtkPointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointPlacer::New()); }
 
-extern "C" int32_t vtkPointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkPointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) {
+extern "C" int32_t vtkPointPlacer__ValidateDisplayPosition__0(void* self, void* arg0, double* displayPos) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->ValidateDisplayPosition(static_cast<vtkRenderer*>(arg0), displayPos);
 }
 
-extern "C" int32_t vtkPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPointPlacer__UpdateWorldPosition__0(void* self, void* ren, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkPointPlacer__UpdateWorldPosition__0(void* self, void* ren, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->UpdateWorldPosition(static_cast<vtkRenderer*>(ren), worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkPointPlacer__UpdateNodeWorldPosition__0(void* self, double* worldPos, int64_t nodePointId) {
+extern "C" int32_t vtkPointPlacer__UpdateNodeWorldPosition__0(void* self, double* worldPos, int64_t nodePointId) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->UpdateNodeWorldPosition(worldPos, nodePointId);
 }
 
-extern "C" int32_t vtkPointPlacer__UpdateInternalState__0(void* self) {
+extern "C" int32_t vtkPointPlacer__UpdateInternalState__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->UpdateInternalState();
 }
 
-extern "C" void vtkPointPlacer__SetPixelTolerance__0(void* self, int32_t _arg) {
+extern "C" void vtkPointPlacer__SetPixelTolerance__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPointPlacer*>(self)->SetPixelTolerance(_arg);
 }
 
-extern "C" int32_t vtkPointPlacer__GetPixelToleranceMinValue__0(void* self) {
+extern "C" int32_t vtkPointPlacer__GetPixelToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetPixelToleranceMinValue();
 }
 
-extern "C" int32_t vtkPointPlacer__GetPixelToleranceMaxValue__0(void* self) {
+extern "C" int32_t vtkPointPlacer__GetPixelToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetPixelToleranceMaxValue();
 }
 
-extern "C" int32_t vtkPointPlacer__GetPixelTolerance__0(void* self) {
+extern "C" int32_t vtkPointPlacer__GetPixelTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetPixelTolerance();
 }
 
-extern "C" void vtkPointPlacer__SetWorldTolerance__0(void* self, double _arg) {
+extern "C" void vtkPointPlacer__SetWorldTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPointPlacer*>(self)->SetWorldTolerance(_arg);
 }
 
-extern "C" double vtkPointPlacer__GetWorldToleranceMinValue__0(void* self) {
+extern "C" double vtkPointPlacer__GetWorldToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetWorldToleranceMinValue();
 }
 
-extern "C" double vtkPointPlacer__GetWorldToleranceMaxValue__0(void* self) {
+extern "C" double vtkPointPlacer__GetWorldToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetWorldToleranceMaxValue();
 }
 
-extern "C" double vtkPointPlacer__GetWorldTolerance__0(void* self) {
+extern "C" double vtkPointPlacer__GetWorldTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPointPlacer*>(self)->GetWorldTolerance();
 }

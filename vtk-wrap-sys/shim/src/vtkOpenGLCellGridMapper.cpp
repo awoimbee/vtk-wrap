@@ -8,46 +8,46 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLCellGridMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLCellGridMapper::New()); }
+extern "C" void* vtkOpenGLCellGridMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLCellGridMapper::New()); }
 
-extern "C" int32_t vtkOpenGLCellGridMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLCellGridMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLCellGridMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLCellGridMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLCellGridMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellGridMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLCellGridMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLCellGridMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLCellGridMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLCellGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLCellGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLCellGridMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLCellGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLCellGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellGridMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLCellGridMapper__Render__0(void* self, void* arg0, void* arg1) {
+extern "C" void vtkOpenGLCellGridMapper__Render__0(void* self, void* arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkOpenGLCellGridMapper*>(self)->Render(static_cast<vtkRenderer*>(arg0), static_cast<vtkActor*>(arg1));
 }
 
-extern "C" void vtkOpenGLCellGridMapper__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkOpenGLCellGridMapper__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkOpenGLCellGridMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" bool vtkOpenGLCellGridMapper__GetSupportsSelection__0(void* self) {
+extern "C" bool vtkOpenGLCellGridMapper__GetSupportsSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLCellGridMapper*>(self)->GetSupportsSelection();
 }
 
-extern "C" void vtkOpenGLCellGridMapper__ShallowCopy__0(void* self, void* m) {
+extern "C" void vtkOpenGLCellGridMapper__ShallowCopy__0(void* self, void* m) noexcept {
   (void)self;
   static_cast<vtkOpenGLCellGridMapper*>(self)->ShallowCopy(static_cast<vtkAbstractMapper*>(m));
 }

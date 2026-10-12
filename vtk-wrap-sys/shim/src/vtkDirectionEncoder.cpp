@@ -4,34 +4,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkDirectionEncoder__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDirectionEncoder__IsTypeOf__0(const char* type_) noexcept {
   return vtkDirectionEncoder::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDirectionEncoder__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDirectionEncoder__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectionEncoder*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDirectionEncoder__SafeDownCast__0(void* o) {
+extern "C" void* vtkDirectionEncoder__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDirectionEncoder::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDirectionEncoder::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectionEncoder*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkDirectionEncoder__GetEncodedDirection__0(void* self, float* n) {
+extern "C" int32_t vtkDirectionEncoder__GetEncodedDirection__0(void* self, float* n) noexcept {
   (void)self;
   return static_cast<vtkDirectionEncoder*>(self)->GetEncodedDirection(n);
 }
 
-extern "C" int32_t vtkDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) {
+extern "C" int32_t vtkDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDirectionEncoder*>(self)->GetNumberOfEncodedDirections();
 }

@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkConvertToPartitionedDataSetCollection__vtk_wrap_new() { return static_cast<void*>(vtkConvertToPartitionedDataSetCollection::New()); }
+extern "C" void* vtkConvertToPartitionedDataSetCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkConvertToPartitionedDataSetCollection::New()); }
 
-extern "C" int32_t vtkConvertToPartitionedDataSetCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkConvertToPartitionedDataSetCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkConvertToPartitionedDataSetCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkConvertToPartitionedDataSetCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkConvertToPartitionedDataSetCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkConvertToPartitionedDataSetCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkConvertToPartitionedDataSetCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkConvertToPartitionedDataSetCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkConvertToPartitionedDataSetCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkConvertToPartitionedDataSetCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkConvertToPartitionedDataSetCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkConvertToPartitionedDataSetCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkConvertToPartitionedDataSetCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkConvertToPartitionedDataSetCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkConvertToPartitionedDataSetCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

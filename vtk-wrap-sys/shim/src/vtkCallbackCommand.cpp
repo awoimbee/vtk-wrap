@@ -5,61 +5,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCallbackCommand__vtk_wrap_new() { return static_cast<void*>(vtkCallbackCommand::New()); }
+extern "C" void* vtkCallbackCommand__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCallbackCommand::New()); }
 
-extern "C" int32_t vtkCallbackCommand__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCallbackCommand__IsTypeOf__0(const char* type_) noexcept {
   return vtkCallbackCommand::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCallbackCommand__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCallbackCommand__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCallbackCommand*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCallbackCommand__SafeDownCast__0(void* o) {
+extern "C" void* vtkCallbackCommand__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCallbackCommand::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCallbackCommand__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCallbackCommand__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCallbackCommand::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCallbackCommand__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCallbackCommand__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCallbackCommand*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCallbackCommand__Execute__0(void* self, void* caller, unsigned long eid, void* callData) {
+extern "C" void vtkCallbackCommand__Execute__0(void* self, void* caller, unsigned long eid, void* callData) noexcept {
   (void)self;
   static_cast<vtkCallbackCommand*>(self)->Execute(static_cast<vtkObject*>(caller), eid, callData);
 }
 
-extern "C" void vtkCallbackCommand__SetClientData__0(void* self, void* cd) {
+extern "C" void vtkCallbackCommand__SetClientData__0(void* self, void* cd) noexcept {
   (void)self;
   static_cast<vtkCallbackCommand*>(self)->SetClientData(cd);
 }
 
-extern "C" void* vtkCallbackCommand__GetClientData__0(void* self) {
+extern "C" void* vtkCallbackCommand__GetClientData__0(void* self) noexcept {
   (void)self;
   return const_cast<void*>(static_cast<vtkCallbackCommand*>(self)->GetClientData());
 }
 
-extern "C" void vtkCallbackCommand__SetAbortFlagOnExecute__0(void* self, int32_t f) {
+extern "C" void vtkCallbackCommand__SetAbortFlagOnExecute__0(void* self, int32_t f) noexcept {
   (void)self;
   static_cast<vtkCallbackCommand*>(self)->SetAbortFlagOnExecute(f);
 }
 
-extern "C" int32_t vtkCallbackCommand__GetAbortFlagOnExecute__0(void* self) {
+extern "C" int32_t vtkCallbackCommand__GetAbortFlagOnExecute__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCallbackCommand*>(self)->GetAbortFlagOnExecute();
 }
 
-extern "C" void vtkCallbackCommand__AbortFlagOnExecuteOn__0(void* self) {
+extern "C" void vtkCallbackCommand__AbortFlagOnExecuteOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCallbackCommand*>(self)->AbortFlagOnExecuteOn();
 }
 
-extern "C" void vtkCallbackCommand__AbortFlagOnExecuteOff__0(void* self) {
+extern "C" void vtkCallbackCommand__AbortFlagOnExecuteOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCallbackCommand*>(self)->AbortFlagOnExecuteOff();
 }

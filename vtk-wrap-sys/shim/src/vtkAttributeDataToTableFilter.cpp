@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAttributeDataToTableFilter__vtk_wrap_new() { return static_cast<void*>(vtkAttributeDataToTableFilter::New()); }
+extern "C" void* vtkAttributeDataToTableFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAttributeDataToTableFilter::New()); }
 
-extern "C" int32_t vtkAttributeDataToTableFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAttributeDataToTableFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkAttributeDataToTableFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAttributeDataToTableFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAttributeDataToTableFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAttributeDataToTableFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkAttributeDataToTableFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAttributeDataToTableFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAttributeDataToTableFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAttributeDataToTableFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAttributeDataToTableFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAttributeDataToTableFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAttributeDataToTableFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAttributeDataToTableFilter__SetFieldAssociation__0(void* self, int32_t _arg) {
+extern "C" void vtkAttributeDataToTableFilter__SetFieldAssociation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->SetFieldAssociation(_arg);
 }
 
-extern "C" int32_t vtkAttributeDataToTableFilter__GetFieldAssociation__0(void* self) {
+extern "C" int32_t vtkAttributeDataToTableFilter__GetFieldAssociation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->GetFieldAssociation();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__SetAddMetaData__0(void* self, bool _arg) {
+extern "C" void vtkAttributeDataToTableFilter__SetAddMetaData__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->SetAddMetaData(_arg);
 }
 
-extern "C" bool vtkAttributeDataToTableFilter__GetAddMetaData__0(void* self) {
+extern "C" bool vtkAttributeDataToTableFilter__GetAddMetaData__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->GetAddMetaData();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__AddMetaDataOn__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__AddMetaDataOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->AddMetaDataOn();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__AddMetaDataOff__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__AddMetaDataOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->AddMetaDataOff();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__SetGenerateOriginalIds__0(void* self, bool _arg) {
+extern "C" void vtkAttributeDataToTableFilter__SetGenerateOriginalIds__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->SetGenerateOriginalIds(_arg);
 }
 
-extern "C" bool vtkAttributeDataToTableFilter__GetGenerateOriginalIds__0(void* self) {
+extern "C" bool vtkAttributeDataToTableFilter__GetGenerateOriginalIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->GetGenerateOriginalIds();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__GenerateOriginalIdsOn__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__GenerateOriginalIdsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->GenerateOriginalIdsOn();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__GenerateOriginalIdsOff__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__GenerateOriginalIdsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->GenerateOriginalIdsOff();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__SetGenerateCellConnectivity__0(void* self, bool _arg) {
+extern "C" void vtkAttributeDataToTableFilter__SetGenerateCellConnectivity__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->SetGenerateCellConnectivity(_arg);
 }
 
-extern "C" bool vtkAttributeDataToTableFilter__GetGenerateCellConnectivity__0(void* self) {
+extern "C" bool vtkAttributeDataToTableFilter__GetGenerateCellConnectivity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAttributeDataToTableFilter*>(self)->GetGenerateCellConnectivity();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__GenerateCellConnectivityOn__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__GenerateCellConnectivityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->GenerateCellConnectivityOn();
 }
 
-extern "C" void vtkAttributeDataToTableFilter__GenerateCellConnectivityOff__0(void* self) {
+extern "C" void vtkAttributeDataToTableFilter__GenerateCellConnectivityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAttributeDataToTableFilter*>(self)->GenerateCellConnectivityOff();
 }

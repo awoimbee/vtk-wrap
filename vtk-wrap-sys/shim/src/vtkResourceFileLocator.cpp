@@ -4,50 +4,50 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkResourceFileLocator__vtk_wrap_new() { return static_cast<void*>(vtkResourceFileLocator::New()); }
+extern "C" void* vtkResourceFileLocator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkResourceFileLocator::New()); }
 
-extern "C" int32_t vtkResourceFileLocator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkResourceFileLocator__IsTypeOf__0(const char* type_) noexcept {
   return vtkResourceFileLocator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkResourceFileLocator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkResourceFileLocator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResourceFileLocator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkResourceFileLocator__SafeDownCast__0(void* o) {
+extern "C" void* vtkResourceFileLocator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkResourceFileLocator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkResourceFileLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkResourceFileLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkResourceFileLocator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkResourceFileLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkResourceFileLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResourceFileLocator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkResourceFileLocator__SetLogVerbosity__0(void* self, int32_t _arg) {
+extern "C" void vtkResourceFileLocator__SetLogVerbosity__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkResourceFileLocator*>(self)->SetLogVerbosity(_arg);
 }
 
-extern "C" int32_t vtkResourceFileLocator__GetLogVerbosity__0(void* self) {
+extern "C" int32_t vtkResourceFileLocator__GetLogVerbosity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResourceFileLocator*>(self)->GetLogVerbosity();
 }
 
-extern "C" char* vtkResourceFileLocator__Locate__0(void* self, const char* anchor, const char* landmark, const char* defaultDir) {
+extern "C" char* vtkResourceFileLocator__Locate__0(void* self, const char* anchor, const char* landmark, const char* defaultDir) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkResourceFileLocator*>(self)->Locate(std::string(anchor), std::string(landmark), std::string(defaultDir))).c_str());
 }
 
-extern "C" char* vtkResourceFileLocator__GetLibraryPathForAddress__0(void* ptr) {
+extern "C" char* vtkResourceFileLocator__GetLibraryPathForAddress__0(void* ptr) noexcept {
   return vtk_wrap_strdup((vtkResourceFileLocator::GetLibraryPathForAddress(ptr)).c_str());
 }
 
-extern "C" char* vtkResourceFileLocator__GetCurrentExecutablePath__0() {
+extern "C" char* vtkResourceFileLocator__GetCurrentExecutablePath__0() noexcept {
   return vtk_wrap_strdup((vtkResourceFileLocator::GetCurrentExecutablePath()).c_str());
 }
 

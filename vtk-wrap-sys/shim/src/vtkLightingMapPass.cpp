@@ -5,35 +5,35 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLightingMapPass__vtk_wrap_new() { return static_cast<void*>(vtkLightingMapPass::New()); }
+extern "C" void* vtkLightingMapPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLightingMapPass::New()); }
 
-extern "C" int32_t vtkLightingMapPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLightingMapPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkLightingMapPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLightingMapPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLightingMapPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLightingMapPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLightingMapPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkLightingMapPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLightingMapPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLightingMapPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLightingMapPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLightingMapPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLightingMapPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLightingMapPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLightingMapPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkLightingMapPass__RENDER_LUMINANCE__0() {
+extern "C" void* vtkLightingMapPass__RENDER_LUMINANCE__0() noexcept {
   return static_cast<void*>(vtkLightingMapPass::RENDER_LUMINANCE());
 }
 
-extern "C" void* vtkLightingMapPass__RENDER_NORMALS__0() {
+extern "C" void* vtkLightingMapPass__RENDER_NORMALS__0() noexcept {
   return static_cast<void*>(vtkLightingMapPass::RENDER_NORMALS());
 }
 

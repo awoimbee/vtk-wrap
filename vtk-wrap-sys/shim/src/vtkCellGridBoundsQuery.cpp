@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellGridBoundsQuery__vtk_wrap_new() { return static_cast<void*>(vtkCellGridBoundsQuery::New()); }
+extern "C" void* vtkCellGridBoundsQuery__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellGridBoundsQuery::New()); }
 
-extern "C" int32_t vtkCellGridBoundsQuery__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridBoundsQuery__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridBoundsQuery::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridBoundsQuery__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridBoundsQuery__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridBoundsQuery*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridBoundsQuery__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridBoundsQuery__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridBoundsQuery::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridBoundsQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridBoundsQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridBoundsQuery::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridBoundsQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridBoundsQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridBoundsQuery*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCellGridBoundsQuery__Initialize__0(void* self) {
+extern "C" bool vtkCellGridBoundsQuery__Initialize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridBoundsQuery*>(self)->Initialize();
 }

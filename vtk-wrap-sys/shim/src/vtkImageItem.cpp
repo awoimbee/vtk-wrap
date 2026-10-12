@@ -6,51 +6,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageItem__vtk_wrap_new() { return static_cast<void*>(vtkImageItem::New()); }
+extern "C" void* vtkImageItem__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageItem::New()); }
 
-extern "C" int32_t vtkImageItem__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageItem::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageItem__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageItem__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageItem*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageItem__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageItem__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageItem::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageItem::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageItem*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkImageItem__Paint__0(void* self, void* painter) {
+extern "C" bool vtkImageItem__Paint__0(void* self, void* painter) noexcept {
   (void)self;
   return static_cast<vtkImageItem*>(self)->Paint(static_cast<vtkContext2D*>(painter));
 }
 
-extern "C" void vtkImageItem__SetImage__0(void* self, void* image) {
+extern "C" void vtkImageItem__SetImage__0(void* self, void* image) noexcept {
   (void)self;
   static_cast<vtkImageItem*>(self)->SetImage(static_cast<vtkImageData*>(image));
 }
 
-extern "C" void* vtkImageItem__GetImage__0(void* self) {
+extern "C" void* vtkImageItem__GetImage__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageItem*>(self)->GetImage());
 }
 
-extern "C" void vtkImageItem__SetPosition__0(void* self, float _arg1, float _arg2) {
+extern "C" void vtkImageItem__SetPosition__0(void* self, float _arg1, float _arg2) noexcept {
   (void)self;
   static_cast<vtkImageItem*>(self)->SetPosition(_arg1, _arg2);
 }
 
-extern "C" void vtkImageItem__SetPosition__1(void* self, const float* _arg) {
+extern "C" void vtkImageItem__SetPosition__1(void* self, const float* _arg) noexcept {
   (void)self;
   static_cast<vtkImageItem*>(self)->SetPosition(_arg);
 }

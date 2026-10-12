@@ -6,51 +6,51 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkFreeTypeLabelRenderStrategy__vtk_wrap_new() { return static_cast<void*>(vtkFreeTypeLabelRenderStrategy::New()); }
+extern "C" void* vtkFreeTypeLabelRenderStrategy__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFreeTypeLabelRenderStrategy::New()); }
 
-extern "C" int32_t vtkFreeTypeLabelRenderStrategy__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFreeTypeLabelRenderStrategy__IsTypeOf__0(const char* type_) noexcept {
   return vtkFreeTypeLabelRenderStrategy::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFreeTypeLabelRenderStrategy__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFreeTypeLabelRenderStrategy__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFreeTypeLabelRenderStrategy__SafeDownCast__0(void* o) {
+extern "C" void* vtkFreeTypeLabelRenderStrategy__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFreeTypeLabelRenderStrategy::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFreeTypeLabelRenderStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFreeTypeLabelRenderStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFreeTypeLabelRenderStrategy::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFreeTypeLabelRenderStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFreeTypeLabelRenderStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkFreeTypeLabelRenderStrategy__SupportsRotation__0(void* self) {
+extern "C" bool vtkFreeTypeLabelRenderStrategy__SupportsRotation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->SupportsRotation();
 }
 
-extern "C" bool vtkFreeTypeLabelRenderStrategy__SupportsBoundedSize__0(void* self) {
+extern "C" bool vtkFreeTypeLabelRenderStrategy__SupportsBoundedSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->SupportsBoundedSize();
 }
 
-extern "C" void vtkFreeTypeLabelRenderStrategy__ComputeLabelBounds__0(void* self, void* tprop, const char* label, double* bds) {
+extern "C" void vtkFreeTypeLabelRenderStrategy__ComputeLabelBounds__0(void* self, void* tprop, const char* label, double* bds) noexcept {
   (void)self;
   static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->ComputeLabelBounds(static_cast<vtkTextProperty*>(tprop), std::string(label), bds);
 }
 
-extern "C" void vtkFreeTypeLabelRenderStrategy__RenderLabel__0(void* self, int32_t* x, void* tprop, const char* label) {
+extern "C" void vtkFreeTypeLabelRenderStrategy__RenderLabel__0(void* self, int32_t* x, void* tprop, const char* label) noexcept {
   (void)self;
   static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->RenderLabel(x, static_cast<vtkTextProperty*>(tprop), std::string(label));
 }
 
-extern "C" void vtkFreeTypeLabelRenderStrategy__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkFreeTypeLabelRenderStrategy__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkFreeTypeLabelRenderStrategy*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }

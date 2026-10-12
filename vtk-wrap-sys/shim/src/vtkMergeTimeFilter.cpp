@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMergeTimeFilter__vtk_wrap_new() { return static_cast<void*>(vtkMergeTimeFilter::New()); }
+extern "C" void* vtkMergeTimeFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMergeTimeFilter::New()); }
 
-extern "C" int32_t vtkMergeTimeFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMergeTimeFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMergeTimeFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMergeTimeFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMergeTimeFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMergeTimeFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMergeTimeFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMergeTimeFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMergeTimeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMergeTimeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMergeTimeFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMergeTimeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMergeTimeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMergeTimeFilter__SetTolerance__0(void* self, double _arg) {
+extern "C" void vtkMergeTimeFilter__SetTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->SetTolerance(_arg);
 }
 
-extern "C" double vtkMergeTimeFilter__GetToleranceMinValue__0(void* self) {
+extern "C" double vtkMergeTimeFilter__GetToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetToleranceMinValue();
 }
 
-extern "C" double vtkMergeTimeFilter__GetToleranceMaxValue__0(void* self) {
+extern "C" double vtkMergeTimeFilter__GetToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetToleranceMaxValue();
 }
 
-extern "C" double vtkMergeTimeFilter__GetTolerance__0(void* self) {
+extern "C" double vtkMergeTimeFilter__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetTolerance();
 }
 
-extern "C" void vtkMergeTimeFilter__SetUseRelativeTolerance__0(void* self, bool _arg) {
+extern "C" void vtkMergeTimeFilter__SetUseRelativeTolerance__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->SetUseRelativeTolerance(_arg);
 }
 
-extern "C" bool vtkMergeTimeFilter__GetUseRelativeTolerance__0(void* self) {
+extern "C" bool vtkMergeTimeFilter__GetUseRelativeTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetUseRelativeTolerance();
 }
 
-extern "C" void vtkMergeTimeFilter__UseRelativeToleranceOn__0(void* self) {
+extern "C" void vtkMergeTimeFilter__UseRelativeToleranceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->UseRelativeToleranceOn();
 }
 
-extern "C" void vtkMergeTimeFilter__UseRelativeToleranceOff__0(void* self) {
+extern "C" void vtkMergeTimeFilter__UseRelativeToleranceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->UseRelativeToleranceOff();
 }
 
-extern "C" void vtkMergeTimeFilter__SetUseIntersection__0(void* self, bool _arg) {
+extern "C" void vtkMergeTimeFilter__SetUseIntersection__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->SetUseIntersection(_arg);
 }
 
-extern "C" bool vtkMergeTimeFilter__GetUseIntersection__0(void* self) {
+extern "C" bool vtkMergeTimeFilter__GetUseIntersection__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeTimeFilter*>(self)->GetUseIntersection();
 }
 
-extern "C" void vtkMergeTimeFilter__UseIntersectionOn__0(void* self) {
+extern "C" void vtkMergeTimeFilter__UseIntersectionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->UseIntersectionOn();
 }
 
-extern "C" void vtkMergeTimeFilter__UseIntersectionOff__0(void* self) {
+extern "C" void vtkMergeTimeFilter__UseIntersectionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeTimeFilter*>(self)->UseIntersectionOff();
 }

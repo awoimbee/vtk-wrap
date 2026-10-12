@@ -4,106 +4,106 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPen__vtk_wrap_new() { return static_cast<void*>(vtkPen::New()); }
+extern "C" void* vtkPen__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPen::New()); }
 
-extern "C" int32_t vtkPen__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPen__IsTypeOf__0(const char* type_) noexcept {
   return vtkPen::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPen__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPen__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPen*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPen__SafeDownCast__0(void* o) {
+extern "C" void* vtkPen__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPen::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPen__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPen__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPen::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPen__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPen__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPen*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPen__SetLineType__0(void* self, int32_t type_) {
+extern "C" void vtkPen__SetLineType__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetLineType(type_);
 }
 
-extern "C" int32_t vtkPen__GetLineType__0(void* self) {
+extern "C" int32_t vtkPen__GetLineType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPen*>(self)->GetLineType();
 }
 
-extern "C" void vtkPen__SetColorF__0(void* self, double* color) {
+extern "C" void vtkPen__SetColorF__0(void* self, double* color) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColorF(color);
 }
 
-extern "C" void vtkPen__SetColorF__1(void* self, double r, double g, double b) {
+extern "C" void vtkPen__SetColorF__1(void* self, double r, double g, double b) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColorF(r, g, b);
 }
 
-extern "C" void vtkPen__SetColorF__2(void* self, double r, double g, double b, double a) {
+extern "C" void vtkPen__SetColorF__2(void* self, double r, double g, double b, double a) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColorF(r, g, b, a);
 }
 
-extern "C" void vtkPen__SetOpacityF__0(void* self, double a) {
+extern "C" void vtkPen__SetOpacityF__0(void* self, double a) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetOpacityF(a);
 }
 
-extern "C" void vtkPen__SetColor__0(void* self, uint8_t* color) {
+extern "C" void vtkPen__SetColor__0(void* self, uint8_t* color) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColor(color);
 }
 
-extern "C" void vtkPen__SetColor__1(void* self, uint8_t r, uint8_t g, uint8_t b) {
+extern "C" void vtkPen__SetColor__1(void* self, uint8_t r, uint8_t g, uint8_t b) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColor(r, g, b);
 }
 
-extern "C" void vtkPen__SetColor__2(void* self, uint8_t r, uint8_t g, uint8_t b, uint8_t a) {
+extern "C" void vtkPen__SetColor__2(void* self, uint8_t r, uint8_t g, uint8_t b, uint8_t a) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetColor(r, g, b, a);
 }
 
-extern "C" void vtkPen__SetOpacity__0(void* self, uint8_t a) {
+extern "C" void vtkPen__SetOpacity__0(void* self, uint8_t a) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetOpacity(a);
 }
 
-extern "C" void vtkPen__GetColorF__0(void* self, double* color) {
+extern "C" void vtkPen__GetColorF__0(void* self, double* color) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->GetColorF(color);
 }
 
-extern "C" void vtkPen__GetColor__0(void* self, uint8_t* color) {
+extern "C" void vtkPen__GetColor__0(void* self, uint8_t* color) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->GetColor(color);
 }
 
-extern "C" uint8_t vtkPen__GetOpacity__0(void* self) {
+extern "C" uint8_t vtkPen__GetOpacity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPen*>(self)->GetOpacity();
 }
 
-extern "C" void vtkPen__SetWidth__0(void* self, float _arg) {
+extern "C" void vtkPen__SetWidth__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->SetWidth(_arg);
 }
 
-extern "C" float vtkPen__GetWidth__0(void* self) {
+extern "C" float vtkPen__GetWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPen*>(self)->GetWidth();
 }
 
-extern "C" void vtkPen__DeepCopy__0(void* self, void* pen) {
+extern "C" void vtkPen__DeepCopy__0(void* self, void* pen) noexcept {
   (void)self;
   static_cast<vtkPen*>(self)->DeepCopy(static_cast<vtkPen*>(pen));
 }

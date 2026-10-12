@@ -5,36 +5,36 @@
 #include "vtkRenderWindow.h"
 #include <string>
 
-extern "C" void* vtkRenderWindowCollection__vtk_wrap_new() { return static_cast<void*>(vtkRenderWindowCollection::New()); }
+extern "C" void* vtkRenderWindowCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRenderWindowCollection::New()); }
 
-extern "C" int32_t vtkRenderWindowCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRenderWindowCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkRenderWindowCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRenderWindowCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRenderWindowCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderWindowCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRenderWindowCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkRenderWindowCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRenderWindowCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRenderWindowCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRenderWindowCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRenderWindowCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRenderWindowCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRenderWindowCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderWindowCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkRenderWindowCollection__AddItem__0(void* self, void* a) {
+extern "C" void vtkRenderWindowCollection__AddItem__0(void* self, void* a) noexcept {
   (void)self;
   static_cast<vtkRenderWindowCollection*>(self)->AddItem(static_cast<vtkRenderWindow*>(a));
 }
 
-extern "C" void* vtkRenderWindowCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkRenderWindowCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRenderWindowCollection*>(self)->GetNextItem());
 }

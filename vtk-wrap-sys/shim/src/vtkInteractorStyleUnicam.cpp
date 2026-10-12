@@ -4,61 +4,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInteractorStyleUnicam__vtk_wrap_new() { return static_cast<void*>(vtkInteractorStyleUnicam::New()); }
+extern "C" void* vtkInteractorStyleUnicam__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInteractorStyleUnicam::New()); }
 
-extern "C" int32_t vtkInteractorStyleUnicam__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorStyleUnicam__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorStyleUnicam::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorStyleUnicam__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorStyleUnicam__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleUnicam*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorStyleUnicam__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorStyleUnicam__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorStyleUnicam::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorStyleUnicam__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorStyleUnicam__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorStyleUnicam::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorStyleUnicam__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorStyleUnicam__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleUnicam*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorStyleUnicam__SetWorldUpVector__0(void* self, double* a) {
+extern "C" void vtkInteractorStyleUnicam__SetWorldUpVector__0(void* self, double* a) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->SetWorldUpVector(a);
 }
 
-extern "C" void vtkInteractorStyleUnicam__SetWorldUpVector__1(void* self, double x, double y, double z) {
+extern "C" void vtkInteractorStyleUnicam__SetWorldUpVector__1(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->SetWorldUpVector(x, y, z);
 }
 
-extern "C" void vtkInteractorStyleUnicam__OnMouseMove__0(void* self) {
+extern "C" void vtkInteractorStyleUnicam__OnMouseMove__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->OnMouseMove();
 }
 
-extern "C" void vtkInteractorStyleUnicam__OnLeftButtonDown__0(void* self) {
+extern "C" void vtkInteractorStyleUnicam__OnLeftButtonDown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->OnLeftButtonDown();
 }
 
-extern "C" void vtkInteractorStyleUnicam__OnLeftButtonUp__0(void* self) {
+extern "C" void vtkInteractorStyleUnicam__OnLeftButtonUp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->OnLeftButtonUp();
 }
 
-extern "C" void vtkInteractorStyleUnicam__OnLeftButtonMove__0(void* self) {
+extern "C" void vtkInteractorStyleUnicam__OnLeftButtonMove__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->OnLeftButtonMove();
 }
 
-extern "C" void vtkInteractorStyleUnicam__OnTimer__0(void* self) {
+extern "C" void vtkInteractorStyleUnicam__OnTimer__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleUnicam*>(self)->OnTimer();
 }

@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDiscreteMarchingCubes__vtk_wrap_new() { return static_cast<void*>(vtkDiscreteMarchingCubes::New()); }
+extern "C" void* vtkDiscreteMarchingCubes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDiscreteMarchingCubes::New()); }
 
-extern "C" int32_t vtkDiscreteMarchingCubes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDiscreteMarchingCubes__IsTypeOf__0(const char* type_) noexcept {
   return vtkDiscreteMarchingCubes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDiscreteMarchingCubes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDiscreteMarchingCubes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiscreteMarchingCubes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDiscreteMarchingCubes__SafeDownCast__0(void* o) {
+extern "C" void* vtkDiscreteMarchingCubes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDiscreteMarchingCubes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDiscreteMarchingCubes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDiscreteMarchingCubes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDiscreteMarchingCubes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDiscreteMarchingCubes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDiscreteMarchingCubes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDiscreteMarchingCubes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDiscreteMarchingCubes__SetComputeAdjacentScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkDiscreteMarchingCubes__SetComputeAdjacentScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDiscreteMarchingCubes*>(self)->SetComputeAdjacentScalars(_arg);
 }
 
-extern "C" int32_t vtkDiscreteMarchingCubes__GetComputeAdjacentScalars__0(void* self) {
+extern "C" int32_t vtkDiscreteMarchingCubes__GetComputeAdjacentScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDiscreteMarchingCubes*>(self)->GetComputeAdjacentScalars();
 }
 
-extern "C" void vtkDiscreteMarchingCubes__ComputeAdjacentScalarsOn__0(void* self) {
+extern "C" void vtkDiscreteMarchingCubes__ComputeAdjacentScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDiscreteMarchingCubes*>(self)->ComputeAdjacentScalarsOn();
 }
 
-extern "C" void vtkDiscreteMarchingCubes__ComputeAdjacentScalarsOff__0(void* self) {
+extern "C" void vtkDiscreteMarchingCubes__ComputeAdjacentScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDiscreteMarchingCubes*>(self)->ComputeAdjacentScalarsOff();
 }

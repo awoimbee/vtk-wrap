@@ -4,116 +4,116 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTIFFReader__vtk_wrap_new() { return static_cast<void*>(vtkTIFFReader::New()); }
+extern "C" void* vtkTIFFReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTIFFReader::New()); }
 
-extern "C" int32_t vtkTIFFReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTIFFReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkTIFFReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTIFFReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTIFFReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTIFFReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkTIFFReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTIFFReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTIFFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTIFFReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTIFFReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTIFFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTIFFReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkTIFFReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkTIFFReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" const char* vtkTIFFReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkTIFFReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkTIFFReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkTIFFReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetDescriptiveName();
 }
 
-extern "C" void vtkTIFFReader__SetOrientationType__0(void* self, uint32_t orientationType) {
+extern "C" void vtkTIFFReader__SetOrientationType__0(void* self, uint32_t orientationType) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SetOrientationType(orientationType);
 }
 
-extern "C" uint32_t vtkTIFFReader__GetOrientationType__0(void* self) {
+extern "C" uint32_t vtkTIFFReader__GetOrientationType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetOrientationType();
 }
 
-extern "C" bool vtkTIFFReader__GetOrientationTypeSpecifiedFlag__0(void* self) {
+extern "C" bool vtkTIFFReader__GetOrientationTypeSpecifiedFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetOrientationTypeSpecifiedFlag();
 }
 
-extern "C" void vtkTIFFReader__SetOriginSpecifiedFlag__0(void* self, bool _arg) {
+extern "C" void vtkTIFFReader__SetOriginSpecifiedFlag__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SetOriginSpecifiedFlag(_arg);
 }
 
-extern "C" bool vtkTIFFReader__GetOriginSpecifiedFlag__0(void* self) {
+extern "C" bool vtkTIFFReader__GetOriginSpecifiedFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetOriginSpecifiedFlag();
 }
 
-extern "C" void vtkTIFFReader__OriginSpecifiedFlagOn__0(void* self) {
+extern "C" void vtkTIFFReader__OriginSpecifiedFlagOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->OriginSpecifiedFlagOn();
 }
 
-extern "C" void vtkTIFFReader__OriginSpecifiedFlagOff__0(void* self) {
+extern "C" void vtkTIFFReader__OriginSpecifiedFlagOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->OriginSpecifiedFlagOff();
 }
 
-extern "C" void vtkTIFFReader__SetSpacingSpecifiedFlag__0(void* self, bool _arg) {
+extern "C" void vtkTIFFReader__SetSpacingSpecifiedFlag__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SetSpacingSpecifiedFlag(_arg);
 }
 
-extern "C" bool vtkTIFFReader__GetSpacingSpecifiedFlag__0(void* self) {
+extern "C" bool vtkTIFFReader__GetSpacingSpecifiedFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetSpacingSpecifiedFlag();
 }
 
-extern "C" void vtkTIFFReader__SpacingSpecifiedFlagOn__0(void* self) {
+extern "C" void vtkTIFFReader__SpacingSpecifiedFlagOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SpacingSpecifiedFlagOn();
 }
 
-extern "C" void vtkTIFFReader__SpacingSpecifiedFlagOff__0(void* self) {
+extern "C" void vtkTIFFReader__SpacingSpecifiedFlagOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SpacingSpecifiedFlagOff();
 }
 
-extern "C" void vtkTIFFReader__SetIgnoreColorMap__0(void* self, bool _arg) {
+extern "C" void vtkTIFFReader__SetIgnoreColorMap__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->SetIgnoreColorMap(_arg);
 }
 
-extern "C" bool vtkTIFFReader__GetIgnoreColorMap__0(void* self) {
+extern "C" bool vtkTIFFReader__GetIgnoreColorMap__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTIFFReader*>(self)->GetIgnoreColorMap();
 }
 
-extern "C" void vtkTIFFReader__IgnoreColorMapOn__0(void* self) {
+extern "C" void vtkTIFFReader__IgnoreColorMapOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->IgnoreColorMapOn();
 }
 
-extern "C" void vtkTIFFReader__IgnoreColorMapOff__0(void* self) {
+extern "C" void vtkTIFFReader__IgnoreColorMapOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTIFFReader*>(self)->IgnoreColorMapOff();
 }

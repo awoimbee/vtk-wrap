@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGlyph2D__vtk_wrap_new() { return static_cast<void*>(vtkGlyph2D::New()); }
+extern "C" void* vtkGlyph2D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGlyph2D::New()); }
 
-extern "C" int32_t vtkGlyph2D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGlyph2D__IsTypeOf__0(const char* type_) noexcept {
   return vtkGlyph2D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGlyph2D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGlyph2D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGlyph2D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGlyph2D__SafeDownCast__0(void* o) {
+extern "C" void* vtkGlyph2D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGlyph2D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGlyph2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGlyph2D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGlyph2D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGlyph2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGlyph2D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGlyph2D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

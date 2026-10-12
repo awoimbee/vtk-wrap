@@ -4,71 +4,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInteractorStyleMultiTouchCamera__vtk_wrap_new() { return static_cast<void*>(vtkInteractorStyleMultiTouchCamera::New()); }
+extern "C" void* vtkInteractorStyleMultiTouchCamera__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInteractorStyleMultiTouchCamera::New()); }
 
-extern "C" int32_t vtkInteractorStyleMultiTouchCamera__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorStyleMultiTouchCamera__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorStyleMultiTouchCamera::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorStyleMultiTouchCamera__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorStyleMultiTouchCamera__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorStyleMultiTouchCamera__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorStyleMultiTouchCamera__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorStyleMultiTouchCamera::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorStyleMultiTouchCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorStyleMultiTouchCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorStyleMultiTouchCamera::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorStyleMultiTouchCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorStyleMultiTouchCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartRotate__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartRotate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnStartRotate();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnRotate__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnRotate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnRotate();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndRotate__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndRotate__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnEndRotate();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartPinch__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartPinch__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnStartPinch();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnPinch__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnPinch__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnPinch();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndPinch__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndPinch__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnEndPinch();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartPan__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnStartPan__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnStartPan();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnPan__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnPan__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnPan();
 }
 
-extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndPan__0(void* self) {
+extern "C" void vtkInteractorStyleMultiTouchCamera__OnEndPan__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorStyleMultiTouchCamera*>(self)->OnEndPan();
 }

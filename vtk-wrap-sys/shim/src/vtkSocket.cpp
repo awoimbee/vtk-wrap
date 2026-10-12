@@ -4,54 +4,54 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkSocket__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSocket__IsTypeOf__0(const char* type_) noexcept {
   return vtkSocket::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSocket__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSocket__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSocket__SafeDownCast__0(void* o) {
+extern "C" void* vtkSocket__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSocket::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSocket__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSocket__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSocket::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSocket__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSocket__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkSocket__GetConnected__0(void* self) {
+extern "C" int32_t vtkSocket__GetConnected__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->GetConnected();
 }
 
-extern "C" void vtkSocket__CloseSocket__0(void* self) {
+extern "C" void vtkSocket__CloseSocket__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSocket*>(self)->CloseSocket();
 }
 
-extern "C" int32_t vtkSocket__Send__0(void* self, void* data, int32_t length) {
+extern "C" int32_t vtkSocket__Send__0(void* self, void* data, int32_t length) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->Send(data, length);
 }
 
-extern "C" int32_t vtkSocket__Receive__0(void* self, void* data, int32_t length, int32_t readFully) {
+extern "C" int32_t vtkSocket__Receive__0(void* self, void* data, int32_t length, int32_t readFully) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->Receive(data, length, readFully);
 }
 
-extern "C" int32_t vtkSocket__GetSocketDescriptor__0(void* self) {
+extern "C" int32_t vtkSocket__GetSocketDescriptor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSocket*>(self)->GetSocketDescriptor();
 }
 
-extern "C" char* vtkSocket__GetBoundAddress__0(void* self) {
+extern "C" char* vtkSocket__GetBoundAddress__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkSocket*>(self)->GetBoundAddress()).c_str());
 }

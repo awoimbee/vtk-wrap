@@ -4,151 +4,151 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataArraySelection__vtk_wrap_new() { return static_cast<void*>(vtkDataArraySelection::New()); }
+extern "C" void* vtkDataArraySelection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataArraySelection::New()); }
 
-extern "C" int32_t vtkDataArraySelection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataArraySelection__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataArraySelection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataArraySelection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataArraySelection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataArraySelection__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataArraySelection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataArraySelection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataArraySelection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataArraySelection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataArraySelection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataArraySelection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataArraySelection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataArraySelection__EnableArray__0(void* self, const char* name) {
+extern "C" void vtkDataArraySelection__EnableArray__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->EnableArray(name);
 }
 
-extern "C" void vtkDataArraySelection__DisableArray__0(void* self, const char* name) {
+extern "C" void vtkDataArraySelection__DisableArray__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->DisableArray(name);
 }
 
-extern "C" int32_t vtkDataArraySelection__ArrayIsEnabled__0(void* self, const char* name) {
+extern "C" int32_t vtkDataArraySelection__ArrayIsEnabled__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->ArrayIsEnabled(name);
 }
 
-extern "C" int32_t vtkDataArraySelection__ArrayExists__0(void* self, const char* name) {
+extern "C" int32_t vtkDataArraySelection__ArrayExists__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->ArrayExists(name);
 }
 
-extern "C" void vtkDataArraySelection__EnableAllArrays__0(void* self) {
+extern "C" void vtkDataArraySelection__EnableAllArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->EnableAllArrays();
 }
 
-extern "C" void vtkDataArraySelection__DisableAllArrays__0(void* self) {
+extern "C" void vtkDataArraySelection__DisableAllArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->DisableAllArrays();
 }
 
-extern "C" int32_t vtkDataArraySelection__GetNumberOfArrays__0(void* self) {
+extern "C" int32_t vtkDataArraySelection__GetNumberOfArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetNumberOfArrays();
 }
 
-extern "C" int32_t vtkDataArraySelection__GetNumberOfArraysEnabled__0(void* self) {
+extern "C" int32_t vtkDataArraySelection__GetNumberOfArraysEnabled__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetNumberOfArraysEnabled();
 }
 
-extern "C" const char* vtkDataArraySelection__GetArrayName__0(void* self, int32_t index) {
+extern "C" const char* vtkDataArraySelection__GetArrayName__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetArrayName(index);
 }
 
-extern "C" int32_t vtkDataArraySelection__GetArrayIndex__0(void* self, const char* name) {
+extern "C" int32_t vtkDataArraySelection__GetArrayIndex__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetArrayIndex(name);
 }
 
-extern "C" int32_t vtkDataArraySelection__GetEnabledArrayIndex__0(void* self, const char* name) {
+extern "C" int32_t vtkDataArraySelection__GetEnabledArrayIndex__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetEnabledArrayIndex(name);
 }
 
-extern "C" int32_t vtkDataArraySelection__GetArraySetting__0(void* self, int32_t index) {
+extern "C" int32_t vtkDataArraySelection__GetArraySetting__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetArraySetting(index);
 }
 
-extern "C" int32_t vtkDataArraySelection__GetArraySetting__1(void* self, const char* name) {
+extern "C" int32_t vtkDataArraySelection__GetArraySetting__1(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetArraySetting(name);
 }
 
-extern "C" void vtkDataArraySelection__SetArraySetting__0(void* self, const char* name, int32_t setting) {
+extern "C" void vtkDataArraySelection__SetArraySetting__0(void* self, const char* name, int32_t setting) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->SetArraySetting(name, setting);
 }
 
-extern "C" void vtkDataArraySelection__RemoveAllArrays__0(void* self) {
+extern "C" void vtkDataArraySelection__RemoveAllArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->RemoveAllArrays();
 }
 
-extern "C" int32_t vtkDataArraySelection__AddArray__0(void* self, const char* name, bool state) {
+extern "C" int32_t vtkDataArraySelection__AddArray__0(void* self, const char* name, bool state) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->AddArray(name, state);
 }
 
-extern "C" void vtkDataArraySelection__RemoveArrayByIndex__0(void* self, int32_t index) {
+extern "C" void vtkDataArraySelection__RemoveArrayByIndex__0(void* self, int32_t index) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->RemoveArrayByIndex(index);
 }
 
-extern "C" void vtkDataArraySelection__RemoveArrayByName__0(void* self, const char* name) {
+extern "C" void vtkDataArraySelection__RemoveArrayByName__0(void* self, const char* name) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->RemoveArrayByName(name);
 }
 
-extern "C" void vtkDataArraySelection__CopySelections__0(void* self, void* selections) {
+extern "C" void vtkDataArraySelection__CopySelections__0(void* self, void* selections) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->CopySelections(static_cast<vtkDataArraySelection*>(selections));
 }
 
-extern "C" void vtkDataArraySelection__Union__0(void* self, void* other) {
+extern "C" void vtkDataArraySelection__Union__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->Union(static_cast<vtkDataArraySelection*>(other));
 }
 
-extern "C" void vtkDataArraySelection__Union__1(void* self, void* other, bool skipModified) {
+extern "C" void vtkDataArraySelection__Union__1(void* self, void* other, bool skipModified) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->Union(static_cast<vtkDataArraySelection*>(other), skipModified);
 }
 
-extern "C" void vtkDataArraySelection__SetUnknownArraySetting__0(void* self, int32_t _arg) {
+extern "C" void vtkDataArraySelection__SetUnknownArraySetting__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->SetUnknownArraySetting(_arg);
 }
 
-extern "C" int32_t vtkDataArraySelection__GetUnknownArraySetting__0(void* self) {
+extern "C" int32_t vtkDataArraySelection__GetUnknownArraySetting__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->GetUnknownArraySetting();
 }
 
-extern "C" void vtkDataArraySelection__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkDataArraySelection__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkDataArraySelection*>(self)->DeepCopy(static_cast<vtkDataArraySelection*>(other));
 }
 
-extern "C" bool vtkDataArraySelection__IsEqual__0(void* self, void* other) {
+extern "C" bool vtkDataArraySelection__IsEqual__0(void* self, void* other) noexcept {
   (void)self;
   return static_cast<vtkDataArraySelection*>(self)->IsEqual(static_cast<vtkDataArraySelection*>(other));
 }

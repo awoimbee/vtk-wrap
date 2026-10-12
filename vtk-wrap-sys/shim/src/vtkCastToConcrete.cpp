@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCastToConcrete__vtk_wrap_new() { return static_cast<void*>(vtkCastToConcrete::New()); }
+extern "C" void* vtkCastToConcrete__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCastToConcrete::New()); }
 
-extern "C" int32_t vtkCastToConcrete__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCastToConcrete__IsTypeOf__0(const char* type_) noexcept {
   return vtkCastToConcrete::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCastToConcrete__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCastToConcrete__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCastToConcrete*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCastToConcrete__SafeDownCast__0(void* o) {
+extern "C" void* vtkCastToConcrete__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCastToConcrete::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCastToConcrete__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCastToConcrete__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCastToConcrete::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCastToConcrete__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCastToConcrete__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCastToConcrete*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -6,49 +6,49 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractSplineRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractSplineRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractSplineRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractSplineRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractSplineRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractSplineRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractSplineRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractSplineRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractSplineRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractSplineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractSplineRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractSplineRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractSplineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractSplineRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractSplineRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractSplineRepresentation__GetPolyData__0(void* self, void* pd) {
+extern "C" void vtkAbstractSplineRepresentation__GetPolyData__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkAbstractSplineRepresentation*>(self)->GetPolyData(static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void vtkAbstractSplineRepresentation__SetResolution__0(void* self, int32_t resolution) {
+extern "C" void vtkAbstractSplineRepresentation__SetResolution__0(void* self, int32_t resolution) noexcept {
   (void)self;
   static_cast<vtkAbstractSplineRepresentation*>(self)->SetResolution(resolution);
 }
 
-extern "C" int32_t vtkAbstractSplineRepresentation__GetResolution__0(void* self) {
+extern "C" int32_t vtkAbstractSplineRepresentation__GetResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractSplineRepresentation*>(self)->GetResolution();
 }
 
-extern "C" void* vtkAbstractSplineRepresentation__GetHandlePositions__0(void* self) {
+extern "C" void* vtkAbstractSplineRepresentation__GetHandlePositions__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractSplineRepresentation*>(self)->GetHandlePositions());
 }
 
-extern "C" double vtkAbstractSplineRepresentation__GetSummedLength__0(void* self) {
+extern "C" double vtkAbstractSplineRepresentation__GetSummedLength__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractSplineRepresentation*>(self)->GetSummedLength();
 }

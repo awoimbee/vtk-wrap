@@ -5,76 +5,76 @@
 #include "vtkRenderWindowInteractor.h"
 #include <string>
 
-extern "C" void* vtkEvent__vtk_wrap_new() { return static_cast<void*>(vtkEvent::New()); }
+extern "C" void* vtkEvent__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEvent::New()); }
 
-extern "C" int32_t vtkEvent__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEvent__IsTypeOf__0(const char* type_) noexcept {
   return vtkEvent::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEvent__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEvent__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEvent__SafeDownCast__0(void* o) {
+extern "C" void* vtkEvent__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEvent::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEvent__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEvent__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEvent::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEvent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEvent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEvent__SetEventId__0(void* self, unsigned long _arg) {
+extern "C" void vtkEvent__SetEventId__0(void* self, unsigned long _arg) noexcept {
   (void)self;
   static_cast<vtkEvent*>(self)->SetEventId(_arg);
 }
 
-extern "C" unsigned long vtkEvent__GetEventId__0(void* self) {
+extern "C" unsigned long vtkEvent__GetEventId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->GetEventId();
 }
 
-extern "C" void vtkEvent__SetModifier__0(void* self, int32_t _arg) {
+extern "C" void vtkEvent__SetModifier__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkEvent*>(self)->SetModifier(_arg);
 }
 
-extern "C" int32_t vtkEvent__GetModifier__0(void* self) {
+extern "C" int32_t vtkEvent__GetModifier__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->GetModifier();
 }
 
-extern "C" void vtkEvent__SetKeyCode__0(void* self, char _arg) {
+extern "C" void vtkEvent__SetKeyCode__0(void* self, char _arg) noexcept {
   (void)self;
   static_cast<vtkEvent*>(self)->SetKeyCode(_arg);
 }
 
-extern "C" char vtkEvent__GetKeyCode__0(void* self) {
+extern "C" char vtkEvent__GetKeyCode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->GetKeyCode();
 }
 
-extern "C" void vtkEvent__SetRepeatCount__0(void* self, int32_t _arg) {
+extern "C" void vtkEvent__SetRepeatCount__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkEvent*>(self)->SetRepeatCount(_arg);
 }
 
-extern "C" int32_t vtkEvent__GetRepeatCount__0(void* self) {
+extern "C" int32_t vtkEvent__GetRepeatCount__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEvent*>(self)->GetRepeatCount();
 }
 
-extern "C" void vtkEvent__SetKeySym__0(void* self, const char* _arg) {
+extern "C" void vtkEvent__SetKeySym__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkEvent*>(self)->SetKeySym(_arg);
 }
 
-extern "C" int32_t vtkEvent__GetModifier__1(void* arg0) {
+extern "C" int32_t vtkEvent__GetModifier__1(void* arg0) noexcept {
   return vtkEvent::GetModifier(static_cast<vtkRenderWindowInteractor*>(arg0));
 }
 

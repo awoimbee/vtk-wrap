@@ -9,101 +9,101 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkStaticCellLocator__vtk_wrap_new() { return static_cast<void*>(vtkStaticCellLocator::New()); }
+extern "C" void* vtkStaticCellLocator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStaticCellLocator::New()); }
 
-extern "C" int32_t vtkStaticCellLocator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStaticCellLocator__IsTypeOf__0(const char* type_) noexcept {
   return vtkStaticCellLocator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStaticCellLocator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStaticCellLocator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStaticCellLocator__SafeDownCast__0(void* o) {
+extern "C" void* vtkStaticCellLocator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStaticCellLocator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStaticCellLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStaticCellLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStaticCellLocator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStaticCellLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStaticCellLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStaticCellLocator__SetDivisions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) {
+extern "C" void vtkStaticCellLocator__SetDivisions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->SetDivisions(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkStaticCellLocator__SetDivisions__1(void* self, const int32_t* _arg) {
+extern "C" void vtkStaticCellLocator__SetDivisions__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->SetDivisions(_arg);
 }
 
-extern "C" void vtkStaticCellLocator__SetMaxNumberOfBuckets__0(void* self, int64_t _arg) {
+extern "C" void vtkStaticCellLocator__SetMaxNumberOfBuckets__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->SetMaxNumberOfBuckets(_arg);
 }
 
-extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBucketsMinValue__0(void* self) {
+extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBucketsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->GetMaxNumberOfBucketsMinValue();
 }
 
-extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBucketsMaxValue__0(void* self) {
+extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBucketsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->GetMaxNumberOfBucketsMaxValue();
 }
 
-extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBuckets__0(void* self) {
+extern "C" int64_t vtkStaticCellLocator__GetMaxNumberOfBuckets__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->GetMaxNumberOfBuckets();
 }
 
-extern "C" bool vtkStaticCellLocator__GetLargeIds__0(void* self) {
+extern "C" bool vtkStaticCellLocator__GetLargeIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->GetLargeIds();
 }
 
-extern "C" int32_t vtkStaticCellLocator__IntersectWithLine__0(void* self, const double* p1, const double* p2, double tol, void* points, void* cellIds, void* cell) {
+extern "C" int32_t vtkStaticCellLocator__IntersectWithLine__0(void* self, const double* p1, const double* p2, double tol, void* points, void* cellIds, void* cell) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->IntersectWithLine(p1, p2, tol, static_cast<vtkPoints*>(points), static_cast<vtkIdList*>(cellIds), static_cast<vtkGenericCell*>(cell));
 }
 
-extern "C" void vtkStaticCellLocator__FindCellsAlongPlane__0(void* self, const double* o, const double* n, double tol, void* cells) {
+extern "C" void vtkStaticCellLocator__FindCellsAlongPlane__0(void* self, const double* o, const double* n, double tol, void* cells) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->FindCellsAlongPlane(o, n, tol, static_cast<vtkIdList*>(cells));
 }
 
-extern "C" bool vtkStaticCellLocator__InsideCellBounds__0(void* self, double* x, int64_t cellId, double tol) {
+extern "C" bool vtkStaticCellLocator__InsideCellBounds__0(void* self, double* x, int64_t cellId, double tol) noexcept {
   (void)self;
   return static_cast<vtkStaticCellLocator*>(self)->InsideCellBounds(x, cellId, tol);
 }
 
-extern "C" void vtkStaticCellLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) {
+extern "C" void vtkStaticCellLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->GenerateRepresentation(level, static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void vtkStaticCellLocator__FreeSearchStructure__0(void* self) {
+extern "C" void vtkStaticCellLocator__FreeSearchStructure__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->FreeSearchStructure();
 }
 
-extern "C" void vtkStaticCellLocator__BuildLocator__0(void* self) {
+extern "C" void vtkStaticCellLocator__BuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->BuildLocator();
 }
 
-extern "C" void vtkStaticCellLocator__ForceBuildLocator__0(void* self) {
+extern "C" void vtkStaticCellLocator__ForceBuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->ForceBuildLocator();
 }
 
-extern "C" void vtkStaticCellLocator__ShallowCopy__0(void* self, void* locator) {
+extern "C" void vtkStaticCellLocator__ShallowCopy__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkStaticCellLocator*>(self)->ShallowCopy(static_cast<vtkAbstractCellLocator*>(locator));
 }

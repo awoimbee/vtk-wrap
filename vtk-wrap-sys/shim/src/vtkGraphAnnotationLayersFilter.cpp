@@ -5,76 +5,76 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkGraphAnnotationLayersFilter__vtk_wrap_new() { return static_cast<void*>(vtkGraphAnnotationLayersFilter::New()); }
+extern "C" void* vtkGraphAnnotationLayersFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGraphAnnotationLayersFilter::New()); }
 
-extern "C" int32_t vtkGraphAnnotationLayersFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGraphAnnotationLayersFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkGraphAnnotationLayersFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGraphAnnotationLayersFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGraphAnnotationLayersFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphAnnotationLayersFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGraphAnnotationLayersFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkGraphAnnotationLayersFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGraphAnnotationLayersFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGraphAnnotationLayersFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGraphAnnotationLayersFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGraphAnnotationLayersFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGraphAnnotationLayersFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGraphAnnotationLayersFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGraphAnnotationLayersFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__OutlineOn__0(void* self) {
+extern "C" void vtkGraphAnnotationLayersFilter__OutlineOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->OutlineOn();
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__OutlineOff__0(void* self) {
+extern "C" void vtkGraphAnnotationLayersFilter__OutlineOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->OutlineOff();
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetOutline__0(void* self, bool b) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetOutline__0(void* self, bool b) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetOutline(b);
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetScaleFactor__0(void* self, double scale) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetScaleFactor__0(void* self, double scale) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetScaleFactor(scale);
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetHullShapeToBoundingRectangle__0(void* self) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetHullShapeToBoundingRectangle__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetHullShapeToBoundingRectangle();
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetHullShapeToConvexHull__0(void* self) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetHullShapeToConvexHull__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetHullShapeToConvexHull();
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetMinHullSizeInWorld__0(void* self, double size) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetMinHullSizeInWorld__0(void* self, double size) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetMinHullSizeInWorld(size);
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetMinHullSizeInDisplay__0(void* self, int32_t size) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetMinHullSizeInDisplay__0(void* self, int32_t size) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetMinHullSizeInDisplay(size);
 }
 
-extern "C" void vtkGraphAnnotationLayersFilter__SetRenderer__0(void* self, void* renderer) {
+extern "C" void vtkGraphAnnotationLayersFilter__SetRenderer__0(void* self, void* renderer) noexcept {
   (void)self;
   static_cast<vtkGraphAnnotationLayersFilter*>(self)->SetRenderer(static_cast<vtkRenderer*>(renderer));
 }
 
-extern "C" unsigned long vtkGraphAnnotationLayersFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkGraphAnnotationLayersFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGraphAnnotationLayersFilter*>(self)->GetMTime();
 }

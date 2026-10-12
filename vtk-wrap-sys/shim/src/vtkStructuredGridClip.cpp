@@ -5,66 +5,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStructuredGridClip__vtk_wrap_new() { return static_cast<void*>(vtkStructuredGridClip::New()); }
+extern "C" void* vtkStructuredGridClip__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredGridClip::New()); }
 
-extern "C" int32_t vtkStructuredGridClip__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredGridClip__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredGridClip::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredGridClip__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredGridClip__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridClip*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredGridClip__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredGridClip__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredGridClip::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredGridClip__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredGridClip__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredGridClip::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredGridClip__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredGridClip__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridClip*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStructuredGridClip__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) {
+extern "C" void vtkStructuredGridClip__SetOutputWholeExtent__0(void* self, int32_t* extent, void* outInfo) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->SetOutputWholeExtent(extent, static_cast<vtkInformation*>(outInfo));
 }
 
-extern "C" void vtkStructuredGridClip__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) {
+extern "C" void vtkStructuredGridClip__SetOutputWholeExtent__1(void* self, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY, int32_t minZ, int32_t maxZ) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->SetOutputWholeExtent(minX, maxX, minY, maxY, minZ, maxZ);
 }
 
-extern "C" void vtkStructuredGridClip__GetOutputWholeExtent__0(void* self, int32_t* extent) {
+extern "C" void vtkStructuredGridClip__GetOutputWholeExtent__0(void* self, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->GetOutputWholeExtent(extent);
 }
 
-extern "C" void vtkStructuredGridClip__ResetOutputWholeExtent__0(void* self) {
+extern "C" void vtkStructuredGridClip__ResetOutputWholeExtent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->ResetOutputWholeExtent();
 }
 
-extern "C" void vtkStructuredGridClip__SetClipData__0(void* self, int32_t _arg) {
+extern "C" void vtkStructuredGridClip__SetClipData__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->SetClipData(_arg);
 }
 
-extern "C" int32_t vtkStructuredGridClip__GetClipData__0(void* self) {
+extern "C" int32_t vtkStructuredGridClip__GetClipData__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridClip*>(self)->GetClipData();
 }
 
-extern "C" void vtkStructuredGridClip__ClipDataOn__0(void* self) {
+extern "C" void vtkStructuredGridClip__ClipDataOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->ClipDataOn();
 }
 
-extern "C" void vtkStructuredGridClip__ClipDataOff__0(void* self) {
+extern "C" void vtkStructuredGridClip__ClipDataOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStructuredGridClip*>(self)->ClipDataOff();
 }

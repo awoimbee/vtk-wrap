@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMemoryResourceStream__vtk_wrap_new() { return static_cast<void*>(vtkMemoryResourceStream::New()); }
+extern "C" void* vtkMemoryResourceStream__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMemoryResourceStream::New()); }
 
-extern "C" int32_t vtkMemoryResourceStream__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMemoryResourceStream__IsTypeOf__0(const char* type_) noexcept {
   return vtkMemoryResourceStream::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMemoryResourceStream__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMemoryResourceStream__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMemoryResourceStream*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMemoryResourceStream__SafeDownCast__0(void* o) {
+extern "C" void* vtkMemoryResourceStream__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMemoryResourceStream::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMemoryResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMemoryResourceStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMemoryResourceStream::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMemoryResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMemoryResourceStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMemoryResourceStream*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkMemoryResourceStream__EndOfStream__0(void* self) {
+extern "C" bool vtkMemoryResourceStream__EndOfStream__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMemoryResourceStream*>(self)->EndOfStream();
 }
 
-extern "C" int64_t vtkMemoryResourceStream__Tell__0(void* self) {
+extern "C" int64_t vtkMemoryResourceStream__Tell__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMemoryResourceStream*>(self)->Tell();
 }
 
-extern "C" void* vtkMemoryResourceStream__GetBuffer__0(void* self) {
+extern "C" void* vtkMemoryResourceStream__GetBuffer__0(void* self) noexcept {
   (void)self;
   return const_cast<void*>(static_cast<vtkMemoryResourceStream*>(self)->GetBuffer());
 }
 
-extern "C" bool vtkMemoryResourceStream__OwnsBuffer__0(void* self) {
+extern "C" bool vtkMemoryResourceStream__OwnsBuffer__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMemoryResourceStream*>(self)->OwnsBuffer();
 }

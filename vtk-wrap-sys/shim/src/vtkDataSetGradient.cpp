@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataSetGradient__vtk_wrap_new() { return static_cast<void*>(vtkDataSetGradient::New()); }
+extern "C" void* vtkDataSetGradient__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetGradient::New()); }
 
-extern "C" int32_t vtkDataSetGradient__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataSetGradient__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataSetGradient::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataSetGradient__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataSetGradient__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetGradient*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataSetGradient__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataSetGradient__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataSetGradient::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataSetGradient__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataSetGradient__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataSetGradient::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataSetGradient__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataSetGradient__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetGradient*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataSetGradient__SetResultArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetGradient__SetResultArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetGradient*>(self)->SetResultArrayName(_arg);
 }

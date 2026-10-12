@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkWarpVector__vtk_wrap_new() { return static_cast<void*>(vtkWarpVector::New()); }
+extern "C" void* vtkWarpVector__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWarpVector::New()); }
 
-extern "C" int32_t vtkWarpVector__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWarpVector__IsTypeOf__0(const char* type_) noexcept {
   return vtkWarpVector::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWarpVector__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWarpVector__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWarpVector*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWarpVector__SafeDownCast__0(void* o) {
+extern "C" void* vtkWarpVector__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWarpVector::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWarpVector__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWarpVector__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWarpVector::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWarpVector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWarpVector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWarpVector*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkWarpVector__SetScaleFactor__0(void* self, double _arg) {
+extern "C" void vtkWarpVector__SetScaleFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkWarpVector*>(self)->SetScaleFactor(_arg);
 }
 
-extern "C" double vtkWarpVector__GetScaleFactor__0(void* self) {
+extern "C" double vtkWarpVector__GetScaleFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWarpVector*>(self)->GetScaleFactor();
 }
 
-extern "C" void vtkWarpVector__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkWarpVector__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkWarpVector*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkWarpVector__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkWarpVector__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkWarpVector*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" int32_t vtkWarpVector__FillInputPortInformation__0(void* self, int32_t port, void* info) {
+extern "C" int32_t vtkWarpVector__FillInputPortInformation__0(void* self, int32_t port, void* info) noexcept {
   (void)self;
   return static_cast<vtkWarpVector*>(self)->FillInputPortInformation(port, static_cast<vtkInformation*>(info));
 }

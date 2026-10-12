@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCompositeDataProbeFilter__vtk_wrap_new() { return static_cast<void*>(vtkCompositeDataProbeFilter::New()); }
+extern "C" void* vtkCompositeDataProbeFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompositeDataProbeFilter::New()); }
 
-extern "C" int32_t vtkCompositeDataProbeFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeDataProbeFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeDataProbeFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeDataProbeFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeDataProbeFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataProbeFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeDataProbeFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeDataProbeFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeDataProbeFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeDataProbeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeDataProbeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeDataProbeFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeDataProbeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeDataProbeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataProbeFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCompositeDataProbeFilter__SetPassPartialArrays__0(void* self, bool _arg) {
+extern "C" void vtkCompositeDataProbeFilter__SetPassPartialArrays__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->SetPassPartialArrays(_arg);
 }
 
-extern "C" bool vtkCompositeDataProbeFilter__GetPassPartialArrays__0(void* self) {
+extern "C" bool vtkCompositeDataProbeFilter__GetPassPartialArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataProbeFilter*>(self)->GetPassPartialArrays();
 }
 
-extern "C" void vtkCompositeDataProbeFilter__PassPartialArraysOn__0(void* self) {
+extern "C" void vtkCompositeDataProbeFilter__PassPartialArraysOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->PassPartialArraysOn();
 }
 
-extern "C" void vtkCompositeDataProbeFilter__PassPartialArraysOff__0(void* self) {
+extern "C" void vtkCompositeDataProbeFilter__PassPartialArraysOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->PassPartialArraysOff();
 }
 
-extern "C" void vtkCompositeDataProbeFilter__SetUseImplicitArrays__0(void* self, bool _arg) {
+extern "C" void vtkCompositeDataProbeFilter__SetUseImplicitArrays__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->SetUseImplicitArrays(_arg);
 }
 
-extern "C" bool vtkCompositeDataProbeFilter__GetUseImplicitArrays__0(void* self) {
+extern "C" bool vtkCompositeDataProbeFilter__GetUseImplicitArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeDataProbeFilter*>(self)->GetUseImplicitArrays();
 }
 
-extern "C" void vtkCompositeDataProbeFilter__UseImplicitArraysOn__0(void* self) {
+extern "C" void vtkCompositeDataProbeFilter__UseImplicitArraysOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->UseImplicitArraysOn();
 }
 
-extern "C" void vtkCompositeDataProbeFilter__UseImplicitArraysOff__0(void* self) {
+extern "C" void vtkCompositeDataProbeFilter__UseImplicitArraysOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCompositeDataProbeFilter*>(self)->UseImplicitArraysOff();
 }

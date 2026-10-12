@@ -5,34 +5,34 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkRenderPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRenderPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkRenderPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRenderPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRenderPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRenderPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkRenderPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRenderPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRenderPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRenderPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRenderPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRenderPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRenderPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRenderPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkRenderPass__GetNumberOfRenderedProps__0(void* self) {
+extern "C" int32_t vtkRenderPass__GetNumberOfRenderedProps__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRenderPass*>(self)->GetNumberOfRenderedProps();
 }
 
-extern "C" void vtkRenderPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkRenderPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkRenderPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }

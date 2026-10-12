@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageConstantPad__vtk_wrap_new() { return static_cast<void*>(vtkImageConstantPad::New()); }
+extern "C" void* vtkImageConstantPad__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageConstantPad::New()); }
 
-extern "C" int32_t vtkImageConstantPad__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageConstantPad__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageConstantPad::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageConstantPad__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageConstantPad__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageConstantPad*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageConstantPad__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageConstantPad__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageConstantPad::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageConstantPad__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageConstantPad__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageConstantPad::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageConstantPad__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageConstantPad__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageConstantPad*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageConstantPad__SetConstant__0(void* self, double _arg) {
+extern "C" void vtkImageConstantPad__SetConstant__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageConstantPad*>(self)->SetConstant(_arg);
 }
 
-extern "C" double vtkImageConstantPad__GetConstant__0(void* self) {
+extern "C" double vtkImageConstantPad__GetConstant__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageConstantPad*>(self)->GetConstant();
 }
 
-extern "C" void vtkImageConstantPad__SetComponentConstants__0(void* self, void* values) {
+extern "C" void vtkImageConstantPad__SetComponentConstants__0(void* self, void* values) noexcept {
   (void)self;
   static_cast<vtkImageConstantPad*>(self)->SetComponentConstants(static_cast<vtkDoubleArray*>(values));
 }
 
-extern "C" void* vtkImageConstantPad__GetComponentConstants__0(void* self) {
+extern "C" void* vtkImageConstantPad__GetComponentConstants__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageConstantPad*>(self)->GetComponentConstants());
 }

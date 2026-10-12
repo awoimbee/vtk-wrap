@@ -5,84 +5,84 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractCellArray__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractCellArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractCellArray::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractCellArray__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractCellArray__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractCellArray__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractCellArray__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractCellArray::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractCellArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractCellArray::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractCellArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractCellArray__Initialize__0(void* self) {
+extern "C" void vtkAbstractCellArray__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractCellArray*>(self)->Initialize();
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetNumberOfCells__0(void* self) {
+extern "C" int64_t vtkAbstractCellArray__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetNumberOfCells();
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetNumberOfOffsets__0(void* self) {
+extern "C" int64_t vtkAbstractCellArray__GetNumberOfOffsets__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetNumberOfOffsets();
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetOffset__0(void* self, int64_t cellId) {
+extern "C" int64_t vtkAbstractCellArray__GetOffset__0(void* self, int64_t cellId) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetOffset(cellId);
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetNumberOfConnectivityIds__0(void* self) {
+extern "C" int64_t vtkAbstractCellArray__GetNumberOfConnectivityIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetNumberOfConnectivityIds();
 }
 
-extern "C" bool vtkAbstractCellArray__IsStorageShareable__0(void* self) {
+extern "C" bool vtkAbstractCellArray__IsStorageShareable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->IsStorageShareable();
 }
 
-extern "C" int64_t vtkAbstractCellArray__IsHomogeneous__0(void* self) {
+extern "C" int64_t vtkAbstractCellArray__IsHomogeneous__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->IsHomogeneous();
 }
 
-extern "C" void vtkAbstractCellArray__GetCellAtId__0(void* self, int64_t cellId, void* pts) {
+extern "C" void vtkAbstractCellArray__GetCellAtId__0(void* self, int64_t cellId, void* pts) noexcept {
   (void)self;
   static_cast<vtkAbstractCellArray*>(self)->GetCellAtId(cellId, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" int64_t vtkAbstractCellArray__GetCellSize__0(void* self, int64_t cellId) {
+extern "C" int64_t vtkAbstractCellArray__GetCellSize__0(void* self, int64_t cellId) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetCellSize(cellId);
 }
 
-extern "C" int32_t vtkAbstractCellArray__GetMaxCellSize__0(void* self) {
+extern "C" int32_t vtkAbstractCellArray__GetMaxCellSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractCellArray*>(self)->GetMaxCellSize();
 }
 
-extern "C" void vtkAbstractCellArray__DeepCopy__0(void* self, void* ca) {
+extern "C" void vtkAbstractCellArray__DeepCopy__0(void* self, void* ca) noexcept {
   (void)self;
   static_cast<vtkAbstractCellArray*>(self)->DeepCopy(static_cast<vtkAbstractCellArray*>(ca));
 }
 
-extern "C" void vtkAbstractCellArray__ShallowCopy__0(void* self, void* ca) {
+extern "C" void vtkAbstractCellArray__ShallowCopy__0(void* self, void* ca) noexcept {
   (void)self;
   static_cast<vtkAbstractCellArray*>(self)->ShallowCopy(static_cast<vtkAbstractCellArray*>(ca));
 }

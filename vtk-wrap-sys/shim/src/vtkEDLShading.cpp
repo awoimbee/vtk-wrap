@@ -5,31 +5,31 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkEDLShading__vtk_wrap_new() { return static_cast<void*>(vtkEDLShading::New()); }
+extern "C" void* vtkEDLShading__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEDLShading::New()); }
 
-extern "C" int32_t vtkEDLShading__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEDLShading__IsTypeOf__0(const char* type_) noexcept {
   return vtkEDLShading::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEDLShading__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEDLShading__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEDLShading*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEDLShading__SafeDownCast__0(void* o) {
+extern "C" void* vtkEDLShading__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEDLShading::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEDLShading__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEDLShading__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEDLShading::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEDLShading__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEDLShading__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEDLShading*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEDLShading__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkEDLShading__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkEDLShading*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }

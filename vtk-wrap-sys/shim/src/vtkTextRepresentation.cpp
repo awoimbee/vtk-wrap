@@ -9,196 +9,196 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkTextRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkTextRepresentation::New()); }
+extern "C" void* vtkTextRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTextRepresentation::New()); }
 
-extern "C" int32_t vtkTextRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTextRepresentation__SetTextActor__0(void* self, void* textActor) {
+extern "C" void vtkTextRepresentation__SetTextActor__0(void* self, void* textActor) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetTextActor(static_cast<vtkTextActor*>(textActor));
 }
 
-extern "C" void* vtkTextRepresentation__GetTextActor__0(void* self) {
+extern "C" void* vtkTextRepresentation__GetTextActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTextRepresentation*>(self)->GetTextActor());
 }
 
-extern "C" void vtkTextRepresentation__SetText__0(void* self, const char* text) {
+extern "C" void vtkTextRepresentation__SetText__0(void* self, const char* text) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetText(text);
 }
 
-extern "C" const char* vtkTextRepresentation__GetText__0(void* self) {
+extern "C" const char* vtkTextRepresentation__GetText__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetText();
 }
 
-extern "C" void vtkTextRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkTextRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkTextRepresentation__GetSize__0(void* self, double* size) {
+extern "C" void vtkTextRepresentation__GetSize__0(void* self, double* size) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->GetSize(size);
 }
 
-extern "C" void vtkTextRepresentation__GetActors2D__0(void* self, void* arg0) {
+extern "C" void vtkTextRepresentation__GetActors2D__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->GetActors2D(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkTextRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkTextRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkTextRepresentation__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkTextRepresentation__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkTextRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkTextRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkTextRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkTextRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkTextRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkTextRepresentation__SetWindowLocation__0(void* self, int32_t enumLocation) {
+extern "C" void vtkTextRepresentation__SetWindowLocation__0(void* self, int32_t enumLocation) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetWindowLocation(enumLocation);
 }
 
-extern "C" void vtkTextRepresentation__SetPosition__0(void* self, double x, double y) {
+extern "C" void vtkTextRepresentation__SetPosition__0(void* self, double x, double y) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPosition(x, y);
 }
 
-extern "C" void vtkTextRepresentation__SetPosition__1(void* self, double* pos) {
+extern "C" void vtkTextRepresentation__SetPosition__1(void* self, double* pos) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPosition(pos);
 }
 
-extern "C" void vtkTextRepresentation__ExecuteTextPropertyModifiedEvent__0(void* self, void* obj, unsigned long enumEvent, void* p) {
+extern "C" void vtkTextRepresentation__ExecuteTextPropertyModifiedEvent__0(void* self, void* obj, unsigned long enumEvent, void* p) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->ExecuteTextPropertyModifiedEvent(static_cast<vtkObject*>(obj), enumEvent, p);
 }
 
-extern "C" void vtkTextRepresentation__ExecuteTextActorModifiedEvent__0(void* self, void* obj, unsigned long enumEvent, void* p) {
+extern "C" void vtkTextRepresentation__ExecuteTextActorModifiedEvent__0(void* self, void* obj, unsigned long enumEvent, void* p) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->ExecuteTextActorModifiedEvent(static_cast<vtkObject*>(obj), enumEvent, p);
 }
 
-extern "C" void vtkTextRepresentation__SetPaddingLeft__0(void* self, int32_t _arg) {
+extern "C" void vtkTextRepresentation__SetPaddingLeft__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPaddingLeft(_arg);
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingLeftMinValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingLeftMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingLeftMinValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingLeftMaxValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingLeftMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingLeftMaxValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingLeft__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingLeft__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingLeft();
 }
 
-extern "C" void vtkTextRepresentation__SetPaddingRight__0(void* self, int32_t _arg) {
+extern "C" void vtkTextRepresentation__SetPaddingRight__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPaddingRight(_arg);
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingRightMinValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingRightMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingRightMinValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingRightMaxValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingRightMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingRightMaxValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingRight__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingRight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingRight();
 }
 
-extern "C" void vtkTextRepresentation__SetPaddingTop__0(void* self, int32_t _arg) {
+extern "C" void vtkTextRepresentation__SetPaddingTop__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPaddingTop(_arg);
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingTopMinValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingTopMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingTopMinValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingTopMaxValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingTopMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingTopMaxValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingTop__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingTop__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingTop();
 }
 
-extern "C" void vtkTextRepresentation__SetPaddingBottom__0(void* self, int32_t _arg) {
+extern "C" void vtkTextRepresentation__SetPaddingBottom__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPaddingBottom(_arg);
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingBottomMinValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingBottomMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingBottomMinValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingBottomMaxValue__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingBottomMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingBottomMaxValue();
 }
 
-extern "C" int32_t vtkTextRepresentation__GetPaddingBottom__0(void* self) {
+extern "C" int32_t vtkTextRepresentation__GetPaddingBottom__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTextRepresentation*>(self)->GetPaddingBottom();
 }
 
-extern "C" void vtkTextRepresentation__SetPadding__0(void* self, int32_t padding) {
+extern "C" void vtkTextRepresentation__SetPadding__0(void* self, int32_t padding) noexcept {
   (void)self;
   static_cast<vtkTextRepresentation*>(self)->SetPadding(padding);
 }

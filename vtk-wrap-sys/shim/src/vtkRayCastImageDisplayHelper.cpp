@@ -8,76 +8,76 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkRayCastImageDisplayHelper__vtk_wrap_new() { return static_cast<void*>(vtkRayCastImageDisplayHelper::New()); }
+extern "C" void* vtkRayCastImageDisplayHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRayCastImageDisplayHelper::New()); }
 
-extern "C" int32_t vtkRayCastImageDisplayHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRayCastImageDisplayHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkRayCastImageDisplayHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRayCastImageDisplayHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRayCastImageDisplayHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRayCastImageDisplayHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkRayCastImageDisplayHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRayCastImageDisplayHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRayCastImageDisplayHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRayCastImageDisplayHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRayCastImageDisplayHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRayCastImageDisplayHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRayCastImageDisplayHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__RenderTexture__0(void* self, void* vol, void* ren, void* image, float requestedDepth) {
+extern "C" void vtkRayCastImageDisplayHelper__RenderTexture__0(void* self, void* vol, void* ren, void* image, float requestedDepth) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->RenderTexture(static_cast<vtkVolume*>(vol), static_cast<vtkRenderer*>(ren), static_cast<vtkFixedPointRayCastImage*>(image), requestedDepth);
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__SetPreMultipliedColors__0(void* self, int32_t _arg) {
+extern "C" void vtkRayCastImageDisplayHelper__SetPreMultipliedColors__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->SetPreMultipliedColors(_arg);
 }
 
-extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColorsMinValue__0(void* self) {
+extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColorsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->GetPreMultipliedColorsMinValue();
 }
 
-extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColorsMaxValue__0(void* self) {
+extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColorsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->GetPreMultipliedColorsMaxValue();
 }
 
-extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColors__0(void* self) {
+extern "C" int32_t vtkRayCastImageDisplayHelper__GetPreMultipliedColors__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->GetPreMultipliedColors();
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__PreMultipliedColorsOn__0(void* self) {
+extern "C" void vtkRayCastImageDisplayHelper__PreMultipliedColorsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->PreMultipliedColorsOn();
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__PreMultipliedColorsOff__0(void* self) {
+extern "C" void vtkRayCastImageDisplayHelper__PreMultipliedColorsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->PreMultipliedColorsOff();
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__SetPixelScale__0(void* self, float _arg) {
+extern "C" void vtkRayCastImageDisplayHelper__SetPixelScale__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->SetPixelScale(_arg);
 }
 
-extern "C" float vtkRayCastImageDisplayHelper__GetPixelScale__0(void* self) {
+extern "C" float vtkRayCastImageDisplayHelper__GetPixelScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRayCastImageDisplayHelper*>(self)->GetPixelScale();
 }
 
-extern "C" void vtkRayCastImageDisplayHelper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkRayCastImageDisplayHelper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkRayCastImageDisplayHelper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

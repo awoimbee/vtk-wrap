@@ -51,7 +51,7 @@ pub struct Method {
     pub cxx_name: String,
     /// Unique name of the generated `extern "C"` symbol.
     pub c_name: String,
-    /// Name exposed in the safe Rust wrapper.
+    /// Name exposed in the unsafe Rust handle wrapper.
     pub rust_name: String,
     pub is_static: bool,
     pub params: Vec<Param>,

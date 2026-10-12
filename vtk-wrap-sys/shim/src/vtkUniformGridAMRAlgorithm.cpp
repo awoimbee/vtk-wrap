@@ -6,46 +6,46 @@
 #include "vtkUniformGridAMR.h"
 #include <string>
 
-extern "C" void* vtkUniformGridAMRAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkUniformGridAMRAlgorithm::New()); }
+extern "C" void* vtkUniformGridAMRAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniformGridAMRAlgorithm::New()); }
 
-extern "C" int32_t vtkUniformGridAMRAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniformGridAMRAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniformGridAMRAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniformGridAMRAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniformGridAMRAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniformGridAMRAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniformGridAMRAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniformGridAMRAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniformGridAMRAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniformGridAMRAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniformGridAMRAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniformGridAMRAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniformGridAMRAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformGridAMRAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkUniformGridAMRAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkUniformGridAMRAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformGridAMRAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkUniformGridAMRAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkUniformGridAMRAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformGridAMRAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkUniformGridAMRAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkUniformGridAMRAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUniformGridAMRAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkUniformGridAMRAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkUniformGridAMRAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkUniformGridAMRAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

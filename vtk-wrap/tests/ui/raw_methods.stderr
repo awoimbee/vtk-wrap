@@ -1,0 +1,31 @@
+error[E0133]: call to unsafe function `vtkObject::is_a` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_methods.rs:4:13
+  |
+4 |     let _ = object.is_a("vtkObject");
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `vtkObjectBase::get_class_name` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_methods.rs:5:13
+  |
+5 |     let _ = object.get_class_name();
+  |             ^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `vtkObject::modified` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_methods.rs:6:5
+  |
+6 |     object.modified();
+  |     ^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `vtkObject::is_type_of` is unsafe and requires unsafe function or block
+ --> tests/ui/raw_methods.rs:7:13
+  |
+7 |     let _ = vtkObject::is_type_of("vtkObject");
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior

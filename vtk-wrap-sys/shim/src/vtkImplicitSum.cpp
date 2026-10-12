@@ -5,81 +5,81 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImplicitSum__vtk_wrap_new() { return static_cast<void*>(vtkImplicitSum::New()); }
+extern "C" void* vtkImplicitSum__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImplicitSum::New()); }
 
-extern "C" int32_t vtkImplicitSum__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImplicitSum__IsTypeOf__0(const char* type_) noexcept {
   return vtkImplicitSum::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImplicitSum__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImplicitSum__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitSum*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImplicitSum__SafeDownCast__0(void* o) {
+extern "C" void* vtkImplicitSum__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImplicitSum::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImplicitSum__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImplicitSum__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImplicitSum::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImplicitSum__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImplicitSum__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitSum*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkImplicitSum__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkImplicitSum__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkImplicitSum*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkImplicitSum__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkImplicitSum__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" unsigned long vtkImplicitSum__GetMTime__0(void* self) {
+extern "C" unsigned long vtkImplicitSum__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImplicitSum*>(self)->GetMTime();
 }
 
-extern "C" void vtkImplicitSum__AddFunction__0(void* self, void* in_, double weight) {
+extern "C" void vtkImplicitSum__AddFunction__0(void* self, void* in_, double weight) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->AddFunction(static_cast<vtkImplicitFunction*>(in_), weight);
 }
 
-extern "C" void vtkImplicitSum__AddFunction__1(void* self, void* in_) {
+extern "C" void vtkImplicitSum__AddFunction__1(void* self, void* in_) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->AddFunction(static_cast<vtkImplicitFunction*>(in_));
 }
 
-extern "C" void vtkImplicitSum__RemoveAllFunctions__0(void* self) {
+extern "C" void vtkImplicitSum__RemoveAllFunctions__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->RemoveAllFunctions();
 }
 
-extern "C" void vtkImplicitSum__SetFunctionWeight__0(void* self, void* f, double weight) {
+extern "C" void vtkImplicitSum__SetFunctionWeight__0(void* self, void* f, double weight) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->SetFunctionWeight(static_cast<vtkImplicitFunction*>(f), weight);
 }
 
-extern "C" void vtkImplicitSum__SetNormalizeByWeight__0(void* self, int32_t _arg) {
+extern "C" void vtkImplicitSum__SetNormalizeByWeight__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->SetNormalizeByWeight(_arg);
 }
 
-extern "C" int32_t vtkImplicitSum__GetNormalizeByWeight__0(void* self) {
+extern "C" int32_t vtkImplicitSum__GetNormalizeByWeight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImplicitSum*>(self)->GetNormalizeByWeight();
 }
 
-extern "C" void vtkImplicitSum__NormalizeByWeightOn__0(void* self) {
+extern "C" void vtkImplicitSum__NormalizeByWeightOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->NormalizeByWeightOn();
 }
 
-extern "C" void vtkImplicitSum__NormalizeByWeightOff__0(void* self) {
+extern "C" void vtkImplicitSum__NormalizeByWeightOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImplicitSum*>(self)->NormalizeByWeightOff();
 }

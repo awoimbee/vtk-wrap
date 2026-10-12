@@ -10,44 +10,44 @@
 #include "vtkShaderProgram.h"
 #include <string>
 
-extern "C" int32_t vtkGLSLModifierBase__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLSLModifierBase__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLSLModifierBase::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLSLModifierBase__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLSLModifierBase__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModifierBase*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLSLModifierBase__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLSLModifierBase__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLSLModifierBase::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLSLModifierBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLSLModifierBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLSLModifierBase::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLSLModifierBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLSLModifierBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModifierBase*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGLSLModifierBase__SetPrimitiveType__0(void* self, uint32_t primType) {
+extern "C" void vtkGLSLModifierBase__SetPrimitiveType__0(void* self, uint32_t primType) noexcept {
   (void)self;
   static_cast<vtkGLSLModifierBase*>(self)->SetPrimitiveType(primType);
 }
 
-extern "C" bool vtkGLSLModifierBase__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) {
+extern "C" bool vtkGLSLModifierBase__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkGLSLModifierBase*>(self)->SetShaderParameters(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" bool vtkGLSLModifierBase__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) {
+extern "C" bool vtkGLSLModifierBase__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) noexcept {
   (void)self;
   return static_cast<vtkGLSLModifierBase*>(self)->IsUpToDate(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void* vtkGLSLModifierBase__GLSL_MODIFIERS__0() {
+extern "C" void* vtkGLSLModifierBase__GLSL_MODIFIERS__0() noexcept {
   return static_cast<void*>(vtkGLSLModifierBase::GLSL_MODIFIERS());
 }
 

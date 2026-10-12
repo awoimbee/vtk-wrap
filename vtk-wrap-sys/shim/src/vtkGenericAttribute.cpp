@@ -5,84 +5,84 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkGenericAttribute__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGenericAttribute__IsTypeOf__0(const char* type_) noexcept {
   return vtkGenericAttribute::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGenericAttribute__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGenericAttribute__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGenericAttribute__SafeDownCast__0(void* o) {
+extern "C" void* vtkGenericAttribute__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGenericAttribute::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGenericAttribute__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGenericAttribute__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGenericAttribute::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGenericAttribute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGenericAttribute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkGenericAttribute__GetName__0(void* self) {
+extern "C" const char* vtkGenericAttribute__GetName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetName();
 }
 
-extern "C" int32_t vtkGenericAttribute__GetNumberOfComponents__0(void* self) {
+extern "C" int32_t vtkGenericAttribute__GetNumberOfComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetNumberOfComponents();
 }
 
-extern "C" int32_t vtkGenericAttribute__GetCentering__0(void* self) {
+extern "C" int32_t vtkGenericAttribute__GetCentering__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetCentering();
 }
 
-extern "C" int32_t vtkGenericAttribute__GetType__0(void* self) {
+extern "C" int32_t vtkGenericAttribute__GetType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetType();
 }
 
-extern "C" int32_t vtkGenericAttribute__GetComponentType__0(void* self) {
+extern "C" int32_t vtkGenericAttribute__GetComponentType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetComponentType();
 }
 
-extern "C" int64_t vtkGenericAttribute__GetSize__0(void* self) {
+extern "C" int64_t vtkGenericAttribute__GetSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetSize();
 }
 
-extern "C" unsigned long vtkGenericAttribute__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkGenericAttribute__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetActualMemorySize();
 }
 
-extern "C" void vtkGenericAttribute__GetRange__0(void* self, int32_t component, double* range) {
+extern "C" void vtkGenericAttribute__GetRange__0(void* self, int32_t component, double* range) noexcept {
   (void)self;
   static_cast<vtkGenericAttribute*>(self)->GetRange(component, range);
 }
 
-extern "C" double vtkGenericAttribute__GetMaxNorm__0(void* self) {
+extern "C" double vtkGenericAttribute__GetMaxNorm__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetMaxNorm();
 }
 
-extern "C" double vtkGenericAttribute__GetComponent__0(void* self, int32_t i, void* p) {
+extern "C" double vtkGenericAttribute__GetComponent__0(void* self, int32_t i, void* p) noexcept {
   (void)self;
   return static_cast<vtkGenericAttribute*>(self)->GetComponent(i, static_cast<vtkGenericPointIterator*>(p));
 }
 
-extern "C" void vtkGenericAttribute__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkGenericAttribute__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkGenericAttribute*>(self)->DeepCopy(static_cast<vtkGenericAttribute*>(other));
 }
 
-extern "C" void vtkGenericAttribute__ShallowCopy__0(void* self, void* other) {
+extern "C" void vtkGenericAttribute__ShallowCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkGenericAttribute*>(self)->ShallowCopy(static_cast<vtkGenericAttribute*>(other));
 }

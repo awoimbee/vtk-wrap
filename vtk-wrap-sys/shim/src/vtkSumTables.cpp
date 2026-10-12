@@ -6,41 +6,41 @@
 #include "vtkTable.h"
 #include <string>
 
-extern "C" void* vtkSumTables__vtk_wrap_new() { return static_cast<void*>(vtkSumTables::New()); }
+extern "C" void* vtkSumTables__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSumTables::New()); }
 
-extern "C" int32_t vtkSumTables__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSumTables__IsTypeOf__0(const char* type_) noexcept {
   return vtkSumTables::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSumTables__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSumTables__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSumTables*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSumTables__SafeDownCast__0(void* o) {
+extern "C" void* vtkSumTables__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSumTables::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSumTables__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSumTables__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSumTables::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSumTables__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSumTables__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSumTables*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSumTables__SetSourceConnection__0(void* self, void* source) {
+extern "C" void vtkSumTables__SetSourceConnection__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkSumTables*>(self)->SetSourceConnection(static_cast<vtkAlgorithmOutput*>(source));
 }
 
-extern "C" void vtkSumTables__SetSourceData__0(void* self, void* source) {
+extern "C" void vtkSumTables__SetSourceData__0(void* self, void* source) noexcept {
   (void)self;
   static_cast<vtkSumTables*>(self)->SetSourceData(static_cast<vtkTable*>(source));
 }
 
-extern "C" bool vtkSumTables__SumTables__0(void* aa, void* bb, bool checkOnly, bool allowAbstractColumns) {
+extern "C" bool vtkSumTables__SumTables__0(void* aa, void* bb, bool checkOnly, bool allowAbstractColumns) noexcept {
   return vtkSumTables::SumTables(static_cast<vtkTable*>(aa), static_cast<vtkTable*>(bb), checkOnly, allowAbstractColumns);
 }
 

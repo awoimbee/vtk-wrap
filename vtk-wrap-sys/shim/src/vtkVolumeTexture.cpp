@@ -10,56 +10,56 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkVolumeTexture__vtk_wrap_new() { return static_cast<void*>(vtkVolumeTexture::New()); }
+extern "C" void* vtkVolumeTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolumeTexture::New()); }
 
-extern "C" int32_t vtkVolumeTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolumeTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolumeTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolumeTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolumeTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolumeTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolumeTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolumeTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolumeTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolumeTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolumeTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolumeTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolumeTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumeTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolumeTexture__SetPartitions__0(void* self, int32_t x, int32_t y, int32_t z) {
+extern "C" void vtkVolumeTexture__SetPartitions__0(void* self, int32_t x, int32_t y, int32_t z) noexcept {
   (void)self;
   static_cast<vtkVolumeTexture*>(self)->SetPartitions(x, y, z);
 }
 
-extern "C" bool vtkVolumeTexture__LoadVolume__0(void* self, void* ren, void* data, void* scalars, int32_t isCell, int32_t interpolation) {
+extern "C" bool vtkVolumeTexture__LoadVolume__0(void* self, void* ren, void* data, void* scalars, int32_t isCell, int32_t interpolation) noexcept {
   (void)self;
   return static_cast<vtkVolumeTexture*>(self)->LoadVolume(static_cast<vtkRenderer*>(ren), static_cast<vtkDataSet*>(data), static_cast<vtkDataArray*>(scalars), isCell, interpolation);
 }
 
-extern "C" void vtkVolumeTexture__UpdateVolume__0(void* self, void* property) {
+extern "C" void vtkVolumeTexture__UpdateVolume__0(void* self, void* property) noexcept {
   (void)self;
   static_cast<vtkVolumeTexture*>(self)->UpdateVolume(static_cast<vtkVolumeProperty*>(property));
 }
 
-extern "C" void vtkVolumeTexture__SortBlocksBackToFront__0(void* self, void* ren, void* volumeMat) {
+extern "C" void vtkVolumeTexture__SortBlocksBackToFront__0(void* self, void* ren, void* volumeMat) noexcept {
   (void)self;
   static_cast<vtkVolumeTexture*>(self)->SortBlocksBackToFront(static_cast<vtkRenderer*>(ren), static_cast<vtkMatrix4x4*>(volumeMat));
 }
 
-extern "C" void vtkVolumeTexture__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkVolumeTexture__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkVolumeTexture*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }
 
-extern "C" void* vtkVolumeTexture__GetLoadedScalars__0(void* self) {
+extern "C" void* vtkVolumeTexture__GetLoadedScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkVolumeTexture*>(self)->GetLoadedScalars());
 }

@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCoordinateFrameWidget__vtk_wrap_new() { return static_cast<void*>(vtkCoordinateFrameWidget::New()); }
+extern "C" void* vtkCoordinateFrameWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCoordinateFrameWidget::New()); }
 
-extern "C" int32_t vtkCoordinateFrameWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCoordinateFrameWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkCoordinateFrameWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCoordinateFrameWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCoordinateFrameWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCoordinateFrameWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCoordinateFrameWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkCoordinateFrameWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCoordinateFrameWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCoordinateFrameWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCoordinateFrameWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCoordinateFrameWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCoordinateFrameWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCoordinateFrameWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCoordinateFrameWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCoordinateFrameWidget__SetRepresentation__0(void* self, void* rep) {
+extern "C" void vtkCoordinateFrameWidget__SetRepresentation__0(void* self, void* rep) noexcept {
   (void)self;
   static_cast<vtkCoordinateFrameWidget*>(self)->SetRepresentation(static_cast<vtkCoordinateFrameRepresentation*>(rep));
 }
 
-extern "C" void vtkCoordinateFrameWidget__SetEnabled__0(void* self, int32_t enabling) {
+extern "C" void vtkCoordinateFrameWidget__SetEnabled__0(void* self, int32_t enabling) noexcept {
   (void)self;
   static_cast<vtkCoordinateFrameWidget*>(self)->SetEnabled(enabling);
 }
 
-extern "C" void* vtkCoordinateFrameWidget__GetCoordinateFrameRepresentation__0(void* self) {
+extern "C" void* vtkCoordinateFrameWidget__GetCoordinateFrameRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCoordinateFrameWidget*>(self)->GetCoordinateFrameRepresentation());
 }
 
-extern "C" void vtkCoordinateFrameWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkCoordinateFrameWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCoordinateFrameWidget*>(self)->CreateDefaultRepresentation();
 }

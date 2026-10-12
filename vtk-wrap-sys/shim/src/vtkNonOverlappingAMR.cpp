@@ -6,40 +6,40 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkNonOverlappingAMR__vtk_wrap_new() { return static_cast<void*>(vtkNonOverlappingAMR::New()); }
+extern "C" void* vtkNonOverlappingAMR__vtk_wrap_new() noexcept { return static_cast<void*>(vtkNonOverlappingAMR::New()); }
 
-extern "C" int32_t vtkNonOverlappingAMR__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkNonOverlappingAMR__IsTypeOf__0(const char* type_) noexcept {
   return vtkNonOverlappingAMR::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkNonOverlappingAMR__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkNonOverlappingAMR__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNonOverlappingAMR*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkNonOverlappingAMR__SafeDownCast__0(void* o) {
+extern "C" void* vtkNonOverlappingAMR__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkNonOverlappingAMR::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkNonOverlappingAMR__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkNonOverlappingAMR__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkNonOverlappingAMR::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkNonOverlappingAMR__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkNonOverlappingAMR__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNonOverlappingAMR*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkNonOverlappingAMR__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkNonOverlappingAMR__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkNonOverlappingAMR*>(self)->GetDataObjectType();
 }
 
-extern "C" void* vtkNonOverlappingAMR__GetData__0(void* info) {
+extern "C" void* vtkNonOverlappingAMR__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkNonOverlappingAMR::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkNonOverlappingAMR__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkNonOverlappingAMR__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkNonOverlappingAMR::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 

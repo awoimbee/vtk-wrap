@@ -7,86 +7,86 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkPlanes__vtk_wrap_new() { return static_cast<void*>(vtkPlanes::New()); }
+extern "C" void* vtkPlanes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPlanes::New()); }
 
-extern "C" int32_t vtkPlanes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPlanes__IsTypeOf__0(const char* type_) noexcept {
   return vtkPlanes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPlanes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPlanes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlanes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPlanes__SafeDownCast__0(void* o) {
+extern "C" void* vtkPlanes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPlanes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPlanes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPlanes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPlanes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPlanes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPlanes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlanes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkPlanes__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkPlanes__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkPlanes*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkPlanes__EvaluateGradient__0(void* self, double* x, double* n) {
+extern "C" void vtkPlanes__EvaluateGradient__0(void* self, double* x, double* n) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->EvaluateGradient(x, n);
 }
 
-extern "C" void vtkPlanes__SetPoints__0(void* self, void* arg0) {
+extern "C" void vtkPlanes__SetPoints__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->SetPoints(static_cast<vtkPoints*>(arg0));
 }
 
-extern "C" void* vtkPlanes__GetPoints__0(void* self) {
+extern "C" void* vtkPlanes__GetPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPlanes*>(self)->GetPoints());
 }
 
-extern "C" void vtkPlanes__SetNormals__0(void* self, void* normals) {
+extern "C" void vtkPlanes__SetNormals__0(void* self, void* normals) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->SetNormals(static_cast<vtkDataArray*>(normals));
 }
 
-extern "C" void* vtkPlanes__GetNormals__0(void* self) {
+extern "C" void* vtkPlanes__GetNormals__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPlanes*>(self)->GetNormals());
 }
 
-extern "C" void vtkPlanes__SetFrustumPlanes__0(void* self, double* planes) {
+extern "C" void vtkPlanes__SetFrustumPlanes__0(void* self, double* planes) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->SetFrustumPlanes(planes);
 }
 
-extern "C" void vtkPlanes__SetBounds__0(void* self, const double* bounds) {
+extern "C" void vtkPlanes__SetBounds__0(void* self, const double* bounds) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->SetBounds(bounds);
 }
 
-extern "C" void vtkPlanes__SetBounds__1(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) {
+extern "C" void vtkPlanes__SetBounds__1(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->SetBounds(xmin, xmax, ymin, ymax, zmin, zmax);
 }
 
-extern "C" int32_t vtkPlanes__GetNumberOfPlanes__0(void* self) {
+extern "C" int32_t vtkPlanes__GetNumberOfPlanes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPlanes*>(self)->GetNumberOfPlanes();
 }
 
-extern "C" void* vtkPlanes__GetPlane__0(void* self, int32_t i) {
+extern "C" void* vtkPlanes__GetPlane__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPlanes*>(self)->GetPlane(i));
 }
 
-extern "C" void vtkPlanes__GetPlane__1(void* self, int32_t i, void* plane) {
+extern "C" void vtkPlanes__GetPlane__1(void* self, int32_t i, void* plane) noexcept {
   (void)self;
   static_cast<vtkPlanes*>(self)->GetPlane(i, static_cast<vtkPlane*>(plane));
 }

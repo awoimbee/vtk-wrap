@@ -5,41 +5,41 @@
 #include "vtkPolyLineRepresentation.h"
 #include <string>
 
-extern "C" void* vtkPolyLineWidget__vtk_wrap_new() { return static_cast<void*>(vtkPolyLineWidget::New()); }
+extern "C" void* vtkPolyLineWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyLineWidget::New()); }
 
-extern "C" int32_t vtkPolyLineWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyLineWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyLineWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyLineWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyLineWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyLineWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyLineWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyLineWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyLineWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyLineWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyLineWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyLineWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyLineWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyLineWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyLineWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolyLineWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkPolyLineWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkPolyLineWidget*>(self)->SetRepresentation(static_cast<vtkPolyLineRepresentation*>(r));
 }
 
-extern "C" void vtkPolyLineWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkPolyLineWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPolyLineWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkPolyLineWidget__SetEnabled__0(void* self, int32_t enabling) {
+extern "C" void vtkPolyLineWidget__SetEnabled__0(void* self, int32_t enabling) noexcept {
   (void)self;
   static_cast<vtkPolyLineWidget*>(self)->SetEnabled(enabling);
 }

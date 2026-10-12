@@ -4,41 +4,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPolygonalHandleRepresentation3D__vtk_wrap_new() { return static_cast<void*>(vtkPolygonalHandleRepresentation3D::New()); }
+extern "C" void* vtkPolygonalHandleRepresentation3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolygonalHandleRepresentation3D::New()); }
 
-extern "C" int32_t vtkPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolygonalHandleRepresentation3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolygonalHandleRepresentation3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolygonalHandleRepresentation3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolygonalHandleRepresentation3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolygonalHandleRepresentation3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolygonalHandleRepresentation3D__SetWorldPosition__0(void* self, double* p) {
+extern "C" void vtkPolygonalHandleRepresentation3D__SetWorldPosition__0(void* self, double* p) noexcept {
   (void)self;
   static_cast<vtkPolygonalHandleRepresentation3D*>(self)->SetWorldPosition(p);
 }
 
-extern "C" void vtkPolygonalHandleRepresentation3D__SetOffset__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkPolygonalHandleRepresentation3D__SetOffset__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkPolygonalHandleRepresentation3D*>(self)->SetOffset(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkPolygonalHandleRepresentation3D__SetOffset__1(void* self, const double* _arg) {
+extern "C" void vtkPolygonalHandleRepresentation3D__SetOffset__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkPolygonalHandleRepresentation3D*>(self)->SetOffset(_arg);
 }

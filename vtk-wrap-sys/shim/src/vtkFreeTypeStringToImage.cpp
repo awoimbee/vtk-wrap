@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFreeTypeStringToImage__vtk_wrap_new() { return static_cast<void*>(vtkFreeTypeStringToImage::New()); }
+extern "C" void* vtkFreeTypeStringToImage__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFreeTypeStringToImage::New()); }
 
-extern "C" int32_t vtkFreeTypeStringToImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFreeTypeStringToImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkFreeTypeStringToImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFreeTypeStringToImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFreeTypeStringToImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeStringToImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFreeTypeStringToImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkFreeTypeStringToImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFreeTypeStringToImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFreeTypeStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFreeTypeStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFreeTypeStringToImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFreeTypeStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFreeTypeStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFreeTypeStringToImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFreeTypeStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) {
+extern "C" void vtkFreeTypeStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) noexcept {
   (void)self;
   static_cast<vtkFreeTypeStringToImage*>(self)->SetScaleToPowerOfTwo(scale);
 }
 
-extern "C" void vtkFreeTypeStringToImage__DeepCopy__0(void* self, void* utility) {
+extern "C" void vtkFreeTypeStringToImage__DeepCopy__0(void* self, void* utility) noexcept {
   (void)self;
   static_cast<vtkFreeTypeStringToImage*>(self)->DeepCopy(static_cast<vtkFreeTypeStringToImage*>(utility));
 }

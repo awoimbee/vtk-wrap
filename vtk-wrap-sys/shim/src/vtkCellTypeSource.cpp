@@ -4,116 +4,116 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellTypeSource__vtk_wrap_new() { return static_cast<void*>(vtkCellTypeSource::New()); }
+extern "C" void* vtkCellTypeSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellTypeSource::New()); }
 
-extern "C" int32_t vtkCellTypeSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellTypeSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellTypeSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellTypeSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellTypeSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellTypeSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellTypeSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellTypeSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellTypeSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellTypeSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellTypeSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellTypeSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellTypeSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCellTypeSource__SetCellType__0(void* self, int32_t cellType) {
+extern "C" void vtkCellTypeSource__SetCellType__0(void* self, int32_t cellType) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetCellType(cellType);
 }
 
-extern "C" int32_t vtkCellTypeSource__GetCellType__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetCellType();
 }
 
-extern "C" void vtkCellTypeSource__SetCellOrder__0(void* self, int32_t _arg) {
+extern "C" void vtkCellTypeSource__SetCellOrder__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetCellOrder(_arg);
 }
 
-extern "C" int32_t vtkCellTypeSource__GetCellOrder__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetCellOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetCellOrder();
 }
 
-extern "C" void vtkCellTypeSource__SetCompleteQuadraticSimplicialElements__0(void* self, bool _arg) {
+extern "C" void vtkCellTypeSource__SetCompleteQuadraticSimplicialElements__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetCompleteQuadraticSimplicialElements(_arg);
 }
 
-extern "C" bool vtkCellTypeSource__GetCompleteQuadraticSimplicialElements__0(void* self) {
+extern "C" bool vtkCellTypeSource__GetCompleteQuadraticSimplicialElements__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetCompleteQuadraticSimplicialElements();
 }
 
-extern "C" void vtkCellTypeSource__CompleteQuadraticSimplicialElementsOn__0(void* self) {
+extern "C" void vtkCellTypeSource__CompleteQuadraticSimplicialElementsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->CompleteQuadraticSimplicialElementsOn();
 }
 
-extern "C" void vtkCellTypeSource__CompleteQuadraticSimplicialElementsOff__0(void* self) {
+extern "C" void vtkCellTypeSource__CompleteQuadraticSimplicialElementsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->CompleteQuadraticSimplicialElementsOff();
 }
 
-extern "C" void vtkCellTypeSource__SetPolynomialFieldOrder__0(void* self, int32_t _arg) {
+extern "C" void vtkCellTypeSource__SetPolynomialFieldOrder__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetPolynomialFieldOrder(_arg);
 }
 
-extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrderMinValue__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrderMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetPolynomialFieldOrderMinValue();
 }
 
-extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrderMaxValue__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrderMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetPolynomialFieldOrderMaxValue();
 }
 
-extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrder__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetPolynomialFieldOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetPolynomialFieldOrder();
 }
 
-extern "C" int32_t vtkCellTypeSource__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetCellDimension();
 }
 
-extern "C" void vtkCellTypeSource__SetOutputPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkCellTypeSource__SetOutputPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetOutputPrecision(_arg);
 }
 
-extern "C" int32_t vtkCellTypeSource__GetOutputPrecisionMinValue__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetOutputPrecisionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetOutputPrecisionMinValue();
 }
 
-extern "C" int32_t vtkCellTypeSource__GetOutputPrecisionMaxValue__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetOutputPrecisionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetOutputPrecisionMaxValue();
 }
 
-extern "C" int32_t vtkCellTypeSource__GetOutputPrecision__0(void* self) {
+extern "C" int32_t vtkCellTypeSource__GetOutputPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellTypeSource*>(self)->GetOutputPrecision();
 }
 
-extern "C" void vtkCellTypeSource__SetBlocksDimensions__0(void* self, int32_t arg0, int32_t arg1, int32_t arg2) {
+extern "C" void vtkCellTypeSource__SetBlocksDimensions__0(void* self, int32_t arg0, int32_t arg1, int32_t arg2) noexcept {
   (void)self;
   static_cast<vtkCellTypeSource*>(self)->SetBlocksDimensions(arg0, arg1, arg2);
 }

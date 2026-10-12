@@ -6,66 +6,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInformationIterator__vtk_wrap_new() { return static_cast<void*>(vtkInformationIterator::New()); }
+extern "C" void* vtkInformationIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInformationIterator::New()); }
 
-extern "C" int32_t vtkInformationIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInformationIterator__SetInformation__0(void* self, void* arg0) {
+extern "C" void vtkInformationIterator__SetInformation__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInformationIterator*>(self)->SetInformation(static_cast<vtkInformation*>(arg0));
 }
 
-extern "C" void* vtkInformationIterator__GetInformation__0(void* self) {
+extern "C" void* vtkInformationIterator__GetInformation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInformationIterator*>(self)->GetInformation());
 }
 
-extern "C" void vtkInformationIterator__SetInformationWeak__0(void* self, void* arg0) {
+extern "C" void vtkInformationIterator__SetInformationWeak__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInformationIterator*>(self)->SetInformationWeak(static_cast<vtkInformation*>(arg0));
 }
 
-extern "C" void vtkInformationIterator__InitTraversal__0(void* self) {
+extern "C" void vtkInformationIterator__InitTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInformationIterator*>(self)->InitTraversal();
 }
 
-extern "C" void vtkInformationIterator__GoToFirstItem__0(void* self) {
+extern "C" void vtkInformationIterator__GoToFirstItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInformationIterator*>(self)->GoToFirstItem();
 }
 
-extern "C" void vtkInformationIterator__GoToNextItem__0(void* self) {
+extern "C" void vtkInformationIterator__GoToNextItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInformationIterator*>(self)->GoToNextItem();
 }
 
-extern "C" int32_t vtkInformationIterator__IsDoneWithTraversal__0(void* self) {
+extern "C" int32_t vtkInformationIterator__IsDoneWithTraversal__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInformationIterator*>(self)->IsDoneWithTraversal();
 }
 
-extern "C" void* vtkInformationIterator__GetCurrentKey__0(void* self) {
+extern "C" void* vtkInformationIterator__GetCurrentKey__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInformationIterator*>(self)->GetCurrentKey());
 }

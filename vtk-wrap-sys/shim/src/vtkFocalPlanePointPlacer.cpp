@@ -5,66 +5,66 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkFocalPlanePointPlacer__vtk_wrap_new() { return static_cast<void*>(vtkFocalPlanePointPlacer::New()); }
+extern "C" void* vtkFocalPlanePointPlacer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFocalPlanePointPlacer::New()); }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFocalPlanePointPlacer__IsTypeOf__0(const char* type_) noexcept {
   return vtkFocalPlanePointPlacer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFocalPlanePointPlacer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFocalPlanePointPlacer__SafeDownCast__0(void* o) {
+extern "C" void* vtkFocalPlanePointPlacer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFocalPlanePointPlacer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFocalPlanePointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFocalPlanePointPlacer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFocalPlanePointPlacer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFocalPlanePointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFocalPlanePointPlacer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkFocalPlanePointPlacer__ComputeWorldPosition__0(void* self, void* ren, double* displayPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkFocalPlanePointPlacer__ComputeWorldPosition__1(void* self, void* ren, double* displayPos, double* refWorldPos, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->ComputeWorldPosition(static_cast<vtkRenderer*>(ren), displayPos, refWorldPos, worldPos, worldOrient);
 }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) {
+extern "C" int32_t vtkFocalPlanePointPlacer__ValidateWorldPosition__0(void* self, double* worldPos) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->ValidateWorldPosition(worldPos);
 }
 
-extern "C" int32_t vtkFocalPlanePointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) {
+extern "C" int32_t vtkFocalPlanePointPlacer__ValidateWorldPosition__1(void* self, double* worldPos, double* worldOrient) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->ValidateWorldPosition(worldPos, worldOrient);
 }
 
-extern "C" void vtkFocalPlanePointPlacer__SetOffset__0(void* self, double _arg) {
+extern "C" void vtkFocalPlanePointPlacer__SetOffset__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkFocalPlanePointPlacer*>(self)->SetOffset(_arg);
 }
 
-extern "C" double vtkFocalPlanePointPlacer__GetOffset__0(void* self) {
+extern "C" double vtkFocalPlanePointPlacer__GetOffset__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFocalPlanePointPlacer*>(self)->GetOffset();
 }
 
-extern "C" void vtkFocalPlanePointPlacer__SetPointBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) {
+extern "C" void vtkFocalPlanePointPlacer__SetPointBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) noexcept {
   (void)self;
   static_cast<vtkFocalPlanePointPlacer*>(self)->SetPointBounds(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkFocalPlanePointPlacer__SetPointBounds__1(void* self, const double* _arg) {
+extern "C" void vtkFocalPlanePointPlacer__SetPointBounds__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkFocalPlanePointPlacer*>(self)->SetPointBounds(_arg);
 }

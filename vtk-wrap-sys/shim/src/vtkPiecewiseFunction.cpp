@@ -7,209 +7,209 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPiecewiseFunction__vtk_wrap_new() { return static_cast<void*>(vtkPiecewiseFunction::New()); }
+extern "C" void* vtkPiecewiseFunction__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPiecewiseFunction::New()); }
 
-extern "C" int32_t vtkPiecewiseFunction__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPiecewiseFunction__IsTypeOf__0(const char* type_) noexcept {
   return vtkPiecewiseFunction::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPiecewiseFunction__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPiecewiseFunction__SafeDownCast__0(void* o) {
+extern "C" void* vtkPiecewiseFunction__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPiecewiseFunction::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPiecewiseFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPiecewiseFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPiecewiseFunction::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPiecewiseFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPiecewiseFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPiecewiseFunction__DeepCopy__0(void* self, void* f) {
+extern "C" void vtkPiecewiseFunction__DeepCopy__0(void* self, void* f) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->DeepCopy(static_cast<vtkDataObject*>(f));
 }
 
-extern "C" void vtkPiecewiseFunction__ShallowCopy__0(void* self, void* f) {
+extern "C" void vtkPiecewiseFunction__ShallowCopy__0(void* self, void* f) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->ShallowCopy(static_cast<vtkDataObject*>(f));
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetDataObjectType();
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetSize__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetSize();
 }
 
-extern "C" int32_t vtkPiecewiseFunction__AddPoint__0(void* self, double x, double y) {
+extern "C" int32_t vtkPiecewiseFunction__AddPoint__0(void* self, double x, double y) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->AddPoint(x, y);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__AddPoint__1(void* self, double x, double y, double midpoint, double sharpness) {
+extern "C" int32_t vtkPiecewiseFunction__AddPoint__1(void* self, double x, double y, double midpoint, double sharpness) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->AddPoint(x, y, midpoint, sharpness);
 }
 
-extern "C" bool vtkPiecewiseFunction__RemovePointByIndex__0(void* self, size_t id) {
+extern "C" bool vtkPiecewiseFunction__RemovePointByIndex__0(void* self, size_t id) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->RemovePointByIndex(id);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__RemovePoint__0(void* self, double x) {
+extern "C" int32_t vtkPiecewiseFunction__RemovePoint__0(void* self, double x) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->RemovePoint(x);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__RemovePoint__1(void* self, double x, double y) {
+extern "C" int32_t vtkPiecewiseFunction__RemovePoint__1(void* self, double x, double y) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->RemovePoint(x, y);
 }
 
-extern "C" void vtkPiecewiseFunction__RemoveAllPoints__0(void* self) {
+extern "C" void vtkPiecewiseFunction__RemoveAllPoints__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->RemoveAllPoints();
 }
 
-extern "C" void vtkPiecewiseFunction__AddSegment__0(void* self, double x1, double y1, double x2, double y2) {
+extern "C" void vtkPiecewiseFunction__AddSegment__0(void* self, double x1, double y1, double x2, double y2) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->AddSegment(x1, y1, x2, y2);
 }
 
-extern "C" double vtkPiecewiseFunction__GetValue__0(void* self, double x) {
+extern "C" double vtkPiecewiseFunction__GetValue__0(void* self, double x) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetValue(x);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetNodeValue__0(void* self, int32_t index, double* val) {
+extern "C" int32_t vtkPiecewiseFunction__GetNodeValue__0(void* self, int32_t index, double* val) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetNodeValue(index, val);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__SetNodeValue__0(void* self, int32_t index, double* val) {
+extern "C" int32_t vtkPiecewiseFunction__SetNodeValue__0(void* self, int32_t index, double* val) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->SetNodeValue(index, val);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__AdjustRange__0(void* self, double* range) {
+extern "C" int32_t vtkPiecewiseFunction__AdjustRange__0(void* self, double* range) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->AdjustRange(range);
 }
 
-extern "C" void vtkPiecewiseFunction__SetClamping__0(void* self, int32_t _arg) {
+extern "C" void vtkPiecewiseFunction__SetClamping__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->SetClamping(_arg);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetClamping__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetClamping__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetClamping();
 }
 
-extern "C" void vtkPiecewiseFunction__ClampingOn__0(void* self) {
+extern "C" void vtkPiecewiseFunction__ClampingOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->ClampingOn();
 }
 
-extern "C" void vtkPiecewiseFunction__ClampingOff__0(void* self) {
+extern "C" void vtkPiecewiseFunction__ClampingOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->ClampingOff();
 }
 
-extern "C" void vtkPiecewiseFunction__SetUseLogScale__0(void* self, bool _arg) {
+extern "C" void vtkPiecewiseFunction__SetUseLogScale__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->SetUseLogScale(_arg);
 }
 
-extern "C" bool vtkPiecewiseFunction__GetUseLogScale__0(void* self) {
+extern "C" bool vtkPiecewiseFunction__GetUseLogScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetUseLogScale();
 }
 
-extern "C" void vtkPiecewiseFunction__UseLogScaleOn__0(void* self) {
+extern "C" void vtkPiecewiseFunction__UseLogScaleOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->UseLogScaleOn();
 }
 
-extern "C" void vtkPiecewiseFunction__UseLogScaleOff__0(void* self) {
+extern "C" void vtkPiecewiseFunction__UseLogScaleOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->UseLogScaleOff();
 }
 
-extern "C" const char* vtkPiecewiseFunction__GetType__0(void* self) {
+extern "C" const char* vtkPiecewiseFunction__GetType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetType();
 }
 
-extern "C" double vtkPiecewiseFunction__GetFirstNonZeroValue__0(void* self) {
+extern "C" double vtkPiecewiseFunction__GetFirstNonZeroValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetFirstNonZeroValue();
 }
 
-extern "C" void vtkPiecewiseFunction__Initialize__0(void* self) {
+extern "C" void vtkPiecewiseFunction__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->Initialize();
 }
 
-extern "C" void* vtkPiecewiseFunction__GetData__0(void* info) {
+extern "C" void* vtkPiecewiseFunction__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkPiecewiseFunction::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkPiecewiseFunction__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkPiecewiseFunction__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkPiecewiseFunction::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" void vtkPiecewiseFunction__SetAllowDuplicateScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkPiecewiseFunction__SetAllowDuplicateScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->SetAllowDuplicateScalars(_arg);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetAllowDuplicateScalars__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetAllowDuplicateScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetAllowDuplicateScalars();
 }
 
-extern "C" void vtkPiecewiseFunction__AllowDuplicateScalarsOn__0(void* self) {
+extern "C" void vtkPiecewiseFunction__AllowDuplicateScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->AllowDuplicateScalarsOn();
 }
 
-extern "C" void vtkPiecewiseFunction__AllowDuplicateScalarsOff__0(void* self) {
+extern "C" void vtkPiecewiseFunction__AllowDuplicateScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->AllowDuplicateScalarsOff();
 }
 
-extern "C" void vtkPiecewiseFunction__UpdateSearchMethod__0(void* self, double epsilon, double thresh) {
+extern "C" void vtkPiecewiseFunction__UpdateSearchMethod__0(void* self, double epsilon, double thresh) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->UpdateSearchMethod(epsilon, thresh);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetAutomaticSearchMethod__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetAutomaticSearchMethod__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetAutomaticSearchMethod();
 }
 
-extern "C" void vtkPiecewiseFunction__SetUseCustomSearchMethod__0(void* self, bool use_) {
+extern "C" void vtkPiecewiseFunction__SetUseCustomSearchMethod__0(void* self, bool use_) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->SetUseCustomSearchMethod(use_);
 }
 
-extern "C" void vtkPiecewiseFunction__SetCustomSearchMethod__0(void* self, int32_t type_) {
+extern "C" void vtkPiecewiseFunction__SetCustomSearchMethod__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunction*>(self)->SetCustomSearchMethod(type_);
 }
 
-extern "C" int32_t vtkPiecewiseFunction__GetCustomSearchMethod__0(void* self) {
+extern "C" int32_t vtkPiecewiseFunction__GetCustomSearchMethod__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunction*>(self)->GetCustomSearchMethod();
 }

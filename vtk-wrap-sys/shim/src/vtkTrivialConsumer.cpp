@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTrivialConsumer__vtk_wrap_new() { return static_cast<void*>(vtkTrivialConsumer::New()); }
+extern "C" void* vtkTrivialConsumer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrivialConsumer::New()); }
 
-extern "C" int32_t vtkTrivialConsumer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrivialConsumer__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrivialConsumer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrivialConsumer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrivialConsumer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrivialConsumer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrivialConsumer__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrivialConsumer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrivialConsumer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrivialConsumer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrivialConsumer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrivialConsumer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrivialConsumer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrivialConsumer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrivialConsumer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

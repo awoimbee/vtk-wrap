@@ -8,46 +8,46 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridBunykRayCastFunction__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridBunykRayCastFunction::New()); }
+extern "C" void* vtkUnstructuredGridBunykRayCastFunction__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridBunykRayCastFunction::New()); }
 
-extern "C" int32_t vtkUnstructuredGridBunykRayCastFunction__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBunykRayCastFunction__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridBunykRayCastFunction::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridBunykRayCastFunction__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridBunykRayCastFunction__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridBunykRayCastFunction__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridBunykRayCastFunction__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridBunykRayCastFunction::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridBunykRayCastFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBunykRayCastFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridBunykRayCastFunction::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridBunykRayCastFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridBunykRayCastFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridBunykRayCastFunction__Initialize__0(void* self, void* ren, void* vol) {
+extern "C" void vtkUnstructuredGridBunykRayCastFunction__Initialize__0(void* self, void* ren, void* vol) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->Initialize(static_cast<vtkRenderer*>(ren), static_cast<vtkVolume*>(vol));
 }
 
-extern "C" void vtkUnstructuredGridBunykRayCastFunction__Finalize__0(void* self) {
+extern "C" void vtkUnstructuredGridBunykRayCastFunction__Finalize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->Finalize();
 }
 
-extern "C" void* vtkUnstructuredGridBunykRayCastFunction__NewIterator__0(void* self) {
+extern "C" void* vtkUnstructuredGridBunykRayCastFunction__NewIterator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->NewIterator());
 }
 
-extern "C" void* vtkUnstructuredGridBunykRayCastFunction__GetViewToWorldMatrix__0(void* self) {
+extern "C" void* vtkUnstructuredGridBunykRayCastFunction__GetViewToWorldMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridBunykRayCastFunction*>(self)->GetViewToWorldMatrix());
 }

@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOpenGLTextureCPUNormalization__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLTextureCPUNormalization::New()); }
+extern "C" void* vtkOpenGLTextureCPUNormalization__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLTextureCPUNormalization::New()); }
 
-extern "C" int32_t vtkOpenGLTextureCPUNormalization__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLTextureCPUNormalization__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLTextureCPUNormalization::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLTextureCPUNormalization__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLTextureCPUNormalization__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextureCPUNormalization*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLTextureCPUNormalization__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLTextureCPUNormalization__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLTextureCPUNormalization::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLTextureCPUNormalization__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLTextureCPUNormalization__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLTextureCPUNormalization::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLTextureCPUNormalization__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLTextureCPUNormalization__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextureCPUNormalization*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkOpenGLTextureCPUNormalization__ConvertUShortToFloat__0(void* self, void* sourceData, size_t numValues, int32_t numComps, uint32_t targetTexture, uint32_t width, uint32_t height) {
+extern "C" bool vtkOpenGLTextureCPUNormalization__ConvertUShortToFloat__0(void* self, void* sourceData, size_t numValues, int32_t numComps, uint32_t targetTexture, uint32_t width, uint32_t height) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextureCPUNormalization*>(self)->ConvertUShortToFloat(sourceData, numValues, numComps, targetTexture, width, height);
 }
 
-extern "C" bool vtkOpenGLTextureCPUNormalization__ConvertShortToFloat__0(void* self, void* sourceData, size_t numValues, int32_t numComps, uint32_t targetTexture, uint32_t width, uint32_t height) {
+extern "C" bool vtkOpenGLTextureCPUNormalization__ConvertShortToFloat__0(void* self, void* sourceData, size_t numValues, int32_t numComps, uint32_t targetTexture, uint32_t width, uint32_t height) noexcept {
   (void)self;
   return static_cast<vtkOpenGLTextureCPUNormalization*>(self)->ConvertShortToFloat(sourceData, numValues, numComps, targetTexture, width, height);
 }

@@ -4,181 +4,181 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageBinaryThreshold__vtk_wrap_new() { return static_cast<void*>(vtkImageBinaryThreshold::New()); }
+extern "C" void* vtkImageBinaryThreshold__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageBinaryThreshold::New()); }
 
-extern "C" int32_t vtkImageBinaryThreshold__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageBinaryThreshold__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageBinaryThreshold::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageBinaryThreshold__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageBinaryThreshold__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageBinaryThreshold__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageBinaryThreshold__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageBinaryThreshold::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageBinaryThreshold__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageBinaryThreshold__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageBinaryThreshold::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageBinaryThreshold__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageBinaryThreshold__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageBinaryThreshold__SetReplaceIn__0(void* self, bool _arg) {
+extern "C" void vtkImageBinaryThreshold__SetReplaceIn__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetReplaceIn(_arg);
 }
 
-extern "C" bool vtkImageBinaryThreshold__GetReplaceIn__0(void* self) {
+extern "C" bool vtkImageBinaryThreshold__GetReplaceIn__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetReplaceIn();
 }
 
-extern "C" void vtkImageBinaryThreshold__ReplaceInOn__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__ReplaceInOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->ReplaceInOn();
 }
 
-extern "C" void vtkImageBinaryThreshold__ReplaceInOff__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__ReplaceInOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->ReplaceInOff();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetInValue__0(void* self, double _arg) {
+extern "C" void vtkImageBinaryThreshold__SetInValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetInValue(_arg);
 }
 
-extern "C" double vtkImageBinaryThreshold__GetInValue__0(void* self) {
+extern "C" double vtkImageBinaryThreshold__GetInValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetInValue();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetReplaceOut__0(void* self, bool _arg) {
+extern "C" void vtkImageBinaryThreshold__SetReplaceOut__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetReplaceOut(_arg);
 }
 
-extern "C" bool vtkImageBinaryThreshold__GetReplaceOut__0(void* self) {
+extern "C" bool vtkImageBinaryThreshold__GetReplaceOut__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetReplaceOut();
 }
 
-extern "C" void vtkImageBinaryThreshold__ReplaceOutOn__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__ReplaceOutOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->ReplaceOutOn();
 }
 
-extern "C" void vtkImageBinaryThreshold__ReplaceOutOff__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__ReplaceOutOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->ReplaceOutOff();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutValue__0(void* self, double _arg) {
+extern "C" void vtkImageBinaryThreshold__SetOutValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutValue(_arg);
 }
 
-extern "C" double vtkImageBinaryThreshold__GetOutValue__0(void* self) {
+extern "C" double vtkImageBinaryThreshold__GetOutValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetOutValue();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetUpperThreshold__0(void* self, double _arg) {
+extern "C" void vtkImageBinaryThreshold__SetUpperThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetUpperThreshold(_arg);
 }
 
-extern "C" double vtkImageBinaryThreshold__GetUpperThreshold__0(void* self) {
+extern "C" double vtkImageBinaryThreshold__GetUpperThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetUpperThreshold();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetLowerThreshold__0(void* self, double _arg) {
+extern "C" void vtkImageBinaryThreshold__SetLowerThreshold__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetLowerThreshold(_arg);
 }
 
-extern "C" double vtkImageBinaryThreshold__GetLowerThreshold__0(void* self) {
+extern "C" double vtkImageBinaryThreshold__GetLowerThreshold__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetLowerThreshold();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetThresholdFunction__0(void* self, int32_t _arg) {
+extern "C" void vtkImageBinaryThreshold__SetThresholdFunction__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetThresholdFunction(_arg);
 }
 
-extern "C" int32_t vtkImageBinaryThreshold__GetThresholdFunction__0(void* self) {
+extern "C" int32_t vtkImageBinaryThreshold__GetThresholdFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetThresholdFunction();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarType__0(void* self, int32_t _arg) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarType(_arg);
 }
 
-extern "C" int32_t vtkImageBinaryThreshold__GetOutputScalarType__0(void* self) {
+extern "C" int32_t vtkImageBinaryThreshold__GetOutputScalarType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageBinaryThreshold*>(self)->GetOutputScalarType();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToDouble__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToDouble__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToDouble();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToFloat__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToFloat__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToFloat();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToLong__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToLong();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedLong__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedLong__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToUnsignedLong();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToInt__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToInt();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedInt__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedInt__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToUnsignedInt();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToShort__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToShort();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedShort__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedShort__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToUnsignedShort();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToChar__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToChar();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToSignedChar__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToSignedChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToSignedChar();
 }
 
-extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedChar__0(void* self) {
+extern "C" void vtkImageBinaryThreshold__SetOutputScalarTypeToUnsignedChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageBinaryThreshold*>(self)->SetOutputScalarTypeToUnsignedChar();
 }

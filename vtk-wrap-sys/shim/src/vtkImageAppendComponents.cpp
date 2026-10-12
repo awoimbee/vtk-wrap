@@ -6,56 +6,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageAppendComponents__vtk_wrap_new() { return static_cast<void*>(vtkImageAppendComponents::New()); }
+extern "C" void* vtkImageAppendComponents__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageAppendComponents::New()); }
 
-extern "C" int32_t vtkImageAppendComponents__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageAppendComponents__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageAppendComponents::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageAppendComponents__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageAppendComponents__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageAppendComponents*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageAppendComponents__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageAppendComponents__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageAppendComponents::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageAppendComponents__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageAppendComponents__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageAppendComponents::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageAppendComponents__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageAppendComponents__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageAppendComponents*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageAppendComponents__ReplaceNthInputConnection__0(void* self, int32_t idx, void* input) {
+extern "C" void vtkImageAppendComponents__ReplaceNthInputConnection__0(void* self, int32_t idx, void* input) noexcept {
   (void)self;
   static_cast<vtkImageAppendComponents*>(self)->ReplaceNthInputConnection(idx, static_cast<vtkAlgorithmOutput*>(input));
 }
 
-extern "C" void vtkImageAppendComponents__SetInputData__0(void* self, int32_t num, void* input) {
+extern "C" void vtkImageAppendComponents__SetInputData__0(void* self, int32_t num, void* input) noexcept {
   (void)self;
   static_cast<vtkImageAppendComponents*>(self)->SetInputData(num, static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void vtkImageAppendComponents__SetInputData__1(void* self, void* input) {
+extern "C" void vtkImageAppendComponents__SetInputData__1(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkImageAppendComponents*>(self)->SetInputData(static_cast<vtkDataObject*>(input));
 }
 
-extern "C" void* vtkImageAppendComponents__GetInput__0(void* self, int32_t num) {
+extern "C" void* vtkImageAppendComponents__GetInput__0(void* self, int32_t num) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageAppendComponents*>(self)->GetInput(num));
 }
 
-extern "C" void* vtkImageAppendComponents__GetInput__1(void* self) {
+extern "C" void* vtkImageAppendComponents__GetInput__1(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageAppendComponents*>(self)->GetInput());
 }
 
-extern "C" int32_t vtkImageAppendComponents__GetNumberOfInputs__0(void* self) {
+extern "C" int32_t vtkImageAppendComponents__GetNumberOfInputs__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageAppendComponents*>(self)->GetNumberOfInputs();
 }

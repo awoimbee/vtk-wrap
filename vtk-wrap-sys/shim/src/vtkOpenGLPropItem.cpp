@@ -5,31 +5,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOpenGLPropItem__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLPropItem::New()); }
+extern "C" void* vtkOpenGLPropItem__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLPropItem::New()); }
 
-extern "C" int32_t vtkOpenGLPropItem__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLPropItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLPropItem::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLPropItem__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLPropItem__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLPropItem*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLPropItem__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLPropItem__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLPropItem::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLPropItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLPropItem__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLPropItem::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLPropItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLPropItem__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLPropItem*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkOpenGLPropItem__Paint__0(void* self, void* painter) {
+extern "C" bool vtkOpenGLPropItem__Paint__0(void* self, void* painter) noexcept {
   (void)self;
   return static_cast<vtkOpenGLPropItem*>(self)->Paint(static_cast<vtkContext2D*>(painter));
 }

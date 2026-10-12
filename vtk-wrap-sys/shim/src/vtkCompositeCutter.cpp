@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCompositeCutter__vtk_wrap_new() { return static_cast<void*>(vtkCompositeCutter::New()); }
+extern "C" void* vtkCompositeCutter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompositeCutter::New()); }
 
-extern "C" int32_t vtkCompositeCutter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeCutter__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeCutter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeCutter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeCutter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeCutter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeCutter__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeCutter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeCutter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeCutter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeCutter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeCutter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeCutter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeCutter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeCutter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

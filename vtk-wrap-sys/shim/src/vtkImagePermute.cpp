@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImagePermute__vtk_wrap_new() { return static_cast<void*>(vtkImagePermute::New()); }
+extern "C" void* vtkImagePermute__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImagePermute::New()); }
 
-extern "C" int32_t vtkImagePermute__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImagePermute__IsTypeOf__0(const char* type_) noexcept {
   return vtkImagePermute::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImagePermute__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImagePermute__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImagePermute*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImagePermute__SafeDownCast__0(void* o) {
+extern "C" void* vtkImagePermute__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImagePermute::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImagePermute__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImagePermute__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImagePermute::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImagePermute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImagePermute__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImagePermute*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImagePermute__SetFilteredAxes__0(void* self, int32_t x, int32_t y, int32_t z) {
+extern "C" void vtkImagePermute__SetFilteredAxes__0(void* self, int32_t x, int32_t y, int32_t z) noexcept {
   (void)self;
   static_cast<vtkImagePermute*>(self)->SetFilteredAxes(x, y, z);
 }
 
-extern "C" void vtkImagePermute__SetFilteredAxes__1(void* self, const int32_t* xyz) {
+extern "C" void vtkImagePermute__SetFilteredAxes__1(void* self, const int32_t* xyz) noexcept {
   (void)self;
   static_cast<vtkImagePermute*>(self)->SetFilteredAxes(xyz);
 }

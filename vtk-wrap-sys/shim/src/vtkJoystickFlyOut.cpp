@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkJoystickFlyOut__vtk_wrap_new() { return static_cast<void*>(vtkJoystickFlyOut::New()); }
+extern "C" void* vtkJoystickFlyOut__vtk_wrap_new() noexcept { return static_cast<void*>(vtkJoystickFlyOut::New()); }
 
-extern "C" int32_t vtkJoystickFlyOut__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkJoystickFlyOut__IsTypeOf__0(const char* type_) noexcept {
   return vtkJoystickFlyOut::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkJoystickFlyOut__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkJoystickFlyOut__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJoystickFlyOut*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkJoystickFlyOut__SafeDownCast__0(void* o) {
+extern "C" void* vtkJoystickFlyOut__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkJoystickFlyOut::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkJoystickFlyOut__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkJoystickFlyOut__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkJoystickFlyOut::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkJoystickFlyOut__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkJoystickFlyOut__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkJoystickFlyOut*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

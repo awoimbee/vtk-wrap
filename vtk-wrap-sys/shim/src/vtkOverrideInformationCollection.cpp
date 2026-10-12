@@ -5,36 +5,36 @@
 #include "vtkOverrideInformation.h"
 #include <string>
 
-extern "C" void* vtkOverrideInformationCollection__vtk_wrap_new() { return static_cast<void*>(vtkOverrideInformationCollection::New()); }
+extern "C" void* vtkOverrideInformationCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOverrideInformationCollection::New()); }
 
-extern "C" int32_t vtkOverrideInformationCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOverrideInformationCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkOverrideInformationCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOverrideInformationCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOverrideInformationCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverrideInformationCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOverrideInformationCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkOverrideInformationCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOverrideInformationCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOverrideInformationCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOverrideInformationCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOverrideInformationCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOverrideInformationCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOverrideInformationCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOverrideInformationCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOverrideInformationCollection__AddItem__0(void* self, void* arg0) {
+extern "C" void vtkOverrideInformationCollection__AddItem__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOverrideInformationCollection*>(self)->AddItem(static_cast<vtkOverrideInformation*>(arg0));
 }
 
-extern "C" void* vtkOverrideInformationCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkOverrideInformationCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOverrideInformationCollection*>(self)->GetNextItem());
 }

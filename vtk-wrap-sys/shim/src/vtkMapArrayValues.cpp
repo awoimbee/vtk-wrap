@@ -4,116 +4,116 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMapArrayValues__vtk_wrap_new() { return static_cast<void*>(vtkMapArrayValues::New()); }
+extern "C" void* vtkMapArrayValues__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMapArrayValues::New()); }
 
-extern "C" int32_t vtkMapArrayValues__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMapArrayValues__IsTypeOf__0(const char* type_) noexcept {
   return vtkMapArrayValues::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMapArrayValues__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMapArrayValues__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMapArrayValues__SafeDownCast__0(void* o) {
+extern "C" void* vtkMapArrayValues__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMapArrayValues::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMapArrayValues__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMapArrayValues__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMapArrayValues::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMapArrayValues__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMapArrayValues__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMapArrayValues__SetFieldType__0(void* self, int32_t _arg) {
+extern "C" void vtkMapArrayValues__SetFieldType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetFieldType(_arg);
 }
 
-extern "C" int32_t vtkMapArrayValues__GetFieldType__0(void* self) {
+extern "C" int32_t vtkMapArrayValues__GetFieldType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetFieldType();
 }
 
-extern "C" void vtkMapArrayValues__SetPassArray__0(void* self, int32_t _arg) {
+extern "C" void vtkMapArrayValues__SetPassArray__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetPassArray(_arg);
 }
 
-extern "C" int32_t vtkMapArrayValues__GetPassArray__0(void* self) {
+extern "C" int32_t vtkMapArrayValues__GetPassArray__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetPassArray();
 }
 
-extern "C" void vtkMapArrayValues__PassArrayOn__0(void* self) {
+extern "C" void vtkMapArrayValues__PassArrayOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->PassArrayOn();
 }
 
-extern "C" void vtkMapArrayValues__PassArrayOff__0(void* self) {
+extern "C" void vtkMapArrayValues__PassArrayOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->PassArrayOff();
 }
 
-extern "C" void vtkMapArrayValues__SetFillValue__0(void* self, double _arg) {
+extern "C" void vtkMapArrayValues__SetFillValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetFillValue(_arg);
 }
 
-extern "C" double vtkMapArrayValues__GetFillValue__0(void* self) {
+extern "C" double vtkMapArrayValues__GetFillValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetFillValue();
 }
 
-extern "C" void vtkMapArrayValues__SetInputArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkMapArrayValues__SetInputArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetInputArrayName(_arg);
 }
 
-extern "C" void vtkMapArrayValues__SetOutputArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkMapArrayValues__SetOutputArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetOutputArrayName(_arg);
 }
 
-extern "C" int32_t vtkMapArrayValues__GetOutputArrayType__0(void* self) {
+extern "C" int32_t vtkMapArrayValues__GetOutputArrayType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetOutputArrayType();
 }
 
-extern "C" void vtkMapArrayValues__SetOutputArrayType__0(void* self, int32_t _arg) {
+extern "C" void vtkMapArrayValues__SetOutputArrayType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->SetOutputArrayType(_arg);
 }
 
-extern "C" void vtkMapArrayValues__AddToMap__0(void* self, int32_t from, int32_t to) {
+extern "C" void vtkMapArrayValues__AddToMap__0(void* self, int32_t from, int32_t to) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->AddToMap(from, to);
 }
 
-extern "C" void vtkMapArrayValues__AddToMap__1(void* self, int32_t from, const char* to) {
+extern "C" void vtkMapArrayValues__AddToMap__1(void* self, int32_t from, const char* to) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->AddToMap(from, to);
 }
 
-extern "C" void vtkMapArrayValues__AddToMap__2(void* self, const char* from, int32_t to) {
+extern "C" void vtkMapArrayValues__AddToMap__2(void* self, const char* from, int32_t to) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->AddToMap(from, to);
 }
 
-extern "C" void vtkMapArrayValues__AddToMap__3(void* self, const char* from, const char* to) {
+extern "C" void vtkMapArrayValues__AddToMap__3(void* self, const char* from, const char* to) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->AddToMap(from, to);
 }
 
-extern "C" void vtkMapArrayValues__ClearMap__0(void* self) {
+extern "C" void vtkMapArrayValues__ClearMap__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMapArrayValues*>(self)->ClearMap();
 }
 
-extern "C" int32_t vtkMapArrayValues__GetMapSize__0(void* self) {
+extern "C" int32_t vtkMapArrayValues__GetMapSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMapArrayValues*>(self)->GetMapSize();
 }

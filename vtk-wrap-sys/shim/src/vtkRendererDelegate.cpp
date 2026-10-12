@@ -5,49 +5,49 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" int32_t vtkRendererDelegate__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRendererDelegate__IsTypeOf__0(const char* type_) noexcept {
   return vtkRendererDelegate::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRendererDelegate__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRendererDelegate__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRendererDelegate*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRendererDelegate__SafeDownCast__0(void* o) {
+extern "C" void* vtkRendererDelegate__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRendererDelegate::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRendererDelegate__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRendererDelegate__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRendererDelegate::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRendererDelegate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRendererDelegate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRendererDelegate*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkRendererDelegate__Render__0(void* self, void* r) {
+extern "C" void vtkRendererDelegate__Render__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkRendererDelegate*>(self)->Render(static_cast<vtkRenderer*>(r));
 }
 
-extern "C" void vtkRendererDelegate__SetUsed__0(void* self, bool _arg) {
+extern "C" void vtkRendererDelegate__SetUsed__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkRendererDelegate*>(self)->SetUsed(_arg);
 }
 
-extern "C" bool vtkRendererDelegate__GetUsed__0(void* self) {
+extern "C" bool vtkRendererDelegate__GetUsed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRendererDelegate*>(self)->GetUsed();
 }
 
-extern "C" void vtkRendererDelegate__UsedOn__0(void* self) {
+extern "C" void vtkRendererDelegate__UsedOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRendererDelegate*>(self)->UsedOn();
 }
 
-extern "C" void vtkRendererDelegate__UsedOff__0(void* self) {
+extern "C" void vtkRendererDelegate__UsedOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkRendererDelegate*>(self)->UsedOff();
 }

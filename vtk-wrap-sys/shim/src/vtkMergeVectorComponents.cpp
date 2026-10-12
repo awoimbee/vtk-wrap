@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMergeVectorComponents__vtk_wrap_new() { return static_cast<void*>(vtkMergeVectorComponents::New()); }
+extern "C" void* vtkMergeVectorComponents__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMergeVectorComponents::New()); }
 
-extern "C" int32_t vtkMergeVectorComponents__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMergeVectorComponents__IsTypeOf__0(const char* type_) noexcept {
   return vtkMergeVectorComponents::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMergeVectorComponents__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMergeVectorComponents__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeVectorComponents*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMergeVectorComponents__SafeDownCast__0(void* o) {
+extern "C" void* vtkMergeVectorComponents__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMergeVectorComponents::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMergeVectorComponents__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMergeVectorComponents__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMergeVectorComponents::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMergeVectorComponents__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMergeVectorComponents__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMergeVectorComponents*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMergeVectorComponents__SetXArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkMergeVectorComponents__SetXArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetXArrayName(_arg);
 }
 
-extern "C" void vtkMergeVectorComponents__SetYArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkMergeVectorComponents__SetYArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetYArrayName(_arg);
 }
 
-extern "C" void vtkMergeVectorComponents__SetZArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkMergeVectorComponents__SetZArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetZArrayName(_arg);
 }
 
-extern "C" void vtkMergeVectorComponents__SetOutputVectorName__0(void* self, const char* _arg) {
+extern "C" void vtkMergeVectorComponents__SetOutputVectorName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetOutputVectorName(_arg);
 }
 
-extern "C" void vtkMergeVectorComponents__SetAttributeType__0(void* self, int32_t _arg) {
+extern "C" void vtkMergeVectorComponents__SetAttributeType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetAttributeType(_arg);
 }
 
-extern "C" int32_t vtkMergeVectorComponents__GetAttributeType__0(void* self) {
+extern "C" int32_t vtkMergeVectorComponents__GetAttributeType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMergeVectorComponents*>(self)->GetAttributeType();
 }
 
-extern "C" void vtkMergeVectorComponents__SetAttributeTypeToPointData__0(void* self) {
+extern "C" void vtkMergeVectorComponents__SetAttributeTypeToPointData__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetAttributeTypeToPointData();
 }
 
-extern "C" void vtkMergeVectorComponents__SetAttributeTypeToCellData__0(void* self) {
+extern "C" void vtkMergeVectorComponents__SetAttributeTypeToCellData__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMergeVectorComponents*>(self)->SetAttributeTypeToCellData();
 }

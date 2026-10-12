@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridToExplicitStructuredGrid__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridToExplicitStructuredGrid::New()); }
+extern "C" void* vtkUnstructuredGridToExplicitStructuredGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridToExplicitStructuredGrid::New()); }
 
-extern "C" int32_t vtkUnstructuredGridToExplicitStructuredGrid__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridToExplicitStructuredGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridToExplicitStructuredGrid::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridToExplicitStructuredGrid__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridToExplicitStructuredGrid__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridToExplicitStructuredGrid*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridToExplicitStructuredGrid__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridToExplicitStructuredGrid__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridToExplicitStructuredGrid::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridToExplicitStructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridToExplicitStructuredGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridToExplicitStructuredGrid::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridToExplicitStructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridToExplicitStructuredGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridToExplicitStructuredGrid*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridToExplicitStructuredGrid__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) {
+extern "C" void vtkUnstructuredGridToExplicitStructuredGrid__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridToExplicitStructuredGrid*>(self)->SetWholeExtent(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkUnstructuredGridToExplicitStructuredGrid__SetWholeExtent__1(void* self, const int32_t* _arg) {
+extern "C" void vtkUnstructuredGridToExplicitStructuredGrid__SetWholeExtent__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridToExplicitStructuredGrid*>(self)->SetWholeExtent(_arg);
 }

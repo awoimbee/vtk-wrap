@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGAMBITReader__vtk_wrap_new() { return static_cast<void*>(vtkGAMBITReader::New()); }
+extern "C" void* vtkGAMBITReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGAMBITReader::New()); }
 
-extern "C" int32_t vtkGAMBITReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGAMBITReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkGAMBITReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGAMBITReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGAMBITReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGAMBITReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkGAMBITReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGAMBITReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGAMBITReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGAMBITReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGAMBITReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGAMBITReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGAMBITReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGAMBITReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkGAMBITReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkGAMBITReader*>(self)->SetFileName(_arg);
 }
 
-extern "C" int32_t vtkGAMBITReader__GetNumberOfCells__0(void* self) {
+extern "C" int32_t vtkGAMBITReader__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->GetNumberOfCells();
 }
 
-extern "C" int32_t vtkGAMBITReader__GetNumberOfNodes__0(void* self) {
+extern "C" int32_t vtkGAMBITReader__GetNumberOfNodes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->GetNumberOfNodes();
 }
 
-extern "C" int32_t vtkGAMBITReader__GetNumberOfNodeFields__0(void* self) {
+extern "C" int32_t vtkGAMBITReader__GetNumberOfNodeFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->GetNumberOfNodeFields();
 }
 
-extern "C" int32_t vtkGAMBITReader__GetNumberOfCellFields__0(void* self) {
+extern "C" int32_t vtkGAMBITReader__GetNumberOfCellFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGAMBITReader*>(self)->GetNumberOfCellFields();
 }

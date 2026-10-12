@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataObjectTypes__vtk_wrap_new() { return static_cast<void*>(vtkDataObjectTypes::New()); }
+extern "C" void* vtkDataObjectTypes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataObjectTypes::New()); }
 
-extern "C" int32_t vtkDataObjectTypes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObjectTypes__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObjectTypes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObjectTypes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObjectTypes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTypes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObjectTypes__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObjectTypes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObjectTypes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObjectTypes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObjectTypes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObjectTypes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObjectTypes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObjectTypes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTypes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkDataObjectTypes__GetClassNameFromTypeId__0(int32_t typeId) {
+extern "C" const char* vtkDataObjectTypes__GetClassNameFromTypeId__0(int32_t typeId) noexcept {
   return vtkDataObjectTypes::GetClassNameFromTypeId(typeId);
 }
 
-extern "C" int32_t vtkDataObjectTypes__GetTypeIdFromClassName__0(const char* classname) {
+extern "C" int32_t vtkDataObjectTypes__GetTypeIdFromClassName__0(const char* classname) noexcept {
   return vtkDataObjectTypes::GetTypeIdFromClassName(classname);
 }
 
-extern "C" void* vtkDataObjectTypes__NewDataObject__0(const char* classname) {
+extern "C" void* vtkDataObjectTypes__NewDataObject__0(const char* classname) noexcept {
   return static_cast<void*>(vtkDataObjectTypes::NewDataObject(classname));
 }
 
-extern "C" void* vtkDataObjectTypes__NewDataObject__1(int32_t typeId) {
+extern "C" void* vtkDataObjectTypes__NewDataObject__1(int32_t typeId) noexcept {
   return static_cast<void*>(vtkDataObjectTypes::NewDataObject(typeId));
 }
 
-extern "C" bool vtkDataObjectTypes__TypeIdIsA__0(int32_t typeId, int32_t targetTypeId) {
+extern "C" bool vtkDataObjectTypes__TypeIdIsA__0(int32_t typeId, int32_t targetTypeId) noexcept {
   return vtkDataObjectTypes::TypeIdIsA(typeId, targetTypeId);
 }
 
-extern "C" int32_t vtkDataObjectTypes__GetCommonBaseTypeId__0(int32_t typeA, int32_t typeB) {
+extern "C" int32_t vtkDataObjectTypes__GetCommonBaseTypeId__0(int32_t typeA, int32_t typeB) noexcept {
   return vtkDataObjectTypes::GetCommonBaseTypeId(typeA, typeB);
 }
 

@@ -10,91 +10,91 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkPicker__vtk_wrap_new() { return static_cast<void*>(vtkPicker::New()); }
+extern "C" void* vtkPicker__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPicker::New()); }
 
-extern "C" int32_t vtkPicker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPicker__IsTypeOf__0(const char* type_) noexcept {
   return vtkPicker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPicker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPicker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPicker__SafeDownCast__0(void* o) {
+extern "C" void* vtkPicker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPicker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPicker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPicker__SetTolerance__0(void* self, double _arg) {
+extern "C" void vtkPicker__SetTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPicker*>(self)->SetTolerance(_arg);
 }
 
-extern "C" double vtkPicker__GetTolerance__0(void* self) {
+extern "C" double vtkPicker__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->GetTolerance();
 }
 
-extern "C" void* vtkPicker__GetMapper__0(void* self) {
+extern "C" void* vtkPicker__GetMapper__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPicker*>(self)->GetMapper());
 }
 
-extern "C" void* vtkPicker__GetDataSet__0(void* self) {
+extern "C" void* vtkPicker__GetDataSet__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPicker*>(self)->GetDataSet());
 }
 
-extern "C" void* vtkPicker__GetCompositeDataSet__0(void* self) {
+extern "C" void* vtkPicker__GetCompositeDataSet__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPicker*>(self)->GetCompositeDataSet());
 }
 
-extern "C" int64_t vtkPicker__GetFlatBlockIndex__0(void* self) {
+extern "C" int64_t vtkPicker__GetFlatBlockIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->GetFlatBlockIndex();
 }
 
-extern "C" void* vtkPicker__GetProp3Ds__0(void* self) {
+extern "C" void* vtkPicker__GetProp3Ds__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPicker*>(self)->GetProp3Ds());
 }
 
-extern "C" void* vtkPicker__GetPickedPositions__0(void* self) {
+extern "C" void* vtkPicker__GetPickedPositions__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPicker*>(self)->GetPickedPositions());
 }
 
-extern "C" int32_t vtkPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) {
+extern "C" int32_t vtkPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->Pick(selectionX, selectionY, selectionZ, static_cast<vtkRenderer*>(renderer));
 }
 
-extern "C" int32_t vtkPicker__Pick__1(void* self, double* selectionPt, void* ren) {
+extern "C" int32_t vtkPicker__Pick__1(void* self, double* selectionPt, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->Pick(selectionPt, static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" int32_t vtkPicker__Pick3DPoint__0(void* self, double* selectionPt, void* ren) {
+extern "C" int32_t vtkPicker__Pick3DPoint__0(void* self, double* selectionPt, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->Pick3DPoint(selectionPt, static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" int32_t vtkPicker__Pick3DPoint__1(void* self, double* p1World, double* p2World, void* ren) {
+extern "C" int32_t vtkPicker__Pick3DPoint__1(void* self, double* p1World, double* p2World, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->Pick3DPoint(p1World, p2World, static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" int32_t vtkPicker__Pick3DRay__0(void* self, double* selectionPt, double* orient, void* ren) {
+extern "C" int32_t vtkPicker__Pick3DRay__0(void* self, double* selectionPt, double* orient, void* ren) noexcept {
   (void)self;
   return static_cast<vtkPicker*>(self)->Pick3DRay(selectionPt, orient, static_cast<vtkRenderer*>(ren));
 }

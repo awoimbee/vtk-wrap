@@ -6,74 +6,74 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkScalarTree__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkScalarTree__IsTypeOf__0(const char* type_) noexcept {
   return vtkScalarTree::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkScalarTree__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkScalarTree__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarTree*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkScalarTree__SafeDownCast__0(void* o) {
+extern "C" void* vtkScalarTree__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkScalarTree::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkScalarTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkScalarTree__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkScalarTree::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkScalarTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkScalarTree__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarTree*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkScalarTree__ShallowCopy__0(void* self, void* stree) {
+extern "C" void vtkScalarTree__ShallowCopy__0(void* self, void* stree) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->ShallowCopy(static_cast<vtkScalarTree*>(stree));
 }
 
-extern "C" void vtkScalarTree__SetDataSet__0(void* self, void* arg0) {
+extern "C" void vtkScalarTree__SetDataSet__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->SetDataSet(static_cast<vtkDataSet*>(arg0));
 }
 
-extern "C" void* vtkScalarTree__GetDataSet__0(void* self) {
+extern "C" void* vtkScalarTree__GetDataSet__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarTree*>(self)->GetDataSet());
 }
 
-extern "C" void vtkScalarTree__SetScalars__0(void* self, void* arg0) {
+extern "C" void vtkScalarTree__SetScalars__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->SetScalars(static_cast<vtkDataArray*>(arg0));
 }
 
-extern "C" void* vtkScalarTree__GetScalars__0(void* self) {
+extern "C" void* vtkScalarTree__GetScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarTree*>(self)->GetScalars());
 }
 
-extern "C" void vtkScalarTree__BuildTree__0(void* self) {
+extern "C" void vtkScalarTree__BuildTree__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->BuildTree();
 }
 
-extern "C" void vtkScalarTree__Initialize__0(void* self) {
+extern "C" void vtkScalarTree__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->Initialize();
 }
 
-extern "C" void vtkScalarTree__InitTraversal__0(void* self, double scalarValue) {
+extern "C" void vtkScalarTree__InitTraversal__0(void* self, double scalarValue) noexcept {
   (void)self;
   static_cast<vtkScalarTree*>(self)->InitTraversal(scalarValue);
 }
 
-extern "C" double vtkScalarTree__GetScalarValue__0(void* self) {
+extern "C" double vtkScalarTree__GetScalarValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarTree*>(self)->GetScalarValue();
 }
 
-extern "C" int64_t vtkScalarTree__GetNumberOfCellBatches__0(void* self, double scalarValue) {
+extern "C" int64_t vtkScalarTree__GetNumberOfCellBatches__0(void* self, double scalarValue) noexcept {
   (void)self;
   return static_cast<vtkScalarTree*>(self)->GetNumberOfCellBatches(scalarValue);
 }

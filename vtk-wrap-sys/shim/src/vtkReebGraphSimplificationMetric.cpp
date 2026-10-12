@@ -7,51 +7,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkReebGraphSimplificationMetric__vtk_wrap_new() { return static_cast<void*>(vtkReebGraphSimplificationMetric::New()); }
+extern "C" void* vtkReebGraphSimplificationMetric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkReebGraphSimplificationMetric::New()); }
 
-extern "C" int32_t vtkReebGraphSimplificationMetric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkReebGraphSimplificationMetric__IsTypeOf__0(const char* type_) noexcept {
   return vtkReebGraphSimplificationMetric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkReebGraphSimplificationMetric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkReebGraphSimplificationMetric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReebGraphSimplificationMetric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkReebGraphSimplificationMetric__SafeDownCast__0(void* o) {
+extern "C" void* vtkReebGraphSimplificationMetric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkReebGraphSimplificationMetric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkReebGraphSimplificationMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkReebGraphSimplificationMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkReebGraphSimplificationMetric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkReebGraphSimplificationMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkReebGraphSimplificationMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReebGraphSimplificationMetric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkReebGraphSimplificationMetric__SetLowerBound__0(void* self, double _arg) {
+extern "C" void vtkReebGraphSimplificationMetric__SetLowerBound__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkReebGraphSimplificationMetric*>(self)->SetLowerBound(_arg);
 }
 
-extern "C" double vtkReebGraphSimplificationMetric__GetLowerBound__0(void* self) {
+extern "C" double vtkReebGraphSimplificationMetric__GetLowerBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkReebGraphSimplificationMetric*>(self)->GetLowerBound();
 }
 
-extern "C" void vtkReebGraphSimplificationMetric__SetUpperBound__0(void* self, double _arg) {
+extern "C" void vtkReebGraphSimplificationMetric__SetUpperBound__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkReebGraphSimplificationMetric*>(self)->SetUpperBound(_arg);
 }
 
-extern "C" double vtkReebGraphSimplificationMetric__GetUpperBound__0(void* self) {
+extern "C" double vtkReebGraphSimplificationMetric__GetUpperBound__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkReebGraphSimplificationMetric*>(self)->GetUpperBound();
 }
 
-extern "C" double vtkReebGraphSimplificationMetric__ComputeMetric__0(void* self, void* mesh, void* field, int64_t startCriticalPoint, void* vertexList, int64_t endCriticalPoint) {
+extern "C" double vtkReebGraphSimplificationMetric__ComputeMetric__0(void* self, void* mesh, void* field, int64_t startCriticalPoint, void* vertexList, int64_t endCriticalPoint) noexcept {
   (void)self;
   return static_cast<vtkReebGraphSimplificationMetric*>(self)->ComputeMetric(static_cast<vtkDataSet*>(mesh), static_cast<vtkDataArray*>(field), startCriticalPoint, static_cast<vtkAbstractArray*>(vertexList), endCriticalPoint);
 }

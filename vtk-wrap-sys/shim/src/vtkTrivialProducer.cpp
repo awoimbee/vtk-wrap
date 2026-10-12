@@ -6,51 +6,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTrivialProducer__vtk_wrap_new() { return static_cast<void*>(vtkTrivialProducer::New()); }
+extern "C" void* vtkTrivialProducer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrivialProducer::New()); }
 
-extern "C" int32_t vtkTrivialProducer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrivialProducer__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrivialProducer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrivialProducer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrivialProducer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrivialProducer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrivialProducer__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrivialProducer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrivialProducer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrivialProducer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrivialProducer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrivialProducer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrivialProducer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrivialProducer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrivialProducer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTrivialProducer__SetOutput__0(void* self, void* output) {
+extern "C" void vtkTrivialProducer__SetOutput__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkTrivialProducer*>(self)->SetOutput(static_cast<vtkDataObject*>(output));
 }
 
-extern "C" unsigned long vtkTrivialProducer__GetMTime__0(void* self) {
+extern "C" unsigned long vtkTrivialProducer__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTrivialProducer*>(self)->GetMTime();
 }
 
-extern "C" void vtkTrivialProducer__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) {
+extern "C" void vtkTrivialProducer__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) noexcept {
   (void)self;
   static_cast<vtkTrivialProducer*>(self)->SetWholeExtent(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkTrivialProducer__SetWholeExtent__1(void* self, const int32_t* _arg) {
+extern "C" void vtkTrivialProducer__SetWholeExtent__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkTrivialProducer*>(self)->SetWholeExtent(_arg);
 }
 
-extern "C" void vtkTrivialProducer__FillOutputDataInformation__0(void* output, void* outInfo) {
+extern "C" void vtkTrivialProducer__FillOutputDataInformation__0(void* output, void* outInfo) noexcept {
   vtkTrivialProducer::FillOutputDataInformation(static_cast<vtkDataObject*>(output), static_cast<vtkInformation*>(outInfo));
 }
 

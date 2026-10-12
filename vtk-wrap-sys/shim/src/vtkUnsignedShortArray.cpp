@@ -6,100 +6,100 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUnsignedShortArray__vtk_wrap_new() { return static_cast<void*>(vtkUnsignedShortArray::New()); }
+extern "C" void* vtkUnsignedShortArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnsignedShortArray::New()); }
 
-extern "C" int32_t vtkUnsignedShortArray__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnsignedShortArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnsignedShortArray::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnsignedShortArray__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnsignedShortArray__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnsignedShortArray__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnsignedShortArray__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnsignedShortArray::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnsignedShortArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnsignedShortArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnsignedShortArray::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnsignedShortArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnsignedShortArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkUnsignedShortArray__ExtendedNew__0() {
+extern "C" void* vtkUnsignedShortArray__ExtendedNew__0() noexcept {
   return static_cast<void*>(vtkUnsignedShortArray::ExtendedNew());
 }
 
-extern "C" int32_t vtkUnsignedShortArray__GetDataType__0(void* self) {
+extern "C" int32_t vtkUnsignedShortArray__GetDataType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetDataType();
 }
 
-extern "C" uint16_t vtkUnsignedShortArray__GetDataTypeValueMin__0(void* self) {
+extern "C" uint16_t vtkUnsignedShortArray__GetDataTypeValueMin__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetDataTypeValueMin();
 }
 
-extern "C" uint16_t vtkUnsignedShortArray__GetDataTypeValueMax__0(void* self) {
+extern "C" uint16_t vtkUnsignedShortArray__GetDataTypeValueMax__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetDataTypeValueMax();
 }
 
-extern "C" void vtkUnsignedShortArray__GetValueRange__0(void* self, uint16_t* range, int32_t comp) {
+extern "C" void vtkUnsignedShortArray__GetValueRange__0(void* self, uint16_t* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkUnsignedShortArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" void vtkUnsignedShortArray__GetValueRange__1(void* self, uint16_t* range, int32_t comp) {
+extern "C" void vtkUnsignedShortArray__GetValueRange__1(void* self, uint16_t* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkUnsignedShortArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" uint16_t vtkUnsignedShortArray__GetTypedComponent__0(void* self, int64_t i, int32_t c) {
+extern "C" uint16_t vtkUnsignedShortArray__GetTypedComponent__0(void* self, int64_t i, int32_t c) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetTypedComponent(i, c);
 }
 
-extern "C" uint16_t vtkUnsignedShortArray__GetValue__0(void* self, int64_t id) {
+extern "C" uint16_t vtkUnsignedShortArray__GetValue__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->GetValue(id);
 }
 
-extern "C" void vtkUnsignedShortArray__InsertValue__0(void* self, int64_t id, uint16_t f) {
+extern "C" void vtkUnsignedShortArray__InsertValue__0(void* self, int64_t id, uint16_t f) noexcept {
   (void)self;
   static_cast<vtkUnsignedShortArray*>(self)->InsertValue(id, f);
 }
 
-extern "C" int64_t vtkUnsignedShortArray__InsertNextValue__0(void* self, uint16_t f) {
+extern "C" int64_t vtkUnsignedShortArray__InsertNextValue__0(void* self, uint16_t f) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->InsertNextValue(f);
 }
 
-extern "C" void vtkUnsignedShortArray__SetValue__0(void* self, int64_t id, uint16_t value) {
+extern "C" void vtkUnsignedShortArray__SetValue__0(void* self, int64_t id, uint16_t value) noexcept {
   (void)self;
   static_cast<vtkUnsignedShortArray*>(self)->SetValue(id, value);
 }
 
-extern "C" bool vtkUnsignedShortArray__SetNumberOfValues__0(void* self, int64_t number) {
+extern "C" bool vtkUnsignedShortArray__SetNumberOfValues__0(void* self, int64_t number) noexcept {
   (void)self;
   return static_cast<vtkUnsignedShortArray*>(self)->SetNumberOfValues(number);
 }
 
-extern "C" void* vtkUnsignedShortArray__GetBuffer__0(void* self) {
+extern "C" void* vtkUnsignedShortArray__GetBuffer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnsignedShortArray*>(self)->GetBuffer());
 }
 
-extern "C" void vtkUnsignedShortArray__SetBuffer__0(void* self, void* buffer, bool updateMaxId) {
+extern "C" void vtkUnsignedShortArray__SetBuffer__0(void* self, void* buffer, bool updateMaxId) noexcept {
   (void)self;
   static_cast<vtkUnsignedShortArray*>(self)->SetBuffer(static_cast<vtkAbstractBuffer*>(buffer), updateMaxId);
 }
 
-extern "C" void* vtkUnsignedShortArray__FastDownCast__0(void* source) {
+extern "C" void* vtkUnsignedShortArray__FastDownCast__0(void* source) noexcept {
   return static_cast<void*>(vtkUnsignedShortArray::FastDownCast(static_cast<vtkAbstractArray*>(source)));
 }
 

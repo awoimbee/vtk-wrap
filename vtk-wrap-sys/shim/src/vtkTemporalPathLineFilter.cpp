@@ -6,90 +6,90 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTemporalPathLineFilter__vtk_wrap_new() { return static_cast<void*>(vtkTemporalPathLineFilter::New()); }
+extern "C" void* vtkTemporalPathLineFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTemporalPathLineFilter::New()); }
 
-extern "C" int32_t vtkTemporalPathLineFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTemporalPathLineFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkTemporalPathLineFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTemporalPathLineFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTemporalPathLineFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTemporalPathLineFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTemporalPathLineFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkTemporalPathLineFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTemporalPathLineFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTemporalPathLineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTemporalPathLineFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTemporalPathLineFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTemporalPathLineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTemporalPathLineFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTemporalPathLineFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkTemporalPathLineFilter__TimeStepsArrayName__0() {
+extern "C" const char* vtkTemporalPathLineFilter__TimeStepsArrayName__0() noexcept {
   return vtkTemporalPathLineFilter::TimeStepsArrayName();
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetMaskPoints__0(void* self, int32_t _arg) {
+extern "C" void vtkTemporalPathLineFilter__SetMaskPoints__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetMaskPoints(_arg);
 }
 
-extern "C" int32_t vtkTemporalPathLineFilter__GetMaskPoints__0(void* self) {
+extern "C" int32_t vtkTemporalPathLineFilter__GetMaskPoints__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTemporalPathLineFilter*>(self)->GetMaskPoints();
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetMaxTrackLength__0(void* self, uint32_t _arg) {
+extern "C" void vtkTemporalPathLineFilter__SetMaxTrackLength__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetMaxTrackLength(_arg);
 }
 
-extern "C" uint32_t vtkTemporalPathLineFilter__GetMaxTrackLength__0(void* self) {
+extern "C" uint32_t vtkTemporalPathLineFilter__GetMaxTrackLength__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTemporalPathLineFilter*>(self)->GetMaxTrackLength();
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetIdChannelArray__0(void* self, const char* _arg) {
+extern "C" void vtkTemporalPathLineFilter__SetIdChannelArray__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetIdChannelArray(_arg);
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetMaxStepDistance__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkTemporalPathLineFilter__SetMaxStepDistance__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetMaxStepDistance(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetMaxStepDistance__1(void* self, const double* _arg) {
+extern "C" void vtkTemporalPathLineFilter__SetMaxStepDistance__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetMaxStepDistance(_arg);
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetKeepDeadTrails__0(void* self, bool _arg) {
+extern "C" void vtkTemporalPathLineFilter__SetKeepDeadTrails__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetKeepDeadTrails(_arg);
 }
 
-extern "C" bool vtkTemporalPathLineFilter__GetKeepDeadTrails__0(void* self) {
+extern "C" bool vtkTemporalPathLineFilter__GetKeepDeadTrails__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTemporalPathLineFilter*>(self)->GetKeepDeadTrails();
 }
 
-extern "C" void vtkTemporalPathLineFilter__Flush__0(void* self) {
+extern "C" void vtkTemporalPathLineFilter__Flush__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->Flush();
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetSelectionConnection__0(void* self, void* algOutput) {
+extern "C" void vtkTemporalPathLineFilter__SetSelectionConnection__0(void* self, void* algOutput) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetSelectionConnection(static_cast<vtkAlgorithmOutput*>(algOutput));
 }
 
-extern "C" void vtkTemporalPathLineFilter__SetSelectionData__0(void* self, void* input) {
+extern "C" void vtkTemporalPathLineFilter__SetSelectionData__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkTemporalPathLineFilter*>(self)->SetSelectionData(static_cast<vtkDataSet*>(input));
 }

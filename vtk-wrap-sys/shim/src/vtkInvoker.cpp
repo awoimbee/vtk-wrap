@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInvoker__vtk_wrap_new() { return static_cast<void*>(vtkInvoker::New()); }
+extern "C" void* vtkInvoker__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInvoker::New()); }
 
-extern "C" int32_t vtkInvoker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInvoker__IsTypeOf__0(const char* type_) noexcept {
   return vtkInvoker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInvoker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInvoker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInvoker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInvoker__SafeDownCast__0(void* o) {
+extern "C" void* vtkInvoker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInvoker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInvoker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInvoker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInvoker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInvoker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInvoker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInvoker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInvoker__SetContext__0(void* self, void* _arg) {
+extern "C" void vtkInvoker__SetContext__0(void* self, void* _arg) noexcept {
   (void)self;
   static_cast<vtkInvoker*>(self)->SetContext(static_cast<vtkMarshalContext*>(_arg));
 }
 
-extern "C" void* vtkInvoker__GetContext__0(void* self) {
+extern "C" void* vtkInvoker__GetContext__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInvoker*>(self)->GetContext());
 }

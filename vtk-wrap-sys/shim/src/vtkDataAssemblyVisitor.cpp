@@ -4,24 +4,24 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkDataAssemblyVisitor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataAssemblyVisitor__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataAssemblyVisitor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataAssemblyVisitor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataAssemblyVisitor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataAssemblyVisitor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataAssemblyVisitor__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataAssemblyVisitor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataAssemblyVisitor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataAssemblyVisitor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataAssemblyVisitor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataAssemblyVisitor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataAssemblyVisitor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataAssemblyVisitor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataAssemblyVisitor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -6,77 +6,89 @@
 #include "vtkURI.h"
 #include <string>
 
-extern "C" void* vtkURILoader__vtk_wrap_new() { return static_cast<void*>(vtkURILoader::New()); }
+extern "C" void* vtkURILoader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkURILoader::New()); }
 
-extern "C" int32_t vtkURILoader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkURILoader__IsTypeOf__0(const char* type_) noexcept {
   return vtkURILoader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkURILoader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkURILoader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkURILoader__SafeDownCast__0(void* o) {
+extern "C" void* vtkURILoader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkURILoader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkURILoader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkURILoader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkURILoader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkURILoader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkURILoader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkURILoader__SetBaseURI__0(void* self, const char* uri) {
+extern "C" bool vtkURILoader__SetBaseURI__0(void* self, const char* uri) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->SetBaseURI(std::string(uri));
 }
 
-extern "C" bool vtkURILoader__SetBaseURI__1(void* self, void* uri) {
+extern "C" bool vtkURILoader__SetBaseURI__1(void* self, void* uri) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->SetBaseURI(static_cast<vtkURI*>(uri));
 }
 
-extern "C" void* vtkURILoader__GetBaseURI__0(void* self) {
+extern "C" void* vtkURILoader__GetBaseURI__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkURILoader*>(self)->GetBaseURI());
 }
 
-extern "C" bool vtkURILoader__HasBaseURI__0(void* self) {
+extern "C" bool vtkURILoader__HasBaseURI__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->HasBaseURI();
 }
 
-extern "C" bool vtkURILoader__SetBaseFileName__0(void* self, const char* filepath) {
+extern "C" bool vtkURILoader__SetBaseFileName__0(void* self, const char* filepath) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->SetBaseFileName(std::string(filepath));
 }
 
-extern "C" bool vtkURILoader__SetBaseDirectory__0(void* self, const char* dirpath) {
+extern "C" bool vtkURILoader__SetBaseDirectory__0(void* self, const char* dirpath) noexcept {
   (void)self;
   return static_cast<vtkURILoader*>(self)->SetBaseDirectory(std::string(dirpath));
 }
 
-extern "C" void* vtkURILoader__Resolve__0(void* self, void* uri) {
+extern "C" void* vtkURILoader__Resolve__0(void* self, void* uri) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkURILoader*>(self)->Resolve(static_cast<vtkURI*>(uri))).GetPointer());
+  auto result = static_cast<vtkURILoader*>(self)->Resolve(static_cast<vtkURI*>(uri));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void* vtkURILoader__Load__0(void* self, const char* uri) {
+extern "C" void* vtkURILoader__Load__0(void* self, const char* uri) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkURILoader*>(self)->Load(std::string(uri))).GetPointer());
+  auto result = static_cast<vtkURILoader*>(self)->Load(std::string(uri));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void* vtkURILoader__Load__1(void* self, void* uri) {
+extern "C" void* vtkURILoader__Load__1(void* self, void* uri) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkURILoader*>(self)->Load(static_cast<vtkURI*>(uri))).GetPointer());
+  auto result = static_cast<vtkURILoader*>(self)->Load(static_cast<vtkURI*>(uri));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void* vtkURILoader__LoadResolved__0(void* self, void* uri) {
+extern "C" void* vtkURILoader__LoadResolved__0(void* self, void* uri) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkURILoader*>(self)->LoadResolved(static_cast<vtkURI*>(uri))).GetPointer());
+  auto result = static_cast<vtkURILoader*>(self)->LoadResolved(static_cast<vtkURI*>(uri));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 

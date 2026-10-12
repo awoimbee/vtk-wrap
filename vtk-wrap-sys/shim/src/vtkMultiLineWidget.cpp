@@ -7,83 +7,83 @@
 #include "vtkRenderWindowInteractor.h"
 #include <string>
 
-extern "C" void* vtkMultiLineWidget__vtk_wrap_new() { return static_cast<void*>(vtkMultiLineWidget::New()); }
+extern "C" void* vtkMultiLineWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiLineWidget::New()); }
 
-extern "C" int32_t vtkMultiLineWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiLineWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiLineWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiLineWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiLineWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiLineWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiLineWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiLineWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiLineWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiLineWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiLineWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiLineWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiLineWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiLineWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiLineWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMultiLineWidget__SetEnabled__0(void* self, int32_t enabling) {
+extern "C" void vtkMultiLineWidget__SetEnabled__0(void* self, int32_t enabling) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->SetEnabled(enabling);
 }
 
-extern "C" void vtkMultiLineWidget__SetRepresentation__0(void* self, void* repr) {
+extern "C" void vtkMultiLineWidget__SetRepresentation__0(void* self, void* repr) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->SetRepresentation(static_cast<vtkMultiLineRepresentation*>(repr));
 }
 
-extern "C" unsigned long vtkMultiLineWidget__GetMTime__0(void* self) {
+extern "C" unsigned long vtkMultiLineWidget__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiLineWidget*>(self)->GetMTime();
 }
 
-extern "C" void vtkMultiLineWidget__SelectAction__0(void* widget) {
+extern "C" void vtkMultiLineWidget__SelectAction__0(void* widget) noexcept {
   vtkMultiLineWidget::SelectAction(static_cast<vtkAbstractWidget*>(widget));
 }
 
-extern "C" void vtkMultiLineWidget__EndSelectAction__0(void* widget) {
+extern "C" void vtkMultiLineWidget__EndSelectAction__0(void* widget) noexcept {
   vtkMultiLineWidget::EndSelectAction(static_cast<vtkAbstractWidget*>(widget));
 }
 
-extern "C" void vtkMultiLineWidget__MoveAction__0(void* widget) {
+extern "C" void vtkMultiLineWidget__MoveAction__0(void* widget) noexcept {
   vtkMultiLineWidget::MoveAction(static_cast<vtkAbstractWidget*>(widget));
 }
 
-extern "C" void vtkMultiLineWidget__SetLineCount__0(void* self, int32_t count) {
+extern "C" void vtkMultiLineWidget__SetLineCount__0(void* self, int32_t count) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->SetLineCount(count);
 }
 
-extern "C" int32_t vtkMultiLineWidget__GetLineCount__0(void* self) {
+extern "C" int32_t vtkMultiLineWidget__GetLineCount__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiLineWidget*>(self)->GetLineCount();
 }
 
-extern "C" void* vtkMultiLineWidget__GetMultiLineRepresentation__0(void* self) {
+extern "C" void* vtkMultiLineWidget__GetMultiLineRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMultiLineWidget*>(self)->GetMultiLineRepresentation());
 }
 
-extern "C" void vtkMultiLineWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkMultiLineWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkMultiLineWidget__SetProcessEvents__0(void* self, int32_t enabled) {
+extern "C" void vtkMultiLineWidget__SetProcessEvents__0(void* self, int32_t enabled) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->SetProcessEvents(enabled);
 }
 
-extern "C" void vtkMultiLineWidget__SetInteractor__0(void* self, void* interactor) {
+extern "C" void vtkMultiLineWidget__SetInteractor__0(void* self, void* interactor) noexcept {
   (void)self;
   static_cast<vtkMultiLineWidget*>(self)->SetInteractor(static_cast<vtkRenderWindowInteractor*>(interactor));
 }

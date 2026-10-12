@@ -5,59 +5,59 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" int32_t vtkIncrementalPointLocator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkIncrementalPointLocator__IsTypeOf__0(const char* type_) noexcept {
   return vtkIncrementalPointLocator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkIncrementalPointLocator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkIncrementalPointLocator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkIncrementalPointLocator__SafeDownCast__0(void* o) {
+extern "C" void* vtkIncrementalPointLocator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkIncrementalPointLocator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkIncrementalPointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkIncrementalPointLocator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkIncrementalPointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__FindClosestInsertedPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkIncrementalPointLocator__FindClosestInsertedPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->FindClosestInsertedPoint(x);
 }
 
-extern "C" int32_t vtkIncrementalPointLocator__InitPointInsertion__0(void* self, void* newPts, const double* bounds) {
+extern "C" int32_t vtkIncrementalPointLocator__InitPointInsertion__0(void* self, void* newPts, const double* bounds) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->InitPointInsertion(static_cast<vtkPoints*>(newPts), bounds);
 }
 
-extern "C" int32_t vtkIncrementalPointLocator__InitPointInsertion__1(void* self, void* newPts, const double* bounds, int64_t estSize) {
+extern "C" int32_t vtkIncrementalPointLocator__InitPointInsertion__1(void* self, void* newPts, const double* bounds, int64_t estSize) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->InitPointInsertion(static_cast<vtkPoints*>(newPts), bounds, estSize);
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__IsInsertedPoint__0(void* self, double x, double y, double z) {
+extern "C" int64_t vtkIncrementalPointLocator__IsInsertedPoint__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->IsInsertedPoint(x, y, z);
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__IsInsertedPoint__1(void* self, const double* x) {
+extern "C" int64_t vtkIncrementalPointLocator__IsInsertedPoint__1(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->IsInsertedPoint(x);
 }
 
-extern "C" void vtkIncrementalPointLocator__InsertPoint__0(void* self, int64_t ptId, const double* x) {
+extern "C" void vtkIncrementalPointLocator__InsertPoint__0(void* self, int64_t ptId, const double* x) noexcept {
   (void)self;
   static_cast<vtkIncrementalPointLocator*>(self)->InsertPoint(ptId, x);
 }
 
-extern "C" int64_t vtkIncrementalPointLocator__InsertNextPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkIncrementalPointLocator__InsertNextPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkIncrementalPointLocator*>(self)->InsertNextPoint(x);
 }

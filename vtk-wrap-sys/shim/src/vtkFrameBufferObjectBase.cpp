@@ -4,29 +4,29 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkFrameBufferObjectBase__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFrameBufferObjectBase__IsTypeOf__0(const char* type_) noexcept {
   return vtkFrameBufferObjectBase::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFrameBufferObjectBase__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFrameBufferObjectBase__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrameBufferObjectBase*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFrameBufferObjectBase__SafeDownCast__0(void* o) {
+extern "C" void* vtkFrameBufferObjectBase__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFrameBufferObjectBase::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFrameBufferObjectBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFrameBufferObjectBase__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFrameBufferObjectBase::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFrameBufferObjectBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFrameBufferObjectBase__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFrameBufferObjectBase*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFrameBufferObjectBase__GetLastSize__0(void* self, int32_t* _arg) {
+extern "C" void vtkFrameBufferObjectBase__GetLastSize__0(void* self, int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkFrameBufferObjectBase*>(self)->GetLastSize(_arg);
 }

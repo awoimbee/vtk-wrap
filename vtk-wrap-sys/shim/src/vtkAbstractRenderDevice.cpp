@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAbstractRenderDevice__vtk_wrap_new() { return static_cast<void*>(vtkAbstractRenderDevice::New()); }
+extern "C" void* vtkAbstractRenderDevice__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAbstractRenderDevice::New()); }
 
-extern "C" int32_t vtkAbstractRenderDevice__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractRenderDevice__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractRenderDevice::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractRenderDevice__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractRenderDevice__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractRenderDevice*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractRenderDevice__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractRenderDevice__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractRenderDevice::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractRenderDevice__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractRenderDevice__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractRenderDevice::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractRenderDevice__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractRenderDevice__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractRenderDevice*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractRenderDevice__SetRequestedGLVersion__0(void* self, int32_t major, int32_t minor) {
+extern "C" void vtkAbstractRenderDevice__SetRequestedGLVersion__0(void* self, int32_t major, int32_t minor) noexcept {
   (void)self;
   static_cast<vtkAbstractRenderDevice*>(self)->SetRequestedGLVersion(major, minor);
 }
 
-extern "C" void vtkAbstractRenderDevice__MakeCurrent__0(void* self) {
+extern "C" void vtkAbstractRenderDevice__MakeCurrent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractRenderDevice*>(self)->MakeCurrent();
 }

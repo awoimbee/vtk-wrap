@@ -6,111 +6,111 @@
 #include "vtkShaderProgram.h"
 #include <string>
 
-extern "C" void* vtkTransformFeedback__vtk_wrap_new() { return static_cast<void*>(vtkTransformFeedback::New()); }
+extern "C" void* vtkTransformFeedback__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTransformFeedback::New()); }
 
-extern "C" int32_t vtkTransformFeedback__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTransformFeedback__IsTypeOf__0(const char* type_) noexcept {
   return vtkTransformFeedback::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTransformFeedback__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTransformFeedback__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTransformFeedback__SafeDownCast__0(void* o) {
+extern "C" void* vtkTransformFeedback__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTransformFeedback::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTransformFeedback__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTransformFeedback__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTransformFeedback::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTransformFeedback__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTransformFeedback__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTransformFeedback__ClearVaryings__0(void* self) {
+extern "C" void vtkTransformFeedback__ClearVaryings__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->ClearVaryings();
 }
 
-extern "C" size_t vtkTransformFeedback__GetBytesPerVertex__0(void* self) {
+extern "C" size_t vtkTransformFeedback__GetBytesPerVertex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetBytesPerVertex();
 }
 
-extern "C" void vtkTransformFeedback__SetNumberOfVertices__0(void* self, size_t _arg) {
+extern "C" void vtkTransformFeedback__SetNumberOfVertices__0(void* self, size_t _arg) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->SetNumberOfVertices(_arg);
 }
 
-extern "C" void vtkTransformFeedback__SetNumberOfVertices__1(void* self, int32_t drawMode, size_t inputVerts) {
+extern "C" void vtkTransformFeedback__SetNumberOfVertices__1(void* self, int32_t drawMode, size_t inputVerts) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->SetNumberOfVertices(drawMode, inputVerts);
 }
 
-extern "C" size_t vtkTransformFeedback__GetNumberOfVertices__0(void* self) {
+extern "C" size_t vtkTransformFeedback__GetNumberOfVertices__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetNumberOfVertices();
 }
 
-extern "C" size_t vtkTransformFeedback__GetBufferSize__0(void* self) {
+extern "C" size_t vtkTransformFeedback__GetBufferSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetBufferSize();
 }
 
-extern "C" void vtkTransformFeedback__BindVaryings__0(void* self, void* prog) {
+extern "C" void vtkTransformFeedback__BindVaryings__0(void* self, void* prog) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->BindVaryings(static_cast<vtkShaderProgram*>(prog));
 }
 
-extern "C" void* vtkTransformFeedback__GetBuffer__0(void* self, int32_t index) {
+extern "C" void* vtkTransformFeedback__GetBuffer__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTransformFeedback*>(self)->GetBuffer(index));
 }
 
-extern "C" int32_t vtkTransformFeedback__GetBufferHandle__0(void* self, int32_t index) {
+extern "C" int32_t vtkTransformFeedback__GetBufferHandle__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetBufferHandle(index);
 }
 
-extern "C" void vtkTransformFeedback__SetPrimitiveMode__0(void* self, int32_t _arg) {
+extern "C" void vtkTransformFeedback__SetPrimitiveMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->SetPrimitiveMode(_arg);
 }
 
-extern "C" int32_t vtkTransformFeedback__GetPrimitiveMode__0(void* self) {
+extern "C" int32_t vtkTransformFeedback__GetPrimitiveMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFeedback*>(self)->GetPrimitiveMode();
 }
 
-extern "C" void vtkTransformFeedback__Allocate__0(void* self, int32_t nbBuffers, size_t size, uint32_t hint) {
+extern "C" void vtkTransformFeedback__Allocate__0(void* self, int32_t nbBuffers, size_t size, uint32_t hint) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->Allocate(nbBuffers, size, hint);
 }
 
-extern "C" void vtkTransformFeedback__BindBuffer__0(void* self, bool allocateOneBuffer) {
+extern "C" void vtkTransformFeedback__BindBuffer__0(void* self, bool allocateOneBuffer) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->BindBuffer(allocateOneBuffer);
 }
 
-extern "C" void vtkTransformFeedback__ReadBuffer__0(void* self, int32_t index) {
+extern "C" void vtkTransformFeedback__ReadBuffer__0(void* self, int32_t index) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->ReadBuffer(index);
 }
 
-extern "C" void* vtkTransformFeedback__GetBufferData__0(void* self) {
+extern "C" void* vtkTransformFeedback__GetBufferData__0(void* self) noexcept {
   (void)self;
   return const_cast<void*>(static_cast<vtkTransformFeedback*>(self)->GetBufferData());
 }
 
-extern "C" void vtkTransformFeedback__ReleaseGraphicsResources__0(void* self) {
+extern "C" void vtkTransformFeedback__ReleaseGraphicsResources__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->ReleaseGraphicsResources();
 }
 
-extern "C" void vtkTransformFeedback__ReleaseBufferData__0(void* self, bool freeBuffer) {
+extern "C" void vtkTransformFeedback__ReleaseBufferData__0(void* self, bool freeBuffer) noexcept {
   (void)self;
   static_cast<vtkTransformFeedback*>(self)->ReleaseBufferData(freeBuffer);
 }

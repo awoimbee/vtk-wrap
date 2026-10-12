@@ -6,216 +6,216 @@
 #include "vtkScalarTree.h"
 #include <string>
 
-extern "C" void* vtkContour3DLinearGrid__vtk_wrap_new() { return static_cast<void*>(vtkContour3DLinearGrid::New()); }
+extern "C" void* vtkContour3DLinearGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContour3DLinearGrid::New()); }
 
-extern "C" int32_t vtkContour3DLinearGrid__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContour3DLinearGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkContour3DLinearGrid::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContour3DLinearGrid__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContour3DLinearGrid__SafeDownCast__0(void* o) {
+extern "C" void* vtkContour3DLinearGrid__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContour3DLinearGrid::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContour3DLinearGrid::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContour3DLinearGrid__SetValue__0(void* self, int32_t i, double value) {
+extern "C" void vtkContour3DLinearGrid__SetValue__0(void* self, int32_t i, double value) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetValue(i, value);
 }
 
-extern "C" double vtkContour3DLinearGrid__GetValue__0(void* self, int32_t i) {
+extern "C" double vtkContour3DLinearGrid__GetValue__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetValue(i);
 }
 
-extern "C" void vtkContour3DLinearGrid__SetNumberOfContours__0(void* self, int32_t number) {
+extern "C" void vtkContour3DLinearGrid__SetNumberOfContours__0(void* self, int32_t number) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetNumberOfContours(number);
 }
 
-extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfContours__0(void* self) {
+extern "C" int64_t vtkContour3DLinearGrid__GetNumberOfContours__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetNumberOfContours();
 }
 
-extern "C" void vtkContour3DLinearGrid__GenerateValues__0(void* self, int32_t numContours, double* range) {
+extern "C" void vtkContour3DLinearGrid__GenerateValues__0(void* self, int32_t numContours, double* range) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->GenerateValues(numContours, range);
 }
 
-extern "C" void vtkContour3DLinearGrid__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) {
+extern "C" void vtkContour3DLinearGrid__GenerateValues__1(void* self, int32_t numContours, double rangeStart, double rangeEnd) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->GenerateValues(numContours, rangeStart, rangeEnd);
 }
 
-extern "C" void vtkContour3DLinearGrid__SetInterpolateAttributes__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetInterpolateAttributes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetInterpolateAttributes(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetInterpolateAttributes__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetInterpolateAttributes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetInterpolateAttributes();
 }
 
-extern "C" void vtkContour3DLinearGrid__InterpolateAttributesOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__InterpolateAttributesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->InterpolateAttributesOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__InterpolateAttributesOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__InterpolateAttributesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->InterpolateAttributesOff();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetComputeNormals__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetComputeNormals__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetComputeNormals(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetComputeNormals__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetComputeNormals__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetComputeNormals();
 }
 
-extern "C" void vtkContour3DLinearGrid__ComputeNormalsOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__ComputeNormalsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->ComputeNormalsOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__ComputeNormalsOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__ComputeNormalsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->ComputeNormalsOff();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetComputeScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetComputeScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetComputeScalars(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetComputeScalars__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetComputeScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetComputeScalars();
 }
 
-extern "C" void vtkContour3DLinearGrid__ComputeScalarsOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__ComputeScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->ComputeScalarsOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__ComputeScalarsOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__ComputeScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->ComputeScalarsOff();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" unsigned long vtkContour3DLinearGrid__GetMTime__0(void* self) {
+extern "C" unsigned long vtkContour3DLinearGrid__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetMTime();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetUseScalarTree__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetUseScalarTree__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetUseScalarTree(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetUseScalarTree__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetUseScalarTree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetUseScalarTree();
 }
 
-extern "C" void vtkContour3DLinearGrid__UseScalarTreeOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__UseScalarTreeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->UseScalarTreeOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__UseScalarTreeOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__UseScalarTreeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->UseScalarTreeOff();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetScalarTree__0(void* self, void* arg0) {
+extern "C" void vtkContour3DLinearGrid__SetScalarTree__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetScalarTree(static_cast<vtkScalarTree*>(arg0));
 }
 
-extern "C" void* vtkContour3DLinearGrid__GetScalarTree__0(void* self) {
+extern "C" void* vtkContour3DLinearGrid__GetScalarTree__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContour3DLinearGrid*>(self)->GetScalarTree());
 }
 
-extern "C" void vtkContour3DLinearGrid__SetSequentialProcessing__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetSequentialProcessing__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetSequentialProcessing(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetSequentialProcessing__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetSequentialProcessing__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetSequentialProcessing();
 }
 
-extern "C" void vtkContour3DLinearGrid__SequentialProcessingOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__SequentialProcessingOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SequentialProcessingOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__SequentialProcessingOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__SequentialProcessingOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SequentialProcessingOff();
 }
 
-extern "C" void vtkContour3DLinearGrid__SetGenerateTriangles__0(void* self, int32_t _arg) {
+extern "C" void vtkContour3DLinearGrid__SetGenerateTriangles__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->SetGenerateTriangles(_arg);
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetGenerateTriangles__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetGenerateTriangles__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetGenerateTriangles();
 }
 
-extern "C" void vtkContour3DLinearGrid__GenerateTrianglesOn__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__GenerateTrianglesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->GenerateTrianglesOn();
 }
 
-extern "C" void vtkContour3DLinearGrid__GenerateTrianglesOff__0(void* self) {
+extern "C" void vtkContour3DLinearGrid__GenerateTrianglesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContour3DLinearGrid*>(self)->GenerateTrianglesOff();
 }
 
-extern "C" int32_t vtkContour3DLinearGrid__GetNumberOfThreadsUsed__0(void* self) {
+extern "C" int32_t vtkContour3DLinearGrid__GetNumberOfThreadsUsed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetNumberOfThreadsUsed();
 }
 
-extern "C" bool vtkContour3DLinearGrid__GetLargeIds__0(void* self) {
+extern "C" bool vtkContour3DLinearGrid__GetLargeIds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContour3DLinearGrid*>(self)->GetLargeIds();
 }
 
-extern "C" bool vtkContour3DLinearGrid__CanFullyProcessDataObject__0(void* object, const char* scalarArrayName) {
+extern "C" bool vtkContour3DLinearGrid__CanFullyProcessDataObject__0(void* object, const char* scalarArrayName) noexcept {
   return vtkContour3DLinearGrid::CanFullyProcessDataObject(static_cast<vtkDataObject*>(object), scalarArrayName);
 }
 

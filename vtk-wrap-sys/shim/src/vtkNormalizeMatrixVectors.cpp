@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkNormalizeMatrixVectors__vtk_wrap_new() { return static_cast<void*>(vtkNormalizeMatrixVectors::New()); }
+extern "C" void* vtkNormalizeMatrixVectors__vtk_wrap_new() noexcept { return static_cast<void*>(vtkNormalizeMatrixVectors::New()); }
 
-extern "C" int32_t vtkNormalizeMatrixVectors__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkNormalizeMatrixVectors__IsTypeOf__0(const char* type_) noexcept {
   return vtkNormalizeMatrixVectors::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkNormalizeMatrixVectors__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkNormalizeMatrixVectors__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNormalizeMatrixVectors*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkNormalizeMatrixVectors__SafeDownCast__0(void* o) {
+extern "C" void* vtkNormalizeMatrixVectors__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkNormalizeMatrixVectors::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkNormalizeMatrixVectors__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkNormalizeMatrixVectors__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkNormalizeMatrixVectors::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkNormalizeMatrixVectors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkNormalizeMatrixVectors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNormalizeMatrixVectors*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkNormalizeMatrixVectors__GetVectorDimension__0(void* self) {
+extern "C" int32_t vtkNormalizeMatrixVectors__GetVectorDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkNormalizeMatrixVectors*>(self)->GetVectorDimension();
 }
 
-extern "C" void vtkNormalizeMatrixVectors__SetVectorDimension__0(void* self, int32_t _arg) {
+extern "C" void vtkNormalizeMatrixVectors__SetVectorDimension__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkNormalizeMatrixVectors*>(self)->SetVectorDimension(_arg);
 }
 
-extern "C" double vtkNormalizeMatrixVectors__GetPValue__0(void* self) {
+extern "C" double vtkNormalizeMatrixVectors__GetPValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkNormalizeMatrixVectors*>(self)->GetPValue();
 }
 
-extern "C" void vtkNormalizeMatrixVectors__SetPValue__0(void* self, double _arg) {
+extern "C" void vtkNormalizeMatrixVectors__SetPValue__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkNormalizeMatrixVectors*>(self)->SetPValue(_arg);
 }

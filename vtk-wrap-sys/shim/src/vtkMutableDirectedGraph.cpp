@@ -7,91 +7,91 @@
 #include "vtkVariantArray.h"
 #include <string>
 
-extern "C" void* vtkMutableDirectedGraph__vtk_wrap_new() { return static_cast<void*>(vtkMutableDirectedGraph::New()); }
+extern "C" void* vtkMutableDirectedGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMutableDirectedGraph::New()); }
 
-extern "C" int32_t vtkMutableDirectedGraph__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMutableDirectedGraph__IsTypeOf__0(const char* type_) noexcept {
   return vtkMutableDirectedGraph::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMutableDirectedGraph__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMutableDirectedGraph__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMutableDirectedGraph__SafeDownCast__0(void* o) {
+extern "C" void* vtkMutableDirectedGraph__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMutableDirectedGraph::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMutableDirectedGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMutableDirectedGraph::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMutableDirectedGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__SetNumberOfVertices__0(void* self, int64_t numVerts) {
+extern "C" int64_t vtkMutableDirectedGraph__SetNumberOfVertices__0(void* self, int64_t numVerts) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->SetNumberOfVertices(numVerts);
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__AddVertex__0(void* self) {
+extern "C" int64_t vtkMutableDirectedGraph__AddVertex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->AddVertex();
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__AddVertex__1(void* self, void* propertyArr) {
+extern "C" int64_t vtkMutableDirectedGraph__AddVertex__1(void* self, void* propertyArr) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->AddVertex(static_cast<vtkVariantArray*>(propertyArr));
 }
 
-extern "C" void vtkMutableDirectedGraph__LazyAddVertex__0(void* self) {
+extern "C" void vtkMutableDirectedGraph__LazyAddVertex__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->LazyAddVertex();
 }
 
-extern "C" void vtkMutableDirectedGraph__LazyAddVertex__1(void* self, void* propertyArr) {
+extern "C" void vtkMutableDirectedGraph__LazyAddVertex__1(void* self, void* propertyArr) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->LazyAddVertex(static_cast<vtkVariantArray*>(propertyArr));
 }
 
-extern "C" void vtkMutableDirectedGraph__LazyAddEdge__0(void* self, int64_t u, int64_t v, void* propertyArr) {
+extern "C" void vtkMutableDirectedGraph__LazyAddEdge__0(void* self, int64_t u, int64_t v, void* propertyArr) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->LazyAddEdge(u, v, static_cast<vtkVariantArray*>(propertyArr));
 }
 
-extern "C" void* vtkMutableDirectedGraph__AddGraphEdge__0(void* self, int64_t u, int64_t v) {
+extern "C" void* vtkMutableDirectedGraph__AddGraphEdge__0(void* self, int64_t u, int64_t v) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkMutableDirectedGraph*>(self)->AddGraphEdge(u, v));
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__AddChild__0(void* self, int64_t parent, void* propertyArr) {
+extern "C" int64_t vtkMutableDirectedGraph__AddChild__0(void* self, int64_t parent, void* propertyArr) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->AddChild(parent, static_cast<vtkVariantArray*>(propertyArr));
 }
 
-extern "C" int64_t vtkMutableDirectedGraph__AddChild__1(void* self, int64_t parent) {
+extern "C" int64_t vtkMutableDirectedGraph__AddChild__1(void* self, int64_t parent) noexcept {
   (void)self;
   return static_cast<vtkMutableDirectedGraph*>(self)->AddChild(parent);
 }
 
-extern "C" void vtkMutableDirectedGraph__RemoveVertex__0(void* self, int64_t v) {
+extern "C" void vtkMutableDirectedGraph__RemoveVertex__0(void* self, int64_t v) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->RemoveVertex(v);
 }
 
-extern "C" void vtkMutableDirectedGraph__RemoveEdge__0(void* self, int64_t e) {
+extern "C" void vtkMutableDirectedGraph__RemoveEdge__0(void* self, int64_t e) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->RemoveEdge(e);
 }
 
-extern "C" void vtkMutableDirectedGraph__RemoveVertices__0(void* self, void* arr) {
+extern "C" void vtkMutableDirectedGraph__RemoveVertices__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->RemoveVertices(static_cast<vtkIdTypeArray*>(arr));
 }
 
-extern "C" void vtkMutableDirectedGraph__RemoveEdges__0(void* self, void* arr) {
+extern "C" void vtkMutableDirectedGraph__RemoveEdges__0(void* self, void* arr) noexcept {
   (void)self;
   static_cast<vtkMutableDirectedGraph*>(self)->RemoveEdges(static_cast<vtkIdTypeArray*>(arr));
 }

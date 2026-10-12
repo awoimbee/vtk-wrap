@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRectilinearGridToPointSet__vtk_wrap_new() { return static_cast<void*>(vtkRectilinearGridToPointSet::New()); }
+extern "C" void* vtkRectilinearGridToPointSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRectilinearGridToPointSet::New()); }
 
-extern "C" int32_t vtkRectilinearGridToPointSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRectilinearGridToPointSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkRectilinearGridToPointSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRectilinearGridToPointSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRectilinearGridToPointSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridToPointSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRectilinearGridToPointSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkRectilinearGridToPointSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRectilinearGridToPointSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRectilinearGridToPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRectilinearGridToPointSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRectilinearGridToPointSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRectilinearGridToPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRectilinearGridToPointSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridToPointSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

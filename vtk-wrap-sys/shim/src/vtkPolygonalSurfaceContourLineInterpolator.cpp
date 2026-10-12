@@ -7,46 +7,46 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkPolygonalSurfaceContourLineInterpolator__vtk_wrap_new() { return static_cast<void*>(vtkPolygonalSurfaceContourLineInterpolator::New()); }
+extern "C" void* vtkPolygonalSurfaceContourLineInterpolator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolygonalSurfaceContourLineInterpolator::New()); }
 
-extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolygonalSurfaceContourLineInterpolator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolygonalSurfaceContourLineInterpolator__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolygonalSurfaceContourLineInterpolator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolygonalSurfaceContourLineInterpolator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolygonalSurfaceContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolygonalSurfaceContourLineInterpolator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolygonalSurfaceContourLineInterpolator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolygonalSurfaceContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolygonalSurfaceContourLineInterpolator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) {
+extern "C" int32_t vtkPolygonalSurfaceContourLineInterpolator__InterpolateLine__0(void* self, void* ren, void* rep, int32_t idx1, int32_t idx2) noexcept {
   (void)self;
   return static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->InterpolateLine(static_cast<vtkRenderer*>(ren), static_cast<vtkContourRepresentation*>(rep), idx1, idx2);
 }
 
-extern "C" void vtkPolygonalSurfaceContourLineInterpolator__SetDistanceOffset__0(void* self, double _arg) {
+extern "C" void vtkPolygonalSurfaceContourLineInterpolator__SetDistanceOffset__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->SetDistanceOffset(_arg);
 }
 
-extern "C" double vtkPolygonalSurfaceContourLineInterpolator__GetDistanceOffset__0(void* self) {
+extern "C" double vtkPolygonalSurfaceContourLineInterpolator__GetDistanceOffset__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->GetDistanceOffset();
 }
 
-extern "C" void vtkPolygonalSurfaceContourLineInterpolator__GetContourPointIds__0(void* self, void* rep, void* ids) {
+extern "C" void vtkPolygonalSurfaceContourLineInterpolator__GetContourPointIds__0(void* self, void* rep, void* ids) noexcept {
   (void)self;
   static_cast<vtkPolygonalSurfaceContourLineInterpolator*>(self)->GetContourPointIds(static_cast<vtkContourRepresentation*>(rep), static_cast<vtkIdList*>(ids));
 }

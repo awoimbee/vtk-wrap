@@ -5,33 +5,33 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationVariantKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationVariantKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationVariantKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationVariantKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationVariantKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationVariantKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationVariantKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationVariantKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationVariantKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationVariantKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationVariantKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationVariantKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationVariantKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationVariantKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationVariantKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationVariantKey__MakeKey__0(const char* name, const char* location) {
+extern "C" void* vtkInformationVariantKey__MakeKey__0(const char* name, const char* location) noexcept {
   return static_cast<void*>(vtkInformationVariantKey::MakeKey(name, location));
 }
 
-extern "C" void vtkInformationVariantKey__ShallowCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationVariantKey__ShallowCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationVariantKey*>(self)->ShallowCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }

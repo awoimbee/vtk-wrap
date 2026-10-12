@@ -7,51 +7,51 @@
 #include "vtkStructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkStructuredGridReader__vtk_wrap_new() { return static_cast<void*>(vtkStructuredGridReader::New()); }
+extern "C" void* vtkStructuredGridReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredGridReader::New()); }
 
-extern "C" int32_t vtkStructuredGridReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredGridReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredGridReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredGridReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredGridReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredGridReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredGridReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredGridReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredGridReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredGridReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredGridReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredGridReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredGridReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkStructuredGridReader__GetOutput__0(void* self) {
+extern "C" void* vtkStructuredGridReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStructuredGridReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkStructuredGridReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkStructuredGridReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStructuredGridReader*>(self)->GetOutput(idx));
 }
 
-extern "C" void vtkStructuredGridReader__SetOutput__0(void* self, void* output) {
+extern "C" void vtkStructuredGridReader__SetOutput__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkStructuredGridReader*>(self)->SetOutput(static_cast<vtkStructuredGrid*>(output));
 }
 
-extern "C" int32_t vtkStructuredGridReader__ReadMetaDataSimple__0(void* self, const char* fname, void* metadata) {
+extern "C" int32_t vtkStructuredGridReader__ReadMetaDataSimple__0(void* self, const char* fname, void* metadata) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridReader*>(self)->ReadMetaDataSimple(std::string(fname), static_cast<vtkInformation*>(metadata));
 }
 
-extern "C" int32_t vtkStructuredGridReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkStructuredGridReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

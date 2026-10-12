@@ -27,6 +27,7 @@ finally system installations, in that order.
 [WrapVTK](https://github.com/dgobbi/WrapVTK), builds its `vtkWrapXML` tool,
 and emits the C++ shim, raw FFI declarations, Rust wrappers, and smoke tests.
 Generated files are overwritten; make binding changes in the generator.
+All generated native methods and constructors remain unsafe in `vtk_wrap::raw`.
 
 ## Module selection
 

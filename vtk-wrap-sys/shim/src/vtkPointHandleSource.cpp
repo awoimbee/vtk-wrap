@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPointHandleSource__vtk_wrap_new() { return static_cast<void*>(vtkPointHandleSource::New()); }
+extern "C" void* vtkPointHandleSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointHandleSource::New()); }
 
-extern "C" int32_t vtkPointHandleSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointHandleSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointHandleSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointHandleSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointHandleSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointHandleSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointHandleSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointHandleSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointHandleSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointHandleSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointHandleSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointHandleSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointHandleSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPointHandleSource__SetPosition__0(void* self, double xPos, double yPos, double zPos) {
+extern "C" void vtkPointHandleSource__SetPosition__0(void* self, double xPos, double yPos, double zPos) noexcept {
   (void)self;
   static_cast<vtkPointHandleSource*>(self)->SetPosition(xPos, yPos, zPos);
 }
 
-extern "C" void vtkPointHandleSource__SetDirection__0(void* self, double xDir, double yDir, double zDir) {
+extern "C" void vtkPointHandleSource__SetDirection__0(void* self, double xDir, double yDir, double zDir) noexcept {
   (void)self;
   static_cast<vtkPointHandleSource*>(self)->SetDirection(xDir, yDir, zDir);
 }

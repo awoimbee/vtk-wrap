@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkElevationFilter__vtk_wrap_new() { return static_cast<void*>(vtkElevationFilter::New()); }
+extern "C" void* vtkElevationFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkElevationFilter::New()); }
 
-extern "C" int32_t vtkElevationFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkElevationFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkElevationFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkElevationFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkElevationFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkElevationFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkElevationFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkElevationFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkElevationFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkElevationFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkElevationFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkElevationFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkElevationFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkElevationFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkElevationFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkElevationFilter__SetLowPoint__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkElevationFilter__SetLowPoint__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetLowPoint(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkElevationFilter__SetLowPoint__1(void* self, const double* _arg) {
+extern "C" void vtkElevationFilter__SetLowPoint__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetLowPoint(_arg);
 }
 
-extern "C" void vtkElevationFilter__SetHighPoint__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkElevationFilter__SetHighPoint__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetHighPoint(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkElevationFilter__SetHighPoint__1(void* self, const double* _arg) {
+extern "C" void vtkElevationFilter__SetHighPoint__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetHighPoint(_arg);
 }
 
-extern "C" void vtkElevationFilter__SetScalarRange__0(void* self, double _arg1, double _arg2) {
+extern "C" void vtkElevationFilter__SetScalarRange__0(void* self, double _arg1, double _arg2) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetScalarRange(_arg1, _arg2);
 }
 
-extern "C" void vtkElevationFilter__SetScalarRange__1(void* self, const double* _arg) {
+extern "C" void vtkElevationFilter__SetScalarRange__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkElevationFilter*>(self)->SetScalarRange(_arg);
 }

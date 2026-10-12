@@ -5,56 +5,56 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkBMPWriter__vtk_wrap_new() { return static_cast<void*>(vtkBMPWriter::New()); }
+extern "C" void* vtkBMPWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBMPWriter::New()); }
 
-extern "C" int32_t vtkBMPWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBMPWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkBMPWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBMPWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBMPWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBMPWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBMPWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkBMPWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBMPWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBMPWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBMPWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBMPWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBMPWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBMPWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBMPWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBMPWriter__SetWriteToMemory__0(void* self, uint32_t _arg) {
+extern "C" void vtkBMPWriter__SetWriteToMemory__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBMPWriter*>(self)->SetWriteToMemory(_arg);
 }
 
-extern "C" uint32_t vtkBMPWriter__GetWriteToMemory__0(void* self) {
+extern "C" uint32_t vtkBMPWriter__GetWriteToMemory__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBMPWriter*>(self)->GetWriteToMemory();
 }
 
-extern "C" void vtkBMPWriter__WriteToMemoryOn__0(void* self) {
+extern "C" void vtkBMPWriter__WriteToMemoryOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBMPWriter*>(self)->WriteToMemoryOn();
 }
 
-extern "C" void vtkBMPWriter__WriteToMemoryOff__0(void* self) {
+extern "C" void vtkBMPWriter__WriteToMemoryOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBMPWriter*>(self)->WriteToMemoryOff();
 }
 
-extern "C" void vtkBMPWriter__SetResult__0(void* self, void* arg0) {
+extern "C" void vtkBMPWriter__SetResult__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkBMPWriter*>(self)->SetResult(static_cast<vtkUnsignedCharArray*>(arg0));
 }
 
-extern "C" void* vtkBMPWriter__GetResult__0(void* self) {
+extern "C" void* vtkBMPWriter__GetResult__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBMPWriter*>(self)->GetResult());
 }

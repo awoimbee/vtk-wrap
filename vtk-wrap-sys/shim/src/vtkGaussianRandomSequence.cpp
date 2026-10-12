@@ -4,34 +4,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkGaussianRandomSequence__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGaussianRandomSequence__IsTypeOf__0(const char* type_) noexcept {
   return vtkGaussianRandomSequence::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGaussianRandomSequence__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGaussianRandomSequence__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGaussianRandomSequence*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGaussianRandomSequence__SafeDownCast__0(void* o) {
+extern "C" void* vtkGaussianRandomSequence__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGaussianRandomSequence::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGaussianRandomSequence__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGaussianRandomSequence__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGaussianRandomSequence::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGaussianRandomSequence__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGaussianRandomSequence__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGaussianRandomSequence*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkGaussianRandomSequence__GetScaledValue__0(void* self, double mean, double standardDeviation) {
+extern "C" double vtkGaussianRandomSequence__GetScaledValue__0(void* self, double mean, double standardDeviation) noexcept {
   (void)self;
   return static_cast<vtkGaussianRandomSequence*>(self)->GetScaledValue(mean, standardDeviation);
 }
 
-extern "C" double vtkGaussianRandomSequence__GetNextScaledValue__0(void* self, double mean, double standardDeviation) {
+extern "C" double vtkGaussianRandomSequence__GetNextScaledValue__0(void* self, double mean, double standardDeviation) noexcept {
   (void)self;
   return static_cast<vtkGaussianRandomSequence*>(self)->GetNextScaledValue(mean, standardDeviation);
 }

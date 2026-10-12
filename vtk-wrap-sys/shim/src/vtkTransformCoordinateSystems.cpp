@@ -5,91 +5,91 @@
 #include "vtkViewport.h"
 #include <string>
 
-extern "C" void* vtkTransformCoordinateSystems__vtk_wrap_new() { return static_cast<void*>(vtkTransformCoordinateSystems::New()); }
+extern "C" void* vtkTransformCoordinateSystems__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTransformCoordinateSystems::New()); }
 
-extern "C" int32_t vtkTransformCoordinateSystems__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTransformCoordinateSystems__IsTypeOf__0(const char* type_) noexcept {
   return vtkTransformCoordinateSystems::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTransformCoordinateSystems__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTransformCoordinateSystems__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformCoordinateSystems*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTransformCoordinateSystems__SafeDownCast__0(void* o) {
+extern "C" void* vtkTransformCoordinateSystems__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTransformCoordinateSystems::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTransformCoordinateSystems__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTransformCoordinateSystems__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTransformCoordinateSystems::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTransformCoordinateSystems__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTransformCoordinateSystems__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformCoordinateSystems*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystem__0(void* self, int32_t _arg) {
+extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystem__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetInputCoordinateSystem(_arg);
 }
 
-extern "C" int32_t vtkTransformCoordinateSystems__GetInputCoordinateSystem__0(void* self) {
+extern "C" int32_t vtkTransformCoordinateSystems__GetInputCoordinateSystem__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformCoordinateSystems*>(self)->GetInputCoordinateSystem();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToDisplay__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToDisplay__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetInputCoordinateSystemToDisplay();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToViewport__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToViewport__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetInputCoordinateSystemToViewport();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToWorld__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetInputCoordinateSystemToWorld__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetInputCoordinateSystemToWorld();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystem__0(void* self, int32_t _arg) {
+extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystem__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetOutputCoordinateSystem(_arg);
 }
 
-extern "C" int32_t vtkTransformCoordinateSystems__GetOutputCoordinateSystem__0(void* self) {
+extern "C" int32_t vtkTransformCoordinateSystems__GetOutputCoordinateSystem__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformCoordinateSystems*>(self)->GetOutputCoordinateSystem();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToDisplay__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToDisplay__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetOutputCoordinateSystemToDisplay();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToViewport__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToViewport__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetOutputCoordinateSystemToViewport();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToWorld__0(void* self) {
+extern "C" void vtkTransformCoordinateSystems__SetOutputCoordinateSystemToWorld__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetOutputCoordinateSystemToWorld();
 }
 
-extern "C" unsigned long vtkTransformCoordinateSystems__GetMTime__0(void* self) {
+extern "C" unsigned long vtkTransformCoordinateSystems__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformCoordinateSystems*>(self)->GetMTime();
 }
 
-extern "C" void vtkTransformCoordinateSystems__SetViewport__0(void* self, void* viewport) {
+extern "C" void vtkTransformCoordinateSystems__SetViewport__0(void* self, void* viewport) noexcept {
   (void)self;
   static_cast<vtkTransformCoordinateSystems*>(self)->SetViewport(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void* vtkTransformCoordinateSystems__GetViewport__0(void* self) {
+extern "C" void* vtkTransformCoordinateSystems__GetViewport__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTransformCoordinateSystems*>(self)->GetViewport());
 }

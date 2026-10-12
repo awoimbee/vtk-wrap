@@ -10,49 +10,49 @@
 #include "vtkVolumeProperty.h"
 #include <string>
 
-extern "C" void* vtkProjectedTetrahedraMapper__vtk_wrap_new() { return static_cast<void*>(vtkProjectedTetrahedraMapper::New()); }
+extern "C" void* vtkProjectedTetrahedraMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProjectedTetrahedraMapper::New()); }
 
-extern "C" int32_t vtkProjectedTetrahedraMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProjectedTetrahedraMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkProjectedTetrahedraMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProjectedTetrahedraMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProjectedTetrahedraMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProjectedTetrahedraMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProjectedTetrahedraMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkProjectedTetrahedraMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProjectedTetrahedraMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProjectedTetrahedraMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProjectedTetrahedraMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProjectedTetrahedraMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProjectedTetrahedraMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProjectedTetrahedraMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProjectedTetrahedraMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProjectedTetrahedraMapper__SetVisibilitySort__0(void* self, void* sort) {
+extern "C" void vtkProjectedTetrahedraMapper__SetVisibilitySort__0(void* self, void* sort) noexcept {
   (void)self;
   static_cast<vtkProjectedTetrahedraMapper*>(self)->SetVisibilitySort(static_cast<vtkVisibilitySort*>(sort));
 }
 
-extern "C" void* vtkProjectedTetrahedraMapper__GetVisibilitySort__0(void* self) {
+extern "C" void* vtkProjectedTetrahedraMapper__GetVisibilitySort__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProjectedTetrahedraMapper*>(self)->GetVisibilitySort());
 }
 
-extern "C" void vtkProjectedTetrahedraMapper__MapScalarsToColors__0(void* colors, void* property, void* scalars) {
+extern "C" void vtkProjectedTetrahedraMapper__MapScalarsToColors__0(void* colors, void* property, void* scalars) noexcept {
   vtkProjectedTetrahedraMapper::MapScalarsToColors(static_cast<vtkDataArray*>(colors), static_cast<vtkVolumeProperty*>(property), static_cast<vtkDataArray*>(scalars));
 }
 
-extern "C" void vtkProjectedTetrahedraMapper__TransformPoints__0(void* inPoints, const float* projection_mat, const float* modelview_mat, void* outPoints) {
+extern "C" void vtkProjectedTetrahedraMapper__TransformPoints__0(void* inPoints, const float* projection_mat, const float* modelview_mat, void* outPoints) noexcept {
   vtkProjectedTetrahedraMapper::TransformPoints(static_cast<vtkPoints*>(inPoints), projection_mat, modelview_mat, static_cast<vtkFloatArray*>(outPoints));
 }
 
-extern "C" bool vtkProjectedTetrahedraMapper__IsSupported__0(void* self, void* arg0) {
+extern "C" bool vtkProjectedTetrahedraMapper__IsSupported__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProjectedTetrahedraMapper*>(self)->IsSupported(static_cast<vtkRenderWindow*>(arg0));
 }

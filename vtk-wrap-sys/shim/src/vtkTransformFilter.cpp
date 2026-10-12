@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTransformFilter__vtk_wrap_new() { return static_cast<void*>(vtkTransformFilter::New()); }
+extern "C" void* vtkTransformFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTransformFilter::New()); }
 
-extern "C" int32_t vtkTransformFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTransformFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkTransformFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTransformFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTransformFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTransformFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkTransformFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTransformFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTransformFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTransformFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTransformFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTransformFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTransformFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTransformFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkTransformFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkTransformFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFilter*>(self)->GetMTime();
 }
 
-extern "C" void vtkTransformFilter__SetTransform__0(void* self, void* arg0) {
+extern "C" void vtkTransformFilter__SetTransform__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTransformFilter*>(self)->SetTransform(static_cast<vtkAbstractTransform*>(arg0));
 }
 
-extern "C" void* vtkTransformFilter__GetTransform__0(void* self) {
+extern "C" void* vtkTransformFilter__GetTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTransformFilter*>(self)->GetTransform());
 }
 
-extern "C" void vtkTransformFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkTransformFilter__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTransformFilter*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkTransformFilter__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkTransformFilter__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFilter*>(self)->GetOutputPointsPrecision();
 }
 
-extern "C" void vtkTransformFilter__SetTransformAllInputVectors__0(void* self, bool _arg) {
+extern "C" void vtkTransformFilter__SetTransformAllInputVectors__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTransformFilter*>(self)->SetTransformAllInputVectors(_arg);
 }
 
-extern "C" bool vtkTransformFilter__GetTransformAllInputVectors__0(void* self) {
+extern "C" bool vtkTransformFilter__GetTransformAllInputVectors__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTransformFilter*>(self)->GetTransformAllInputVectors();
 }
 
-extern "C" void vtkTransformFilter__TransformAllInputVectorsOn__0(void* self) {
+extern "C" void vtkTransformFilter__TransformAllInputVectorsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformFilter*>(self)->TransformAllInputVectorsOn();
 }
 
-extern "C" void vtkTransformFilter__TransformAllInputVectorsOff__0(void* self) {
+extern "C" void vtkTransformFilter__TransformAllInputVectorsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTransformFilter*>(self)->TransformAllInputVectorsOff();
 }

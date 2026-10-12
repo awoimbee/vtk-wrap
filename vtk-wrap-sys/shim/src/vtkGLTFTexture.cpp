@@ -5,32 +5,35 @@
 #include "vtkTexture.h"
 #include <string>
 
-extern "C" void* vtkGLTFTexture__vtk_wrap_new() { return static_cast<void*>(vtkGLTFTexture::New()); }
+extern "C" void* vtkGLTFTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGLTFTexture::New()); }
 
-extern "C" int32_t vtkGLTFTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLTFTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLTFTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLTFTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLTFTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLTFTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLTFTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLTFTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLTFTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLTFTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLTFTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLTFTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLTFTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLTFTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLTFTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkGLTFTexture__GetVTKTexture__0(void* self) {
+extern "C" void* vtkGLTFTexture__GetVTKTexture__0(void* self) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkGLTFTexture*>(self)->GetVTKTexture()).GetPointer());
+  auto result = static_cast<vtkGLTFTexture*>(self)->GetVTKTexture();
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 

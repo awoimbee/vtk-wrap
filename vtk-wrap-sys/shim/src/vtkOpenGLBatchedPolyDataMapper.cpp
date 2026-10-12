@@ -7,61 +7,61 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkOpenGLBatchedPolyDataMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLBatchedPolyDataMapper::New()); }
+extern "C" void* vtkOpenGLBatchedPolyDataMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLBatchedPolyDataMapper::New()); }
 
-extern "C" int32_t vtkOpenGLBatchedPolyDataMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLBatchedPolyDataMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLBatchedPolyDataMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLBatchedPolyDataMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLBatchedPolyDataMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLBatchedPolyDataMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLBatchedPolyDataMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLBatchedPolyDataMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLBatchedPolyDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLBatchedPolyDataMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLBatchedPolyDataMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLBatchedPolyDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLBatchedPolyDataMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__ClearBatchElements__0(void* self) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__ClearBatchElements__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->ClearBatchElements();
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__SetParent__0(void* self, void* parent) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__SetParent__0(void* self, void* parent) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->SetParent(static_cast<vtkCompositePolyDataMapper*>(parent));
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__RenderPieceStart__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__RenderPieceStart__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->RenderPieceStart(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__RenderPiece__0(void* self, void* renderer, void* actor) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__RenderPiece__0(void* self, void* renderer, void* actor) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->RenderPiece(static_cast<vtkRenderer*>(renderer), static_cast<vtkActor*>(actor));
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__UnmarkBatchElements__0(void* self) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__UnmarkBatchElements__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->UnmarkBatchElements();
 }
 
-extern "C" void vtkOpenGLBatchedPolyDataMapper__ClearUnmarkedBatchElements__0(void* self) {
+extern "C" void vtkOpenGLBatchedPolyDataMapper__ClearUnmarkedBatchElements__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->ClearUnmarkedBatchElements();
 }
 
-extern "C" unsigned long vtkOpenGLBatchedPolyDataMapper__GetMTime__0(void* self) {
+extern "C" unsigned long vtkOpenGLBatchedPolyDataMapper__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLBatchedPolyDataMapper*>(self)->GetMTime();
 }

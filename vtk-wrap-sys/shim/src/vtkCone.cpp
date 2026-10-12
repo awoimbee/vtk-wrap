@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCone__vtk_wrap_new() { return static_cast<void*>(vtkCone::New()); }
+extern "C" void* vtkCone__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCone::New()); }
 
-extern "C" int32_t vtkCone__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCone__IsTypeOf__0(const char* type_) noexcept {
   return vtkCone::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCone__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCone__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCone__SafeDownCast__0(void* o) {
+extern "C" void* vtkCone__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCone::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCone__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCone__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCone::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCone__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCone__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkCone__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkCone__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkCone__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkCone__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" void vtkCone__SetAngle__0(void* self, double _arg) {
+extern "C" void vtkCone__SetAngle__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetAngle(_arg);
 }
 
-extern "C" double vtkCone__GetAngleMinValue__0(void* self) {
+extern "C" double vtkCone__GetAngleMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->GetAngleMinValue();
 }
 
-extern "C" double vtkCone__GetAngleMaxValue__0(void* self) {
+extern "C" double vtkCone__GetAngleMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->GetAngleMaxValue();
 }
 
-extern "C" double vtkCone__GetAngle__0(void* self) {
+extern "C" double vtkCone__GetAngle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->GetAngle();
 }
 
-extern "C" void vtkCone__SetOrigin__0(void* self, double x, double y, double z) {
+extern "C" void vtkCone__SetOrigin__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetOrigin(x, y, z);
 }
 
-extern "C" void vtkCone__SetOrigin__1(void* self, const double* xyz) {
+extern "C" void vtkCone__SetOrigin__1(void* self, const double* xyz) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetOrigin(xyz);
 }
 
-extern "C" void vtkCone__SetAxis__0(void* self, double x, double y, double z) {
+extern "C" void vtkCone__SetAxis__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetAxis(x, y, z);
 }
 
-extern "C" void vtkCone__SetAxis__1(void* self, double* axis) {
+extern "C" void vtkCone__SetAxis__1(void* self, double* axis) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetAxis(axis);
 }
 
-extern "C" void vtkCone__SetIsDoubleCone__0(void* self, bool _arg) {
+extern "C" void vtkCone__SetIsDoubleCone__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->SetIsDoubleCone(_arg);
 }
 
-extern "C" bool vtkCone__GetIsDoubleCone__0(void* self) {
+extern "C" bool vtkCone__GetIsDoubleCone__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCone*>(self)->GetIsDoubleCone();
 }
 
-extern "C" void vtkCone__IsDoubleConeOn__0(void* self) {
+extern "C" void vtkCone__IsDoubleConeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->IsDoubleConeOn();
 }
 
-extern "C" void vtkCone__IsDoubleConeOff__0(void* self) {
+extern "C" void vtkCone__IsDoubleConeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCone*>(self)->IsDoubleConeOff();
 }

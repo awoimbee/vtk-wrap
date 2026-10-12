@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSmoothErrorMetric__vtk_wrap_new() { return static_cast<void*>(vtkSmoothErrorMetric::New()); }
+extern "C" void* vtkSmoothErrorMetric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSmoothErrorMetric::New()); }
 
-extern "C" int32_t vtkSmoothErrorMetric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSmoothErrorMetric__IsTypeOf__0(const char* type_) noexcept {
   return vtkSmoothErrorMetric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSmoothErrorMetric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSmoothErrorMetric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSmoothErrorMetric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSmoothErrorMetric__SafeDownCast__0(void* o) {
+extern "C" void* vtkSmoothErrorMetric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSmoothErrorMetric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSmoothErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSmoothErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSmoothErrorMetric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSmoothErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSmoothErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSmoothErrorMetric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkSmoothErrorMetric__GetAngleTolerance__0(void* self) {
+extern "C" double vtkSmoothErrorMetric__GetAngleTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSmoothErrorMetric*>(self)->GetAngleTolerance();
 }
 
-extern "C" void vtkSmoothErrorMetric__SetAngleTolerance__0(void* self, double value) {
+extern "C" void vtkSmoothErrorMetric__SetAngleTolerance__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkSmoothErrorMetric*>(self)->SetAngleTolerance(value);
 }

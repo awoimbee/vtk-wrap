@@ -10,116 +10,116 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkCenteredSliderRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkCenteredSliderRepresentation::New()); }
+extern "C" void* vtkCenteredSliderRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCenteredSliderRepresentation::New()); }
 
-extern "C" int32_t vtkCenteredSliderRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCenteredSliderRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkCenteredSliderRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCenteredSliderRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCenteredSliderRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkCenteredSliderRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCenteredSliderRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCenteredSliderRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCenteredSliderRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCenteredSliderRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCenteredSliderRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCenteredSliderRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetPoint1Coordinate__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetPoint1Coordinate__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetPoint1Coordinate());
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetPoint2Coordinate__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetPoint2Coordinate__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetPoint2Coordinate());
 }
 
-extern "C" void vtkCenteredSliderRepresentation__SetTitleText__0(void* self, const char* arg0) {
+extern "C" void vtkCenteredSliderRepresentation__SetTitleText__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->SetTitleText(arg0);
 }
 
-extern "C" const char* vtkCenteredSliderRepresentation__GetTitleText__0(void* self) {
+extern "C" const char* vtkCenteredSliderRepresentation__GetTitleText__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->GetTitleText();
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetTubeProperty__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetTubeProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetTubeProperty());
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetSliderProperty__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetSliderProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetSliderProperty());
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetSelectedProperty__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetSelectedProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetSelectedProperty());
 }
 
-extern "C" void* vtkCenteredSliderRepresentation__GetLabelProperty__0(void* self) {
+extern "C" void* vtkCenteredSliderRepresentation__GetLabelProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCenteredSliderRepresentation*>(self)->GetLabelProperty());
 }
 
-extern "C" void vtkCenteredSliderRepresentation__PlaceWidget__0(void* self, double* bounds) {
+extern "C" void vtkCenteredSliderRepresentation__PlaceWidget__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->PlaceWidget(bounds);
 }
 
-extern "C" void vtkCenteredSliderRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkCenteredSliderRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkCenteredSliderRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCenteredSliderRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->StartWidgetInteraction(eventPos);
 }
 
-extern "C" int32_t vtkCenteredSliderRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkCenteredSliderRepresentation__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkCenteredSliderRepresentation__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkCenteredSliderRepresentation__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" void vtkCenteredSliderRepresentation__Highlight__0(void* self, int32_t arg0) {
+extern "C" void vtkCenteredSliderRepresentation__Highlight__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->Highlight(arg0);
 }
 
-extern "C" void vtkCenteredSliderRepresentation__GetActors__0(void* self, void* propCollections) {
+extern "C" void vtkCenteredSliderRepresentation__GetActors__0(void* self, void* propCollections) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(propCollections));
 }
 
-extern "C" void vtkCenteredSliderRepresentation__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkCenteredSliderRepresentation__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkCenteredSliderRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }
 
-extern "C" int32_t vtkCenteredSliderRepresentation__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkCenteredSliderRepresentation__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkCenteredSliderRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkCenteredSliderRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkCenteredSliderRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }

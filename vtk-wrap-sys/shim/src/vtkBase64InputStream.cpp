@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkBase64InputStream__vtk_wrap_new() { return static_cast<void*>(vtkBase64InputStream::New()); }
+extern "C" void* vtkBase64InputStream__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBase64InputStream::New()); }
 
-extern "C" int32_t vtkBase64InputStream__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBase64InputStream__IsTypeOf__0(const char* type_) noexcept {
   return vtkBase64InputStream::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBase64InputStream__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBase64InputStream__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBase64InputStream*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBase64InputStream__SafeDownCast__0(void* o) {
+extern "C" void* vtkBase64InputStream__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBase64InputStream::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBase64InputStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBase64InputStream__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBase64InputStream::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBase64InputStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBase64InputStream__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBase64InputStream*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBase64InputStream__StartReading__0(void* self) {
+extern "C" void vtkBase64InputStream__StartReading__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBase64InputStream*>(self)->StartReading();
 }
 
-extern "C" int32_t vtkBase64InputStream__Seek__0(void* self, int64_t offset) {
+extern "C" int32_t vtkBase64InputStream__Seek__0(void* self, int64_t offset) noexcept {
   (void)self;
   return static_cast<vtkBase64InputStream*>(self)->Seek(offset);
 }
 
-extern "C" size_t vtkBase64InputStream__Read__0(void* self, void* data, size_t length) {
+extern "C" size_t vtkBase64InputStream__Read__0(void* self, void* data, size_t length) noexcept {
   (void)self;
   return static_cast<vtkBase64InputStream*>(self)->Read(data, length);
 }
 
-extern "C" void vtkBase64InputStream__EndReading__0(void* self) {
+extern "C" void vtkBase64InputStream__EndReading__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBase64InputStream*>(self)->EndReading();
 }

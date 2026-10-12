@@ -6,71 +6,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageStencilSource__vtk_wrap_new() { return static_cast<void*>(vtkImageStencilSource::New()); }
+extern "C" void* vtkImageStencilSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageStencilSource::New()); }
 
-extern "C" int32_t vtkImageStencilSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageStencilSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageStencilSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageStencilSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageStencilSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageStencilSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageStencilSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageStencilSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageStencilSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageStencilSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageStencilSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageStencilSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageStencilSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageStencilSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageStencilSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageStencilSource__SetInformationInput__0(void* self, void* arg0) {
+extern "C" void vtkImageStencilSource__SetInformationInput__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetInformationInput(static_cast<vtkImageData*>(arg0));
 }
 
-extern "C" void* vtkImageStencilSource__GetInformationInput__0(void* self) {
+extern "C" void* vtkImageStencilSource__GetInformationInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageStencilSource*>(self)->GetInformationInput());
 }
 
-extern "C" void vtkImageStencilSource__SetOutputOrigin__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkImageStencilSource__SetOutputOrigin__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputOrigin(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkImageStencilSource__SetOutputOrigin__1(void* self, const double* _arg) {
+extern "C" void vtkImageStencilSource__SetOutputOrigin__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputOrigin(_arg);
 }
 
-extern "C" void vtkImageStencilSource__SetOutputSpacing__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkImageStencilSource__SetOutputSpacing__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputSpacing(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkImageStencilSource__SetOutputSpacing__1(void* self, const double* _arg) {
+extern "C" void vtkImageStencilSource__SetOutputSpacing__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputSpacing(_arg);
 }
 
-extern "C" void vtkImageStencilSource__SetOutputWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) {
+extern "C" void vtkImageStencilSource__SetOutputWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputWholeExtent(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkImageStencilSource__SetOutputWholeExtent__1(void* self, const int32_t* _arg) {
+extern "C" void vtkImageStencilSource__SetOutputWholeExtent__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->SetOutputWholeExtent(_arg);
 }
 
-extern "C" void vtkImageStencilSource__ReportReferences__0(void* self, void* arg0) {
+extern "C" void vtkImageStencilSource__ReportReferences__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageStencilSource*>(self)->ReportReferences(static_cast<vtkGarbageCollector*>(arg0));
 }

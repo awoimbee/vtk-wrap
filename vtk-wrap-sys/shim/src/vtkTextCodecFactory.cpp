@@ -5,39 +5,39 @@
 #include "vtkTextCodec.h"
 #include <string>
 
-extern "C" void* vtkTextCodecFactory__vtk_wrap_new() { return static_cast<void*>(vtkTextCodecFactory::New()); }
+extern "C" void* vtkTextCodecFactory__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTextCodecFactory::New()); }
 
-extern "C" int32_t vtkTextCodecFactory__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTextCodecFactory__IsTypeOf__0(const char* type_) noexcept {
   return vtkTextCodecFactory::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTextCodecFactory__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTextCodecFactory__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextCodecFactory*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTextCodecFactory__SafeDownCast__0(void* o) {
+extern "C" void* vtkTextCodecFactory__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTextCodecFactory::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTextCodecFactory__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTextCodecFactory__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTextCodecFactory::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTextCodecFactory__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTextCodecFactory__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTextCodecFactory*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTextCodecFactory__UnRegisterAllCreateCallbacks__0() {
+extern "C" void vtkTextCodecFactory__UnRegisterAllCreateCallbacks__0() noexcept {
   vtkTextCodecFactory::UnRegisterAllCreateCallbacks();
 }
 
-extern "C" void* vtkTextCodecFactory__CodecForName__0(const char* CodecName) {
+extern "C" void* vtkTextCodecFactory__CodecForName__0(const char* CodecName) noexcept {
   return static_cast<void*>(vtkTextCodecFactory::CodecForName(CodecName));
 }
 
-extern "C" void vtkTextCodecFactory__Initialize__0() {
+extern "C" void vtkTextCodecFactory__Initialize__0() noexcept {
   vtkTextCodecFactory::Initialize();
 }
 

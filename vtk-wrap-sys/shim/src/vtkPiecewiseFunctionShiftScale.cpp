@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPiecewiseFunctionShiftScale__vtk_wrap_new() { return static_cast<void*>(vtkPiecewiseFunctionShiftScale::New()); }
+extern "C" void* vtkPiecewiseFunctionShiftScale__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPiecewiseFunctionShiftScale::New()); }
 
-extern "C" int32_t vtkPiecewiseFunctionShiftScale__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPiecewiseFunctionShiftScale__IsTypeOf__0(const char* type_) noexcept {
   return vtkPiecewiseFunctionShiftScale::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPiecewiseFunctionShiftScale__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPiecewiseFunctionShiftScale__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPiecewiseFunctionShiftScale__SafeDownCast__0(void* o) {
+extern "C" void* vtkPiecewiseFunctionShiftScale__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPiecewiseFunctionShiftScale::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPiecewiseFunctionShiftScale__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPiecewiseFunctionShiftScale__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPiecewiseFunctionShiftScale::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPiecewiseFunctionShiftScale__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPiecewiseFunctionShiftScale__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPiecewiseFunctionShiftScale__SetPositionShift__0(void* self, double _arg) {
+extern "C" void vtkPiecewiseFunctionShiftScale__SetPositionShift__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionShiftScale*>(self)->SetPositionShift(_arg);
 }
 
-extern "C" void vtkPiecewiseFunctionShiftScale__SetPositionScale__0(void* self, double _arg) {
+extern "C" void vtkPiecewiseFunctionShiftScale__SetPositionScale__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionShiftScale*>(self)->SetPositionScale(_arg);
 }
 
-extern "C" void vtkPiecewiseFunctionShiftScale__SetValueShift__0(void* self, double _arg) {
+extern "C" void vtkPiecewiseFunctionShiftScale__SetValueShift__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionShiftScale*>(self)->SetValueShift(_arg);
 }
 
-extern "C" void vtkPiecewiseFunctionShiftScale__SetValueScale__0(void* self, double _arg) {
+extern "C" void vtkPiecewiseFunctionShiftScale__SetValueScale__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionShiftScale*>(self)->SetValueScale(_arg);
 }
 
-extern "C" double vtkPiecewiseFunctionShiftScale__GetPositionShift__0(void* self) {
+extern "C" double vtkPiecewiseFunctionShiftScale__GetPositionShift__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->GetPositionShift();
 }
 
-extern "C" double vtkPiecewiseFunctionShiftScale__GetPositionScale__0(void* self) {
+extern "C" double vtkPiecewiseFunctionShiftScale__GetPositionScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->GetPositionScale();
 }
 
-extern "C" double vtkPiecewiseFunctionShiftScale__GetValueShift__0(void* self) {
+extern "C" double vtkPiecewiseFunctionShiftScale__GetValueShift__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->GetValueShift();
 }
 
-extern "C" double vtkPiecewiseFunctionShiftScale__GetValueScale__0(void* self) {
+extern "C" double vtkPiecewiseFunctionShiftScale__GetValueScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionShiftScale*>(self)->GetValueScale();
 }

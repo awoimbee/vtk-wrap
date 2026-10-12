@@ -11,91 +11,91 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" void* vtkBiQuadraticQuad__vtk_wrap_new() { return static_cast<void*>(vtkBiQuadraticQuad::New()); }
+extern "C" void* vtkBiQuadraticQuad__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBiQuadraticQuad::New()); }
 
-extern "C" int32_t vtkBiQuadraticQuad__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBiQuadraticQuad__IsTypeOf__0(const char* type_) noexcept {
   return vtkBiQuadraticQuad::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBiQuadraticQuad__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBiQuadraticQuad__SafeDownCast__0(void* o) {
+extern "C" void* vtkBiQuadraticQuad__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBiQuadraticQuad::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBiQuadraticQuad__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBiQuadraticQuad__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBiQuadraticQuad::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBiQuadraticQuad__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBiQuadraticQuad__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__GetCellType__0(void* self) {
+extern "C" int32_t vtkBiQuadraticQuad__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkBiQuadraticQuad__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkBiQuadraticQuad__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkBiQuadraticQuad__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkBiQuadraticQuad__GetEdge__0(void* self, int32_t arg0) {
+extern "C" void* vtkBiQuadraticQuad__GetEdge__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBiQuadraticQuad*>(self)->GetEdge(arg0));
 }
 
-extern "C" void* vtkBiQuadraticQuad__GetFace__0(void* self, int32_t arg0) {
+extern "C" void* vtkBiQuadraticQuad__GetFace__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBiQuadraticQuad*>(self)->GetFace(arg0));
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkBiQuadraticQuad__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkBiQuadraticQuad__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" void vtkBiQuadraticQuad__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkBiQuadraticQuad__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkBiQuadraticQuad*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkBiQuadraticQuad__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkBiQuadraticQuad__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkBiQuadraticQuad*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkBiQuadraticQuad__GetParametricCenter__0(void* self, double* pcoords) {
+extern "C" int32_t vtkBiQuadraticQuad__GetParametricCenter__0(void* self, double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkBiQuadraticQuad*>(self)->GetParametricCenter(pcoords);
 }
 
-extern "C" void vtkBiQuadraticQuad__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) {
+extern "C" void vtkBiQuadraticQuad__InterpolateFunctions__0(void* self, const double* pcoords, double* weights) noexcept {
   (void)self;
   static_cast<vtkBiQuadraticQuad*>(self)->InterpolateFunctions(pcoords, weights);
 }
 
-extern "C" void vtkBiQuadraticQuad__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) {
+extern "C" void vtkBiQuadraticQuad__InterpolateDerivs__0(void* self, const double* pcoords, double* derivs) noexcept {
   (void)self;
   static_cast<vtkBiQuadraticQuad*>(self)->InterpolateDerivs(pcoords, derivs);
 }

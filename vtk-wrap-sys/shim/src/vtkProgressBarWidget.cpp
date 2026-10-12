@@ -5,36 +5,36 @@
 #include "vtkProgressBarRepresentation.h"
 #include <string>
 
-extern "C" void* vtkProgressBarWidget__vtk_wrap_new() { return static_cast<void*>(vtkProgressBarWidget::New()); }
+extern "C" void* vtkProgressBarWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProgressBarWidget::New()); }
 
-extern "C" int32_t vtkProgressBarWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProgressBarWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkProgressBarWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProgressBarWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProgressBarWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgressBarWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProgressBarWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkProgressBarWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProgressBarWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProgressBarWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProgressBarWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProgressBarWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProgressBarWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProgressBarWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgressBarWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProgressBarWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkProgressBarWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkProgressBarWidget*>(self)->SetRepresentation(static_cast<vtkProgressBarRepresentation*>(r));
 }
 
-extern "C" void vtkProgressBarWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkProgressBarWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarWidget*>(self)->CreateDefaultRepresentation();
 }

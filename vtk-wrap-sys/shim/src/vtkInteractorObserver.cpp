@@ -7,177 +7,177 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" int32_t vtkInteractorObserver__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInteractorObserver__IsTypeOf__0(const char* type_) noexcept {
   return vtkInteractorObserver::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInteractorObserver__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInteractorObserver__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInteractorObserver__SafeDownCast__0(void* o) {
+extern "C" void* vtkInteractorObserver__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInteractorObserver::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInteractorObserver__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInteractorObserver__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInteractorObserver::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInteractorObserver__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInteractorObserver__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInteractorObserver__SetInteractor__0(void* self, void* iren) {
+extern "C" void vtkInteractorObserver__SetInteractor__0(void* self, void* iren) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetInteractor(static_cast<vtkRenderWindowInteractor*>(iren));
 }
 
-extern "C" void* vtkInteractorObserver__GetInteractor__0(void* self) {
+extern "C" void* vtkInteractorObserver__GetInteractor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInteractorObserver*>(self)->GetInteractor());
 }
 
-extern "C" void vtkInteractorObserver__SetEnabled__0(void* self, int32_t arg0) {
+extern "C" void vtkInteractorObserver__SetEnabled__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetEnabled(arg0);
 }
 
-extern "C" int32_t vtkInteractorObserver__GetEnabled__0(void* self) {
+extern "C" int32_t vtkInteractorObserver__GetEnabled__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetEnabled();
 }
 
-extern "C" void vtkInteractorObserver__EnabledOn__0(void* self) {
+extern "C" void vtkInteractorObserver__EnabledOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->EnabledOn();
 }
 
-extern "C" void vtkInteractorObserver__EnabledOff__0(void* self) {
+extern "C" void vtkInteractorObserver__EnabledOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->EnabledOff();
 }
 
-extern "C" void vtkInteractorObserver__On__0(void* self) {
+extern "C" void vtkInteractorObserver__On__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->On();
 }
 
-extern "C" void vtkInteractorObserver__Off__0(void* self) {
+extern "C" void vtkInteractorObserver__Off__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->Off();
 }
 
-extern "C" void vtkInteractorObserver__SetPriority__0(void* self, float _arg) {
+extern "C" void vtkInteractorObserver__SetPriority__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetPriority(_arg);
 }
 
-extern "C" float vtkInteractorObserver__GetPriorityMinValue__0(void* self) {
+extern "C" float vtkInteractorObserver__GetPriorityMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetPriorityMinValue();
 }
 
-extern "C" float vtkInteractorObserver__GetPriorityMaxValue__0(void* self) {
+extern "C" float vtkInteractorObserver__GetPriorityMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetPriorityMaxValue();
 }
 
-extern "C" float vtkInteractorObserver__GetPriority__0(void* self) {
+extern "C" float vtkInteractorObserver__GetPriority__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetPriority();
 }
 
-extern "C" void vtkInteractorObserver__PickingManagedOn__0(void* self) {
+extern "C" void vtkInteractorObserver__PickingManagedOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->PickingManagedOn();
 }
 
-extern "C" void vtkInteractorObserver__PickingManagedOff__0(void* self) {
+extern "C" void vtkInteractorObserver__PickingManagedOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->PickingManagedOff();
 }
 
-extern "C" void vtkInteractorObserver__SetPickingManaged__0(void* self, bool managed) {
+extern "C" void vtkInteractorObserver__SetPickingManaged__0(void* self, bool managed) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetPickingManaged(managed);
 }
 
-extern "C" bool vtkInteractorObserver__GetPickingManaged__0(void* self) {
+extern "C" bool vtkInteractorObserver__GetPickingManaged__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetPickingManaged();
 }
 
-extern "C" void vtkInteractorObserver__SetKeyPressActivation__0(void* self, int32_t _arg) {
+extern "C" void vtkInteractorObserver__SetKeyPressActivation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetKeyPressActivation(_arg);
 }
 
-extern "C" int32_t vtkInteractorObserver__GetKeyPressActivation__0(void* self) {
+extern "C" int32_t vtkInteractorObserver__GetKeyPressActivation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetKeyPressActivation();
 }
 
-extern "C" void vtkInteractorObserver__KeyPressActivationOn__0(void* self) {
+extern "C" void vtkInteractorObserver__KeyPressActivationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->KeyPressActivationOn();
 }
 
-extern "C" void vtkInteractorObserver__KeyPressActivationOff__0(void* self) {
+extern "C" void vtkInteractorObserver__KeyPressActivationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->KeyPressActivationOff();
 }
 
-extern "C" void vtkInteractorObserver__SetKeyPressActivationValue__0(void* self, char _arg) {
+extern "C" void vtkInteractorObserver__SetKeyPressActivationValue__0(void* self, char _arg) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetKeyPressActivationValue(_arg);
 }
 
-extern "C" char vtkInteractorObserver__GetKeyPressActivationValue__0(void* self) {
+extern "C" char vtkInteractorObserver__GetKeyPressActivationValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInteractorObserver*>(self)->GetKeyPressActivationValue();
 }
 
-extern "C" void* vtkInteractorObserver__GetDefaultRenderer__0(void* self) {
+extern "C" void* vtkInteractorObserver__GetDefaultRenderer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInteractorObserver*>(self)->GetDefaultRenderer());
 }
 
-extern "C" void vtkInteractorObserver__SetDefaultRenderer__0(void* self, void* arg0) {
+extern "C" void vtkInteractorObserver__SetDefaultRenderer__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetDefaultRenderer(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void* vtkInteractorObserver__GetCurrentRenderer__0(void* self) {
+extern "C" void* vtkInteractorObserver__GetCurrentRenderer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInteractorObserver*>(self)->GetCurrentRenderer());
 }
 
-extern "C" void vtkInteractorObserver__SetCurrentRenderer__0(void* self, void* arg0) {
+extern "C" void vtkInteractorObserver__SetCurrentRenderer__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->SetCurrentRenderer(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void vtkInteractorObserver__OnChar__0(void* self) {
+extern "C" void vtkInteractorObserver__OnChar__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->OnChar();
 }
 
-extern "C" void vtkInteractorObserver__ComputeDisplayToWorld__0(void* ren, double x, double y, double z, double* worldPt) {
+extern "C" void vtkInteractorObserver__ComputeDisplayToWorld__0(void* ren, double x, double y, double z, double* worldPt) noexcept {
   vtkInteractorObserver::ComputeDisplayToWorld(static_cast<vtkRenderer*>(ren), x, y, z, worldPt);
 }
 
-extern "C" void vtkInteractorObserver__ComputeWorldToDisplay__0(void* ren, double x, double y, double z, double* displayPt) {
+extern "C" void vtkInteractorObserver__ComputeWorldToDisplay__0(void* ren, double x, double y, double z, double* displayPt) noexcept {
   vtkInteractorObserver::ComputeWorldToDisplay(static_cast<vtkRenderer*>(ren), x, y, z, displayPt);
 }
 
-extern "C" void vtkInteractorObserver__GrabFocus__0(void* self, void* mouseEvents, void* keypressEvents) {
+extern "C" void vtkInteractorObserver__GrabFocus__0(void* self, void* mouseEvents, void* keypressEvents) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->GrabFocus(static_cast<vtkCommand*>(mouseEvents), static_cast<vtkCommand*>(keypressEvents));
 }
 
-extern "C" void vtkInteractorObserver__ReleaseFocus__0(void* self) {
+extern "C" void vtkInteractorObserver__ReleaseFocus__0(void* self) noexcept {
   (void)self;
   static_cast<vtkInteractorObserver*>(self)->ReleaseFocus();
 }

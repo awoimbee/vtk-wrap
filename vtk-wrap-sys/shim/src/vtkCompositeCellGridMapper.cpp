@@ -8,86 +8,86 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkCompositeCellGridMapper__vtk_wrap_new() { return static_cast<void*>(vtkCompositeCellGridMapper::New()); }
+extern "C" void* vtkCompositeCellGridMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCompositeCellGridMapper::New()); }
 
-extern "C" int32_t vtkCompositeCellGridMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCompositeCellGridMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkCompositeCellGridMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCompositeCellGridMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCompositeCellGridMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeCellGridMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCompositeCellGridMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkCompositeCellGridMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCompositeCellGridMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCompositeCellGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCompositeCellGridMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCompositeCellGridMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCompositeCellGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCompositeCellGridMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCompositeCellGridMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCompositeCellGridMapper__Render__0(void* self, void* ren, void* a) {
+extern "C" void vtkCompositeCellGridMapper__Render__0(void* self, void* ren, void* a) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkActor*>(a));
 }
 
-extern "C" void vtkCompositeCellGridMapper__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkCompositeCellGridMapper__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->GetBounds(bounds);
 }
 
-extern "C" void vtkCompositeCellGridMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkCompositeCellGridMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" bool vtkCompositeCellGridMapper__HasOpaqueGeometry__0(void* self) {
+extern "C" bool vtkCompositeCellGridMapper__HasOpaqueGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeCellGridMapper*>(self)->HasOpaqueGeometry();
 }
 
-extern "C" bool vtkCompositeCellGridMapper__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" bool vtkCompositeCellGridMapper__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeCellGridMapper*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkCompositeCellGridMapper__SetProcessIdArrayName__0(void* self, const char* arg0) {
+extern "C" void vtkCompositeCellGridMapper__SetProcessIdArrayName__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->SetProcessIdArrayName(arg0);
 }
 
-extern "C" void vtkCompositeCellGridMapper__SetCompositeIdArrayName__0(void* self, const char* arg0) {
+extern "C" void vtkCompositeCellGridMapper__SetCompositeIdArrayName__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->SetCompositeIdArrayName(arg0);
 }
 
-extern "C" void vtkCompositeCellGridMapper__SetPointIdArrayName__0(void* self, const char* arg0) {
+extern "C" void vtkCompositeCellGridMapper__SetPointIdArrayName__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->SetPointIdArrayName(arg0);
 }
 
-extern "C" void vtkCompositeCellGridMapper__SetCellIdArrayName__0(void* self, const char* arg0) {
+extern "C" void vtkCompositeCellGridMapper__SetCellIdArrayName__0(void* self, const char* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->SetCellIdArrayName(arg0);
 }
 
-extern "C" void* vtkCompositeCellGridMapper__GetCompositeDataDisplayAttributes__0(void* self) {
+extern "C" void* vtkCompositeCellGridMapper__GetCompositeDataDisplayAttributes__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkCompositeCellGridMapper*>(self)->GetCompositeDataDisplayAttributes());
 }
 
-extern "C" void vtkCompositeCellGridMapper__SetCompositeDataDisplayAttributes__0(void* self, void* arg0) {
+extern "C" void vtkCompositeCellGridMapper__SetCompositeDataDisplayAttributes__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkCompositeCellGridMapper*>(self)->SetCompositeDataDisplayAttributes(static_cast<vtkCompositeDataDisplayAttributes*>(arg0));
 }
 
-extern "C" unsigned long vtkCompositeCellGridMapper__GetMTime__0(void* self) {
+extern "C" unsigned long vtkCompositeCellGridMapper__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCompositeCellGridMapper*>(self)->GetMTime();
 }

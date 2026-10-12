@@ -6,76 +6,76 @@
 #include "vtkResourceStream.h"
 #include <string>
 
-extern "C" void* vtkBMPReader__vtk_wrap_new() { return static_cast<void*>(vtkBMPReader::New()); }
+extern "C" void* vtkBMPReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBMPReader::New()); }
 
-extern "C" int32_t vtkBMPReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBMPReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkBMPReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBMPReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBMPReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBMPReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkBMPReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBMPReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBMPReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBMPReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBMPReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBMPReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBMPReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkBMPReader__GetDepth__0(void* self) {
+extern "C" int32_t vtkBMPReader__GetDepth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->GetDepth();
 }
 
-extern "C" int32_t vtkBMPReader__CanReadFile__0(void* self, const char* fname) {
+extern "C" int32_t vtkBMPReader__CanReadFile__0(void* self, const char* fname) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->CanReadFile(fname);
 }
 
-extern "C" int32_t vtkBMPReader__CanReadFile__1(void* self, void* stream) {
+extern "C" int32_t vtkBMPReader__CanReadFile__1(void* self, void* stream) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->CanReadFile(static_cast<vtkResourceStream*>(stream));
 }
 
-extern "C" const char* vtkBMPReader__GetFileExtensions__0(void* self) {
+extern "C" const char* vtkBMPReader__GetFileExtensions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->GetFileExtensions();
 }
 
-extern "C" const char* vtkBMPReader__GetDescriptiveName__0(void* self) {
+extern "C" const char* vtkBMPReader__GetDescriptiveName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->GetDescriptiveName();
 }
 
-extern "C" void vtkBMPReader__SetAllow8BitBMP__0(void* self, int32_t _arg) {
+extern "C" void vtkBMPReader__SetAllow8BitBMP__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBMPReader*>(self)->SetAllow8BitBMP(_arg);
 }
 
-extern "C" int32_t vtkBMPReader__GetAllow8BitBMP__0(void* self) {
+extern "C" int32_t vtkBMPReader__GetAllow8BitBMP__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBMPReader*>(self)->GetAllow8BitBMP();
 }
 
-extern "C" void vtkBMPReader__Allow8BitBMPOn__0(void* self) {
+extern "C" void vtkBMPReader__Allow8BitBMPOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBMPReader*>(self)->Allow8BitBMPOn();
 }
 
-extern "C" void vtkBMPReader__Allow8BitBMPOff__0(void* self) {
+extern "C" void vtkBMPReader__Allow8BitBMPOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBMPReader*>(self)->Allow8BitBMPOff();
 }
 
-extern "C" void* vtkBMPReader__GetLookupTable__0(void* self) {
+extern "C" void* vtkBMPReader__GetLookupTable__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBMPReader*>(self)->GetLookupTable());
 }

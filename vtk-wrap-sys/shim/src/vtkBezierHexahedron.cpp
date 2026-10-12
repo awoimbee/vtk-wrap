@@ -10,66 +10,66 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" void* vtkBezierHexahedron__vtk_wrap_new() { return static_cast<void*>(vtkBezierHexahedron::New()); }
+extern "C" void* vtkBezierHexahedron__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBezierHexahedron::New()); }
 
-extern "C" int32_t vtkBezierHexahedron__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBezierHexahedron__IsTypeOf__0(const char* type_) noexcept {
   return vtkBezierHexahedron::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBezierHexahedron__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBezierHexahedron__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBezierHexahedron*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBezierHexahedron__SafeDownCast__0(void* o) {
+extern "C" void* vtkBezierHexahedron__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBezierHexahedron::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBezierHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBezierHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBezierHexahedron::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBezierHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBezierHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBezierHexahedron*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkBezierHexahedron__GetCellType__0(void* self) {
+extern "C" int32_t vtkBezierHexahedron__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBezierHexahedron*>(self)->GetCellType();
 }
 
-extern "C" void* vtkBezierHexahedron__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkBezierHexahedron__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkBezierHexahedron__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkBezierHexahedron__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetFace(faceId));
 }
 
-extern "C" void vtkBezierHexahedron__SetRationalWeightsFromPointData__0(void* self, void* point_data, int64_t numPts) {
+extern "C" void vtkBezierHexahedron__SetRationalWeightsFromPointData__0(void* self, void* point_data, int64_t numPts) noexcept {
   (void)self;
   static_cast<vtkBezierHexahedron*>(self)->SetRationalWeightsFromPointData(static_cast<vtkPointData*>(point_data), numPts);
 }
 
-extern "C" void* vtkBezierHexahedron__GetRationalWeights__0(void* self) {
+extern "C" void* vtkBezierHexahedron__GetRationalWeights__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetRationalWeights());
 }
 
-extern "C" void* vtkBezierHexahedron__GetEdgeCell__0(void* self) {
+extern "C" void* vtkBezierHexahedron__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetEdgeCell());
 }
 
-extern "C" void* vtkBezierHexahedron__GetFaceCell__0(void* self) {
+extern "C" void* vtkBezierHexahedron__GetFaceCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetFaceCell());
 }
 
-extern "C" void* vtkBezierHexahedron__GetInterpolation__0(void* self) {
+extern "C" void* vtkBezierHexahedron__GetInterpolation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBezierHexahedron*>(self)->GetInterpolation());
 }

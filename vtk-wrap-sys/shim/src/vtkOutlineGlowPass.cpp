@@ -5,41 +5,41 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOutlineGlowPass__vtk_wrap_new() { return static_cast<void*>(vtkOutlineGlowPass::New()); }
+extern "C" void* vtkOutlineGlowPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOutlineGlowPass::New()); }
 
-extern "C" int32_t vtkOutlineGlowPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOutlineGlowPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkOutlineGlowPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOutlineGlowPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOutlineGlowPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutlineGlowPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOutlineGlowPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkOutlineGlowPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOutlineGlowPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOutlineGlowPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOutlineGlowPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOutlineGlowPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOutlineGlowPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOutlineGlowPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutlineGlowPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOutlineGlowPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkOutlineGlowPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkOutlineGlowPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" float vtkOutlineGlowPass__GetOutlineIntensity__0(void* self) {
+extern "C" float vtkOutlineGlowPass__GetOutlineIntensity__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutlineGlowPass*>(self)->GetOutlineIntensity();
 }
 
-extern "C" void vtkOutlineGlowPass__SetOutlineIntensity__0(void* self, float _arg) {
+extern "C" void vtkOutlineGlowPass__SetOutlineIntensity__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkOutlineGlowPass*>(self)->SetOutlineIntensity(_arg);
 }

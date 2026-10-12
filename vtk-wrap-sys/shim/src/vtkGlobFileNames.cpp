@@ -5,76 +5,76 @@
 #include "vtkStringArray.h"
 #include <string>
 
-extern "C" void* vtkGlobFileNames__vtk_wrap_new() { return static_cast<void*>(vtkGlobFileNames::New()); }
+extern "C" void* vtkGlobFileNames__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGlobFileNames::New()); }
 
-extern "C" int32_t vtkGlobFileNames__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGlobFileNames__IsTypeOf__0(const char* type_) noexcept {
   return vtkGlobFileNames::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGlobFileNames__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGlobFileNames__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGlobFileNames__SafeDownCast__0(void* o) {
+extern "C" void* vtkGlobFileNames__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGlobFileNames::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGlobFileNames__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGlobFileNames__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGlobFileNames::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGlobFileNames__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGlobFileNames__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGlobFileNames__Reset__0(void* self) {
+extern "C" void vtkGlobFileNames__Reset__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGlobFileNames*>(self)->Reset();
 }
 
-extern "C" void vtkGlobFileNames__SetDirectory__0(void* self, const char* _arg) {
+extern "C" void vtkGlobFileNames__SetDirectory__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkGlobFileNames*>(self)->SetDirectory(_arg);
 }
 
-extern "C" int32_t vtkGlobFileNames__AddFileNames__0(void* self, const char* pattern) {
+extern "C" int32_t vtkGlobFileNames__AddFileNames__0(void* self, const char* pattern) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->AddFileNames(pattern);
 }
 
-extern "C" void vtkGlobFileNames__SetRecurse__0(void* self, int32_t _arg) {
+extern "C" void vtkGlobFileNames__SetRecurse__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkGlobFileNames*>(self)->SetRecurse(_arg);
 }
 
-extern "C" void vtkGlobFileNames__RecurseOn__0(void* self) {
+extern "C" void vtkGlobFileNames__RecurseOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGlobFileNames*>(self)->RecurseOn();
 }
 
-extern "C" void vtkGlobFileNames__RecurseOff__0(void* self) {
+extern "C" void vtkGlobFileNames__RecurseOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGlobFileNames*>(self)->RecurseOff();
 }
 
-extern "C" int32_t vtkGlobFileNames__GetRecurse__0(void* self) {
+extern "C" int32_t vtkGlobFileNames__GetRecurse__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->GetRecurse();
 }
 
-extern "C" int32_t vtkGlobFileNames__GetNumberOfFileNames__0(void* self) {
+extern "C" int32_t vtkGlobFileNames__GetNumberOfFileNames__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->GetNumberOfFileNames();
 }
 
-extern "C" const char* vtkGlobFileNames__GetNthFileName__0(void* self, int32_t index) {
+extern "C" const char* vtkGlobFileNames__GetNthFileName__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkGlobFileNames*>(self)->GetNthFileName(index);
 }
 
-extern "C" void* vtkGlobFileNames__GetFileNames__0(void* self) {
+extern "C" void* vtkGlobFileNames__GetFileNames__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGlobFileNames*>(self)->GetFileNames());
 }

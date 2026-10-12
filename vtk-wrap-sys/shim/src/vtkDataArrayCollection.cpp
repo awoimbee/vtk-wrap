@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataArrayCollection__vtk_wrap_new() { return static_cast<void*>(vtkDataArrayCollection::New()); }
+extern "C" void* vtkDataArrayCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataArrayCollection::New()); }
 
-extern "C" int32_t vtkDataArrayCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataArrayCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataArrayCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataArrayCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataArrayCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataArrayCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataArrayCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataArrayCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataArrayCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataArrayCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataArrayCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataArrayCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataArrayCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataArrayCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataArrayCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataArrayCollection__AddItem__0(void* self, void* ds) {
+extern "C" void vtkDataArrayCollection__AddItem__0(void* self, void* ds) noexcept {
   (void)self;
   static_cast<vtkDataArrayCollection*>(self)->AddItem(static_cast<vtkDataArray*>(ds));
 }
 
-extern "C" void* vtkDataArrayCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkDataArrayCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataArrayCollection*>(self)->GetNextItem());
 }
 
-extern "C" void* vtkDataArrayCollection__GetItem__0(void* self, int32_t i) {
+extern "C" void* vtkDataArrayCollection__GetItem__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataArrayCollection*>(self)->GetItem(i));
 }

@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkVolumePicker__vtk_wrap_new() { return static_cast<void*>(vtkVolumePicker::New()); }
+extern "C" void* vtkVolumePicker__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVolumePicker::New()); }
 
-extern "C" int32_t vtkVolumePicker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVolumePicker__IsTypeOf__0(const char* type_) noexcept {
   return vtkVolumePicker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVolumePicker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVolumePicker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumePicker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVolumePicker__SafeDownCast__0(void* o) {
+extern "C" void* vtkVolumePicker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVolumePicker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVolumePicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVolumePicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVolumePicker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVolumePicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVolumePicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVolumePicker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkVolumePicker__SetPickCroppingPlanes__0(void* self, int32_t _arg) {
+extern "C" void vtkVolumePicker__SetPickCroppingPlanes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkVolumePicker*>(self)->SetPickCroppingPlanes(_arg);
 }
 
-extern "C" void vtkVolumePicker__PickCroppingPlanesOn__0(void* self) {
+extern "C" void vtkVolumePicker__PickCroppingPlanesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumePicker*>(self)->PickCroppingPlanesOn();
 }
 
-extern "C" void vtkVolumePicker__PickCroppingPlanesOff__0(void* self) {
+extern "C" void vtkVolumePicker__PickCroppingPlanesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkVolumePicker*>(self)->PickCroppingPlanesOff();
 }
 
-extern "C" int32_t vtkVolumePicker__GetPickCroppingPlanes__0(void* self) {
+extern "C" int32_t vtkVolumePicker__GetPickCroppingPlanes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumePicker*>(self)->GetPickCroppingPlanes();
 }
 
-extern "C" int32_t vtkVolumePicker__GetCroppingPlaneId__0(void* self) {
+extern "C" int32_t vtkVolumePicker__GetCroppingPlaneId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkVolumePicker*>(self)->GetCroppingPlaneId();
 }

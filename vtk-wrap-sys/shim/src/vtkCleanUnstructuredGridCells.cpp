@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCleanUnstructuredGridCells__vtk_wrap_new() { return static_cast<void*>(vtkCleanUnstructuredGridCells::New()); }
+extern "C" void* vtkCleanUnstructuredGridCells__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCleanUnstructuredGridCells::New()); }
 
-extern "C" int32_t vtkCleanUnstructuredGridCells__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCleanUnstructuredGridCells__IsTypeOf__0(const char* type_) noexcept {
   return vtkCleanUnstructuredGridCells::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCleanUnstructuredGridCells__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCleanUnstructuredGridCells__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCleanUnstructuredGridCells*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCleanUnstructuredGridCells__SafeDownCast__0(void* o) {
+extern "C" void* vtkCleanUnstructuredGridCells__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCleanUnstructuredGridCells::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCleanUnstructuredGridCells__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCleanUnstructuredGridCells__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCleanUnstructuredGridCells::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCleanUnstructuredGridCells__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCleanUnstructuredGridCells__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCleanUnstructuredGridCells*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

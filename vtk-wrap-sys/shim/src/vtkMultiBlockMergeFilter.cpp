@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMultiBlockMergeFilter__vtk_wrap_new() { return static_cast<void*>(vtkMultiBlockMergeFilter::New()); }
+extern "C" void* vtkMultiBlockMergeFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiBlockMergeFilter::New()); }
 
-extern "C" int32_t vtkMultiBlockMergeFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiBlockMergeFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiBlockMergeFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiBlockMergeFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiBlockMergeFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockMergeFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiBlockMergeFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiBlockMergeFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiBlockMergeFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiBlockMergeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiBlockMergeFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiBlockMergeFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiBlockMergeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiBlockMergeFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiBlockMergeFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMultiBlockMergeFilter__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkMultiBlockMergeFilter__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkMultiBlockMergeFilter*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkMultiBlockMergeFilter__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkMultiBlockMergeFilter__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkMultiBlockMergeFilter*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

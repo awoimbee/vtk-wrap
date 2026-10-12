@@ -9,91 +9,91 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkStructuredGridConnectivity__vtk_wrap_new() { return static_cast<void*>(vtkStructuredGridConnectivity::New()); }
+extern "C" void* vtkStructuredGridConnectivity__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredGridConnectivity::New()); }
 
-extern "C" int32_t vtkStructuredGridConnectivity__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStructuredGridConnectivity__IsTypeOf__0(const char* type_) noexcept {
   return vtkStructuredGridConnectivity::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStructuredGridConnectivity__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStructuredGridConnectivity__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridConnectivity*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStructuredGridConnectivity__SafeDownCast__0(void* o) {
+extern "C" void* vtkStructuredGridConnectivity__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStructuredGridConnectivity::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStructuredGridConnectivity__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStructuredGridConnectivity__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStructuredGridConnectivity::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStructuredGridConnectivity__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStructuredGridConnectivity__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridConnectivity*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStructuredGridConnectivity__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) {
+extern "C" void vtkStructuredGridConnectivity__SetWholeExtent__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->SetWholeExtent(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkStructuredGridConnectivity__SetWholeExtent__1(void* self, const int32_t* _arg) {
+extern "C" void vtkStructuredGridConnectivity__SetWholeExtent__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->SetWholeExtent(_arg);
 }
 
-extern "C" int32_t vtkStructuredGridConnectivity__GetDataDimension__0(void* self) {
+extern "C" int32_t vtkStructuredGridConnectivity__GetDataDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridConnectivity*>(self)->GetDataDimension();
 }
 
-extern "C" void vtkStructuredGridConnectivity__SetNumberOfGrids__0(void* self, uint32_t N) {
+extern "C" void vtkStructuredGridConnectivity__SetNumberOfGrids__0(void* self, uint32_t N) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->SetNumberOfGrids(N);
 }
 
-extern "C" void vtkStructuredGridConnectivity__RegisterGrid__0(void* self, int32_t gridID, int32_t* extents, void* nodesGhostArray, void* cellGhostArray, void* pointData, void* cellData, void* gridNodes) {
+extern "C" void vtkStructuredGridConnectivity__RegisterGrid__0(void* self, int32_t gridID, int32_t* extents, void* nodesGhostArray, void* cellGhostArray, void* pointData, void* cellData, void* gridNodes) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->RegisterGrid(gridID, extents, static_cast<vtkUnsignedCharArray*>(nodesGhostArray), static_cast<vtkUnsignedCharArray*>(cellGhostArray), static_cast<vtkPointData*>(pointData), static_cast<vtkCellData*>(cellData), static_cast<vtkPoints*>(gridNodes));
 }
 
-extern "C" void vtkStructuredGridConnectivity__GetGridExtent__0(void* self, int32_t gridID, int32_t* extent) {
+extern "C" void vtkStructuredGridConnectivity__GetGridExtent__0(void* self, int32_t gridID, int32_t* extent) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->GetGridExtent(gridID, extent);
 }
 
-extern "C" void vtkStructuredGridConnectivity__SetGhostedGridExtent__0(void* self, int32_t gridID, int32_t* ext) {
+extern "C" void vtkStructuredGridConnectivity__SetGhostedGridExtent__0(void* self, int32_t gridID, int32_t* ext) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->SetGhostedGridExtent(gridID, ext);
 }
 
-extern "C" void vtkStructuredGridConnectivity__GetGhostedGridExtent__0(void* self, int32_t gridID, int32_t* ext) {
+extern "C" void vtkStructuredGridConnectivity__GetGhostedGridExtent__0(void* self, int32_t gridID, int32_t* ext) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->GetGhostedGridExtent(gridID, ext);
 }
 
-extern "C" void vtkStructuredGridConnectivity__ComputeNeighbors__0(void* self) {
+extern "C" void vtkStructuredGridConnectivity__ComputeNeighbors__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->ComputeNeighbors();
 }
 
-extern "C" int32_t vtkStructuredGridConnectivity__GetNumberOfNeighbors__0(void* self, int32_t gridID) {
+extern "C" int32_t vtkStructuredGridConnectivity__GetNumberOfNeighbors__0(void* self, int32_t gridID) noexcept {
   (void)self;
   return static_cast<vtkStructuredGridConnectivity*>(self)->GetNumberOfNeighbors(gridID);
 }
 
-extern "C" void* vtkStructuredGridConnectivity__GetNeighbors__0(void* self, int32_t gridID, int32_t* extents) {
+extern "C" void* vtkStructuredGridConnectivity__GetNeighbors__0(void* self, int32_t gridID, int32_t* extents) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStructuredGridConnectivity*>(self)->GetNeighbors(gridID, extents));
 }
 
-extern "C" void vtkStructuredGridConnectivity__FillGhostArrays__0(void* self, int32_t gridID, void* nodesArray, void* cellsArray) {
+extern "C" void vtkStructuredGridConnectivity__FillGhostArrays__0(void* self, int32_t gridID, void* nodesArray, void* cellsArray) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->FillGhostArrays(gridID, static_cast<vtkUnsignedCharArray*>(nodesArray), static_cast<vtkUnsignedCharArray*>(cellsArray));
 }
 
-extern "C" void vtkStructuredGridConnectivity__CreateGhostLayers__0(void* self, int32_t N) {
+extern "C" void vtkStructuredGridConnectivity__CreateGhostLayers__0(void* self, int32_t N) noexcept {
   (void)self;
   static_cast<vtkStructuredGridConnectivity*>(self)->CreateGhostLayers(N);
 }

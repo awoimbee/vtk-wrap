@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTreeBFSIterator__vtk_wrap_new() { return static_cast<void*>(vtkTreeBFSIterator::New()); }
+extern "C" void* vtkTreeBFSIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTreeBFSIterator::New()); }
 
-extern "C" int32_t vtkTreeBFSIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTreeBFSIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkTreeBFSIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTreeBFSIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTreeBFSIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeBFSIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTreeBFSIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkTreeBFSIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTreeBFSIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTreeBFSIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTreeBFSIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTreeBFSIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTreeBFSIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTreeBFSIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTreeBFSIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -4,91 +4,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataObjectWriter__vtk_wrap_new() { return static_cast<void*>(vtkDataObjectWriter::New()); }
+extern "C" void* vtkDataObjectWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataObjectWriter::New()); }
 
-extern "C" int32_t vtkDataObjectWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObjectWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObjectWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObjectWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObjectWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObjectWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObjectWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObjectWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObjectWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObjectWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObjectWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObjectWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObjectWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataObjectWriter__SetFileName__0(void* self, const char* filename) {
+extern "C" void vtkDataObjectWriter__SetFileName__0(void* self, const char* filename) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetFileName(filename);
 }
 
-extern "C" void vtkDataObjectWriter__SetHeader__0(void* self, const char* header) {
+extern "C" void vtkDataObjectWriter__SetHeader__0(void* self, const char* header) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetHeader(header);
 }
 
-extern "C" void vtkDataObjectWriter__SetFileType__0(void* self, int32_t type_) {
+extern "C" void vtkDataObjectWriter__SetFileType__0(void* self, int32_t type_) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetFileType(type_);
 }
 
-extern "C" int32_t vtkDataObjectWriter__GetFileType__0(void* self) {
+extern "C" int32_t vtkDataObjectWriter__GetFileType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectWriter*>(self)->GetFileType();
 }
 
-extern "C" void vtkDataObjectWriter__SetFileTypeToASCII__0(void* self) {
+extern "C" void vtkDataObjectWriter__SetFileTypeToASCII__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetFileTypeToASCII();
 }
 
-extern "C" void vtkDataObjectWriter__SetFileTypeToBinary__0(void* self) {
+extern "C" void vtkDataObjectWriter__SetFileTypeToBinary__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetFileTypeToBinary();
 }
 
-extern "C" void vtkDataObjectWriter__SetWriteToOutputString__0(void* self, int32_t b) {
+extern "C" void vtkDataObjectWriter__SetWriteToOutputString__0(void* self, int32_t b) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetWriteToOutputString(b);
 }
 
-extern "C" void vtkDataObjectWriter__WriteToOutputStringOn__0(void* self) {
+extern "C" void vtkDataObjectWriter__WriteToOutputStringOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->WriteToOutputStringOn();
 }
 
-extern "C" void vtkDataObjectWriter__WriteToOutputStringOff__0(void* self) {
+extern "C" void vtkDataObjectWriter__WriteToOutputStringOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->WriteToOutputStringOff();
 }
 
-extern "C" int32_t vtkDataObjectWriter__GetWriteToOutputString__0(void* self) {
+extern "C" int32_t vtkDataObjectWriter__GetWriteToOutputString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectWriter*>(self)->GetWriteToOutputString();
 }
 
-extern "C" char* vtkDataObjectWriter__GetOutputStdString__0(void* self) {
+extern "C" char* vtkDataObjectWriter__GetOutputStdString__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkDataObjectWriter*>(self)->GetOutputStdString()).c_str());
 }
 
-extern "C" int64_t vtkDataObjectWriter__GetOutputStringLength__0(void* self) {
+extern "C" int64_t vtkDataObjectWriter__GetOutputStringLength__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectWriter*>(self)->GetOutputStringLength();
 }
 
-extern "C" void vtkDataObjectWriter__SetFieldDataName__0(void* self, const char* fieldname) {
+extern "C" void vtkDataObjectWriter__SetFieldDataName__0(void* self, const char* fieldname) noexcept {
   (void)self;
   static_cast<vtkDataObjectWriter*>(self)->SetFieldDataName(fieldname);
 }

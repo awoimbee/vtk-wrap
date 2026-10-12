@@ -18,330 +18,330 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkDataObject__vtk_wrap_new() { return static_cast<void*>(vtkDataObject::New()); }
+extern "C" void* vtkDataObject__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataObject::New()); }
 
-extern "C" int32_t vtkDataObject__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObject__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObject::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObject__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObject__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObject__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObject__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObject::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObject__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObject__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObject::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObject__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObject__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkDataObject__GetInformation__0(void* self) {
+extern "C" void* vtkDataObject__GetInformation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObject*>(self)->GetInformation());
 }
 
-extern "C" void vtkDataObject__SetInformation__0(void* self, void* arg0) {
+extern "C" void vtkDataObject__SetInformation__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->SetInformation(static_cast<vtkInformation*>(arg0));
 }
 
-extern "C" unsigned long vtkDataObject__GetMTime__0(void* self) {
+extern "C" unsigned long vtkDataObject__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetMTime();
 }
 
-extern "C" void vtkDataObject__Initialize__0(void* self) {
+extern "C" void vtkDataObject__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->Initialize();
 }
 
-extern "C" void vtkDataObject__ReleaseData__0(void* self) {
+extern "C" void vtkDataObject__ReleaseData__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->ReleaseData();
 }
 
-extern "C" int32_t vtkDataObject__GetDataReleased__0(void* self) {
+extern "C" int32_t vtkDataObject__GetDataReleased__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetDataReleased();
 }
 
-extern "C" void vtkDataObject__SetGlobalReleaseDataFlag__0(int32_t val) {
+extern "C" void vtkDataObject__SetGlobalReleaseDataFlag__0(int32_t val) noexcept {
   vtkDataObject::SetGlobalReleaseDataFlag(val);
 }
 
-extern "C" void vtkDataObject__GlobalReleaseDataFlagOn__0(void* self) {
+extern "C" void vtkDataObject__GlobalReleaseDataFlagOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->GlobalReleaseDataFlagOn();
 }
 
-extern "C" void vtkDataObject__GlobalReleaseDataFlagOff__0(void* self) {
+extern "C" void vtkDataObject__GlobalReleaseDataFlagOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->GlobalReleaseDataFlagOff();
 }
 
-extern "C" int32_t vtkDataObject__GetGlobalReleaseDataFlag__0() {
+extern "C" int32_t vtkDataObject__GetGlobalReleaseDataFlag__0() noexcept {
   return vtkDataObject::GetGlobalReleaseDataFlag();
 }
 
-extern "C" void vtkDataObject__SetFieldData__0(void* self, void* arg0) {
+extern "C" void vtkDataObject__SetFieldData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->SetFieldData(static_cast<vtkFieldData*>(arg0));
 }
 
-extern "C" void* vtkDataObject__GetFieldData__0(void* self) {
+extern "C" void* vtkDataObject__GetFieldData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObject*>(self)->GetFieldData());
 }
 
-extern "C" int32_t vtkDataObject__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkDataObject__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetDataObjectType();
 }
 
-extern "C" unsigned long vtkDataObject__GetUpdateTime__0(void* self) {
+extern "C" unsigned long vtkDataObject__GetUpdateTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetUpdateTime();
 }
 
-extern "C" unsigned long vtkDataObject__GetActualMemorySize__0(void* self) {
+extern "C" unsigned long vtkDataObject__GetActualMemorySize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetActualMemorySize();
 }
 
-extern "C" void vtkDataObject__CopyInformationFromPipeline__0(void* self, void* info) {
+extern "C" void vtkDataObject__CopyInformationFromPipeline__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->CopyInformationFromPipeline(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkDataObject__CopyInformationToPipeline__0(void* self, void* info) {
+extern "C" void vtkDataObject__CopyInformationToPipeline__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->CopyInformationToPipeline(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void* vtkDataObject__GetActiveFieldInformation__0(void* info, int32_t fieldAssociation, int32_t attributeType) {
+extern "C" void* vtkDataObject__GetActiveFieldInformation__0(void* info, int32_t fieldAssociation, int32_t attributeType) noexcept {
   return static_cast<void*>(vtkDataObject::GetActiveFieldInformation(static_cast<vtkInformation*>(info), fieldAssociation, attributeType));
 }
 
-extern "C" void* vtkDataObject__GetNamedFieldInformation__0(void* info, int32_t fieldAssociation, const char* name) {
+extern "C" void* vtkDataObject__GetNamedFieldInformation__0(void* info, int32_t fieldAssociation, const char* name) noexcept {
   return static_cast<void*>(vtkDataObject::GetNamedFieldInformation(static_cast<vtkInformation*>(info), fieldAssociation, name));
 }
 
-extern "C" void vtkDataObject__RemoveNamedFieldInformation__0(void* info, int32_t fieldAssociation, const char* name) {
+extern "C" void vtkDataObject__RemoveNamedFieldInformation__0(void* info, int32_t fieldAssociation, const char* name) noexcept {
   vtkDataObject::RemoveNamedFieldInformation(static_cast<vtkInformation*>(info), fieldAssociation, name);
 }
 
-extern "C" void* vtkDataObject__SetActiveAttribute__0(void* info, int32_t fieldAssociation, const char* attributeName, int32_t attributeType) {
+extern "C" void* vtkDataObject__SetActiveAttribute__0(void* info, int32_t fieldAssociation, const char* attributeName, int32_t attributeType) noexcept {
   return static_cast<void*>(vtkDataObject::SetActiveAttribute(static_cast<vtkInformation*>(info), fieldAssociation, attributeName, attributeType));
 }
 
-extern "C" void vtkDataObject__SetActiveAttributeInfo__0(void* info, int32_t fieldAssociation, int32_t attributeType, const char* name, int32_t arrayType, int32_t numComponents, int32_t numTuples) {
+extern "C" void vtkDataObject__SetActiveAttributeInfo__0(void* info, int32_t fieldAssociation, int32_t attributeType, const char* name, int32_t arrayType, int32_t numComponents, int32_t numTuples) noexcept {
   vtkDataObject::SetActiveAttributeInfo(static_cast<vtkInformation*>(info), fieldAssociation, attributeType, name, arrayType, numComponents, numTuples);
 }
 
-extern "C" void vtkDataObject__SetPointDataActiveScalarInfo__0(void* info, int32_t arrayType, int32_t numComponents) {
+extern "C" void vtkDataObject__SetPointDataActiveScalarInfo__0(void* info, int32_t arrayType, int32_t numComponents) noexcept {
   vtkDataObject::SetPointDataActiveScalarInfo(static_cast<vtkInformation*>(info), arrayType, numComponents);
 }
 
-extern "C" void vtkDataObject__DataHasBeenGenerated__0(void* self) {
+extern "C" void vtkDataObject__DataHasBeenGenerated__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->DataHasBeenGenerated();
 }
 
-extern "C" void vtkDataObject__PrepareForNewData__0(void* self) {
+extern "C" void vtkDataObject__PrepareForNewData__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->PrepareForNewData();
 }
 
-extern "C" void vtkDataObject__ShallowCopy__0(void* self, void* src) {
+extern "C" void vtkDataObject__ShallowCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->ShallowCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" void vtkDataObject__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkDataObject__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" int32_t vtkDataObject__GetExtentType__0(void* self) {
+extern "C" int32_t vtkDataObject__GetExtentType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetExtentType();
 }
 
-extern "C" void vtkDataObject__Crop__0(void* self, const int32_t* updateExtent) {
+extern "C" void vtkDataObject__Crop__0(void* self, const int32_t* updateExtent) noexcept {
   (void)self;
   static_cast<vtkDataObject*>(self)->Crop(updateExtent);
 }
 
-extern "C" void* vtkDataObject__GetAttributes__0(void* self, int32_t type_) {
+extern "C" void* vtkDataObject__GetAttributes__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObject*>(self)->GetAttributes(type_));
 }
 
-extern "C" void* vtkDataObject__GetGhostArray__0(void* self, int32_t type_) {
+extern "C" void* vtkDataObject__GetGhostArray__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObject*>(self)->GetGhostArray(type_));
 }
 
-extern "C" bool vtkDataObject__SupportsGhostArray__0(void* self, int32_t type_) {
+extern "C" bool vtkDataObject__SupportsGhostArray__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->SupportsGhostArray(type_);
 }
 
-extern "C" void* vtkDataObject__GetAttributesAsFieldData__0(void* self, int32_t type_) {
+extern "C" void* vtkDataObject__GetAttributesAsFieldData__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObject*>(self)->GetAttributesAsFieldData(type_));
 }
 
-extern "C" int32_t vtkDataObject__GetAttributeTypeForArray__0(void* self, void* arr) {
+extern "C" int32_t vtkDataObject__GetAttributeTypeForArray__0(void* self, void* arr) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetAttributeTypeForArray(static_cast<vtkAbstractArray*>(arr));
 }
 
-extern "C" int64_t vtkDataObject__GetNumberOfElements__0(void* self, int32_t type_) {
+extern "C" int64_t vtkDataObject__GetNumberOfElements__0(void* self, int32_t type_) noexcept {
   (void)self;
   return static_cast<vtkDataObject*>(self)->GetNumberOfElements(type_);
 }
 
-extern "C" const char* vtkDataObject__GetAssociationTypeAsString__0(int32_t associationType) {
+extern "C" const char* vtkDataObject__GetAssociationTypeAsString__0(int32_t associationType) noexcept {
   return vtkDataObject::GetAssociationTypeAsString(associationType);
 }
 
-extern "C" const char* vtkDataObject__GetAttributeTypeAsString__0(int32_t attributeType) {
+extern "C" const char* vtkDataObject__GetAttributeTypeAsString__0(int32_t attributeType) noexcept {
   return vtkDataObject::GetAttributeTypeAsString(attributeType);
 }
 
-extern "C" int32_t vtkDataObject__GetAssociationTypeFromString__0(const char* associationName) {
+extern "C" int32_t vtkDataObject__GetAssociationTypeFromString__0(const char* associationName) noexcept {
   return vtkDataObject::GetAssociationTypeFromString(associationName);
 }
 
-extern "C" void* vtkDataObject__DATA_TYPE_NAME__0() {
+extern "C" void* vtkDataObject__DATA_TYPE_NAME__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_TYPE_NAME());
 }
 
-extern "C" void* vtkDataObject__DATA_OBJECT__0() {
+extern "C" void* vtkDataObject__DATA_OBJECT__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_OBJECT());
 }
 
-extern "C" void* vtkDataObject__DATA_EXTENT_TYPE__0() {
+extern "C" void* vtkDataObject__DATA_EXTENT_TYPE__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_EXTENT_TYPE());
 }
 
-extern "C" void* vtkDataObject__DATA_EXTENT__0() {
+extern "C" void* vtkDataObject__DATA_EXTENT__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_EXTENT());
 }
 
-extern "C" void* vtkDataObject__ALL_PIECES_EXTENT__0() {
+extern "C" void* vtkDataObject__ALL_PIECES_EXTENT__0() noexcept {
   return static_cast<void*>(vtkDataObject::ALL_PIECES_EXTENT());
 }
 
-extern "C" void* vtkDataObject__PIECE_EXTENT__0() {
+extern "C" void* vtkDataObject__PIECE_EXTENT__0() noexcept {
   return static_cast<void*>(vtkDataObject::PIECE_EXTENT());
 }
 
-extern "C" void* vtkDataObject__DATA_PIECE_NUMBER__0() {
+extern "C" void* vtkDataObject__DATA_PIECE_NUMBER__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_PIECE_NUMBER());
 }
 
-extern "C" void* vtkDataObject__DATA_NUMBER_OF_PIECES__0() {
+extern "C" void* vtkDataObject__DATA_NUMBER_OF_PIECES__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_NUMBER_OF_PIECES());
 }
 
-extern "C" void* vtkDataObject__DATA_NUMBER_OF_GHOST_LEVELS__0() {
+extern "C" void* vtkDataObject__DATA_NUMBER_OF_GHOST_LEVELS__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_NUMBER_OF_GHOST_LEVELS());
 }
 
-extern "C" void* vtkDataObject__DATA_TIME_STEP__0() {
+extern "C" void* vtkDataObject__DATA_TIME_STEP__0() noexcept {
   return static_cast<void*>(vtkDataObject::DATA_TIME_STEP());
 }
 
-extern "C" void* vtkDataObject__ORIGIN__0() {
+extern "C" void* vtkDataObject__ORIGIN__0() noexcept {
   return static_cast<void*>(vtkDataObject::ORIGIN());
 }
 
-extern "C" void* vtkDataObject__SPACING__0() {
+extern "C" void* vtkDataObject__SPACING__0() noexcept {
   return static_cast<void*>(vtkDataObject::SPACING());
 }
 
-extern "C" void* vtkDataObject__DIRECTION__0() {
+extern "C" void* vtkDataObject__DIRECTION__0() noexcept {
   return static_cast<void*>(vtkDataObject::DIRECTION());
 }
 
-extern "C" void* vtkDataObject__BOUNDING_BOX__0() {
+extern "C" void* vtkDataObject__BOUNDING_BOX__0() noexcept {
   return static_cast<void*>(vtkDataObject::BOUNDING_BOX());
 }
 
-extern "C" void* vtkDataObject__POINT_DATA_VECTOR__0() {
+extern "C" void* vtkDataObject__POINT_DATA_VECTOR__0() noexcept {
   return static_cast<void*>(vtkDataObject::POINT_DATA_VECTOR());
 }
 
-extern "C" void* vtkDataObject__CELL_DATA_VECTOR__0() {
+extern "C" void* vtkDataObject__CELL_DATA_VECTOR__0() noexcept {
   return static_cast<void*>(vtkDataObject::CELL_DATA_VECTOR());
 }
 
-extern "C" void* vtkDataObject__VERTEX_DATA_VECTOR__0() {
+extern "C" void* vtkDataObject__VERTEX_DATA_VECTOR__0() noexcept {
   return static_cast<void*>(vtkDataObject::VERTEX_DATA_VECTOR());
 }
 
-extern "C" void* vtkDataObject__EDGE_DATA_VECTOR__0() {
+extern "C" void* vtkDataObject__EDGE_DATA_VECTOR__0() noexcept {
   return static_cast<void*>(vtkDataObject::EDGE_DATA_VECTOR());
 }
 
-extern "C" void* vtkDataObject__FIELD_ARRAY_TYPE__0() {
+extern "C" void* vtkDataObject__FIELD_ARRAY_TYPE__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_ARRAY_TYPE());
 }
 
-extern "C" void* vtkDataObject__FIELD_ASSOCIATION__0() {
+extern "C" void* vtkDataObject__FIELD_ASSOCIATION__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_ASSOCIATION());
 }
 
-extern "C" void* vtkDataObject__FIELD_ATTRIBUTE_COMPONENT__0() {
+extern "C" void* vtkDataObject__FIELD_ATTRIBUTE_COMPONENT__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_ATTRIBUTE_COMPONENT());
 }
 
-extern "C" void* vtkDataObject__FIELD_ATTRIBUTE_TYPE__0() {
+extern "C" void* vtkDataObject__FIELD_ATTRIBUTE_TYPE__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_ATTRIBUTE_TYPE());
 }
 
-extern "C" void* vtkDataObject__FIELD_ACTIVE_ATTRIBUTE__0() {
+extern "C" void* vtkDataObject__FIELD_ACTIVE_ATTRIBUTE__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_ACTIVE_ATTRIBUTE());
 }
 
-extern "C" void* vtkDataObject__FIELD_NUMBER_OF_COMPONENTS__0() {
+extern "C" void* vtkDataObject__FIELD_NUMBER_OF_COMPONENTS__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_NUMBER_OF_COMPONENTS());
 }
 
-extern "C" void* vtkDataObject__FIELD_NUMBER_OF_TUPLES__0() {
+extern "C" void* vtkDataObject__FIELD_NUMBER_OF_TUPLES__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_NUMBER_OF_TUPLES());
 }
 
-extern "C" void* vtkDataObject__FIELD_OPERATION__0() {
+extern "C" void* vtkDataObject__FIELD_OPERATION__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_OPERATION());
 }
 
-extern "C" void* vtkDataObject__FIELD_RANGE__0() {
+extern "C" void* vtkDataObject__FIELD_RANGE__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_RANGE());
 }
 
-extern "C" void* vtkDataObject__FIELD_NAME__0() {
+extern "C" void* vtkDataObject__FIELD_NAME__0() noexcept {
   return static_cast<void*>(vtkDataObject::FIELD_NAME());
 }
 
-extern "C" void* vtkDataObject__SIL__0() {
+extern "C" void* vtkDataObject__SIL__0() noexcept {
   return static_cast<void*>(vtkDataObject::SIL());
 }
 
-extern "C" void* vtkDataObject__GetData__0(void* info) {
+extern "C" void* vtkDataObject__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkDataObject::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkDataObject__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkDataObject__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkDataObject::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 

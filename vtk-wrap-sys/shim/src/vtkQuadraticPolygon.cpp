@@ -13,109 +13,109 @@
 #include "vtkPoints.h"
 #include <string>
 
-extern "C" void* vtkQuadraticPolygon__vtk_wrap_new() { return static_cast<void*>(vtkQuadraticPolygon::New()); }
+extern "C" void* vtkQuadraticPolygon__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuadraticPolygon::New()); }
 
-extern "C" int32_t vtkQuadraticPolygon__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuadraticPolygon__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuadraticPolygon::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuadraticPolygon__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuadraticPolygon__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuadraticPolygon__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuadraticPolygon__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuadraticPolygon::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuadraticPolygon__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuadraticPolygon__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuadraticPolygon::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuadraticPolygon__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuadraticPolygon__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkQuadraticPolygon__GetCellType__0(void* self) {
+extern "C" int32_t vtkQuadraticPolygon__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkQuadraticPolygon__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkQuadraticPolygon__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkQuadraticPolygon__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkQuadraticPolygon__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkQuadraticPolygon__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkQuadraticPolygon__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkQuadraticPolygon__GetEdge__0(void* self, int32_t arg0) {
+extern "C" void* vtkQuadraticPolygon__GetEdge__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkQuadraticPolygon*>(self)->GetEdge(arg0));
 }
 
-extern "C" void* vtkQuadraticPolygon__GetFace__0(void* self, int32_t arg0) {
+extern "C" void* vtkQuadraticPolygon__GetFace__0(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkQuadraticPolygon*>(self)->GetFace(arg0));
 }
 
-extern "C" int32_t vtkQuadraticPolygon__IsPrimaryCell__0(void* self) {
+extern "C" int32_t vtkQuadraticPolygon__IsPrimaryCell__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->IsPrimaryCell();
 }
 
-extern "C" int32_t vtkQuadraticPolygon__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkQuadraticPolygon__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" void vtkQuadraticPolygon__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkQuadraticPolygon__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkQuadraticPolygon*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkQuadraticPolygon__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkQuadraticPolygon__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkQuadraticPolygon*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" void vtkQuadraticPolygon__ComputeCentroid__0(void* ids, void* pts, double* centroid) {
+extern "C" void vtkQuadraticPolygon__ComputeCentroid__0(void* ids, void* pts, double* centroid) noexcept {
   vtkQuadraticPolygon::ComputeCentroid(static_cast<vtkIdTypeArray*>(ids), static_cast<vtkPoints*>(pts), centroid);
 }
 
-extern "C" int32_t vtkQuadraticPolygon__Triangulate__0(void* self, int32_t index, void* ptIds, void* pts) {
+extern "C" int32_t vtkQuadraticPolygon__Triangulate__0(void* self, int32_t index, void* ptIds, void* pts) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->Triangulate(index, static_cast<vtkIdList*>(ptIds), static_cast<vtkPoints*>(pts));
 }
 
-extern "C" int32_t vtkQuadraticPolygon__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkQuadraticPolygon__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int32_t vtkQuadraticPolygon__NonDegenerateTriangulate__0(void* self, void* outTris) {
+extern "C" int32_t vtkQuadraticPolygon__NonDegenerateTriangulate__0(void* self, void* outTris) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->NonDegenerateTriangulate(static_cast<vtkIdList*>(outTris));
 }
 
-extern "C" int32_t vtkQuadraticPolygon__IntersectConvex2DCells__0(void* cell1, void* cell2, double tol, double* p0, double* p1) {
+extern "C" int32_t vtkQuadraticPolygon__IntersectConvex2DCells__0(void* cell1, void* cell2, double tol, double* p0, double* p1) noexcept {
   return vtkQuadraticPolygon::IntersectConvex2DCells(static_cast<vtkCell*>(cell1), static_cast<vtkCell*>(cell2), tol, p0, p1);
 }
 
-extern "C" bool vtkQuadraticPolygon__GetUseMVCInterpolation__0(void* self) {
+extern "C" bool vtkQuadraticPolygon__GetUseMVCInterpolation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadraticPolygon*>(self)->GetUseMVCInterpolation();
 }
 
-extern "C" void vtkQuadraticPolygon__SetUseMVCInterpolation__0(void* self, bool _arg) {
+extern "C" void vtkQuadraticPolygon__SetUseMVCInterpolation__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkQuadraticPolygon*>(self)->SetUseMVCInterpolation(_arg);
 }

@@ -8,56 +8,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLagrangeHexahedron__vtk_wrap_new() { return static_cast<void*>(vtkLagrangeHexahedron::New()); }
+extern "C" void* vtkLagrangeHexahedron__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLagrangeHexahedron::New()); }
 
-extern "C" int32_t vtkLagrangeHexahedron__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLagrangeHexahedron__IsTypeOf__0(const char* type_) noexcept {
   return vtkLagrangeHexahedron::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLagrangeHexahedron__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLagrangeHexahedron__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeHexahedron*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLagrangeHexahedron__SafeDownCast__0(void* o) {
+extern "C" void* vtkLagrangeHexahedron__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLagrangeHexahedron::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLagrangeHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLagrangeHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLagrangeHexahedron::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLagrangeHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLagrangeHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLagrangeHexahedron*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkLagrangeHexahedron__GetCellType__0(void* self) {
+extern "C" int32_t vtkLagrangeHexahedron__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLagrangeHexahedron*>(self)->GetCellType();
 }
 
-extern "C" void* vtkLagrangeHexahedron__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkLagrangeHexahedron__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeHexahedron*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkLagrangeHexahedron__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkLagrangeHexahedron__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeHexahedron*>(self)->GetFace(faceId));
 }
 
-extern "C" void* vtkLagrangeHexahedron__GetEdgeCell__0(void* self) {
+extern "C" void* vtkLagrangeHexahedron__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeHexahedron*>(self)->GetEdgeCell());
 }
 
-extern "C" void* vtkLagrangeHexahedron__GetFaceCell__0(void* self) {
+extern "C" void* vtkLagrangeHexahedron__GetFaceCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeHexahedron*>(self)->GetFaceCell());
 }
 
-extern "C" void* vtkLagrangeHexahedron__GetInterpolation__0(void* self) {
+extern "C" void* vtkLagrangeHexahedron__GetInterpolation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLagrangeHexahedron*>(self)->GetInterpolation());
 }

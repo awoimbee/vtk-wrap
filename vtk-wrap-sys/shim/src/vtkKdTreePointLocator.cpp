@@ -6,61 +6,61 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkKdTreePointLocator__vtk_wrap_new() { return static_cast<void*>(vtkKdTreePointLocator::New()); }
+extern "C" void* vtkKdTreePointLocator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkKdTreePointLocator::New()); }
 
-extern "C" int32_t vtkKdTreePointLocator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkKdTreePointLocator__IsTypeOf__0(const char* type_) noexcept {
   return vtkKdTreePointLocator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkKdTreePointLocator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkKdTreePointLocator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkKdTreePointLocator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkKdTreePointLocator__SafeDownCast__0(void* o) {
+extern "C" void* vtkKdTreePointLocator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkKdTreePointLocator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkKdTreePointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkKdTreePointLocator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkKdTreePointLocator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkKdTreePointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkKdTreePointLocator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkKdTreePointLocator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int64_t vtkKdTreePointLocator__FindClosestPoint__0(void* self, const double* x) {
+extern "C" int64_t vtkKdTreePointLocator__FindClosestPoint__0(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkKdTreePointLocator*>(self)->FindClosestPoint(x);
 }
 
-extern "C" void vtkKdTreePointLocator__FindClosestNPoints__0(void* self, int32_t N, const double* x, void* result) {
+extern "C" void vtkKdTreePointLocator__FindClosestNPoints__0(void* self, int32_t N, const double* x, void* result) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->FindClosestNPoints(N, x, static_cast<vtkIdList*>(result));
 }
 
-extern "C" void vtkKdTreePointLocator__FindPointsWithinRadius__0(void* self, double R, const double* x, void* result) {
+extern "C" void vtkKdTreePointLocator__FindPointsWithinRadius__0(void* self, double R, const double* x, void* result) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->FindPointsWithinRadius(R, x, static_cast<vtkIdList*>(result));
 }
 
-extern "C" void vtkKdTreePointLocator__FreeSearchStructure__0(void* self) {
+extern "C" void vtkKdTreePointLocator__FreeSearchStructure__0(void* self) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->FreeSearchStructure();
 }
 
-extern "C" void vtkKdTreePointLocator__BuildLocator__0(void* self) {
+extern "C" void vtkKdTreePointLocator__BuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->BuildLocator();
 }
 
-extern "C" void vtkKdTreePointLocator__ForceBuildLocator__0(void* self) {
+extern "C" void vtkKdTreePointLocator__ForceBuildLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->ForceBuildLocator();
 }
 
-extern "C" void vtkKdTreePointLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) {
+extern "C" void vtkKdTreePointLocator__GenerateRepresentation__0(void* self, int32_t level, void* pd) noexcept {
   (void)self;
   static_cast<vtkKdTreePointLocator*>(self)->GenerateRepresentation(level, static_cast<vtkPolyData*>(pd));
 }

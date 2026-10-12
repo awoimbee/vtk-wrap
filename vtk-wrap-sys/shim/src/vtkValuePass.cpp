@@ -7,56 +7,56 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkValuePass__vtk_wrap_new() { return static_cast<void*>(vtkValuePass::New()); }
+extern "C" void* vtkValuePass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkValuePass::New()); }
 
-extern "C" int32_t vtkValuePass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkValuePass__IsTypeOf__0(const char* type_) noexcept {
   return vtkValuePass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkValuePass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkValuePass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkValuePass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkValuePass__SafeDownCast__0(void* o) {
+extern "C" void* vtkValuePass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkValuePass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkValuePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkValuePass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkValuePass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkValuePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkValuePass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkValuePass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkValuePass__SetInputArrayToProcess__0(void* self, int32_t fieldAssociation, const char* name) {
+extern "C" void vtkValuePass__SetInputArrayToProcess__0(void* self, int32_t fieldAssociation, const char* name) noexcept {
   (void)self;
   static_cast<vtkValuePass*>(self)->SetInputArrayToProcess(fieldAssociation, name);
 }
 
-extern "C" void vtkValuePass__SetInputArrayToProcess__1(void* self, int32_t fieldAssociation, int32_t fieldId) {
+extern "C" void vtkValuePass__SetInputArrayToProcess__1(void* self, int32_t fieldAssociation, int32_t fieldId) noexcept {
   (void)self;
   static_cast<vtkValuePass*>(self)->SetInputArrayToProcess(fieldAssociation, fieldId);
 }
 
-extern "C" void vtkValuePass__SetInputComponentToProcess__0(void* self, int32_t component) {
+extern "C" void vtkValuePass__SetInputComponentToProcess__0(void* self, int32_t component) noexcept {
   (void)self;
   static_cast<vtkValuePass*>(self)->SetInputComponentToProcess(component);
 }
 
-extern "C" void* vtkValuePass__GetFloatImageDataArray__0(void* self, void* ren) {
+extern "C" void* vtkValuePass__GetFloatImageDataArray__0(void* self, void* ren) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkValuePass*>(self)->GetFloatImageDataArray(static_cast<vtkRenderer*>(ren)));
 }
 
-extern "C" void vtkValuePass__GetFloatImageData__0(void* self, int32_t format, int32_t width, int32_t height, void* data) {
+extern "C" void vtkValuePass__GetFloatImageData__0(void* self, int32_t format, int32_t width, int32_t height, void* data) noexcept {
   (void)self;
   static_cast<vtkValuePass*>(self)->GetFloatImageData(format, width, height, data);
 }
 
-extern "C" void vtkValuePass__ReleaseGraphicsResources__0(void* self, void* win) {
+extern "C" void vtkValuePass__ReleaseGraphicsResources__0(void* self, void* win) noexcept {
   (void)self;
   static_cast<vtkValuePass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(win));
 }

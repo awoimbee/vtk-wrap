@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGeometricErrorMetric__vtk_wrap_new() { return static_cast<void*>(vtkGeometricErrorMetric::New()); }
+extern "C" void* vtkGeometricErrorMetric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGeometricErrorMetric::New()); }
 
-extern "C" int32_t vtkGeometricErrorMetric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGeometricErrorMetric__IsTypeOf__0(const char* type_) noexcept {
   return vtkGeometricErrorMetric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGeometricErrorMetric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGeometricErrorMetric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGeometricErrorMetric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGeometricErrorMetric__SafeDownCast__0(void* o) {
+extern "C" void* vtkGeometricErrorMetric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGeometricErrorMetric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGeometricErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGeometricErrorMetric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGeometricErrorMetric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGeometricErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGeometricErrorMetric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGeometricErrorMetric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkGeometricErrorMetric__GetAbsoluteGeometricTolerance__0(void* self) {
+extern "C" double vtkGeometricErrorMetric__GetAbsoluteGeometricTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGeometricErrorMetric*>(self)->GetAbsoluteGeometricTolerance();
 }
 
-extern "C" void vtkGeometricErrorMetric__SetAbsoluteGeometricTolerance__0(void* self, double value) {
+extern "C" void vtkGeometricErrorMetric__SetAbsoluteGeometricTolerance__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkGeometricErrorMetric*>(self)->SetAbsoluteGeometricTolerance(value);
 }
 
-extern "C" void vtkGeometricErrorMetric__SetRelativeGeometricTolerance__0(void* self, double value, void* ds) {
+extern "C" void vtkGeometricErrorMetric__SetRelativeGeometricTolerance__0(void* self, double value, void* ds) noexcept {
   (void)self;
   static_cast<vtkGeometricErrorMetric*>(self)->SetRelativeGeometricTolerance(value, static_cast<vtkGenericDataSet*>(ds));
 }
 
-extern "C" int32_t vtkGeometricErrorMetric__GetRelative__0(void* self) {
+extern "C" int32_t vtkGeometricErrorMetric__GetRelative__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGeometricErrorMetric*>(self)->GetRelative();
 }

@@ -6,51 +6,51 @@
 #include "vtkProp.h"
 #include <string>
 
-extern "C" void* vtkAssemblyNode__vtk_wrap_new() { return static_cast<void*>(vtkAssemblyNode::New()); }
+extern "C" void* vtkAssemblyNode__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAssemblyNode::New()); }
 
-extern "C" int32_t vtkAssemblyNode__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAssemblyNode__IsTypeOf__0(const char* type_) noexcept {
   return vtkAssemblyNode::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAssemblyNode__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAssemblyNode__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAssemblyNode*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAssemblyNode__SafeDownCast__0(void* o) {
+extern "C" void* vtkAssemblyNode__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAssemblyNode::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAssemblyNode__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAssemblyNode__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAssemblyNode::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAssemblyNode__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAssemblyNode__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAssemblyNode*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAssemblyNode__SetViewProp__0(void* self, void* prop) {
+extern "C" void vtkAssemblyNode__SetViewProp__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkAssemblyNode*>(self)->SetViewProp(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void* vtkAssemblyNode__GetViewProp__0(void* self) {
+extern "C" void* vtkAssemblyNode__GetViewProp__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAssemblyNode*>(self)->GetViewProp());
 }
 
-extern "C" void vtkAssemblyNode__SetMatrix__0(void* self, void* matrix) {
+extern "C" void vtkAssemblyNode__SetMatrix__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkAssemblyNode*>(self)->SetMatrix(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void* vtkAssemblyNode__GetMatrix__0(void* self) {
+extern "C" void* vtkAssemblyNode__GetMatrix__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAssemblyNode*>(self)->GetMatrix());
 }
 
-extern "C" unsigned long vtkAssemblyNode__GetMTime__0(void* self) {
+extern "C" unsigned long vtkAssemblyNode__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAssemblyNode*>(self)->GetMTime();
 }

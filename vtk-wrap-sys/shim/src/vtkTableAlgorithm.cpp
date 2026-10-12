@@ -6,46 +6,46 @@
 #include "vtkTable.h"
 #include <string>
 
-extern "C" void* vtkTableAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkTableAlgorithm::New()); }
+extern "C" void* vtkTableAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTableAlgorithm::New()); }
 
-extern "C" int32_t vtkTableAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTableAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkTableAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTableAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTableAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTableAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkTableAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTableAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTableAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTableAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTableAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTableAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTableAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkTableAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkTableAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTableAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkTableAlgorithm__GetOutput__1(void* self, int32_t index) {
+extern "C" void* vtkTableAlgorithm__GetOutput__1(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkTableAlgorithm*>(self)->GetOutput(index));
 }
 
-extern "C" void vtkTableAlgorithm__SetInputData__0(void* self, void* obj) {
+extern "C" void vtkTableAlgorithm__SetInputData__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkTableAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(obj));
 }
 
-extern "C" void vtkTableAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) {
+extern "C" void vtkTableAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) noexcept {
   (void)self;
   static_cast<vtkTableAlgorithm*>(self)->SetInputData(index, static_cast<vtkDataObject*>(obj));
 }

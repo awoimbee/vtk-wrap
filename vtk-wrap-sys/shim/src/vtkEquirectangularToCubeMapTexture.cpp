@@ -7,61 +7,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkEquirectangularToCubeMapTexture__vtk_wrap_new() { return static_cast<void*>(vtkEquirectangularToCubeMapTexture::New()); }
+extern "C" void* vtkEquirectangularToCubeMapTexture__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEquirectangularToCubeMapTexture::New()); }
 
-extern "C" int32_t vtkEquirectangularToCubeMapTexture__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEquirectangularToCubeMapTexture__IsTypeOf__0(const char* type_) noexcept {
   return vtkEquirectangularToCubeMapTexture::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEquirectangularToCubeMapTexture__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEquirectangularToCubeMapTexture__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEquirectangularToCubeMapTexture*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEquirectangularToCubeMapTexture__SafeDownCast__0(void* o) {
+extern "C" void* vtkEquirectangularToCubeMapTexture__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEquirectangularToCubeMapTexture::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEquirectangularToCubeMapTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEquirectangularToCubeMapTexture__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEquirectangularToCubeMapTexture::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEquirectangularToCubeMapTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEquirectangularToCubeMapTexture__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEquirectangularToCubeMapTexture*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEquirectangularToCubeMapTexture__SetInputTexture__0(void* self, void* texture) {
+extern "C" void vtkEquirectangularToCubeMapTexture__SetInputTexture__0(void* self, void* texture) noexcept {
   (void)self;
   static_cast<vtkEquirectangularToCubeMapTexture*>(self)->SetInputTexture(static_cast<vtkOpenGLTexture*>(texture));
 }
 
-extern "C" void* vtkEquirectangularToCubeMapTexture__GetInputTexture__0(void* self) {
+extern "C" void* vtkEquirectangularToCubeMapTexture__GetInputTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkEquirectangularToCubeMapTexture*>(self)->GetInputTexture());
 }
 
-extern "C" void vtkEquirectangularToCubeMapTexture__Load__0(void* self, void* arg0) {
+extern "C" void vtkEquirectangularToCubeMapTexture__Load__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkEquirectangularToCubeMapTexture*>(self)->Load(static_cast<vtkRenderer*>(arg0));
 }
 
-extern "C" void vtkEquirectangularToCubeMapTexture__Render__0(void* self, void* ren) {
+extern "C" void vtkEquirectangularToCubeMapTexture__Render__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkEquirectangularToCubeMapTexture*>(self)->Render(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" uint32_t vtkEquirectangularToCubeMapTexture__GetCubeMapSize__0(void* self) {
+extern "C" uint32_t vtkEquirectangularToCubeMapTexture__GetCubeMapSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEquirectangularToCubeMapTexture*>(self)->GetCubeMapSize();
 }
 
-extern "C" void vtkEquirectangularToCubeMapTexture__SetCubeMapSize__0(void* self, uint32_t _arg) {
+extern "C" void vtkEquirectangularToCubeMapTexture__SetCubeMapSize__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkEquirectangularToCubeMapTexture*>(self)->SetCubeMapSize(_arg);
 }
 
-extern "C" void vtkEquirectangularToCubeMapTexture__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkEquirectangularToCubeMapTexture__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkEquirectangularToCubeMapTexture*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

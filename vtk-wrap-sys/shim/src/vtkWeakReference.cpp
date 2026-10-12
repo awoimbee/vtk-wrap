@@ -5,36 +5,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkWeakReference__vtk_wrap_new() { return static_cast<void*>(vtkWeakReference::New()); }
+extern "C" void* vtkWeakReference__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWeakReference::New()); }
 
-extern "C" int32_t vtkWeakReference__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWeakReference__IsTypeOf__0(const char* type_) noexcept {
   return vtkWeakReference::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWeakReference__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWeakReference__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWeakReference*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWeakReference__SafeDownCast__0(void* o) {
+extern "C" void* vtkWeakReference__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWeakReference::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWeakReference__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWeakReference__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWeakReference::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWeakReference__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWeakReference__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWeakReference*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkWeakReference__Set__0(void* self, void* object) {
+extern "C" void vtkWeakReference__Set__0(void* self, void* object) noexcept {
   (void)self;
   static_cast<vtkWeakReference*>(self)->Set(static_cast<vtkObject*>(object));
 }
 
-extern "C" void* vtkWeakReference__Get__0(void* self) {
+extern "C" void* vtkWeakReference__Get__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkWeakReference*>(self)->Get());
 }

@@ -5,60 +5,60 @@
 #include "vtkOverrideAttribute.h"
 #include <string>
 
-extern "C" void* vtkOpenGLHardwareSelector__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLHardwareSelector::New()); }
+extern "C" void* vtkOpenGLHardwareSelector__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLHardwareSelector::New()); }
 
-extern "C" void* vtkOpenGLHardwareSelector__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLHardwareSelector__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLHardwareSelector::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLHardwareSelector__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLHardwareSelector__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLHardwareSelector::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLHardwareSelector__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLHardwareSelector__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLHardwareSelector*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLHardwareSelector__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLHardwareSelector__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLHardwareSelector::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLHardwareSelector__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLHardwareSelector__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLHardwareSelector::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLHardwareSelector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLHardwareSelector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLHardwareSelector*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLHardwareSelector__BeginRenderProp__0(void* self) {
+extern "C" void vtkOpenGLHardwareSelector__BeginRenderProp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->BeginRenderProp();
 }
 
-extern "C" void vtkOpenGLHardwareSelector__EndRenderProp__0(void* self) {
+extern "C" void vtkOpenGLHardwareSelector__EndRenderProp__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->EndRenderProp();
 }
 
-extern "C" void vtkOpenGLHardwareSelector__RenderCompositeIndex__0(void* self, uint32_t index) {
+extern "C" void vtkOpenGLHardwareSelector__RenderCompositeIndex__0(void* self, uint32_t index) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->RenderCompositeIndex(index);
 }
 
-extern "C" void vtkOpenGLHardwareSelector__RenderProcessId__0(void* self, uint32_t processid) {
+extern "C" void vtkOpenGLHardwareSelector__RenderProcessId__0(void* self, uint32_t processid) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->RenderProcessId(processid);
 }
 
-extern "C" void vtkOpenGLHardwareSelector__BeginSelection__0(void* self) {
+extern "C" void vtkOpenGLHardwareSelector__BeginSelection__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->BeginSelection();
 }
 
-extern "C" void vtkOpenGLHardwareSelector__EndSelection__0(void* self) {
+extern "C" void vtkOpenGLHardwareSelector__EndSelection__0(void* self) noexcept {
   (void)self;
   static_cast<vtkOpenGLHardwareSelector*>(self)->EndSelection();
 }

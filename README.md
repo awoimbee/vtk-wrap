@@ -1,8 +1,8 @@
 # vtk-wrap — Rust bindings for VTK
 
-Thin, automatically generated Rust wrappers for the native C++
-[Visualization Toolkit (VTK)](https://vtk.org/). The API mirrors VTK rather
-than providing a higher-level interface.
+Rust bindings for the native C++
+[Visualization Toolkit (VTK)](https://vtk.org/): a complete, generated
+**unsafe API** in `vtk_wrap::raw`.
 
 The committed bindings target **VTK 9.7.1** and cover **1,582 classes and
 ~35,600 methods**. Modules are enabled through Cargo features.
@@ -19,16 +19,16 @@ cargo run -p vtk-wrap --example sphere_source --features vtkFiltersSources
 With the `vtkFiltersSources` feature enabled:
 
 ```rust
-use vtk_wrap::vtkSphereSource;
+use vtk_wrap::raw::vtkSphereSource;
 
-let sphere = vtkSphereSource::new();
-sphere.set_radius(2.0);
-sphere.set_theta_resolution(32);
-sphere.update();
-
-let polydata = sphere.get_output().expect("output");
-let points = polydata.get_points().expect("points");
-println!("{} points", points.get_number_of_points());
+// SAFETY: constructing a sphere source has no extra requirements, the handle
+// owns one reference, and the calls below preserve it.
+unsafe {
+    let sphere = vtkSphereSource::new();
+    sphere.set_radius(2.0);
+    sphere.set_theta_resolution(32);
+    sphere.update();
+}
 ```
 
 ## Requirements and building
@@ -95,20 +95,32 @@ VTK_WRAP_VTK_PREBUILT_DIR=/path/to/vtk-install cargo build -p vtk-wrap-sys
 | `vtk-wrap-sys` | `vtk_wrap_sys` | Raw FFI and native shim |
 | `vtk-wrap-gen` | `vtk-wrap-gen` | Binding generator |
 
-## API behavior and limitations
+## Safety boundary
 
-- `Clone` retains a VTK reference; `Drop` releases it. Returned objects take
-  an extra reference, which can leak when a native method transfers ownership.
-- Base-class methods are available through `Deref`. Overloads use suffixes
+Generated `vtk*` types live under `vtk_wrap::raw`. Every generated native
+method, including constructors and inherited methods, requires `unsafe`; raw
+handles have no `Default` implementation. The caller upholds native
+initialization, index bounds, buffer sizes, pointer lifetimes, ownership,
+aliasing, and thread-affinity requirements — the Rust types alone do not
+establish them.
+
+- Raw `Clone` retains a reference; `Drop` releases it. Unsafe calls must not
+  invalidate references owned by Rust handles.
+- Raw base-class methods are available through `Deref`. Overloads use suffixes
   such as `_v2`; generated docs include aliases for the original C++ names.
-- Wrappers do not enforce all VTK preconditions. Invalid API usage can cause
-  native crashes even when the calling Rust code contains no `unsafe`.
+- Borrowed object results take an extra reference. Owned raw-pointer results
+  can still leak because ownership-transfer conventions are not fully modeled.
+  Smart-pointer results retain a reference before crossing the C ABI.
 - Value types such as `vtkVector` and `vtkVariant`, most templates,
   reference output parameters, multi-dimensional arrays, and callbacks are
   not supported. Unsupported methods are omitted.
 
-See [Binding design](docs/design.md) for ownership, inheritance, and type
-mapping details.
+VTK itself remains trusted native code. There is no audited safe layer; the
+crate exposes the native API directly and leaves every call's contract to the
+caller.
+
+See [Binding design](docs/design.md) for the raw handle contract and type
+mapping.
 
 ## Development
 
@@ -118,12 +130,24 @@ Install and run the formatting, spelling, and workflow checks with
 ```sh
 prek install
 prek run --all-files
-cargo test -p vtk-wrap-gen
-cargo test -p vtk-wrap --test pipeline --features vtkFiltersSources
+cargo test --workspace
+cargo test --workspace --features vtk-wrap/vtkFiltersSources,vtk-wrap/vtkImagingCore,vtk-wrap/vtkIOLegacy,vtk-wrap/vtkIOPLY
 ```
 
-The generated smoke test is a crash-hunting suite with known native crashes;
-it is not part of the fast test commands above.
+Default tests exclude unchecked native diagnostics. Compile-fail tests verify
+that raw constructors, methods and handle access require explicit `unsafe`
+and that raw handles cannot be aliased.
+
+The generated accessor sweep deliberately violates some native preconditions
+and can crash. Run it only in a disposable process, with explicit opt-in:
+
+```sh
+cargo test -p vtk-wrap --test smoke --features crash-hunt
+# Rendering uses the raw API and needs a macOS window server/main thread:
+cargo test -p vtk-wrap --test rendering --features vtkRenderingOpenGL2,raw-rendering-tests
+```
+
+These diagnostics find bad calls and glue bugs; they do not prove soundness.
 
 ### Regenerating bindings
 

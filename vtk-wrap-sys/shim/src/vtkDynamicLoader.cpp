@@ -4,39 +4,39 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDynamicLoader__vtk_wrap_new() { return static_cast<void*>(vtkDynamicLoader::New()); }
+extern "C" void* vtkDynamicLoader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDynamicLoader::New()); }
 
-extern "C" int32_t vtkDynamicLoader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDynamicLoader__IsTypeOf__0(const char* type_) noexcept {
   return vtkDynamicLoader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDynamicLoader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDynamicLoader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDynamicLoader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDynamicLoader__SafeDownCast__0(void* o) {
+extern "C" void* vtkDynamicLoader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDynamicLoader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDynamicLoader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDynamicLoader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDynamicLoader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDynamicLoader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDynamicLoader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDynamicLoader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkDynamicLoader__LibPrefix__0() {
+extern "C" const char* vtkDynamicLoader__LibPrefix__0() noexcept {
   return vtkDynamicLoader::LibPrefix();
 }
 
-extern "C" const char* vtkDynamicLoader__LibExtension__0() {
+extern "C" const char* vtkDynamicLoader__LibExtension__0() noexcept {
   return vtkDynamicLoader::LibExtension();
 }
 
-extern "C" const char* vtkDynamicLoader__LastError__0() {
+extern "C" const char* vtkDynamicLoader__LastError__0() noexcept {
   return vtkDynamicLoader::LastError();
 }
 

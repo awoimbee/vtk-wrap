@@ -8,211 +8,211 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
-extern "C" void* vtkScalarsToColors__vtk_wrap_new() { return static_cast<void*>(vtkScalarsToColors::New()); }
+extern "C" void* vtkScalarsToColors__vtk_wrap_new() noexcept { return static_cast<void*>(vtkScalarsToColors::New()); }
 
-extern "C" int32_t vtkScalarsToColors__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkScalarsToColors__IsTypeOf__0(const char* type_) noexcept {
   return vtkScalarsToColors::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkScalarsToColors__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkScalarsToColors__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkScalarsToColors__SafeDownCast__0(void* o) {
+extern "C" void* vtkScalarsToColors__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkScalarsToColors::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkScalarsToColors__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkScalarsToColors__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkScalarsToColors::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkScalarsToColors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkScalarsToColors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkScalarsToColors__IsOpaque__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__IsOpaque__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->IsOpaque();
 }
 
-extern "C" int32_t vtkScalarsToColors__IsOpaque__1(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent) {
+extern "C" int32_t vtkScalarsToColors__IsOpaque__1(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->IsOpaque(static_cast<vtkAbstractArray*>(scalars), colorMode, vectorComponent);
 }
 
-extern "C" int32_t vtkScalarsToColors__IsOpaque__2(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, void* ghosts, uint8_t ghostsToSkip) {
+extern "C" int32_t vtkScalarsToColors__IsOpaque__2(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, void* ghosts, uint8_t ghostsToSkip) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->IsOpaque(static_cast<vtkAbstractArray*>(scalars), colorMode, vectorComponent, static_cast<vtkUnsignedCharArray*>(ghosts), ghostsToSkip);
 }
 
-extern "C" void vtkScalarsToColors__Build__0(void* self) {
+extern "C" void vtkScalarsToColors__Build__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->Build();
 }
 
-extern "C" void vtkScalarsToColors__SetRange__0(void* self, double min, double max) {
+extern "C" void vtkScalarsToColors__SetRange__0(void* self, double min, double max) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetRange(min, max);
 }
 
-extern "C" void vtkScalarsToColors__SetRange__1(void* self, const double* rng) {
+extern "C" void vtkScalarsToColors__SetRange__1(void* self, const double* rng) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetRange(rng);
 }
 
-extern "C" void vtkScalarsToColors__GetColor__0(void* self, double v, double* rgb) {
+extern "C" void vtkScalarsToColors__GetColor__0(void* self, double v, double* rgb) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->GetColor(v, rgb);
 }
 
-extern "C" double vtkScalarsToColors__GetOpacity__0(void* self, double v) {
+extern "C" double vtkScalarsToColors__GetOpacity__0(void* self, double v) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetOpacity(v);
 }
 
-extern "C" double vtkScalarsToColors__GetLuminance__0(void* self, double x) {
+extern "C" double vtkScalarsToColors__GetLuminance__0(void* self, double x) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetLuminance(x);
 }
 
-extern "C" void vtkScalarsToColors__SetAlpha__0(void* self, double alpha) {
+extern "C" void vtkScalarsToColors__SetAlpha__0(void* self, double alpha) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetAlpha(alpha);
 }
 
-extern "C" double vtkScalarsToColors__GetAlpha__0(void* self) {
+extern "C" double vtkScalarsToColors__GetAlpha__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetAlpha();
 }
 
-extern "C" void* vtkScalarsToColors__MapScalars__0(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, int32_t outputFormat) {
+extern "C" void* vtkScalarsToColors__MapScalars__0(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, int32_t outputFormat) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarsToColors*>(self)->MapScalars(static_cast<vtkDataArray*>(scalars), colorMode, vectorComponent, outputFormat));
 }
 
-extern "C" void* vtkScalarsToColors__MapScalars__1(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, int32_t outputFormat) {
+extern "C" void* vtkScalarsToColors__MapScalars__1(void* self, void* scalars, int32_t colorMode, int32_t vectorComponent, int32_t outputFormat) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarsToColors*>(self)->MapScalars(static_cast<vtkAbstractArray*>(scalars), colorMode, vectorComponent, outputFormat));
 }
 
-extern "C" void vtkScalarsToColors__SetVectorMode__0(void* self, int32_t _arg) {
+extern "C" void vtkScalarsToColors__SetVectorMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorMode(_arg);
 }
 
-extern "C" int32_t vtkScalarsToColors__GetVectorMode__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__GetVectorMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetVectorMode();
 }
 
-extern "C" void vtkScalarsToColors__SetVectorModeToMagnitude__0(void* self) {
+extern "C" void vtkScalarsToColors__SetVectorModeToMagnitude__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorModeToMagnitude();
 }
 
-extern "C" void vtkScalarsToColors__SetVectorModeToComponent__0(void* self) {
+extern "C" void vtkScalarsToColors__SetVectorModeToComponent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorModeToComponent();
 }
 
-extern "C" void vtkScalarsToColors__SetVectorModeToRGBColors__0(void* self) {
+extern "C" void vtkScalarsToColors__SetVectorModeToRGBColors__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorModeToRGBColors();
 }
 
-extern "C" void vtkScalarsToColors__SetVectorComponent__0(void* self, int32_t _arg) {
+extern "C" void vtkScalarsToColors__SetVectorComponent__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorComponent(_arg);
 }
 
-extern "C" int32_t vtkScalarsToColors__GetVectorComponent__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__GetVectorComponent__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetVectorComponent();
 }
 
-extern "C" void vtkScalarsToColors__SetVectorSize__0(void* self, int32_t _arg) {
+extern "C" void vtkScalarsToColors__SetVectorSize__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetVectorSize(_arg);
 }
 
-extern "C" int32_t vtkScalarsToColors__GetVectorSize__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__GetVectorSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetVectorSize();
 }
 
-extern "C" void vtkScalarsToColors__DeepCopy__0(void* self, void* o) {
+extern "C" void vtkScalarsToColors__DeepCopy__0(void* self, void* o) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->DeepCopy(static_cast<vtkScalarsToColors*>(o));
 }
 
-extern "C" int32_t vtkScalarsToColors__UsingLogScale__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__UsingLogScale__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->UsingLogScale();
 }
 
-extern "C" int64_t vtkScalarsToColors__GetNumberOfAvailableColors__0(void* self) {
+extern "C" int64_t vtkScalarsToColors__GetNumberOfAvailableColors__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetNumberOfAvailableColors();
 }
 
-extern "C" void vtkScalarsToColors__SetAnnotations__0(void* self, void* values, void* annotations) {
+extern "C" void vtkScalarsToColors__SetAnnotations__0(void* self, void* values, void* annotations) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetAnnotations(static_cast<vtkAbstractArray*>(values), static_cast<vtkStringArray*>(annotations));
 }
 
-extern "C" void* vtkScalarsToColors__GetAnnotatedValues__0(void* self) {
+extern "C" void* vtkScalarsToColors__GetAnnotatedValues__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarsToColors*>(self)->GetAnnotatedValues());
 }
 
-extern "C" void* vtkScalarsToColors__GetAnnotations__0(void* self) {
+extern "C" void* vtkScalarsToColors__GetAnnotations__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarsToColors*>(self)->GetAnnotations());
 }
 
-extern "C" int64_t vtkScalarsToColors__SetAnnotation__0(void* self, const char* value, const char* annotation) {
+extern "C" int64_t vtkScalarsToColors__SetAnnotation__0(void* self, const char* value, const char* annotation) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->SetAnnotation(std::string(value), std::string(annotation));
 }
 
-extern "C" int64_t vtkScalarsToColors__GetNumberOfAnnotatedValues__0(void* self) {
+extern "C" int64_t vtkScalarsToColors__GetNumberOfAnnotatedValues__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetNumberOfAnnotatedValues();
 }
 
-extern "C" char* vtkScalarsToColors__GetAnnotation__0(void* self, int64_t idx) {
+extern "C" char* vtkScalarsToColors__GetAnnotation__0(void* self, int64_t idx) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkScalarsToColors*>(self)->GetAnnotation(idx)).c_str());
 }
 
-extern "C" void vtkScalarsToColors__GetIndexedColor__0(void* self, int64_t i, double* rgba) {
+extern "C" void vtkScalarsToColors__GetIndexedColor__0(void* self, int64_t i, double* rgba) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->GetIndexedColor(i, rgba);
 }
 
-extern "C" void vtkScalarsToColors__ResetAnnotations__0(void* self) {
+extern "C" void vtkScalarsToColors__ResetAnnotations__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->ResetAnnotations();
 }
 
-extern "C" void vtkScalarsToColors__SetIndexedLookup__0(void* self, int32_t _arg) {
+extern "C" void vtkScalarsToColors__SetIndexedLookup__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->SetIndexedLookup(_arg);
 }
 
-extern "C" int32_t vtkScalarsToColors__GetIndexedLookup__0(void* self) {
+extern "C" int32_t vtkScalarsToColors__GetIndexedLookup__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarsToColors*>(self)->GetIndexedLookup();
 }
 
-extern "C" void vtkScalarsToColors__IndexedLookupOn__0(void* self) {
+extern "C" void vtkScalarsToColors__IndexedLookupOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->IndexedLookupOn();
 }
 
-extern "C" void vtkScalarsToColors__IndexedLookupOff__0(void* self) {
+extern "C" void vtkScalarsToColors__IndexedLookupOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarsToColors*>(self)->IndexedLookupOff();
 }

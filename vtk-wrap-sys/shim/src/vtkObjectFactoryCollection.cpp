@@ -5,36 +5,36 @@
 #include "vtkObjectFactory.h"
 #include <string>
 
-extern "C" void* vtkObjectFactoryCollection__vtk_wrap_new() { return static_cast<void*>(vtkObjectFactoryCollection::New()); }
+extern "C" void* vtkObjectFactoryCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkObjectFactoryCollection::New()); }
 
-extern "C" int32_t vtkObjectFactoryCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkObjectFactoryCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkObjectFactoryCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkObjectFactoryCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkObjectFactoryCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkObjectFactoryCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkObjectFactoryCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkObjectFactoryCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkObjectFactoryCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkObjectFactoryCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkObjectFactoryCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkObjectFactoryCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkObjectFactoryCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkObjectFactoryCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkObjectFactoryCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkObjectFactoryCollection__AddItem__0(void* self, void* t) {
+extern "C" void vtkObjectFactoryCollection__AddItem__0(void* self, void* t) noexcept {
   (void)self;
   static_cast<vtkObjectFactoryCollection*>(self)->AddItem(static_cast<vtkObjectFactory*>(t));
 }
 
-extern "C" void* vtkObjectFactoryCollection__GetNextItem__0(void* self) {
+extern "C" void* vtkObjectFactoryCollection__GetNextItem__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkObjectFactoryCollection*>(self)->GetNextItem());
 }

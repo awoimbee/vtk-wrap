@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOutlineCornerFilter__vtk_wrap_new() { return static_cast<void*>(vtkOutlineCornerFilter::New()); }
+extern "C" void* vtkOutlineCornerFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOutlineCornerFilter::New()); }
 
-extern "C" int32_t vtkOutlineCornerFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOutlineCornerFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkOutlineCornerFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOutlineCornerFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOutlineCornerFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutlineCornerFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOutlineCornerFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkOutlineCornerFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOutlineCornerFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOutlineCornerFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOutlineCornerFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOutlineCornerFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOutlineCornerFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOutlineCornerFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOutlineCornerFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOutlineCornerFilter__SetCornerFactor__0(void* self, double _arg) {
+extern "C" void vtkOutlineCornerFilter__SetCornerFactor__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkOutlineCornerFilter*>(self)->SetCornerFactor(_arg);
 }
 
-extern "C" double vtkOutlineCornerFilter__GetCornerFactorMinValue__0(void* self) {
+extern "C" double vtkOutlineCornerFilter__GetCornerFactorMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutlineCornerFilter*>(self)->GetCornerFactorMinValue();
 }
 
-extern "C" double vtkOutlineCornerFilter__GetCornerFactorMaxValue__0(void* self) {
+extern "C" double vtkOutlineCornerFilter__GetCornerFactorMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutlineCornerFilter*>(self)->GetCornerFactorMaxValue();
 }
 
-extern "C" double vtkOutlineCornerFilter__GetCornerFactor__0(void* self) {
+extern "C" double vtkOutlineCornerFilter__GetCornerFactor__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOutlineCornerFilter*>(self)->GetCornerFactor();
 }

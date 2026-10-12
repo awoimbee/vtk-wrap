@@ -4,91 +4,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTecplotReader__vtk_wrap_new() { return static_cast<void*>(vtkTecplotReader::New()); }
+extern "C" void* vtkTecplotReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTecplotReader::New()); }
 
-extern "C" int32_t vtkTecplotReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTecplotReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkTecplotReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTecplotReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTecplotReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTecplotReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkTecplotReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTecplotReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTecplotReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTecplotReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTecplotReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTecplotReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTecplotReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkTecplotReader__GetNumberOfVariables__0(void* self) {
+extern "C" int32_t vtkTecplotReader__GetNumberOfVariables__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetNumberOfVariables();
 }
 
-extern "C" void vtkTecplotReader__SetFileName__0(void* self, const char* fileName) {
+extern "C" void vtkTecplotReader__SetFileName__0(void* self, const char* fileName) noexcept {
   (void)self;
   static_cast<vtkTecplotReader*>(self)->SetFileName(fileName);
 }
 
-extern "C" const char* vtkTecplotReader__GetDataTitle__0(void* self) {
+extern "C" const char* vtkTecplotReader__GetDataTitle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetDataTitle();
 }
 
-extern "C" int32_t vtkTecplotReader__GetNumberOfBlocks__0(void* self) {
+extern "C" int32_t vtkTecplotReader__GetNumberOfBlocks__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetNumberOfBlocks();
 }
 
-extern "C" const char* vtkTecplotReader__GetBlockName__0(void* self, int32_t blockIdx) {
+extern "C" const char* vtkTecplotReader__GetBlockName__0(void* self, int32_t blockIdx) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetBlockName(blockIdx);
 }
 
-extern "C" int32_t vtkTecplotReader__GetNumberOfDataAttributes__0(void* self) {
+extern "C" int32_t vtkTecplotReader__GetNumberOfDataAttributes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetNumberOfDataAttributes();
 }
 
-extern "C" const char* vtkTecplotReader__GetDataAttributeName__0(void* self, int32_t attrIndx) {
+extern "C" const char* vtkTecplotReader__GetDataAttributeName__0(void* self, int32_t attrIndx) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetDataAttributeName(attrIndx);
 }
 
-extern "C" int32_t vtkTecplotReader__IsDataAttributeCellBased__0(void* self, const char* attrName) {
+extern "C" int32_t vtkTecplotReader__IsDataAttributeCellBased__0(void* self, const char* attrName) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->IsDataAttributeCellBased(attrName);
 }
 
-extern "C" int32_t vtkTecplotReader__IsDataAttributeCellBased__1(void* self, int32_t attrIndx) {
+extern "C" int32_t vtkTecplotReader__IsDataAttributeCellBased__1(void* self, int32_t attrIndx) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->IsDataAttributeCellBased(attrIndx);
 }
 
-extern "C" int32_t vtkTecplotReader__GetNumberOfDataArrays__0(void* self) {
+extern "C" int32_t vtkTecplotReader__GetNumberOfDataArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetNumberOfDataArrays();
 }
 
-extern "C" const char* vtkTecplotReader__GetDataArrayName__0(void* self, int32_t arrayIdx) {
+extern "C" const char* vtkTecplotReader__GetDataArrayName__0(void* self, int32_t arrayIdx) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetDataArrayName(arrayIdx);
 }
 
-extern "C" int32_t vtkTecplotReader__GetDataArrayStatus__0(void* self, const char* arayName) {
+extern "C" int32_t vtkTecplotReader__GetDataArrayStatus__0(void* self, const char* arayName) noexcept {
   (void)self;
   return static_cast<vtkTecplotReader*>(self)->GetDataArrayStatus(arayName);
 }
 
-extern "C" void vtkTecplotReader__SetDataArrayStatus__0(void* self, const char* arayName, int32_t bChecked) {
+extern "C" void vtkTecplotReader__SetDataArrayStatus__0(void* self, const char* arayName, int32_t bChecked) noexcept {
   (void)self;
   static_cast<vtkTecplotReader*>(self)->SetDataArrayStatus(arayName, bChecked);
 }

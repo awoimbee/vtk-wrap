@@ -9,74 +9,74 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" int32_t vtkCell3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCell3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkCell3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCell3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCell3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCell3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkCell3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCell3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCell3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCell3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCell3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCell3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCell3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCell3D__IsInsideOut__0(void* self) {
+extern "C" bool vtkCell3D__IsInsideOut__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->IsInsideOut();
 }
 
-extern "C" bool vtkCell3D__GetCentroid__0(void* self, double* centroid) {
+extern "C" bool vtkCell3D__GetCentroid__0(void* self, double* centroid) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetCentroid(centroid);
 }
 
-extern "C" void vtkCell3D__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkCell3D__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkCell3D*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkCell3D__Clip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkCell3D__Clip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkCell3D*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(connectivity), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkCell3D__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkCell3D__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkCell3D__Inflate__0(void* self, double dist) {
+extern "C" int32_t vtkCell3D__Inflate__0(void* self, double dist) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->Inflate(dist);
 }
 
-extern "C" void vtkCell3D__SetMergeTolerance__0(void* self, double _arg) {
+extern "C" void vtkCell3D__SetMergeTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkCell3D*>(self)->SetMergeTolerance(_arg);
 }
 
-extern "C" double vtkCell3D__GetMergeToleranceMinValue__0(void* self) {
+extern "C" double vtkCell3D__GetMergeToleranceMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetMergeToleranceMinValue();
 }
 
-extern "C" double vtkCell3D__GetMergeToleranceMaxValue__0(void* self) {
+extern "C" double vtkCell3D__GetMergeToleranceMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetMergeToleranceMaxValue();
 }
 
-extern "C" double vtkCell3D__GetMergeTolerance__0(void* self) {
+extern "C" double vtkCell3D__GetMergeTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCell3D*>(self)->GetMergeTolerance();
 }

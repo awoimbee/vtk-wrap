@@ -6,31 +6,31 @@
 #include "vtkVolume.h"
 #include <string>
 
-extern "C" void* vtkFixedPointVolumeRayCastHelper__vtk_wrap_new() { return static_cast<void*>(vtkFixedPointVolumeRayCastHelper::New()); }
+extern "C" void* vtkFixedPointVolumeRayCastHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFixedPointVolumeRayCastHelper::New()); }
 
-extern "C" int32_t vtkFixedPointVolumeRayCastHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFixedPointVolumeRayCastHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkFixedPointVolumeRayCastHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFixedPointVolumeRayCastHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFixedPointVolumeRayCastHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointVolumeRayCastHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFixedPointVolumeRayCastHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkFixedPointVolumeRayCastHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFixedPointVolumeRayCastHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFixedPointVolumeRayCastHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFixedPointVolumeRayCastHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFixedPointVolumeRayCastHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFixedPointVolumeRayCastHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFixedPointVolumeRayCastHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFixedPointVolumeRayCastHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFixedPointVolumeRayCastHelper__GenerateImage__0(void* self, int32_t arg0, int32_t arg1, void* arg2, void* arg3) {
+extern "C" void vtkFixedPointVolumeRayCastHelper__GenerateImage__0(void* self, int32_t arg0, int32_t arg1, void* arg2, void* arg3) noexcept {
   (void)self;
   static_cast<vtkFixedPointVolumeRayCastHelper*>(self)->GenerateImage(arg0, arg1, static_cast<vtkVolume*>(arg2), static_cast<vtkFixedPointVolumeRayCastMapper*>(arg3));
 }

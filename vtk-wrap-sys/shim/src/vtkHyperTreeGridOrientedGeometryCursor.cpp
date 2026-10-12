@@ -6,126 +6,126 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__vtk_wrap_new() { return static_cast<void*>(vtkHyperTreeGridOrientedGeometryCursor::New()); }
+extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHyperTreeGridOrientedGeometryCursor::New()); }
 
-extern "C" int32_t vtkHyperTreeGridOrientedGeometryCursor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHyperTreeGridOrientedGeometryCursor__IsTypeOf__0(const char* type_) noexcept {
   return vtkHyperTreeGridOrientedGeometryCursor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHyperTreeGridOrientedGeometryCursor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHyperTreeGridOrientedGeometryCursor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__SafeDownCast__0(void* o) {
+extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHyperTreeGridOrientedGeometryCursor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHyperTreeGridOrientedGeometryCursor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__Clone__0(void* self) {
+extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__Clone__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->Clone());
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__Initialize__0(void* self, void* grid, int64_t treeIndex, bool create) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__Initialize__0(void* self, void* grid, int64_t treeIndex, bool create) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->Initialize(static_cast<vtkHyperTreeGrid*>(grid), treeIndex, create);
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__Initialize__1(void* self, void* cursor) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__Initialize__1(void* self, void* cursor) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->Initialize(static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(cursor));
 }
 
-extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__HasTree__0(void* self) {
+extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__HasTree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->HasTree();
 }
 
-extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__GetTree__0(void* self) {
+extern "C" void* vtkHyperTreeGridOrientedGeometryCursor__GetTree__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetTree());
 }
 
-extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetVertexId__0(void* self) {
+extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetVertexId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetVertexId();
 }
 
-extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetGlobalNodeIndex__0(void* self) {
+extern "C" int64_t vtkHyperTreeGridOrientedGeometryCursor__GetGlobalNodeIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetGlobalNodeIndex();
 }
 
-extern "C" uint8_t vtkHyperTreeGridOrientedGeometryCursor__GetDimension__0(void* self) {
+extern "C" uint8_t vtkHyperTreeGridOrientedGeometryCursor__GetDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetDimension();
 }
 
-extern "C" uint8_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfChildren__0(void* self) {
+extern "C" uint8_t vtkHyperTreeGridOrientedGeometryCursor__GetNumberOfChildren__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetNumberOfChildren();
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetGlobalIndexStart__0(void* self, int64_t index) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetGlobalIndexStart__0(void* self, int64_t index) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->SetGlobalIndexStart(index);
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetGlobalIndexFromLocal__0(void* self, int64_t index) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetGlobalIndexFromLocal__0(void* self, int64_t index) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->SetGlobalIndexFromLocal(index);
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__GetBounds__0(void* self, double* bounds) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__GetBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetBounds(bounds);
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__GetPoint__0(void* self, double* point) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__GetPoint__0(void* self, double* point) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetPoint(point);
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetMask__0(void* self, bool state) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SetMask__0(void* self, bool state) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->SetMask(state);
 }
 
-extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsMasked__0(void* self) {
+extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsMasked__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->IsMasked();
 }
 
-extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsLeaf__0(void* self) {
+extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsLeaf__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->IsLeaf();
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SubdivideLeaf__0(void* self) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__SubdivideLeaf__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->SubdivideLeaf();
 }
 
-extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsRoot__0(void* self) {
+extern "C" bool vtkHyperTreeGridOrientedGeometryCursor__IsRoot__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->IsRoot();
 }
 
-extern "C" uint32_t vtkHyperTreeGridOrientedGeometryCursor__GetLevel__0(void* self) {
+extern "C" uint32_t vtkHyperTreeGridOrientedGeometryCursor__GetLevel__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->GetLevel();
 }
 
-extern "C" void vtkHyperTreeGridOrientedGeometryCursor__ToChild__0(void* self, uint8_t ichild) {
+extern "C" void vtkHyperTreeGridOrientedGeometryCursor__ToChild__0(void* self, uint8_t ichild) noexcept {
   (void)self;
   static_cast<vtkHyperTreeGridOrientedGeometryCursor*>(self)->ToChild(ichild);
 }

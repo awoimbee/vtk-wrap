@@ -6,76 +6,76 @@
 #include "vtkRectilinearGrid.h"
 #include <string>
 
-extern "C" void* vtkRectilinearGridAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkRectilinearGridAlgorithm::New()); }
+extern "C" void* vtkRectilinearGridAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRectilinearGridAlgorithm::New()); }
 
-extern "C" int32_t vtkRectilinearGridAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRectilinearGridAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkRectilinearGridAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRectilinearGridAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRectilinearGridAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkRectilinearGridAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRectilinearGridAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRectilinearGridAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRectilinearGridAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRectilinearGridAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRectilinearGridAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRectilinearGridAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRectilinearGridAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkRectilinearGridAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRectilinearGridAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkRectilinearGridAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRectilinearGridAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkRectilinearGridAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkRectilinearGridAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__GetInput__0(void* self) {
+extern "C" void* vtkRectilinearGridAlgorithm__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRectilinearGridAlgorithm*>(self)->GetInput());
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkRectilinearGridAlgorithm__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRectilinearGridAlgorithm*>(self)->GetInput(port));
 }
 
-extern "C" void* vtkRectilinearGridAlgorithm__GetRectilinearGridInput__0(void* self, int32_t port) {
+extern "C" void* vtkRectilinearGridAlgorithm__GetRectilinearGridInput__0(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkRectilinearGridAlgorithm*>(self)->GetRectilinearGridInput(port));
 }
 
-extern "C" void vtkRectilinearGridAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkRectilinearGridAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkRectilinearGridAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkRectilinearGridAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkRectilinearGridAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkRectilinearGridAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkRectilinearGridAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkRectilinearGridAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkRectilinearGridAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

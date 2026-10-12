@@ -6,66 +6,66 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkDataSetRegionSurfaceFilter__vtk_wrap_new() { return static_cast<void*>(vtkDataSetRegionSurfaceFilter::New()); }
+extern "C" void* vtkDataSetRegionSurfaceFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetRegionSurfaceFilter::New()); }
 
-extern "C" int32_t vtkDataSetRegionSurfaceFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataSetRegionSurfaceFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataSetRegionSurfaceFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataSetRegionSurfaceFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataSetRegionSurfaceFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetRegionSurfaceFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataSetRegionSurfaceFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataSetRegionSurfaceFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataSetRegionSurfaceFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataSetRegionSurfaceFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataSetRegionSurfaceFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataSetRegionSurfaceFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataSetRegionSurfaceFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataSetRegionSurfaceFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataSetRegionSurfaceFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetRegionArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetRegionArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetRegionArrayName(_arg);
 }
 
-extern "C" int32_t vtkDataSetRegionSurfaceFilter__UnstructuredGridExecute__0(void* self, void* input, void* output) {
+extern "C" int32_t vtkDataSetRegionSurfaceFilter__UnstructuredGridExecute__0(void* self, void* input, void* output) noexcept {
   (void)self;
   return static_cast<vtkDataSetRegionSurfaceFilter*>(self)->UnstructuredGridExecute(static_cast<vtkDataSet*>(input), static_cast<vtkPolyData*>(output));
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetSingleSided__0(void* self, bool _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetSingleSided__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetSingleSided(_arg);
 }
 
-extern "C" bool vtkDataSetRegionSurfaceFilter__GetSingleSided__0(void* self) {
+extern "C" bool vtkDataSetRegionSurfaceFilter__GetSingleSided__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataSetRegionSurfaceFilter*>(self)->GetSingleSided();
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialPropertiesName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialPropertiesName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetMaterialPropertiesName(_arg);
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialIDsName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialIDsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetMaterialIDsName(_arg);
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialPIDsName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetMaterialPIDsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetMaterialPIDsName(_arg);
 }
 
-extern "C" void vtkDataSetRegionSurfaceFilter__SetInterfaceIDsName__0(void* self, const char* _arg) {
+extern "C" void vtkDataSetRegionSurfaceFilter__SetInterfaceIDsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkDataSetRegionSurfaceFilter*>(self)->SetInterfaceIDsName(_arg);
 }

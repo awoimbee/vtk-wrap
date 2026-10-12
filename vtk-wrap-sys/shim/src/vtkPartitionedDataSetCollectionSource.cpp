@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPartitionedDataSetCollectionSource__vtk_wrap_new() { return static_cast<void*>(vtkPartitionedDataSetCollectionSource::New()); }
+extern "C" void* vtkPartitionedDataSetCollectionSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPartitionedDataSetCollectionSource::New()); }
 
-extern "C" int32_t vtkPartitionedDataSetCollectionSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPartitionedDataSetCollectionSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkPartitionedDataSetCollectionSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPartitionedDataSetCollectionSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPartitionedDataSetCollectionSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSetCollectionSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPartitionedDataSetCollectionSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkPartitionedDataSetCollectionSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPartitionedDataSetCollectionSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPartitionedDataSetCollectionSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPartitionedDataSetCollectionSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPartitionedDataSetCollectionSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPartitionedDataSetCollectionSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPartitionedDataSetCollectionSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSetCollectionSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPartitionedDataSetCollectionSource__SetNumberOfShapes__0(void* self, int32_t _arg) {
+extern "C" void vtkPartitionedDataSetCollectionSource__SetNumberOfShapes__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPartitionedDataSetCollectionSource*>(self)->SetNumberOfShapes(_arg);
 }
 
-extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapesMinValue__0(void* self) {
+extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSetCollectionSource*>(self)->GetNumberOfShapesMinValue();
 }
 
-extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapesMaxValue__0(void* self) {
+extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSetCollectionSource*>(self)->GetNumberOfShapesMaxValue();
 }
 
-extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapes__0(void* self) {
+extern "C" int32_t vtkPartitionedDataSetCollectionSource__GetNumberOfShapes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPartitionedDataSetCollectionSource*>(self)->GetNumberOfShapes();
 }

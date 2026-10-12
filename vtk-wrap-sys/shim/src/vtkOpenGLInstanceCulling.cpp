@@ -7,66 +7,66 @@
 #include "vtkPolyData.h"
 #include <string>
 
-extern "C" void* vtkOpenGLInstanceCulling__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLInstanceCulling::New()); }
+extern "C" void* vtkOpenGLInstanceCulling__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLInstanceCulling::New()); }
 
-extern "C" int32_t vtkOpenGLInstanceCulling__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLInstanceCulling__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLInstanceCulling::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLInstanceCulling__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLInstanceCulling__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLInstanceCulling*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLInstanceCulling__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLInstanceCulling__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLInstanceCulling::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLInstanceCulling::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLInstanceCulling*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLInstanceCulling__InitLOD__0(void* self, void* pd) {
+extern "C" void vtkOpenGLInstanceCulling__InitLOD__0(void* self, void* pd) noexcept {
   (void)self;
   static_cast<vtkOpenGLInstanceCulling*>(self)->InitLOD(static_cast<vtkPolyData*>(pd));
 }
 
-extern "C" void vtkOpenGLInstanceCulling__AddLOD__0(void* self, float distance, float targetReduction) {
+extern "C" void vtkOpenGLInstanceCulling__AddLOD__0(void* self, float distance, float targetReduction) noexcept {
   (void)self;
   static_cast<vtkOpenGLInstanceCulling*>(self)->AddLOD(distance, targetReduction);
 }
 
-extern "C" void vtkOpenGLInstanceCulling__BuildCullingShaders__0(void* self, void* cache, int64_t numInstances, bool withNormals) {
+extern "C" void vtkOpenGLInstanceCulling__BuildCullingShaders__0(void* self, void* cache, int64_t numInstances, bool withNormals) noexcept {
   (void)self;
   static_cast<vtkOpenGLInstanceCulling*>(self)->BuildCullingShaders(static_cast<vtkOpenGLShaderCache*>(cache), numInstances, withNormals);
 }
 
-extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfLOD__0(void* self) {
+extern "C" int64_t vtkOpenGLInstanceCulling__GetNumberOfLOD__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLInstanceCulling*>(self)->GetNumberOfLOD();
 }
 
-extern "C" void* vtkOpenGLInstanceCulling__GetLODBuffer__0(void* self, int64_t index) {
+extern "C" void* vtkOpenGLInstanceCulling__GetLODBuffer__0(void* self, int64_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOpenGLInstanceCulling*>(self)->GetLODBuffer(index));
 }
 
-extern "C" void vtkOpenGLInstanceCulling__RunCullingShaders__0(void* self, int64_t numInstances, void* matrixBuffer, void* colorBuffer, void* normalBuffer) {
+extern "C" void vtkOpenGLInstanceCulling__RunCullingShaders__0(void* self, int64_t numInstances, void* matrixBuffer, void* colorBuffer, void* normalBuffer) noexcept {
   (void)self;
   static_cast<vtkOpenGLInstanceCulling*>(self)->RunCullingShaders(numInstances, static_cast<vtkOpenGLBufferObject*>(matrixBuffer), static_cast<vtkOpenGLBufferObject*>(colorBuffer), static_cast<vtkOpenGLBufferObject*>(normalBuffer));
 }
 
-extern "C" void vtkOpenGLInstanceCulling__SetColorLOD__0(void* self, bool _arg) {
+extern "C" void vtkOpenGLInstanceCulling__SetColorLOD__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLInstanceCulling*>(self)->SetColorLOD(_arg);
 }
 
-extern "C" bool vtkOpenGLInstanceCulling__GetColorLOD__0(void* self) {
+extern "C" bool vtkOpenGLInstanceCulling__GetColorLOD__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLInstanceCulling*>(self)->GetColorLOD();
 }

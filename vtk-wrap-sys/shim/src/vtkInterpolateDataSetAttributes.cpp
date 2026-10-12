@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInterpolateDataSetAttributes__vtk_wrap_new() { return static_cast<void*>(vtkInterpolateDataSetAttributes::New()); }
+extern "C" void* vtkInterpolateDataSetAttributes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInterpolateDataSetAttributes::New()); }
 
-extern "C" int32_t vtkInterpolateDataSetAttributes__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInterpolateDataSetAttributes__IsTypeOf__0(const char* type_) noexcept {
   return vtkInterpolateDataSetAttributes::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInterpolateDataSetAttributes__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInterpolateDataSetAttributes__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInterpolateDataSetAttributes*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInterpolateDataSetAttributes__SafeDownCast__0(void* o) {
+extern "C" void* vtkInterpolateDataSetAttributes__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInterpolateDataSetAttributes::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInterpolateDataSetAttributes__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInterpolateDataSetAttributes__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInterpolateDataSetAttributes::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInterpolateDataSetAttributes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInterpolateDataSetAttributes__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInterpolateDataSetAttributes*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInterpolateDataSetAttributes__GetInputList__0(void* self) {
+extern "C" void* vtkInterpolateDataSetAttributes__GetInputList__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInterpolateDataSetAttributes*>(self)->GetInputList());
 }
 
-extern "C" void vtkInterpolateDataSetAttributes__SetT__0(void* self, double _arg) {
+extern "C" void vtkInterpolateDataSetAttributes__SetT__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkInterpolateDataSetAttributes*>(self)->SetT(_arg);
 }
 
-extern "C" double vtkInterpolateDataSetAttributes__GetTMinValue__0(void* self) {
+extern "C" double vtkInterpolateDataSetAttributes__GetTMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInterpolateDataSetAttributes*>(self)->GetTMinValue();
 }
 
-extern "C" double vtkInterpolateDataSetAttributes__GetTMaxValue__0(void* self) {
+extern "C" double vtkInterpolateDataSetAttributes__GetTMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInterpolateDataSetAttributes*>(self)->GetTMaxValue();
 }
 
-extern "C" double vtkInterpolateDataSetAttributes__GetT__0(void* self) {
+extern "C" double vtkInterpolateDataSetAttributes__GetT__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInterpolateDataSetAttributes*>(self)->GetT();
 }

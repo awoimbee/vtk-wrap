@@ -11,91 +11,91 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkDepthPeelingPass__vtk_wrap_new() { return static_cast<void*>(vtkDepthPeelingPass::New()); }
+extern "C" void* vtkDepthPeelingPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDepthPeelingPass::New()); }
 
-extern "C" int32_t vtkDepthPeelingPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDepthPeelingPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkDepthPeelingPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDepthPeelingPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDepthPeelingPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDepthPeelingPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkDepthPeelingPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDepthPeelingPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDepthPeelingPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDepthPeelingPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDepthPeelingPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDepthPeelingPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDepthPeelingPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDepthPeelingPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkDepthPeelingPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkDepthPeelingPass__GetTranslucentPass__0(void* self) {
+extern "C" void* vtkDepthPeelingPass__GetTranslucentPass__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDepthPeelingPass*>(self)->GetTranslucentPass());
 }
 
-extern "C" void vtkDepthPeelingPass__SetTranslucentPass__0(void* self, void* translucentPass) {
+extern "C" void vtkDepthPeelingPass__SetTranslucentPass__0(void* self, void* translucentPass) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetTranslucentPass(static_cast<vtkRenderPass*>(translucentPass));
 }
 
-extern "C" void vtkDepthPeelingPass__SetOcclusionRatio__0(void* self, double _arg) {
+extern "C" void vtkDepthPeelingPass__SetOcclusionRatio__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetOcclusionRatio(_arg);
 }
 
-extern "C" double vtkDepthPeelingPass__GetOcclusionRatioMinValue__0(void* self) {
+extern "C" double vtkDepthPeelingPass__GetOcclusionRatioMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->GetOcclusionRatioMinValue();
 }
 
-extern "C" double vtkDepthPeelingPass__GetOcclusionRatioMaxValue__0(void* self) {
+extern "C" double vtkDepthPeelingPass__GetOcclusionRatioMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->GetOcclusionRatioMaxValue();
 }
 
-extern "C" double vtkDepthPeelingPass__GetOcclusionRatio__0(void* self) {
+extern "C" double vtkDepthPeelingPass__GetOcclusionRatio__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->GetOcclusionRatio();
 }
 
-extern "C" void vtkDepthPeelingPass__SetMaximumNumberOfPeels__0(void* self, int32_t _arg) {
+extern "C" void vtkDepthPeelingPass__SetMaximumNumberOfPeels__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetMaximumNumberOfPeels(_arg);
 }
 
-extern "C" int32_t vtkDepthPeelingPass__GetMaximumNumberOfPeels__0(void* self) {
+extern "C" int32_t vtkDepthPeelingPass__GetMaximumNumberOfPeels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->GetMaximumNumberOfPeels();
 }
 
-extern "C" bool vtkDepthPeelingPass__SetShaderParameters__0(void* self, void* program, void* mapper, void* prop, void* VAO) {
+extern "C" bool vtkDepthPeelingPass__SetShaderParameters__0(void* self, void* program, void* mapper, void* prop, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkDepthPeelingPass*>(self)->SetShaderParameters(static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkProp*>(prop), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" void vtkDepthPeelingPass__SetOpaqueZTexture__0(void* self, void* arg0) {
+extern "C" void vtkDepthPeelingPass__SetOpaqueZTexture__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetOpaqueZTexture(static_cast<vtkTextureObject*>(arg0));
 }
 
-extern "C" void vtkDepthPeelingPass__SetOpaqueRGBATexture__0(void* self, void* arg0) {
+extern "C" void vtkDepthPeelingPass__SetOpaqueRGBATexture__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetOpaqueRGBATexture(static_cast<vtkTextureObject*>(arg0));
 }
 
-extern "C" void vtkDepthPeelingPass__SetDepthFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkDepthPeelingPass__SetDepthFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDepthPeelingPass*>(self)->SetDepthFormat(_arg);
 }

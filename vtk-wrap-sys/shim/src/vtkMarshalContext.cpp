@@ -5,91 +5,97 @@
 #include "vtkTypeUInt8Array.h"
 #include <string>
 
-extern "C" void* vtkMarshalContext__vtk_wrap_new() { return static_cast<void*>(vtkMarshalContext::New()); }
+extern "C" void* vtkMarshalContext__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMarshalContext::New()); }
 
-extern "C" int32_t vtkMarshalContext__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMarshalContext__IsTypeOf__0(const char* type_) noexcept {
   return vtkMarshalContext::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMarshalContext__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMarshalContext__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMarshalContext__SafeDownCast__0(void* o) {
+extern "C" void* vtkMarshalContext__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMarshalContext::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMarshalContext__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMarshalContext__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMarshalContext::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMarshalContext__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMarshalContext__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMarshalContext__KeepAlive__0(void* self, const char* owner, void* objectBase) {
+extern "C" void vtkMarshalContext__KeepAlive__0(void* self, const char* owner, void* objectBase) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->KeepAlive(std::string(owner), static_cast<vtkObjectBase*>(objectBase));
 }
 
-extern "C" void vtkMarshalContext__Retire__0(void* self, const char* owner, void* objectBase) {
+extern "C" void vtkMarshalContext__Retire__0(void* self, const char* owner, void* objectBase) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->Retire(std::string(owner), static_cast<vtkObjectBase*>(objectBase));
 }
 
-extern "C" bool vtkMarshalContext__UnRegisterState__0(void* self, uint32_t identifier) {
+extern "C" bool vtkMarshalContext__UnRegisterState__0(void* self, uint32_t identifier) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->UnRegisterState(identifier);
 }
 
-extern "C" bool vtkMarshalContext__UnRegisterObject__0(void* self, uint32_t identifier) {
+extern "C" bool vtkMarshalContext__UnRegisterObject__0(void* self, uint32_t identifier) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->UnRegisterObject(identifier);
 }
 
-extern "C" void* vtkMarshalContext__GetObjectAtId__0(void* self, uint32_t identifier) {
+extern "C" void* vtkMarshalContext__GetObjectAtId__0(void* self, uint32_t identifier) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkMarshalContext*>(self)->GetObjectAtId(identifier)).GetPointer());
+  auto result = static_cast<vtkMarshalContext*>(self)->GetObjectAtId(identifier);
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" uint32_t vtkMarshalContext__GetId__0(void* self, void* objectBase) {
+extern "C" uint32_t vtkMarshalContext__GetId__0(void* self, void* objectBase) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->GetId(static_cast<vtkObjectBase*>(objectBase));
 }
 
-extern "C" bool vtkMarshalContext__UnRegisterBlob__0(void* self, const char* hash) {
+extern "C" bool vtkMarshalContext__UnRegisterBlob__0(void* self, const char* hash) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->UnRegisterBlob(std::string(hash));
 }
 
-extern "C" void* vtkMarshalContext__GetBlob__0(void* self, const char* hash, bool copy) {
+extern "C" void* vtkMarshalContext__GetBlob__0(void* self, const char* hash, bool copy) noexcept {
   (void)self;
-  return static_cast<void*>((static_cast<vtkMarshalContext*>(self)->GetBlob(std::string(hash), copy)).GetPointer());
+  auto result = static_cast<vtkMarshalContext*>(self)->GetBlob(std::string(hash), copy);
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void vtkMarshalContext__ResetDirectDependencies__0(void* self) {
+extern "C" void vtkMarshalContext__ResetDirectDependencies__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->ResetDirectDependencies();
 }
 
-extern "C" void vtkMarshalContext__ResetDirectDependenciesForNode__0(void* self, uint32_t identifier) {
+extern "C" void vtkMarshalContext__ResetDirectDependenciesForNode__0(void* self, uint32_t identifier) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->ResetDirectDependenciesForNode(identifier);
 }
 
-extern "C" uint32_t vtkMarshalContext__MakeId__0(void* self) {
+extern "C" uint32_t vtkMarshalContext__MakeId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMarshalContext*>(self)->MakeId();
 }
 
-extern "C" void vtkMarshalContext__PushParent__0(void* self, uint32_t identifier) {
+extern "C" void vtkMarshalContext__PushParent__0(void* self, uint32_t identifier) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->PushParent(identifier);
 }
 
-extern "C" void vtkMarshalContext__PopParent__0(void* self) {
+extern "C" void vtkMarshalContext__PopParent__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMarshalContext*>(self)->PopParent();
 }

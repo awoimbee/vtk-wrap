@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageTranslateExtent__vtk_wrap_new() { return static_cast<void*>(vtkImageTranslateExtent::New()); }
+extern "C" void* vtkImageTranslateExtent__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageTranslateExtent::New()); }
 
-extern "C" int32_t vtkImageTranslateExtent__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageTranslateExtent__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageTranslateExtent::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageTranslateExtent__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageTranslateExtent__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageTranslateExtent*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageTranslateExtent__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageTranslateExtent__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageTranslateExtent::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageTranslateExtent__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageTranslateExtent__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageTranslateExtent::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageTranslateExtent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageTranslateExtent__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageTranslateExtent*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageTranslateExtent__SetTranslation__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) {
+extern "C" void vtkImageTranslateExtent__SetTranslation__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) noexcept {
   (void)self;
   static_cast<vtkImageTranslateExtent*>(self)->SetTranslation(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkImageTranslateExtent__SetTranslation__1(void* self, const int32_t* _arg) {
+extern "C" void vtkImageTranslateExtent__SetTranslation__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkImageTranslateExtent*>(self)->SetTranslation(_arg);
 }

@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkPiecewiseFunctionAlgorithm::New()); }
+extern "C" void* vtkPiecewiseFunctionAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPiecewiseFunctionAlgorithm::New()); }
 
-extern "C" int32_t vtkPiecewiseFunctionAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPiecewiseFunctionAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkPiecewiseFunctionAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPiecewiseFunctionAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPiecewiseFunctionAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkPiecewiseFunctionAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPiecewiseFunctionAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPiecewiseFunctionAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPiecewiseFunctionAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPiecewiseFunctionAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPiecewiseFunctionAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPiecewiseFunctionAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkPiecewiseFunctionAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkPiecewiseFunctionAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkPiecewiseFunctionAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkPiecewiseFunctionAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__GetInput__0(void* self) {
+extern "C" void* vtkPiecewiseFunctionAlgorithm__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->GetInput());
 }
 
-extern "C" void* vtkPiecewiseFunctionAlgorithm__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkPiecewiseFunctionAlgorithm__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->GetInput(port));
 }
 
-extern "C" void vtkPiecewiseFunctionAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkPiecewiseFunctionAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkPiecewiseFunctionAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkPiecewiseFunctionAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkPiecewiseFunctionAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkPiecewiseFunctionAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkPiecewiseFunctionAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkPiecewiseFunctionAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkPiecewiseFunctionAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

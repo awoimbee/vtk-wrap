@@ -4,171 +4,171 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAVSucdReader__vtk_wrap_new() { return static_cast<void*>(vtkAVSucdReader::New()); }
+extern "C" void* vtkAVSucdReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAVSucdReader::New()); }
 
-extern "C" int32_t vtkAVSucdReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAVSucdReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkAVSucdReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAVSucdReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAVSucdReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAVSucdReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkAVSucdReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAVSucdReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAVSucdReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAVSucdReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAVSucdReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAVSucdReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAVSucdReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAVSucdReader__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkAVSucdReader__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkAVSucdReader__SetBinaryFile__0(void* self, int32_t _arg) {
+extern "C" void vtkAVSucdReader__SetBinaryFile__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetBinaryFile(_arg);
 }
 
-extern "C" int32_t vtkAVSucdReader__GetBinaryFile__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetBinaryFile__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetBinaryFile();
 }
 
-extern "C" void vtkAVSucdReader__BinaryFileOn__0(void* self) {
+extern "C" void vtkAVSucdReader__BinaryFileOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->BinaryFileOn();
 }
 
-extern "C" void vtkAVSucdReader__BinaryFileOff__0(void* self) {
+extern "C" void vtkAVSucdReader__BinaryFileOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->BinaryFileOff();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfCells__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfCells__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfCells();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfNodes__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfNodes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfNodes();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfNodeFields__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfNodeFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfNodeFields();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfCellFields__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfCellFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfCellFields();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfFields__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfFields__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfFields();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfNodeComponents__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfNodeComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfNodeComponents();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfCellComponents__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfCellComponents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfCellComponents();
 }
 
-extern "C" void vtkAVSucdReader__SetByteOrderToBigEndian__0(void* self) {
+extern "C" void vtkAVSucdReader__SetByteOrderToBigEndian__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetByteOrderToBigEndian();
 }
 
-extern "C" void vtkAVSucdReader__SetByteOrderToLittleEndian__0(void* self) {
+extern "C" void vtkAVSucdReader__SetByteOrderToLittleEndian__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetByteOrderToLittleEndian();
 }
 
-extern "C" const char* vtkAVSucdReader__GetByteOrderAsString__0(void* self) {
+extern "C" const char* vtkAVSucdReader__GetByteOrderAsString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetByteOrderAsString();
 }
 
-extern "C" void vtkAVSucdReader__SetByteOrder__0(void* self, int32_t _arg) {
+extern "C" void vtkAVSucdReader__SetByteOrder__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetByteOrder(_arg);
 }
 
-extern "C" int32_t vtkAVSucdReader__GetByteOrder__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetByteOrder__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetByteOrder();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfPointArrays__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfPointArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfPointArrays();
 }
 
-extern "C" int32_t vtkAVSucdReader__GetNumberOfCellArrays__0(void* self) {
+extern "C" int32_t vtkAVSucdReader__GetNumberOfCellArrays__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetNumberOfCellArrays();
 }
 
-extern "C" const char* vtkAVSucdReader__GetPointArrayName__0(void* self, int32_t index) {
+extern "C" const char* vtkAVSucdReader__GetPointArrayName__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetPointArrayName(index);
 }
 
-extern "C" const char* vtkAVSucdReader__GetCellArrayName__0(void* self, int32_t index) {
+extern "C" const char* vtkAVSucdReader__GetCellArrayName__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetCellArrayName(index);
 }
 
-extern "C" int32_t vtkAVSucdReader__GetPointArrayStatus__0(void* self, const char* name) {
+extern "C" int32_t vtkAVSucdReader__GetPointArrayStatus__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetPointArrayStatus(name);
 }
 
-extern "C" int32_t vtkAVSucdReader__GetCellArrayStatus__0(void* self, const char* name) {
+extern "C" int32_t vtkAVSucdReader__GetCellArrayStatus__0(void* self, const char* name) noexcept {
   (void)self;
   return static_cast<vtkAVSucdReader*>(self)->GetCellArrayStatus(name);
 }
 
-extern "C" void vtkAVSucdReader__SetPointArrayStatus__0(void* self, const char* name, int32_t status) {
+extern "C" void vtkAVSucdReader__SetPointArrayStatus__0(void* self, const char* name, int32_t status) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetPointArrayStatus(name, status);
 }
 
-extern "C" void vtkAVSucdReader__SetCellArrayStatus__0(void* self, const char* name, int32_t status) {
+extern "C" void vtkAVSucdReader__SetCellArrayStatus__0(void* self, const char* name, int32_t status) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->SetCellArrayStatus(name, status);
 }
 
-extern "C" void vtkAVSucdReader__DisableAllCellArrays__0(void* self) {
+extern "C" void vtkAVSucdReader__DisableAllCellArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->DisableAllCellArrays();
 }
 
-extern "C" void vtkAVSucdReader__EnableAllCellArrays__0(void* self) {
+extern "C" void vtkAVSucdReader__EnableAllCellArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->EnableAllCellArrays();
 }
 
-extern "C" void vtkAVSucdReader__DisableAllPointArrays__0(void* self) {
+extern "C" void vtkAVSucdReader__DisableAllPointArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->DisableAllPointArrays();
 }
 
-extern "C" void vtkAVSucdReader__EnableAllPointArrays__0(void* self) {
+extern "C" void vtkAVSucdReader__EnableAllPointArrays__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAVSucdReader*>(self)->EnableAllPointArrays();
 }

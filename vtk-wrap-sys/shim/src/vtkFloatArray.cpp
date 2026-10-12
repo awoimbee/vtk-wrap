@@ -6,100 +6,100 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFloatArray__vtk_wrap_new() { return static_cast<void*>(vtkFloatArray::New()); }
+extern "C" void* vtkFloatArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFloatArray::New()); }
 
-extern "C" int32_t vtkFloatArray__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFloatArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkFloatArray::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFloatArray__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFloatArray__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFloatArray__SafeDownCast__0(void* o) {
+extern "C" void* vtkFloatArray__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFloatArray::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFloatArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFloatArray__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFloatArray::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFloatArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFloatArray__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkFloatArray__ExtendedNew__0() {
+extern "C" void* vtkFloatArray__ExtendedNew__0() noexcept {
   return static_cast<void*>(vtkFloatArray::ExtendedNew());
 }
 
-extern "C" int32_t vtkFloatArray__GetDataType__0(void* self) {
+extern "C" int32_t vtkFloatArray__GetDataType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetDataType();
 }
 
-extern "C" float vtkFloatArray__GetDataTypeValueMin__0(void* self) {
+extern "C" float vtkFloatArray__GetDataTypeValueMin__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetDataTypeValueMin();
 }
 
-extern "C" float vtkFloatArray__GetDataTypeValueMax__0(void* self) {
+extern "C" float vtkFloatArray__GetDataTypeValueMax__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetDataTypeValueMax();
 }
 
-extern "C" void vtkFloatArray__GetValueRange__0(void* self, float* range, int32_t comp) {
+extern "C" void vtkFloatArray__GetValueRange__0(void* self, float* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkFloatArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" void vtkFloatArray__GetValueRange__1(void* self, float* range, int32_t comp) {
+extern "C" void vtkFloatArray__GetValueRange__1(void* self, float* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkFloatArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" float vtkFloatArray__GetTypedComponent__0(void* self, int64_t i, int32_t c) {
+extern "C" float vtkFloatArray__GetTypedComponent__0(void* self, int64_t i, int32_t c) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetTypedComponent(i, c);
 }
 
-extern "C" float vtkFloatArray__GetValue__0(void* self, int64_t id) {
+extern "C" float vtkFloatArray__GetValue__0(void* self, int64_t id) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->GetValue(id);
 }
 
-extern "C" void vtkFloatArray__InsertValue__0(void* self, int64_t id, float f) {
+extern "C" void vtkFloatArray__InsertValue__0(void* self, int64_t id, float f) noexcept {
   (void)self;
   static_cast<vtkFloatArray*>(self)->InsertValue(id, f);
 }
 
-extern "C" int64_t vtkFloatArray__InsertNextValue__0(void* self, float f) {
+extern "C" int64_t vtkFloatArray__InsertNextValue__0(void* self, float f) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->InsertNextValue(f);
 }
 
-extern "C" void vtkFloatArray__SetValue__0(void* self, int64_t id, float value) {
+extern "C" void vtkFloatArray__SetValue__0(void* self, int64_t id, float value) noexcept {
   (void)self;
   static_cast<vtkFloatArray*>(self)->SetValue(id, value);
 }
 
-extern "C" bool vtkFloatArray__SetNumberOfValues__0(void* self, int64_t number) {
+extern "C" bool vtkFloatArray__SetNumberOfValues__0(void* self, int64_t number) noexcept {
   (void)self;
   return static_cast<vtkFloatArray*>(self)->SetNumberOfValues(number);
 }
 
-extern "C" void* vtkFloatArray__GetBuffer__0(void* self) {
+extern "C" void* vtkFloatArray__GetBuffer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFloatArray*>(self)->GetBuffer());
 }
 
-extern "C" void vtkFloatArray__SetBuffer__0(void* self, void* buffer, bool updateMaxId) {
+extern "C" void vtkFloatArray__SetBuffer__0(void* self, void* buffer, bool updateMaxId) noexcept {
   (void)self;
   static_cast<vtkFloatArray*>(self)->SetBuffer(static_cast<vtkAbstractBuffer*>(buffer), updateMaxId);
 }
 
-extern "C" void* vtkFloatArray__FastDownCast__0(void* source) {
+extern "C" void* vtkFloatArray__FastDownCast__0(void* source) noexcept {
   return static_cast<void*>(vtkFloatArray::FastDownCast(static_cast<vtkAbstractArray*>(source)));
 }
 

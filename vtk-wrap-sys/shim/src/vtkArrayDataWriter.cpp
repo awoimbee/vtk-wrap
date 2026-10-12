@@ -5,91 +5,91 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkArrayDataWriter__vtk_wrap_new() { return static_cast<void*>(vtkArrayDataWriter::New()); }
+extern "C" void* vtkArrayDataWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkArrayDataWriter::New()); }
 
-extern "C" int32_t vtkArrayDataWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkArrayDataWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkArrayDataWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkArrayDataWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkArrayDataWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayDataWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkArrayDataWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkArrayDataWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkArrayDataWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkArrayDataWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkArrayDataWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkArrayDataWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkArrayDataWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkArrayDataWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkArrayDataWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkArrayDataWriter__SetFileName__0(void* self, const char* _arg) {
+extern "C" void vtkArrayDataWriter__SetFileName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->SetFileName(_arg);
 }
 
-extern "C" void vtkArrayDataWriter__SetBinary__0(void* self, int32_t _arg) {
+extern "C" void vtkArrayDataWriter__SetBinary__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->SetBinary(_arg);
 }
 
-extern "C" int32_t vtkArrayDataWriter__GetBinary__0(void* self) {
+extern "C" int32_t vtkArrayDataWriter__GetBinary__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayDataWriter*>(self)->GetBinary();
 }
 
-extern "C" void vtkArrayDataWriter__BinaryOn__0(void* self) {
+extern "C" void vtkArrayDataWriter__BinaryOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->BinaryOn();
 }
 
-extern "C" void vtkArrayDataWriter__BinaryOff__0(void* self) {
+extern "C" void vtkArrayDataWriter__BinaryOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->BinaryOff();
 }
 
-extern "C" char* vtkArrayDataWriter__GetOutputString__0(void* self) {
+extern "C" char* vtkArrayDataWriter__GetOutputString__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkArrayDataWriter*>(self)->GetOutputString()).c_str());
 }
 
-extern "C" void vtkArrayDataWriter__SetWriteToOutputString__0(void* self, bool _arg) {
+extern "C" void vtkArrayDataWriter__SetWriteToOutputString__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->SetWriteToOutputString(_arg);
 }
 
-extern "C" bool vtkArrayDataWriter__GetWriteToOutputString__0(void* self) {
+extern "C" bool vtkArrayDataWriter__GetWriteToOutputString__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayDataWriter*>(self)->GetWriteToOutputString();
 }
 
-extern "C" void vtkArrayDataWriter__WriteToOutputStringOn__0(void* self) {
+extern "C" void vtkArrayDataWriter__WriteToOutputStringOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->WriteToOutputStringOn();
 }
 
-extern "C" void vtkArrayDataWriter__WriteToOutputStringOff__0(void* self) {
+extern "C" void vtkArrayDataWriter__WriteToOutputStringOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkArrayDataWriter*>(self)->WriteToOutputStringOff();
 }
 
-extern "C" int32_t vtkArrayDataWriter__Write__0(void* self) {
+extern "C" int32_t vtkArrayDataWriter__Write__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkArrayDataWriter*>(self)->Write();
 }
 
-extern "C" char* vtkArrayDataWriter__Write__1(void* self, bool WriteBinary) {
+extern "C" char* vtkArrayDataWriter__Write__1(void* self, bool WriteBinary) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkArrayDataWriter*>(self)->Write(WriteBinary)).c_str());
 }
 
-extern "C" char* vtkArrayDataWriter__Write__2(void* array, bool WriteBinary) {
+extern "C" char* vtkArrayDataWriter__Write__2(void* array, bool WriteBinary) noexcept {
   return vtk_wrap_strdup((vtkArrayDataWriter::Write(static_cast<vtkArrayData*>(array), WriteBinary)).c_str());
 }
 

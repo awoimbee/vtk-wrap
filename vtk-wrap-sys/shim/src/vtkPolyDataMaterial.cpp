@@ -5,51 +5,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPolyDataMaterial__vtk_wrap_new() { return static_cast<void*>(vtkPolyDataMaterial::New()); }
+extern "C" void* vtkPolyDataMaterial__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyDataMaterial::New()); }
 
-extern "C" int32_t vtkPolyDataMaterial__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyDataMaterial__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyDataMaterial::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyDataMaterial__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyDataMaterial__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataMaterial*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyDataMaterial__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyDataMaterial__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyDataMaterial::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyDataMaterial__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyDataMaterial__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyDataMaterial::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyDataMaterial__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyDataMaterial__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataMaterial*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkPolyDataMaterial__GetTextureURIName__0() {
+extern "C" const char* vtkPolyDataMaterial__GetTextureURIName__0() noexcept {
   return vtkPolyDataMaterial::GetTextureURIName();
 }
 
-extern "C" const char* vtkPolyDataMaterial__GetDiffuseColorName__0() {
+extern "C" const char* vtkPolyDataMaterial__GetDiffuseColorName__0() noexcept {
   return vtkPolyDataMaterial::GetDiffuseColorName();
 }
 
-extern "C" const char* vtkPolyDataMaterial__GetSpecularColorName__0() {
+extern "C" const char* vtkPolyDataMaterial__GetSpecularColorName__0() noexcept {
   return vtkPolyDataMaterial::GetSpecularColorName();
 }
 
-extern "C" const char* vtkPolyDataMaterial__GetTransparencyName__0() {
+extern "C" const char* vtkPolyDataMaterial__GetTransparencyName__0() noexcept {
   return vtkPolyDataMaterial::GetTransparencyName();
 }
 
-extern "C" const char* vtkPolyDataMaterial__GetShininessName__0() {
+extern "C" const char* vtkPolyDataMaterial__GetShininessName__0() noexcept {
   return vtkPolyDataMaterial::GetShininessName();
 }
 
-extern "C" void vtkPolyDataMaterial__SetField__0(void* obj, const char* name, const char* value) {
+extern "C" void vtkPolyDataMaterial__SetField__0(void* obj, const char* name, const char* value) noexcept {
   vtkPolyDataMaterial::SetField(static_cast<vtkDataObject*>(obj), name, value);
 }
 

@@ -4,49 +4,49 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkCellGridQuery__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridQuery__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridQuery::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridQuery__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridQuery__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridQuery__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridQuery__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridQuery::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridQuery::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCellGridQuery__Initialize__0(void* self) {
+extern "C" bool vtkCellGridQuery__Initialize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->Initialize();
 }
 
-extern "C" void vtkCellGridQuery__StartPass__0(void* self) {
+extern "C" void vtkCellGridQuery__StartPass__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCellGridQuery*>(self)->StartPass();
 }
 
-extern "C" int32_t vtkCellGridQuery__GetPass__0(void* self) {
+extern "C" int32_t vtkCellGridQuery__GetPass__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->GetPass();
 }
 
-extern "C" bool vtkCellGridQuery__IsAnotherPassRequired__0(void* self) {
+extern "C" bool vtkCellGridQuery__IsAnotherPassRequired__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->IsAnotherPassRequired();
 }
 
-extern "C" bool vtkCellGridQuery__Finalize__0(void* self) {
+extern "C" bool vtkCellGridQuery__Finalize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridQuery*>(self)->Finalize();
 }

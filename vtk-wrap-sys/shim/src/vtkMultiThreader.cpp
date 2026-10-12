@@ -4,86 +4,86 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMultiThreader__vtk_wrap_new() { return static_cast<void*>(vtkMultiThreader::New()); }
+extern "C" void* vtkMultiThreader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMultiThreader::New()); }
 
-extern "C" int32_t vtkMultiThreader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMultiThreader__IsTypeOf__0(const char* type_) noexcept {
   return vtkMultiThreader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMultiThreader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMultiThreader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMultiThreader__SafeDownCast__0(void* o) {
+extern "C" void* vtkMultiThreader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMultiThreader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMultiThreader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMultiThreader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMultiThreader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMultiThreader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMultiThreader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMultiThreader__SetNumberOfThreads__0(void* self, int32_t _arg) {
+extern "C" void vtkMultiThreader__SetNumberOfThreads__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkMultiThreader*>(self)->SetNumberOfThreads(_arg);
 }
 
-extern "C" int32_t vtkMultiThreader__GetNumberOfThreadsMinValue__0(void* self) {
+extern "C" int32_t vtkMultiThreader__GetNumberOfThreadsMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->GetNumberOfThreadsMinValue();
 }
 
-extern "C" int32_t vtkMultiThreader__GetNumberOfThreadsMaxValue__0(void* self) {
+extern "C" int32_t vtkMultiThreader__GetNumberOfThreadsMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->GetNumberOfThreadsMaxValue();
 }
 
-extern "C" int32_t vtkMultiThreader__GetNumberOfThreads__0(void* self) {
+extern "C" int32_t vtkMultiThreader__GetNumberOfThreads__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->GetNumberOfThreads();
 }
 
-extern "C" int32_t vtkMultiThreader__GetGlobalStaticMaximumNumberOfThreads__0() {
+extern "C" int32_t vtkMultiThreader__GetGlobalStaticMaximumNumberOfThreads__0() noexcept {
   return vtkMultiThreader::GetGlobalStaticMaximumNumberOfThreads();
 }
 
-extern "C" void vtkMultiThreader__SetGlobalMaximumNumberOfThreads__0(int32_t val) {
+extern "C" void vtkMultiThreader__SetGlobalMaximumNumberOfThreads__0(int32_t val) noexcept {
   vtkMultiThreader::SetGlobalMaximumNumberOfThreads(val);
 }
 
-extern "C" int32_t vtkMultiThreader__GetGlobalMaximumNumberOfThreads__0() {
+extern "C" int32_t vtkMultiThreader__GetGlobalMaximumNumberOfThreads__0() noexcept {
   return vtkMultiThreader::GetGlobalMaximumNumberOfThreads();
 }
 
-extern "C" void vtkMultiThreader__SetGlobalDefaultNumberOfThreads__0(int32_t val) {
+extern "C" void vtkMultiThreader__SetGlobalDefaultNumberOfThreads__0(int32_t val) noexcept {
   vtkMultiThreader::SetGlobalDefaultNumberOfThreads(val);
 }
 
-extern "C" int32_t vtkMultiThreader__GetGlobalDefaultNumberOfThreads__0() {
+extern "C" int32_t vtkMultiThreader__GetGlobalDefaultNumberOfThreads__0() noexcept {
   return vtkMultiThreader::GetGlobalDefaultNumberOfThreads();
 }
 
-extern "C" void vtkMultiThreader__SingleMethodExecute__0(void* self) {
+extern "C" void vtkMultiThreader__SingleMethodExecute__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMultiThreader*>(self)->SingleMethodExecute();
 }
 
-extern "C" void vtkMultiThreader__MultipleMethodExecute__0(void* self) {
+extern "C" void vtkMultiThreader__MultipleMethodExecute__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMultiThreader*>(self)->MultipleMethodExecute();
 }
 
-extern "C" void vtkMultiThreader__TerminateThread__0(void* self, int32_t threadId) {
+extern "C" void vtkMultiThreader__TerminateThread__0(void* self, int32_t threadId) noexcept {
   (void)self;
   static_cast<vtkMultiThreader*>(self)->TerminateThread(threadId);
 }
 
-extern "C" int32_t vtkMultiThreader__IsThreadActive__0(void* self, int32_t threadId) {
+extern "C" int32_t vtkMultiThreader__IsThreadActive__0(void* self, int32_t threadId) noexcept {
   (void)self;
   return static_cast<vtkMultiThreader*>(self)->IsThreadActive(threadId);
 }

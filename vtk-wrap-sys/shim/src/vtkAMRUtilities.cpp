@@ -5,37 +5,37 @@
 #include "vtkOverlappingAMR.h"
 #include <string>
 
-extern "C" int32_t vtkAMRUtilities__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAMRUtilities__IsTypeOf__0(const char* type_) noexcept {
   return vtkAMRUtilities::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAMRUtilities__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAMRUtilities__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAMRUtilities*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAMRUtilities__SafeDownCast__0(void* o) {
+extern "C" void* vtkAMRUtilities__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAMRUtilities::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAMRUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAMRUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAMRUtilities::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAMRUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAMRUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAMRUtilities*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAMRUtilities__StripGhostLayers__0(void* ghostedAMRData, void* strippedAMRData) {
+extern "C" void vtkAMRUtilities__StripGhostLayers__0(void* ghostedAMRData, void* strippedAMRData) noexcept {
   vtkAMRUtilities::StripGhostLayers(static_cast<vtkOverlappingAMR*>(ghostedAMRData), static_cast<vtkOverlappingAMR*>(strippedAMRData));
 }
 
-extern "C" bool vtkAMRUtilities__HasPartiallyOverlappingGhostCells__0(void* amr) {
+extern "C" bool vtkAMRUtilities__HasPartiallyOverlappingGhostCells__0(void* amr) noexcept {
   return vtkAMRUtilities::HasPartiallyOverlappingGhostCells(static_cast<vtkOverlappingAMR*>(amr));
 }
 
-extern "C" void vtkAMRUtilities__BlankCells__0(void* amr) {
+extern "C" void vtkAMRUtilities__BlankCells__0(void* amr) noexcept {
   vtkAMRUtilities::BlankCells(static_cast<vtkOverlappingAMR*>(amr));
 }
 

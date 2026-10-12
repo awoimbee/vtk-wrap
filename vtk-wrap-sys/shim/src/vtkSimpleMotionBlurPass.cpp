@@ -6,61 +6,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkSimpleMotionBlurPass__vtk_wrap_new() { return static_cast<void*>(vtkSimpleMotionBlurPass::New()); }
+extern "C" void* vtkSimpleMotionBlurPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSimpleMotionBlurPass::New()); }
 
-extern "C" int32_t vtkSimpleMotionBlurPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSimpleMotionBlurPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkSimpleMotionBlurPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSimpleMotionBlurPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSimpleMotionBlurPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleMotionBlurPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSimpleMotionBlurPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkSimpleMotionBlurPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSimpleMotionBlurPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSimpleMotionBlurPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSimpleMotionBlurPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSimpleMotionBlurPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSimpleMotionBlurPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSimpleMotionBlurPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSimpleMotionBlurPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSimpleMotionBlurPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkSimpleMotionBlurPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkSimpleMotionBlurPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" int32_t vtkSimpleMotionBlurPass__GetSubFrames__0(void* self) {
+extern "C" int32_t vtkSimpleMotionBlurPass__GetSubFrames__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSimpleMotionBlurPass*>(self)->GetSubFrames();
 }
 
-extern "C" void vtkSimpleMotionBlurPass__SetSubFrames__0(void* self, int32_t subFrames) {
+extern "C" void vtkSimpleMotionBlurPass__SetSubFrames__0(void* self, int32_t subFrames) noexcept {
   (void)self;
   static_cast<vtkSimpleMotionBlurPass*>(self)->SetSubFrames(subFrames);
 }
 
-extern "C" void vtkSimpleMotionBlurPass__SetDepthFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkSimpleMotionBlurPass__SetDepthFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSimpleMotionBlurPass*>(self)->SetDepthFormat(_arg);
 }
 
-extern "C" void vtkSimpleMotionBlurPass__SetColorFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkSimpleMotionBlurPass__SetColorFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSimpleMotionBlurPass*>(self)->SetColorFormat(_arg);
 }
 
-extern "C" void* vtkSimpleMotionBlurPass__GetDepthTexture__0(void* self) {
+extern "C" void* vtkSimpleMotionBlurPass__GetDepthTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSimpleMotionBlurPass*>(self)->GetDepthTexture());
 }
 
-extern "C" void* vtkSimpleMotionBlurPass__GetColorTexture__0(void* self) {
+extern "C" void* vtkSimpleMotionBlurPass__GetColorTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSimpleMotionBlurPass*>(self)->GetColorTexture());
 }

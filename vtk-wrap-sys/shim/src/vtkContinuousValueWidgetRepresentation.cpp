@@ -4,54 +4,54 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkContinuousValueWidgetRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContinuousValueWidgetRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkContinuousValueWidgetRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContinuousValueWidgetRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContinuousValueWidgetRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContinuousValueWidgetRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContinuousValueWidgetRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkContinuousValueWidgetRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContinuousValueWidgetRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContinuousValueWidgetRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContinuousValueWidgetRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContinuousValueWidgetRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContinuousValueWidgetRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContinuousValueWidgetRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContinuousValueWidgetRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkContinuousValueWidgetRepresentation__PlaceWidget__0(void* self, double* bounds) {
+extern "C" void vtkContinuousValueWidgetRepresentation__PlaceWidget__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkContinuousValueWidgetRepresentation*>(self)->PlaceWidget(bounds);
 }
 
-extern "C" void vtkContinuousValueWidgetRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkContinuousValueWidgetRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkContinuousValueWidgetRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkContinuousValueWidgetRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkContinuousValueWidgetRepresentation__StartWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkContinuousValueWidgetRepresentation*>(self)->StartWidgetInteraction(eventPos);
 }
 
-extern "C" void vtkContinuousValueWidgetRepresentation__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkContinuousValueWidgetRepresentation__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkContinuousValueWidgetRepresentation*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" void vtkContinuousValueWidgetRepresentation__SetValue__0(void* self, double value) {
+extern "C" void vtkContinuousValueWidgetRepresentation__SetValue__0(void* self, double value) noexcept {
   (void)self;
   static_cast<vtkContinuousValueWidgetRepresentation*>(self)->SetValue(value);
 }
 
-extern "C" double vtkContinuousValueWidgetRepresentation__GetValue__0(void* self) {
+extern "C" double vtkContinuousValueWidgetRepresentation__GetValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkContinuousValueWidgetRepresentation*>(self)->GetValue();
 }

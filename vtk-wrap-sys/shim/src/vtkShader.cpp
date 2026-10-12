@@ -4,65 +4,65 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkShader__vtk_wrap_new() { return static_cast<void*>(vtkShader::New()); }
+extern "C" void* vtkShader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkShader::New()); }
 
-extern "C" int32_t vtkShader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkShader__IsTypeOf__0(const char* type_) noexcept {
   return vtkShader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkShader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkShader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkShader__SafeDownCast__0(void* o) {
+extern "C" void* vtkShader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkShader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkShader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkShader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkShader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkShader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkShader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkShader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkShader__SetSource__0(void* self, const char* source) {
+extern "C" void vtkShader__SetSource__0(void* self, const char* source) noexcept {
   (void)self;
   static_cast<vtkShader*>(self)->SetSource(std::string(source));
 }
 
-extern "C" char* vtkShader__GetSource__0(void* self) {
+extern "C" char* vtkShader__GetSource__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkShader*>(self)->GetSource()).c_str());
 }
 
-extern "C" char* vtkShader__GetError__0(void* self) {
+extern "C" char* vtkShader__GetError__0(void* self) noexcept {
   (void)self;
   return vtk_wrap_strdup((static_cast<vtkShader*>(self)->GetError()).c_str());
 }
 
-extern "C" int32_t vtkShader__GetHandle__0(void* self) {
+extern "C" int32_t vtkShader__GetHandle__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShader*>(self)->GetHandle();
 }
 
-extern "C" bool vtkShader__Compile__0(void* self) {
+extern "C" bool vtkShader__Compile__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkShader*>(self)->Compile();
 }
 
-extern "C" void vtkShader__Cleanup__0(void* self) {
+extern "C" void vtkShader__Cleanup__0(void* self) noexcept {
   (void)self;
   static_cast<vtkShader*>(self)->Cleanup();
 }
 
-extern "C" bool vtkShader__IsComputeShaderSupported__0() {
+extern "C" bool vtkShader__IsComputeShaderSupported__0() noexcept {
   return vtkShader::IsComputeShaderSupported();
 }
 
-extern "C" bool vtkShader__IsTessellationShaderSupported__0() {
+extern "C" bool vtkShader__IsTessellationShaderSupported__0() noexcept {
   return vtkShader::IsTessellationShaderSupported();
 }
 

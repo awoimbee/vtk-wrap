@@ -5,106 +5,106 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkStreamingTessellator__vtk_wrap_new() { return static_cast<void*>(vtkStreamingTessellator::New()); }
+extern "C" void* vtkStreamingTessellator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStreamingTessellator::New()); }
 
-extern "C" int32_t vtkStreamingTessellator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStreamingTessellator__IsTypeOf__0(const char* type_) noexcept {
   return vtkStreamingTessellator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStreamingTessellator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStreamingTessellator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStreamingTessellator__SafeDownCast__0(void* o) {
+extern "C" void* vtkStreamingTessellator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStreamingTessellator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStreamingTessellator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStreamingTessellator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStreamingTessellator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStreamingTessellator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStreamingTessellator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStreamingTessellator__SetPrivateData__0(void* self, void* Private) {
+extern "C" void vtkStreamingTessellator__SetPrivateData__0(void* self, void* Private) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetPrivateData(Private);
 }
 
-extern "C" void* vtkStreamingTessellator__GetPrivateData__0(void* self) {
+extern "C" void* vtkStreamingTessellator__GetPrivateData__0(void* self) noexcept {
   (void)self;
   return const_cast<void*>(static_cast<vtkStreamingTessellator*>(self)->GetPrivateData());
 }
 
-extern "C" void vtkStreamingTessellator__SetConstPrivateData__0(void* self, void* ConstPrivate) {
+extern "C" void vtkStreamingTessellator__SetConstPrivateData__0(void* self, void* ConstPrivate) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetConstPrivateData(ConstPrivate);
 }
 
-extern "C" void* vtkStreamingTessellator__GetConstPrivateData__0(void* self) {
+extern "C" void* vtkStreamingTessellator__GetConstPrivateData__0(void* self) noexcept {
   (void)self;
   return const_cast<void*>(static_cast<vtkStreamingTessellator*>(self)->GetConstPrivateData());
 }
 
-extern "C" void vtkStreamingTessellator__SetSubdivisionAlgorithm__0(void* self, void* arg0) {
+extern "C" void vtkStreamingTessellator__SetSubdivisionAlgorithm__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetSubdivisionAlgorithm(static_cast<vtkEdgeSubdivisionCriterion*>(arg0));
 }
 
-extern "C" void* vtkStreamingTessellator__GetSubdivisionAlgorithm__0(void* self) {
+extern "C" void* vtkStreamingTessellator__GetSubdivisionAlgorithm__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStreamingTessellator*>(self)->GetSubdivisionAlgorithm());
 }
 
-extern "C" void* vtkStreamingTessellator__GetSubdivisionAlgorithm__1(void* self) {
+extern "C" void* vtkStreamingTessellator__GetSubdivisionAlgorithm__1(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkStreamingTessellator*>(self)->GetSubdivisionAlgorithm());
 }
 
-extern "C" void vtkStreamingTessellator__SetEmbeddingDimension__0(void* self, int32_t k, int32_t d) {
+extern "C" void vtkStreamingTessellator__SetEmbeddingDimension__0(void* self, int32_t k, int32_t d) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetEmbeddingDimension(k, d);
 }
 
-extern "C" int32_t vtkStreamingTessellator__GetEmbeddingDimension__0(void* self, int32_t k) {
+extern "C" int32_t vtkStreamingTessellator__GetEmbeddingDimension__0(void* self, int32_t k) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetEmbeddingDimension(k);
 }
 
-extern "C" void vtkStreamingTessellator__SetFieldSize__0(void* self, int32_t k, int32_t s) {
+extern "C" void vtkStreamingTessellator__SetFieldSize__0(void* self, int32_t k, int32_t s) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetFieldSize(k, s);
 }
 
-extern "C" int32_t vtkStreamingTessellator__GetFieldSize__0(void* self, int32_t k) {
+extern "C" int32_t vtkStreamingTessellator__GetFieldSize__0(void* self, int32_t k) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetFieldSize(k);
 }
 
-extern "C" void vtkStreamingTessellator__SetMaximumNumberOfSubdivisions__0(void* self, int32_t num_subdiv_in) {
+extern "C" void vtkStreamingTessellator__SetMaximumNumberOfSubdivisions__0(void* self, int32_t num_subdiv_in) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->SetMaximumNumberOfSubdivisions(num_subdiv_in);
 }
 
-extern "C" int32_t vtkStreamingTessellator__GetMaximumNumberOfSubdivisions__0(void* self) {
+extern "C" int32_t vtkStreamingTessellator__GetMaximumNumberOfSubdivisions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetMaximumNumberOfSubdivisions();
 }
 
-extern "C" void vtkStreamingTessellator__ResetCounts__0(void* self) {
+extern "C" void vtkStreamingTessellator__ResetCounts__0(void* self) noexcept {
   (void)self;
   static_cast<vtkStreamingTessellator*>(self)->ResetCounts();
 }
 
-extern "C" int64_t vtkStreamingTessellator__GetCaseCount__0(void* self, int32_t c) {
+extern "C" int64_t vtkStreamingTessellator__GetCaseCount__0(void* self, int32_t c) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetCaseCount(c);
 }
 
-extern "C" int64_t vtkStreamingTessellator__GetSubcaseCount__0(void* self, int32_t casenum, int32_t sub) {
+extern "C" int64_t vtkStreamingTessellator__GetSubcaseCount__0(void* self, int32_t casenum, int32_t sub) noexcept {
   (void)self;
   return static_cast<vtkStreamingTessellator*>(self)->GetSubcaseCount(casenum, sub);
 }

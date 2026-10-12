@@ -5,71 +5,71 @@
 #include "vtkParallelopipedRepresentation.h"
 #include <string>
 
-extern "C" void* vtkParallelopipedWidget__vtk_wrap_new() { return static_cast<void*>(vtkParallelopipedWidget::New()); }
+extern "C" void* vtkParallelopipedWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkParallelopipedWidget::New()); }
 
-extern "C" int32_t vtkParallelopipedWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkParallelopipedWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkParallelopipedWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkParallelopipedWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkParallelopipedWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelopipedWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkParallelopipedWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkParallelopipedWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkParallelopipedWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkParallelopipedWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkParallelopipedWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkParallelopipedWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkParallelopipedWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkParallelopipedWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkParallelopipedWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkParallelopipedWidget__SetEnabled__0(void* self, int32_t arg0) {
+extern "C" void vtkParallelopipedWidget__SetEnabled__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->SetEnabled(arg0);
 }
 
-extern "C" void vtkParallelopipedWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkParallelopipedWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->SetRepresentation(static_cast<vtkParallelopipedRepresentation*>(r));
 }
 
-extern "C" void* vtkParallelopipedWidget__GetParallelopipedRepresentation__0(void* self) {
+extern "C" void* vtkParallelopipedWidget__GetParallelopipedRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkParallelopipedWidget*>(self)->GetParallelopipedRepresentation());
 }
 
-extern "C" void vtkParallelopipedWidget__SetEnableChairCreation__0(void* self, int32_t _arg) {
+extern "C" void vtkParallelopipedWidget__SetEnableChairCreation__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->SetEnableChairCreation(_arg);
 }
 
-extern "C" int32_t vtkParallelopipedWidget__GetEnableChairCreation__0(void* self) {
+extern "C" int32_t vtkParallelopipedWidget__GetEnableChairCreation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkParallelopipedWidget*>(self)->GetEnableChairCreation();
 }
 
-extern "C" void vtkParallelopipedWidget__EnableChairCreationOn__0(void* self) {
+extern "C" void vtkParallelopipedWidget__EnableChairCreationOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->EnableChairCreationOn();
 }
 
-extern "C" void vtkParallelopipedWidget__EnableChairCreationOff__0(void* self) {
+extern "C" void vtkParallelopipedWidget__EnableChairCreationOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->EnableChairCreationOff();
 }
 
-extern "C" void vtkParallelopipedWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkParallelopipedWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkParallelopipedWidget__SetProcessEvents__0(void* self, int32_t arg0) {
+extern "C" void vtkParallelopipedWidget__SetProcessEvents__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkParallelopipedWidget*>(self)->SetProcessEvents(arg0);
 }

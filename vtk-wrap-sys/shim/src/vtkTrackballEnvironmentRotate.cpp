@@ -6,61 +6,61 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkTrackballEnvironmentRotate__vtk_wrap_new() { return static_cast<void*>(vtkTrackballEnvironmentRotate::New()); }
+extern "C" void* vtkTrackballEnvironmentRotate__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTrackballEnvironmentRotate::New()); }
 
-extern "C" int32_t vtkTrackballEnvironmentRotate__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTrackballEnvironmentRotate__IsTypeOf__0(const char* type_) noexcept {
   return vtkTrackballEnvironmentRotate::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTrackballEnvironmentRotate__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTrackballEnvironmentRotate__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballEnvironmentRotate*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTrackballEnvironmentRotate__SafeDownCast__0(void* o) {
+extern "C" void* vtkTrackballEnvironmentRotate__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTrackballEnvironmentRotate::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTrackballEnvironmentRotate__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTrackballEnvironmentRotate__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTrackballEnvironmentRotate::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTrackballEnvironmentRotate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTrackballEnvironmentRotate__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTrackballEnvironmentRotate*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__StartInteraction__0(void* self) {
+extern "C" void vtkTrackballEnvironmentRotate__StartInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->StartInteraction();
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__EndInteraction__0(void* self) {
+extern "C" void vtkTrackballEnvironmentRotate__EndInteraction__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->EndInteraction();
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__OnKeyDown__0(void* self, void* rwi) {
+extern "C" void vtkTrackballEnvironmentRotate__OnKeyDown__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->OnKeyDown(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__OnKeyUp__0(void* self, void* rwi) {
+extern "C" void vtkTrackballEnvironmentRotate__OnKeyUp__0(void* self, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->OnKeyUp(static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballEnvironmentRotate__OnButtonDown__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->OnButtonDown(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballEnvironmentRotate__OnButtonUp__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->OnButtonUp(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }
 
-extern "C" void vtkTrackballEnvironmentRotate__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) {
+extern "C" void vtkTrackballEnvironmentRotate__OnMouseMove__0(void* self, int32_t x, int32_t y, void* ren, void* rwi) noexcept {
   (void)self;
   static_cast<vtkTrackballEnvironmentRotate*>(self)->OnMouseMove(x, y, static_cast<vtkRenderer*>(ren), static_cast<vtkRenderWindowInteractor*>(rwi));
 }

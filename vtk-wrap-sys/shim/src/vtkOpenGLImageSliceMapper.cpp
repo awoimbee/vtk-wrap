@@ -8,40 +8,40 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOpenGLImageSliceMapper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLImageSliceMapper::New()); }
+extern "C" void* vtkOpenGLImageSliceMapper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLImageSliceMapper::New()); }
 
-extern "C" void* vtkOpenGLImageSliceMapper__CreateOverrideAttributes__0() {
+extern "C" void* vtkOpenGLImageSliceMapper__CreateOverrideAttributes__0() noexcept {
   return static_cast<void*>(vtkOpenGLImageSliceMapper::CreateOverrideAttributes());
 }
 
-extern "C" int32_t vtkOpenGLImageSliceMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLImageSliceMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLImageSliceMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLImageSliceMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLImageSliceMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageSliceMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLImageSliceMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLImageSliceMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLImageSliceMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLImageSliceMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLImageSliceMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLImageSliceMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLImageSliceMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLImageSliceMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLImageSliceMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOpenGLImageSliceMapper__Render__0(void* self, void* ren, void* prop) {
+extern "C" void vtkOpenGLImageSliceMapper__Render__0(void* self, void* ren, void* prop) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageSliceMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkImageSlice*>(prop));
 }
 
-extern "C" void vtkOpenGLImageSliceMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkOpenGLImageSliceMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkOpenGLImageSliceMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

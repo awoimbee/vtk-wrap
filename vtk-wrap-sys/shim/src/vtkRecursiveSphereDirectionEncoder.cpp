@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkRecursiveSphereDirectionEncoder__vtk_wrap_new() { return static_cast<void*>(vtkRecursiveSphereDirectionEncoder::New()); }
+extern "C" void* vtkRecursiveSphereDirectionEncoder__vtk_wrap_new() noexcept { return static_cast<void*>(vtkRecursiveSphereDirectionEncoder::New()); }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__IsTypeOf__0(const char* type_) noexcept {
   return vtkRecursiveSphereDirectionEncoder::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkRecursiveSphereDirectionEncoder__SafeDownCast__0(void* o) {
+extern "C" void* vtkRecursiveSphereDirectionEncoder__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkRecursiveSphereDirectionEncoder::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkRecursiveSphereDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkRecursiveSphereDirectionEncoder__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkRecursiveSphereDirectionEncoder::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkRecursiveSphereDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkRecursiveSphereDirectionEncoder__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetEncodedDirection__0(void* self, float* n) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetEncodedDirection__0(void* self, float* n) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetEncodedDirection(n);
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetNumberOfEncodedDirections__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetNumberOfEncodedDirections();
 }
 
-extern "C" void vtkRecursiveSphereDirectionEncoder__SetRecursionDepth__0(void* self, int32_t _arg) {
+extern "C" void vtkRecursiveSphereDirectionEncoder__SetRecursionDepth__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->SetRecursionDepth(_arg);
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepthMinValue__0(void* self) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepthMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetRecursionDepthMinValue();
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepthMaxValue__0(void* self) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepthMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetRecursionDepthMaxValue();
 }
 
-extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepth__0(void* self) {
+extern "C" int32_t vtkRecursiveSphereDirectionEncoder__GetRecursionDepth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkRecursiveSphereDirectionEncoder*>(self)->GetRecursionDepth();
 }

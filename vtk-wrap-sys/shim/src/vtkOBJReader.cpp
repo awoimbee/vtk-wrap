@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkOBJReader__vtk_wrap_new() { return static_cast<void*>(vtkOBJReader::New()); }
+extern "C" void* vtkOBJReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOBJReader::New()); }
 
-extern "C" int32_t vtkOBJReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOBJReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkOBJReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOBJReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOBJReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOBJReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOBJReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkOBJReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOBJReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOBJReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOBJReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOBJReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOBJReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOBJReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOBJReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

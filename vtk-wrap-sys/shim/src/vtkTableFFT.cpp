@@ -4,186 +4,186 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTableFFT__vtk_wrap_new() { return static_cast<void*>(vtkTableFFT::New()); }
+extern "C" void* vtkTableFFT__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTableFFT::New()); }
 
-extern "C" int32_t vtkTableFFT__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTableFFT__IsTypeOf__0(const char* type_) noexcept {
   return vtkTableFFT::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTableFFT__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTableFFT__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTableFFT__SafeDownCast__0(void* o) {
+extern "C" void* vtkTableFFT__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTableFFT::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTableFFT__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTableFFT__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTableFFT::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTableFFT__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTableFFT__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkTableFFT__GetCreateFrequencyColumn__0(void* self) {
+extern "C" bool vtkTableFFT__GetCreateFrequencyColumn__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetCreateFrequencyColumn();
 }
 
-extern "C" void vtkTableFFT__SetCreateFrequencyColumn__0(void* self, bool _arg) {
+extern "C" void vtkTableFFT__SetCreateFrequencyColumn__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetCreateFrequencyColumn(_arg);
 }
 
-extern "C" void vtkTableFFT__CreateFrequencyColumnOn__0(void* self) {
+extern "C" void vtkTableFFT__CreateFrequencyColumnOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->CreateFrequencyColumnOn();
 }
 
-extern "C" void vtkTableFFT__CreateFrequencyColumnOff__0(void* self) {
+extern "C" void vtkTableFFT__CreateFrequencyColumnOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->CreateFrequencyColumnOff();
 }
 
-extern "C" double vtkTableFFT__GetDefaultSampleRate__0(void* self) {
+extern "C" double vtkTableFFT__GetDefaultSampleRate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetDefaultSampleRate();
 }
 
-extern "C" void vtkTableFFT__SetDefaultSampleRate__0(void* self, double _arg) {
+extern "C" void vtkTableFFT__SetDefaultSampleRate__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetDefaultSampleRate(_arg);
 }
 
-extern "C" int32_t vtkTableFFT__GetWindowingFunction__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetWindowingFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetWindowingFunction();
 }
 
-extern "C" void vtkTableFFT__SetWindowingFunction__0(void* self, int32_t arg0) {
+extern "C" void vtkTableFFT__SetWindowingFunction__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetWindowingFunction(arg0);
 }
 
-extern "C" bool vtkTableFFT__GetReturnOnesided__0(void* self) {
+extern "C" bool vtkTableFFT__GetReturnOnesided__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetReturnOnesided();
 }
 
-extern "C" void vtkTableFFT__SetReturnOnesided__0(void* self, bool _arg) {
+extern "C" void vtkTableFFT__SetReturnOnesided__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetReturnOnesided(_arg);
 }
 
-extern "C" void vtkTableFFT__ReturnOnesidedOn__0(void* self) {
+extern "C" void vtkTableFFT__ReturnOnesidedOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->ReturnOnesidedOn();
 }
 
-extern "C" void vtkTableFFT__ReturnOnesidedOff__0(void* self) {
+extern "C" void vtkTableFFT__ReturnOnesidedOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->ReturnOnesidedOff();
 }
 
-extern "C" bool vtkTableFFT__GetAverageFft__0(void* self) {
+extern "C" bool vtkTableFFT__GetAverageFft__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetAverageFft();
 }
 
-extern "C" void vtkTableFFT__SetAverageFft__0(void* self, bool arg0) {
+extern "C" void vtkTableFFT__SetAverageFft__0(void* self, bool arg0) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetAverageFft(arg0);
 }
 
-extern "C" void vtkTableFFT__AverageFftOn__0(void* self) {
+extern "C" void vtkTableFFT__AverageFftOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->AverageFftOn();
 }
 
-extern "C" void vtkTableFFT__AverageFftOff__0(void* self) {
+extern "C" void vtkTableFFT__AverageFftOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->AverageFftOff();
 }
 
-extern "C" bool vtkTableFFT__GetNormalize__0(void* self) {
+extern "C" bool vtkTableFFT__GetNormalize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetNormalize();
 }
 
-extern "C" void vtkTableFFT__SetNormalize__0(void* self, bool _arg) {
+extern "C" void vtkTableFFT__SetNormalize__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetNormalize(_arg);
 }
 
-extern "C" void vtkTableFFT__NormalizeOn__0(void* self) {
+extern "C" void vtkTableFFT__NormalizeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->NormalizeOn();
 }
 
-extern "C" void vtkTableFFT__NormalizeOff__0(void* self) {
+extern "C" void vtkTableFFT__NormalizeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->NormalizeOff();
 }
 
-extern "C" int32_t vtkTableFFT__GetBlockSize__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetBlockSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetBlockSize();
 }
 
-extern "C" void vtkTableFFT__SetBlockSize__0(void* self, int32_t arg0) {
+extern "C" void vtkTableFFT__SetBlockSize__0(void* self, int32_t arg0) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetBlockSize(arg0);
 }
 
-extern "C" int32_t vtkTableFFT__GetBlockOverlap__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetBlockOverlap__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetBlockOverlap();
 }
 
-extern "C" void vtkTableFFT__SetBlockOverlap__0(void* self, int32_t _arg) {
+extern "C" void vtkTableFFT__SetBlockOverlap__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetBlockOverlap(_arg);
 }
 
-extern "C" int32_t vtkTableFFT__GetScalingMethod__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetScalingMethod__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetScalingMethod();
 }
 
-extern "C" void vtkTableFFT__SetScalingMethod__0(void* self, int32_t _arg) {
+extern "C" void vtkTableFFT__SetScalingMethod__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetScalingMethod(_arg);
 }
 
-extern "C" int32_t vtkTableFFT__GetScalingMethodMinValue__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetScalingMethodMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetScalingMethodMinValue();
 }
 
-extern "C" int32_t vtkTableFFT__GetScalingMethodMaxValue__0(void* self) {
+extern "C" int32_t vtkTableFFT__GetScalingMethodMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetScalingMethodMaxValue();
 }
 
-extern "C" bool vtkTableFFT__GetDetrend__0(void* self) {
+extern "C" bool vtkTableFFT__GetDetrend__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTableFFT*>(self)->GetDetrend();
 }
 
-extern "C" void vtkTableFFT__SetDetrend__0(void* self, bool _arg) {
+extern "C" void vtkTableFFT__SetDetrend__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->SetDetrend(_arg);
 }
 
-extern "C" void vtkTableFFT__DetrendOn__0(void* self) {
+extern "C" void vtkTableFFT__DetrendOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->DetrendOn();
 }
 
-extern "C" void vtkTableFFT__DetrendOff__0(void* self) {
+extern "C" void vtkTableFFT__DetrendOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTableFFT*>(self)->DetrendOff();
 }

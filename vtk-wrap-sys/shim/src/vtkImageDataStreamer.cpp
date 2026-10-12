@@ -5,46 +5,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkImageDataStreamer__vtk_wrap_new() { return static_cast<void*>(vtkImageDataStreamer::New()); }
+extern "C" void* vtkImageDataStreamer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageDataStreamer::New()); }
 
-extern "C" int32_t vtkImageDataStreamer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageDataStreamer__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageDataStreamer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageDataStreamer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageDataStreamer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageDataStreamer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageDataStreamer__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageDataStreamer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageDataStreamer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageDataStreamer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageDataStreamer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageDataStreamer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageDataStreamer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageDataStreamer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageDataStreamer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageDataStreamer__SetNumberOfStreamDivisions__0(void* self, int32_t _arg) {
+extern "C" void vtkImageDataStreamer__SetNumberOfStreamDivisions__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageDataStreamer*>(self)->SetNumberOfStreamDivisions(_arg);
 }
 
-extern "C" int32_t vtkImageDataStreamer__GetNumberOfStreamDivisions__0(void* self) {
+extern "C" int32_t vtkImageDataStreamer__GetNumberOfStreamDivisions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageDataStreamer*>(self)->GetNumberOfStreamDivisions();
 }
 
-extern "C" void vtkImageDataStreamer__SetExtentTranslator__0(void* self, void* arg0) {
+extern "C" void vtkImageDataStreamer__SetExtentTranslator__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImageDataStreamer*>(self)->SetExtentTranslator(static_cast<vtkExtentTranslator*>(arg0));
 }
 
-extern "C" void* vtkImageDataStreamer__GetExtentTranslator__0(void* self) {
+extern "C" void* vtkImageDataStreamer__GetExtentTranslator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageDataStreamer*>(self)->GetExtentTranslator());
 }

@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkVersion__vtk_wrap_new() { return static_cast<void*>(vtkVersion::New()); }
+extern "C" void* vtkVersion__vtk_wrap_new() noexcept { return static_cast<void*>(vtkVersion::New()); }
 
-extern "C" int32_t vtkVersion__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkVersion__IsTypeOf__0(const char* type_) noexcept {
   return vtkVersion::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkVersion__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkVersion__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVersion*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkVersion__SafeDownCast__0(void* o) {
+extern "C" void* vtkVersion__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkVersion::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkVersion__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkVersion__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkVersion::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkVersion__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkVersion__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkVersion*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkVersion__GetVTKVersion__0() {
+extern "C" const char* vtkVersion__GetVTKVersion__0() noexcept {
   return vtkVersion::GetVTKVersion();
 }
 
-extern "C" const char* vtkVersion__GetVTKVersionFull__0() {
+extern "C" const char* vtkVersion__GetVTKVersionFull__0() noexcept {
   return vtkVersion::GetVTKVersionFull();
 }
 
-extern "C" int32_t vtkVersion__GetVTKMajorVersion__0() {
+extern "C" int32_t vtkVersion__GetVTKMajorVersion__0() noexcept {
   return vtkVersion::GetVTKMajorVersion();
 }
 
-extern "C" int32_t vtkVersion__GetVTKMinorVersion__0() {
+extern "C" int32_t vtkVersion__GetVTKMinorVersion__0() noexcept {
   return vtkVersion::GetVTKMinorVersion();
 }
 
-extern "C" int32_t vtkVersion__GetVTKBuildVersion__0() {
+extern "C" int32_t vtkVersion__GetVTKBuildVersion__0() noexcept {
   return vtkVersion::GetVTKBuildVersion();
 }
 
-extern "C" const char* vtkVersion__GetVTKSourceVersion__0() {
+extern "C" const char* vtkVersion__GetVTKSourceVersion__0() noexcept {
   return vtkVersion::GetVTKSourceVersion();
 }
 

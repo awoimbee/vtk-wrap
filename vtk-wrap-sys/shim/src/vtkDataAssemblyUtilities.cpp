@@ -7,71 +7,80 @@
 #include "vtkPartitionedDataSetCollection.h"
 #include <string>
 
-extern "C" void* vtkDataAssemblyUtilities__vtk_wrap_new() { return static_cast<void*>(vtkDataAssemblyUtilities::New()); }
+extern "C" void* vtkDataAssemblyUtilities__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataAssemblyUtilities::New()); }
 
-extern "C" int32_t vtkDataAssemblyUtilities__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataAssemblyUtilities__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataAssemblyUtilities::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataAssemblyUtilities__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataAssemblyUtilities__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataAssemblyUtilities*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataAssemblyUtilities__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataAssemblyUtilities__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataAssemblyUtilities::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataAssemblyUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataAssemblyUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataAssemblyUtilities::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataAssemblyUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataAssemblyUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataAssemblyUtilities*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" const char* vtkDataAssemblyUtilities__HierarchyName__0() {
+extern "C" const char* vtkDataAssemblyUtilities__HierarchyName__0() noexcept {
   return vtkDataAssemblyUtilities::HierarchyName();
 }
 
-extern "C" const char* vtkDataAssemblyUtilities__CategoryHierarchyName__0() {
+extern "C" const char* vtkDataAssemblyUtilities__CategoryHierarchyName__0() noexcept {
   return vtkDataAssemblyUtilities::CategoryHierarchyName();
 }
 
-extern "C" const char* vtkDataAssemblyUtilities__CategoryHierarchy__0() {
+extern "C" const char* vtkDataAssemblyUtilities__CategoryHierarchy__0() noexcept {
   return vtkDataAssemblyUtilities::CategoryHierarchy();
 }
 
-extern "C" const char* vtkDataAssemblyUtilities__CategoryTransformedHierarchy__0() {
+extern "C" const char* vtkDataAssemblyUtilities__CategoryTransformedHierarchy__0() noexcept {
   return vtkDataAssemblyUtilities::CategoryTransformedHierarchy();
 }
 
-extern "C" void* vtkDataAssemblyUtilities__GetDataAssembly__0(const char* name, void* cd) {
-  return static_cast<void*>((vtkDataAssemblyUtilities::GetDataAssembly(name, static_cast<vtkCompositeDataSet*>(cd))).GetPointer());
+extern "C" void* vtkDataAssemblyUtilities__GetDataAssembly__0(const char* name, void* cd) noexcept {
+  auto result = vtkDataAssemblyUtilities::GetDataAssembly(name, static_cast<vtkCompositeDataSet*>(cd));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" bool vtkDataAssemblyUtilities__GenerateHierarchy__0(void* input, void* hierarchy, void* output) {
+extern "C" bool vtkDataAssemblyUtilities__GenerateHierarchy__0(void* input, void* hierarchy, void* output) noexcept {
   return vtkDataAssemblyUtilities::GenerateHierarchy(static_cast<vtkCompositeDataSet*>(input), static_cast<vtkDataAssembly*>(hierarchy), static_cast<vtkPartitionedDataSetCollection*>(output));
 }
 
-extern "C" void* vtkDataAssemblyUtilities__GenerateCompositeDataSetFromHierarchy__0(void* input, void* hierarchy) {
-  return static_cast<void*>((vtkDataAssemblyUtilities::GenerateCompositeDataSetFromHierarchy(static_cast<vtkPartitionedDataSetCollection*>(input), static_cast<vtkDataAssembly*>(hierarchy))).GetPointer());
+extern "C" void* vtkDataAssemblyUtilities__GenerateCompositeDataSetFromHierarchy__0(void* input, void* hierarchy) noexcept {
+  auto result = vtkDataAssemblyUtilities::GenerateCompositeDataSetFromHierarchy(static_cast<vtkPartitionedDataSetCollection*>(input), static_cast<vtkDataAssembly*>(hierarchy));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" void* vtkDataAssemblyUtilities__GenerateCompositeDataSetFromHierarchy__1(void* input) {
-  return static_cast<void*>((vtkDataAssemblyUtilities::GenerateCompositeDataSetFromHierarchy(static_cast<vtkPartitionedDataSetCollection*>(input))).GetPointer());
+extern "C" void* vtkDataAssemblyUtilities__GenerateCompositeDataSetFromHierarchy__1(void* input) noexcept {
+  auto result = vtkDataAssemblyUtilities::GenerateCompositeDataSetFromHierarchy(static_cast<vtkPartitionedDataSetCollection*>(input));
+  auto* ptr = result.GetPointer();
+  if (ptr) { ptr->Register(nullptr); }
+  return static_cast<void*>(ptr);
 }
 
-extern "C" bool vtkDataAssemblyUtilities__HasCompatibilityHierarchy__0(void* input) {
+extern "C" bool vtkDataAssemblyUtilities__HasCompatibilityHierarchy__0(void* input) noexcept {
   return vtkDataAssemblyUtilities::HasCompatibilityHierarchy(static_cast<vtkPartitionedDataSetCollection*>(input));
 }
 
-extern "C" bool vtkDataAssemblyUtilities__IsCompatibilityHierarchy__0(void* hierarchy) {
+extern "C" bool vtkDataAssemblyUtilities__IsCompatibilityHierarchy__0(void* hierarchy) noexcept {
   return vtkDataAssemblyUtilities::IsCompatibilityHierarchy(static_cast<vtkDataAssembly*>(hierarchy));
 }
 
-extern "C" char* vtkDataAssemblyUtilities__GetSelectorForCompositeId__0(uint32_t id, void* hierarchy) {
+extern "C" char* vtkDataAssemblyUtilities__GetSelectorForCompositeId__0(uint32_t id, void* hierarchy) noexcept {
   return vtk_wrap_strdup((vtkDataAssemblyUtilities::GetSelectorForCompositeId(id, static_cast<vtkDataAssembly*>(hierarchy))).c_str());
 }
 

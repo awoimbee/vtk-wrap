@@ -4,31 +4,31 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkEventDataForDevice__vtk_wrap_new() { return static_cast<void*>(vtkEventDataForDevice::New()); }
+extern "C" void* vtkEventDataForDevice__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEventDataForDevice::New()); }
 
-extern "C" int32_t vtkEventDataForDevice__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEventDataForDevice__IsTypeOf__0(const char* type_) noexcept {
   return vtkEventDataForDevice::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEventDataForDevice__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEventDataForDevice__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEventDataForDevice*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEventDataForDevice__SafeDownCast__0(void* o) {
+extern "C" void* vtkEventDataForDevice__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEventDataForDevice::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEventDataForDevice__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEventDataForDevice__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEventDataForDevice::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEventDataForDevice__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEventDataForDevice__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEventDataForDevice*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkEventDataForDevice__GetAsEventDataForDevice__0(void* self) {
+extern "C" void* vtkEventDataForDevice__GetAsEventDataForDevice__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkEventDataForDevice*>(self)->GetAsEventDataForDevice());
 }

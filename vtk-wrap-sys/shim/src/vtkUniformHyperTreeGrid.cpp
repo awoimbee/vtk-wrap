@@ -8,126 +8,126 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkUniformHyperTreeGrid__vtk_wrap_new() { return static_cast<void*>(vtkUniformHyperTreeGrid::New()); }
+extern "C" void* vtkUniformHyperTreeGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUniformHyperTreeGrid::New()); }
 
-extern "C" int32_t vtkUniformHyperTreeGrid__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUniformHyperTreeGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkUniformHyperTreeGrid::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUniformHyperTreeGrid__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUniformHyperTreeGrid__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformHyperTreeGrid*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUniformHyperTreeGrid__SafeDownCast__0(void* o) {
+extern "C" void* vtkUniformHyperTreeGrid__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUniformHyperTreeGrid::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUniformHyperTreeGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUniformHyperTreeGrid__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUniformHyperTreeGrid::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUniformHyperTreeGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUniformHyperTreeGrid__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUniformHyperTreeGrid*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkUniformHyperTreeGrid__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkUniformHyperTreeGrid__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformHyperTreeGrid*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkUniformHyperTreeGrid__CopyStructure__0(void* self, void* arg0) {
+extern "C" void vtkUniformHyperTreeGrid__CopyStructure__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->CopyStructure(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkUniformHyperTreeGrid__Initialize__0(void* self) {
+extern "C" void vtkUniformHyperTreeGrid__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->Initialize();
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetOrigin__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkUniformHyperTreeGrid__SetOrigin__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetOrigin(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetOrigin__1(void* self, const double* _arg) {
+extern "C" void vtkUniformHyperTreeGrid__SetOrigin__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetOrigin(_arg);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetGridScale__0(void* self, double arg0, double arg1, double arg2) {
+extern "C" void vtkUniformHyperTreeGrid__SetGridScale__0(void* self, double arg0, double arg1, double arg2) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetGridScale(arg0, arg1, arg2);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetGridScale__1(void* self, double arg0) {
+extern "C" void vtkUniformHyperTreeGrid__SetGridScale__1(void* self, double arg0) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetGridScale(arg0);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__GetGridBounds__0(void* self, double* bounds) {
+extern "C" void vtkUniformHyperTreeGrid__GetGridBounds__0(void* self, double* bounds) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->GetGridBounds(bounds);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetXCoordinates__0(void* self, void* XCoordinates) {
+extern "C" void vtkUniformHyperTreeGrid__SetXCoordinates__0(void* self, void* XCoordinates) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetXCoordinates(static_cast<vtkDataArray*>(XCoordinates));
 }
 
-extern "C" void* vtkUniformHyperTreeGrid__GetXCoordinates__0(void* self) {
+extern "C" void* vtkUniformHyperTreeGrid__GetXCoordinates__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformHyperTreeGrid*>(self)->GetXCoordinates());
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetYCoordinates__0(void* self, void* YCoordinates) {
+extern "C" void vtkUniformHyperTreeGrid__SetYCoordinates__0(void* self, void* YCoordinates) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetYCoordinates(static_cast<vtkDataArray*>(YCoordinates));
 }
 
-extern "C" void* vtkUniformHyperTreeGrid__GetYCoordinates__0(void* self) {
+extern "C" void* vtkUniformHyperTreeGrid__GetYCoordinates__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformHyperTreeGrid*>(self)->GetYCoordinates());
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetZCoordinates__0(void* self, void* ZCoordinates) {
+extern "C" void vtkUniformHyperTreeGrid__SetZCoordinates__0(void* self, void* ZCoordinates) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetZCoordinates(static_cast<vtkDataArray*>(ZCoordinates));
 }
 
-extern "C" void* vtkUniformHyperTreeGrid__GetZCoordinates__0(void* self) {
+extern "C" void* vtkUniformHyperTreeGrid__GetZCoordinates__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformHyperTreeGrid*>(self)->GetZCoordinates());
 }
 
-extern "C" void vtkUniformHyperTreeGrid__CopyCoordinates__0(void* self, void* output) {
+extern "C" void vtkUniformHyperTreeGrid__CopyCoordinates__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->CopyCoordinates(static_cast<vtkHyperTreeGrid*>(output));
 }
 
-extern "C" void vtkUniformHyperTreeGrid__SetFixedCoordinates__0(void* self, uint32_t axis, double value) {
+extern "C" void vtkUniformHyperTreeGrid__SetFixedCoordinates__0(void* self, uint32_t axis, double value) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->SetFixedCoordinates(axis, value);
 }
 
-extern "C" void vtkUniformHyperTreeGrid__ShallowCopy__0(void* self, void* arg0) {
+extern "C" void vtkUniformHyperTreeGrid__ShallowCopy__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->ShallowCopy(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkUniformHyperTreeGrid__DeepCopy__0(void* self, void* arg0) {
+extern "C" void vtkUniformHyperTreeGrid__DeepCopy__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUniformHyperTreeGrid*>(self)->DeepCopy(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" unsigned long vtkUniformHyperTreeGrid__GetActualMemorySizeBytes__0(void* self) {
+extern "C" unsigned long vtkUniformHyperTreeGrid__GetActualMemorySizeBytes__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUniformHyperTreeGrid*>(self)->GetActualMemorySizeBytes();
 }
 
-extern "C" void* vtkUniformHyperTreeGrid__GetTree__0(void* self, int64_t arg0, bool create) {
+extern "C" void* vtkUniformHyperTreeGrid__GetTree__0(void* self, int64_t arg0, bool create) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUniformHyperTreeGrid*>(self)->GetTree(arg0, create));
 }

@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataObjectAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkDataObjectAlgorithm::New()); }
+extern "C" void* vtkDataObjectAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataObjectAlgorithm::New()); }
 
-extern "C" int32_t vtkDataObjectAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObjectAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObjectAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObjectAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObjectAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObjectAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObjectAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObjectAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObjectAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObjectAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObjectAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObjectAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObjectAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkDataObjectAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkDataObjectAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkDataObjectAlgorithm__GetOutput__1(void* self, int32_t arg0) {
+extern "C" void* vtkDataObjectAlgorithm__GetOutput__1(void* self, int32_t arg0) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectAlgorithm*>(self)->GetOutput(arg0));
 }
 
-extern "C" void vtkDataObjectAlgorithm__SetOutput__0(void* self, void* d) {
+extern "C" void vtkDataObjectAlgorithm__SetOutput__0(void* self, void* d) noexcept {
   (void)self;
   static_cast<vtkDataObjectAlgorithm*>(self)->SetOutput(static_cast<vtkDataObject*>(d));
 }
 
-extern "C" void* vtkDataObjectAlgorithm__GetInput__0(void* self) {
+extern "C" void* vtkDataObjectAlgorithm__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectAlgorithm*>(self)->GetInput());
 }
 
-extern "C" void* vtkDataObjectAlgorithm__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkDataObjectAlgorithm__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectAlgorithm*>(self)->GetInput(port));
 }
 
-extern "C" void vtkDataObjectAlgorithm__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkDataObjectAlgorithm__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDataObjectAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkDataObjectAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkDataObjectAlgorithm__SetInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkDataObjectAlgorithm*>(self)->SetInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }
 
-extern "C" void vtkDataObjectAlgorithm__AddInputData__0(void* self, void* arg0) {
+extern "C" void vtkDataObjectAlgorithm__AddInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkDataObjectAlgorithm*>(self)->AddInputData(static_cast<vtkDataObject*>(arg0));
 }
 
-extern "C" void vtkDataObjectAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) {
+extern "C" void vtkDataObjectAlgorithm__AddInputData__1(void* self, int32_t arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkDataObjectAlgorithm*>(self)->AddInputData(arg0, static_cast<vtkDataObject*>(arg1));
 }

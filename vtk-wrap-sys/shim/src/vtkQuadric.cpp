@@ -4,46 +4,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkQuadric__vtk_wrap_new() { return static_cast<void*>(vtkQuadric::New()); }
+extern "C" void* vtkQuadric__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuadric::New()); }
 
-extern "C" int32_t vtkQuadric__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuadric__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuadric::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuadric__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuadric__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadric*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuadric__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuadric__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuadric::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuadric__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuadric__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuadric::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuadric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuadric__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadric*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkQuadric__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkQuadric__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkQuadric*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkQuadric__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkQuadric__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkQuadric*>(self)->EvaluateGradient(x, g);
 }
 
-extern "C" void vtkQuadric__SetCoefficients__0(void* self, double* a) {
+extern "C" void vtkQuadric__SetCoefficients__0(void* self, double* a) noexcept {
   (void)self;
   static_cast<vtkQuadric*>(self)->SetCoefficients(a);
 }
 
-extern "C" void vtkQuadric__SetCoefficients__1(void* self, double a0, double a1, double a2, double a3, double a4, double a5, double a6, double a7, double a8, double a9) {
+extern "C" void vtkQuadric__SetCoefficients__1(void* self, double a0, double a1, double a2, double a3, double a4, double a5, double a6, double a7, double a8, double a9) noexcept {
   (void)self;
   static_cast<vtkQuadric*>(self)->SetCoefficients(a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
 }

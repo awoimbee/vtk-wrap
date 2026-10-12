@@ -9,99 +9,99 @@
 #include "vtkSelection.h"
 #include <string>
 
-extern "C" void* vtkAnnotationLayers__vtk_wrap_new() { return static_cast<void*>(vtkAnnotationLayers::New()); }
+extern "C" void* vtkAnnotationLayers__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAnnotationLayers::New()); }
 
-extern "C" int32_t vtkAnnotationLayers__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAnnotationLayers__IsTypeOf__0(const char* type_) noexcept {
   return vtkAnnotationLayers::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAnnotationLayers__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAnnotationLayers__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayers*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAnnotationLayers__SafeDownCast__0(void* o) {
+extern "C" void* vtkAnnotationLayers__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAnnotationLayers::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAnnotationLayers__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAnnotationLayers__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAnnotationLayers::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAnnotationLayers__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAnnotationLayers__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayers*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkAnnotationLayers__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkAnnotationLayers__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayers*>(self)->GetDataObjectType();
 }
 
-extern "C" void vtkAnnotationLayers__SetCurrentAnnotation__0(void* self, void* ann) {
+extern "C" void vtkAnnotationLayers__SetCurrentAnnotation__0(void* self, void* ann) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->SetCurrentAnnotation(static_cast<vtkAnnotation*>(ann));
 }
 
-extern "C" void* vtkAnnotationLayers__GetCurrentAnnotation__0(void* self) {
+extern "C" void* vtkAnnotationLayers__GetCurrentAnnotation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLayers*>(self)->GetCurrentAnnotation());
 }
 
-extern "C" void vtkAnnotationLayers__SetCurrentSelection__0(void* self, void* sel) {
+extern "C" void vtkAnnotationLayers__SetCurrentSelection__0(void* self, void* sel) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->SetCurrentSelection(static_cast<vtkSelection*>(sel));
 }
 
-extern "C" void* vtkAnnotationLayers__GetCurrentSelection__0(void* self) {
+extern "C" void* vtkAnnotationLayers__GetCurrentSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLayers*>(self)->GetCurrentSelection());
 }
 
-extern "C" uint32_t vtkAnnotationLayers__GetNumberOfAnnotations__0(void* self) {
+extern "C" uint32_t vtkAnnotationLayers__GetNumberOfAnnotations__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayers*>(self)->GetNumberOfAnnotations();
 }
 
-extern "C" void* vtkAnnotationLayers__GetAnnotation__0(void* self, uint32_t idx) {
+extern "C" void* vtkAnnotationLayers__GetAnnotation__0(void* self, uint32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLayers*>(self)->GetAnnotation(idx));
 }
 
-extern "C" void vtkAnnotationLayers__AddAnnotation__0(void* self, void* ann) {
+extern "C" void vtkAnnotationLayers__AddAnnotation__0(void* self, void* ann) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->AddAnnotation(static_cast<vtkAnnotation*>(ann));
 }
 
-extern "C" void vtkAnnotationLayers__RemoveAnnotation__0(void* self, void* ann) {
+extern "C" void vtkAnnotationLayers__RemoveAnnotation__0(void* self, void* ann) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->RemoveAnnotation(static_cast<vtkAnnotation*>(ann));
 }
 
-extern "C" void vtkAnnotationLayers__Initialize__0(void* self) {
+extern "C" void vtkAnnotationLayers__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->Initialize();
 }
 
-extern "C" void vtkAnnotationLayers__ShallowCopy__0(void* self, void* other) {
+extern "C" void vtkAnnotationLayers__ShallowCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->ShallowCopy(static_cast<vtkDataObject*>(other));
 }
 
-extern "C" void vtkAnnotationLayers__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkAnnotationLayers__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayers*>(self)->DeepCopy(static_cast<vtkDataObject*>(other));
 }
 
-extern "C" void* vtkAnnotationLayers__GetData__0(void* info) {
+extern "C" void* vtkAnnotationLayers__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkAnnotationLayers::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkAnnotationLayers__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkAnnotationLayers__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkAnnotationLayers::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" unsigned long vtkAnnotationLayers__GetMTime__0(void* self) {
+extern "C" unsigned long vtkAnnotationLayers__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayers*>(self)->GetMTime();
 }

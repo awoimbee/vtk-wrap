@@ -4,64 +4,64 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkSubdivisionFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSubdivisionFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkSubdivisionFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSubdivisionFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSubdivisionFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSubdivisionFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkSubdivisionFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSubdivisionFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSubdivisionFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSubdivisionFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSubdivisionFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSubdivisionFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSubdivisionFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSubdivisionFilter__SetNumberOfSubdivisions__0(void* self, int32_t _arg) {
+extern "C" void vtkSubdivisionFilter__SetNumberOfSubdivisions__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSubdivisionFilter*>(self)->SetNumberOfSubdivisions(_arg);
 }
 
-extern "C" int32_t vtkSubdivisionFilter__GetNumberOfSubdivisions__0(void* self) {
+extern "C" int32_t vtkSubdivisionFilter__GetNumberOfSubdivisions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->GetNumberOfSubdivisions();
 }
 
-extern "C" void vtkSubdivisionFilter__SetCheckForTriangles__0(void* self, int32_t _arg) {
+extern "C" void vtkSubdivisionFilter__SetCheckForTriangles__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSubdivisionFilter*>(self)->SetCheckForTriangles(_arg);
 }
 
-extern "C" int32_t vtkSubdivisionFilter__GetCheckForTrianglesMinValue__0(void* self) {
+extern "C" int32_t vtkSubdivisionFilter__GetCheckForTrianglesMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->GetCheckForTrianglesMinValue();
 }
 
-extern "C" int32_t vtkSubdivisionFilter__GetCheckForTrianglesMaxValue__0(void* self) {
+extern "C" int32_t vtkSubdivisionFilter__GetCheckForTrianglesMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->GetCheckForTrianglesMaxValue();
 }
 
-extern "C" int32_t vtkSubdivisionFilter__GetCheckForTriangles__0(void* self) {
+extern "C" int32_t vtkSubdivisionFilter__GetCheckForTriangles__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSubdivisionFilter*>(self)->GetCheckForTriangles();
 }
 
-extern "C" void vtkSubdivisionFilter__CheckForTrianglesOn__0(void* self) {
+extern "C" void vtkSubdivisionFilter__CheckForTrianglesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSubdivisionFilter*>(self)->CheckForTrianglesOn();
 }
 
-extern "C" void vtkSubdivisionFilter__CheckForTrianglesOff__0(void* self) {
+extern "C" void vtkSubdivisionFilter__CheckForTrianglesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSubdivisionFilter*>(self)->CheckForTrianglesOff();
 }

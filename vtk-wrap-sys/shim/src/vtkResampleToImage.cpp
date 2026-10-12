@@ -5,76 +5,76 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkResampleToImage__vtk_wrap_new() { return static_cast<void*>(vtkResampleToImage::New()); }
+extern "C" void* vtkResampleToImage__vtk_wrap_new() noexcept { return static_cast<void*>(vtkResampleToImage::New()); }
 
-extern "C" int32_t vtkResampleToImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkResampleToImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkResampleToImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkResampleToImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkResampleToImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResampleToImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkResampleToImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkResampleToImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkResampleToImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkResampleToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkResampleToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkResampleToImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkResampleToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkResampleToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkResampleToImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkResampleToImage__SetUseInputBounds__0(void* self, bool _arg) {
+extern "C" void vtkResampleToImage__SetUseInputBounds__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->SetUseInputBounds(_arg);
 }
 
-extern "C" bool vtkResampleToImage__GetUseInputBounds__0(void* self) {
+extern "C" bool vtkResampleToImage__GetUseInputBounds__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResampleToImage*>(self)->GetUseInputBounds();
 }
 
-extern "C" void vtkResampleToImage__UseInputBoundsOn__0(void* self) {
+extern "C" void vtkResampleToImage__UseInputBoundsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->UseInputBoundsOn();
 }
 
-extern "C" void vtkResampleToImage__UseInputBoundsOff__0(void* self) {
+extern "C" void vtkResampleToImage__UseInputBoundsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->UseInputBoundsOff();
 }
 
-extern "C" void vtkResampleToImage__SetSamplingBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) {
+extern "C" void vtkResampleToImage__SetSamplingBounds__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4, double _arg5, double _arg6) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->SetSamplingBounds(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkResampleToImage__SetSamplingBounds__1(void* self, const double* _arg) {
+extern "C" void vtkResampleToImage__SetSamplingBounds__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->SetSamplingBounds(_arg);
 }
 
-extern "C" void vtkResampleToImage__SetSamplingDimensions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) {
+extern "C" void vtkResampleToImage__SetSamplingDimensions__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->SetSamplingDimensions(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkResampleToImage__SetSamplingDimensions__1(void* self, const int32_t* _arg) {
+extern "C" void vtkResampleToImage__SetSamplingDimensions__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkResampleToImage*>(self)->SetSamplingDimensions(_arg);
 }
 
-extern "C" void* vtkResampleToImage__GetOutput__0(void* self) {
+extern "C" void* vtkResampleToImage__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkResampleToImage*>(self)->GetOutput());
 }
 
-extern "C" const char* vtkResampleToImage__GetMaskArrayName__0(void* self) {
+extern "C" const char* vtkResampleToImage__GetMaskArrayName__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkResampleToImage*>(self)->GetMaskArrayName();
 }

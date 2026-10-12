@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkLevelIdScalars__vtk_wrap_new() { return static_cast<void*>(vtkLevelIdScalars::New()); }
+extern "C" void* vtkLevelIdScalars__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLevelIdScalars::New()); }
 
-extern "C" int32_t vtkLevelIdScalars__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLevelIdScalars__IsTypeOf__0(const char* type_) noexcept {
   return vtkLevelIdScalars::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLevelIdScalars__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLevelIdScalars__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLevelIdScalars*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLevelIdScalars__SafeDownCast__0(void* o) {
+extern "C" void* vtkLevelIdScalars__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLevelIdScalars::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLevelIdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLevelIdScalars__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLevelIdScalars::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLevelIdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLevelIdScalars__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLevelIdScalars*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

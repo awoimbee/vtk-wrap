@@ -9,69 +9,69 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkUnstructuredGridVolumeMapper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridVolumeMapper__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridVolumeMapper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridVolumeMapper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridVolumeMapper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridVolumeMapper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridVolumeMapper__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridVolumeMapper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridVolumeMapper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridVolumeMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridVolumeMapper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridVolumeMapper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridVolumeMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridVolumeMapper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridVolumeMapper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__SetInputData__0(void* self, void* arg0) {
+extern "C" void vtkUnstructuredGridVolumeMapper__SetInputData__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->SetInputData(static_cast<vtkUnstructuredGridBase*>(arg0));
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__SetInputData__1(void* self, void* arg0) {
+extern "C" void vtkUnstructuredGridVolumeMapper__SetInputData__1(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->SetInputData(static_cast<vtkDataSet*>(arg0));
 }
 
-extern "C" void* vtkUnstructuredGridVolumeMapper__GetInput__0(void* self) {
+extern "C" void* vtkUnstructuredGridVolumeMapper__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridVolumeMapper*>(self)->GetInput());
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendMode__0(void* self, int32_t _arg) {
+extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendMode__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->SetBlendMode(_arg);
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendModeToComposite__0(void* self) {
+extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendModeToComposite__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->SetBlendModeToComposite();
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendModeToMaximumIntensity__0(void* self) {
+extern "C" void vtkUnstructuredGridVolumeMapper__SetBlendModeToMaximumIntensity__0(void* self) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->SetBlendModeToMaximumIntensity();
 }
 
-extern "C" int32_t vtkUnstructuredGridVolumeMapper__GetBlendMode__0(void* self) {
+extern "C" int32_t vtkUnstructuredGridVolumeMapper__GetBlendMode__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridVolumeMapper*>(self)->GetBlendMode();
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__Render__0(void* self, void* ren, void* vol) {
+extern "C" void vtkUnstructuredGridVolumeMapper__Render__0(void* self, void* ren, void* vol) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->Render(static_cast<vtkRenderer*>(ren), static_cast<vtkVolume*>(vol));
 }
 
-extern "C" void vtkUnstructuredGridVolumeMapper__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkUnstructuredGridVolumeMapper__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridVolumeMapper*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

@@ -5,41 +5,41 @@
 #include "vtkProp3D.h"
 #include <string>
 
-extern "C" void* vtkProp3DCollection__vtk_wrap_new() { return static_cast<void*>(vtkProp3DCollection::New()); }
+extern "C" void* vtkProp3DCollection__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProp3DCollection::New()); }
 
-extern "C" int32_t vtkProp3DCollection__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProp3DCollection__IsTypeOf__0(const char* type_) noexcept {
   return vtkProp3DCollection::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProp3DCollection__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProp3DCollection__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DCollection*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProp3DCollection__SafeDownCast__0(void* o) {
+extern "C" void* vtkProp3DCollection__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProp3DCollection::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProp3DCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProp3DCollection__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProp3DCollection::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProp3DCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProp3DCollection__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DCollection*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProp3DCollection__AddItem__0(void* self, void* p) {
+extern "C" void vtkProp3DCollection__AddItem__0(void* self, void* p) noexcept {
   (void)self;
   static_cast<vtkProp3DCollection*>(self)->AddItem(static_cast<vtkProp3D*>(p));
 }
 
-extern "C" void* vtkProp3DCollection__GetNextProp3D__0(void* self) {
+extern "C" void* vtkProp3DCollection__GetNextProp3D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DCollection*>(self)->GetNextProp3D());
 }
 
-extern "C" void* vtkProp3DCollection__GetLastProp3D__0(void* self) {
+extern "C" void* vtkProp3DCollection__GetLastProp3D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DCollection*>(self)->GetLastProp3D());
 }

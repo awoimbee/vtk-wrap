@@ -4,51 +4,51 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellTypeUtilities__vtk_wrap_new() { return static_cast<void*>(vtkCellTypeUtilities::New()); }
+extern "C" void* vtkCellTypeUtilities__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellTypeUtilities::New()); }
 
-extern "C" int32_t vtkCellTypeUtilities__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellTypeUtilities__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellTypeUtilities::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellTypeUtilities__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellTypeUtilities__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypeUtilities*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellTypeUtilities__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellTypeUtilities__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellTypeUtilities::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellTypeUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellTypeUtilities__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellTypeUtilities::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellTypeUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellTypeUtilities__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellTypeUtilities*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" char* vtkCellTypeUtilities__GetTypeAsString__0(int32_t typeId) {
+extern "C" char* vtkCellTypeUtilities__GetTypeAsString__0(int32_t typeId) noexcept {
   return vtk_wrap_strdup((vtkCellTypeUtilities::GetTypeAsString(typeId)).c_str());
 }
 
-extern "C" int32_t vtkCellTypeUtilities__GetTypeIdFromName__0(const char* name) {
+extern "C" int32_t vtkCellTypeUtilities__GetTypeIdFromName__0(const char* name) noexcept {
   return vtkCellTypeUtilities::GetTypeIdFromName(std::string(name));
 }
 
-extern "C" const char* vtkCellTypeUtilities__GetClassNameFromTypeId__0(int32_t typeId) {
+extern "C" const char* vtkCellTypeUtilities__GetClassNameFromTypeId__0(int32_t typeId) noexcept {
   return vtkCellTypeUtilities::GetClassNameFromTypeId(typeId);
 }
 
-extern "C" int32_t vtkCellTypeUtilities__GetTypeIdFromClassName__0(const char* classname) {
+extern "C" int32_t vtkCellTypeUtilities__GetTypeIdFromClassName__0(const char* classname) noexcept {
   return vtkCellTypeUtilities::GetTypeIdFromClassName(classname);
 }
 
-extern "C" int32_t vtkCellTypeUtilities__IsLinear__0(uint8_t type_) {
+extern "C" int32_t vtkCellTypeUtilities__IsLinear__0(uint8_t type_) noexcept {
   return vtkCellTypeUtilities::IsLinear(type_);
 }
 
-extern "C" int32_t vtkCellTypeUtilities__GetDimension__0(uint8_t type_) {
+extern "C" int32_t vtkCellTypeUtilities__GetDimension__0(uint8_t type_) noexcept {
   return vtkCellTypeUtilities::GetDimension(type_);
 }
 

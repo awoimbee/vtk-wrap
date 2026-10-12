@@ -7,50 +7,50 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkForEach__vtk_wrap_new() { return static_cast<void*>(vtkForEach::New()); }
+extern "C" void* vtkForEach__vtk_wrap_new() noexcept { return static_cast<void*>(vtkForEach::New()); }
 
-extern "C" int32_t vtkForEach__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkForEach__IsTypeOf__0(const char* type_) noexcept {
   return vtkForEach::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkForEach__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkForEach__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkForEach*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkForEach__SafeDownCast__0(void* o) {
+extern "C" void* vtkForEach__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkForEach::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkForEach__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkForEach__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkForEach::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkForEach__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkForEach__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkForEach*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkForEach__FOR_EACH_FILTER__0() {
+extern "C" void* vtkForEach__FOR_EACH_FILTER__0() noexcept {
   return static_cast<void*>(vtkForEach::FOR_EACH_FILTER());
 }
 
-extern "C" void vtkForEach__SetRange__0(void* self, void* arg0) {
+extern "C" void vtkForEach__SetRange__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkForEach*>(self)->SetRange(static_cast<vtkExecutionRange*>(arg0));
 }
 
-extern "C" bool vtkForEach__IsIterating__0(void* self) {
+extern "C" bool vtkForEach__IsIterating__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkForEach*>(self)->IsIterating();
 }
 
-extern "C" void vtkForEach__Iter__0(void* self) {
+extern "C" void vtkForEach__Iter__0(void* self) noexcept {
   (void)self;
   static_cast<vtkForEach*>(self)->Iter();
 }
 
-extern "C" void vtkForEach__RegisterEndFor__0(void* self, void* arg0) {
+extern "C" void vtkForEach__RegisterEndFor__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkForEach*>(self)->RegisterEndFor(static_cast<vtkEndFor*>(arg0));
 }

@@ -9,61 +9,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkContextActor__vtk_wrap_new() { return static_cast<void*>(vtkContextActor::New()); }
+extern "C" void* vtkContextActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkContextActor::New()); }
 
-extern "C" int32_t vtkContextActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkContextActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkContextActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkContextActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkContextActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkContextActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkContextActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkContextActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkContextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkContextActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkContextActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkContextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkContextActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkContextActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkContextActor__RenderOverlay__0(void* self, void* viewport) {
+extern "C" int32_t vtkContextActor__RenderOverlay__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkContextActor*>(self)->RenderOverlay(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void* vtkContextActor__GetContext__0(void* self) {
+extern "C" void* vtkContextActor__GetContext__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextActor*>(self)->GetContext());
 }
 
-extern "C" void* vtkContextActor__GetScene__0(void* self) {
+extern "C" void* vtkContextActor__GetScene__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextActor*>(self)->GetScene());
 }
 
-extern "C" void vtkContextActor__SetScene__0(void* self, void* scene) {
+extern "C" void vtkContextActor__SetScene__0(void* self, void* scene) noexcept {
   (void)self;
   static_cast<vtkContextActor*>(self)->SetScene(static_cast<vtkContextScene*>(scene));
 }
 
-extern "C" void vtkContextActor__SetForceDevice__0(void* self, void* dev) {
+extern "C" void vtkContextActor__SetForceDevice__0(void* self, void* dev) noexcept {
   (void)self;
   static_cast<vtkContextActor*>(self)->SetForceDevice(static_cast<vtkContextDevice2D*>(dev));
 }
 
-extern "C" void* vtkContextActor__GetForceDevice__0(void* self) {
+extern "C" void* vtkContextActor__GetForceDevice__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkContextActor*>(self)->GetForceDevice());
 }
 
-extern "C" void vtkContextActor__ReleaseGraphicsResources__0(void* self, void* window) {
+extern "C" void vtkContextActor__ReleaseGraphicsResources__0(void* self, void* window) noexcept {
   (void)self;
   static_cast<vtkContextActor*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(window));
 }

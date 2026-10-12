@@ -10,91 +10,91 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkProp3DFollower__vtk_wrap_new() { return static_cast<void*>(vtkProp3DFollower::New()); }
+extern "C" void* vtkProp3DFollower__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProp3DFollower::New()); }
 
-extern "C" int32_t vtkProp3DFollower__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProp3DFollower__IsTypeOf__0(const char* type_) noexcept {
   return vtkProp3DFollower::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProp3DFollower__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProp3DFollower__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProp3DFollower__SafeDownCast__0(void* o) {
+extern "C" void* vtkProp3DFollower__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProp3DFollower::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProp3DFollower__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProp3DFollower__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProp3DFollower::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProp3DFollower__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProp3DFollower__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkProp3DFollower__SetProp3D__0(void* self, void* prop) {
+extern "C" void vtkProp3DFollower__SetProp3D__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->SetProp3D(static_cast<vtkProp3D*>(prop));
 }
 
-extern "C" void* vtkProp3DFollower__GetProp3D__0(void* self) {
+extern "C" void* vtkProp3DFollower__GetProp3D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DFollower*>(self)->GetProp3D());
 }
 
-extern "C" void vtkProp3DFollower__SetCamera__0(void* self, void* arg0) {
+extern "C" void vtkProp3DFollower__SetCamera__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->SetCamera(static_cast<vtkCamera*>(arg0));
 }
 
-extern "C" void* vtkProp3DFollower__GetCamera__0(void* self) {
+extern "C" void* vtkProp3DFollower__GetCamera__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DFollower*>(self)->GetCamera());
 }
 
-extern "C" int32_t vtkProp3DFollower__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkProp3DFollower__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkProp3DFollower__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkProp3DFollower__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkProp3DFollower__RenderVolumetricGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkProp3DFollower__RenderVolumetricGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->RenderVolumetricGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkProp3DFollower__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkProp3DFollower__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProp3DFollower*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkProp3DFollower__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkProp3DFollower__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkProp3DFollower__ComputeMatrix__0(void* self) {
+extern "C" void vtkProp3DFollower__ComputeMatrix__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->ComputeMatrix();
 }
 
-extern "C" void vtkProp3DFollower__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkProp3DFollower__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkProp3DFollower__InitPathTraversal__0(void* self) {
+extern "C" void vtkProp3DFollower__InitPathTraversal__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProp3DFollower*>(self)->InitPathTraversal();
 }
 
-extern "C" void* vtkProp3DFollower__GetNextPath__0(void* self) {
+extern "C" void* vtkProp3DFollower__GetNextPath__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProp3DFollower*>(self)->GetNextPath());
 }

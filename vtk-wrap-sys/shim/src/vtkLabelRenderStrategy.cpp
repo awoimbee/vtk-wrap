@@ -7,84 +7,84 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkLabelRenderStrategy__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLabelRenderStrategy__IsTypeOf__0(const char* type_) noexcept {
   return vtkLabelRenderStrategy::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLabelRenderStrategy__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLabelRenderStrategy__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelRenderStrategy*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLabelRenderStrategy__SafeDownCast__0(void* o) {
+extern "C" void* vtkLabelRenderStrategy__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLabelRenderStrategy::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLabelRenderStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLabelRenderStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLabelRenderStrategy::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLabelRenderStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLabelRenderStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLabelRenderStrategy*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkLabelRenderStrategy__SupportsRotation__0(void* self) {
+extern "C" bool vtkLabelRenderStrategy__SupportsRotation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelRenderStrategy*>(self)->SupportsRotation();
 }
 
-extern "C" bool vtkLabelRenderStrategy__SupportsBoundedSize__0(void* self) {
+extern "C" bool vtkLabelRenderStrategy__SupportsBoundedSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkLabelRenderStrategy*>(self)->SupportsBoundedSize();
 }
 
-extern "C" void vtkLabelRenderStrategy__SetRenderer__0(void* self, void* ren) {
+extern "C" void vtkLabelRenderStrategy__SetRenderer__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->SetRenderer(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void* vtkLabelRenderStrategy__GetRenderer__0(void* self) {
+extern "C" void* vtkLabelRenderStrategy__GetRenderer__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelRenderStrategy*>(self)->GetRenderer());
 }
 
-extern "C" void vtkLabelRenderStrategy__SetDefaultTextProperty__0(void* self, void* tprop) {
+extern "C" void vtkLabelRenderStrategy__SetDefaultTextProperty__0(void* self, void* tprop) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->SetDefaultTextProperty(static_cast<vtkTextProperty*>(tprop));
 }
 
-extern "C" void* vtkLabelRenderStrategy__GetDefaultTextProperty__0(void* self) {
+extern "C" void* vtkLabelRenderStrategy__GetDefaultTextProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLabelRenderStrategy*>(self)->GetDefaultTextProperty());
 }
 
-extern "C" void vtkLabelRenderStrategy__ComputeLabelBounds__0(void* self, void* tprop, const char* label, double* bds) {
+extern "C" void vtkLabelRenderStrategy__ComputeLabelBounds__0(void* self, void* tprop, const char* label, double* bds) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->ComputeLabelBounds(static_cast<vtkTextProperty*>(tprop), std::string(label), bds);
 }
 
-extern "C" void vtkLabelRenderStrategy__RenderLabel__0(void* self, int32_t* x, void* tprop, const char* label) {
+extern "C" void vtkLabelRenderStrategy__RenderLabel__0(void* self, int32_t* x, void* tprop, const char* label) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->RenderLabel(x, static_cast<vtkTextProperty*>(tprop), std::string(label));
 }
 
-extern "C" void vtkLabelRenderStrategy__RenderLabel__1(void* self, int32_t* x, void* tprop, const char* label, int32_t maxWidth) {
+extern "C" void vtkLabelRenderStrategy__RenderLabel__1(void* self, int32_t* x, void* tprop, const char* label, int32_t maxWidth) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->RenderLabel(x, static_cast<vtkTextProperty*>(tprop), std::string(label), maxWidth);
 }
 
-extern "C" void vtkLabelRenderStrategy__StartFrame__0(void* self) {
+extern "C" void vtkLabelRenderStrategy__StartFrame__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->StartFrame();
 }
 
-extern "C" void vtkLabelRenderStrategy__EndFrame__0(void* self) {
+extern "C" void vtkLabelRenderStrategy__EndFrame__0(void* self) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->EndFrame();
 }
 
-extern "C" void vtkLabelRenderStrategy__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkLabelRenderStrategy__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkLabelRenderStrategy*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

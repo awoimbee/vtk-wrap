@@ -7,76 +7,76 @@
 #include "vtkTable.h"
 #include <string>
 
-extern "C" void* vtkAnnotationLink__vtk_wrap_new() { return static_cast<void*>(vtkAnnotationLink::New()); }
+extern "C" void* vtkAnnotationLink__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAnnotationLink::New()); }
 
-extern "C" int32_t vtkAnnotationLink__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAnnotationLink__IsTypeOf__0(const char* type_) noexcept {
   return vtkAnnotationLink::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAnnotationLink__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAnnotationLink__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLink*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAnnotationLink__SafeDownCast__0(void* o) {
+extern "C" void* vtkAnnotationLink__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAnnotationLink::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAnnotationLink__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAnnotationLink__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAnnotationLink::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAnnotationLink__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAnnotationLink__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLink*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkAnnotationLink__GetAnnotationLayers__0(void* self) {
+extern "C" void* vtkAnnotationLink__GetAnnotationLayers__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLink*>(self)->GetAnnotationLayers());
 }
 
-extern "C" void vtkAnnotationLink__SetAnnotationLayers__0(void* self, void* layers) {
+extern "C" void vtkAnnotationLink__SetAnnotationLayers__0(void* self, void* layers) noexcept {
   (void)self;
   static_cast<vtkAnnotationLink*>(self)->SetAnnotationLayers(static_cast<vtkAnnotationLayers*>(layers));
 }
 
-extern "C" void vtkAnnotationLink__SetCurrentSelection__0(void* self, void* sel) {
+extern "C" void vtkAnnotationLink__SetCurrentSelection__0(void* self, void* sel) noexcept {
   (void)self;
   static_cast<vtkAnnotationLink*>(self)->SetCurrentSelection(static_cast<vtkSelection*>(sel));
 }
 
-extern "C" void* vtkAnnotationLink__GetCurrentSelection__0(void* self) {
+extern "C" void* vtkAnnotationLink__GetCurrentSelection__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLink*>(self)->GetCurrentSelection());
 }
 
-extern "C" void vtkAnnotationLink__AddDomainMap__0(void* self, void* map) {
+extern "C" void vtkAnnotationLink__AddDomainMap__0(void* self, void* map) noexcept {
   (void)self;
   static_cast<vtkAnnotationLink*>(self)->AddDomainMap(static_cast<vtkTable*>(map));
 }
 
-extern "C" void vtkAnnotationLink__RemoveDomainMap__0(void* self, void* map) {
+extern "C" void vtkAnnotationLink__RemoveDomainMap__0(void* self, void* map) noexcept {
   (void)self;
   static_cast<vtkAnnotationLink*>(self)->RemoveDomainMap(static_cast<vtkTable*>(map));
 }
 
-extern "C" void vtkAnnotationLink__RemoveAllDomainMaps__0(void* self) {
+extern "C" void vtkAnnotationLink__RemoveAllDomainMaps__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAnnotationLink*>(self)->RemoveAllDomainMaps();
 }
 
-extern "C" int32_t vtkAnnotationLink__GetNumberOfDomainMaps__0(void* self) {
+extern "C" int32_t vtkAnnotationLink__GetNumberOfDomainMaps__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLink*>(self)->GetNumberOfDomainMaps();
 }
 
-extern "C" void* vtkAnnotationLink__GetDomainMap__0(void* self, int32_t i) {
+extern "C" void* vtkAnnotationLink__GetDomainMap__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLink*>(self)->GetDomainMap(i));
 }
 
-extern "C" unsigned long vtkAnnotationLink__GetMTime__0(void* self) {
+extern "C" unsigned long vtkAnnotationLink__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLink*>(self)->GetMTime();
 }

@@ -6,61 +6,61 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkFramebufferPass__vtk_wrap_new() { return static_cast<void*>(vtkFramebufferPass::New()); }
+extern "C" void* vtkFramebufferPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFramebufferPass::New()); }
 
-extern "C" int32_t vtkFramebufferPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFramebufferPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkFramebufferPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFramebufferPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFramebufferPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFramebufferPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFramebufferPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkFramebufferPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFramebufferPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFramebufferPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFramebufferPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFramebufferPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFramebufferPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFramebufferPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFramebufferPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFramebufferPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkFramebufferPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkFramebufferPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void vtkFramebufferPass__SetDepthFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkFramebufferPass__SetDepthFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFramebufferPass*>(self)->SetDepthFormat(_arg);
 }
 
-extern "C" int32_t vtkFramebufferPass__GetDepthFormat__0(void* self) {
+extern "C" int32_t vtkFramebufferPass__GetDepthFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFramebufferPass*>(self)->GetDepthFormat();
 }
 
-extern "C" void vtkFramebufferPass__SetColorFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkFramebufferPass__SetColorFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFramebufferPass*>(self)->SetColorFormat(_arg);
 }
 
-extern "C" int32_t vtkFramebufferPass__GetColorFormat__0(void* self) {
+extern "C" int32_t vtkFramebufferPass__GetColorFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFramebufferPass*>(self)->GetColorFormat();
 }
 
-extern "C" void* vtkFramebufferPass__GetDepthTexture__0(void* self) {
+extern "C" void* vtkFramebufferPass__GetDepthTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFramebufferPass*>(self)->GetDepthTexture());
 }
 
-extern "C" void* vtkFramebufferPass__GetColorTexture__0(void* self) {
+extern "C" void* vtkFramebufferPass__GetColorTexture__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFramebufferPass*>(self)->GetColorTexture());
 }

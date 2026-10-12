@@ -9,34 +9,34 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" int32_t vtkNonLinearCell__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkNonLinearCell__IsTypeOf__0(const char* type_) noexcept {
   return vtkNonLinearCell::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkNonLinearCell__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkNonLinearCell__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNonLinearCell*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkNonLinearCell__SafeDownCast__0(void* o) {
+extern "C" void* vtkNonLinearCell__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkNonLinearCell::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkNonLinearCell__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkNonLinearCell__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkNonLinearCell::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkNonLinearCell__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkNonLinearCell__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkNonLinearCell*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkNonLinearCell__IsLinear__0(void* self) {
+extern "C" int32_t vtkNonLinearCell__IsLinear__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkNonLinearCell*>(self)->IsLinear();
 }
 
-extern "C" bool vtkNonLinearCell__StableClip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" bool vtkNonLinearCell__StableClip__0(void* self, double value, void* cellScalars, void* locator, void* connectivity, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   return static_cast<vtkNonLinearCell*>(self)->StableClip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(connectivity), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }

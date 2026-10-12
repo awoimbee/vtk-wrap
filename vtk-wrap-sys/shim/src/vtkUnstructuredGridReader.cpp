@@ -6,46 +6,46 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkUnstructuredGridReader__vtk_wrap_new() { return static_cast<void*>(vtkUnstructuredGridReader::New()); }
+extern "C" void* vtkUnstructuredGridReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGridReader::New()); }
 
-extern "C" int32_t vtkUnstructuredGridReader__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkUnstructuredGridReader__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridReader::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkUnstructuredGridReader__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkUnstructuredGridReader__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridReader*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkUnstructuredGridReader__SafeDownCast__0(void* o) {
+extern "C" void* vtkUnstructuredGridReader__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkUnstructuredGridReader::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkUnstructuredGridReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkUnstructuredGridReader__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkUnstructuredGridReader::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkUnstructuredGridReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkUnstructuredGridReader__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridReader*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkUnstructuredGridReader__GetOutput__0(void* self) {
+extern "C" void* vtkUnstructuredGridReader__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridReader*>(self)->GetOutput());
 }
 
-extern "C" void* vtkUnstructuredGridReader__GetOutput__1(void* self, int32_t idx) {
+extern "C" void* vtkUnstructuredGridReader__GetOutput__1(void* self, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkUnstructuredGridReader*>(self)->GetOutput(idx));
 }
 
-extern "C" void vtkUnstructuredGridReader__SetOutput__0(void* self, void* output) {
+extern "C" void vtkUnstructuredGridReader__SetOutput__0(void* self, void* output) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridReader*>(self)->SetOutput(static_cast<vtkUnstructuredGrid*>(output));
 }
 
-extern "C" int32_t vtkUnstructuredGridReader__ReadMeshSimple__0(void* self, const char* fname, void* output) {
+extern "C" int32_t vtkUnstructuredGridReader__ReadMeshSimple__0(void* self, const char* fname, void* output) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridReader*>(self)->ReadMeshSimple(std::string(fname), static_cast<vtkDataObject*>(output));
 }

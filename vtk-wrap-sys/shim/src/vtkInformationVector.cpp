@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkInformationVector__vtk_wrap_new() { return static_cast<void*>(vtkInformationVector::New()); }
+extern "C" void* vtkInformationVector__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInformationVector::New()); }
 
-extern "C" int32_t vtkInformationVector__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationVector__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationVector::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationVector__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationVector__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationVector*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationVector__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationVector__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationVector::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationVector__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationVector__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationVector::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationVector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationVector__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationVector*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkInformationVector__GetNumberOfInformationObjects__0(void* self) {
+extern "C" int32_t vtkInformationVector__GetNumberOfInformationObjects__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInformationVector*>(self)->GetNumberOfInformationObjects();
 }
 
-extern "C" void vtkInformationVector__SetNumberOfInformationObjects__0(void* self, int32_t n) {
+extern "C" void vtkInformationVector__SetNumberOfInformationObjects__0(void* self, int32_t n) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->SetNumberOfInformationObjects(n);
 }
 
-extern "C" void vtkInformationVector__SetInformationObject__0(void* self, int32_t index, void* info) {
+extern "C" void vtkInformationVector__SetInformationObject__0(void* self, int32_t index, void* info) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->SetInformationObject(index, static_cast<vtkInformation*>(info));
 }
 
-extern "C" void* vtkInformationVector__GetInformationObject__0(void* self, int32_t index) {
+extern "C" void* vtkInformationVector__GetInformationObject__0(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInformationVector*>(self)->GetInformationObject(index));
 }
 
-extern "C" void vtkInformationVector__Append__0(void* self, void* info) {
+extern "C" void vtkInformationVector__Append__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->Append(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationVector__Remove__0(void* self, void* info) {
+extern "C" void vtkInformationVector__Remove__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->Remove(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationVector__Remove__1(void* self, int32_t idx) {
+extern "C" void vtkInformationVector__Remove__1(void* self, int32_t idx) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->Remove(idx);
 }
 
-extern "C" bool vtkInformationVector__UsesGarbageCollector__0(void* self) {
+extern "C" bool vtkInformationVector__UsesGarbageCollector__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkInformationVector*>(self)->UsesGarbageCollector();
 }
 
-extern "C" void vtkInformationVector__Copy__0(void* self, void* from, int32_t deep) {
+extern "C" void vtkInformationVector__Copy__0(void* self, void* from, int32_t deep) noexcept {
   (void)self;
   static_cast<vtkInformationVector*>(self)->Copy(static_cast<vtkInformationVector*>(from), deep);
 }

@@ -7,44 +7,44 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDirectedGraph__vtk_wrap_new() { return static_cast<void*>(vtkDirectedGraph::New()); }
+extern "C" void* vtkDirectedGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDirectedGraph::New()); }
 
-extern "C" int32_t vtkDirectedGraph__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDirectedGraph__IsTypeOf__0(const char* type_) noexcept {
   return vtkDirectedGraph::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDirectedGraph__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDirectedGraph__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraph*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDirectedGraph__SafeDownCast__0(void* o) {
+extern "C" void* vtkDirectedGraph__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDirectedGraph::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDirectedGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDirectedGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDirectedGraph::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDirectedGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDirectedGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraph*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkDirectedGraph__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkDirectedGraph__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraph*>(self)->GetDataObjectType();
 }
 
-extern "C" void* vtkDirectedGraph__GetData__0(void* info) {
+extern "C" void* vtkDirectedGraph__GetData__0(void* info) noexcept {
   return static_cast<void*>(vtkDirectedGraph::GetData(static_cast<vtkInformation*>(info)));
 }
 
-extern "C" void* vtkDirectedGraph__GetData__1(void* v, int32_t i) {
+extern "C" void* vtkDirectedGraph__GetData__1(void* v, int32_t i) noexcept {
   return static_cast<void*>(vtkDirectedGraph::GetData(static_cast<vtkInformationVector*>(v), i));
 }
 
-extern "C" bool vtkDirectedGraph__IsStructureValid__0(void* self, void* g) {
+extern "C" bool vtkDirectedGraph__IsStructureValid__0(void* self, void* g) noexcept {
   (void)self;
   return static_cast<vtkDirectedGraph*>(self)->IsStructureValid(static_cast<vtkGraph*>(g));
 }

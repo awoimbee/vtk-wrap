@@ -5,9 +5,9 @@
 //! linked by [`build.rs`](../build.rs).  Every function takes the receiver as an
 //! opaque `*mut c_void` and returns C-compatible values.
 //!
-//! Prefer the safe wrappers in the `vtk-wrap` crate.  This crate exists so that the
-//! safe layer can be regenerated independently and so that users can drop down
-//! to the raw ABI when needed.
+//! `vtk-wrap` re-exports these declarations through the unsafe handle API in
+//! `vtk_wrap::raw`. This crate exists so the raw ABI and handle layer can be
+//! generated independently.
 
 #![allow(
     non_camel_case_types,

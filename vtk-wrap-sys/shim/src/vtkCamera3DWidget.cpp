@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCamera3DWidget__vtk_wrap_new() { return static_cast<void*>(vtkCamera3DWidget::New()); }
+extern "C" void* vtkCamera3DWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCamera3DWidget::New()); }
 
-extern "C" int32_t vtkCamera3DWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCamera3DWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkCamera3DWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCamera3DWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCamera3DWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCamera3DWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCamera3DWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkCamera3DWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCamera3DWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCamera3DWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCamera3DWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCamera3DWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCamera3DWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCamera3DWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCamera3DWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkCamera3DWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkCamera3DWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkCamera3DWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" void vtkCamera3DWidget__SetRepresentation__0(void* self, void* r) {
+extern "C" void vtkCamera3DWidget__SetRepresentation__0(void* self, void* r) noexcept {
   (void)self;
   static_cast<vtkCamera3DWidget*>(self)->SetRepresentation(static_cast<vtkCamera3DRepresentation*>(r));
 }
 
-extern "C" void vtkCamera3DWidget__SetEnabled__0(void* self, int32_t enabling) {
+extern "C" void vtkCamera3DWidget__SetEnabled__0(void* self, int32_t enabling) noexcept {
   (void)self;
   static_cast<vtkCamera3DWidget*>(self)->SetEnabled(enabling);
 }

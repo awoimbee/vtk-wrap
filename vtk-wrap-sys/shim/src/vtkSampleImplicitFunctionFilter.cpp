@@ -5,71 +5,71 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSampleImplicitFunctionFilter__vtk_wrap_new() { return static_cast<void*>(vtkSampleImplicitFunctionFilter::New()); }
+extern "C" void* vtkSampleImplicitFunctionFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSampleImplicitFunctionFilter::New()); }
 
-extern "C" int32_t vtkSampleImplicitFunctionFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSampleImplicitFunctionFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkSampleImplicitFunctionFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSampleImplicitFunctionFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSampleImplicitFunctionFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSampleImplicitFunctionFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSampleImplicitFunctionFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkSampleImplicitFunctionFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSampleImplicitFunctionFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSampleImplicitFunctionFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSampleImplicitFunctionFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSampleImplicitFunctionFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSampleImplicitFunctionFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSampleImplicitFunctionFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSampleImplicitFunctionFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__SetImplicitFunction__0(void* self, void* arg0) {
+extern "C" void vtkSampleImplicitFunctionFilter__SetImplicitFunction__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->SetImplicitFunction(static_cast<vtkImplicitFunction*>(arg0));
 }
 
-extern "C" void* vtkSampleImplicitFunctionFilter__GetImplicitFunction__0(void* self) {
+extern "C" void* vtkSampleImplicitFunctionFilter__GetImplicitFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSampleImplicitFunctionFilter*>(self)->GetImplicitFunction());
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__SetComputeGradients__0(void* self, int32_t _arg) {
+extern "C" void vtkSampleImplicitFunctionFilter__SetComputeGradients__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->SetComputeGradients(_arg);
 }
 
-extern "C" int32_t vtkSampleImplicitFunctionFilter__GetComputeGradients__0(void* self) {
+extern "C" int32_t vtkSampleImplicitFunctionFilter__GetComputeGradients__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSampleImplicitFunctionFilter*>(self)->GetComputeGradients();
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__ComputeGradientsOn__0(void* self) {
+extern "C" void vtkSampleImplicitFunctionFilter__ComputeGradientsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->ComputeGradientsOn();
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__ComputeGradientsOff__0(void* self) {
+extern "C" void vtkSampleImplicitFunctionFilter__ComputeGradientsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->ComputeGradientsOff();
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__SetScalarArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkSampleImplicitFunctionFilter__SetScalarArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->SetScalarArrayName(_arg);
 }
 
-extern "C" void vtkSampleImplicitFunctionFilter__SetGradientArrayName__0(void* self, const char* _arg) {
+extern "C" void vtkSampleImplicitFunctionFilter__SetGradientArrayName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkSampleImplicitFunctionFilter*>(self)->SetGradientArrayName(_arg);
 }
 
-extern "C" unsigned long vtkSampleImplicitFunctionFilter__GetMTime__0(void* self) {
+extern "C" unsigned long vtkSampleImplicitFunctionFilter__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSampleImplicitFunctionFilter*>(self)->GetMTime();
 }

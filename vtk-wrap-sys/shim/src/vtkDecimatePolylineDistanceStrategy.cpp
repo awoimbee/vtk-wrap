@@ -5,31 +5,31 @@
 #include "vtkPointSet.h"
 #include <string>
 
-extern "C" void* vtkDecimatePolylineDistanceStrategy__vtk_wrap_new() { return static_cast<void*>(vtkDecimatePolylineDistanceStrategy::New()); }
+extern "C" void* vtkDecimatePolylineDistanceStrategy__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDecimatePolylineDistanceStrategy::New()); }
 
-extern "C" int32_t vtkDecimatePolylineDistanceStrategy__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDecimatePolylineDistanceStrategy__IsTypeOf__0(const char* type_) noexcept {
   return vtkDecimatePolylineDistanceStrategy::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDecimatePolylineDistanceStrategy__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDecimatePolylineDistanceStrategy__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineDistanceStrategy*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDecimatePolylineDistanceStrategy__SafeDownCast__0(void* o) {
+extern "C" void* vtkDecimatePolylineDistanceStrategy__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDecimatePolylineDistanceStrategy::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDecimatePolylineDistanceStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDecimatePolylineDistanceStrategy__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDecimatePolylineDistanceStrategy::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDecimatePolylineDistanceStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDecimatePolylineDistanceStrategy__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineDistanceStrategy*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" double vtkDecimatePolylineDistanceStrategy__ComputeError__0(void* self, void* dataset, int64_t originId, int64_t p1Id, int64_t p2Id) {
+extern "C" double vtkDecimatePolylineDistanceStrategy__ComputeError__0(void* self, void* dataset, int64_t originId, int64_t p1Id, int64_t p2Id) noexcept {
   (void)self;
   return static_cast<vtkDecimatePolylineDistanceStrategy*>(self)->ComputeError(static_cast<vtkPointSet*>(dataset), originId, p1Id, p2Id);
 }

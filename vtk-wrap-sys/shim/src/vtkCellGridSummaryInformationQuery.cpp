@@ -5,41 +5,41 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkCellGridSummaryInformationQuery__vtk_wrap_new() { return static_cast<void*>(vtkCellGridSummaryInformationQuery::New()); }
+extern "C" void* vtkCellGridSummaryInformationQuery__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellGridSummaryInformationQuery::New()); }
 
-extern "C" int32_t vtkCellGridSummaryInformationQuery__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkCellGridSummaryInformationQuery__IsTypeOf__0(const char* type_) noexcept {
   return vtkCellGridSummaryInformationQuery::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkCellGridSummaryInformationQuery__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkCellGridSummaryInformationQuery__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridSummaryInformationQuery*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkCellGridSummaryInformationQuery__SafeDownCast__0(void* o) {
+extern "C" void* vtkCellGridSummaryInformationQuery__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkCellGridSummaryInformationQuery::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkCellGridSummaryInformationQuery::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkCellGridSummaryInformationQuery*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" bool vtkCellGridSummaryInformationQuery__Initialize__0(void* self) {
+extern "C" bool vtkCellGridSummaryInformationQuery__Initialize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkCellGridSummaryInformationQuery*>(self)->Initialize();
 }
 
-extern "C" void vtkCellGridSummaryInformationQuery__SetAttributeName__0(void* self, const char* _arg) {
+extern "C" void vtkCellGridSummaryInformationQuery__SetAttributeName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkCellGridSummaryInformationQuery*>(self)->SetAttributeName(_arg);
 }
 
-extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfDOF__0(void* self, void* att) {
+extern "C" int64_t vtkCellGridSummaryInformationQuery__GetNumberOfDOF__0(void* self, void* att) noexcept {
   (void)self;
   return static_cast<vtkCellGridSummaryInformationQuery*>(self)->GetNumberOfDOF(static_cast<vtkCellAttribute*>(att));
 }

@@ -4,36 +4,36 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkFiniteDifferenceGradientEstimator__vtk_wrap_new() { return static_cast<void*>(vtkFiniteDifferenceGradientEstimator::New()); }
+extern "C" void* vtkFiniteDifferenceGradientEstimator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFiniteDifferenceGradientEstimator::New()); }
 
-extern "C" int32_t vtkFiniteDifferenceGradientEstimator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFiniteDifferenceGradientEstimator__IsTypeOf__0(const char* type_) noexcept {
   return vtkFiniteDifferenceGradientEstimator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFiniteDifferenceGradientEstimator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFiniteDifferenceGradientEstimator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFiniteDifferenceGradientEstimator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFiniteDifferenceGradientEstimator__SafeDownCast__0(void* o) {
+extern "C" void* vtkFiniteDifferenceGradientEstimator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFiniteDifferenceGradientEstimator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFiniteDifferenceGradientEstimator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFiniteDifferenceGradientEstimator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFiniteDifferenceGradientEstimator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFiniteDifferenceGradientEstimator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFiniteDifferenceGradientEstimator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFiniteDifferenceGradientEstimator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFiniteDifferenceGradientEstimator__SetSampleSpacingInVoxels__0(void* self, int32_t _arg) {
+extern "C" void vtkFiniteDifferenceGradientEstimator__SetSampleSpacingInVoxels__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkFiniteDifferenceGradientEstimator*>(self)->SetSampleSpacingInVoxels(_arg);
 }
 
-extern "C" int32_t vtkFiniteDifferenceGradientEstimator__GetSampleSpacingInVoxels__0(void* self) {
+extern "C" int32_t vtkFiniteDifferenceGradientEstimator__GetSampleSpacingInVoxels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkFiniteDifferenceGradientEstimator*>(self)->GetSampleSpacingInVoxels();
 }

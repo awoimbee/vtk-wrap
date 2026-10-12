@@ -5,101 +5,101 @@
 #include "vtkScalarsToColors.h"
 #include <string>
 
-extern "C" void* vtkImageResliceToColors__vtk_wrap_new() { return static_cast<void*>(vtkImageResliceToColors::New()); }
+extern "C" void* vtkImageResliceToColors__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageResliceToColors::New()); }
 
-extern "C" int32_t vtkImageResliceToColors__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImageResliceToColors__IsTypeOf__0(const char* type_) noexcept {
   return vtkImageResliceToColors::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImageResliceToColors__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImageResliceToColors__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImageResliceToColors__SafeDownCast__0(void* o) {
+extern "C" void* vtkImageResliceToColors__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImageResliceToColors::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImageResliceToColors__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImageResliceToColors__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImageResliceToColors::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImageResliceToColors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImageResliceToColors__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkImageResliceToColors__SetLookupTable__0(void* self, void* table) {
+extern "C" void vtkImageResliceToColors__SetLookupTable__0(void* self, void* table) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetLookupTable(static_cast<vtkScalarsToColors*>(table));
 }
 
-extern "C" void* vtkImageResliceToColors__GetLookupTable__0(void* self) {
+extern "C" void* vtkImageResliceToColors__GetLookupTable__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImageResliceToColors*>(self)->GetLookupTable());
 }
 
-extern "C" void vtkImageResliceToColors__SetOutputFormat__0(void* self, int32_t _arg) {
+extern "C" void vtkImageResliceToColors__SetOutputFormat__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetOutputFormat(_arg);
 }
 
-extern "C" int32_t vtkImageResliceToColors__GetOutputFormatMinValue__0(void* self) {
+extern "C" int32_t vtkImageResliceToColors__GetOutputFormatMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetOutputFormatMinValue();
 }
 
-extern "C" int32_t vtkImageResliceToColors__GetOutputFormatMaxValue__0(void* self) {
+extern "C" int32_t vtkImageResliceToColors__GetOutputFormatMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetOutputFormatMaxValue();
 }
 
-extern "C" int32_t vtkImageResliceToColors__GetOutputFormat__0(void* self) {
+extern "C" int32_t vtkImageResliceToColors__GetOutputFormat__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetOutputFormat();
 }
 
-extern "C" void vtkImageResliceToColors__SetOutputFormatToRGBA__0(void* self) {
+extern "C" void vtkImageResliceToColors__SetOutputFormatToRGBA__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetOutputFormatToRGBA();
 }
 
-extern "C" void vtkImageResliceToColors__SetOutputFormatToRGB__0(void* self) {
+extern "C" void vtkImageResliceToColors__SetOutputFormatToRGB__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetOutputFormatToRGB();
 }
 
-extern "C" void vtkImageResliceToColors__SetOutputFormatToLuminanceAlpha__0(void* self) {
+extern "C" void vtkImageResliceToColors__SetOutputFormatToLuminanceAlpha__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetOutputFormatToLuminanceAlpha();
 }
 
-extern "C" void vtkImageResliceToColors__SetOutputFormatToLuminance__0(void* self) {
+extern "C" void vtkImageResliceToColors__SetOutputFormatToLuminance__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetOutputFormatToLuminance();
 }
 
-extern "C" void vtkImageResliceToColors__SetBypass__0(void* self, int32_t bypass) {
+extern "C" void vtkImageResliceToColors__SetBypass__0(void* self, int32_t bypass) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->SetBypass(bypass);
 }
 
-extern "C" void vtkImageResliceToColors__BypassOn__0(void* self) {
+extern "C" void vtkImageResliceToColors__BypassOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->BypassOn();
 }
 
-extern "C" void vtkImageResliceToColors__BypassOff__0(void* self) {
+extern "C" void vtkImageResliceToColors__BypassOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkImageResliceToColors*>(self)->BypassOff();
 }
 
-extern "C" int32_t vtkImageResliceToColors__GetBypass__0(void* self) {
+extern "C" int32_t vtkImageResliceToColors__GetBypass__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetBypass();
 }
 
-extern "C" unsigned long vtkImageResliceToColors__GetMTime__0(void* self) {
+extern "C" unsigned long vtkImageResliceToColors__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImageResliceToColors*>(self)->GetMTime();
 }

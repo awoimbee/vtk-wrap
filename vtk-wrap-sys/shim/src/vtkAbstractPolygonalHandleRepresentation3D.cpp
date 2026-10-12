@@ -12,219 +12,219 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractPolygonalHandleRepresentation3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAbstractPolygonalHandleRepresentation3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAbstractPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAbstractPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAbstractPolygonalHandleRepresentation3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAbstractPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAbstractPolygonalHandleRepresentation3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetWorldPosition__0(void* self, double* p) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetWorldPosition__0(void* self, double* p) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetWorldPosition(p);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetDisplayPosition__0(void* self, double* p) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetDisplayPosition__0(void* self, double* p) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetDisplayPosition(p);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetHandle__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetHandle__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetHandle(static_cast<vtkPolyData*>(arg0));
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetHandle__0(void* self) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetHandle__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetHandle());
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetProperty__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetProperty__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetProperty(static_cast<vtkProperty*>(arg0));
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetSelectedProperty__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetSelectedProperty__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetSelectedProperty(static_cast<vtkProperty*>(arg0));
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetProperty__0(void* self) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetProperty());
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetSelectedProperty__0(void* self) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetSelectedProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetSelectedProperty());
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetTransform__0(void* self) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetTransform());
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__BuildRepresentation__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__StartWidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__StartWidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->StartWidgetInteraction(eventPos);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__WidgetInteraction__0(void* self, double* eventPos) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__WidgetInteraction__0(void* self, double* eventPos) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->WidgetInteraction(eventPos);
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__ComputeInteractionState__0(void* self, int32_t X, int32_t Y, int32_t modify) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->ComputeInteractionState(X, Y, modify);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__DeepCopy__0(void* self, void* prop) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__DeepCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->DeepCopy(static_cast<vtkProp*>(prop));
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__GetActors__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__GetActors__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetActors(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->HasTranslucentPolygonalGeometry();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelVisibility__0(void* self, int32_t _arg) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelVisibility__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetLabelVisibility(_arg);
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetLabelVisibility__0(void* self) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetLabelVisibility__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetLabelVisibility();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__LabelVisibilityOn__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__LabelVisibilityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->LabelVisibilityOn();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__LabelVisibilityOff__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__LabelVisibilityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->LabelVisibilityOff();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelText__0(void* self, const char* label) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelText__0(void* self, const char* label) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetLabelText(label);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelTextScale__0(void* self, double* scale) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelTextScale__0(void* self, double* scale) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetLabelTextScale(scale);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelTextScale__1(void* self, double x, double y, double z) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetLabelTextScale__1(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetLabelTextScale(x, y, z);
 }
 
-extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetLabelTextActor__0(void* self) {
+extern "C" void* vtkAbstractPolygonalHandleRepresentation3D__GetLabelTextActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetLabelTextActor());
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetUniformScale__0(void* self, double scale) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetUniformScale__0(void* self, double scale) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetUniformScale(scale);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetHandleVisibility__0(void* self, int32_t _arg) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetHandleVisibility__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetHandleVisibility(_arg);
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetHandleVisibility__0(void* self) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetHandleVisibility__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetHandleVisibility();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__HandleVisibilityOn__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__HandleVisibilityOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->HandleVisibilityOn();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__HandleVisibilityOff__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__HandleVisibilityOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->HandleVisibilityOff();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__Highlight__0(void* self, int32_t highlight) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__Highlight__0(void* self, int32_t highlight) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->Highlight(highlight);
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetSmoothMotion__0(void* self, int32_t _arg) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SetSmoothMotion__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SetSmoothMotion(_arg);
 }
 
-extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetSmoothMotion__0(void* self) {
+extern "C" int32_t vtkAbstractPolygonalHandleRepresentation3D__GetSmoothMotion__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->GetSmoothMotion();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SmoothMotionOn__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SmoothMotionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SmoothMotionOn();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SmoothMotionOff__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__SmoothMotionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->SmoothMotionOff();
 }
 
-extern "C" void vtkAbstractPolygonalHandleRepresentation3D__RegisterPickers__0(void* self) {
+extern "C" void vtkAbstractPolygonalHandleRepresentation3D__RegisterPickers__0(void* self) noexcept {
   (void)self;
   static_cast<vtkAbstractPolygonalHandleRepresentation3D*>(self)->RegisterPickers();
 }

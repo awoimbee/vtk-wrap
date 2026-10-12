@@ -5,43 +5,43 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationIntegerRequestKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationIntegerRequestKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationIntegerRequestKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationIntegerRequestKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationIntegerRequestKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerRequestKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationIntegerRequestKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationIntegerRequestKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationIntegerRequestKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationIntegerRequestKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationIntegerRequestKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationIntegerRequestKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationIntegerRequestKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationIntegerRequestKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerRequestKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationIntegerRequestKey__MakeKey__0(const char* name, const char* location) {
+extern "C" void* vtkInformationIntegerRequestKey__MakeKey__0(const char* name, const char* location) noexcept {
   return static_cast<void*>(vtkInformationIntegerRequestKey::MakeKey(name, location));
 }
 
-extern "C" bool vtkInformationIntegerRequestKey__NeedToExecute__0(void* self, void* pipelineInfo, void* dobjInfo) {
+extern "C" bool vtkInformationIntegerRequestKey__NeedToExecute__0(void* self, void* pipelineInfo, void* dobjInfo) noexcept {
   (void)self;
   return static_cast<vtkInformationIntegerRequestKey*>(self)->NeedToExecute(static_cast<vtkInformation*>(pipelineInfo), static_cast<vtkInformation*>(dobjInfo));
 }
 
-extern "C" void vtkInformationIntegerRequestKey__StoreMetaData__0(void* self, void* request, void* pipelineInfo, void* dobjInfo) {
+extern "C" void vtkInformationIntegerRequestKey__StoreMetaData__0(void* self, void* request, void* pipelineInfo, void* dobjInfo) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerRequestKey*>(self)->StoreMetaData(static_cast<vtkInformation*>(request), static_cast<vtkInformation*>(pipelineInfo), static_cast<vtkInformation*>(dobjInfo));
 }
 
-extern "C" void vtkInformationIntegerRequestKey__CopyDefaultInformation__0(void* self, void* request, void* fromInfo, void* toInfo) {
+extern "C" void vtkInformationIntegerRequestKey__CopyDefaultInformation__0(void* self, void* request, void* fromInfo, void* toInfo) noexcept {
   (void)self;
   static_cast<vtkInformationIntegerRequestKey*>(self)->CopyDefaultInformation(static_cast<vtkInformation*>(request), static_cast<vtkInformation*>(fromInfo), static_cast<vtkInformation*>(toInfo));
 }

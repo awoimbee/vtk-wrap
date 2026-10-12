@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkProgrammableDataObjectSource__vtk_wrap_new() { return static_cast<void*>(vtkProgrammableDataObjectSource::New()); }
+extern "C" void* vtkProgrammableDataObjectSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProgrammableDataObjectSource::New()); }
 
-extern "C" int32_t vtkProgrammableDataObjectSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProgrammableDataObjectSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkProgrammableDataObjectSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProgrammableDataObjectSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProgrammableDataObjectSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgrammableDataObjectSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProgrammableDataObjectSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkProgrammableDataObjectSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProgrammableDataObjectSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProgrammableDataObjectSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProgrammableDataObjectSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProgrammableDataObjectSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProgrammableDataObjectSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProgrammableDataObjectSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgrammableDataObjectSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

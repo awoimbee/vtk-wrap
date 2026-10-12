@@ -10,46 +10,46 @@
 #include "vtkShaderProgram.h"
 #include <string>
 
-extern "C" void* vtkGLSLModCamera__vtk_wrap_new() { return static_cast<void*>(vtkGLSLModCamera::New()); }
+extern "C" void* vtkGLSLModCamera__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGLSLModCamera::New()); }
 
-extern "C" int32_t vtkGLSLModCamera__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGLSLModCamera__IsTypeOf__0(const char* type_) noexcept {
   return vtkGLSLModCamera::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGLSLModCamera__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGLSLModCamera__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModCamera*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGLSLModCamera__SafeDownCast__0(void* o) {
+extern "C" void* vtkGLSLModCamera__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGLSLModCamera::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGLSLModCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGLSLModCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGLSLModCamera::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGLSLModCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGLSLModCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGLSLModCamera*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGLSLModCamera__EnableShiftScale__0(void* self, bool coordShiftAndScaleInUse, void* ssMatrix) {
+extern "C" void vtkGLSLModCamera__EnableShiftScale__0(void* self, bool coordShiftAndScaleInUse, void* ssMatrix) noexcept {
   (void)self;
   static_cast<vtkGLSLModCamera*>(self)->EnableShiftScale(coordShiftAndScaleInUse, static_cast<vtkMatrix4x4*>(ssMatrix));
 }
 
-extern "C" void vtkGLSLModCamera__DisableShiftScale__0(void* self) {
+extern "C" void vtkGLSLModCamera__DisableShiftScale__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGLSLModCamera*>(self)->DisableShiftScale();
 }
 
-extern "C" bool vtkGLSLModCamera__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) {
+extern "C" bool vtkGLSLModCamera__SetShaderParameters__0(void* self, void* renderer, void* program, void* mapper, void* actor, void* VAO) noexcept {
   (void)self;
   return static_cast<vtkGLSLModCamera*>(self)->SetShaderParameters(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkShaderProgram*>(program), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor), static_cast<vtkOpenGLVertexArrayObject*>(VAO));
 }
 
-extern "C" bool vtkGLSLModCamera__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) {
+extern "C" bool vtkGLSLModCamera__IsUpToDate__0(void* self, void* renderer, void* mapper, void* actor) noexcept {
   (void)self;
   return static_cast<vtkGLSLModCamera*>(self)->IsUpToDate(static_cast<vtkOpenGLRenderer*>(renderer), static_cast<vtkAbstractMapper*>(mapper), static_cast<vtkActor*>(actor));
 }

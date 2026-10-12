@@ -6,41 +6,41 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkOrderIndependentTranslucentPass__vtk_wrap_new() { return static_cast<void*>(vtkOrderIndependentTranslucentPass::New()); }
+extern "C" void* vtkOrderIndependentTranslucentPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOrderIndependentTranslucentPass::New()); }
 
-extern "C" int32_t vtkOrderIndependentTranslucentPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOrderIndependentTranslucentPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkOrderIndependentTranslucentPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOrderIndependentTranslucentPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOrderIndependentTranslucentPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrderIndependentTranslucentPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOrderIndependentTranslucentPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkOrderIndependentTranslucentPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOrderIndependentTranslucentPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOrderIndependentTranslucentPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOrderIndependentTranslucentPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOrderIndependentTranslucentPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOrderIndependentTranslucentPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOrderIndependentTranslucentPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOrderIndependentTranslucentPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkOrderIndependentTranslucentPass__ReleaseGraphicsResources__0(void* self, void* w) {
+extern "C" void vtkOrderIndependentTranslucentPass__ReleaseGraphicsResources__0(void* self, void* w) noexcept {
   (void)self;
   static_cast<vtkOrderIndependentTranslucentPass*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(w));
 }
 
-extern "C" void* vtkOrderIndependentTranslucentPass__GetTranslucentPass__0(void* self) {
+extern "C" void* vtkOrderIndependentTranslucentPass__GetTranslucentPass__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOrderIndependentTranslucentPass*>(self)->GetTranslucentPass());
 }
 
-extern "C" void vtkOrderIndependentTranslucentPass__SetTranslucentPass__0(void* self, void* translucentPass) {
+extern "C" void vtkOrderIndependentTranslucentPass__SetTranslucentPass__0(void* self, void* translucentPass) noexcept {
   (void)self;
   static_cast<vtkOrderIndependentTranslucentPass*>(self)->SetTranslucentPass(static_cast<vtkRenderPass*>(translucentPass));
 }

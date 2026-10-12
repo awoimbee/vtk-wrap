@@ -6,84 +6,84 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkImplicitFunction__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkImplicitFunction__IsTypeOf__0(const char* type_) noexcept {
   return vtkImplicitFunction::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkImplicitFunction__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkImplicitFunction__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkImplicitFunction__SafeDownCast__0(void* o) {
+extern "C" void* vtkImplicitFunction__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkImplicitFunction::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkImplicitFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkImplicitFunction__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkImplicitFunction::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkImplicitFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkImplicitFunction__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" unsigned long vtkImplicitFunction__GetMTime__0(void* self) {
+extern "C" unsigned long vtkImplicitFunction__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->GetMTime();
 }
 
-extern "C" void vtkImplicitFunction__FunctionValue__0(void* self, void* input, void* output) {
+extern "C" void vtkImplicitFunction__FunctionValue__0(void* self, void* input, void* output) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->FunctionValue(static_cast<vtkDataArray*>(input), static_cast<vtkDataArray*>(output));
 }
 
-extern "C" double vtkImplicitFunction__FunctionValue__1(void* self, const double* x) {
+extern "C" double vtkImplicitFunction__FunctionValue__1(void* self, const double* x) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->FunctionValue(x);
 }
 
-extern "C" double vtkImplicitFunction__FunctionValue__2(void* self, double x, double y, double z) {
+extern "C" double vtkImplicitFunction__FunctionValue__2(void* self, double x, double y, double z) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->FunctionValue(x, y, z);
 }
 
-extern "C" void vtkImplicitFunction__FunctionGradient__0(void* self, const double* x, double* g) {
+extern "C" void vtkImplicitFunction__FunctionGradient__0(void* self, const double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->FunctionGradient(x, g);
 }
 
-extern "C" void vtkImplicitFunction__SetTransform__0(void* self, void* arg0) {
+extern "C" void vtkImplicitFunction__SetTransform__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->SetTransform(static_cast<vtkAbstractTransform*>(arg0));
 }
 
-extern "C" void vtkImplicitFunction__SetTransform__1(void* self, const double* elements) {
+extern "C" void vtkImplicitFunction__SetTransform__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->SetTransform(elements);
 }
 
-extern "C" void* vtkImplicitFunction__GetTransform__0(void* self) {
+extern "C" void* vtkImplicitFunction__GetTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkImplicitFunction*>(self)->GetTransform());
 }
 
-extern "C" double vtkImplicitFunction__EvaluateFunction__0(void* self, double* x) {
+extern "C" double vtkImplicitFunction__EvaluateFunction__0(void* self, double* x) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->EvaluateFunction(x);
 }
 
-extern "C" void vtkImplicitFunction__EvaluateFunction__1(void* self, void* input, void* output) {
+extern "C" void vtkImplicitFunction__EvaluateFunction__1(void* self, void* input, void* output) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->EvaluateFunction(static_cast<vtkDataArray*>(input), static_cast<vtkDataArray*>(output));
 }
 
-extern "C" double vtkImplicitFunction__EvaluateFunction__2(void* self, double x, double y, double z) {
+extern "C" double vtkImplicitFunction__EvaluateFunction__2(void* self, double x, double y, double z) noexcept {
   (void)self;
   return static_cast<vtkImplicitFunction*>(self)->EvaluateFunction(x, y, z);
 }
 
-extern "C" void vtkImplicitFunction__EvaluateGradient__0(void* self, double* x, double* g) {
+extern "C" void vtkImplicitFunction__EvaluateGradient__0(void* self, double* x, double* g) noexcept {
   (void)self;
   static_cast<vtkImplicitFunction*>(self)->EvaluateGradient(x, g);
 }

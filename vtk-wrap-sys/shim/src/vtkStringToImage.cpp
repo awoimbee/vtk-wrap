@@ -4,34 +4,34 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkStringToImage__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkStringToImage__IsTypeOf__0(const char* type_) noexcept {
   return vtkStringToImage::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkStringToImage__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkStringToImage__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStringToImage*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkStringToImage__SafeDownCast__0(void* o) {
+extern "C" void* vtkStringToImage__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkStringToImage::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkStringToImage__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkStringToImage::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkStringToImage__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkStringToImage*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) {
+extern "C" void vtkStringToImage__SetScaleToPowerOfTwo__0(void* self, bool scale) noexcept {
   (void)self;
   static_cast<vtkStringToImage*>(self)->SetScaleToPowerOfTwo(scale);
 }
 
-extern "C" bool vtkStringToImage__GetScaleToPowerOfTwo__0(void* self) {
+extern "C" bool vtkStringToImage__GetScaleToPowerOfTwo__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkStringToImage*>(self)->GetScaleToPowerOfTwo();
 }

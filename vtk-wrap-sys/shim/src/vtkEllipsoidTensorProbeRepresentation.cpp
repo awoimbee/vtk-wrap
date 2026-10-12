@@ -7,56 +7,56 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkEllipsoidTensorProbeRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkEllipsoidTensorProbeRepresentation::New()); }
+extern "C" void* vtkEllipsoidTensorProbeRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEllipsoidTensorProbeRepresentation::New()); }
 
-extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkEllipsoidTensorProbeRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEllipsoidTensorProbeRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkEllipsoidTensorProbeRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEllipsoidTensorProbeRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEllipsoidTensorProbeRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEllipsoidTensorProbeRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEllipsoidTensorProbeRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEllipsoidTensorProbeRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEllipsoidTensorProbeRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkEllipsoidTensorProbeRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkEllipsoidTensorProbeRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__SelectProbe__0(void* self, int32_t* pos) {
+extern "C" int32_t vtkEllipsoidTensorProbeRepresentation__SelectProbe__0(void* self, int32_t* pos) noexcept {
   (void)self;
   return static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->SelectProbe(pos);
 }
 
-extern "C" void vtkEllipsoidTensorProbeRepresentation__GetActors__0(void* self, void* arg0) {
+extern "C" void vtkEllipsoidTensorProbeRepresentation__GetActors__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkEllipsoidTensorProbeRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkEllipsoidTensorProbeRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkEllipsoidTensorProbeRepresentation__RegisterPickers__0(void* self) {
+extern "C" void vtkEllipsoidTensorProbeRepresentation__RegisterPickers__0(void* self) noexcept {
   (void)self;
   static_cast<vtkEllipsoidTensorProbeRepresentation*>(self)->RegisterPickers();
 }

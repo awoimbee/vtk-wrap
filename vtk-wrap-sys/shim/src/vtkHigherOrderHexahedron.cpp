@@ -14,148 +14,148 @@
 #include "vtkPointData.h"
 #include <string>
 
-extern "C" int32_t vtkHigherOrderHexahedron__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkHigherOrderHexahedron__IsTypeOf__0(const char* type_) noexcept {
   return vtkHigherOrderHexahedron::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkHigherOrderHexahedron__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkHigherOrderHexahedron__SafeDownCast__0(void* o) {
+extern "C" void* vtkHigherOrderHexahedron__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkHigherOrderHexahedron::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkHigherOrderHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkHigherOrderHexahedron__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkHigherOrderHexahedron::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkHigherOrderHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkHigherOrderHexahedron__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetCellType__0(void* self) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetCellType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetCellType();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetCellDimension__0(void* self) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetCellDimension__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetCellDimension();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__RequiresInitialization__0(void* self) {
+extern "C" int32_t vtkHigherOrderHexahedron__RequiresInitialization__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->RequiresInitialization();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetNumberOfEdges__0(void* self) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetNumberOfEdges__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetNumberOfEdges();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetNumberOfFaces__0(void* self) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetNumberOfFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetNumberOfFaces();
 }
 
-extern "C" void* vtkHigherOrderHexahedron__GetEdge__0(void* self, int32_t edgeId) {
+extern "C" void* vtkHigherOrderHexahedron__GetEdge__0(void* self, int32_t edgeId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderHexahedron*>(self)->GetEdge(edgeId));
 }
 
-extern "C" void* vtkHigherOrderHexahedron__GetFace__0(void* self, int32_t faceId) {
+extern "C" void* vtkHigherOrderHexahedron__GetFace__0(void* self, int32_t faceId) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderHexahedron*>(self)->GetFace(faceId));
 }
 
-extern "C" void vtkHigherOrderHexahedron__Initialize__0(void* self) {
+extern "C" void vtkHigherOrderHexahedron__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) {
+extern "C" int32_t vtkHigherOrderHexahedron__CellBoundary__0(void* self, int32_t subId, const double* pcoords, void* pts) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->CellBoundary(subId, pcoords, static_cast<vtkIdList*>(pts));
 }
 
-extern "C" void vtkHigherOrderHexahedron__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) {
+extern "C" void vtkHigherOrderHexahedron__Contour__0(void* self, double value, void* cellScalars, void* locator, void* verts, void* lines, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->Contour(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkCellArray*>(lines), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd));
 }
 
-extern "C" void vtkHigherOrderHexahedron__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) {
+extern "C" void vtkHigherOrderHexahedron__Clip__0(void* self, double value, void* cellScalars, void* locator, void* polys, void* inPd, void* outPd, void* inCd, int64_t cellId, void* outCd, int32_t insideOut) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->Clip(value, static_cast<vtkDataArray*>(cellScalars), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(polys), static_cast<vtkPointData*>(inPd), static_cast<vtkPointData*>(outPd), static_cast<vtkCellData*>(inCd), cellId, static_cast<vtkCellData*>(outCd), insideOut);
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) {
+extern "C" int32_t vtkHigherOrderHexahedron__TriangulateLocalIds__0(void* self, int32_t index, void* ptIds) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->TriangulateLocalIds(index, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" void vtkHigherOrderHexahedron__SetParametricCoords__0(void* self) {
+extern "C" void vtkHigherOrderHexahedron__SetParametricCoords__0(void* self) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->SetParametricCoords();
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetParametricCenter__0(void* self, double* center) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetParametricCenter__0(void* self, double* center) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetParametricCenter(center);
 }
 
-extern "C" double vtkHigherOrderHexahedron__GetParametricDistance__0(void* self, const double* pcoords) {
+extern "C" double vtkHigherOrderHexahedron__GetParametricDistance__0(void* self, const double* pcoords) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetParametricDistance(pcoords);
 }
 
-extern "C" void vtkHigherOrderHexahedron__SetOrderFromCellData__0(void* self, void* cell_data, int64_t numPts, int64_t cell_id) {
+extern "C" void vtkHigherOrderHexahedron__SetOrderFromCellData__0(void* self, void* cell_data, int64_t numPts, int64_t cell_id) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->SetOrderFromCellData(static_cast<vtkCellData*>(cell_data), numPts, cell_id);
 }
 
-extern "C" void vtkHigherOrderHexahedron__SetUniformOrderFromNumPoints__0(void* self, int64_t numPts) {
+extern "C" void vtkHigherOrderHexahedron__SetUniformOrderFromNumPoints__0(void* self, int64_t numPts) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->SetUniformOrderFromNumPoints(numPts);
 }
 
-extern "C" void vtkHigherOrderHexahedron__SetOrder__0(void* self, int32_t s, int32_t t, int32_t u) {
+extern "C" void vtkHigherOrderHexahedron__SetOrder__0(void* self, int32_t s, int32_t t, int32_t u) noexcept {
   (void)self;
   static_cast<vtkHigherOrderHexahedron*>(self)->SetOrder(s, t, u);
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__GetOrder__0(void* self, int32_t i) {
+extern "C" int32_t vtkHigherOrderHexahedron__GetOrder__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->GetOrder(i);
 }
 
-extern "C" bool vtkHigherOrderHexahedron__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) {
+extern "C" bool vtkHigherOrderHexahedron__PointCountSupportsUniformOrder__0(int64_t pointsPerCell) noexcept {
   return vtkHigherOrderHexahedron::PointCountSupportsUniformOrder(pointsPerCell);
 }
 
-extern "C" int32_t vtkHigherOrderHexahedron__PointIndexFromIJK__0(void* self, int32_t i, int32_t j, int32_t k) {
+extern "C" int32_t vtkHigherOrderHexahedron__PointIndexFromIJK__0(void* self, int32_t i, int32_t j, int32_t k) noexcept {
   (void)self;
   return static_cast<vtkHigherOrderHexahedron*>(self)->PointIndexFromIJK(i, j, k);
 }
 
-extern "C" void* vtkHigherOrderHexahedron__GetEdgeCell__0(void* self) {
+extern "C" void* vtkHigherOrderHexahedron__GetEdgeCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderHexahedron*>(self)->GetEdgeCell());
 }
 
-extern "C" void* vtkHigherOrderHexahedron__GetFaceCell__0(void* self) {
+extern "C" void* vtkHigherOrderHexahedron__GetFaceCell__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderHexahedron*>(self)->GetFaceCell());
 }
 
-extern "C" void* vtkHigherOrderHexahedron__GetInterpolation__0(void* self) {
+extern "C" void* vtkHigherOrderHexahedron__GetInterpolation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkHigherOrderHexahedron*>(self)->GetInterpolation());
 }
 
-extern "C" int64_t vtkHigherOrderHexahedron__NodeNumberingMappingFromVTK8To9__0(const int32_t* order, int64_t node_id_vtk8) {
+extern "C" int64_t vtkHigherOrderHexahedron__NodeNumberingMappingFromVTK8To9__0(const int32_t* order, int64_t node_id_vtk8) noexcept {
   return vtkHigherOrderHexahedron::NodeNumberingMappingFromVTK8To9(order, node_id_vtk8);
 }
 

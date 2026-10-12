@@ -10,211 +10,211 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkQuadricLODActor__vtk_wrap_new() { return static_cast<void*>(vtkQuadricLODActor::New()); }
+extern "C" void* vtkQuadricLODActor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkQuadricLODActor::New()); }
 
-extern "C" int32_t vtkQuadricLODActor__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkQuadricLODActor__IsTypeOf__0(const char* type_) noexcept {
   return vtkQuadricLODActor::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkQuadricLODActor__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkQuadricLODActor__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkQuadricLODActor__SafeDownCast__0(void* o) {
+extern "C" void* vtkQuadricLODActor__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkQuadricLODActor::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkQuadricLODActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkQuadricLODActor__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkQuadricLODActor::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkQuadricLODActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkQuadricLODActor__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkQuadricLODActor__SetDeferLODConstruction__0(void* self, int32_t _arg) {
+extern "C" void vtkQuadricLODActor__SetDeferLODConstruction__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDeferLODConstruction(_arg);
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetDeferLODConstruction__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetDeferLODConstruction__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetDeferLODConstruction();
 }
 
-extern "C" void vtkQuadricLODActor__DeferLODConstructionOn__0(void* self) {
+extern "C" void vtkQuadricLODActor__DeferLODConstructionOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->DeferLODConstructionOn();
 }
 
-extern "C" void vtkQuadricLODActor__DeferLODConstructionOff__0(void* self) {
+extern "C" void vtkQuadricLODActor__DeferLODConstructionOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->DeferLODConstructionOff();
 }
 
-extern "C" void vtkQuadricLODActor__SetStatic__0(void* self, int32_t _arg) {
+extern "C" void vtkQuadricLODActor__SetStatic__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetStatic(_arg);
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetStatic__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetStatic__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetStatic();
 }
 
-extern "C" void vtkQuadricLODActor__StaticOn__0(void* self) {
+extern "C" void vtkQuadricLODActor__StaticOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->StaticOn();
 }
 
-extern "C" void vtkQuadricLODActor__StaticOff__0(void* self) {
+extern "C" void vtkQuadricLODActor__StaticOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->StaticOff();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfiguration__0(void* self, int32_t _arg) {
+extern "C" void vtkQuadricLODActor__SetDataConfiguration__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfiguration(_arg);
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetDataConfigurationMinValue__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetDataConfigurationMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetDataConfigurationMinValue();
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetDataConfigurationMaxValue__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetDataConfigurationMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetDataConfigurationMaxValue();
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetDataConfiguration__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetDataConfiguration__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetDataConfiguration();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToUnknown__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToUnknown__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToUnknown();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToXLine__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToXLine__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToXLine();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToYLine__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToYLine__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToYLine();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToZLine__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToZLine__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToZLine();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToXYPlane__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToXYPlane__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToXYPlane();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToYZPlane__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToYZPlane__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToYZPlane();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToXZPlane__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToXZPlane__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToXZPlane();
 }
 
-extern "C" void vtkQuadricLODActor__SetDataConfigurationToXYZVolume__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetDataConfigurationToXYZVolume__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetDataConfigurationToXYZVolume();
 }
 
-extern "C" void vtkQuadricLODActor__SetCollapseDimensionRatio__0(void* self, double _arg) {
+extern "C" void vtkQuadricLODActor__SetCollapseDimensionRatio__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetCollapseDimensionRatio(_arg);
 }
 
-extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatioMinValue__0(void* self) {
+extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatioMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetCollapseDimensionRatioMinValue();
 }
 
-extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatioMaxValue__0(void* self) {
+extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatioMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetCollapseDimensionRatioMaxValue();
 }
 
-extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatio__0(void* self) {
+extern "C" double vtkQuadricLODActor__GetCollapseDimensionRatio__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetCollapseDimensionRatio();
 }
 
-extern "C" void vtkQuadricLODActor__SetLODFilter__0(void* self, void* lodFilter) {
+extern "C" void vtkQuadricLODActor__SetLODFilter__0(void* self, void* lodFilter) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetLODFilter(static_cast<vtkQuadricClustering*>(lodFilter));
 }
 
-extern "C" void* vtkQuadricLODActor__GetLODFilter__0(void* self) {
+extern "C" void* vtkQuadricLODActor__GetLODFilter__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkQuadricLODActor*>(self)->GetLODFilter());
 }
 
-extern "C" void vtkQuadricLODActor__SetPropType__0(void* self, int32_t _arg) {
+extern "C" void vtkQuadricLODActor__SetPropType__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetPropType(_arg);
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetPropTypeMinValue__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetPropTypeMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetPropTypeMinValue();
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetPropTypeMaxValue__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetPropTypeMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetPropTypeMaxValue();
 }
 
-extern "C" int32_t vtkQuadricLODActor__GetPropType__0(void* self) {
+extern "C" int32_t vtkQuadricLODActor__GetPropType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkQuadricLODActor*>(self)->GetPropType();
 }
 
-extern "C" void vtkQuadricLODActor__SetPropTypeToFollower__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetPropTypeToFollower__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetPropTypeToFollower();
 }
 
-extern "C" void vtkQuadricLODActor__SetPropTypeToActor__0(void* self) {
+extern "C" void vtkQuadricLODActor__SetPropTypeToActor__0(void* self) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetPropTypeToActor();
 }
 
-extern "C" void vtkQuadricLODActor__SetCamera__0(void* self, void* arg0) {
+extern "C" void vtkQuadricLODActor__SetCamera__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->SetCamera(static_cast<vtkCamera*>(arg0));
 }
 
-extern "C" void* vtkQuadricLODActor__GetCamera__0(void* self) {
+extern "C" void* vtkQuadricLODActor__GetCamera__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkQuadricLODActor*>(self)->GetCamera());
 }
 
-extern "C" void vtkQuadricLODActor__Render__0(void* self, void* arg0, void* arg1) {
+extern "C" void vtkQuadricLODActor__Render__0(void* self, void* arg0, void* arg1) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->Render(static_cast<vtkRenderer*>(arg0), static_cast<vtkMapper*>(arg1));
 }
 
-extern "C" void vtkQuadricLODActor__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkQuadricLODActor__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkQuadricLODActor__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkQuadricLODActor__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkQuadricLODActor*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }

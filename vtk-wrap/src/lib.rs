@@ -1,26 +1,26 @@
-//! Safe (well, mostly safe) Rust bindings to the Visualization Toolkit (VTK).
+//! Unsafe Rust bindings to the Visualization Toolkit (VTK).
 //!
-//! This crate is generated from VTK's own wrapping metadata.  Every wrapped
-//! class becomes a `#[repr(transparent)]` newtype around a reference counted
-//! VTK pointer:
+//! The complete generated API lives in [`raw`]. Every native method and
+//! constructor is `unsafe`; the caller upholds VTK's initialization, index,
+//! lifetime, ownership, aliasing and thread requirements.
 //!
-//! * construction goes through the class' `New()` factory;
-//! * `Clone` takes another reference, `Drop` releases it;
-//! * inheritance is modelled with `Deref`, so methods declared in base classes
-//!   are reachable directly (for example `vtkSphereSource::modified()`).
+//! With the `vtkFiltersSources` feature:
 //!
 //! ```no_run
-//! use vtk_wrap::vtkSphereSource;
+//! use vtk_wrap::raw::vtkSphereSource;
 //!
-//! let sphere = vtkSphereSource::new();
-//! sphere.set_radius(2.0);
-//! assert_eq!(sphere.get_radius(), 2.0);
+//! // SAFETY: constructing a sphere source has no extra requirements, the
+//! // handle owns one reference, and the calls below preserve it.
+//! unsafe {
+//!     let sphere = vtkSphereSource::new();
+//!     sphere.set_radius(2.0);
+//!     sphere.update();
+//! }
 //! ```
-//!
-//! The bindings are deliberately low level: they mirror VTK's API rather than
-//! hiding it.  Higher level, `pyvista`-style helpers belong in a separate crate.
 
-#![allow(
+#![deny(unsafe_op_in_unsafe_fn)]
+
+#[allow(
     non_camel_case_types,
     non_snake_case,
     dead_code,
@@ -28,12 +28,5 @@
     unused_unsafe,
     clippy::all
 )]
-
-mod generated;
-
-pub use generated::*;
-
-/// Commonly used re-exports.
-pub mod prelude {
-    pub use crate::*;
-}
+#[path = "generated.rs"]
+pub mod raw;

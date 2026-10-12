@@ -7,79 +7,79 @@
 #include "vtkXMLDataElement.h"
 #include <string>
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationQuadratureSchemeDefinitionVectorKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationQuadratureSchemeDefinitionVectorKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationQuadratureSchemeDefinitionVectorKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationQuadratureSchemeDefinitionVectorKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationQuadratureSchemeDefinitionVectorKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationQuadratureSchemeDefinitionVectorKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationQuadratureSchemeDefinitionVectorKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationQuadratureSchemeDefinitionVectorKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationQuadratureSchemeDefinitionVectorKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Clear__0(void* self, void* info) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Clear__0(void* self, void* info) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Clear(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Resize__0(void* self, void* info, int32_t n) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Resize__0(void* self, void* info, int32_t n) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Resize(static_cast<vtkInformation*>(info), n);
 }
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__Size__0(void* self, void* info) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__Size__0(void* self, void* info) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Size(static_cast<vtkInformation*>(info));
 }
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__Length__0(void* self, void* info) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__Length__0(void* self, void* info) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Length(static_cast<vtkInformation*>(info));
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Append__0(void* self, void* info, void* value) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Append__0(void* self, void* info, void* value) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Append(static_cast<vtkInformation*>(info), static_cast<vtkQuadratureSchemeDefinition*>(value));
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Set__0(void* self, void* info, void* value, int32_t i) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__Set__0(void* self, void* info, void* value, int32_t i) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Set(static_cast<vtkInformation*>(info), static_cast<vtkQuadratureSchemeDefinition*>(value), i);
 }
 
-extern "C" void* vtkInformationQuadratureSchemeDefinitionVectorKey__Get__0(void* self, void* info, int32_t idx) {
+extern "C" void* vtkInformationQuadratureSchemeDefinitionVectorKey__Get__0(void* self, void* info, int32_t idx) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->Get(static_cast<vtkInformation*>(info), idx));
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__ShallowCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__ShallowCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->ShallowCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }
 
-extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__DeepCopy__0(void* self, void* from, void* to) {
+extern "C" void vtkInformationQuadratureSchemeDefinitionVectorKey__DeepCopy__0(void* self, void* from, void* to) noexcept {
   (void)self;
   static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->DeepCopy(static_cast<vtkInformation*>(from), static_cast<vtkInformation*>(to));
 }
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__SaveState__0(void* self, void* info, void* element) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__SaveState__0(void* self, void* info, void* element) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->SaveState(static_cast<vtkInformation*>(info), static_cast<vtkXMLDataElement*>(element));
 }
 
-extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__RestoreState__0(void* self, void* info, void* element) {
+extern "C" int32_t vtkInformationQuadratureSchemeDefinitionVectorKey__RestoreState__0(void* self, void* info, void* element) noexcept {
   (void)self;
   return static_cast<vtkInformationQuadratureSchemeDefinitionVectorKey*>(self)->RestoreState(static_cast<vtkInformation*>(info), static_cast<vtkXMLDataElement*>(element));
 }

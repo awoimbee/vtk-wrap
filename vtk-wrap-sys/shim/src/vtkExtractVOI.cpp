@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkExtractVOI__vtk_wrap_new() { return static_cast<void*>(vtkExtractVOI::New()); }
+extern "C" void* vtkExtractVOI__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExtractVOI::New()); }
 
-extern "C" int32_t vtkExtractVOI__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkExtractVOI__IsTypeOf__0(const char* type_) noexcept {
   return vtkExtractVOI::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkExtractVOI__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkExtractVOI__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractVOI*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkExtractVOI__SafeDownCast__0(void* o) {
+extern "C" void* vtkExtractVOI__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkExtractVOI::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkExtractVOI__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkExtractVOI__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkExtractVOI::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkExtractVOI__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkExtractVOI__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkExtractVOI*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkExtractVOI__SetVOI__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) {
+extern "C" void vtkExtractVOI__SetVOI__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3, int32_t _arg4, int32_t _arg5, int32_t _arg6) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->SetVOI(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
 }
 
-extern "C" void vtkExtractVOI__SetVOI__1(void* self, const int32_t* _arg) {
+extern "C" void vtkExtractVOI__SetVOI__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->SetVOI(_arg);
 }
 
-extern "C" void vtkExtractVOI__SetSampleRate__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) {
+extern "C" void vtkExtractVOI__SetSampleRate__0(void* self, int32_t _arg1, int32_t _arg2, int32_t _arg3) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->SetSampleRate(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkExtractVOI__SetSampleRate__1(void* self, const int32_t* _arg) {
+extern "C" void vtkExtractVOI__SetSampleRate__1(void* self, const int32_t* _arg) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->SetSampleRate(_arg);
 }
 
-extern "C" void vtkExtractVOI__SetIncludeBoundary__0(void* self, int32_t _arg) {
+extern "C" void vtkExtractVOI__SetIncludeBoundary__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->SetIncludeBoundary(_arg);
 }
 
-extern "C" int32_t vtkExtractVOI__GetIncludeBoundary__0(void* self) {
+extern "C" int32_t vtkExtractVOI__GetIncludeBoundary__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkExtractVOI*>(self)->GetIncludeBoundary();
 }
 
-extern "C" void vtkExtractVOI__IncludeBoundaryOn__0(void* self) {
+extern "C" void vtkExtractVOI__IncludeBoundaryOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->IncludeBoundaryOn();
 }
 
-extern "C" void vtkExtractVOI__IncludeBoundaryOff__0(void* self) {
+extern "C" void vtkExtractVOI__IncludeBoundaryOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkExtractVOI*>(self)->IncludeBoundaryOff();
 }

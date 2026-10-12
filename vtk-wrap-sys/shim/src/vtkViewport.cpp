@@ -9,364 +9,364 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkViewport__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkViewport__IsTypeOf__0(const char* type_) noexcept {
   return vtkViewport::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkViewport__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkViewport__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkViewport__SafeDownCast__0(void* o) {
+extern "C" void* vtkViewport__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkViewport::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkViewport__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkViewport__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkViewport::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkViewport__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkViewport__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkViewport__AddViewProp__0(void* self, void* arg0) {
+extern "C" void vtkViewport__AddViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->AddViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void* vtkViewport__GetViewProps__0(void* self) {
+extern "C" void* vtkViewport__GetViewProps__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->GetViewProps());
 }
 
-extern "C" int32_t vtkViewport__HasViewProp__0(void* self, void* arg0) {
+extern "C" int32_t vtkViewport__HasViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->HasViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkViewport__RemoveViewProp__0(void* self, void* arg0) {
+extern "C" void vtkViewport__RemoveViewProp__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->RemoveViewProp(static_cast<vtkProp*>(arg0));
 }
 
-extern "C" void vtkViewport__RemoveAllViewProps__0(void* self) {
+extern "C" void vtkViewport__RemoveAllViewProps__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->RemoveAllViewProps();
 }
 
-extern "C" void vtkViewport__SetBackground__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetBackground__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetBackground(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetBackground__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetBackground__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetBackground(_arg);
 }
 
-extern "C" void vtkViewport__SetBackground2__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetBackground2__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetBackground2(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetBackground2__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetBackground2__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetBackground2(_arg);
 }
 
-extern "C" void vtkViewport__SetBackgroundAlpha__0(void* self, double _arg) {
+extern "C" void vtkViewport__SetBackgroundAlpha__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetBackgroundAlpha(_arg);
 }
 
-extern "C" double vtkViewport__GetBackgroundAlphaMinValue__0(void* self) {
+extern "C" double vtkViewport__GetBackgroundAlphaMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetBackgroundAlphaMinValue();
 }
 
-extern "C" double vtkViewport__GetBackgroundAlphaMaxValue__0(void* self) {
+extern "C" double vtkViewport__GetBackgroundAlphaMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetBackgroundAlphaMaxValue();
 }
 
-extern "C" double vtkViewport__GetBackgroundAlpha__0(void* self) {
+extern "C" double vtkViewport__GetBackgroundAlpha__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetBackgroundAlpha();
 }
 
-extern "C" void vtkViewport__SetGradientBackground__0(void* self, bool _arg) {
+extern "C" void vtkViewport__SetGradientBackground__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetGradientBackground(_arg);
 }
 
-extern "C" bool vtkViewport__GetGradientBackground__0(void* self) {
+extern "C" bool vtkViewport__GetGradientBackground__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetGradientBackground();
 }
 
-extern "C" void vtkViewport__GradientBackgroundOn__0(void* self) {
+extern "C" void vtkViewport__GradientBackgroundOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->GradientBackgroundOn();
 }
 
-extern "C" void vtkViewport__GradientBackgroundOff__0(void* self) {
+extern "C" void vtkViewport__GradientBackgroundOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->GradientBackgroundOff();
 }
 
-extern "C" void vtkViewport__SetDitherGradient__0(void* self, bool _arg) {
+extern "C" void vtkViewport__SetDitherGradient__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetDitherGradient(_arg);
 }
 
-extern "C" bool vtkViewport__GetDitherGradient__0(void* self) {
+extern "C" bool vtkViewport__GetDitherGradient__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetDitherGradient();
 }
 
-extern "C" void vtkViewport__DitherGradientOn__0(void* self) {
+extern "C" void vtkViewport__DitherGradientOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->DitherGradientOn();
 }
 
-extern "C" void vtkViewport__DitherGradientOff__0(void* self) {
+extern "C" void vtkViewport__DitherGradientOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->DitherGradientOff();
 }
 
-extern "C" void vtkViewport__SetAspect__0(void* self, double _arg1, double _arg2) {
+extern "C" void vtkViewport__SetAspect__0(void* self, double _arg1, double _arg2) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetAspect(_arg1, _arg2);
 }
 
-extern "C" void vtkViewport__SetAspect__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetAspect__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetAspect(_arg);
 }
 
-extern "C" void vtkViewport__ComputeAspect__0(void* self) {
+extern "C" void vtkViewport__ComputeAspect__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->ComputeAspect();
 }
 
-extern "C" void vtkViewport__SetPixelAspect__0(void* self, double _arg1, double _arg2) {
+extern "C" void vtkViewport__SetPixelAspect__0(void* self, double _arg1, double _arg2) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetPixelAspect(_arg1, _arg2);
 }
 
-extern "C" void vtkViewport__SetPixelAspect__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetPixelAspect__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetPixelAspect(_arg);
 }
 
-extern "C" void vtkViewport__SetViewport__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) {
+extern "C" void vtkViewport__SetViewport__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetViewport(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkViewport__SetViewport__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetViewport__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetViewport(_arg);
 }
 
-extern "C" void vtkViewport__SetDisplayPoint__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetDisplayPoint__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetDisplayPoint(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetDisplayPoint__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetDisplayPoint__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetDisplayPoint(_arg);
 }
 
-extern "C" void vtkViewport__SetViewPoint__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetViewPoint__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetViewPoint(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetViewPoint__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetViewPoint__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetViewPoint(_arg);
 }
 
-extern "C" void vtkViewport__SetWorldPoint__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) {
+extern "C" void vtkViewport__SetWorldPoint__0(void* self, double _arg1, double _arg2, double _arg3, double _arg4) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetWorldPoint(_arg1, _arg2, _arg3, _arg4);
 }
 
-extern "C" void vtkViewport__SetWorldPoint__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetWorldPoint__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetWorldPoint(_arg);
 }
 
-extern "C" int32_t vtkViewport__IsInViewport__0(void* self, int32_t x, int32_t y) {
+extern "C" int32_t vtkViewport__IsInViewport__0(void* self, int32_t x, int32_t y) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->IsInViewport(x, y);
 }
 
-extern "C" void* vtkViewport__GetVTKWindow__0(void* self) {
+extern "C" void* vtkViewport__GetVTKWindow__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->GetVTKWindow());
 }
 
-extern "C" void vtkViewport__DisplayToView__0(void* self) {
+extern "C" void vtkViewport__DisplayToView__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->DisplayToView();
 }
 
-extern "C" void vtkViewport__ViewToDisplay__0(void* self) {
+extern "C" void vtkViewport__ViewToDisplay__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->ViewToDisplay();
 }
 
-extern "C" void vtkViewport__WorldToView__0(void* self) {
+extern "C" void vtkViewport__WorldToView__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->WorldToView();
 }
 
-extern "C" void vtkViewport__ViewToWorld__0(void* self) {
+extern "C" void vtkViewport__ViewToWorld__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->ViewToWorld();
 }
 
-extern "C" void vtkViewport__DisplayToWorld__0(void* self) {
+extern "C" void vtkViewport__DisplayToWorld__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->DisplayToWorld();
 }
 
-extern "C" void vtkViewport__WorldToDisplay__0(void* self) {
+extern "C" void vtkViewport__WorldToDisplay__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->WorldToDisplay();
 }
 
-extern "C" void* vtkViewport__PickProp__0(void* self, double selectionX, double selectionY) {
+extern "C" void* vtkViewport__PickProp__0(void* self, double selectionX, double selectionY) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickProp(selectionX, selectionY));
 }
 
-extern "C" void* vtkViewport__PickProp__1(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2) {
+extern "C" void* vtkViewport__PickProp__1(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickProp(selectionX1, selectionY1, selectionX2, selectionY2));
 }
 
-extern "C" void* vtkViewport__PickPropFrom__0(void* self, double selectionX, double selectionY, void* arg2) {
+extern "C" void* vtkViewport__PickPropFrom__0(void* self, double selectionX, double selectionY, void* arg2) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickPropFrom(selectionX, selectionY, static_cast<vtkPropCollection*>(arg2)));
 }
 
-extern "C" void* vtkViewport__PickPropFrom__1(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, void* arg4) {
+extern "C" void* vtkViewport__PickPropFrom__1(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, void* arg4) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickPropFrom(selectionX1, selectionY1, selectionX2, selectionY2, static_cast<vtkPropCollection*>(arg4)));
 }
 
-extern "C" void* vtkViewport__PickProp__2(void* self, double selectionX, double selectionY, int32_t fieldAssociation, void* selection) {
+extern "C" void* vtkViewport__PickProp__2(void* self, double selectionX, double selectionY, int32_t fieldAssociation, void* selection) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickProp(selectionX, selectionY, fieldAssociation, static_cast<vtkSelection*>(selection)));
 }
 
-extern "C" void* vtkViewport__PickProp__3(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, int32_t fieldAssociation, void* selection) {
+extern "C" void* vtkViewport__PickProp__3(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, int32_t fieldAssociation, void* selection) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickProp(selectionX1, selectionY1, selectionX2, selectionY2, fieldAssociation, static_cast<vtkSelection*>(selection)));
 }
 
-extern "C" void* vtkViewport__PickPropFrom__2(void* self, double selectionX, double selectionY, void* arg2, int32_t fieldAssociation, void* selection) {
+extern "C" void* vtkViewport__PickPropFrom__2(void* self, double selectionX, double selectionY, void* arg2, int32_t fieldAssociation, void* selection) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickPropFrom(selectionX, selectionY, static_cast<vtkPropCollection*>(arg2), fieldAssociation, static_cast<vtkSelection*>(selection)));
 }
 
-extern "C" void* vtkViewport__PickPropFrom__3(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, void* arg4, int32_t fieldAssociation, void* selection) {
+extern "C" void* vtkViewport__PickPropFrom__3(void* self, double selectionX1, double selectionY1, double selectionX2, double selectionY2, void* arg4, int32_t fieldAssociation, void* selection) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->PickPropFrom(selectionX1, selectionY1, selectionX2, selectionY2, static_cast<vtkPropCollection*>(arg4), fieldAssociation, static_cast<vtkSelection*>(selection)));
 }
 
-extern "C" double vtkViewport__GetPickX__0(void* self) {
+extern "C" double vtkViewport__GetPickX__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickX();
 }
 
-extern "C" double vtkViewport__GetPickY__0(void* self) {
+extern "C" double vtkViewport__GetPickY__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickY();
 }
 
-extern "C" double vtkViewport__GetPickWidth__0(void* self) {
+extern "C" double vtkViewport__GetPickWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickWidth();
 }
 
-extern "C" double vtkViewport__GetPickHeight__0(void* self) {
+extern "C" double vtkViewport__GetPickHeight__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickHeight();
 }
 
-extern "C" double vtkViewport__GetPickX1__0(void* self) {
+extern "C" double vtkViewport__GetPickX1__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickX1();
 }
 
-extern "C" double vtkViewport__GetPickY1__0(void* self) {
+extern "C" double vtkViewport__GetPickY1__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickY1();
 }
 
-extern "C" double vtkViewport__GetPickX2__0(void* self) {
+extern "C" double vtkViewport__GetPickX2__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickX2();
 }
 
-extern "C" double vtkViewport__GetPickY2__0(void* self) {
+extern "C" double vtkViewport__GetPickY2__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickY2();
 }
 
-extern "C" void* vtkViewport__GetPickResultProps__0(void* self) {
+extern "C" void* vtkViewport__GetPickResultProps__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkViewport*>(self)->GetPickResultProps());
 }
 
-extern "C" double vtkViewport__GetPickedZ__0(void* self) {
+extern "C" double vtkViewport__GetPickedZ__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetPickedZ();
 }
 
-extern "C" void vtkViewport__SetEnvironmentalBG__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetEnvironmentalBG__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetEnvironmentalBG(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetEnvironmentalBG__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetEnvironmentalBG__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetEnvironmentalBG(_arg);
 }
 
-extern "C" void vtkViewport__SetEnvironmentalBG2__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkViewport__SetEnvironmentalBG2__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetEnvironmentalBG2(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkViewport__SetEnvironmentalBG2__1(void* self, const double* _arg) {
+extern "C" void vtkViewport__SetEnvironmentalBG2__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetEnvironmentalBG2(_arg);
 }
 
-extern "C" void vtkViewport__SetGradientEnvironmentalBG__0(void* self, bool _arg) {
+extern "C" void vtkViewport__SetGradientEnvironmentalBG__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->SetGradientEnvironmentalBG(_arg);
 }
 
-extern "C" bool vtkViewport__GetGradientEnvironmentalBG__0(void* self) {
+extern "C" bool vtkViewport__GetGradientEnvironmentalBG__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkViewport*>(self)->GetGradientEnvironmentalBG();
 }
 
-extern "C" void vtkViewport__GradientEnvironmentalBGOn__0(void* self) {
+extern "C" void vtkViewport__GradientEnvironmentalBGOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->GradientEnvironmentalBGOn();
 }
 
-extern "C" void vtkViewport__GradientEnvironmentalBGOff__0(void* self) {
+extern "C" void vtkViewport__GradientEnvironmentalBGOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkViewport*>(self)->GradientEnvironmentalBGOff();
 }

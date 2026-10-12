@@ -4,61 +4,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMarkBoundaryFilter__vtk_wrap_new() { return static_cast<void*>(vtkMarkBoundaryFilter::New()); }
+extern "C" void* vtkMarkBoundaryFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMarkBoundaryFilter::New()); }
 
-extern "C" int32_t vtkMarkBoundaryFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMarkBoundaryFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkMarkBoundaryFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMarkBoundaryFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMarkBoundaryFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMarkBoundaryFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMarkBoundaryFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkMarkBoundaryFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMarkBoundaryFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMarkBoundaryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMarkBoundaryFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMarkBoundaryFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMarkBoundaryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMarkBoundaryFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMarkBoundaryFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMarkBoundaryFilter__SetGenerateBoundaryFaces__0(void* self, bool _arg) {
+extern "C" void vtkMarkBoundaryFilter__SetGenerateBoundaryFaces__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->SetGenerateBoundaryFaces(_arg);
 }
 
-extern "C" bool vtkMarkBoundaryFilter__GetGenerateBoundaryFaces__0(void* self) {
+extern "C" bool vtkMarkBoundaryFilter__GetGenerateBoundaryFaces__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMarkBoundaryFilter*>(self)->GetGenerateBoundaryFaces();
 }
 
-extern "C" void vtkMarkBoundaryFilter__GenerateBoundaryFacesOn__0(void* self) {
+extern "C" void vtkMarkBoundaryFilter__GenerateBoundaryFacesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->GenerateBoundaryFacesOn();
 }
 
-extern "C" void vtkMarkBoundaryFilter__GenerateBoundaryFacesOff__0(void* self) {
+extern "C" void vtkMarkBoundaryFilter__GenerateBoundaryFacesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->GenerateBoundaryFacesOff();
 }
 
-extern "C" void vtkMarkBoundaryFilter__SetBoundaryPointsName__0(void* self, const char* _arg) {
+extern "C" void vtkMarkBoundaryFilter__SetBoundaryPointsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->SetBoundaryPointsName(_arg);
 }
 
-extern "C" void vtkMarkBoundaryFilter__SetBoundaryCellsName__0(void* self, const char* _arg) {
+extern "C" void vtkMarkBoundaryFilter__SetBoundaryCellsName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->SetBoundaryCellsName(_arg);
 }
 
-extern "C" void vtkMarkBoundaryFilter__SetBoundaryFacesName__0(void* self, const char* _arg) {
+extern "C" void vtkMarkBoundaryFilter__SetBoundaryFacesName__0(void* self, const char* _arg) noexcept {
   (void)self;
   static_cast<vtkMarkBoundaryFilter*>(self)->SetBoundaryFacesName(_arg);
 }

@@ -10,91 +10,91 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkReebGraph__vtk_wrap_new() { return static_cast<void*>(vtkReebGraph::New()); }
+extern "C" void* vtkReebGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkReebGraph::New()); }
 
-extern "C" int32_t vtkReebGraph__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkReebGraph__IsTypeOf__0(const char* type_) noexcept {
   return vtkReebGraph::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkReebGraph__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkReebGraph__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkReebGraph__SafeDownCast__0(void* o) {
+extern "C" void* vtkReebGraph__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkReebGraph::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkReebGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkReebGraph__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkReebGraph::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkReebGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkReebGraph__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkReebGraph__GetDataObjectType__0(void* self) {
+extern "C" int32_t vtkReebGraph__GetDataObjectType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->GetDataObjectType();
 }
 
-extern "C" int32_t vtkReebGraph__Build__0(void* self, void* mesh, void* scalarField) {
+extern "C" int32_t vtkReebGraph__Build__0(void* self, void* mesh, void* scalarField) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkPolyData*>(mesh), static_cast<vtkDataArray*>(scalarField));
 }
 
-extern "C" int32_t vtkReebGraph__Build__1(void* self, void* mesh, void* scalarField) {
+extern "C" int32_t vtkReebGraph__Build__1(void* self, void* mesh, void* scalarField) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkUnstructuredGrid*>(mesh), static_cast<vtkDataArray*>(scalarField));
 }
 
-extern "C" int32_t vtkReebGraph__Build__2(void* self, void* mesh, int64_t scalarFieldId) {
+extern "C" int32_t vtkReebGraph__Build__2(void* self, void* mesh, int64_t scalarFieldId) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkPolyData*>(mesh), scalarFieldId);
 }
 
-extern "C" int32_t vtkReebGraph__Build__3(void* self, void* mesh, int64_t scalarFieldId) {
+extern "C" int32_t vtkReebGraph__Build__3(void* self, void* mesh, int64_t scalarFieldId) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkUnstructuredGrid*>(mesh), scalarFieldId);
 }
 
-extern "C" int32_t vtkReebGraph__Build__4(void* self, void* mesh, const char* scalarFieldName) {
+extern "C" int32_t vtkReebGraph__Build__4(void* self, void* mesh, const char* scalarFieldName) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkPolyData*>(mesh), scalarFieldName);
 }
 
-extern "C" int32_t vtkReebGraph__Build__5(void* self, void* mesh, const char* scalarFieldName) {
+extern "C" int32_t vtkReebGraph__Build__5(void* self, void* mesh, const char* scalarFieldName) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkUnstructuredGrid*>(mesh), scalarFieldName);
 }
 
-extern "C" int32_t vtkReebGraph__StreamTriangle__0(void* self, int64_t vertex0Id, double scalar0, int64_t vertex1Id, double scalar1, int64_t vertex2Id, double scalar2) {
+extern "C" int32_t vtkReebGraph__StreamTriangle__0(void* self, int64_t vertex0Id, double scalar0, int64_t vertex1Id, double scalar1, int64_t vertex2Id, double scalar2) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->StreamTriangle(vertex0Id, scalar0, vertex1Id, scalar1, vertex2Id, scalar2);
 }
 
-extern "C" int32_t vtkReebGraph__StreamTetrahedron__0(void* self, int64_t vertex0Id, double scalar0, int64_t vertex1Id, double scalar1, int64_t vertex2Id, double scalar2, int64_t vertex3Id, double scalar3) {
+extern "C" int32_t vtkReebGraph__StreamTetrahedron__0(void* self, int64_t vertex0Id, double scalar0, int64_t vertex1Id, double scalar1, int64_t vertex2Id, double scalar2, int64_t vertex3Id, double scalar3) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->StreamTetrahedron(vertex0Id, scalar0, vertex1Id, scalar1, vertex2Id, scalar2, vertex3Id, scalar3);
 }
 
-extern "C" void vtkReebGraph__CloseStream__0(void* self) {
+extern "C" void vtkReebGraph__CloseStream__0(void* self) noexcept {
   (void)self;
   static_cast<vtkReebGraph*>(self)->CloseStream();
 }
 
-extern "C" void vtkReebGraph__DeepCopy__0(void* self, void* src) {
+extern "C" void vtkReebGraph__DeepCopy__0(void* self, void* src) noexcept {
   (void)self;
   static_cast<vtkReebGraph*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" int32_t vtkReebGraph__Simplify__0(void* self, double simplificationThreshold, void* simplificationMetric) {
+extern "C" int32_t vtkReebGraph__Simplify__0(void* self, double simplificationThreshold, void* simplificationMetric) noexcept {
   (void)self;
   return static_cast<vtkReebGraph*>(self)->Simplify(simplificationThreshold, static_cast<vtkReebGraphSimplificationMetric*>(simplificationMetric));
 }
 
-extern "C" void vtkReebGraph__Set__0(void* self, void* g) {
+extern "C" void vtkReebGraph__Set__0(void* self, void* g) noexcept {
   (void)self;
   static_cast<vtkReebGraph*>(self)->Set(static_cast<vtkMutableDirectedGraph*>(g));
 }

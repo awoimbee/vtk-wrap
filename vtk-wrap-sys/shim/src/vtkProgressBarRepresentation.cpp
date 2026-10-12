@@ -8,156 +8,156 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkProgressBarRepresentation__vtk_wrap_new() { return static_cast<void*>(vtkProgressBarRepresentation::New()); }
+extern "C" void* vtkProgressBarRepresentation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkProgressBarRepresentation::New()); }
 
-extern "C" int32_t vtkProgressBarRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkProgressBarRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkProgressBarRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkProgressBarRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkProgressBarRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkProgressBarRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkProgressBarRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkProgressBarRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkProgressBarRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkProgressBarRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkProgressBarRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkProgressBarRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkProgressBarRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkProgressBarRepresentation__GetProperty__0(void* self) {
+extern "C" void* vtkProgressBarRepresentation__GetProperty__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkProgressBarRepresentation*>(self)->GetProperty());
 }
 
-extern "C" void vtkProgressBarRepresentation__SetProgressRate__0(void* self, double _arg) {
+extern "C" void vtkProgressBarRepresentation__SetProgressRate__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetProgressRate(_arg);
 }
 
-extern "C" double vtkProgressBarRepresentation__GetProgressRateMinValue__0(void* self) {
+extern "C" double vtkProgressBarRepresentation__GetProgressRateMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetProgressRateMinValue();
 }
 
-extern "C" double vtkProgressBarRepresentation__GetProgressRateMaxValue__0(void* self) {
+extern "C" double vtkProgressBarRepresentation__GetProgressRateMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetProgressRateMaxValue();
 }
 
-extern "C" double vtkProgressBarRepresentation__GetProgressRate__0(void* self) {
+extern "C" double vtkProgressBarRepresentation__GetProgressRate__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetProgressRate();
 }
 
-extern "C" void vtkProgressBarRepresentation__SetPadding__0(void* self, double _arg1, double _arg2) {
+extern "C" void vtkProgressBarRepresentation__SetPadding__0(void* self, double _arg1, double _arg2) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetPadding(_arg1, _arg2);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetPadding__1(void* self, const double* _arg) {
+extern "C" void vtkProgressBarRepresentation__SetPadding__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetPadding(_arg);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetDrawFrame__0(void* self, bool _arg) {
+extern "C" void vtkProgressBarRepresentation__SetDrawFrame__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetDrawFrame(_arg);
 }
 
-extern "C" bool vtkProgressBarRepresentation__GetDrawFrame__0(void* self) {
+extern "C" bool vtkProgressBarRepresentation__GetDrawFrame__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetDrawFrame();
 }
 
-extern "C" void vtkProgressBarRepresentation__DrawFrameOn__0(void* self) {
+extern "C" void vtkProgressBarRepresentation__DrawFrameOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->DrawFrameOn();
 }
 
-extern "C" void vtkProgressBarRepresentation__DrawFrameOff__0(void* self) {
+extern "C" void vtkProgressBarRepresentation__DrawFrameOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->DrawFrameOff();
 }
 
-extern "C" void vtkProgressBarRepresentation__SetProgressBarColor__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkProgressBarRepresentation__SetProgressBarColor__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetProgressBarColor(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetProgressBarColor__1(void* self, const double* _arg) {
+extern "C" void vtkProgressBarRepresentation__SetProgressBarColor__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetProgressBarColor(_arg);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetBackgroundColor__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkProgressBarRepresentation__SetBackgroundColor__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetBackgroundColor(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetBackgroundColor__1(void* self, const double* _arg) {
+extern "C" void vtkProgressBarRepresentation__SetBackgroundColor__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetBackgroundColor(_arg);
 }
 
-extern "C" void vtkProgressBarRepresentation__SetDrawBackground__0(void* self, bool _arg) {
+extern "C" void vtkProgressBarRepresentation__SetDrawBackground__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->SetDrawBackground(_arg);
 }
 
-extern "C" bool vtkProgressBarRepresentation__GetDrawBackground__0(void* self) {
+extern "C" bool vtkProgressBarRepresentation__GetDrawBackground__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->GetDrawBackground();
 }
 
-extern "C" void vtkProgressBarRepresentation__DrawBackgroundOn__0(void* self) {
+extern "C" void vtkProgressBarRepresentation__DrawBackgroundOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->DrawBackgroundOn();
 }
 
-extern "C" void vtkProgressBarRepresentation__DrawBackgroundOff__0(void* self) {
+extern "C" void vtkProgressBarRepresentation__DrawBackgroundOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->DrawBackgroundOff();
 }
 
-extern "C" void vtkProgressBarRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkProgressBarRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" void vtkProgressBarRepresentation__GetActors2D__0(void* self, void* arg0) {
+extern "C" void vtkProgressBarRepresentation__GetActors2D__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->GetActors2D(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkProgressBarRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkProgressBarRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkProgressBarRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" int32_t vtkProgressBarRepresentation__RenderOverlay__0(void* self, void* arg0) {
+extern "C" int32_t vtkProgressBarRepresentation__RenderOverlay__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->RenderOverlay(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProgressBarRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkProgressBarRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProgressBarRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkProgressBarRepresentation__RenderTranslucentPolygonalGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" int32_t vtkProgressBarRepresentation__HasTranslucentPolygonalGeometry__0(void* self) {
+extern "C" int32_t vtkProgressBarRepresentation__HasTranslucentPolygonalGeometry__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkProgressBarRepresentation*>(self)->HasTranslucentPolygonalGeometry();
 }

@@ -8,84 +8,84 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" int32_t vtkTensorProbeRepresentation__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTensorProbeRepresentation__IsTypeOf__0(const char* type_) noexcept {
   return vtkTensorProbeRepresentation::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTensorProbeRepresentation__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTensorProbeRepresentation__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTensorProbeRepresentation__SafeDownCast__0(void* o) {
+extern "C" void* vtkTensorProbeRepresentation__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTensorProbeRepresentation::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTensorProbeRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTensorProbeRepresentation__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTensorProbeRepresentation::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTensorProbeRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTensorProbeRepresentation__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTensorProbeRepresentation__BuildRepresentation__0(void* self) {
+extern "C" void vtkTensorProbeRepresentation__BuildRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->BuildRepresentation();
 }
 
-extern "C" int32_t vtkTensorProbeRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) {
+extern "C" int32_t vtkTensorProbeRepresentation__RenderOpaqueGeometry__0(void* self, void* arg0) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(arg0));
 }
 
-extern "C" void vtkTensorProbeRepresentation__SetProbePosition__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkTensorProbeRepresentation__SetProbePosition__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->SetProbePosition(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkTensorProbeRepresentation__SetProbePosition__1(void* self, const double* _arg) {
+extern "C" void vtkTensorProbeRepresentation__SetProbePosition__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->SetProbePosition(_arg);
 }
 
-extern "C" void vtkTensorProbeRepresentation__SetProbeCellId__0(void* self, int64_t _arg) {
+extern "C" void vtkTensorProbeRepresentation__SetProbeCellId__0(void* self, int64_t _arg) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->SetProbeCellId(_arg);
 }
 
-extern "C" int64_t vtkTensorProbeRepresentation__GetProbeCellId__0(void* self) {
+extern "C" int64_t vtkTensorProbeRepresentation__GetProbeCellId__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->GetProbeCellId();
 }
 
-extern "C" void vtkTensorProbeRepresentation__SetTrajectory__0(void* self, void* arg0) {
+extern "C" void vtkTensorProbeRepresentation__SetTrajectory__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->SetTrajectory(static_cast<vtkPolyData*>(arg0));
 }
 
-extern "C" void vtkTensorProbeRepresentation__Initialize__0(void* self) {
+extern "C" void vtkTensorProbeRepresentation__Initialize__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->Initialize();
 }
 
-extern "C" int32_t vtkTensorProbeRepresentation__SelectProbe__0(void* self, int32_t* pos) {
+extern "C" int32_t vtkTensorProbeRepresentation__SelectProbe__0(void* self, int32_t* pos) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->SelectProbe(pos);
 }
 
-extern "C" int32_t vtkTensorProbeRepresentation__Move__0(void* self, double* motionVector) {
+extern "C" int32_t vtkTensorProbeRepresentation__Move__0(void* self, double* motionVector) noexcept {
   (void)self;
   return static_cast<vtkTensorProbeRepresentation*>(self)->Move(motionVector);
 }
 
-extern "C" void vtkTensorProbeRepresentation__GetActors__0(void* self, void* arg0) {
+extern "C" void vtkTensorProbeRepresentation__GetActors__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->GetActors(static_cast<vtkPropCollection*>(arg0));
 }
 
-extern "C" void vtkTensorProbeRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkTensorProbeRepresentation__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkTensorProbeRepresentation*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }

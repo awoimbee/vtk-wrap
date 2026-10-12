@@ -7,61 +7,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkSynchronizedTemplatesCutter3D__vtk_wrap_new() { return static_cast<void*>(vtkSynchronizedTemplatesCutter3D::New()); }
+extern "C" void* vtkSynchronizedTemplatesCutter3D__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSynchronizedTemplatesCutter3D::New()); }
 
-extern "C" int32_t vtkSynchronizedTemplatesCutter3D__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkSynchronizedTemplatesCutter3D__IsTypeOf__0(const char* type_) noexcept {
   return vtkSynchronizedTemplatesCutter3D::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkSynchronizedTemplatesCutter3D__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkSynchronizedTemplatesCutter3D__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkSynchronizedTemplatesCutter3D__SafeDownCast__0(void* o) {
+extern "C" void* vtkSynchronizedTemplatesCutter3D__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkSynchronizedTemplatesCutter3D::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkSynchronizedTemplatesCutter3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkSynchronizedTemplatesCutter3D__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkSynchronizedTemplatesCutter3D::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkSynchronizedTemplatesCutter3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkSynchronizedTemplatesCutter3D__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkSynchronizedTemplatesCutter3D__ThreadedExecute__0(void* self, void* data, void* outInfo, int32_t arg2) {
+extern "C" void vtkSynchronizedTemplatesCutter3D__ThreadedExecute__0(void* self, void* data, void* outInfo, int32_t arg2) noexcept {
   (void)self;
   static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->ThreadedExecute(static_cast<vtkImageData*>(data), static_cast<vtkInformation*>(outInfo), arg2);
 }
 
-extern "C" void vtkSynchronizedTemplatesCutter3D__SetCutFunction__0(void* self, void* arg0) {
+extern "C" void vtkSynchronizedTemplatesCutter3D__SetCutFunction__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->SetCutFunction(static_cast<vtkImplicitFunction*>(arg0));
 }
 
-extern "C" void* vtkSynchronizedTemplatesCutter3D__GetCutFunction__0(void* self) {
+extern "C" void* vtkSynchronizedTemplatesCutter3D__GetCutFunction__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->GetCutFunction());
 }
 
-extern "C" void vtkSynchronizedTemplatesCutter3D__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkSynchronizedTemplatesCutter3D__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecisionMinValue__0(void* self) {
+extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecisionMinValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->GetOutputPointsPrecisionMinValue();
 }
 
-extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecisionMaxValue__0(void* self) {
+extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecisionMaxValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->GetOutputPointsPrecisionMaxValue();
 }
 
-extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkSynchronizedTemplatesCutter3D__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkSynchronizedTemplatesCutter3D*>(self)->GetOutputPointsPrecision();
 }

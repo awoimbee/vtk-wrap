@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTDxInteractorStyleCamera__vtk_wrap_new() { return static_cast<void*>(vtkTDxInteractorStyleCamera::New()); }
+extern "C" void* vtkTDxInteractorStyleCamera__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTDxInteractorStyleCamera::New()); }
 
-extern "C" int32_t vtkTDxInteractorStyleCamera__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTDxInteractorStyleCamera__IsTypeOf__0(const char* type_) noexcept {
   return vtkTDxInteractorStyleCamera::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTDxInteractorStyleCamera__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTDxInteractorStyleCamera__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTDxInteractorStyleCamera*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTDxInteractorStyleCamera__SafeDownCast__0(void* o) {
+extern "C" void* vtkTDxInteractorStyleCamera__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTDxInteractorStyleCamera::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTDxInteractorStyleCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTDxInteractorStyleCamera__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTDxInteractorStyleCamera::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTDxInteractorStyleCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTDxInteractorStyleCamera__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTDxInteractorStyleCamera*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

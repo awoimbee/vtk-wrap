@@ -5,36 +5,36 @@
 #include "vtkStatisticalModel.h"
 #include <string>
 
-extern "C" void* vtkLegacyStatisticalModelWriter__vtk_wrap_new() { return static_cast<void*>(vtkLegacyStatisticalModelWriter::New()); }
+extern "C" void* vtkLegacyStatisticalModelWriter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkLegacyStatisticalModelWriter::New()); }
 
-extern "C" int32_t vtkLegacyStatisticalModelWriter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkLegacyStatisticalModelWriter__IsTypeOf__0(const char* type_) noexcept {
   return vtkLegacyStatisticalModelWriter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkLegacyStatisticalModelWriter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkLegacyStatisticalModelWriter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLegacyStatisticalModelWriter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkLegacyStatisticalModelWriter__SafeDownCast__0(void* o) {
+extern "C" void* vtkLegacyStatisticalModelWriter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkLegacyStatisticalModelWriter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkLegacyStatisticalModelWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkLegacyStatisticalModelWriter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkLegacyStatisticalModelWriter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkLegacyStatisticalModelWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkLegacyStatisticalModelWriter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkLegacyStatisticalModelWriter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkLegacyStatisticalModelWriter__GetInput__0(void* self) {
+extern "C" void* vtkLegacyStatisticalModelWriter__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLegacyStatisticalModelWriter*>(self)->GetInput());
 }
 
-extern "C" void* vtkLegacyStatisticalModelWriter__GetInput__1(void* self, int32_t port) {
+extern "C" void* vtkLegacyStatisticalModelWriter__GetInput__1(void* self, int32_t port) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkLegacyStatisticalModelWriter*>(self)->GetInput(port));
 }

@@ -9,66 +9,66 @@
 #include "vtkWindow.h"
 #include <string>
 
-extern "C" void* vtkFollower__vtk_wrap_new() { return static_cast<void*>(vtkFollower::New()); }
+extern "C" void* vtkFollower__vtk_wrap_new() noexcept { return static_cast<void*>(vtkFollower::New()); }
 
-extern "C" int32_t vtkFollower__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkFollower__IsTypeOf__0(const char* type_) noexcept {
   return vtkFollower::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkFollower__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkFollower__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFollower*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkFollower__SafeDownCast__0(void* o) {
+extern "C" void* vtkFollower__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkFollower::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkFollower__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkFollower__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkFollower::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkFollower__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkFollower__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkFollower*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkFollower__SetCamera__0(void* self, void* arg0) {
+extern "C" void vtkFollower__SetCamera__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkFollower*>(self)->SetCamera(static_cast<vtkCamera*>(arg0));
 }
 
-extern "C" void* vtkFollower__GetCamera__0(void* self) {
+extern "C" void* vtkFollower__GetCamera__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkFollower*>(self)->GetCamera());
 }
 
-extern "C" int32_t vtkFollower__RenderOpaqueGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkFollower__RenderOpaqueGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkFollower*>(self)->RenderOpaqueGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" int32_t vtkFollower__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) {
+extern "C" int32_t vtkFollower__RenderTranslucentPolygonalGeometry__0(void* self, void* viewport) noexcept {
   (void)self;
   return static_cast<vtkFollower*>(self)->RenderTranslucentPolygonalGeometry(static_cast<vtkViewport*>(viewport));
 }
 
-extern "C" void vtkFollower__Render__0(void* self, void* ren) {
+extern "C" void vtkFollower__Render__0(void* self, void* ren) noexcept {
   (void)self;
   static_cast<vtkFollower*>(self)->Render(static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkFollower__ReleaseGraphicsResources__0(void* self, void* arg0) {
+extern "C" void vtkFollower__ReleaseGraphicsResources__0(void* self, void* arg0) noexcept {
   (void)self;
   static_cast<vtkFollower*>(self)->ReleaseGraphicsResources(static_cast<vtkWindow*>(arg0));
 }
 
-extern "C" void vtkFollower__ComputeMatrix__0(void* self) {
+extern "C" void vtkFollower__ComputeMatrix__0(void* self) noexcept {
   (void)self;
   static_cast<vtkFollower*>(self)->ComputeMatrix();
 }
 
-extern "C" void vtkFollower__ShallowCopy__0(void* self, void* prop) {
+extern "C" void vtkFollower__ShallowCopy__0(void* self, void* prop) noexcept {
   (void)self;
   static_cast<vtkFollower*>(self)->ShallowCopy(static_cast<vtkProp*>(prop));
 }

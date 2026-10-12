@@ -4,131 +4,131 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPlaneSource__vtk_wrap_new() { return static_cast<void*>(vtkPlaneSource::New()); }
+extern "C" void* vtkPlaneSource__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPlaneSource::New()); }
 
-extern "C" int32_t vtkPlaneSource__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPlaneSource__IsTypeOf__0(const char* type_) noexcept {
   return vtkPlaneSource::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPlaneSource__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPlaneSource__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaneSource*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPlaneSource__SafeDownCast__0(void* o) {
+extern "C" void* vtkPlaneSource__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPlaneSource::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPlaneSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPlaneSource__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPlaneSource::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPlaneSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPlaneSource__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPlaneSource*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPlaneSource__SetXResolution__0(void* self, int32_t _arg) {
+extern "C" void vtkPlaneSource__SetXResolution__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetXResolution(_arg);
 }
 
-extern "C" int32_t vtkPlaneSource__GetXResolution__0(void* self) {
+extern "C" int32_t vtkPlaneSource__GetXResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPlaneSource*>(self)->GetXResolution();
 }
 
-extern "C" void vtkPlaneSource__SetYResolution__0(void* self, int32_t _arg) {
+extern "C" void vtkPlaneSource__SetYResolution__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetYResolution(_arg);
 }
 
-extern "C" int32_t vtkPlaneSource__GetYResolution__0(void* self) {
+extern "C" int32_t vtkPlaneSource__GetYResolution__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPlaneSource*>(self)->GetYResolution();
 }
 
-extern "C" void vtkPlaneSource__SetResolution__0(void* self, int32_t xR, int32_t yR) {
+extern "C" void vtkPlaneSource__SetResolution__0(void* self, int32_t xR, int32_t yR) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetResolution(xR, yR);
 }
 
-extern "C" void vtkPlaneSource__SetOrigin__0(void* self, double _arg1, double _arg2, double _arg3) {
+extern "C" void vtkPlaneSource__SetOrigin__0(void* self, double _arg1, double _arg2, double _arg3) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetOrigin(_arg1, _arg2, _arg3);
 }
 
-extern "C" void vtkPlaneSource__SetOrigin__1(void* self, const double* _arg) {
+extern "C" void vtkPlaneSource__SetOrigin__1(void* self, const double* _arg) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetOrigin(_arg);
 }
 
-extern "C" void vtkPlaneSource__SetPoint1__0(void* self, double x, double y, double z) {
+extern "C" void vtkPlaneSource__SetPoint1__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetPoint1(x, y, z);
 }
 
-extern "C" void vtkPlaneSource__SetPoint1__1(void* self, double* pnt) {
+extern "C" void vtkPlaneSource__SetPoint1__1(void* self, double* pnt) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetPoint1(pnt);
 }
 
-extern "C" void vtkPlaneSource__SetPoint2__0(void* self, double x, double y, double z) {
+extern "C" void vtkPlaneSource__SetPoint2__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetPoint2(x, y, z);
 }
 
-extern "C" void vtkPlaneSource__SetPoint2__1(void* self, double* pnt) {
+extern "C" void vtkPlaneSource__SetPoint2__1(void* self, double* pnt) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetPoint2(pnt);
 }
 
-extern "C" void vtkPlaneSource__GetAxis1__0(void* self, double* a1) {
+extern "C" void vtkPlaneSource__GetAxis1__0(void* self, double* a1) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->GetAxis1(a1);
 }
 
-extern "C" void vtkPlaneSource__GetAxis2__0(void* self, double* a2) {
+extern "C" void vtkPlaneSource__GetAxis2__0(void* self, double* a2) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->GetAxis2(a2);
 }
 
-extern "C" void vtkPlaneSource__SetCenter__0(void* self, double x, double y, double z) {
+extern "C" void vtkPlaneSource__SetCenter__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetCenter(x, y, z);
 }
 
-extern "C" void vtkPlaneSource__SetCenter__1(void* self, double* center) {
+extern "C" void vtkPlaneSource__SetCenter__1(void* self, double* center) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetCenter(center);
 }
 
-extern "C" void vtkPlaneSource__SetNormal__0(void* self, double nx, double ny, double nz) {
+extern "C" void vtkPlaneSource__SetNormal__0(void* self, double nx, double ny, double nz) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetNormal(nx, ny, nz);
 }
 
-extern "C" void vtkPlaneSource__SetNormal__1(void* self, double* n) {
+extern "C" void vtkPlaneSource__SetNormal__1(void* self, double* n) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetNormal(n);
 }
 
-extern "C" void vtkPlaneSource__Push__0(void* self, double distance) {
+extern "C" void vtkPlaneSource__Push__0(void* self, double distance) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->Push(distance);
 }
 
-extern "C" void vtkPlaneSource__Rotate__0(void* self, double angle, double* rotationAxis) {
+extern "C" void vtkPlaneSource__Rotate__0(void* self, double angle, double* rotationAxis) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->Rotate(angle, rotationAxis);
 }
 
-extern "C" void vtkPlaneSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) {
+extern "C" void vtkPlaneSource__SetOutputPointsPrecision__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPlaneSource*>(self)->SetOutputPointsPrecision(_arg);
 }
 
-extern "C" int32_t vtkPlaneSource__GetOutputPointsPrecision__0(void* self) {
+extern "C" int32_t vtkPlaneSource__GetOutputPointsPrecision__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPlaneSource*>(self)->GetOutputPointsPrecision();
 }

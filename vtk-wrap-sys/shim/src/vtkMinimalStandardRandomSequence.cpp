@@ -4,66 +4,66 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkMinimalStandardRandomSequence__vtk_wrap_new() { return static_cast<void*>(vtkMinimalStandardRandomSequence::New()); }
+extern "C" void* vtkMinimalStandardRandomSequence__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMinimalStandardRandomSequence::New()); }
 
-extern "C" int32_t vtkMinimalStandardRandomSequence__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkMinimalStandardRandomSequence__IsTypeOf__0(const char* type_) noexcept {
   return vtkMinimalStandardRandomSequence::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkMinimalStandardRandomSequence__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkMinimalStandardRandomSequence__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkMinimalStandardRandomSequence__SafeDownCast__0(void* o) {
+extern "C" void* vtkMinimalStandardRandomSequence__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkMinimalStandardRandomSequence::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkMinimalStandardRandomSequence__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkMinimalStandardRandomSequence__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkMinimalStandardRandomSequence::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkMinimalStandardRandomSequence__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkMinimalStandardRandomSequence__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkMinimalStandardRandomSequence__Initialize__0(void* self, uint32_t seed) {
+extern "C" void vtkMinimalStandardRandomSequence__Initialize__0(void* self, uint32_t seed) noexcept {
   (void)self;
   static_cast<vtkMinimalStandardRandomSequence*>(self)->Initialize(seed);
 }
 
-extern "C" void vtkMinimalStandardRandomSequence__SetSeed__0(void* self, int32_t value) {
+extern "C" void vtkMinimalStandardRandomSequence__SetSeed__0(void* self, int32_t value) noexcept {
   (void)self;
   static_cast<vtkMinimalStandardRandomSequence*>(self)->SetSeed(value);
 }
 
-extern "C" void vtkMinimalStandardRandomSequence__SetSeedOnly__0(void* self, int32_t value) {
+extern "C" void vtkMinimalStandardRandomSequence__SetSeedOnly__0(void* self, int32_t value) noexcept {
   (void)self;
   static_cast<vtkMinimalStandardRandomSequence*>(self)->SetSeedOnly(value);
 }
 
-extern "C" int32_t vtkMinimalStandardRandomSequence__GetSeed__0(void* self) {
+extern "C" int32_t vtkMinimalStandardRandomSequence__GetSeed__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->GetSeed();
 }
 
-extern "C" double vtkMinimalStandardRandomSequence__GetValue__0(void* self) {
+extern "C" double vtkMinimalStandardRandomSequence__GetValue__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->GetValue();
 }
 
-extern "C" void vtkMinimalStandardRandomSequence__Next__0(void* self) {
+extern "C" void vtkMinimalStandardRandomSequence__Next__0(void* self) noexcept {
   (void)self;
   static_cast<vtkMinimalStandardRandomSequence*>(self)->Next();
 }
 
-extern "C" double vtkMinimalStandardRandomSequence__GetRangeValue__0(void* self, double rangeMin, double rangeMax) {
+extern "C" double vtkMinimalStandardRandomSequence__GetRangeValue__0(void* self, double rangeMin, double rangeMax) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->GetRangeValue(rangeMin, rangeMax);
 }
 
-extern "C" double vtkMinimalStandardRandomSequence__GetNextRangeValue__0(void* self, double rangeMin, double rangeMax) {
+extern "C" double vtkMinimalStandardRandomSequence__GetNextRangeValue__0(void* self, double rangeMin, double rangeMax) noexcept {
   (void)self;
   return static_cast<vtkMinimalStandardRandomSequence*>(self)->GetNextRangeValue(rangeMin, rangeMax);
 }

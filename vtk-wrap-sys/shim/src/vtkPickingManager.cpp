@@ -10,111 +10,111 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkPickingManager__vtk_wrap_new() { return static_cast<void*>(vtkPickingManager::New()); }
+extern "C" void* vtkPickingManager__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPickingManager::New()); }
 
-extern "C" int32_t vtkPickingManager__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPickingManager__IsTypeOf__0(const char* type_) noexcept {
   return vtkPickingManager::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPickingManager__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPickingManager__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPickingManager__SafeDownCast__0(void* o) {
+extern "C" void* vtkPickingManager__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPickingManager::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPickingManager__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPickingManager__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPickingManager::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPickingManager__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPickingManager__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPickingManager__EnabledOn__0(void* self) {
+extern "C" void vtkPickingManager__EnabledOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->EnabledOn();
 }
 
-extern "C" void vtkPickingManager__EnabledOff__0(void* self) {
+extern "C" void vtkPickingManager__EnabledOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->EnabledOff();
 }
 
-extern "C" void vtkPickingManager__SetEnabled__0(void* self, bool _arg) {
+extern "C" void vtkPickingManager__SetEnabled__0(void* self, bool _arg) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->SetEnabled(_arg);
 }
 
-extern "C" bool vtkPickingManager__GetEnabled__0(void* self) {
+extern "C" bool vtkPickingManager__GetEnabled__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->GetEnabled();
 }
 
-extern "C" void vtkPickingManager__SetOptimizeOnInteractorEvents__0(void* self, bool optimize) {
+extern "C" void vtkPickingManager__SetOptimizeOnInteractorEvents__0(void* self, bool optimize) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->SetOptimizeOnInteractorEvents(optimize);
 }
 
-extern "C" bool vtkPickingManager__GetOptimizeOnInteractorEvents__0(void* self) {
+extern "C" bool vtkPickingManager__GetOptimizeOnInteractorEvents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->GetOptimizeOnInteractorEvents();
 }
 
-extern "C" void vtkPickingManager__SetInteractor__0(void* self, void* iren) {
+extern "C" void vtkPickingManager__SetInteractor__0(void* self, void* iren) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->SetInteractor(static_cast<vtkRenderWindowInteractor*>(iren));
 }
 
-extern "C" void* vtkPickingManager__GetInteractor__0(void* self) {
+extern "C" void* vtkPickingManager__GetInteractor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPickingManager*>(self)->GetInteractor());
 }
 
-extern "C" void vtkPickingManager__AddPicker__0(void* self, void* picker, void* object) {
+extern "C" void vtkPickingManager__AddPicker__0(void* self, void* picker, void* object) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->AddPicker(static_cast<vtkAbstractPicker*>(picker), static_cast<vtkObject*>(object));
 }
 
-extern "C" void vtkPickingManager__RemovePicker__0(void* self, void* picker, void* object) {
+extern "C" void vtkPickingManager__RemovePicker__0(void* self, void* picker, void* object) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->RemovePicker(static_cast<vtkAbstractPicker*>(picker), static_cast<vtkObject*>(object));
 }
 
-extern "C" void vtkPickingManager__RemoveObject__0(void* self, void* object) {
+extern "C" void vtkPickingManager__RemoveObject__0(void* self, void* object) noexcept {
   (void)self;
   static_cast<vtkPickingManager*>(self)->RemoveObject(static_cast<vtkObject*>(object));
 }
 
-extern "C" bool vtkPickingManager__Pick__0(void* self, void* picker, void* object) {
+extern "C" bool vtkPickingManager__Pick__0(void* self, void* picker, void* object) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->Pick(static_cast<vtkAbstractPicker*>(picker), static_cast<vtkObject*>(object));
 }
 
-extern "C" bool vtkPickingManager__Pick__1(void* self, void* object) {
+extern "C" bool vtkPickingManager__Pick__1(void* self, void* object) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->Pick(static_cast<vtkObject*>(object));
 }
 
-extern "C" bool vtkPickingManager__Pick__2(void* self, void* picker) {
+extern "C" bool vtkPickingManager__Pick__2(void* self, void* picker) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->Pick(static_cast<vtkAbstractPicker*>(picker));
 }
 
-extern "C" void* vtkPickingManager__GetAssemblyPath__0(void* self, double X, double Y, double Z, void* picker, void* renderer, void* obj) {
+extern "C" void* vtkPickingManager__GetAssemblyPath__0(void* self, double X, double Y, double Z, void* picker, void* renderer, void* obj) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkPickingManager*>(self)->GetAssemblyPath(X, Y, Z, static_cast<vtkAbstractPropPicker*>(picker), static_cast<vtkRenderer*>(renderer), static_cast<vtkObject*>(obj)));
 }
 
-extern "C" int32_t vtkPickingManager__GetNumberOfPickers__0(void* self) {
+extern "C" int32_t vtkPickingManager__GetNumberOfPickers__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->GetNumberOfPickers();
 }
 
-extern "C" int32_t vtkPickingManager__GetNumberOfObjectsLinked__0(void* self, void* picker) {
+extern "C" int32_t vtkPickingManager__GetNumberOfObjectsLinked__0(void* self, void* picker) noexcept {
   (void)self;
   return static_cast<vtkPickingManager*>(self)->GetNumberOfObjectsLinked(static_cast<vtkAbstractPicker*>(picker));
 }

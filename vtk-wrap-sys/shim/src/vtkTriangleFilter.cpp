@@ -4,96 +4,96 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkTriangleFilter__vtk_wrap_new() { return static_cast<void*>(vtkTriangleFilter::New()); }
+extern "C" void* vtkTriangleFilter__vtk_wrap_new() noexcept { return static_cast<void*>(vtkTriangleFilter::New()); }
 
-extern "C" int32_t vtkTriangleFilter__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkTriangleFilter__IsTypeOf__0(const char* type_) noexcept {
   return vtkTriangleFilter::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkTriangleFilter__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkTriangleFilter__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkTriangleFilter__SafeDownCast__0(void* o) {
+extern "C" void* vtkTriangleFilter__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkTriangleFilter::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkTriangleFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkTriangleFilter__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkTriangleFilter::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkTriangleFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkTriangleFilter__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkTriangleFilter__SetPreservePolys__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangleFilter__SetPreservePolys__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->SetPreservePolys(_arg);
 }
 
-extern "C" int32_t vtkTriangleFilter__GetPreservePolys__0(void* self) {
+extern "C" int32_t vtkTriangleFilter__GetPreservePolys__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->GetPreservePolys();
 }
 
-extern "C" void vtkTriangleFilter__PreservePolysOn__0(void* self) {
+extern "C" void vtkTriangleFilter__PreservePolysOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PreservePolysOn();
 }
 
-extern "C" void vtkTriangleFilter__PreservePolysOff__0(void* self) {
+extern "C" void vtkTriangleFilter__PreservePolysOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PreservePolysOff();
 }
 
-extern "C" void vtkTriangleFilter__PassVertsOn__0(void* self) {
+extern "C" void vtkTriangleFilter__PassVertsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PassVertsOn();
 }
 
-extern "C" void vtkTriangleFilter__PassVertsOff__0(void* self) {
+extern "C" void vtkTriangleFilter__PassVertsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PassVertsOff();
 }
 
-extern "C" void vtkTriangleFilter__SetPassVerts__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangleFilter__SetPassVerts__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->SetPassVerts(_arg);
 }
 
-extern "C" int32_t vtkTriangleFilter__GetPassVerts__0(void* self) {
+extern "C" int32_t vtkTriangleFilter__GetPassVerts__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->GetPassVerts();
 }
 
-extern "C" void vtkTriangleFilter__PassLinesOn__0(void* self) {
+extern "C" void vtkTriangleFilter__PassLinesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PassLinesOn();
 }
 
-extern "C" void vtkTriangleFilter__PassLinesOff__0(void* self) {
+extern "C" void vtkTriangleFilter__PassLinesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->PassLinesOff();
 }
 
-extern "C" void vtkTriangleFilter__SetPassLines__0(void* self, int32_t _arg) {
+extern "C" void vtkTriangleFilter__SetPassLines__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->SetPassLines(_arg);
 }
 
-extern "C" int32_t vtkTriangleFilter__GetPassLines__0(void* self) {
+extern "C" int32_t vtkTriangleFilter__GetPassLines__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->GetPassLines();
 }
 
-extern "C" void vtkTriangleFilter__SetTolerance__0(void* self, double _arg) {
+extern "C" void vtkTriangleFilter__SetTolerance__0(void* self, double _arg) noexcept {
   (void)self;
   static_cast<vtkTriangleFilter*>(self)->SetTolerance(_arg);
 }
 
-extern "C" double vtkTriangleFilter__GetTolerance__0(void* self) {
+extern "C" double vtkTriangleFilter__GetTolerance__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkTriangleFilter*>(self)->GetTolerance();
 }

@@ -6,76 +6,76 @@
 #include "vtkScalarBarRepresentation.h"
 #include <string>
 
-extern "C" void* vtkScalarBarWidget__vtk_wrap_new() { return static_cast<void*>(vtkScalarBarWidget::New()); }
+extern "C" void* vtkScalarBarWidget__vtk_wrap_new() noexcept { return static_cast<void*>(vtkScalarBarWidget::New()); }
 
-extern "C" int32_t vtkScalarBarWidget__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkScalarBarWidget__IsTypeOf__0(const char* type_) noexcept {
   return vtkScalarBarWidget::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkScalarBarWidget__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkScalarBarWidget__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarBarWidget*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkScalarBarWidget__SafeDownCast__0(void* o) {
+extern "C" void* vtkScalarBarWidget__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkScalarBarWidget::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkScalarBarWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkScalarBarWidget__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkScalarBarWidget::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkScalarBarWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkScalarBarWidget__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkScalarBarWidget*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkScalarBarWidget__SetRepresentation__0(void* self, void* rep) {
+extern "C" void vtkScalarBarWidget__SetRepresentation__0(void* self, void* rep) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->SetRepresentation(static_cast<vtkScalarBarRepresentation*>(rep));
 }
 
-extern "C" void* vtkScalarBarWidget__GetScalarBarRepresentation__0(void* self) {
+extern "C" void* vtkScalarBarWidget__GetScalarBarRepresentation__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarBarWidget*>(self)->GetScalarBarRepresentation());
 }
 
-extern "C" void vtkScalarBarWidget__SetScalarBarActor__0(void* self, void* actor) {
+extern "C" void vtkScalarBarWidget__SetScalarBarActor__0(void* self, void* actor) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->SetScalarBarActor(static_cast<vtkScalarBarActor*>(actor));
 }
 
-extern "C" void* vtkScalarBarWidget__GetScalarBarActor__0(void* self) {
+extern "C" void* vtkScalarBarWidget__GetScalarBarActor__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkScalarBarWidget*>(self)->GetScalarBarActor());
 }
 
-extern "C" void vtkScalarBarWidget__SetRepositionable__0(void* self, int32_t _arg) {
+extern "C" void vtkScalarBarWidget__SetRepositionable__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->SetRepositionable(_arg);
 }
 
-extern "C" int32_t vtkScalarBarWidget__GetRepositionable__0(void* self) {
+extern "C" int32_t vtkScalarBarWidget__GetRepositionable__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarWidget*>(self)->GetRepositionable();
 }
 
-extern "C" void vtkScalarBarWidget__RepositionableOn__0(void* self) {
+extern "C" void vtkScalarBarWidget__RepositionableOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->RepositionableOn();
 }
 
-extern "C" void vtkScalarBarWidget__RepositionableOff__0(void* self) {
+extern "C" void vtkScalarBarWidget__RepositionableOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->RepositionableOff();
 }
 
-extern "C" void vtkScalarBarWidget__CreateDefaultRepresentation__0(void* self) {
+extern "C" void vtkScalarBarWidget__CreateDefaultRepresentation__0(void* self) noexcept {
   (void)self;
   static_cast<vtkScalarBarWidget*>(self)->CreateDefaultRepresentation();
 }
 
-extern "C" int32_t vtkScalarBarWidget__GetProcessEvents__0(void* self) {
+extern "C" int32_t vtkScalarBarWidget__GetProcessEvents__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkScalarBarWidget*>(self)->GetProcessEvents();
 }

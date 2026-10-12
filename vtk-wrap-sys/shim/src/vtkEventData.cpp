@@ -6,44 +6,44 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkEventData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkEventData__IsTypeOf__0(const char* type_) noexcept {
   return vtkEventData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkEventData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkEventData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEventData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkEventData__SafeDownCast__0(void* o) {
+extern "C" void* vtkEventData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkEventData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkEventData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkEventData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkEventData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkEventData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkEventData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkEventData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkEventData__GetType__0(void* self) {
+extern "C" int32_t vtkEventData__GetType__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkEventData*>(self)->GetType();
 }
 
-extern "C" void vtkEventData__SetType__0(void* self, int32_t val) {
+extern "C" void vtkEventData__SetType__0(void* self, int32_t val) noexcept {
   (void)self;
   static_cast<vtkEventData*>(self)->SetType(val);
 }
 
-extern "C" void* vtkEventData__GetAsEventDataForDevice__0(void* self) {
+extern "C" void* vtkEventData__GetAsEventDataForDevice__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkEventData*>(self)->GetAsEventDataForDevice());
 }
 
-extern "C" void* vtkEventData__GetAsEventDataDevice3D__0(void* self) {
+extern "C" void* vtkEventData__GetAsEventDataDevice3D__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkEventData*>(self)->GetAsEventDataDevice3D());
 }

@@ -4,61 +4,61 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAMRMetaData__vtk_wrap_new() { return static_cast<void*>(vtkAMRMetaData::New()); }
+extern "C" void* vtkAMRMetaData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAMRMetaData::New()); }
 
-extern "C" int32_t vtkAMRMetaData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAMRMetaData__IsTypeOf__0(const char* type_) noexcept {
   return vtkAMRMetaData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAMRMetaData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAMRMetaData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAMRMetaData__SafeDownCast__0(void* o) {
+extern "C" void* vtkAMRMetaData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAMRMetaData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAMRMetaData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAMRMetaData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAMRMetaData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAMRMetaData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAMRMetaData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkAMRMetaData__GetGridDescription__0(void* self) {
+extern "C" int32_t vtkAMRMetaData__GetGridDescription__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetGridDescription();
 }
 
-extern "C" void vtkAMRMetaData__SetGridDescription__0(void* self, int32_t description) {
+extern "C" void vtkAMRMetaData__SetGridDescription__0(void* self, int32_t description) noexcept {
   (void)self;
   static_cast<vtkAMRMetaData*>(self)->SetGridDescription(description);
 }
 
-extern "C" uint32_t vtkAMRMetaData__GetNumberOfLevels__0(void* self) {
+extern "C" uint32_t vtkAMRMetaData__GetNumberOfLevels__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetNumberOfLevels();
 }
 
-extern "C" uint32_t vtkAMRMetaData__GetNumberOfBlocks__0(void* self, uint32_t level) {
+extern "C" uint32_t vtkAMRMetaData__GetNumberOfBlocks__0(void* self, uint32_t level) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetNumberOfBlocks(level);
 }
 
-extern "C" uint32_t vtkAMRMetaData__GetNumberOfBlocks__1(void* self) {
+extern "C" uint32_t vtkAMRMetaData__GetNumberOfBlocks__1(void* self) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetNumberOfBlocks();
 }
 
-extern "C" int32_t vtkAMRMetaData__GetAbsoluteBlockIndex__0(void* self, uint32_t level, uint32_t relativeBlockIdx) {
+extern "C" int32_t vtkAMRMetaData__GetAbsoluteBlockIndex__0(void* self, uint32_t level, uint32_t relativeBlockIdx) noexcept {
   (void)self;
   return static_cast<vtkAMRMetaData*>(self)->GetAbsoluteBlockIndex(level, relativeBlockIdx);
 }
 
-extern "C" void vtkAMRMetaData__DeepCopy__0(void* self, void* other) {
+extern "C" void vtkAMRMetaData__DeepCopy__0(void* self, void* other) noexcept {
   (void)self;
   static_cast<vtkAMRMetaData*>(self)->DeepCopy(static_cast<vtkAMRMetaData*>(other));
 }

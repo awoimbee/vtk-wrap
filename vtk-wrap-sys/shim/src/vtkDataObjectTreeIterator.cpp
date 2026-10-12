@@ -6,101 +6,101 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDataObjectTreeIterator__vtk_wrap_new() { return static_cast<void*>(vtkDataObjectTreeIterator::New()); }
+extern "C" void* vtkDataObjectTreeIterator__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataObjectTreeIterator::New()); }
 
-extern "C" int32_t vtkDataObjectTreeIterator__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDataObjectTreeIterator__IsTypeOf__0(const char* type_) noexcept {
   return vtkDataObjectTreeIterator::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDataObjectTreeIterator__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDataObjectTreeIterator__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDataObjectTreeIterator__SafeDownCast__0(void* o) {
+extern "C" void* vtkDataObjectTreeIterator__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDataObjectTreeIterator::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDataObjectTreeIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDataObjectTreeIterator__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDataObjectTreeIterator::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDataObjectTreeIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDataObjectTreeIterator__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkDataObjectTreeIterator__GoToFirstItem__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__GoToFirstItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->GoToFirstItem();
 }
 
-extern "C" void vtkDataObjectTreeIterator__GoToNextItem__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__GoToNextItem__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->GoToNextItem();
 }
 
-extern "C" int32_t vtkDataObjectTreeIterator__IsDoneWithTraversal__0(void* self) {
+extern "C" int32_t vtkDataObjectTreeIterator__IsDoneWithTraversal__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->IsDoneWithTraversal();
 }
 
-extern "C" void* vtkDataObjectTreeIterator__GetCurrentDataObject__0(void* self) {
+extern "C" void* vtkDataObjectTreeIterator__GetCurrentDataObject__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTreeIterator*>(self)->GetCurrentDataObject());
 }
 
-extern "C" void* vtkDataObjectTreeIterator__GetCurrentMetaData__0(void* self) {
+extern "C" void* vtkDataObjectTreeIterator__GetCurrentMetaData__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkDataObjectTreeIterator*>(self)->GetCurrentMetaData());
 }
 
-extern "C" int32_t vtkDataObjectTreeIterator__HasCurrentMetaData__0(void* self) {
+extern "C" int32_t vtkDataObjectTreeIterator__HasCurrentMetaData__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->HasCurrentMetaData();
 }
 
-extern "C" uint32_t vtkDataObjectTreeIterator__GetCurrentFlatIndex__0(void* self) {
+extern "C" uint32_t vtkDataObjectTreeIterator__GetCurrentFlatIndex__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->GetCurrentFlatIndex();
 }
 
-extern "C" void vtkDataObjectTreeIterator__SetVisitOnlyLeaves__0(void* self, int32_t _arg) {
+extern "C" void vtkDataObjectTreeIterator__SetVisitOnlyLeaves__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->SetVisitOnlyLeaves(_arg);
 }
 
-extern "C" int32_t vtkDataObjectTreeIterator__GetVisitOnlyLeaves__0(void* self) {
+extern "C" int32_t vtkDataObjectTreeIterator__GetVisitOnlyLeaves__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->GetVisitOnlyLeaves();
 }
 
-extern "C" void vtkDataObjectTreeIterator__VisitOnlyLeavesOn__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__VisitOnlyLeavesOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->VisitOnlyLeavesOn();
 }
 
-extern "C" void vtkDataObjectTreeIterator__VisitOnlyLeavesOff__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__VisitOnlyLeavesOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->VisitOnlyLeavesOff();
 }
 
-extern "C" void vtkDataObjectTreeIterator__SetTraverseSubTree__0(void* self, int32_t _arg) {
+extern "C" void vtkDataObjectTreeIterator__SetTraverseSubTree__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->SetTraverseSubTree(_arg);
 }
 
-extern "C" int32_t vtkDataObjectTreeIterator__GetTraverseSubTree__0(void* self) {
+extern "C" int32_t vtkDataObjectTreeIterator__GetTraverseSubTree__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkDataObjectTreeIterator*>(self)->GetTraverseSubTree();
 }
 
-extern "C" void vtkDataObjectTreeIterator__TraverseSubTreeOn__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__TraverseSubTreeOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->TraverseSubTreeOn();
 }
 
-extern "C" void vtkDataObjectTreeIterator__TraverseSubTreeOff__0(void* self) {
+extern "C" void vtkDataObjectTreeIterator__TraverseSubTreeOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkDataObjectTreeIterator*>(self)->TraverseSubTreeOff();
 }

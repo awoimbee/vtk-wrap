@@ -5,33 +5,33 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" int32_t vtkInformationDataObjectMetaDataKey__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkInformationDataObjectMetaDataKey__IsTypeOf__0(const char* type_) noexcept {
   return vtkInformationDataObjectMetaDataKey::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkInformationDataObjectMetaDataKey__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkInformationDataObjectMetaDataKey__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationDataObjectMetaDataKey*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkInformationDataObjectMetaDataKey__SafeDownCast__0(void* o) {
+extern "C" void* vtkInformationDataObjectMetaDataKey__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkInformationDataObjectMetaDataKey::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkInformationDataObjectMetaDataKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkInformationDataObjectMetaDataKey__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkInformationDataObjectMetaDataKey::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkInformationDataObjectMetaDataKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkInformationDataObjectMetaDataKey__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkInformationDataObjectMetaDataKey*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkInformationDataObjectMetaDataKey__MakeKey__0(const char* name, const char* location) {
+extern "C" void* vtkInformationDataObjectMetaDataKey__MakeKey__0(const char* name, const char* location) noexcept {
   return static_cast<void*>(vtkInformationDataObjectMetaDataKey::MakeKey(name, location));
 }
 
-extern "C" void vtkInformationDataObjectMetaDataKey__CopyDefaultInformation__0(void* self, void* request, void* fromInfo, void* toInfo) {
+extern "C" void vtkInformationDataObjectMetaDataKey__CopyDefaultInformation__0(void* self, void* request, void* fromInfo, void* toInfo) noexcept {
   (void)self;
   static_cast<vtkInformationDataObjectMetaDataKey*>(self)->CopyDefaultInformation(static_cast<vtkInformation*>(request), static_cast<vtkInformation*>(fromInfo), static_cast<vtkInformation*>(toInfo));
 }

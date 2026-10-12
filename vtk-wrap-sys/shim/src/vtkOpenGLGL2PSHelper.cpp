@@ -12,104 +12,104 @@
 #include "vtkTransformFeedback.h"
 #include <string>
 
-extern "C" void* vtkOpenGLGL2PSHelper__vtk_wrap_new() { return static_cast<void*>(vtkOpenGLGL2PSHelper::New()); }
+extern "C" void* vtkOpenGLGL2PSHelper__vtk_wrap_new() noexcept { return static_cast<void*>(vtkOpenGLGL2PSHelper::New()); }
 
-extern "C" int32_t vtkOpenGLGL2PSHelper__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkOpenGLGL2PSHelper__IsTypeOf__0(const char* type_) noexcept {
   return vtkOpenGLGL2PSHelper::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkOpenGLGL2PSHelper__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkOpenGLGL2PSHelper__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGL2PSHelper*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkOpenGLGL2PSHelper__SafeDownCast__0(void* o) {
+extern "C" void* vtkOpenGLGL2PSHelper__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkOpenGLGL2PSHelper::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkOpenGLGL2PSHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkOpenGLGL2PSHelper__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkOpenGLGL2PSHelper::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkOpenGLGL2PSHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkOpenGLGL2PSHelper__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGL2PSHelper*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkOpenGLGL2PSHelper__GetInstance__0() {
+extern "C" void* vtkOpenGLGL2PSHelper__GetInstance__0() noexcept {
   return static_cast<void*>(vtkOpenGLGL2PSHelper::GetInstance());
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__SetInstance__0(void* arg0) {
+extern "C" void vtkOpenGLGL2PSHelper__SetInstance__0(void* arg0) noexcept {
   vtkOpenGLGL2PSHelper::SetInstance(static_cast<vtkOpenGLGL2PSHelper*>(arg0));
 }
 
-extern "C" void* vtkOpenGLGL2PSHelper__GetRenderWindow__0(void* self) {
+extern "C" void* vtkOpenGLGL2PSHelper__GetRenderWindow__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkOpenGLGL2PSHelper*>(self)->GetRenderWindow());
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__SetPointSize__0(void* self, float _arg) {
+extern "C" void vtkOpenGLGL2PSHelper__SetPointSize__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->SetPointSize(_arg);
 }
 
-extern "C" float vtkOpenGLGL2PSHelper__GetPointSize__0(void* self) {
+extern "C" float vtkOpenGLGL2PSHelper__GetPointSize__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGL2PSHelper*>(self)->GetPointSize();
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__SetLineWidth__0(void* self, float _arg) {
+extern "C" void vtkOpenGLGL2PSHelper__SetLineWidth__0(void* self, float _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->SetLineWidth(_arg);
 }
 
-extern "C" float vtkOpenGLGL2PSHelper__GetLineWidth__0(void* self) {
+extern "C" float vtkOpenGLGL2PSHelper__GetLineWidth__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGL2PSHelper*>(self)->GetLineWidth();
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__SetLineStipple__0(void* self, uint16_t _arg) {
+extern "C" void vtkOpenGLGL2PSHelper__SetLineStipple__0(void* self, uint16_t _arg) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->SetLineStipple(_arg);
 }
 
-extern "C" uint16_t vtkOpenGLGL2PSHelper__GetLineStipple__0(void* self) {
+extern "C" uint16_t vtkOpenGLGL2PSHelper__GetLineStipple__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkOpenGLGL2PSHelper*>(self)->GetLineStipple();
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__0(void* self, void* tfc, void* ren, void* act) {
+extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__0(void* self, void* tfc, void* ren, void* act) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->ProcessTransformFeedback(static_cast<vtkTransformFeedback*>(tfc), static_cast<vtkRenderer*>(ren), static_cast<vtkActor*>(act));
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__1(void* self, void* tfc, void* ren, uint8_t* col) {
+extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__1(void* self, void* tfc, void* ren, uint8_t* col) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->ProcessTransformFeedback(static_cast<vtkTransformFeedback*>(tfc), static_cast<vtkRenderer*>(ren), col);
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__2(void* self, void* tfc, void* ren, float* col) {
+extern "C" void vtkOpenGLGL2PSHelper__ProcessTransformFeedback__2(void* self, void* tfc, void* ren, float* col) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->ProcessTransformFeedback(static_cast<vtkTransformFeedback*>(tfc), static_cast<vtkRenderer*>(ren), col);
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__DrawString__0(void* self, const char* str, void* tprop, double* pos, double backgroundDepth, void* ren) {
+extern "C" void vtkOpenGLGL2PSHelper__DrawString__0(void* self, const char* str, void* tprop, double* pos, double backgroundDepth, void* ren) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->DrawString(std::string(str), static_cast<vtkTextProperty*>(tprop), pos, backgroundDepth, static_cast<vtkRenderer*>(ren));
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__DrawPath__0(void* self, void* path, double* rasterPos, double* windowPos, uint8_t* rgba, double* scale, double rotateAngle, float strokeWidth, const char* label) {
+extern "C" void vtkOpenGLGL2PSHelper__DrawPath__0(void* self, void* path, double* rasterPos, double* windowPos, uint8_t* rgba, double* scale, double rotateAngle, float strokeWidth, const char* label) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->DrawPath(static_cast<vtkPath*>(path), rasterPos, windowPos, rgba, scale, rotateAngle, strokeWidth, label);
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__Draw3DPath__0(void* self, void* path, void* actorMatrix, double* rasterPos, uint8_t* actorColor, void* ren, const char* label) {
+extern "C" void vtkOpenGLGL2PSHelper__Draw3DPath__0(void* self, void* path, void* actorMatrix, double* rasterPos, uint8_t* actorColor, void* ren, const char* label) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->Draw3DPath(static_cast<vtkPath*>(path), static_cast<vtkMatrix4x4*>(actorMatrix), rasterPos, actorColor, static_cast<vtkRenderer*>(ren), label);
 }
 
-extern "C" void vtkOpenGLGL2PSHelper__DrawImage__0(void* self, void* image, double* pos) {
+extern "C" void vtkOpenGLGL2PSHelper__DrawImage__0(void* self, void* image, double* pos) noexcept {
   (void)self;
   static_cast<vtkOpenGLGL2PSHelper*>(self)->DrawImage(static_cast<vtkImageData*>(image), pos);
 }

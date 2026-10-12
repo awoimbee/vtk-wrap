@@ -4,56 +4,56 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPolyDataStreamer__vtk_wrap_new() { return static_cast<void*>(vtkPolyDataStreamer::New()); }
+extern "C" void* vtkPolyDataStreamer__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyDataStreamer::New()); }
 
-extern "C" int32_t vtkPolyDataStreamer__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPolyDataStreamer__IsTypeOf__0(const char* type_) noexcept {
   return vtkPolyDataStreamer::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPolyDataStreamer__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPolyDataStreamer__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataStreamer*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPolyDataStreamer__SafeDownCast__0(void* o) {
+extern "C" void* vtkPolyDataStreamer__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPolyDataStreamer::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPolyDataStreamer__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPolyDataStreamer__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPolyDataStreamer::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPolyDataStreamer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPolyDataStreamer__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPolyDataStreamer*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkPolyDataStreamer__SetNumberOfStreamDivisions__0(void* self, int32_t num) {
+extern "C" void vtkPolyDataStreamer__SetNumberOfStreamDivisions__0(void* self, int32_t num) noexcept {
   (void)self;
   static_cast<vtkPolyDataStreamer*>(self)->SetNumberOfStreamDivisions(num);
 }
 
-extern "C" int32_t vtkPolyDataStreamer__GetNumberOfStreamDivisions__0(void* self) {
+extern "C" int32_t vtkPolyDataStreamer__GetNumberOfStreamDivisions__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolyDataStreamer*>(self)->GetNumberOfStreamDivisions();
 }
 
-extern "C" void vtkPolyDataStreamer__SetColorByPiece__0(void* self, int32_t _arg) {
+extern "C" void vtkPolyDataStreamer__SetColorByPiece__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkPolyDataStreamer*>(self)->SetColorByPiece(_arg);
 }
 
-extern "C" int32_t vtkPolyDataStreamer__GetColorByPiece__0(void* self) {
+extern "C" int32_t vtkPolyDataStreamer__GetColorByPiece__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkPolyDataStreamer*>(self)->GetColorByPiece();
 }
 
-extern "C" void vtkPolyDataStreamer__ColorByPieceOn__0(void* self) {
+extern "C" void vtkPolyDataStreamer__ColorByPieceOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPolyDataStreamer*>(self)->ColorByPieceOn();
 }
 
-extern "C" void vtkPolyDataStreamer__ColorByPieceOff__0(void* self) {
+extern "C" void vtkPolyDataStreamer__ColorByPieceOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkPolyDataStreamer*>(self)->ColorByPieceOff();
 }

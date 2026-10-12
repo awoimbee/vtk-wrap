@@ -4,26 +4,26 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkDefaultPass__vtk_wrap_new() { return static_cast<void*>(vtkDefaultPass::New()); }
+extern "C" void* vtkDefaultPass__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDefaultPass::New()); }
 
-extern "C" int32_t vtkDefaultPass__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkDefaultPass__IsTypeOf__0(const char* type_) noexcept {
   return vtkDefaultPass::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkDefaultPass__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkDefaultPass__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDefaultPass*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkDefaultPass__SafeDownCast__0(void* o) {
+extern "C" void* vtkDefaultPass__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkDefaultPass::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkDefaultPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkDefaultPass__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkDefaultPass::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkDefaultPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkDefaultPass__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkDefaultPass*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

@@ -6,181 +6,181 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkGeneralTransform__vtk_wrap_new() { return static_cast<void*>(vtkGeneralTransform::New()); }
+extern "C" void* vtkGeneralTransform__vtk_wrap_new() noexcept { return static_cast<void*>(vtkGeneralTransform::New()); }
 
-extern "C" int32_t vtkGeneralTransform__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkGeneralTransform__IsTypeOf__0(const char* type_) noexcept {
   return vtkGeneralTransform::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkGeneralTransform__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkGeneralTransform__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkGeneralTransform__SafeDownCast__0(void* o) {
+extern "C" void* vtkGeneralTransform__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkGeneralTransform::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkGeneralTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkGeneralTransform__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkGeneralTransform::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkGeneralTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkGeneralTransform__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkGeneralTransform__Identity__0(void* self) {
+extern "C" void vtkGeneralTransform__Identity__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Identity();
 }
 
-extern "C" void vtkGeneralTransform__Inverse__0(void* self) {
+extern "C" void vtkGeneralTransform__Inverse__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Inverse();
 }
 
-extern "C" void vtkGeneralTransform__Translate__0(void* self, double x, double y, double z) {
+extern "C" void vtkGeneralTransform__Translate__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Translate(x, y, z);
 }
 
-extern "C" void vtkGeneralTransform__Translate__1(void* self, const double* x) {
+extern "C" void vtkGeneralTransform__Translate__1(void* self, const double* x) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Translate(x);
 }
 
-extern "C" void vtkGeneralTransform__Translate__2(void* self, const float* x) {
+extern "C" void vtkGeneralTransform__Translate__2(void* self, const float* x) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Translate(x);
 }
 
-extern "C" void vtkGeneralTransform__RotateWXYZ__0(void* self, double angle, double x, double y, double z) {
+extern "C" void vtkGeneralTransform__RotateWXYZ__0(void* self, double angle, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateWXYZ(angle, x, y, z);
 }
 
-extern "C" void vtkGeneralTransform__RotateWXYZ__1(void* self, double angle, const double* axis) {
+extern "C" void vtkGeneralTransform__RotateWXYZ__1(void* self, double angle, const double* axis) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateWXYZ(angle, axis);
 }
 
-extern "C" void vtkGeneralTransform__RotateWXYZ__2(void* self, double angle, const float* axis) {
+extern "C" void vtkGeneralTransform__RotateWXYZ__2(void* self, double angle, const float* axis) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateWXYZ(angle, axis);
 }
 
-extern "C" void vtkGeneralTransform__RotateX__0(void* self, double angle) {
+extern "C" void vtkGeneralTransform__RotateX__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateX(angle);
 }
 
-extern "C" void vtkGeneralTransform__RotateY__0(void* self, double angle) {
+extern "C" void vtkGeneralTransform__RotateY__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateY(angle);
 }
 
-extern "C" void vtkGeneralTransform__RotateZ__0(void* self, double angle) {
+extern "C" void vtkGeneralTransform__RotateZ__0(void* self, double angle) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->RotateZ(angle);
 }
 
-extern "C" void vtkGeneralTransform__Scale__0(void* self, double x, double y, double z) {
+extern "C" void vtkGeneralTransform__Scale__0(void* self, double x, double y, double z) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Scale(x, y, z);
 }
 
-extern "C" void vtkGeneralTransform__Scale__1(void* self, const double* s) {
+extern "C" void vtkGeneralTransform__Scale__1(void* self, const double* s) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Scale(s);
 }
 
-extern "C" void vtkGeneralTransform__Scale__2(void* self, const float* s) {
+extern "C" void vtkGeneralTransform__Scale__2(void* self, const float* s) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Scale(s);
 }
 
-extern "C" void vtkGeneralTransform__Concatenate__0(void* self, void* matrix) {
+extern "C" void vtkGeneralTransform__Concatenate__0(void* self, void* matrix) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Concatenate(static_cast<vtkMatrix4x4*>(matrix));
 }
 
-extern "C" void vtkGeneralTransform__Concatenate__1(void* self, const double* elements) {
+extern "C" void vtkGeneralTransform__Concatenate__1(void* self, const double* elements) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Concatenate(elements);
 }
 
-extern "C" void vtkGeneralTransform__Concatenate__2(void* self, void* transform) {
+extern "C" void vtkGeneralTransform__Concatenate__2(void* self, void* transform) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Concatenate(static_cast<vtkAbstractTransform*>(transform));
 }
 
-extern "C" void vtkGeneralTransform__PreMultiply__0(void* self) {
+extern "C" void vtkGeneralTransform__PreMultiply__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->PreMultiply();
 }
 
-extern "C" void vtkGeneralTransform__PostMultiply__0(void* self) {
+extern "C" void vtkGeneralTransform__PostMultiply__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->PostMultiply();
 }
 
-extern "C" int32_t vtkGeneralTransform__GetNumberOfConcatenatedTransforms__0(void* self) {
+extern "C" int32_t vtkGeneralTransform__GetNumberOfConcatenatedTransforms__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->GetNumberOfConcatenatedTransforms();
 }
 
-extern "C" void* vtkGeneralTransform__GetConcatenatedTransform__0(void* self, int32_t i) {
+extern "C" void* vtkGeneralTransform__GetConcatenatedTransform__0(void* self, int32_t i) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGeneralTransform*>(self)->GetConcatenatedTransform(i));
 }
 
-extern "C" void vtkGeneralTransform__SetInput__0(void* self, void* input) {
+extern "C" void vtkGeneralTransform__SetInput__0(void* self, void* input) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->SetInput(static_cast<vtkAbstractTransform*>(input));
 }
 
-extern "C" void* vtkGeneralTransform__GetInput__0(void* self) {
+extern "C" void* vtkGeneralTransform__GetInput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGeneralTransform*>(self)->GetInput());
 }
 
-extern "C" int32_t vtkGeneralTransform__GetInverseFlag__0(void* self) {
+extern "C" int32_t vtkGeneralTransform__GetInverseFlag__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->GetInverseFlag();
 }
 
-extern "C" void vtkGeneralTransform__Push__0(void* self) {
+extern "C" void vtkGeneralTransform__Push__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Push();
 }
 
-extern "C" void vtkGeneralTransform__Pop__0(void* self) {
+extern "C" void vtkGeneralTransform__Pop__0(void* self) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->Pop();
 }
 
-extern "C" void vtkGeneralTransform__InternalTransformPoint__0(void* self, const float* in_, float* out) {
+extern "C" void vtkGeneralTransform__InternalTransformPoint__0(void* self, const float* in_, float* out) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->InternalTransformPoint(in_, out);
 }
 
-extern "C" void vtkGeneralTransform__InternalTransformPoint__1(void* self, const double* in_, double* out) {
+extern "C" void vtkGeneralTransform__InternalTransformPoint__1(void* self, const double* in_, double* out) noexcept {
   (void)self;
   static_cast<vtkGeneralTransform*>(self)->InternalTransformPoint(in_, out);
 }
 
-extern "C" int32_t vtkGeneralTransform__CircuitCheck__0(void* self, void* transform) {
+extern "C" int32_t vtkGeneralTransform__CircuitCheck__0(void* self, void* transform) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->CircuitCheck(static_cast<vtkAbstractTransform*>(transform));
 }
 
-extern "C" void* vtkGeneralTransform__MakeTransform__0(void* self) {
+extern "C" void* vtkGeneralTransform__MakeTransform__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkGeneralTransform*>(self)->MakeTransform());
 }
 
-extern "C" unsigned long vtkGeneralTransform__GetMTime__0(void* self) {
+extern "C" unsigned long vtkGeneralTransform__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkGeneralTransform*>(self)->GetMTime();
 }

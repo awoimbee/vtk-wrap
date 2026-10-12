@@ -5,36 +5,36 @@
 #include "vtkRenderer.h"
 #include <string>
 
-extern "C" void* vtkWorldPointPicker__vtk_wrap_new() { return static_cast<void*>(vtkWorldPointPicker::New()); }
+extern "C" void* vtkWorldPointPicker__vtk_wrap_new() noexcept { return static_cast<void*>(vtkWorldPointPicker::New()); }
 
-extern "C" int32_t vtkWorldPointPicker__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkWorldPointPicker__IsTypeOf__0(const char* type_) noexcept {
   return vtkWorldPointPicker::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkWorldPointPicker__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkWorldPointPicker__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWorldPointPicker*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkWorldPointPicker__SafeDownCast__0(void* o) {
+extern "C" void* vtkWorldPointPicker__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkWorldPointPicker::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkWorldPointPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkWorldPointPicker__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkWorldPointPicker::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkWorldPointPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkWorldPointPicker__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkWorldPointPicker*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" int32_t vtkWorldPointPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) {
+extern "C" int32_t vtkWorldPointPicker__Pick__0(void* self, double selectionX, double selectionY, double selectionZ, void* renderer) noexcept {
   (void)self;
   return static_cast<vtkWorldPointPicker*>(self)->Pick(selectionX, selectionY, selectionZ, static_cast<vtkRenderer*>(renderer));
 }
 
-extern "C" int32_t vtkWorldPointPicker__Pick__1(void* self, double* selectionPt, void* renderer) {
+extern "C" int32_t vtkWorldPointPicker__Pick__1(void* self, double* selectionPt, void* renderer) noexcept {
   (void)self;
   return static_cast<vtkWorldPointPicker*>(self)->Pick(selectionPt, static_cast<vtkRenderer*>(renderer));
 }

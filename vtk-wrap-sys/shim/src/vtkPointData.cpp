@@ -4,30 +4,30 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkPointData__vtk_wrap_new() { return static_cast<void*>(vtkPointData::New()); }
+extern "C" void* vtkPointData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPointData::New()); }
 
-extern "C" void* vtkPointData__ExtendedNew__0() {
+extern "C" void* vtkPointData__ExtendedNew__0() noexcept {
   return static_cast<void*>(vtkPointData::ExtendedNew());
 }
 
-extern "C" int32_t vtkPointData__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkPointData__IsTypeOf__0(const char* type_) noexcept {
   return vtkPointData::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkPointData__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkPointData__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointData*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkPointData__SafeDownCast__0(void* o) {
+extern "C" void* vtkPointData__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkPointData::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkPointData__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkPointData__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkPointData::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkPointData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkPointData__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkPointData*>(self)->GetNumberOfGenerationsFromBase(type_);
 }

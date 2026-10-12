@@ -12,155 +12,155 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
-extern "C" void* vtkBoxClipDataSet__vtk_wrap_new() { return static_cast<void*>(vtkBoxClipDataSet::New()); }
+extern "C" void* vtkBoxClipDataSet__vtk_wrap_new() noexcept { return static_cast<void*>(vtkBoxClipDataSet::New()); }
 
-extern "C" int32_t vtkBoxClipDataSet__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkBoxClipDataSet__IsTypeOf__0(const char* type_) noexcept {
   return vtkBoxClipDataSet::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkBoxClipDataSet__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkBoxClipDataSet__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkBoxClipDataSet__SafeDownCast__0(void* o) {
+extern "C" void* vtkBoxClipDataSet__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkBoxClipDataSet::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkBoxClipDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkBoxClipDataSet__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkBoxClipDataSet::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkBoxClipDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkBoxClipDataSet__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void vtkBoxClipDataSet__SetBoxClip__0(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) {
+extern "C" void vtkBoxClipDataSet__SetBoxClip__0(void* self, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->SetBoxClip(xmin, xmax, ymin, ymax, zmin, zmax);
 }
 
-extern "C" void vtkBoxClipDataSet__SetGenerateClipScalars__0(void* self, int32_t _arg) {
+extern "C" void vtkBoxClipDataSet__SetGenerateClipScalars__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->SetGenerateClipScalars(_arg);
 }
 
-extern "C" int32_t vtkBoxClipDataSet__GetGenerateClipScalars__0(void* self) {
+extern "C" int32_t vtkBoxClipDataSet__GetGenerateClipScalars__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetGenerateClipScalars();
 }
 
-extern "C" void vtkBoxClipDataSet__GenerateClipScalarsOn__0(void* self) {
+extern "C" void vtkBoxClipDataSet__GenerateClipScalarsOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->GenerateClipScalarsOn();
 }
 
-extern "C" void vtkBoxClipDataSet__GenerateClipScalarsOff__0(void* self) {
+extern "C" void vtkBoxClipDataSet__GenerateClipScalarsOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->GenerateClipScalarsOff();
 }
 
-extern "C" void vtkBoxClipDataSet__SetGenerateClippedOutput__0(void* self, int32_t _arg) {
+extern "C" void vtkBoxClipDataSet__SetGenerateClippedOutput__0(void* self, int32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->SetGenerateClippedOutput(_arg);
 }
 
-extern "C" int32_t vtkBoxClipDataSet__GetGenerateClippedOutput__0(void* self) {
+extern "C" int32_t vtkBoxClipDataSet__GetGenerateClippedOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetGenerateClippedOutput();
 }
 
-extern "C" void vtkBoxClipDataSet__GenerateClippedOutputOn__0(void* self) {
+extern "C" void vtkBoxClipDataSet__GenerateClippedOutputOn__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->GenerateClippedOutputOn();
 }
 
-extern "C" void vtkBoxClipDataSet__GenerateClippedOutputOff__0(void* self) {
+extern "C" void vtkBoxClipDataSet__GenerateClippedOutputOff__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->GenerateClippedOutputOff();
 }
 
-extern "C" void* vtkBoxClipDataSet__GetClippedOutput__0(void* self) {
+extern "C" void* vtkBoxClipDataSet__GetClippedOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBoxClipDataSet*>(self)->GetClippedOutput());
 }
 
-extern "C" int32_t vtkBoxClipDataSet__GetNumberOfOutputs__0(void* self) {
+extern "C" int32_t vtkBoxClipDataSet__GetNumberOfOutputs__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetNumberOfOutputs();
 }
 
-extern "C" void vtkBoxClipDataSet__SetLocator__0(void* self, void* locator) {
+extern "C" void vtkBoxClipDataSet__SetLocator__0(void* self, void* locator) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->SetLocator(static_cast<vtkIncrementalPointLocator*>(locator));
 }
 
-extern "C" void* vtkBoxClipDataSet__GetLocator__0(void* self) {
+extern "C" void* vtkBoxClipDataSet__GetLocator__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkBoxClipDataSet*>(self)->GetLocator());
 }
 
-extern "C" void vtkBoxClipDataSet__CreateDefaultLocator__0(void* self) {
+extern "C" void vtkBoxClipDataSet__CreateDefaultLocator__0(void* self) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->CreateDefaultLocator();
 }
 
-extern "C" unsigned long vtkBoxClipDataSet__GetMTime__0(void* self) {
+extern "C" unsigned long vtkBoxClipDataSet__GetMTime__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetMTime();
 }
 
-extern "C" uint32_t vtkBoxClipDataSet__GetOrientation__0(void* self) {
+extern "C" uint32_t vtkBoxClipDataSet__GetOrientation__0(void* self) noexcept {
   (void)self;
   return static_cast<vtkBoxClipDataSet*>(self)->GetOrientation();
 }
 
-extern "C" void vtkBoxClipDataSet__SetOrientation__0(void* self, uint32_t _arg) {
+extern "C" void vtkBoxClipDataSet__SetOrientation__0(void* self, uint32_t _arg) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->SetOrientation(_arg);
 }
 
-extern "C" void vtkBoxClipDataSet__InterpolateEdge__0(void* attributes, int64_t toId, int64_t fromId1, int64_t fromId2, double t) {
+extern "C" void vtkBoxClipDataSet__InterpolateEdge__0(void* attributes, int64_t toId, int64_t fromId1, int64_t fromId2, double t) noexcept {
   vtkBoxClipDataSet::InterpolateEdge(static_cast<vtkDataSetAttributes*>(attributes), toId, fromId1, fromId2, t);
 }
 
-extern "C" void vtkBoxClipDataSet__ClipBox__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipBox__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipBox(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(tets), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipHexahedron__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipHexahedron__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipHexahedron(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(tets), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipBox2D__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipBox2D__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipBox2D(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(tets), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipHexahedron2D__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipHexahedron2D__0(void* self, void* newPoints, void* cell, void* locator, void* tets, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipHexahedron2D(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(tets), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipBox1D__0(void* self, void* newPoints, void* cell, void* locator, void* lines, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipBox1D__0(void* self, void* newPoints, void* cell, void* locator, void* lines, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipBox1D(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(lines), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipHexahedron1D__0(void* self, void* newPoints, void* cell, void* locator, void* lines, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipHexahedron1D__0(void* self, void* newPoints, void* cell, void* locator, void* lines, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipHexahedron1D(static_cast<vtkPoints*>(newPoints), static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(lines), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipBox0D__0(void* self, void* cell, void* locator, void* verts, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipBox0D__0(void* self, void* cell, void* locator, void* verts, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipBox0D(static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }
 
-extern "C" void vtkBoxClipDataSet__ClipHexahedron0D__0(void* self, void* cell, void* locator, void* verts, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) {
+extern "C" void vtkBoxClipDataSet__ClipHexahedron0D__0(void* self, void* cell, void* locator, void* verts, void* inPD, void* outPD, void* inCD, int64_t cellId, void* outCD) noexcept {
   (void)self;
   static_cast<vtkBoxClipDataSet*>(self)->ClipHexahedron0D(static_cast<vtkGenericCell*>(cell), static_cast<vtkIncrementalPointLocator*>(locator), static_cast<vtkCellArray*>(verts), static_cast<vtkPointData*>(inPD), static_cast<vtkPointData*>(outPD), static_cast<vtkCellData*>(inCD), cellId, static_cast<vtkCellData*>(outCD));
 }

@@ -3,7 +3,8 @@
 //! For every wrapped method we emit a tiny `extern "C"` function that casts the
 //! opaque `void *` back to the concrete VTK type and performs the call.  The
 //! bodies are deliberately trivial so that the C++ compiler keeps the call
-//! overhead identical to a hand written program.
+//! overhead identical to a hand written program. Each C entry point is noexcept
+//! so native exceptions terminate rather than unwinding across the Rust C ABI.
 
 use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Write as _;
@@ -54,7 +55,9 @@ fn c_return_expr(ty: &Ty, call: &str) -> String {
     match ty {
         Ty::StdString => format!("return vtk_wrap_strdup(({call}).c_str());"),
         Ty::Object(_) => format!("return static_cast<void*>({call});"),
-        Ty::SmartObject(_) => format!("return static_cast<void*>(({call}).GetPointer());"),
+        Ty::SmartObject(_) => format!(
+            "auto result = {call};\n  auto* ptr = result.GetPointer();\n  if (ptr) {{ ptr->Register(nullptr); }}\n  return static_cast<void*>(ptr);"
+        ),
         Ty::RawPtr => format!("return const_cast<void*>({call});"),
         _ => format!("return {call};"),
     }
@@ -75,7 +78,7 @@ fn emit_method(out: &mut String, class: &Class, m: &Method) {
     let cret = ret.map(|t| t.c_return()).unwrap_or_else(|| "void".into());
     let _ = writeln!(
         out,
-        "extern \"C\" {cret} {}({}) {{",
+        "extern \"C\" {cret} {}({}) noexcept {{",
         m.c_name,
         c_param_list(m)
     );
@@ -124,7 +127,7 @@ pub fn emit_class_cpp(class: &Class, headers: &BTreeMap<String, String>) -> Stri
     if let Some(expr) = &class.construct_expr {
         let _ = writeln!(
             out,
-            "extern \"C\" void* {}() {{ return static_cast<void*>({expr}); }}\n",
+            "extern \"C\" void* {}() noexcept {{ return static_cast<void*>({expr}); }}\n",
             ctor_c_name(&class.name)
         );
     }
@@ -211,4 +214,44 @@ target_link_libraries(vtk_wrap_link_probe PRIVATE vtk_wrap_shim)
     );
     let _ = writeln!(out, "install(TARGETS vtk_wrap_shim LIBRARY DESTINATION lib ARCHIVE DESTINATION lib RUNTIME DESTINATION bin)");
     out
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn smart_pointer_is_retained_before_leaving_the_shim() {
+        let code = c_return_expr(&Ty::SmartObject("vtkObject".into()), "make_object()");
+        assert!(code.contains("auto result = make_object();"));
+        assert!(code.contains("if (ptr) { ptr->Register(nullptr); }"));
+        assert!(code.find("Register").unwrap() < code.find("return static_cast").unwrap());
+        assert!(!code.contains("(make_object()).GetPointer()"));
+    }
+
+    #[test]
+    fn constructors_and_methods_cannot_unwind_across_ffi() {
+        let class = Class {
+            name: "vtkTest".into(),
+            module: "vtkTest".into(),
+            header: "vtkTest.h".into(),
+            is_abstract: false,
+            base: None,
+            deref_target: None,
+            construct_expr: Some("vtkTest::New()".into()),
+            methods: vec![Method {
+                cxx_name: "Update".into(),
+                c_name: "vtkTest_Update".into(),
+                rust_name: "update".into(),
+                is_static: false,
+                params: vec![],
+                ret: None,
+                doc: None,
+            }],
+            doc: None,
+        };
+        let code = emit_class_cpp(&class, &BTreeMap::new());
+        assert_eq!(code.matches("extern \"C\"").count(), 2);
+        assert_eq!(code.matches("noexcept").count(), 2);
+    }
 }

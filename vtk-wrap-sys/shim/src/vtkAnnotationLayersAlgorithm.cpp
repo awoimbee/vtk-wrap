@@ -6,46 +6,46 @@
 #include "vtkObjectBase.h"
 #include <string>
 
-extern "C" void* vtkAnnotationLayersAlgorithm__vtk_wrap_new() { return static_cast<void*>(vtkAnnotationLayersAlgorithm::New()); }
+extern "C" void* vtkAnnotationLayersAlgorithm__vtk_wrap_new() noexcept { return static_cast<void*>(vtkAnnotationLayersAlgorithm::New()); }
 
-extern "C" int32_t vtkAnnotationLayersAlgorithm__IsTypeOf__0(const char* type_) {
+extern "C" int32_t vtkAnnotationLayersAlgorithm__IsTypeOf__0(const char* type_) noexcept {
   return vtkAnnotationLayersAlgorithm::IsTypeOf(type_);
 }
 
-extern "C" int32_t vtkAnnotationLayersAlgorithm__IsA__0(void* self, const char* type_) {
+extern "C" int32_t vtkAnnotationLayersAlgorithm__IsA__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayersAlgorithm*>(self)->IsA(type_);
 }
 
-extern "C" void* vtkAnnotationLayersAlgorithm__SafeDownCast__0(void* o) {
+extern "C" void* vtkAnnotationLayersAlgorithm__SafeDownCast__0(void* o) noexcept {
   return static_cast<void*>(vtkAnnotationLayersAlgorithm::SafeDownCast(static_cast<vtkObjectBase*>(o)));
 }
 
-extern "C" int64_t vtkAnnotationLayersAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) {
+extern "C" int64_t vtkAnnotationLayersAlgorithm__GetNumberOfGenerationsFromBaseType__0(const char* type_) noexcept {
   return vtkAnnotationLayersAlgorithm::GetNumberOfGenerationsFromBaseType(type_);
 }
 
-extern "C" int64_t vtkAnnotationLayersAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) {
+extern "C" int64_t vtkAnnotationLayersAlgorithm__GetNumberOfGenerationsFromBase__0(void* self, const char* type_) noexcept {
   (void)self;
   return static_cast<vtkAnnotationLayersAlgorithm*>(self)->GetNumberOfGenerationsFromBase(type_);
 }
 
-extern "C" void* vtkAnnotationLayersAlgorithm__GetOutput__0(void* self) {
+extern "C" void* vtkAnnotationLayersAlgorithm__GetOutput__0(void* self) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLayersAlgorithm*>(self)->GetOutput());
 }
 
-extern "C" void* vtkAnnotationLayersAlgorithm__GetOutput__1(void* self, int32_t index) {
+extern "C" void* vtkAnnotationLayersAlgorithm__GetOutput__1(void* self, int32_t index) noexcept {
   (void)self;
   return static_cast<void*>(static_cast<vtkAnnotationLayersAlgorithm*>(self)->GetOutput(index));
 }
 
-extern "C" void vtkAnnotationLayersAlgorithm__SetInputData__0(void* self, void* obj) {
+extern "C" void vtkAnnotationLayersAlgorithm__SetInputData__0(void* self, void* obj) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayersAlgorithm*>(self)->SetInputData(static_cast<vtkDataObject*>(obj));
 }
 
-extern "C" void vtkAnnotationLayersAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) {
+extern "C" void vtkAnnotationLayersAlgorithm__SetInputData__1(void* self, int32_t index, void* obj) noexcept {
   (void)self;
   static_cast<vtkAnnotationLayersAlgorithm*>(self)->SetInputData(index, static_cast<vtkDataObject*>(obj));
 }
