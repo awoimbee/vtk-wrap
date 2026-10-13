@@ -18,6 +18,8 @@
 #include "vtkUnsignedCharArray.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkUnstructuredGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnstructuredGrid::New()); }
 
 extern "C" void* vtkUnstructuredGrid__ExtendedNew__0() noexcept {
@@ -206,7 +208,7 @@ extern "C" void vtkUnstructuredGrid__GetCellNeighbors__0(void* self, int64_t cel
   static_cast<vtkUnstructuredGrid*>(self)->GetCellNeighbors(cellId, static_cast<vtkIdList*>(ptIds), static_cast<vtkIdList*>(cellIds));
 }
 
-extern "C" int64_t vtkUnstructuredGrid__InsertNextLinkedCell__0(void* self, int32_t type_, int32_t npts, const int64_t* pts) noexcept {
+extern "C" int64_t vtkUnstructuredGrid__InsertNextLinkedCell__0(void* self, int32_t type_, int32_t npts, const long long* pts) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGrid*>(self)->InsertNextLinkedCell(type_, npts, pts);
 }

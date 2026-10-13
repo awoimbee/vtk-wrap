@@ -21,6 +21,16 @@ fn collect_refs(ty: &Ty, refs: &mut BTreeSet<String>) {
     }
 }
 
+fn collect_native_scalars(ty: &Ty, scalars: &mut BTreeSet<(String, String)>) {
+    match ty {
+        Ty::NativeScalar(abi, name) => {
+            scalars.insert((name.clone(), abi.c_type()));
+        }
+        Ty::Array(inner, _, _) | Ty::Slice(inner, _) => collect_native_scalars(inner, scalars),
+        _ => {}
+    }
+}
+
 pub fn ctor_c_name(class: &str) -> String {
     format!("{class}__vtk_wrap_new")
 }
@@ -45,6 +55,7 @@ fn c_arg_list(method: &Method) -> String {
                 format!("static_cast<{name}*>({})", p.name)
             }
             Ty::StdString => format!("std::string({})", p.name),
+            Ty::NativeScalar(_, name) => format!("static_cast<{name}>({})", p.name),
             _ => p.name.clone(),
         })
         .collect::<Vec<_>>()
@@ -106,12 +117,15 @@ pub fn emit_class_cpp(class: &Class, headers: &BTreeMap<String, String>) -> Stri
     // the complete definition of `T`, so include the headers of every
     // referenced class.
     let mut refs: BTreeSet<String> = BTreeSet::new();
+    let mut scalars = BTreeSet::new();
     for m in &class.methods {
         if let Some(t) = &m.ret {
             collect_refs(t, &mut refs);
+            collect_native_scalars(t, &mut scalars);
         }
         for p in &m.params {
             collect_refs(&p.ty, &mut refs);
+            collect_native_scalars(&p.ty, &mut scalars);
         }
     }
     for name in refs {
@@ -123,6 +137,10 @@ pub fn emit_class_cpp(class: &Class, headers: &BTreeMap<String, String>) -> Stri
         }
     }
     let _ = writeln!(out, "#include <string>\n");
+
+    for (native, abi) in scalars {
+        let _ = writeln!(out, "static_assert(sizeof({native}) == sizeof({abi}) && alignof({native}) == alignof({abi}), \"{native} must match the Rust integer ABI\");\n");
+    }
 
     if let Some(expr) = &class.construct_expr {
         let _ = writeln!(
@@ -219,6 +237,56 @@ target_link_libraries(vtk_wrap_link_probe PRIVATE vtk_wrap_shim)
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn native_integer_array_signatures_are_not_fixed_width_cpp_pointers() {
+        let signed = Ty::NativeScalar(Box::new(Ty::I64), "vtkIdType".into());
+        let unsigned = Ty::NativeScalar(Box::new(Ty::U64), "unsigned long long".into());
+        let method = Method {
+            cxx_name: "SetIds".into(),
+            c_name: "vtkTest_SetIds".into(),
+            rust_name: "set_ids".into(),
+            is_static: false,
+            params: vec![crate::model::Param {
+                name: "ids".into(),
+                ty: Ty::Slice(Box::new(signed.clone()), true),
+                default: None,
+            }],
+            ret: None,
+            doc: None,
+        };
+        assert_eq!(c_param_list(&method), "void* self, const vtkIdType* ids");
+        assert_eq!(c_arg_list(&method), "ids");
+        assert_eq!(
+            Ty::Array(Box::new(unsigned), 2, false).c_type(),
+            "unsigned long long*"
+        );
+        assert_eq!(
+            Ty::Array(Box::new(signed), 2, false).c_return(),
+            "vtkIdType*"
+        );
+
+        let mut scalar_method = method.clone();
+        scalar_method.params[0].ty = Ty::NativeScalar(Box::new(Ty::I64), "long long".into());
+        assert_eq!(c_param_list(&scalar_method), "void* self, int64_t ids");
+        assert_eq!(c_arg_list(&scalar_method), "static_cast<long long>(ids)");
+
+        let class = Class {
+            name: "vtkTest".into(),
+            module: "vtkTest".into(),
+            header: "vtkTest.h".into(),
+            is_abstract: false,
+            base: None,
+            deref_target: None,
+            construct_expr: None,
+            methods: vec![method],
+            doc: None,
+        };
+        let code = emit_class_cpp(&class, &BTreeMap::new());
+        assert!(code.contains("sizeof(vtkIdType) == sizeof(int64_t)"));
+        assert!(code.contains("alignof(vtkIdType) == alignof(int64_t)"));
+        assert!(code.contains("static_cast<vtkTest*>(self)->SetIds(ids);"));
+    }
 
     #[test]
     fn smart_pointer_is_retained_before_leaving_the_shim() {

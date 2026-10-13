@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkIdTypeArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkIdTypeArray::New()); }
 
 extern "C" int32_t vtkIdTypeArray__IsTypeOf__0(const char* type_) noexcept {
@@ -49,12 +51,12 @@ extern "C" int64_t vtkIdTypeArray__GetDataTypeValueMax__0(void* self) noexcept {
   return static_cast<vtkIdTypeArray*>(self)->GetDataTypeValueMax();
 }
 
-extern "C" void vtkIdTypeArray__GetValueRange__0(void* self, int64_t* range, int32_t comp) noexcept {
+extern "C" void vtkIdTypeArray__GetValueRange__0(void* self, long long* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkIdTypeArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" void vtkIdTypeArray__GetValueRange__1(void* self, int64_t* range, int32_t comp) noexcept {
+extern "C" void vtkIdTypeArray__GetValueRange__1(void* self, long long* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkIdTypeArray*>(self)->GetValueRange(range, comp);
 }

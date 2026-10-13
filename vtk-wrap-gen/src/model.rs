@@ -99,6 +99,9 @@ pub enum Ty {
     Object(String),
     /// A `vtkSmartPointer<T>` returned by value.
     SmartObject(String),
+    /// Native C++ integer type with a fixed-width Rust ABI. Preserving its
+    /// spelling supports exact array pointers and scalar overload resolution.
+    NativeScalar(Box<Ty>, String),
     /// Fixed size array, e.g. `double[3]`.  The `bool` is `true` when the
     /// array is `const` (an input).
     Array(Box<Ty>, usize, bool),
@@ -135,6 +138,7 @@ impl Ty {
             // In a parameter position a `std::string` is received as a C string.
             StdString => "const char*",
             Object(_) | SmartObject(_) => "void*",
+            NativeScalar(abi, _) => return abi.c_type(),
             Array(inner, _, is_const) => {
                 if *is_const {
                     return format!("const {}*", inner.scalar_c());
@@ -188,6 +192,7 @@ impl Ty {
             F32 => "float",
             F64 => "double",
             Bool => "bool",
+            NativeScalar(_, name) => return name.clone(),
             other => panic!("not a scalar: {other:?}"),
         }
         .to_string()
@@ -217,6 +222,7 @@ impl Ty {
             CStrMut => "*mut ::core::ffi::c_char",
             StdString => "*const ::core::ffi::c_char",
             Object(_) | SmartObject(_) => "*mut ::core::ffi::c_void",
+            NativeScalar(abi, _) => return abi.ffi_type(),
             Array(inner, _, is_const) => {
                 if *is_const {
                     return format!("*const {}", inner.ffi_scalar());
@@ -273,6 +279,7 @@ impl Ty {
             Bool => "bool".into(),
             CStr | CStrMut | StdString => "&str".into(),
             Object(name) | SmartObject(name) => format!("&{name}"),
+            NativeScalar(abi, _) => abi.rust_param(),
             Array(inner, n, is_const) => {
                 if *is_const {
                     // fixed size inputs are `Copy`, take them by value
@@ -307,6 +314,9 @@ impl Ty {
 
     /// True when the type is a plain scalar that needs no conversion.
     pub fn is_scalar(&self) -> bool {
+        if let Ty::NativeScalar(abi, _) = self {
+            return abi.is_scalar();
+        }
         use Ty::*;
         matches!(
             self,

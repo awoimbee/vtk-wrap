@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(unsigned long long) == sizeof(uint64_t) && alignof(unsigned long long) == alignof(uint64_t), "unsigned long long must match the Rust integer ABI");
+
 extern "C" void* vtkUnsignedLongLongArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkUnsignedLongLongArray::New()); }
 
 extern "C" int32_t vtkUnsignedLongLongArray__IsTypeOf__0(const char* type_) noexcept {
@@ -49,12 +51,12 @@ extern "C" uint64_t vtkUnsignedLongLongArray__GetDataTypeValueMax__0(void* self)
   return static_cast<vtkUnsignedLongLongArray*>(self)->GetDataTypeValueMax();
 }
 
-extern "C" void vtkUnsignedLongLongArray__GetValueRange__0(void* self, uint64_t* range, int32_t comp) noexcept {
+extern "C" void vtkUnsignedLongLongArray__GetValueRange__0(void* self, unsigned long long* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkUnsignedLongLongArray*>(self)->GetValueRange(range, comp);
 }
 
-extern "C" void vtkUnsignedLongLongArray__GetValueRange__1(void* self, uint64_t* range, int32_t comp) noexcept {
+extern "C" void vtkUnsignedLongLongArray__GetValueRange__1(void* self, unsigned long long* range, int32_t comp) noexcept {
   (void)self;
   static_cast<vtkUnsignedLongLongArray*>(self)->GetValueRange(range, comp);
 }

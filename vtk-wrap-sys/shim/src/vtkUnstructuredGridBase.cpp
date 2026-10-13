@@ -10,6 +10,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" int32_t vtkUnstructuredGridBase__IsTypeOf__0(const char* type_) noexcept {
   return vtkUnstructuredGridBase::IsTypeOf(type_);
 }
@@ -47,7 +49,7 @@ extern "C" void vtkUnstructuredGridBase__DeepCopy__0(void* self, void* src) noex
   static_cast<vtkUnstructuredGridBase*>(self)->DeepCopy(static_cast<vtkDataObject*>(src));
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__0(void* self, int32_t type_, int64_t npts, const int64_t* ptIds) noexcept {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__0(void* self, int32_t type_, int64_t npts, const long long* ptIds) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds);
 }
@@ -57,17 +59,17 @@ extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__1(void* self, int32_
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, static_cast<vtkIdList*>(ptIds));
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__2(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, int64_t nfaces, const int64_t* faces) noexcept {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__2(void* self, int32_t type_, int64_t npts, const long long* ptIds, int64_t nfaces, const long long* faces) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds, nfaces, faces);
 }
 
-extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__3(void* self, int32_t type_, int64_t npts, const int64_t* ptIds, void* faces) noexcept {
+extern "C" int64_t vtkUnstructuredGridBase__InsertNextCell__3(void* self, int32_t type_, int64_t npts, const long long* ptIds, void* faces) noexcept {
   (void)self;
   return static_cast<vtkUnstructuredGridBase*>(self)->InsertNextCell(type_, npts, ptIds, static_cast<vtkCellArray*>(faces));
 }
 
-extern "C" void vtkUnstructuredGridBase__ReplaceCell__0(void* self, int64_t cellId, int32_t npts, const int64_t* pts) noexcept {
+extern "C" void vtkUnstructuredGridBase__ReplaceCell__0(void* self, int64_t cellId, int32_t npts, const long long* pts) noexcept {
   (void)self;
   static_cast<vtkUnstructuredGridBase*>(self)->ReplaceCell(cellId, npts, pts);
 }

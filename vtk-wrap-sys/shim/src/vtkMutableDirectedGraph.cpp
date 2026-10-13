@@ -7,6 +7,8 @@
 #include "vtkVariantArray.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkMutableDirectedGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMutableDirectedGraph::New()); }
 
 extern "C" int32_t vtkMutableDirectedGraph__IsTypeOf__0(const char* type_) noexcept {
@@ -58,7 +60,7 @@ extern "C" void vtkMutableDirectedGraph__LazyAddVertex__1(void* self, void* prop
 
 extern "C" void vtkMutableDirectedGraph__LazyAddEdge__0(void* self, int64_t u, int64_t v, void* propertyArr) noexcept {
   (void)self;
-  static_cast<vtkMutableDirectedGraph*>(self)->LazyAddEdge(u, v, static_cast<vtkVariantArray*>(propertyArr));
+  static_cast<vtkMutableDirectedGraph*>(self)->LazyAddEdge(static_cast<long long>(u), static_cast<long long>(v), static_cast<vtkVariantArray*>(propertyArr));
 }
 
 extern "C" void* vtkMutableDirectedGraph__AddGraphEdge__0(void* self, int64_t u, int64_t v) noexcept {

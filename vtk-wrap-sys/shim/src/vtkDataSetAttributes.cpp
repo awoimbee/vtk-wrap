@@ -8,6 +8,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkDataSetAttributes__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataSetAttributes::New()); }
 
 extern "C" void* vtkDataSetAttributes__ExtendedNew__0() noexcept {
@@ -566,7 +568,7 @@ extern "C" void vtkDataSetAttributes__PassData__0(void* self, void* fd) noexcept
 
 extern "C" void vtkDataSetAttributes__CopyAllocate__0(void* self, void* pd, int64_t sze, int64_t ext) noexcept {
   (void)self;
-  static_cast<vtkDataSetAttributes*>(self)->CopyAllocate(static_cast<vtkDataSetAttributes*>(pd), sze, ext);
+  static_cast<vtkDataSetAttributes*>(self)->CopyAllocate(static_cast<vtkDataSetAttributes*>(pd), static_cast<long long>(sze), static_cast<long long>(ext));
 }
 
 extern "C" void vtkDataSetAttributes__CopyAllocate__1(void* self, void* pd, int64_t sze, int64_t ext, int32_t shallowCopyArrays) noexcept {
@@ -581,7 +583,7 @@ extern "C" void vtkDataSetAttributes__SetupForCopy__0(void* self, void* pd) noex
 
 extern "C" void vtkDataSetAttributes__CopyData__0(void* self, void* fromPd, int64_t fromId, int64_t toId) noexcept {
   (void)self;
-  static_cast<vtkDataSetAttributes*>(self)->CopyData(static_cast<vtkDataSetAttributes*>(fromPd), fromId, toId);
+  static_cast<vtkDataSetAttributes*>(self)->CopyData(static_cast<vtkDataSetAttributes*>(fromPd), static_cast<long long>(fromId), static_cast<long long>(toId));
 }
 
 extern "C" void vtkDataSetAttributes__CopyData__1(void* self, void* fromPd, void* fromIds, void* toIds) noexcept {
@@ -591,7 +593,7 @@ extern "C" void vtkDataSetAttributes__CopyData__1(void* self, void* fromPd, void
 
 extern "C" void vtkDataSetAttributes__CopyData__2(void* self, void* fromPd, void* fromIds, int64_t destStartId) noexcept {
   (void)self;
-  static_cast<vtkDataSetAttributes*>(self)->CopyData(static_cast<vtkDataSetAttributes*>(fromPd), static_cast<vtkIdList*>(fromIds), destStartId);
+  static_cast<vtkDataSetAttributes*>(self)->CopyData(static_cast<vtkDataSetAttributes*>(fromPd), static_cast<vtkIdList*>(fromIds), static_cast<long long>(destStartId));
 }
 
 extern "C" void vtkDataSetAttributes__CopyData__3(void* self, void* fromPd, int64_t dstStart, int64_t n, int64_t srcStart) noexcept {
@@ -616,7 +618,7 @@ extern "C" void vtkDataSetAttributes__CopyTuples__1(void* self, void* fromData, 
 
 extern "C" void vtkDataSetAttributes__InterpolateAllocate__0(void* self, void* pd, int64_t sze, int64_t ext) noexcept {
   (void)self;
-  static_cast<vtkDataSetAttributes*>(self)->InterpolateAllocate(static_cast<vtkDataSetAttributes*>(pd), sze, ext);
+  static_cast<vtkDataSetAttributes*>(self)->InterpolateAllocate(static_cast<vtkDataSetAttributes*>(pd), static_cast<long long>(sze), static_cast<long long>(ext));
 }
 
 extern "C" void vtkDataSetAttributes__InterpolateAllocate__1(void* self, void* pd, int64_t sze, int64_t ext, int32_t shallowCopyArrays) noexcept {

@@ -62,14 +62,18 @@ options with `cargo run -p vtk-wrap-gen -- --help`.
 
 ## Platform limitations
 
-The committed sources were generated from macOS VTK headers, so Linux and
-Windows builds need platform-specific work:
+The [CI workflow](../.github/workflows/ci.yml) builds and tests the
+non-rendering modules on Linux and macOS; both jobs block PRs. Integer array
+signatures preserve their native C++ element types while exposing fixed-width
+Rust integers. Scalar arguments use their native types to select integer
+overloads. Compile-time size and alignment checks enforce the integer ABI.
 
-- Cocoa-specific classes and headers in the rendering modules.
-- C++ array signatures using `int64_t` where `vtkIdType` differs across
-  platforms.
+The committed sources were generated from macOS VTK headers, so some
+platform-specific work remains:
+
+- Cocoa-specific classes and headers in the rendering modules prevent those
+  modules from building on Linux or Windows.
 - Native link reconstruction depends on CMake's `link.txt`, which the default
   Windows Visual Studio generator does not produce.
 
-The [CI workflow](../.github/workflows/ci.yml) keeps Linux and Windows builds
-non-blocking until these are resolved.
+The Windows CI job remains non-blocking until these are resolved.

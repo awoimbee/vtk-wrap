@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" int32_t vtkAbstractContextItem__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractContextItem::IsTypeOf(type_);
 }
@@ -60,7 +62,7 @@ extern "C" bool vtkAbstractContextItem__RemoveItem__0(void* self, void* item) no
 
 extern "C" bool vtkAbstractContextItem__RemoveItem__1(void* self, int64_t index) noexcept {
   (void)self;
-  return static_cast<vtkAbstractContextItem*>(self)->RemoveItem(index);
+  return static_cast<vtkAbstractContextItem*>(self)->RemoveItem(static_cast<long long>(index));
 }
 
 extern "C" void* vtkAbstractContextItem__GetItem__0(void* self, int64_t index) noexcept {

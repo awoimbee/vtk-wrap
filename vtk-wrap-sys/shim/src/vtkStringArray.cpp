@@ -7,6 +7,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkStringArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStringArray::New()); }
 
 extern "C" void* vtkStringArray__ExtendedNew__0() noexcept {
@@ -131,22 +133,22 @@ extern "C" void vtkStringArray__SetTypedComponent__0(void* self, int64_t tupleId
 
 extern "C" char* vtkStringArray__GetValue__0(void* self, int64_t id) noexcept {
   (void)self;
-  return vtk_wrap_strdup((static_cast<vtkStringArray*>(self)->GetValue(id)).c_str());
+  return vtk_wrap_strdup((static_cast<vtkStringArray*>(self)->GetValue(static_cast<long long>(id))).c_str());
 }
 
 extern "C" char* vtkStringArray__GetValue__1(void* self, int64_t id) noexcept {
   (void)self;
-  return vtk_wrap_strdup((static_cast<vtkStringArray*>(self)->GetValue(id)).c_str());
+  return vtk_wrap_strdup((static_cast<vtkStringArray*>(self)->GetValue(static_cast<long long>(id))).c_str());
 }
 
 extern "C" void vtkStringArray__SetValue__0(void* self, int64_t id, const char* value) noexcept {
   (void)self;
-  static_cast<vtkStringArray*>(self)->SetValue(id, std::string(value));
+  static_cast<vtkStringArray*>(self)->SetValue(static_cast<long long>(id), std::string(value));
 }
 
 extern "C" void vtkStringArray__SetValue__1(void* self, int64_t id, const char* value) noexcept {
   (void)self;
-  static_cast<vtkStringArray*>(self)->SetValue(id, value);
+  static_cast<vtkStringArray*>(self)->SetValue(static_cast<long long>(id), value);
 }
 
 extern "C" int32_t vtkStringArray__GetElementComponentSize__0(void* self) noexcept {
@@ -156,12 +158,12 @@ extern "C" int32_t vtkStringArray__GetElementComponentSize__0(void* self) noexce
 
 extern "C" void vtkStringArray__InsertValue__0(void* self, int64_t id, const char* f) noexcept {
   (void)self;
-  static_cast<vtkStringArray*>(self)->InsertValue(id, std::string(f));
+  static_cast<vtkStringArray*>(self)->InsertValue(static_cast<long long>(id), std::string(f));
 }
 
 extern "C" void vtkStringArray__InsertValue__1(void* self, int64_t id, const char* val) noexcept {
   (void)self;
-  static_cast<vtkStringArray*>(self)->InsertValue(id, val);
+  static_cast<vtkStringArray*>(self)->InsertValue(static_cast<long long>(id), val);
 }
 
 extern "C" int64_t vtkStringArray__InsertNextValue__0(void* self, const char* f) noexcept {

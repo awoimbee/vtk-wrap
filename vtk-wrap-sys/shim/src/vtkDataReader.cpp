@@ -14,6 +14,8 @@
 #include "vtkTable.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkDataReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataReader::New()); }
 
 extern "C" int32_t vtkDataReader__IsTypeOf__0(const char* type_) noexcept {
@@ -440,12 +442,12 @@ extern "C" int32_t vtkDataReader__ReadPointData__0(void* self, void* ds, int64_t
 
 extern "C" int32_t vtkDataReader__ReadPointCoordinates__0(void* self, void* ps, int64_t numPts) noexcept {
   (void)self;
-  return static_cast<vtkDataReader*>(self)->ReadPointCoordinates(static_cast<vtkPointSet*>(ps), numPts);
+  return static_cast<vtkDataReader*>(self)->ReadPointCoordinates(static_cast<vtkPointSet*>(ps), static_cast<long long>(numPts));
 }
 
 extern "C" int32_t vtkDataReader__ReadPointCoordinates__1(void* self, void* g, int64_t numPts) noexcept {
   (void)self;
-  return static_cast<vtkDataReader*>(self)->ReadPointCoordinates(static_cast<vtkGraph*>(g), numPts);
+  return static_cast<vtkDataReader*>(self)->ReadPointCoordinates(static_cast<vtkGraph*>(g), static_cast<long long>(numPts));
 }
 
 extern "C" int32_t vtkDataReader__ReadVertexData__0(void* self, void* g, int64_t numVertices) noexcept {

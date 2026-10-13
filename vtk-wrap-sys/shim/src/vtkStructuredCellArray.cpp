@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkStructuredCellArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkStructuredCellArray::New()); }
 
 extern "C" int32_t vtkStructuredCellArray__IsTypeOf__0(const char* type_) noexcept {
@@ -72,7 +74,7 @@ extern "C" int64_t vtkStructuredCellArray__IsHomogeneous__0(void* self) noexcept
 
 extern "C" void vtkStructuredCellArray__GetCellAtId__0(void* self, int64_t cellId, void* ptIds) noexcept {
   (void)self;
-  static_cast<vtkStructuredCellArray*>(self)->GetCellAtId(cellId, static_cast<vtkIdList*>(ptIds));
+  static_cast<vtkStructuredCellArray*>(self)->GetCellAtId(static_cast<long long>(cellId), static_cast<vtkIdList*>(ptIds));
 }
 
 extern "C" void vtkStructuredCellArray__GetCellAtId__1(void* self, int32_t* ijk, void* ptIds) noexcept {

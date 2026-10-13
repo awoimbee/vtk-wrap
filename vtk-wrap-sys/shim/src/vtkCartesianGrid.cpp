@@ -13,6 +13,8 @@
 #include "vtkStructuredCellArray.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" int32_t vtkCartesianGrid__IsTypeOf__0(const char* type_) noexcept {
   return vtkCartesianGrid::IsTypeOf(type_);
 }
@@ -240,7 +242,7 @@ extern "C" void vtkCartesianGrid__GetDimensions__0(void* self, int32_t* dims) no
   static_cast<vtkCartesianGrid*>(self)->GetDimensions(dims);
 }
 
-extern "C" void vtkCartesianGrid__GetDimensions__1(void* self, int64_t* dims) noexcept {
+extern "C" void vtkCartesianGrid__GetDimensions__1(void* self, long long* dims) noexcept {
   (void)self;
   static_cast<vtkCartesianGrid*>(self)->GetDimensions(dims);
 }

@@ -5,6 +5,8 @@
 #include "vtkPoints.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkEdgeTable__vtk_wrap_new() noexcept { return static_cast<void*>(vtkEdgeTable::New()); }
 
 extern "C" int32_t vtkEdgeTable__IsTypeOf__0(const char* type_) noexcept {
@@ -46,12 +48,12 @@ extern "C" int64_t vtkEdgeTable__InsertEdge__0(void* self, int64_t p1, int64_t p
 
 extern "C" void vtkEdgeTable__InsertEdge__1(void* self, int64_t p1, int64_t p2, int64_t attributeId) noexcept {
   (void)self;
-  static_cast<vtkEdgeTable*>(self)->InsertEdge(p1, p2, attributeId);
+  static_cast<vtkEdgeTable*>(self)->InsertEdge(static_cast<long long>(p1), static_cast<long long>(p2), static_cast<long long>(attributeId));
 }
 
 extern "C" void vtkEdgeTable__InsertEdge__2(void* self, int64_t p1, int64_t p2, void* ptr) noexcept {
   (void)self;
-  static_cast<vtkEdgeTable*>(self)->InsertEdge(p1, p2, ptr);
+  static_cast<vtkEdgeTable*>(self)->InsertEdge(static_cast<long long>(p1), static_cast<long long>(p2), ptr);
 }
 
 extern "C" int64_t vtkEdgeTable__IsEdge__0(void* self, int64_t p1, int64_t p2) noexcept {

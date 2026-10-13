@@ -8,14 +8,11 @@
 #                and Windows, plus the fast tests.
 #
 # ── Current status of `build` ──────────────────────────────────────────
-# The generated bindings that are committed were produced from a *macOS* VTK, so
-# they wrap classes that only exist there (`vtkCocoaRenderWindow`, ...) and use
-# C++ types that are spelled differently on other platforms
-# (`int64_t` vs `vtkIdType` on Linux/Windows).  Only the macOS job can pass
-# today; the Linux and Windows jobs run the exact same steps but are marked
-# `continue-on-error` so they report status without blocking PRs.  Drop the
-# `blocking: false` entries once the bindings are made platform-independent
-# (`vtk-wrap-gen` needs a per-platform module list / type mapping, see the README).
+# Linux and macOS build and test the non-rendering modules and block PRs.
+# Windows remains non-blocking: native link reconstruction currently requires a
+# Makefile generator, while Windows defaults to Visual Studio.
+# The committed rendering bindings also include macOS-only classes
+# (`vtkCocoaRenderWindow`, ...); those modules are not enabled by these jobs.
 #
 # Building VTK from source dominates the runtime (~8 minutes on a fast machine,
 # more on a hosted runner).  The `VTK_WRAP_CACHE_DIR` cache keeps the built VTK and
@@ -85,7 +82,7 @@ jobs:
           - os: macos-latest
             blocking: true
           - os: ubuntu-latest
-            blocking: false
+            blocking: true
           - os: windows-latest
             blocking: false
     steps:

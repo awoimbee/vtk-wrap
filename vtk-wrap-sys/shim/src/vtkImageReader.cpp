@@ -5,6 +5,8 @@
 #include "vtkTransform.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkImageReader__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageReader::New()); }
 
 extern "C" int32_t vtkImageReader__IsTypeOf__0(const char* type_) noexcept {
@@ -64,7 +66,7 @@ extern "C" void vtkImageReader__ComputeInverseTransformedExtent__0(void* self, i
   static_cast<vtkImageReader*>(self)->ComputeInverseTransformedExtent(inExtent, outExtent);
 }
 
-extern "C" void vtkImageReader__ComputeInverseTransformedIncrements__0(void* self, int64_t* inIncr, int64_t* outIncr) noexcept {
+extern "C" void vtkImageReader__ComputeInverseTransformedIncrements__0(void* self, long long* inIncr, long long* outIncr) noexcept {
   (void)self;
   static_cast<vtkImageReader*>(self)->ComputeInverseTransformedIncrements(inIncr, outIncr);
 }

@@ -4,6 +4,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" int32_t vtkArray__IsTypeOf__0(const char* type_) noexcept {
   return vtkArray::IsTypeOf(type_);
 }
@@ -37,17 +39,17 @@ extern "C" bool vtkArray__IsDense__0(void* self) noexcept {
 
 extern "C" void vtkArray__Resize__0(void* self, int64_t i) noexcept {
   (void)self;
-  static_cast<vtkArray*>(self)->Resize(i);
+  static_cast<vtkArray*>(self)->Resize(static_cast<long long>(i));
 }
 
 extern "C" void vtkArray__Resize__1(void* self, int64_t i, int64_t j) noexcept {
   (void)self;
-  static_cast<vtkArray*>(self)->Resize(i, j);
+  static_cast<vtkArray*>(self)->Resize(static_cast<long long>(i), static_cast<long long>(j));
 }
 
 extern "C" void vtkArray__Resize__2(void* self, int64_t i, int64_t j, int64_t k) noexcept {
   (void)self;
-  static_cast<vtkArray*>(self)->Resize(i, j, k);
+  static_cast<vtkArray*>(self)->Resize(static_cast<long long>(i), static_cast<long long>(j), static_cast<long long>(k));
 }
 
 extern "C" int64_t vtkArray__GetDimensions__0(void* self) noexcept {

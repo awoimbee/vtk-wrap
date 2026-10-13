@@ -13,6 +13,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkExplicitStructuredGrid__vtk_wrap_new() noexcept { return static_cast<void*>(vtkExplicitStructuredGrid::New()); }
 
 extern "C" int32_t vtkExplicitStructuredGrid__IsTypeOf__0(const char* type_) noexcept {
@@ -104,7 +106,7 @@ extern "C" int32_t vtkExplicitStructuredGrid__GetMinSpatialDimension__0(void* se
 
 extern "C" void vtkExplicitStructuredGrid__GetCellNeighbors__0(void* self, int64_t cellId, void* ptIds, void* cellIds) noexcept {
   (void)self;
-  static_cast<vtkExplicitStructuredGrid*>(self)->GetCellNeighbors(cellId, static_cast<vtkIdList*>(ptIds), static_cast<vtkIdList*>(cellIds));
+  static_cast<vtkExplicitStructuredGrid*>(self)->GetCellNeighbors(static_cast<long long>(cellId), static_cast<vtkIdList*>(ptIds), static_cast<vtkIdList*>(cellIds));
 }
 
 extern "C" void vtkExplicitStructuredGrid__CopyStructure__0(void* self, void* ds) noexcept {
@@ -187,9 +189,9 @@ extern "C" void* vtkExplicitStructuredGrid__GetLinks__0(void* self) noexcept {
   return static_cast<void*>(static_cast<vtkExplicitStructuredGrid*>(self)->GetLinks());
 }
 
-extern "C" void vtkExplicitStructuredGrid__GetCellNeighbors__1(void* self, int64_t cellId, int64_t* neighbors, int32_t* wholeExtent) noexcept {
+extern "C" void vtkExplicitStructuredGrid__GetCellNeighbors__1(void* self, int64_t cellId, long long* neighbors, int32_t* wholeExtent) noexcept {
   (void)self;
-  static_cast<vtkExplicitStructuredGrid*>(self)->GetCellNeighbors(cellId, neighbors, wholeExtent);
+  static_cast<vtkExplicitStructuredGrid*>(self)->GetCellNeighbors(static_cast<long long>(cellId), neighbors, wholeExtent);
 }
 
 extern "C" int64_t vtkExplicitStructuredGrid__ComputeCellId__0(void* self, int32_t i, int32_t j, int32_t k, bool adjustForExtent) noexcept {

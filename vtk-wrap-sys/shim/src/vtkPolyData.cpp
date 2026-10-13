@@ -15,6 +15,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkPolyData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPolyData::New()); }
 
 extern "C" void* vtkPolyData__ExtendedNew__0() noexcept {
@@ -65,7 +67,7 @@ extern "C" void* vtkPolyData__GetCell__0(void* self, int64_t cellId) noexcept {
 
 extern "C" void vtkPolyData__GetCell__1(void* self, int64_t cellId, void* cell) noexcept {
   (void)self;
-  static_cast<vtkPolyData*>(self)->GetCell(cellId, static_cast<vtkGenericCell*>(cell));
+  static_cast<vtkPolyData*>(self)->GetCell(static_cast<long long>(cellId), static_cast<vtkGenericCell*>(cell));
 }
 
 extern "C" int32_t vtkPolyData__GetCellType__0(void* self, int64_t cellId) noexcept {
@@ -230,7 +232,7 @@ extern "C" bool vtkPolyData__AllocateProportional__0(void* self, void* pd, doubl
 
 extern "C" void vtkPolyData__Allocate__0(void* self, int64_t numCells, int32_t extSize) noexcept {
   (void)self;
-  static_cast<vtkPolyData*>(self)->Allocate(numCells, extSize);
+  static_cast<vtkPolyData*>(self)->Allocate(static_cast<long long>(numCells), extSize);
 }
 
 extern "C" void vtkPolyData__Allocate__1(void* self, void* inPolyData, int64_t numCells, int32_t extSize) noexcept {
@@ -238,7 +240,7 @@ extern "C" void vtkPolyData__Allocate__1(void* self, void* inPolyData, int64_t n
   static_cast<vtkPolyData*>(self)->Allocate(static_cast<vtkPolyData*>(inPolyData), numCells, extSize);
 }
 
-extern "C" int64_t vtkPolyData__InsertNextCell__0(void* self, int32_t type_, int32_t npts, const int64_t* pts) noexcept {
+extern "C" int64_t vtkPolyData__InsertNextCell__0(void* self, int32_t type_, int32_t npts, const long long* pts) noexcept {
   (void)self;
   return static_cast<vtkPolyData*>(self)->InsertNextCell(type_, npts, pts);
 }
@@ -313,7 +315,7 @@ extern "C" void vtkPolyData__ReplaceCell__0(void* self, int64_t cellId, void* id
   static_cast<vtkPolyData*>(self)->ReplaceCell(cellId, static_cast<vtkIdList*>(ids));
 }
 
-extern "C" void vtkPolyData__ReplaceCell__1(void* self, int64_t cellId, int32_t npts, const int64_t* pts) noexcept {
+extern "C" void vtkPolyData__ReplaceCell__1(void* self, int64_t cellId, int32_t npts, const long long* pts) noexcept {
   (void)self;
   static_cast<vtkPolyData*>(self)->ReplaceCell(cellId, npts, pts);
 }
@@ -358,12 +360,12 @@ extern "C" int64_t vtkPolyData__InsertNextLinkedPoint__1(void* self, double* x, 
   return static_cast<vtkPolyData*>(self)->InsertNextLinkedPoint(x, numLinks);
 }
 
-extern "C" int64_t vtkPolyData__InsertNextLinkedCell__0(void* self, int32_t type_, int32_t npts, const int64_t* pts) noexcept {
+extern "C" int64_t vtkPolyData__InsertNextLinkedCell__0(void* self, int32_t type_, int32_t npts, const long long* pts) noexcept {
   (void)self;
   return static_cast<vtkPolyData*>(self)->InsertNextLinkedCell(type_, npts, pts);
 }
 
-extern "C" void vtkPolyData__ReplaceLinkedCell__0(void* self, int64_t cellId, int32_t npts, const int64_t* pts) noexcept {
+extern "C" void vtkPolyData__ReplaceLinkedCell__0(void* self, int64_t cellId, int32_t npts, const long long* pts) noexcept {
   (void)self;
   static_cast<vtkPolyData*>(self)->ReplaceLinkedCell(cellId, npts, pts);
 }
@@ -443,17 +445,17 @@ extern "C" void* vtkPolyData__GetData__1(void* v, int32_t i) noexcept {
 
 extern "C" int32_t vtkPolyData__GetScalarFieldCriticalIndex__0(void* self, int64_t pointId, void* scalarField) noexcept {
   (void)self;
-  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(pointId, static_cast<vtkDataArray*>(scalarField));
+  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(static_cast<long long>(pointId), static_cast<vtkDataArray*>(scalarField));
 }
 
 extern "C" int32_t vtkPolyData__GetScalarFieldCriticalIndex__1(void* self, int64_t pointId, int32_t fieldId) noexcept {
   (void)self;
-  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(pointId, fieldId);
+  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(static_cast<long long>(pointId), fieldId);
 }
 
 extern "C" int32_t vtkPolyData__GetScalarFieldCriticalIndex__2(void* self, int64_t pointId, const char* fieldName) noexcept {
   (void)self;
-  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(pointId, fieldName);
+  return static_cast<vtkPolyData*>(self)->GetScalarFieldCriticalIndex(static_cast<long long>(pointId), fieldName);
 }
 
 extern "C" unsigned long vtkPolyData__GetMeshMTime__0(void* self) noexcept {

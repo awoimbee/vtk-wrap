@@ -14,6 +14,8 @@
 #include "vtkPolyData.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkKdTree__vtk_wrap_new() noexcept { return static_cast<void*>(vtkKdTree::New()); }
 
 extern "C" int32_t vtkKdTree__IsTypeOf__0(const char* type_) noexcept {
@@ -280,12 +282,12 @@ extern "C" int64_t vtkKdTree__GetCellLists__2(void* self, void* regions, void* i
 
 extern "C" int32_t vtkKdTree__GetRegionContainingCell__0(void* self, void* set, int64_t cellID) noexcept {
   (void)self;
-  return static_cast<vtkKdTree*>(self)->GetRegionContainingCell(static_cast<vtkDataSet*>(set), cellID);
+  return static_cast<vtkKdTree*>(self)->GetRegionContainingCell(static_cast<vtkDataSet*>(set), static_cast<long long>(cellID));
 }
 
 extern "C" int32_t vtkKdTree__GetRegionContainingCell__1(void* self, int32_t set, int64_t cellID) noexcept {
   (void)self;
-  return static_cast<vtkKdTree*>(self)->GetRegionContainingCell(set, cellID);
+  return static_cast<vtkKdTree*>(self)->GetRegionContainingCell(set, static_cast<long long>(cellID));
 }
 
 extern "C" int32_t vtkKdTree__GetRegionContainingCell__2(void* self, int64_t cellID) noexcept {

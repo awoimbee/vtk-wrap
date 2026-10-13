@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" int32_t vtkAbstractCellLinks__IsTypeOf__0(const char* type_) noexcept {
   return vtkAbstractCellLinks::IsTypeOf(type_);
 }
@@ -74,11 +76,11 @@ extern "C" void vtkAbstractCellLinks__ShallowCopy__0(void* self, void* src) noex
 }
 
 extern "C" int32_t vtkAbstractCellLinks__ComputeType__0(int64_t maxPtId, int64_t maxCellId, void* ca) noexcept {
-  return vtkAbstractCellLinks::ComputeType(maxPtId, maxCellId, static_cast<vtkCellArray*>(ca));
+  return vtkAbstractCellLinks::ComputeType(static_cast<long long>(maxPtId), static_cast<long long>(maxCellId), static_cast<vtkCellArray*>(ca));
 }
 
 extern "C" int32_t vtkAbstractCellLinks__ComputeType__1(int64_t maxPtId, int64_t maxCellId, int64_t connectivitySize) noexcept {
-  return vtkAbstractCellLinks::ComputeType(maxPtId, maxCellId, connectivitySize);
+  return vtkAbstractCellLinks::ComputeType(static_cast<long long>(maxPtId), static_cast<long long>(maxCellId), static_cast<long long>(connectivitySize));
 }
 
 extern "C" int32_t vtkAbstractCellLinks__GetType__0(void* self) noexcept {

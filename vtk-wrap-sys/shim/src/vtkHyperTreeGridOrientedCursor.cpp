@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkHyperTreeGridOrientedCursor__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHyperTreeGridOrientedCursor::New()); }
 
 extern "C" int32_t vtkHyperTreeGridOrientedCursor__IsTypeOf__0(const char* type_) noexcept {
@@ -42,7 +44,7 @@ extern "C" void vtkHyperTreeGridOrientedCursor__Initialize__0(void* self, void* 
 
 extern "C" void vtkHyperTreeGridOrientedCursor__Initialize__1(void* self, void* grid, void* tree, uint32_t level, int64_t index) noexcept {
   (void)self;
-  static_cast<vtkHyperTreeGridOrientedCursor*>(self)->Initialize(static_cast<vtkHyperTreeGrid*>(grid), static_cast<vtkHyperTree*>(tree), level, index);
+  static_cast<vtkHyperTreeGridOrientedCursor*>(self)->Initialize(static_cast<vtkHyperTreeGrid*>(grid), static_cast<vtkHyperTree*>(tree), level, static_cast<long long>(index));
 }
 
 extern "C" void* vtkHyperTreeGridOrientedCursor__GetGrid__0(void* self) noexcept {

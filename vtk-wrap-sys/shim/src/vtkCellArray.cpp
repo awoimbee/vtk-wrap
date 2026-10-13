@@ -10,6 +10,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkCellArray__vtk_wrap_new() noexcept { return static_cast<void*>(vtkCellArray::New()); }
 
 extern "C" int32_t vtkCellArray__IsTypeOf__0(const char* type_) noexcept {
@@ -111,7 +113,7 @@ extern "C" bool vtkCellArray__SetData__0(void* self, void* offsets, void* connec
 
 extern "C" bool vtkCellArray__SetData__1(void* self, int64_t cellSize, void* connectivity) noexcept {
   (void)self;
-  return static_cast<vtkCellArray*>(self)->SetData(cellSize, static_cast<vtkDataArray*>(connectivity));
+  return static_cast<vtkCellArray*>(self)->SetData(static_cast<long long>(cellSize), static_cast<vtkDataArray*>(connectivity));
 }
 
 extern "C" bool vtkCellArray__IsStorage64Bit__0(void* self) noexcept {
@@ -326,7 +328,7 @@ extern "C" void vtkCellArray__ReverseCellAtId__0(void* self, int64_t cellId) noe
 
 extern "C" void vtkCellArray__ReplaceCellAtId__0(void* self, int64_t cellId, void* list) noexcept {
   (void)self;
-  static_cast<vtkCellArray*>(self)->ReplaceCellAtId(cellId, static_cast<vtkIdList*>(list));
+  static_cast<vtkCellArray*>(self)->ReplaceCellAtId(static_cast<long long>(cellId), static_cast<vtkIdList*>(list));
 }
 
 extern "C" void vtkCellArray__ReplaceCellPointAtId__0(void* self, int64_t cellId, int64_t cellPointIndex, int64_t newPointId) noexcept {
@@ -366,7 +368,7 @@ extern "C" void vtkCellArray__ImportLegacyFormat__0(void* self, void* data) noex
 
 extern "C" void vtkCellArray__AppendLegacyFormat__0(void* self, void* data, int64_t ptOffset) noexcept {
   (void)self;
-  static_cast<vtkCellArray*>(self)->AppendLegacyFormat(static_cast<vtkIdTypeArray*>(data), ptOffset);
+  static_cast<vtkCellArray*>(self)->AppendLegacyFormat(static_cast<vtkIdTypeArray*>(data), static_cast<long long>(ptOffset));
 }
 
 extern "C" unsigned long vtkCellArray__GetActualMemorySize__0(void* self) noexcept {

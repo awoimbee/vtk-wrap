@@ -10,6 +10,8 @@
 #include "vtkUnstructuredGrid.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkReebGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkReebGraph::New()); }
 
 extern "C" int32_t vtkReebGraph__IsTypeOf__0(const char* type_) noexcept {
@@ -51,12 +53,12 @@ extern "C" int32_t vtkReebGraph__Build__1(void* self, void* mesh, void* scalarFi
 
 extern "C" int32_t vtkReebGraph__Build__2(void* self, void* mesh, int64_t scalarFieldId) noexcept {
   (void)self;
-  return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkPolyData*>(mesh), scalarFieldId);
+  return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkPolyData*>(mesh), static_cast<long long>(scalarFieldId));
 }
 
 extern "C" int32_t vtkReebGraph__Build__3(void* self, void* mesh, int64_t scalarFieldId) noexcept {
   (void)self;
-  return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkUnstructuredGrid*>(mesh), scalarFieldId);
+  return static_cast<vtkReebGraph*>(self)->Build(static_cast<vtkUnstructuredGrid*>(mesh), static_cast<long long>(scalarFieldId));
 }
 
 extern "C" int32_t vtkReebGraph__Build__4(void* self, void* mesh, const char* scalarFieldName) noexcept {

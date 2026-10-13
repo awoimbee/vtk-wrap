@@ -5,6 +5,8 @@
 #include "vtkRenderWindow.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkPixelBufferObject__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPixelBufferObject::New()); }
 
 extern "C" int32_t vtkPixelBufferObject__IsTypeOf__0(const char* type_) noexcept {
@@ -54,7 +56,7 @@ extern "C" bool vtkPixelBufferObject__Upload1D__0(void* self, int32_t type_, voi
   return static_cast<vtkPixelBufferObject*>(self)->Upload1D(type_, data, numtuples, comps, increment);
 }
 
-extern "C" bool vtkPixelBufferObject__Upload2D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t comps, int64_t* increments) noexcept {
+extern "C" bool vtkPixelBufferObject__Upload2D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t comps, long long* increments) noexcept {
   (void)self;
   return static_cast<vtkPixelBufferObject*>(self)->Upload2D(type_, data, dims, comps, increments);
 }
@@ -104,12 +106,12 @@ extern "C" bool vtkPixelBufferObject__Download1D__0(void* self, int32_t type_, v
   return static_cast<vtkPixelBufferObject*>(self)->Download1D(type_, data, dim, numcomps, increment);
 }
 
-extern "C" bool vtkPixelBufferObject__Download2D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t numcomps, int64_t* increments) noexcept {
+extern "C" bool vtkPixelBufferObject__Download2D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t numcomps, long long* increments) noexcept {
   (void)self;
   return static_cast<vtkPixelBufferObject*>(self)->Download2D(type_, data, dims, numcomps, increments);
 }
 
-extern "C" bool vtkPixelBufferObject__Download3D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t numcomps, int64_t* increments) noexcept {
+extern "C" bool vtkPixelBufferObject__Download3D__0(void* self, int32_t type_, void* data, uint32_t* dims, int32_t numcomps, long long* increments) noexcept {
   (void)self;
   return static_cast<vtkPixelBufferObject*>(self)->Download3D(type_, data, dims, numcomps, increments);
 }

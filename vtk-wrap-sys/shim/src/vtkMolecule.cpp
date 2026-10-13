@@ -15,6 +15,8 @@
 #include "vtkUnsignedShortArray.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkMolecule__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMolecule::New()); }
 
 extern "C" int32_t vtkMolecule__IsTypeOf__0(const char* type_) noexcept {
@@ -76,17 +78,17 @@ extern "C" void vtkMolecule__SetAtomPosition__0(void* self, int64_t atomId, doub
 
 extern "C" void vtkMolecule__SetAtomPosition__1(void* self, int64_t atomId, double* pos) noexcept {
   (void)self;
-  static_cast<vtkMolecule*>(self)->SetAtomPosition(atomId, pos);
+  static_cast<vtkMolecule*>(self)->SetAtomPosition(static_cast<long long>(atomId), pos);
 }
 
 extern "C" void vtkMolecule__GetAtomPosition__0(void* self, int64_t atomId, float* pos) noexcept {
   (void)self;
-  static_cast<vtkMolecule*>(self)->GetAtomPosition(atomId, pos);
+  static_cast<vtkMolecule*>(self)->GetAtomPosition(static_cast<long long>(atomId), pos);
 }
 
 extern "C" void vtkMolecule__GetAtomPosition__1(void* self, int64_t atomId, double* pos) noexcept {
   (void)self;
-  static_cast<vtkMolecule*>(self)->GetAtomPosition(atomId, pos);
+  static_cast<vtkMolecule*>(self)->GetAtomPosition(static_cast<long long>(atomId), pos);
 }
 
 extern "C" void vtkMolecule__SetBondOrder__0(void* self, int64_t bondId, uint16_t order) noexcept {

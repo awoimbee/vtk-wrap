@@ -4,6 +4,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkSurfaceNetsAtlas__vtk_wrap_new() noexcept { return static_cast<void*>(vtkSurfaceNetsAtlas::New()); }
 
 extern "C" int32_t vtkSurfaceNetsAtlas__IsTypeOf__0(const char* type_) noexcept {
@@ -138,14 +140,14 @@ extern "C" void vtkSurfaceNetsAtlas__GenerateSelectedLabels__0(void* self, int32
   static_cast<vtkSurfaceNetsAtlas*>(self)->GenerateSelectedLabels(numLabels, rangeStart, rangeEnd);
 }
 
-extern "C" void vtkSurfaceNetsAtlas__GenerateSelectedLabels__1(void* self, int32_t numLabels, int64_t* range) noexcept {
+extern "C" void vtkSurfaceNetsAtlas__GenerateSelectedLabels__1(void* self, int32_t numLabels, long long* range) noexcept {
   (void)self;
   static_cast<vtkSurfaceNetsAtlas*>(self)->GenerateSelectedLabels(numLabels, range);
 }
 
 extern "C" void vtkSurfaceNetsAtlas__GenerateSelectedLabels__2(void* self, int64_t rangeStart, int64_t rangeEnd) noexcept {
   (void)self;
-  static_cast<vtkSurfaceNetsAtlas*>(self)->GenerateSelectedLabels(rangeStart, rangeEnd);
+  static_cast<vtkSurfaceNetsAtlas*>(self)->GenerateSelectedLabels(static_cast<long long>(rangeStart), static_cast<long long>(rangeEnd));
 }
 
 extern "C" int32_t vtkSurfaceNetsAtlas__GetNumberOfLabelNames__0(void* self) noexcept {
@@ -245,7 +247,7 @@ extern "C" int32_t vtkSurfaceNetsAtlas__GetNumberOfLabels__0(void* self) noexcep
 
 extern "C" bool vtkSurfaceNetsAtlas__HasLabel__0(void* self, int64_t label) noexcept {
   (void)self;
-  return static_cast<vtkSurfaceNetsAtlas*>(self)->HasLabel(label);
+  return static_cast<vtkSurfaceNetsAtlas*>(self)->HasLabel(static_cast<long long>(label));
 }
 
 extern "C" bool vtkSurfaceNetsAtlas__HasLabel__1(void* self, const char* name) noexcept {
@@ -260,7 +262,7 @@ extern "C" int64_t vtkSurfaceNetsAtlas__GetLabelForName__0(void* self, const cha
 
 extern "C" int32_t vtkSurfaceNetsAtlas__GetLIDForLabel__0(void* self, int64_t label) noexcept {
   (void)self;
-  return static_cast<vtkSurfaceNetsAtlas*>(self)->GetLIDForLabel(label);
+  return static_cast<vtkSurfaceNetsAtlas*>(self)->GetLIDForLabel(static_cast<long long>(label));
 }
 
 extern "C" int32_t vtkSurfaceNetsAtlas__GetLIDForLabel__1(void* self, const char* name) noexcept {
@@ -275,7 +277,7 @@ extern "C" int64_t vtkSurfaceNetsAtlas__GetLabelForLID__0(void* self, int32_t li
 
 extern "C" bool vtkSurfaceNetsAtlas__AreAdjacent__0(void* self, int64_t label0, int64_t label1) noexcept {
   (void)self;
-  return static_cast<vtkSurfaceNetsAtlas*>(self)->AreAdjacent(label0, label1);
+  return static_cast<vtkSurfaceNetsAtlas*>(self)->AreAdjacent(static_cast<long long>(label0), static_cast<long long>(label1));
 }
 
 extern "C" bool vtkSurfaceNetsAtlas__AreAdjacent__1(void* self, const char* name0, const char* name1) noexcept {
@@ -288,14 +290,14 @@ extern "C" int64_t vtkSurfaceNetsAtlas__GetNumberOfPatches__0(void* self) noexce
   return static_cast<vtkSurfaceNetsAtlas*>(self)->GetNumberOfPatches();
 }
 
-extern "C" void vtkSurfaceNetsAtlas__GetPatchLabels__0(void* self, int32_t patchID, int64_t* labels) noexcept {
+extern "C" void vtkSurfaceNetsAtlas__GetPatchLabels__0(void* self, int32_t patchID, long long* labels) noexcept {
   (void)self;
   static_cast<vtkSurfaceNetsAtlas*>(self)->GetPatchLabels(patchID, labels);
 }
 
 extern "C" int32_t vtkSurfaceNetsAtlas__GetPatchID__0(void* self, int64_t label0, int64_t label1) noexcept {
   (void)self;
-  return static_cast<vtkSurfaceNetsAtlas*>(self)->GetPatchID(label0, label1);
+  return static_cast<vtkSurfaceNetsAtlas*>(self)->GetPatchID(static_cast<long long>(label0), static_cast<long long>(label1));
 }
 
 extern "C" int32_t vtkSurfaceNetsAtlas__GetPatchID__1(void* self, const char* name0, const char* name1) noexcept {

@@ -12,6 +12,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkImageData__vtk_wrap_new() noexcept { return static_cast<void*>(vtkImageData::New()); }
 
 extern "C" void* vtkImageData__ExtendedNew__0() noexcept {
@@ -145,12 +147,12 @@ extern "C" int32_t vtkImageData__GetScalarSize__1(void* self) noexcept {
   return static_cast<vtkImageData*>(self)->GetScalarSize();
 }
 
-extern "C" void vtkImageData__GetIncrements__0(void* self, int64_t* inc) noexcept {
+extern "C" void vtkImageData__GetIncrements__0(void* self, long long* inc) noexcept {
   (void)self;
   static_cast<vtkImageData*>(self)->GetIncrements(inc);
 }
 
-extern "C" void vtkImageData__GetIncrements__1(void* self, void* scalars, int64_t* inc) noexcept {
+extern "C" void vtkImageData__GetIncrements__1(void* self, void* scalars, long long* inc) noexcept {
   (void)self;
   static_cast<vtkImageData*>(self)->GetIncrements(static_cast<vtkDataArray*>(scalars), inc);
 }
@@ -382,7 +384,7 @@ extern "C" void* vtkImageData__GetArrayPointer__1(void* self, void* array, int32
   return const_cast<void*>(static_cast<vtkImageData*>(self)->GetArrayPointer(static_cast<vtkDataArray*>(array), x, y, z));
 }
 
-extern "C" void vtkImageData__GetArrayIncrements__0(void* self, void* array, int64_t* increments) noexcept {
+extern "C" void vtkImageData__GetArrayIncrements__0(void* self, void* array, long long* increments) noexcept {
   (void)self;
   static_cast<vtkImageData*>(self)->GetArrayIncrements(static_cast<vtkDataArray*>(array), increments);
 }

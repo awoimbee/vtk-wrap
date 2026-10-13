@@ -6,6 +6,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkPoints__vtk_wrap_new() noexcept { return static_cast<void*>(vtkPoints::New()); }
 
 extern "C" int32_t vtkPoints__IsTypeOf__0(const char* type_) noexcept {
@@ -147,12 +149,12 @@ extern "C" void vtkPoints__GetPoint__0(void* self, int64_t id, double* x) noexce
 
 extern "C" void vtkPoints__SetPoint__0(void* self, int64_t id, const float* x) noexcept {
   (void)self;
-  static_cast<vtkPoints*>(self)->SetPoint(id, x);
+  static_cast<vtkPoints*>(self)->SetPoint(static_cast<long long>(id), x);
 }
 
 extern "C" void vtkPoints__SetPoint__1(void* self, int64_t id, const double* x) noexcept {
   (void)self;
-  static_cast<vtkPoints*>(self)->SetPoint(id, x);
+  static_cast<vtkPoints*>(self)->SetPoint(static_cast<long long>(id), x);
 }
 
 extern "C" void vtkPoints__SetPoint__2(void* self, int64_t id, double x, double y, double z) noexcept {
@@ -162,12 +164,12 @@ extern "C" void vtkPoints__SetPoint__2(void* self, int64_t id, double x, double 
 
 extern "C" void vtkPoints__InsertPoint__0(void* self, int64_t id, const float* x) noexcept {
   (void)self;
-  static_cast<vtkPoints*>(self)->InsertPoint(id, x);
+  static_cast<vtkPoints*>(self)->InsertPoint(static_cast<long long>(id), x);
 }
 
 extern "C" void vtkPoints__InsertPoint__1(void* self, int64_t id, const double* x) noexcept {
   (void)self;
-  static_cast<vtkPoints*>(self)->InsertPoint(id, x);
+  static_cast<vtkPoints*>(self)->InsertPoint(static_cast<long long>(id), x);
 }
 
 extern "C" void vtkPoints__InsertPoint__2(void* self, int64_t id, double x, double y, double z) noexcept {

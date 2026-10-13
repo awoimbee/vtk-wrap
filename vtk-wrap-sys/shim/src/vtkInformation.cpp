@@ -25,6 +25,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkInformation__vtk_wrap_new() noexcept { return static_cast<void*>(vtkInformation::New()); }
 
 extern "C" int32_t vtkInformation__IsTypeOf__0(const char* type_) noexcept {
@@ -201,7 +203,7 @@ extern "C" int32_t vtkInformation__Has__2(void* self, void* key) noexcept {
 
 extern "C" void vtkInformation__Set__2(void* self, void* key, int64_t value) noexcept {
   (void)self;
-  static_cast<vtkInformation*>(self)->Set(static_cast<vtkInformationIdTypeKey*>(key), value);
+  static_cast<vtkInformation*>(self)->Set(static_cast<vtkInformationIdTypeKey*>(key), static_cast<long long>(value));
 }
 
 extern "C" int64_t vtkInformation__Get__1(void* self, void* key) noexcept {

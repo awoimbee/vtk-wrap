@@ -7,6 +7,8 @@
 #include "vtkSelection.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkHardwareSelector__vtk_wrap_new() noexcept { return static_cast<void*>(vtkHardwareSelector::New()); }
 
 extern "C" int32_t vtkHardwareSelector__IsTypeOf__0(const char* type_) noexcept {
@@ -163,7 +165,7 @@ extern "C" void vtkHardwareSelector__SetPropColorValue__1(void* self, const floa
 
 extern "C" void vtkHardwareSelector__SetPropColorValue__2(void* self, int64_t val) noexcept {
   (void)self;
-  static_cast<vtkHardwareSelector*>(self)->SetPropColorValue(val);
+  static_cast<vtkHardwareSelector*>(self)->SetPropColorValue(static_cast<long long>(val));
 }
 
 extern "C" int32_t vtkHardwareSelector__GetCurrentPass__0(void* self) noexcept {
@@ -192,7 +194,7 @@ extern "C" void* vtkHardwareSelector__GetPropFromID__0(void* self, int32_t id) n
 }
 
 extern "C" void vtkHardwareSelector__Convert__0(int64_t id, float* tcoord) noexcept {
-  vtkHardwareSelector::Convert(id, tcoord);
+  vtkHardwareSelector::Convert(static_cast<long long>(id), tcoord);
 }
 
 extern "C" void vtkHardwareSelector__SavePixelBuffer__0(void* self, int32_t passNo) noexcept {

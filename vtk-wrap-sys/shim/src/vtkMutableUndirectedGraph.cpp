@@ -7,6 +7,8 @@
 #include "vtkVariantArray.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkMutableUndirectedGraph__vtk_wrap_new() noexcept { return static_cast<void*>(vtkMutableUndirectedGraph::New()); }
 
 extern "C" int32_t vtkMutableUndirectedGraph__IsTypeOf__0(const char* type_) noexcept {
@@ -58,12 +60,12 @@ extern "C" void vtkMutableUndirectedGraph__LazyAddVertex__1(void* self, void* pr
 
 extern "C" void vtkMutableUndirectedGraph__LazyAddEdge__0(void* self, int64_t u, int64_t v) noexcept {
   (void)self;
-  static_cast<vtkMutableUndirectedGraph*>(self)->LazyAddEdge(u, v);
+  static_cast<vtkMutableUndirectedGraph*>(self)->LazyAddEdge(static_cast<long long>(u), static_cast<long long>(v));
 }
 
 extern "C" void vtkMutableUndirectedGraph__LazyAddEdge__1(void* self, int64_t u, int64_t v, void* propertyArr) noexcept {
   (void)self;
-  static_cast<vtkMutableUndirectedGraph*>(self)->LazyAddEdge(u, v, static_cast<vtkVariantArray*>(propertyArr));
+  static_cast<vtkMutableUndirectedGraph*>(self)->LazyAddEdge(static_cast<long long>(u), static_cast<long long>(v), static_cast<vtkVariantArray*>(propertyArr));
 }
 
 extern "C" void* vtkMutableUndirectedGraph__AddGraphEdge__0(void* self, int64_t u, int64_t v) noexcept {

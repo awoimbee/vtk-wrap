@@ -5,6 +5,8 @@
 #include "vtkObjectBase.h"
 #include <string>
 
+static_assert(sizeof(long long) == sizeof(int64_t) && alignof(long long) == alignof(int64_t), "long long must match the Rust integer ABI");
+
 extern "C" void* vtkDataAssembly__vtk_wrap_new() noexcept { return static_cast<void*>(vtkDataAssembly::New()); }
 
 extern "C" int32_t vtkDataAssembly__IsTypeOf__0(const char* type_) noexcept {
@@ -165,7 +167,7 @@ extern "C" void vtkDataAssembly__SetAttribute__2(void* self, int32_t id, const c
 
 extern "C" void vtkDataAssembly__SetAttribute__3(void* self, int32_t id, const char* name, int64_t value) noexcept {
   (void)self;
-  static_cast<vtkDataAssembly*>(self)->SetAttribute(id, name, value);
+  static_cast<vtkDataAssembly*>(self)->SetAttribute(id, name, static_cast<long long>(value));
 }
 
 extern "C" const char* vtkDataAssembly__GetAttributeOrDefault__0(void* self, int32_t id, const char* name, const char* default_value) noexcept {
@@ -185,7 +187,7 @@ extern "C" uint32_t vtkDataAssembly__GetAttributeOrDefault__2(void* self, int32_
 
 extern "C" int64_t vtkDataAssembly__GetAttributeOrDefault__3(void* self, int32_t id, const char* name, int64_t default_value) noexcept {
   (void)self;
-  return static_cast<vtkDataAssembly*>(self)->GetAttributeOrDefault(id, name, default_value);
+  return static_cast<vtkDataAssembly*>(self)->GetAttributeOrDefault(id, name, static_cast<long long>(default_value));
 }
 
 extern "C" void vtkDataAssembly__Visit__0(void* self, void* visitor, int32_t traversal_order) noexcept {

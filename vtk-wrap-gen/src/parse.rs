@@ -372,6 +372,13 @@ fn resolve_ty(
 
     for (name, ty) in SCALAR_MAP {
         if *name == base {
+            let element = || {
+                if matches!(ty, Ty::I64 | Ty::U64) {
+                    Ty::NativeScalar(Box::new(ty.clone()), base.to_owned())
+                } else {
+                    ty.clone()
+                }
+            };
             if has_ptr {
                 // `static int *GetFooCases()` carries a size hint: the method
                 // returns a pointer to a fixed-size static array, which we can
@@ -380,7 +387,7 @@ fn resolve_ty(
                 // pointers that decays to `T**`.
                 if is_return {
                     if let Some(n) = size.and_then(parse_property_size) {
-                        return Ok(Some(Ty::Array(Box::new(ty.clone()), n, is_const)));
+                        return Ok(Some(Ty::Array(Box::new(element()), n, is_const)));
                     }
                 }
                 return Err(()); // `T *x` or `T *x[N]`: no expressible extent
@@ -390,13 +397,13 @@ fn resolve_ty(
                     if is_return {
                         return Err(()); // variable length arrays cannot be returned
                     }
-                    return Ok(Some(Ty::Slice(Box::new(ty.clone()), is_const)));
+                    return Ok(Some(Ty::Slice(Box::new(element()), is_const)));
                 }
                 if size_str.starts_with('{') {
                     return Err(()); // multi dimensional arrays are not supported
                 }
                 if let Some(n) = parse_property_size(size_str) {
-                    return Ok(Some(Ty::Array(Box::new(ty.clone()), n, is_const)));
+                    return Ok(Some(Ty::Array(Box::new(element()), n, is_const)));
                 }
             }
             return Ok(Some(ty.clone()));
@@ -604,6 +611,16 @@ pub fn build_api(xml_dir: &Path, opts: &BuildOptions) -> Result<Api> {
                 }
             };
 
+            // An implicit conversion from int64_t (long on Linux) does not
+            // select a long long overload over int or unsigned int overloads.
+            let needs_native_scalars = raw.methods.iter().any(|other| {
+                !std::ptr::eq(other, rm)
+                    && other.name == rm.name
+                    && other.params.len() >= rm.params.len()
+                    && other.params[rm.params.len()..]
+                        .iter()
+                        .all(|p| p.default.is_some())
+            });
             let mut params = Vec::new();
             let mut ok = true;
             for (i, p) in rm.params.iter().enumerate() {
@@ -614,7 +631,14 @@ pub fn build_api(xml_dir: &Path, opts: &BuildOptions) -> Result<Api> {
                     &ctx,
                     false,
                 ) {
-                    Ok(Some(t)) => {
+                    Ok(Some(mut t)) => {
+                        if needs_native_scalars && matches!(t, Ty::I64 | Ty::U64) {
+                            let native = p.type_.as_deref().expect("resolved scalar has a type");
+                            t = Ty::NativeScalar(
+                                Box::new(t),
+                                native.trim_start_matches("const ").to_owned(),
+                            );
+                        }
                         let name = p
                             .name
                             .clone()
@@ -769,6 +793,102 @@ fn sanitize_ident(name: &str) -> String {
         s.push('_');
     }
     s
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn integer_overloads_preserve_native_argument_types() {
+        let dir = std::env::temp_dir().join(format!("vtk-wrap-overloads-{}", std::process::id()));
+        let module = dir.join("vtkCommonCore");
+        std::fs::create_dir_all(&module).unwrap();
+        std::fs::write(
+            module.join("vtkTest.xml"),
+            r#"<file name="vtkTest.h">
+              <class name="vtkTest">
+                <base name="vtkObjectBase"/>
+                <method name="SetValue"><param name="value" type="int"/></method>
+                <method name="SetValue"><param name="value" type="long long"/></method>
+                <method name="SetDefault">
+                  <param name="value" type="int"/><param name="index" type="int" value="0"/>
+                </method>
+                <method name="SetDefault"><param name="value" type="unsigned long long"/></method>
+                <method name="SetUnambiguous"><param name="value" type="long long"/></method>
+              </class>
+            </file>"#,
+        )
+        .unwrap();
+        let api = build_api(
+            &dir,
+            &BuildOptions {
+                modules: vec![],
+                vtk_include: None,
+            },
+        )
+        .unwrap();
+        std::fs::remove_dir_all(dir).unwrap();
+        let class = &api.classes["vtkTest"];
+        let param_type = |name: &str| {
+            &class
+                .methods
+                .iter()
+                .find(|m| m.c_name == name)
+                .unwrap()
+                .params[0]
+                .ty
+        };
+        assert_eq!(
+            param_type("vtkTest__SetValue__1"),
+            &Ty::NativeScalar(Box::new(Ty::I64), "long long".into())
+        );
+        assert_eq!(
+            param_type("vtkTest__SetDefault__1"),
+            &Ty::NativeScalar(Box::new(Ty::U64), "unsigned long long".into())
+        );
+        assert_eq!(param_type("vtkTest__SetUnambiguous__0"), &Ty::I64);
+    }
+
+    #[test]
+    fn native_integer_array_types_keep_the_rust_abi() {
+        let known_classes = BTreeSet::new();
+        let ctx = TypeCtx {
+            known_classes: &known_classes,
+        };
+        for (native, abi) in SCALAR_MAP {
+            if !matches!(abi, Ty::I64 | Ty::U64) {
+                continue;
+            }
+            let scalar = resolve_ty(Some(native), None, None, &ctx, false).unwrap();
+            assert_eq!(scalar, Some(abi.clone()));
+
+            let output = resolve_ty(Some(native), None, Some("2"), &ctx, false)
+                .unwrap()
+                .unwrap();
+            assert_eq!(output.c_type(), format!("{native}*"));
+            assert_eq!(output.ffi_type(), format!("*mut {}", abi.ffi_type()));
+            assert_eq!(
+                output.rust_param(),
+                format!("&mut [{}; 2]", abi.rust_param())
+            );
+
+            let const_native = format!("const {native}");
+            let input = resolve_ty(Some(&const_native), None, Some(":"), &ctx, false)
+                .unwrap()
+                .unwrap();
+            assert_eq!(input.c_type(), format!("const {native}*"));
+            assert_eq!(input.ffi_type(), format!("*const {}", abi.ffi_type()));
+            assert_eq!(input.rust_param(), format!("&[{}]", abi.rust_param()));
+
+            let returned = resolve_ty(Some(native), Some("*"), Some("2"), &ctx, true)
+                .unwrap()
+                .unwrap();
+            assert_eq!(returned.c_return(), format!("{native}*"));
+            assert_eq!(returned.ffi_return(), format!("*mut {}", abi.ffi_type()));
+            assert_eq!(returned.rust_return(), format!("[{}; 2]", abi.rust_param()));
+        }
+    }
 }
 
 /// Method names that would shadow trait methods the generated wrappers
