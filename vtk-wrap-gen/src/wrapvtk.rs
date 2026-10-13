@@ -124,7 +124,11 @@ fn pinned_vtk_dir(repo: &Path) -> Option<PathBuf> {
         Some(dir) => PathBuf::from(dir),
         None => repo.join("target/vtk-wrap-vtk"),
     };
-    let entries = std::fs::read_dir(&cache).ok()?;
+    find_pinned_vtk_under(&cache)
+}
+
+fn find_pinned_vtk_under(cache: &Path) -> Option<PathBuf> {
+    let entries = std::fs::read_dir(cache).ok()?;
     // `vtk-wrap-sys` installs each pinned release at `<cache>/vtk-<version>/build`;
     // turn that into the `.../lib/cmake/vtk-<version>` package directory, which
     // is what the rest of this module works with.
@@ -410,17 +414,17 @@ mod tests {
         std::fs::remove_dir_all(&base).ok();
     }
 
-    /// The pinned VTK that `vtk-wrap-sys` builds is preferred over any system VTK,
-    /// and is reported as a CMake package directory.
+    /// The cached pinned VTK is reported as a CMake package directory.
     #[test]
     fn pinned_vtk_is_found_in_the_cache() {
         let repo = std::env::temp_dir().join(format!("vtk-wrap-pin-{}", std::process::id()));
-        let build = repo.join("target/vtk-wrap-vtk/vtk-9.7.1/build");
+        let cache = repo.join("target/vtk-wrap-vtk");
+        let build = cache.join("vtk-9.7.1/build");
         std::fs::create_dir_all(build.join("lib/cmake/vtk-9.7")).unwrap();
         std::fs::write(build.join("lib/cmake/vtk-9.7/vtk-config.cmake"), "").unwrap();
         std::fs::create_dir_all(build.join("include/vtk-9.7")).unwrap();
 
-        let found = pinned_vtk_dir(&repo).expect("pinned VTK not found");
+        let found = find_pinned_vtk_under(&cache).expect("pinned VTK not found");
         assert_eq!(found, build.join("lib/cmake/vtk-9.7"));
         assert_eq!(
             vtk_include_dir(&found).as_deref(),
