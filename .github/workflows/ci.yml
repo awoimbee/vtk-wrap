@@ -134,7 +134,7 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ env.VTK_WRAP_CACHE_DIR }}
-          key: vtk-wrap-vtk-${{ runner.os }}-${{ hashFiles('build.rs', 'Cargo.toml', 'Cargo.lock', 'build_support/**') }}
+          key: vtk-wrap-vtk-${{ runner.os }}-${{ hashFiles('build.rs', 'Cargo.toml', 'Cargo.lock', 'build_support/**', 'vendor/WrapVTK/**') }}
           restore-keys: |
             vtk-wrap-vtk-${{ runner.os }}-
 

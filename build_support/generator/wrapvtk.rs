@@ -1,12 +1,12 @@
-//! Fetching WrapVTK and producing the XML API description.
+//! Building vendored WrapVTK and producing the XML API description.
 //!
 //! The bindings are generated from VTK's own wrapping metadata.  That metadata
 //! is not shipped with VTK: it is produced by [WrapVTK]'s `vtkWrapXML`, a tool
 //! that reads the installed VTK headers and writes one directory of `*.xml`
 //! per module.
 //!
-//! This module clones (or reuses) WrapVTK, builds `vtkWrapXML` against VTK,
-//! and hands the resulting XML directory to the generator.
+//! This module builds the bundled `vtkWrapXML` against VTK and hands its XML
+//! output to the generator. Sources are read-only; all build files are cached.
 //!
 //! [WrapVTK]: https://github.com/dgobbi/WrapVTK
 
@@ -15,46 +15,35 @@ use std::process::Command;
 
 use anyhow::{bail, Context, Result};
 
-/// Our patched copy of WrapVTK's top level `CMakeLists.txt`.  The only change is
-/// that it honours `WRAPVTK_MODULES`, so only the modules we wrap are processed.
+/// Separate CMake project selecting the requested modules without patching
+/// the upstream sources.
 const WRAPVTK_CMAKE: &str = include_str!("../support/wrapvtk-CMakeLists.txt");
-
-pub const DEFAULT_WRAPVTK_URL: &str = "https://github.com/dgobbi/WrapVTK.git";
-pub const DEFAULT_WRAPVTK_REVISION: &str = "202e8146496bb969732dad520025d91a67f91b61";
 
 /// Everything the XML step needs to know.
 pub struct Request {
-    /// Repository root, used for the default WrapVTK location.
+    /// Package root, containing vendor/WrapVTK.
     pub repo: PathBuf,
     /// VTK CMake package directory (or install prefix).  `None` means "find it".
     pub vtk_dir: Option<PathBuf>,
-    /// WrapVTK checkout to use or create.  `None` means `<repo>/target/wrapvtk`.
+    /// Local source override. `None` uses the bundled vendor/WrapVTK tree.
     pub wrapvtk_dir: Option<PathBuf>,
-    /// Separate build tree, allowing one pinned checkout to serve module sets.
+    /// Out-of-source build tree, separate for each module set.
     pub build_dir: Option<PathBuf>,
-    /// Git URL to clone WrapVTK from.
-    pub wrapvtk_url: String,
     /// VTK modules to wrap, in VTK's spelling (`vtkCommonCore`).  Empty means all.
     pub modules: Vec<String>,
     /// Value for `cmake --build --parallel`.
     pub jobs: Option<String>,
 }
 
-/// Clone/build WrapVTK as needed and return the directory holding the XML.
+/// Build WrapVTK as needed and return the directory holding the XML.
 pub fn ensure_xml(req: &Request) -> Result<PathBuf> {
     let vtk_dir = resolve_vtk_dir(req.vtk_dir.as_deref(), &req.repo)?;
     println!("Using VTK at {}", vtk_dir.display());
-    let wrapvtk_dir = req
-        .wrapvtk_dir
-        .clone()
-        .unwrap_or_else(|| req.repo.join("target/wrapvtk/WrapVTK"));
-
-    ensure_source(&wrapvtk_dir, &req.wrapvtk_url)?;
-    write_cmake(&wrapvtk_dir)?;
+    let wrapvtk_dir = source_dir(&req.repo, req.wrapvtk_dir.as_deref())?;
     let build = req
         .build_dir
         .clone()
-        .unwrap_or_else(|| wrapvtk_dir.join("build"));
+        .unwrap_or_else(|| req.repo.join("target/wrapvtk/build"));
     build_wrapvtk(
         &wrapvtk_dir,
         &build,
@@ -224,72 +213,36 @@ pub fn vtk_include_dir(vtk_dir: &Path) -> Option<PathBuf> {
 // WrapVTK
 // ---------------------------------------------------------------------------
 
-/// Ensure `dir` holds a WrapVTK checkout, cloning it if necessary.
-pub fn ensure_source(dir: &Path, url: &str) -> Result<()> {
-    let source = dir.join("Source");
-    if source.is_dir() {
-        return Ok(()); // already checked out
-    }
-
-    if dir.exists() {
-        let mut entries =
-            std::fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))?;
-        if entries.next().is_some() {
+/// Resolve a bundled or explicitly supplied local source tree. Missing sources
+/// are an error, never a request to fetch anything from the network.
+pub fn source_dir(package: &Path, explicit: Option<&Path>) -> Result<PathBuf> {
+    let dir = explicit
+        .map(Path::to_path_buf)
+        .unwrap_or_else(|| package.join("vendor/WrapVTK"));
+    let dir = std::fs::canonicalize(&dir)
+        .with_context(|| format!("locating WrapVTK sources at {}", dir.display()))?;
+    for file in [
+        "Source/CMakeLists.txt",
+        "Source/vtkWrapXML.c",
+        "Source/vtkParseProperties.c",
+        "Source/vtkParseProperties.h.in",
+        "CMake/vtkModuleWrapXML.cmake",
+    ] {
+        if !dir.join(file).is_file() {
             bail!(
-                "{} exists but does not look like a WrapVTK checkout (no \
-                 `Source/`).  Remove it, or point `--wrapvtk-dir` elsewhere.",
+                "{} is not a WrapVTK source tree: missing {file}",
                 dir.display()
             );
         }
     }
-
-    if let Some(parent) = dir.parent() {
-        std::fs::create_dir_all(parent)
-            .with_context(|| format!("creating {}", parent.display()))?;
-    }
-    println!("Cloning WrapVTK from {url} into {}", dir.display());
-    // Shallow clone: we only ever build the current revision.
-    // `GIT_TERMINAL_PROMPT=0` keeps CI from blocking on a credential prompt.
-    run(
-        Command::new("git")
-            .args(["clone", "--depth", "1", "--no-checkout", url])
-            .arg(dir)
-            .env("GIT_TERMINAL_PROMPT", "0"),
-        "git clone",
-    )?;
-    let revision = Command::new("git")
-        .arg("-C")
-        .arg(dir)
-        .args(["rev-parse", "HEAD"])
-        .output()?;
-    if String::from_utf8_lossy(&revision.stdout).trim() != DEFAULT_WRAPVTK_REVISION {
-        run(
-            Command::new("git")
-                .arg("-C")
-                .arg(dir)
-                .args(["fetch", "--depth", "1", "origin", DEFAULT_WRAPVTK_REVISION])
-                .env("GIT_TERMINAL_PROMPT", "0"),
-            "fetch pinned WrapVTK",
-        )?;
-    }
-    run(
-        Command::new("git").arg("-C").arg(dir).args([
-            "checkout",
-            "--detach",
-            DEFAULT_WRAPVTK_REVISION,
-        ]),
-        "checkout pinned WrapVTK",
-    )
+    Ok(dir)
 }
 
-/// Install our patched `CMakeLists.txt` (honours `WRAPVTK_MODULES`).
-fn write_cmake(dir: &Path) -> Result<()> {
-    let path = dir.join("CMakeLists.txt");
-    if std::fs::read_to_string(&path).is_ok_and(|current| current == WRAPVTK_CMAKE) {
-        return Ok(());
-    }
-    std::fs::write(&path, WRAPVTK_CMAKE).with_context(|| format!("writing {}", path.display()))?;
-    Ok(())
+/// Write our CMake adapter inside the build tree, never in the source tree.
+fn prepare_project(build: &Path) -> Result<PathBuf> {
+    let project = build.join("project");
+    super::write_if_changed(&project.join("CMakeLists.txt"), WRAPVTK_CMAKE.as_bytes())?;
+    Ok(project)
 }
 
 fn build_wrapvtk(
@@ -299,14 +252,16 @@ fn build_wrapvtk(
     modules: &[String],
     jobs: Option<&str>,
 ) -> Result<()> {
+    let project = prepare_project(build)?;
     let mut configure = Command::new("cmake");
     configure
         .arg("-S")
-        .arg(dir)
+        .arg(&project)
         .arg("-B")
         .arg(&build)
         .arg("-DCMAKE_BUILD_TYPE=Release")
-        .arg(format!("-DVTK_DIR={}", vtk_dir.display()));
+        .arg(format!("-DVTK_DIR={}", vtk_dir.display()))
+        .arg(format!("-DWRAPVTK_SOURCE_DIR={}", dir.display()));
     if !modules.is_empty() {
         // WrapVTK wants the component names, i.e. without the `vtk` prefix.
         let components = modules
@@ -424,9 +379,37 @@ mod tests {
     }
 
     #[test]
-    fn patched_cmake_is_embedded() {
+    fn cmake_adapter_uses_external_sources_and_build_directory() {
         assert!(WRAPVTK_CMAKE.contains("WRAPVTK_MODULES"));
-        assert_eq!(DEFAULT_WRAPVTK_URL, "https://github.com/dgobbi/WrapVTK.git");
+        assert!(WRAPVTK_CMAKE.contains("${WRAPVTK_SOURCE_DIR}/Source"));
+        let root = std::env::temp_dir().join(format!("vtk-wrap-project-{}", std::process::id()));
+        let project = prepare_project(&root).unwrap();
+        assert_eq!(project, root.join("project"));
+        assert_eq!(
+            std::fs::read_to_string(project.join("CMakeLists.txt")).unwrap(),
+            WRAPVTK_CMAKE
+        );
+        std::fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn vendored_sources_and_license_are_shipped() {
+        let package = Path::new(env!("CARGO_MANIFEST_DIR"));
+        let bundled = source_dir(package, None).unwrap();
+        assert_eq!(
+            bundled,
+            std::fs::canonicalize(package.join("vendor/WrapVTK")).unwrap()
+        );
+        assert!(bundled.join("Copyright.txt").is_file());
+        assert!(bundled.join("VENDORED.md").is_file());
+    }
+
+    #[test]
+    fn invalid_source_override_does_not_fetch_or_create_sources() {
+        let root = std::env::temp_dir().join(format!("vtk-wrap-missing-{}", std::process::id()));
+        assert!(!root.exists());
+        assert!(source_dir(Path::new(env!("CARGO_MANIFEST_DIR")), Some(&root)).is_err());
+        assert!(!root.exists());
     }
 
     #[test]

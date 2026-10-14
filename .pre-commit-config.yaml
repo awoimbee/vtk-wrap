@@ -8,7 +8,8 @@
 #
 # Rust documentation snapshots under `doc_snapshots/` are not formatted or
 # spell-checked. They embed
-# upstream comments verbatim. Normal builds generate their sources under target.
+# upstream comments verbatim. Vendored WrapVTK files are also kept unchanged.
+# Normal builds generate their sources under target.
 repos:
   # `cargo fmt`.  A local hook rather than a third-party repo: `cargo fmt` is
   # the project's own toolchain, so there is nothing to pin.

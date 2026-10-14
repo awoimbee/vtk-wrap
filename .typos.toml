@@ -12,6 +12,8 @@
 extend-exclude = [
   # Rust-only documentation snapshots (one file per VTK module and an index).
   "doc_snapshots/",
+  # Preserve upstream wrapping-tool sources and documentation verbatim.
+  "vendor/WrapVTK/",
   # `Cargo.lock` is generated and full of upstream crate names.
   "Cargo.lock",
 ]

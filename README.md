@@ -32,13 +32,14 @@ unsafe {
 
 ## Requirements and building
 
-- Rust/Cargo, Git, a C++ compiler, and CMake ≥ 3.12.
-- Network access on the first build, unless you supply both VTK and WrapVTK
-  sources/installations locally.
+- Rust/Cargo, a C++ compiler, and CMake ≥ 3.12.
+- Network access to download VTK on the first build, unless you supply local
+  VTK sources or a prebuilt installation.
 
 The build script downloads the pinned VTK release, builds it
 statically, and generates bindings and a C++ shim from its configured headers.
-WrapVTK is fetched at a pinned revision and built automatically. Cold builds
+WrapVTK sources are [vendored](vendor/WrapVTK/VENDORED.md) and built automatically;
+no Git installation or WrapVTK download is needed. Cold builds
 take several minutes; later builds reuse the native and generation caches. See [Building and
 regenerating](docs/building.md) for the pipeline, cache and source overrides,
 and platform limitations.

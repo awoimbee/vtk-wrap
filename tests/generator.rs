@@ -40,16 +40,8 @@ fn export_bindings() {
         None => generator::wrapvtk::ensure_xml(&generator::wrapvtk::Request {
             repo: package.clone(),
             vtk_dir: Some(vtk),
-            wrapvtk_dir: env::var_os("VTK_WRAP_WRAPVTK_SOURCE_DIR")
-                .map(PathBuf::from)
-                .or_else(|| {
-                    Some(cache.join(format!(
-                        "WrapVTK-{}",
-                        generator::wrapvtk::DEFAULT_WRAPVTK_REVISION
-                    )))
-                }),
-            build_dir: Some(cache.join("inspection-wrapxml")),
-            wrapvtk_url: generator::wrapvtk::DEFAULT_WRAPVTK_URL.into(),
+            wrapvtk_dir: env::var_os("VTK_WRAP_WRAPVTK_SOURCE_DIR").map(PathBuf::from),
+            build_dir: Some(cache.join("inspection-wrapxml-vendored")),
             modules: modules.clone(),
             jobs: None,
         })

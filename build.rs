@@ -455,30 +455,13 @@ fn build_bindings(cache: &Path, vtk: &Vtk, manifest: &Path, modules: &[String]) 
     let key = format!("{}-{}", target, module_key(modules));
     let dir = cache.join(format!("bindings-{key}"));
     let output = dir.join("output");
-    let checkout = match env::var_os("VTK_WRAP_WRAPVTK_SOURCE_DIR") {
-        Some(dir) => {
-            let dir = fs::canonicalize(PathBuf::from(dir))?;
-            if !dir.join("Source/vtkWrapXML.c").is_file()
-                || !dir.join("CMake/vtkModuleWrapXML.cmake").is_file()
-            {
-                return Err(format!("{} is not a WrapVTK source tree", dir.display()).into());
-            }
-            dir
-        }
-        None => cache.join(format!(
-            "WrapVTK-{}",
-            generator::wrapvtk::DEFAULT_WRAPVTK_REVISION
-        )),
-    };
-    generator::wrapvtk::ensure_source(&checkout, generator::wrapvtk::DEFAULT_WRAPVTK_URL)?;
+    let explicit = env::var_os("VTK_WRAP_WRAPVTK_SOURCE_DIR").map(PathBuf::from);
+    let sources = generator::wrapvtk::source_dir(manifest, explicit.as_deref())?;
     println!(
         "cargo:rerun-if-changed={}",
-        checkout.join("Source").display()
+        sources.join("Source").display()
     );
-    println!(
-        "cargo:rerun-if-changed={}",
-        checkout.join("CMake").display()
-    );
+    println!("cargo:rerun-if-changed={}", sources.join("CMake").display());
     let cmake_dir = vtk_cmake_dir(&vtk.prefix)?;
     let include = generator::wrapvtk::vtk_include_dir(&cmake_dir)
         .ok_or("VTK installation has no include directory")?;
@@ -493,8 +476,8 @@ fn build_bindings(cache: &Path, vtk: &Vtk, manifest: &Path, modules: &[String]) 
         hash_wrapping_tools(&vtk.prefix)?,
         hash_dir(&include)?,
         hash_dir(&cmake_dir)?,
-        hash_dir(&checkout.join("Source"))?,
-        hash_dir(&checkout.join("CMake"))?,
+        hash_dir(&sources.join("Source"))?,
+        hash_dir(&sources.join("CMake"))?,
     );
     let stamp = dir.join(".generation-config");
     let content = dir.join(".generation-hash");
@@ -508,9 +491,8 @@ fn build_bindings(cache: &Path, vtk: &Vtk, manifest: &Path, modules: &[String]) 
     let xml = generator::wrapvtk::ensure_xml(&generator::wrapvtk::Request {
         repo: manifest.to_path_buf(),
         vtk_dir: Some(cmake_dir),
-        wrapvtk_dir: Some(checkout),
-        build_dir: Some(dir.join("wrapxml")),
-        wrapvtk_url: generator::wrapvtk::DEFAULT_WRAPVTK_URL.into(),
+        wrapvtk_dir: Some(sources),
+        build_dir: Some(dir.join("wrapxml-vendored")),
         modules: modules.to_vec(),
         jobs: env::var("NUM_JOBS").ok(),
     })?;

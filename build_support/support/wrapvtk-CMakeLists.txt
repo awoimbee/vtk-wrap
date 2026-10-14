@@ -1,18 +1,19 @@
 cmake_minimum_required(VERSION 3.12)
 project(WrapVTK)
 
-# This is a small, patched copy of the top level CMakeLists.txt from
-# https://github.com/dgobbi/WrapVTK.  The only difference is that it honours the
-# `WRAPVTK_MODULES` cache variable so that only the modules we actually wrap are
-# processed.
+# Build the bundled wrapping tool without modifying its source tree.
+# WRAPVTK_MODULES selects only the VTK modules enabled by Cargo.
+if(NOT DEFINED WRAPVTK_SOURCE_DIR)
+  message(FATAL_ERROR "WRAPVTK_SOURCE_DIR must point to the WrapVTK sources")
+endif()
 
 find_package(VTK REQUIRED COMPONENTS WrappingTools ${WRAPVTK_MODULES})
-add_subdirectory(Source)
+add_subdirectory("${WRAPVTK_SOURCE_DIR}/Source" Source)
 
 include(GNUInstallDirs)
 set(vtk_version_suffix)
 set(vtk_cmake_destination "${CMAKE_INSTALL_LIBDIR}/cmake/vtk${vtk_version_suffix}")
-include("CMake/vtkModuleWrapXML.cmake")
+include("${WRAPVTK_SOURCE_DIR}/CMake/vtkModuleWrapXML.cmake")
 
 set(_modules_to_wrap)
 if(DEFINED WRAPVTK_MODULES AND NOT WRAPVTK_MODULES STREQUAL "")

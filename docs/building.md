@@ -13,8 +13,9 @@ libraries.
    SHA-256, and builds/installs VTK. Cargo features select modules and their
    dependencies; the `WrappingTools` component is also enabled.
 2. Private [`build_support/generator/`](../build_support/generator/) code
-   fetches WrapVTK at a pinned Git revision, builds `vtkWrapXML`, and produces
-   XML from that installation's headers and module metadata.
+   builds the [vendored WrapVTK](../vendor/WrapVTK/VENDORED.md) tool and produces
+   XML from that installation's headers and module metadata. No Git command or
+   wrapping-tool download is involved.
 3. The generator emits the C++ shim, private FFI declarations, public unsafe
    Rust handles, and opt-in diagnostics for the selected modules/platform.
 4. The same build script compiles the shim and emits native link directives
@@ -30,8 +31,10 @@ parser library, generator/build executable, and wrapping-tool sources. A cache
 lock serializes builds sharing the same cache.
 
 VTK is installed under `<cache>/vtk-<version>/build/`; the default cache root
-is `target/vtk-wrap-vtk/`. WrapVTK, XML, generated sources and shim builds live
-alongside it. Use separate native caches for different target architectures.
+is `target/vtk-wrap-vtk/`. Wrapping-tool binaries, XML, generated sources and
+shim builds live alongside it. The bundled source tree is read-only; its CMake
+adapter is written inside each wrapping-tool build directory. Use separate
+native caches for different target architectures.
 
 | Environment variable | Purpose |
 | --- | --- |
@@ -39,14 +42,16 @@ alongside it. Use separate native caches for different target architectures.
 | `VTK_WRAP_VTK_SOURCE_DIR` | Build a local VTK source tree instead of downloading. |
 | `VTK_WRAP_VTK_PREBUILT_DIR` | Generate/link against an existing VTK install prefix. |
 | `VTK_WRAP_VTK_URL` | Override the download URL for the pinned VTK archive. |
-| `VTK_WRAP_WRAPVTK_SOURCE_DIR` | Use local WrapVTK sources for offline builds/development. |
+| `VTK_WRAP_WRAPVTK_SOURCE_DIR` | Override the vendored WrapVTK sources for development. |
 | `DOCS_RS` | Use Rust documentation snapshots and skip all native work. |
 
 Local VTK sources and prebuilt installations must match the pinned release.
 A prebuilt must contain the enabled modules **and `WrappingTools`**, and be
 configured with `BUILD_SHARED_LIBS=OFF` and `CMAKE_POSITION_INDEPENDENT_CODE=ON`.
-Supplying VTK alone does not eliminate the first-build WrapVTK download; supply
-its sources as well for an offline build.
+The package includes all WrapVTK sources and its BSD-3-Clause copyright notice.
+With local VTK and an available Cargo dependency cache, a cold native build
+needs neither Git nor network access. An invalid wrapping-source override is
+an error, never a request to clone or download sources.
 
 ## Generator development and documentation snapshots
 
