@@ -4,8 +4,9 @@ Rust bindings for the native C++
 [Visualization Toolkit (VTK)](https://vtk.org/): a complete, generated
 **unsafe API** in `vtk_wrap::raw`.
 
-The committed bindings target **VTK 9.7.1** and cover **1,582 classes and
-~35,600 methods**. Modules are enabled through Cargo features.
+Bindings are generated at build time against the pinned **VTK 9.7.1**
+installation. Cargo features and the target platform determine the available
+API; the documentation snapshot covers **1,582 classes and ~35,600 methods**.
 
 ## Quick start
 
@@ -31,13 +32,14 @@ unsafe {
 
 ## Requirements and building
 
-- Rust/Cargo, a C++ compiler, and CMake ≥ 3.12.
-- Network access on the first build, unless you supply VTK sources or a
-  prebuilt installation.
+- Rust/Cargo, Git, a C++ compiler, and CMake ≥ 3.12.
+- Network access on the first build, unless you supply both VTK and WrapVTK
+  sources/installations locally.
 
-By default, `vtk-wrap-sys` downloads the pinned VTK release and builds VTK
-and the C++ shim statically. Cold builds take several minutes; later builds
-reuse the native cache. See [Building and
+The build script downloads the pinned VTK release, builds it
+statically, and generates bindings and a C++ shim from its configured headers.
+WrapVTK is fetched at a pinned revision and built automatically. Cold builds
+take several minutes; later builds reuse the native and generation caches. See [Building and
 regenerating](docs/building.md) for the pipeline, cache and source overrides,
 and platform limitations.
 
@@ -59,15 +61,18 @@ Enable additional modules as needed:
 cargo build -p vtk-wrap --features vtkFiltersSources,vtkRenderingCore
 ```
 
-The full feature list is in [`vtk-wrap/Cargo.toml`](vtk-wrap/Cargo.toml).
+The full feature list is in [`Cargo.toml`](Cargo.toml).
 
-## Workspace
+## Layout
 
-| Package | Rust library / executable | Purpose |
-| --- | --- | --- |
-| `vtk-wrap` | `vtk_wrap` | Rust wrappers |
-| `vtk-wrap-sys` | `vtk_wrap_sys` | Raw FFI and native shim |
-| `vtk-wrap-gen` | `vtk-wrap-gen` | Binding generator |
+There is one crate, `vtk-wrap`, with no normal Rust runtime dependencies:
+
+- [`build.rs`](build.rs) builds VTK, runs WrapVTK, generates both Rust layers,
+  and compiles/links the C++ shim.
+- [`build_support/`](build_support/) contains the private generator and native
+  support files; its Rust dependencies are build-only.
+- [`src/lib.rs`](src/lib.rs) includes a private FFI module and exposes `raw`.
+- [`doc_snapshots/`](doc_snapshots/) contains Rust-only documentation fallbacks.
 
 ## Safety boundary
 
@@ -93,7 +98,7 @@ See [Binding design](docs/design.md) for the handle contract and type mapping.
 ```sh
 prek install          # formatting, spelling and workflow hooks
 prek run --all-files
-cargo test --workspace
+cargo test
 ```
 
 The generated accessor sweep deliberately violates native preconditions and
@@ -105,7 +110,10 @@ cargo test -p vtk-wrap --test smoke --features crash-hunt
 cargo test -p vtk-wrap --test rendering --features vtkRenderingOpenGL2,raw-rendering-tests
 ```
 
-Generated sources are committed; users do not need the wrapping tools.
+Normal builds generate sources into build directories, not the checkout.
+Committed Rust snapshots are used only for `DOCS_RS` documentation builds.
+The generator is private build support, not a separate package. Its tests live
+in `tests/generator.rs`; `scripts/regenerate.sh` exports generated files for inspection.
 
 ## Acknowledgements
 

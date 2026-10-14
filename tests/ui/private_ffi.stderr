@@ -1,0 +1,13 @@
+error[E0603]: module `ffi` is private
+ --> tests/ui/private_ffi.rs:2:23
+  |
+2 |     let _ = vtk_wrap::ffi::vtk_wrap_delete;
+  |                       ^^^  --------------- function `vtk_wrap_delete` is not publicly re-exported
+  |                       |
+  |                       private module
+  |
+note: the module `ffi` is defined here
+ --> src/lib.rs
+  |
+  | mod ffi {
+  | ^^^^^^^

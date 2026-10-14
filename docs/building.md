@@ -1,79 +1,95 @@
-# Building and regenerating
+# Building and generating bindings
 
 [Back to the README](../README.md)
 
-The default build compiles the pinned VTK release and the C++ shim
-statically, so a resulting executable needs no VTK shared libraries.
+`vtk-wrap` is one crate. Its build script generates the API from the configured
+headers of the VTK installation it actually links. The pinned release is VTK
+9.7.1. VTK and the C++ shim are static, so an executable needs no VTK shared
+libraries.
 
 ## Pipeline
 
-1. [`vtk-wrap-sys/build.rs`](../vtk-wrap-sys/build.rs) downloads the pinned
-   release archive, verifies its SHA-256, and unpacks it in the native cache.
-2. CMake builds and installs VTK with `BUILD_SHARED_LIBS=OFF` and position
-   independent code. Cargo features select the modules and their dependencies.
-3. The shim is built against that installation, and a link probe turns CMake's
-   link line into Rust linker directives.
+1. [`build.rs`](../build.rs) downloads the pinned VTK archive, verifies its
+   SHA-256, and builds/installs VTK. Cargo features select modules and their
+   dependencies; the `WrappingTools` component is also enabled.
+2. Private [`build_support/generator/`](../build_support/generator/) code
+   fetches WrapVTK at a pinned Git revision, builds `vtkWrapXML`, and produces
+   XML from that installation's headers and module metadata.
+3. The generator emits the C++ shim, private FFI declarations, public unsafe
+   Rust handles, and opt-in diagnostics for the selected modules/platform.
+4. The same build script compiles the shim and emits native link directives
+   from a CMake link probe. Generated `ffi/`, `raw/`, and `smoke/` Rust files
+   are copied from the persistent generation cache into this crate's `OUT_DIR`.
+5. [`src/lib.rs`](../src/lib.rs) includes the private `ffi` module and public
+   `raw` module. There is no dependency-metadata handoff or second build script.
+
+Normal builds never write generated sources into the checkout. Feature sets
+have separate generation/shim trees, and unchanged files retain their timestamps.
+Cache fingerprints include the target, modules, VTK headers/CMake metadata,
+parser library, generator/build executable, and wrapping-tool sources. A cache
+lock serializes builds sharing the same cache.
 
 VTK is installed under `<cache>/vtk-<version>/build/`; the default cache root
-is `target/vtk-wrap-vtk/`. The shim is cached per feature set, so an unchanged
-shim is not rebuilt.
+is `target/vtk-wrap-vtk/`. WrapVTK, XML, generated sources and shim builds live
+alongside it. Use separate native caches for different target architectures.
 
 | Environment variable | Purpose |
 | --- | --- |
-| `VTK_WRAP_CACHE_DIR` | Relocate the VTK and shim cache. |
-| `VTK_WRAP_VTK_SOURCE_DIR` | Build from a local VTK source tree instead of downloading. |
-| `VTK_WRAP_VTK_PREBUILT_DIR` | Use an existing VTK install prefix instead of building VTK. |
-| `VTK_WRAP_VTK_URL` | Override the download URL for the pinned release archive. |
-| `DOCS_RS` | Skip native compilation for documentation builds. |
+| `VTK_WRAP_CACHE_DIR` | Relocate all native, wrapping-tool and generation caches. |
+| `VTK_WRAP_VTK_SOURCE_DIR` | Build a local VTK source tree instead of downloading. |
+| `VTK_WRAP_VTK_PREBUILT_DIR` | Generate/link against an existing VTK install prefix. |
+| `VTK_WRAP_VTK_URL` | Override the download URL for the pinned VTK archive. |
+| `VTK_WRAP_WRAPVTK_SOURCE_DIR` | Use local WrapVTK sources for offline builds/development. |
+| `DOCS_RS` | Use Rust documentation snapshots and skip all native work. |
 
-`VTK_WRAP_VTK_SOURCE_DIR` is still built locally, and must be the pinned
-release the committed bindings target. `VTK_WRAP_VTK_PREBUILT_DIR` must match
-that version, contain the enabled modules, and — for static linking — have
-been configured with `BUILD_SHARED_LIBS=OFF` and
-`CMAKE_POSITION_INDEPENDENT_CODE=ON`.
+Local VTK sources and prebuilt installations must match the pinned release.
+A prebuilt must contain the enabled modules **and `WrappingTools`**, and be
+configured with `BUILD_SHARED_LIBS=OFF` and `CMAKE_POSITION_INDEPENDENT_CODE=ON`.
+Supplying VTK alone does not eliminate the first-build WrapVTK download; supply
+its sources as well for an offline build.
 
-## Regenerating bindings
+## Generator development and documentation snapshots
 
-The committed bindings target the version pinned in
-[`vtk-wrap-sys/build.rs`](../vtk-wrap-sys/build.rs). Users do not need the
-generator or WrapVTK.
+Generator changes automatically invalidate build-time generation; manual
+regeneration is not needed before building or testing. Generator unit tests
+are compiled through [`tests/generator.rs`](../tests/generator.rs), using the
+same private modules as `build.rs`:
 
 ```sh
-cargo build -p vtk-wrap-sys
+cargo test --test generator
+```
+
+There is no standalone generator crate or CLI. To export an inspection tree
+under `target/vtk-wrap-generated/`, run:
+
+```sh
 ./scripts/regenerate.sh
+MODULES=vtkCommonCore,vtkCommonDataModel ./scripts/regenerate.sh
 ```
 
-[`vtk-wrap-gen`](../vtk-wrap-gen/src/main.rs) clones or reuses
-[WrapVTK](https://github.com/dgobbi/WrapVTK), builds its `vtkWrapXML` tool,
-and emits the C++ shim, raw FFI declarations, Rust wrappers, and smoke tests.
-Generated files are overwritten; make binding changes in the generator.
+`UPDATE_DOCS=1 ./scripts/regenerate.sh` enables every `vtk*` module and also
+refreshes [`doc_snapshots/`](../doc_snapshots/). Those Rust-only snapshots let
+docs.rs build without native VTK, Git, or network access. They are never used
+by native builds. Platform-specific classes in snapshots describe the machine
+used to refresh them, not every target.
 
-By default the module list comes from the `vtk*` features declared in
-[`vtk-wrap-sys/Cargo.toml`](../vtk-wrap-sys/Cargo.toml), not from the current
-build. Select modules explicitly with:
+For existing XML, set `VTK_WRAP_XML_DIR`. The developer export test also accepts
+`VTK_WRAP_GENERATED_DIR` to override its output directory. These variables
+only affect explicit exports, not the normal build pipeline. A snapshot export
+requires XML for every module declared in [`Cargo.toml`](../Cargo.toml).
 
-```sh
-MODULES=vtkCommonCore,vtkFiltersSources ./scripts/regenerate.sh
-```
+## Platform support
 
-With a prebuilt VTK, point `VTK_DIR` at its CMake package directory; the
-installation must include the `WrappingTools` component. List generator
-options with `cargo run -p vtk-wrap-gen -- --help`.
+Linux and macOS generate their own class lists and integer signatures. Native
+array element types are preserved, and scalar casts select the intended
+integer overloads. Compile-time size/alignment checks enforce the Rust integer
+ABI. CI runs fast tests on both platforms and compiles Linux OpenGL bindings
+without opening a window.
 
-## Platform limitations
+Native link reconstruction still depends on CMake's `link.txt`, which the
+default Windows Visual Studio generator does not produce. Windows CI remains
+non-blocking.
 
-The [CI workflow](../.github/workflows/ci.yml) builds and tests the
-non-rendering modules on Linux and macOS; both jobs block PRs. Integer array
-signatures preserve their native C++ element types while exposing fixed-width
-Rust integers. Scalar arguments use their native types to select integer
-overloads. Compile-time size and alignment checks enforce the integer ABI.
-
-The committed sources were generated from macOS VTK headers, so some
-platform-specific work remains:
-
-- Cocoa-specific classes and headers in the rendering modules prevent those
-  modules from building on Linux or Windows.
-- Native link reconstruction depends on CMake's `link.txt`, which the default
-  Windows Visual Studio generator does not produce.
-
-The Windows CI job remains non-blocking until these are resolved.
+Cross-compilation is explicitly rejected rather than generating host bindings
+for a target VTK. Supporting it requires host-runnable wrapping tools configured
+to parse target headers and compiler definitions.
