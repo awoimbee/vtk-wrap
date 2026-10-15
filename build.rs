@@ -72,7 +72,7 @@ fn main() -> Result<()> {
     }
     let cache = cache_root(&out_dir).join(format!("vtk-{VTK_VERSION}"));
     fs::create_dir_all(&cache)?;
-    let cache = fs::canonicalize(cache)?;
+    let cache = generator::canonicalize(&cache)?;
     let lock = fs::OpenOptions::new()
         .read(true)
         .write(true)
@@ -257,10 +257,30 @@ fn sha256(path: &Path) -> Result<String> {
 
 /// Build and install VTK as static libraries.  Returns the install prefix.
 fn build_vtk(source: &Path, cache: &Path, modules: &[String]) -> Result<Vtk> {
-    let out = cache.join("build");
-    let stamp = cache.join(".vtk-built");
+    // CMake records the source directory in `CMakeCache.txt` and refuses to
+    // reconfigure one build tree against a different source, so each source
+    // needs its own tree.  The pinned download keeps the historical `build`
+    // name so existing caches stay warm; any other source gets a keyed tree.
+    let source = generator::canonicalize(source)?;
+    let default_source = cache.join(format!("VTK-{VTK_VERSION}"));
+    let (out, stamp) = if source == default_source {
+        (cache.join("build"), cache.join(".vtk-built"))
+    } else {
+        let key = source_key(&source);
+        (
+            cache.join(format!("build-{key}")),
+            cache.join(format!(".vtk-built-{key}")),
+        )
+    };
+
     let flags = vtk_flags(modules);
-    let fingerprint = format!("{VTK_VERSION}\n{}\n", flags.join("\n"));
+    // The source is part of the fingerprint: the shim and bindings caches must
+    // not be shared between two different VTK installs with the same version.
+    let fingerprint = format!(
+        "{VTK_VERSION}\n{}\n{}\n",
+        source.display(),
+        flags.join("\n")
+    );
     if env::var_os("VTK_WRAP_VTK_SOURCE_DIR").is_none()
         && fs::read_to_string(&stamp).is_ok_and(|contents| contents == fingerprint)
         && vtk_cmake_dir(&out).is_ok()
@@ -271,7 +291,7 @@ fn build_vtk(source: &Path, cache: &Path, modules: &[String]) -> Result<Vtk> {
         });
     }
 
-    let mut cmake = cmake::Config::new(source);
+    let mut cmake = cmake::Config::new(&source);
     // `out` is both the build tree root and the install prefix.
     cmake.out_dir(&out);
     for flag in &flags {
@@ -301,7 +321,7 @@ fn prebuilt_vtk() -> Result<Option<Vtk>> {
     let Some(dir) = env::var_os("VTK_WRAP_VTK_PREBUILT_DIR") else {
         return Ok(None);
     };
-    let prefix = fs::canonicalize(PathBuf::from(dir))?;
+    let prefix = generator::canonicalize(&PathBuf::from(dir))?;
     check_prebuilt(&prefix)?;
     println!(
         "cargo:warning=using prebuilt VTK at {} (skipping the VTK build)",
@@ -361,6 +381,12 @@ fn vtk_flags(modules: &[String]) -> Vec<String> {
         "BUILD_SHARED_LIBS=OFF",
         "CMAKE_POSITION_INDEPENDENT_CODE=ON",
         "VTK_BUILD_ALL_MODULES=OFF",
+        // VTK defaults the `StandAlone` and `Rendering` groups to `WANT`, which
+        // would drag their whole contents (OpenGL2, netcdf, libproj, ...) into
+        // an otherwise minimal build.  The modules we actually need are enabled
+        // explicitly above and keep their dependencies.
+        "VTK_GROUP_ENABLE_StandAlone=DONT_WANT",
+        "VTK_GROUP_ENABLE_Rendering=DONT_WANT",
         "VTK_BUILD_TESTING=OFF",
         "VTK_BUILD_EXAMPLES=OFF",
         "VTK_USE_MPI=OFF",
@@ -610,6 +636,17 @@ fn module_key(modules: &[String]) -> String {
     format!("{:08x}", hasher.finish() as u32)
 }
 
+/// A stable short key for a VTK source root, so each source can have its own
+/// build tree without a name that depends on the path's exact spelling.
+fn source_key(source: &Path) -> String {
+    use std::collections::hash_map::DefaultHasher;
+    use std::hash::{Hash, Hasher};
+
+    let mut hasher = DefaultHasher::new();
+    source.hash(&mut hasher);
+    format!("{:08x}", hasher.finish() as u32)
+}
+
 /// A stable hash of every source file under `dir`, skipping build directories.
 /// Two trees with the same contents hash the same even if their timestamps
 /// differ, which is what lets an unchanged shim skip recompilation.
@@ -665,7 +702,8 @@ fn link(shim: &Path) -> Result<()> {
     let lib_dir = shim.join("lib");
     println!("cargo:rustc-link-search=native={}", lib_dir.display());
 
-    let link_txt = shim.join("build/CMakeFiles/vtk_wrap_link_probe.dir/link.txt");
+    let build_dir = shim.join("build");
+    let link_txt = build_dir.join("CMakeFiles/vtk_wrap_link_probe.dir/link.txt");
     let line = fs::read_to_string(&link_txt).map_err(|error| {
         format!(
             "reading {}: {error}\n\
@@ -677,7 +715,7 @@ fn link(shim: &Path) -> Result<()> {
             link_txt.display()
         )
     })?;
-    let parsed = parse_link_line(&split_args(&line));
+    let parsed = parse_link_line(&expand_response_files(&split_args(&line), &build_dir));
 
     let mut search_dirs = vec![lib_dir.display().to_string()];
     for dir in parsed.search_dirs {
@@ -757,6 +795,12 @@ fn push_archive(parsed: &mut LinkLine, path: &str, whole_archive: bool) {
     let Some((dir, name)) = archive_name(path) else {
         return;
     };
+    // CMake's Makefile generators can bundle a target's own objects into an
+    // intermediate `CMakeFiles/<target>.dir/objects.a`.  It is not a library we
+    // need to link (its symbols are already part of this crate's objects).
+    if dir.contains("CMakeFiles") {
+        return;
+    }
     if !dir.is_empty() {
         parsed.search_dirs.push(dir);
     }
@@ -784,7 +828,33 @@ fn archive_name(path: &str) -> Option<(String, String)> {
     Some((dir.to_owned(), file.to_owned()))
 }
 
+/// Replace `@file` arguments with the arguments read from that file.
+///
+/// CMake's Makefile generators split long link lines into response files
+/// (MinGW and MSVC especially).  `base` is the directory the link command runs
+/// in, which is what relative response paths are resolved against.
+fn expand_response_files(args: &[String], base: &Path) -> Vec<String> {
+    let mut expanded = Vec::new();
+    for arg in args {
+        let Some(file) = arg.strip_prefix('@') else {
+            expanded.push(arg.clone());
+            continue;
+        };
+        match fs::read_to_string(base.join(file)) {
+            Ok(contents) => {
+                expanded.extend(expand_response_files(&split_args(&contents), base));
+            }
+            // Not a readable response file: keep it so the caller can see it.
+            Err(_) => expanded.push(arg.clone()),
+        }
+    }
+    expanded
+}
+
 /// Split a command line into arguments, honouring quotes and backslashes.
+///
+/// CMake link lines contain Windows paths, so a backslash is a literal path
+/// separator unless it escapes a double quote.
 fn split_args(line: &str) -> Vec<String> {
     let mut args = Vec::new();
     let mut current = String::new();
@@ -794,10 +864,13 @@ fn split_args(line: &str) -> Vec<String> {
     while let Some(character) = chars.next() {
         match character {
             '\\' => {
-                if let Some(escaped) = chars.next() {
-                    current.push(escaped);
-                    started = true;
+                if chars.clone().next() == Some('"') {
+                    chars.next();
+                    current.push('"');
+                } else {
+                    current.push('\\');
                 }
+                started = true;
             }
             '"' => {
                 quoted = !quoted;

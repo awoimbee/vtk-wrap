@@ -10,7 +10,7 @@ mod parse;
 pub mod wrapvtk;
 
 use std::fs;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use anyhow::{Context, Result};
 
@@ -104,6 +104,27 @@ pub fn fingerprint() -> String {
     }
     SUPPORT.hash(&mut hash);
     format!("{:016x}", hash.finish())
+}
+
+/// `std::fs::canonicalize`, minus the Windows `\\?\` verbatim prefix.
+///
+/// `canonicalize` returns verbatim paths (`\\?\C:\...`) on Windows. Those are
+/// fine for the Win32 API but break the tools we hand them to: `cmd.exe` treats
+/// them as unsupported UNC paths, so CMake's "MinGW Makefiles" generator and
+/// `cc` fail with errors like `cc1.exe: fatal error: \testCCompiler.c: No such
+/// file`. Stripping the prefix keeps the path absolute while remaining usable.
+pub fn canonicalize(path: &Path) -> std::io::Result<PathBuf> {
+    let path = fs::canonicalize(path)?;
+    #[cfg(windows)]
+    {
+        if let Some(rest) = path.to_str().and_then(|path| path.strip_prefix(r"\\?\")) {
+            let rest = rest
+                .strip_prefix(r"UNC\")
+                .map_or_else(|| rest.to_owned(), |unc| format!(r"\\{unc}"));
+            return Ok(PathBuf::from(rest));
+        }
+    }
+    Ok(path)
 }
 
 /// Preserve timestamps when content has not changed, so native incremental

@@ -10,6 +10,7 @@
 //!
 //! [WrapVTK]: https://github.com/dgobbi/WrapVTK
 
+use std::env;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
@@ -219,7 +220,7 @@ pub fn source_dir(package: &Path, explicit: Option<&Path>) -> Result<PathBuf> {
     let dir = explicit
         .map(Path::to_path_buf)
         .unwrap_or_else(|| package.join("vendor/WrapVTK"));
-    let dir = std::fs::canonicalize(&dir)
+    let dir = super::canonicalize(&dir)
         .with_context(|| format!("locating WrapVTK sources at {}", dir.display()))?;
     for file in [
         "Source/CMakeLists.txt",
@@ -254,11 +255,15 @@ fn build_wrapvtk(
 ) -> Result<()> {
     let project = prepare_project(build)?;
     let mut configure = Command::new("cmake");
+    configure.arg("-S").arg(&project).arg("-B").arg(&build);
+    // Without this CMake picks its default generator (Visual Studio / NMake on
+    // Windows), which does not match the MinGW toolchain VTK is built with and
+    // fails with `CMAKE_C_COMPILER not set`.  Mirror the generator the `cmake`
+    // crate selects for the VTK build.
+    if let Some(generator) = cmake_generator() {
+        configure.arg("-G").arg(generator);
+    }
     configure
-        .arg("-S")
-        .arg(&project)
-        .arg("-B")
-        .arg(&build)
         .arg("-DCMAKE_BUILD_TYPE=Release")
         .arg(format!("-DVTK_DIR={}", vtk_dir.display()))
         .arg(format!("-DWRAPVTK_SOURCE_DIR={}", dir.display()));
@@ -339,6 +344,20 @@ pub fn modules_from_manifest(manifest: &Path) -> Vec<String> {
 // helpers
 // ---------------------------------------------------------------------------
 
+/// The CMake generator to use for the WrapVTK build.
+///
+/// `CMAKE_GENERATOR` wins; otherwise, on a MinGW target, use the generator the
+/// `cmake` crate uses for the VTK build.  Other platforms keep CMake's default.
+fn cmake_generator() -> Option<String> {
+    if let Ok(generator) = env::var("CMAKE_GENERATOR") {
+        if !generator.trim().is_empty() {
+            return Some(generator);
+        }
+    }
+    (env::var("CARGO_CFG_TARGET_ENV").as_deref() == Ok("gnu") && cfg!(windows))
+        .then(|| "MinGW Makefiles".to_owned())
+}
+
 fn run(command: &mut Command, what: &str) -> Result<()> {
     let status = command
         .status()
@@ -398,7 +417,7 @@ mod tests {
         let bundled = source_dir(package, None).unwrap();
         assert_eq!(
             bundled,
-            std::fs::canonicalize(package.join("vendor/WrapVTK")).unwrap()
+            crate::generator::canonicalize(&package.join("vendor/WrapVTK")).unwrap()
         );
         assert!(bundled.join("Copyright.txt").is_file());
         assert!(bundled.join("VENDORED.md").is_file());

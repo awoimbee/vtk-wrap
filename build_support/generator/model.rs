@@ -257,6 +257,20 @@ impl Ty {
         self.ffi_type()
     }
 
+    /// The public Rust type of an array/slice element.
+    ///
+    /// The pointer is handed to the FFI unchanged, so this must be exactly the
+    /// FFI element type.  In particular C `long`/`unsigned long` keep their
+    /// platform width (`c_long`/`c_ulong`, 32-bit on Windows) instead of being
+    /// widened to `i64`/`u64`, which a scalar parameter can do with a cast but
+    /// an array cannot without copying.
+    fn rust_element(&self) -> String {
+        match self {
+            Ty::CLong | Ty::CULong => self.ffi_type(),
+            other => other.rust_param(),
+        }
+    }
+
     /// The public Rust type of a parameter.
     pub fn rust_param(&self) -> String {
         use Ty::*;
@@ -283,16 +297,16 @@ impl Ty {
             Array(inner, n, is_const) => {
                 if *is_const {
                     // fixed size inputs are `Copy`, take them by value
-                    format!("[{}; {}]", inner.rust_param(), n)
+                    format!("[{}; {}]", inner.rust_element(), n)
                 } else {
-                    format!("&mut [{}; {}]", inner.rust_param(), n)
+                    format!("&mut [{}; {}]", inner.rust_element(), n)
                 }
             }
             Slice(inner, is_const) => {
                 if *is_const {
-                    format!("&[{}]", inner.rust_param())
+                    format!("&[{}]", inner.rust_element())
                 } else {
-                    format!("&mut [{}]", inner.rust_param())
+                    format!("&mut [{}]", inner.rust_element())
                 }
             }
             RawPtr => "*mut ::core::ffi::c_void".into(),
@@ -305,8 +319,8 @@ impl Ty {
         match self {
             CStr | CStrMut | StdString => "String".into(),
             Object(name) | SmartObject(name) => format!("Option<{name}>"),
-            Array(inner, n, _) => format!("[{}; {}]", inner.rust_param(), n),
-            Slice(inner, _) => format!("&[{}]", inner.rust_param()),
+            Array(inner, n, _) => format!("[{}; {}]", inner.rust_element(), n),
+            Slice(inner, _) => format!("&[{}]", inner.rust_element()),
             RawPtr => "*mut ::core::ffi::c_void".into(),
             other => other.rust_param(),
         }
@@ -345,5 +359,28 @@ impl Ty {
             Ty::Object(name) | Ty::SmartObject(name) => Some(name),
             _ => None,
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::Ty;
+
+    /// `long`/`unsigned long` arrays must stay at the platform width so their
+    /// pointer can be passed to the FFI directly (they are 32-bit on Windows).
+    #[test]
+    fn array_elements_match_the_ffi_width() {
+        let long_out = Ty::Array(Box::new(Ty::CLong), 2, false);
+        assert_eq!(long_out.ffi_type(), "*mut ::core::ffi::c_long");
+        assert_eq!(long_out.rust_param(), "&mut [::core::ffi::c_long; 2]");
+
+        let ulong_in = Ty::Slice(Box::new(Ty::CULong), true);
+        assert_eq!(ulong_in.ffi_type(), "*const ::core::ffi::c_ulong");
+        assert_eq!(ulong_in.rust_param(), "&[::core::ffi::c_ulong]");
+
+        // Fixed-width integers are unaffected and keep their plain Rust type.
+        let id_out = Ty::Array(Box::new(Ty::I64), 3, false);
+        assert_eq!(id_out.ffi_type(), "*mut i64");
+        assert_eq!(id_out.rust_param(), "&mut [i64; 3]");
     }
 }
