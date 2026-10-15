@@ -1,16 +1,9 @@
-/target
+**/target/
 **/*.rs.bk
 .DS_Store
-# Build directories produced by vtk-wrap-gen (the committed output lives in the
-# crate source trees, these are just scratch/build dirs).
-/vtk-wrap-sys/shim/build
 
-# Local VTK scratch: source tree, build trees and prebuilt installs kept for
-# offline/`VTK_WRAP_VTK_SOURCE_DIR`/`VTK_WRAP_VTK_PREBUILT_DIR` experiments.
+# Local VTK sources, builds and prebuilt installations used for experiments.
 /.deps/
-# Output directory of the rendering test (it writes PNGs under vtk-wrap/target).
-/vtk-wrap/target/
 
-# VTK + shim build cache when VTK_WRAP_CACHE_DIR points inside the checkout, as the
-# CI workflow does.
+# Native/generation cache when explicitly placed inside the checkout.
 /.vtk-wrap-cache/

@@ -4,15 +4,16 @@
 
 ## Two layers
 
-1. `vtk-wrap-sys::ffi` declares unsafe C ABI functions; the C++ shim casts
-   opaque pointers and forwards calls.
+1. The private `ffi` module declares unsafe C ABI functions; the C++ shim
+   casts opaque pointers and forwards calls.
 2. `vtk-wrap::raw` provides generated reference-counted handles mirroring VTK.
    Every native method and constructor is `unsafe`, including static type
    queries, downcasts, and inherited methods. The generator makes no safety
    decisions based on names, constness, or parameter counts.
 
-There is no safe layer. Review the C++ contract before calling anything in an
-`unsafe` block.
+Both layers are generated in one build of the single `vtk-wrap` crate. FFI
+and the generator are implementation details; only `raw` is public. There is
+no safe layer. Review the C++ contract before calling anything in an `unsafe` block.
 
 ## Raw handle contract
 
@@ -22,9 +23,9 @@ thread and environment requirements. There is no raw `Default`; `as_ptr()`
 only exposes a borrowed pointer.
 
 Generated string arguments and by-value arrays can use call-local storage. If
-a native method retains such a pointer, call `vtk-wrap-sys::ffi` with
-explicitly owned storage instead; a `&'static str` does not extend the lifetime
-of the adapter's temporary `CString`.
+a native method retains such a pointer, do not use its call-local adapter.
+It needs a dedicated binding with explicitly owned storage; a `&'static str`
+does not extend the lifetime of the adapter's temporary `CString`.
 
 Every unsafe call must satisfy native initialization, index bounds, buffer
 sizes, pointer lifetimes, ownership, aliasing, and thread-affinity
