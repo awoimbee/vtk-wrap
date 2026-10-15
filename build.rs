@@ -829,7 +829,8 @@ fn link(shim: &Path) -> Result<()> {
             split_args(&fragments)
         }
     };
-    let parsed = parse_link_line(&expand_response_files(&args, &build_dir));
+    let msvc = env::var("TARGET").unwrap_or_default().contains("msvc");
+    let parsed = parse_link_line(&expand_response_files(&args, &build_dir), msvc);
 
     let mut search_dirs = vec![lib_dir.display().to_string()];
     for dir in parsed.search_dirs {
@@ -868,7 +869,7 @@ struct LinkLine {
     libraries: Vec<String>,
 }
 
-fn parse_link_line(args: &[String]) -> LinkLine {
+fn parse_link_line(args: &[String], msvc: bool) -> LinkLine {
     let mut parsed = LinkLine::default();
     for (index, arg) in args.iter().enumerate() {
         let arg = arg.as_str();
@@ -883,7 +884,7 @@ fn parse_link_line(args: &[String]) -> LinkLine {
                 parsed.search_dirs.push(dir.to_owned());
             }
         } else if let Some(path) = arg.strip_prefix("/WHOLEARCHIVE:") {
-            push_archive(&mut parsed, path, true);
+            push_archive(&mut parsed, path, true, msvc);
         } else if let Some(rest) = arg.strip_prefix("-Wl,") {
             // `-Wl,-force_load,<archive>` means whole-archive, which rustc
             // spells `static:+whole-archive=<name>`.  Every other `-Wl,` flag
@@ -894,7 +895,7 @@ fn parse_link_line(args: &[String]) -> LinkLine {
                 .position(|part| *part == "-force_load" || *part == "-force_load_swift_libs")
                 .and_then(|position| parts.get(position + 1));
             if let Some(path) = whole_archive {
-                push_archive(&mut parsed, path, true);
+                push_archive(&mut parsed, path, true, msvc);
             }
         } else if let Some(dir) = arg.strip_prefix("-L") {
             if !dir.is_empty() {
@@ -905,13 +906,13 @@ fn parse_link_line(args: &[String]) -> LinkLine {
                 parsed.libraries.push(format!("dylib={name}"));
             }
         } else if !arg.starts_with('-') && archive_name(arg).is_some() {
-            push_archive(&mut parsed, arg, false);
+            push_archive(&mut parsed, arg, false, msvc);
         }
     }
     parsed
 }
 
-fn push_archive(parsed: &mut LinkLine, path: &str, whole_archive: bool) {
+fn push_archive(parsed: &mut LinkLine, path: &str, whole_archive: bool, msvc: bool) {
     let Some((dir, name)) = archive_name(path) else {
         return;
     };
@@ -921,13 +922,19 @@ fn push_archive(parsed: &mut LinkLine, path: &str, whole_archive: bool) {
     if dir.contains("CMakeFiles") {
         return;
     }
-    if !dir.is_empty() {
+    let has_dir = !dir.is_empty();
+    if has_dir {
         parsed.search_dirs.push(dir);
     }
     if whole_archive {
         parsed
             .libraries
             .push(format!("static:+whole-archive={name}"));
+    } else if msvc && !has_dir {
+        // A bare name on MSVC is a system import library (`ws2_32.lib`, ...):
+        // let the linker find it in the Windows SDK paths instead of asking
+        // rustc for a file in a `-L` directory.
+        parsed.libraries.push(format!("dylib={name}"));
     } else {
         parsed.libraries.push(format!("static={name}"));
     }
