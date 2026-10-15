@@ -9,8 +9,8 @@
 #
 # ── Current status of `build` ──────────────────────────────────────────
 # Linux and macOS build and test the non-rendering modules and block PRs.
-# Windows remains non-blocking: native link reconstruction currently requires a
-# Makefile generator, while Windows defaults to Visual Studio.
+# Windows reconstructs the link line through CMake's File API, so the Visual
+# Studio generator works too; it stays non-blocking for now.
 # Bindings are generated from each job's VTK installation. Linux additionally
 # compiles the OpenGL bindings without opening a window.
 #

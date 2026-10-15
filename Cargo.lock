@@ -283,6 +283,7 @@ dependencies = [
  "convert_case",
  "fs2",
  "roxmltree",
+ "serde_json",
  "trybuild",
 ]
 

@@ -280,6 +280,9 @@ fn build_wrapvtk(
 
     let mut compile = Command::new("cmake");
     compile.arg("--build").arg(&build);
+    // Multi-config generators default to Debug; match the Release VTK this tool
+    // links against (and rustc's release C runtime).
+    compile.arg("--config").arg("Release");
     match jobs {
         Some(jobs) => {
             compile.arg("--parallel").arg(jobs);

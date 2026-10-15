@@ -35,6 +35,12 @@ const VTK_VERSION: &str = "9.7.1";
 const VTK_URL: &str = "https://www.vtk.org/files/release/9.7/VTK-9.7.1.tar.gz";
 /// SHA-256 of `VTK_URL`.
 const VTK_SHA256: &str = "cae04fd355004cb916a409db79d53a208f1221e975aeacc7540ee67b148ee91a";
+/// Native build configuration, for single- and multi-config generators alike.
+///
+/// The `cmake` crate otherwise infers `Debug` from Cargo's `dev` profile, and a
+/// multi-config generator (Visual Studio) then builds VTK and the shim against
+/// the debug C runtime, which cannot be linked into rustc's release C runtime.
+const CMAKE_PROFILE: &str = "Release";
 
 type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 
@@ -277,7 +283,7 @@ fn build_vtk(source: &Path, cache: &Path, modules: &[String]) -> Result<Vtk> {
     // The source is part of the fingerprint: the shim and bindings caches must
     // not be shared between two different VTK installs with the same version.
     let fingerprint = format!(
-        "{VTK_VERSION}\n{}\n{}\n",
+        "{VTK_VERSION}\n{CMAKE_PROFILE}\n{}\n{}\n",
         source.display(),
         flags.join("\n")
     );
@@ -292,6 +298,7 @@ fn build_vtk(source: &Path, cache: &Path, modules: &[String]) -> Result<Vtk> {
     }
 
     let mut cmake = cmake::Config::new(&source);
+    cmake.profile(CMAKE_PROFILE);
     // `out` is both the build tree root and the install prefix.
     cmake.out_dir(&out);
     for flag in &flags {
@@ -584,7 +591,7 @@ fn build_shim(cache: &Path, vtk: &Vtk, sources: &Path, modules: &[String]) -> Re
     // be reused at all; the content hash decides whether it is up to date.  The
     // enabled modules are part of it, so switching features rebuilds the shim.
     let config = format!(
-        "{VTK_VERSION}\n{}\n{}\n{}\n{}\n{}\n",
+        "{VTK_VERSION}\n{CMAKE_PROFILE}\n{}\n{}\n{}\n{}\n{}\n",
         vtk.fingerprint,
         modules.join(","),
         env::var("TARGET").unwrap_or_default(),
@@ -595,11 +602,15 @@ fn build_shim(cache: &Path, vtk: &Vtk, sources: &Path, modules: &[String]) -> Re
 
     let config_file = out.join(".shim-config");
     let content_file = out.join(".shim-hash");
-    let installed = out.join("lib/libvtk_wrap_shim.a");
+    let fragments_file = out.join("build/vtk_wrap-link-fragments.txt");
     let link_txt = out.join("build/CMakeFiles/vtk_wrap_link_probe.dir/link.txt");
     let config_ok = fs::read_to_string(&config_file).is_ok_and(|saved| saved == config);
     let content_ok = fs::read_to_string(&content_file).is_ok_and(|saved| saved == content);
-    if config_ok && content_ok && installed.is_file() && link_txt.is_file() {
+    if config_ok
+        && content_ok
+        && shim_archive(&out).is_some()
+        && (fragments_file.is_file() || link_txt.is_file())
+    {
         return Ok(out);
     }
 
@@ -610,17 +621,108 @@ fn build_shim(cache: &Path, vtk: &Vtk, sources: &Path, modules: &[String]) -> Re
         let _ = fs::remove_dir_all(&out);
     }
 
+    // Ask CMake's File API to describe the link probe.  Its reply carries the
+    // fully resolved link line for *any* generator, unlike `link.txt`, which
+    // only the Makefile generators write.  The query has to exist before
+    // configure runs.
+    let build_dir = out.join("build");
+    let _ = fs::create_dir_all(build_dir.join(".cmake/api/v1/query"));
+    let _ = fs::write(build_dir.join(".cmake/api/v1/query/codemodel-v2"), "");
+
     let mut cmake = cmake::Config::new(sources);
+    cmake.profile(CMAKE_PROFILE);
     cmake.out_dir(&out);
-    cmake.define("CMAKE_BUILD_TYPE", "Release");
+    cmake.define("CMAKE_BUILD_TYPE", CMAKE_PROFILE);
     cmake.define("VTK_WRAP_MODULES", modules.join(";"));
     cmake.define("VTK_DIR", vtk_cmake_dir(&vtk.prefix)?);
     cmake.define("CMAKE_PREFIX_PATH", &vtk.prefix);
     cmake.build();
 
+    // Older CMake (before File API `link.commandFragments`) leaves no reply;
+    // `link()` then falls back to `link.txt`.
+    if let Some(fragments) = link_probe_fragments(&build_dir)? {
+        fs::write(&fragments_file, fragments.join("\n"))?;
+    }
+
     fs::write(&config_file, &config)?;
     fs::write(&content_file, &content)?;
     Ok(out)
+}
+
+/// The shim archive installed under `<out>/lib`, with either archive extension.
+///
+/// Recursive because multi-config generators may add a configuration directory.
+fn shim_archive(out: &Path) -> Option<PathBuf> {
+    let mut files = Vec::new();
+    collect_files(&out.join("lib"), &mut files).ok()?;
+    files.into_iter().find(|path| {
+        let name = path.file_name().and_then(|name| name.to_str());
+        name.is_some_and(|name| {
+            name.starts_with("vtk_wrap_shim") && (name.ends_with(".a") || name.ends_with(".lib"))
+        })
+    })
+}
+
+/// The link fragments of `vtk_wrap_link_probe` from CMake's File API, if a
+/// codemodel reply was written.  `None` means the CMake in use does not support
+/// it, and the caller should fall back to the Makefile `link.txt`.
+fn link_probe_fragments(build_dir: &Path) -> Result<Option<Vec<String>>> {
+    let reply = build_dir.join(".cmake/api/v1/reply");
+    let Some(codemodel) = read_dir_json(&reply, "codemodel-v2-")? else {
+        return Ok(None);
+    };
+    let mut target_json = None;
+    for configuration in codemodel["configurations"].as_array().into_iter().flatten() {
+        for target in configuration["targets"].as_array().into_iter().flatten() {
+            if target["name"] == "vtk_wrap_link_probe" {
+                target_json = target["jsonFile"].as_str().map(ToOwned::to_owned);
+            }
+        }
+    }
+    let Some(target_json) = target_json else {
+        return Ok(None);
+    };
+    let target: serde_json::Value =
+        serde_json::from_str(&fs::read_to_string(reply.join(target_json))?)?;
+    let Some(fragments) = target["link"]["commandFragments"].as_array() else {
+        return Ok(None);
+    };
+    Ok(Some(
+        fragments
+            .iter()
+            .filter(|fragment| {
+                let role = fragment["role"].as_str().unwrap_or_default();
+                !role.is_empty() && (role.contains("librar") || role.contains("framework"))
+            })
+            .filter_map(|fragment| fragment["fragment"].as_str().map(ToOwned::to_owned))
+            .collect(),
+    ))
+}
+
+/// Read the newest file under `dir` whose name starts with `prefix`, as JSON.
+///
+/// CMake can leave older replies behind, so pick the most recently written one.
+fn read_dir_json(dir: &Path, prefix: &str) -> Result<Option<serde_json::Value>> {
+    let mut candidates: Vec<(std::time::SystemTime, PathBuf)> = fs::read_dir(dir)
+        .ok()
+        .into_iter()
+        .flatten()
+        .filter_map(|entry| entry.ok().map(|entry| entry.path()))
+        .filter(|path| {
+            path.file_name()
+                .and_then(|name| name.to_str())
+                .is_some_and(|name| name.starts_with(prefix) && name.ends_with(".json"))
+        })
+        .filter_map(|path| {
+            let modified = fs::metadata(&path).ok()?.modified().ok()?;
+            Some((modified, path))
+        })
+        .collect();
+    candidates.sort_by_key(|(modified, _)| *modified);
+    match candidates.pop() {
+        Some((_, path)) => Ok(Some(serde_json::from_str(&fs::read_to_string(path)?)?)),
+        None => Ok(None),
+    }
 }
 
 /// A stable short key for a set of modules, used to give each feature set its
@@ -703,19 +805,31 @@ fn link(shim: &Path) -> Result<()> {
     println!("cargo:rustc-link-search=native={}", lib_dir.display());
 
     let build_dir = shim.join("build");
+    // The Makefile `link.txt` is the long-standing path; generators that do not
+    // write one (Visual Studio) expose the same information through the CMake
+    // File API, which `build_shim` saved.  Prefer `link.txt` so the generators
+    // already covered by CI keep the exact same code path.
+    let fragments_file = build_dir.join("vtk_wrap-link-fragments.txt");
     let link_txt = build_dir.join("CMakeFiles/vtk_wrap_link_probe.dir/link.txt");
-    let line = fs::read_to_string(&link_txt).map_err(|error| {
-        format!(
-            "reading {}: {error}\n\
-             the generated shim must build an executable called\n\
-             `vtk_wrap_link_probe`, and its link line is read from CMake's\n\
-             `link.txt`, which only the Makefile generators produce.  Set\n\
-             `CMAKE_GENERATOR` to `Unix Makefiles`, `MinGW Makefiles` or\n\
-             `NMake Makefiles` (Ninja and Visual Studio do not write one).",
-            link_txt.display()
-        )
-    })?;
-    let parsed = parse_link_line(&expand_response_files(&split_args(&line), &build_dir));
+    let args = match fs::read_to_string(&link_txt) {
+        Ok(line) => split_args(&line),
+        Err(_) => {
+            let fragments = fs::read_to_string(&fragments_file).map_err(|error| {
+                format!(
+                    "reading {} (or {}): {error}\n\
+                     the generated shim must build an executable called\n\
+                     `vtk_wrap_link_probe` and expose its link line, either via\n\
+                     a Makefile `link.txt` or CMake's File API.  CMake older\n\
+                     than 3.28 needs a Makefile generator (`Unix Makefiles`,\n\
+                     `MinGW Makefiles` or `NMake Makefiles`).",
+                    link_txt.display(),
+                    fragments_file.display()
+                )
+            })?;
+            split_args(&fragments)
+        }
+    };
+    let parsed = parse_link_line(&expand_response_files(&args, &build_dir));
 
     let mut search_dirs = vec![lib_dir.display().to_string()];
     for dir in parsed.search_dirs {
@@ -756,14 +870,20 @@ struct LinkLine {
 
 fn parse_link_line(args: &[String]) -> LinkLine {
     let mut parsed = LinkLine::default();
-    // The first argument is the compiler driver.
-    for (index, arg) in args.iter().enumerate().skip(1) {
+    for (index, arg) in args.iter().enumerate() {
         let arg = arg.as_str();
         // `-framework Foo`
         if arg == "-framework" {
             if let Some(name) = args.get(index + 1) {
                 parsed.libraries.push(format!("framework={name}"));
             }
+        } else if let Some(dir) = arg.strip_prefix("/LIBPATH:") {
+            // MSVC-style library search directory.
+            if !dir.is_empty() {
+                parsed.search_dirs.push(dir.to_owned());
+            }
+        } else if let Some(path) = arg.strip_prefix("/WHOLEARCHIVE:") {
+            push_archive(&mut parsed, path, true);
         } else if let Some(rest) = arg.strip_prefix("-Wl,") {
             // `-Wl,-force_load,<archive>` means whole-archive, which rustc
             // spells `static:+whole-archive=<name>`.  Every other `-Wl,` flag
@@ -816,12 +936,21 @@ fn push_archive(parsed: &mut LinkLine, path: &str, whole_archive: bool) {
 /// Split an archive path into its directory and the name rustc needs
 /// (`libvtkCommonCore-9.7.1.a` -> `vtkCommonCore-9.7.1`).
 fn archive_name(path: &str) -> Option<(String, String)> {
-    let name = path.strip_suffix(".a")?;
-    let (dir, file) = match name.rfind('/') {
-        Some(slash) => (&name[..slash], &name[slash + 1..]),
+    // `libfoo.a` (MinGW, Unix, macOS) and `foo.lib` (MSVC); only the former
+    // carries a `lib` prefix that rustc does not expect.
+    let (name, strip_lib) = match path.strip_suffix(".a") {
+        Some(name) => (name, true),
+        None => (path.strip_suffix(".lib")?, false),
+    };
+    let (dir, file) = match name.rfind(['/', '\\']) {
+        Some(separator) => (&name[..separator], &name[separator + 1..]),
         None => ("", name),
     };
-    let file = file.strip_prefix("lib").unwrap_or(file);
+    let file = if strip_lib {
+        file.strip_prefix("lib").unwrap_or(file)
+    } else {
+        file
+    };
     if file.is_empty() {
         return None;
     }
