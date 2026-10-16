@@ -1,4 +1,4 @@
-//! Rust binding generation: the raw `extern "C"` declarations for the private FFI module and
+//! Rust binding generation: the raw `unsafe extern "C"` declarations for the private FFI module and
 //! unsafe handle wrappers for `vtk_wrap::raw`.
 
 use std::fmt::Write as _;
@@ -167,7 +167,7 @@ fn emit_method(out: &mut String, m: &Method) {
     let _ = writeln!(out, "    }}\n");
 }
 
-/// Raw `extern "C"` declarations for one VTK module.
+/// Raw `unsafe extern "C"` declarations for one VTK module.
 ///
 /// One file per module and no `#[cfg]` inside: the file is only `include!`d
 /// when its Cargo feature is on (see [`emit_ffi_index`]).  Putting a `#[cfg]`
@@ -180,7 +180,7 @@ pub fn emit_ffi_module(api: &Api, module: &str) -> String {
         out,
         "// Raw FFI declarations for the `{module}` VTK module.\n"
     );
-    let _ = writeln!(out, "extern \"C\" {{");
+    let _ = writeln!(out, "unsafe extern \"C\" {{");
     for class in api.classes.values().filter(|class| class.module == module) {
         if class.construct_expr.is_some() {
             let _ = writeln!(
@@ -291,7 +291,11 @@ pub fn emit_wrappers_module(api: &Api, module: &str) -> String {
             );
         }
 
-        let _ = writeln!(out, "impl ::core::fmt::Debug for {} {{\n    fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {{\n        f.debug_tuple(\"{}\").field(&self.as_ptr()).finish()\n    }}\n}}", class.name, class.name);
+        let _ = writeln!(
+            out,
+            "impl ::core::fmt::Debug for {} {{\n    fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {{\n        f.debug_tuple(\"{}\").field(&self.as_ptr()).finish()\n    }}\n}}",
+            class.name, class.name
+        );
     }
     out
 }

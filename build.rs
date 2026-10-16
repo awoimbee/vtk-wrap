@@ -172,7 +172,7 @@ fn vtk_source(cache: &Path) -> Result<PathBuf> {
                  Remove it to download a fresh copy, or set `VTK_WRAP_VTK_URL`.",
                 tarball.display()
             )
-            .into())
+            .into());
         }
         // No hashing tool available: trust the download (and say so).
         Err(error) => println!("cargo:warning=could not verify VTK archive: {error}"),

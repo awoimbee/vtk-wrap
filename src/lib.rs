@@ -24,7 +24,7 @@
 mod ffi {
     include!(concat!(env!("OUT_DIR"), "/ffi/generated.rs"));
 
-    extern "C" {
+    unsafe extern "C" {
         pub fn vtk_wrap_register(obj: *mut ::core::ffi::c_void);
         pub fn vtk_wrap_delete(obj: *mut ::core::ffi::c_void);
         pub fn vtk_wrap_strdup(s: *const ::core::ffi::c_char) -> *mut ::core::ffi::c_char;
