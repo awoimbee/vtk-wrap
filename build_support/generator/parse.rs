@@ -69,11 +69,7 @@ fn child_text(node: &roxmltree::Node, tag: &str) -> Option<String> {
         .children()
         .find(|c| c.has_tag_name(tag))
         .map(|c| c.text().unwrap_or("").trim().to_string())?;
-    if text.is_empty() {
-        None
-    } else {
-        Some(text)
-    }
+    if text.is_empty() { None } else { Some(text) }
 }
 
 fn parse_param(node: &roxmltree::Node) -> RawParam {
@@ -912,4 +908,6 @@ const RUST_KEYWORDS: &[&str] = &[
     "self", "Self", "static", "struct", "super", "trait", "true", "type", "unsafe", "use", "where",
     "while", "async", "await", "dyn", "abstract", "become", "box", "do", "final", "macro",
     "override", "priv", "typeof", "unsized", "virtual", "yield", "try",
+    // Reserved in the 2024 edition.
+    "gen",
 ];

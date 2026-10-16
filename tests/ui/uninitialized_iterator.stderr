@@ -1,4 +1,4 @@
-error[E0133]: call to unsafe function `vtkCellArrayIterator::get_current_cell` is unsafe and requires unsafe function or block
+error[E0133]: call to unsafe function `vtkCellArrayIterator::get_current_cell` is unsafe and requires unsafe block
  --> tests/ui/uninitialized_iterator.rs:4:13
   |
 4 |     let _ = iterator.get_current_cell();

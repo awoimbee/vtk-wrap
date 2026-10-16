@@ -141,7 +141,10 @@ pub fn emit_class_cpp(class: &Class, headers: &BTreeMap<String, String>) -> Stri
     let _ = writeln!(out, "#include <string>\n");
 
     for (native, abi) in scalars {
-        let _ = writeln!(out, "static_assert(sizeof({native}) == sizeof({abi}) && alignof({native}) == alignof({abi}), \"{native} must match the Rust integer ABI\");\n");
+        let _ = writeln!(
+            out,
+            "static_assert(sizeof({native}) == sizeof({abi}) && alignof({native}) == alignof({abi}), \"{native} must match the Rust integer ABI\");\n"
+        );
     }
 
     if let Some(expr) = &class.construct_expr {
@@ -232,7 +235,10 @@ target_link_libraries(vtk_wrap_link_probe PRIVATE vtk_wrap_shim)
 
 "#,
     );
-    let _ = writeln!(out, "install(TARGETS vtk_wrap_shim LIBRARY DESTINATION lib ARCHIVE DESTINATION lib RUNTIME DESTINATION bin)");
+    let _ = writeln!(
+        out,
+        "install(TARGETS vtk_wrap_shim LIBRARY DESTINATION lib ARCHIVE DESTINATION lib RUNTIME DESTINATION bin)"
+    );
     out
 }
 

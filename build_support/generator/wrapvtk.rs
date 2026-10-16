@@ -14,7 +14,7 @@ use std::env;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
-use anyhow::{bail, Context, Result};
+use anyhow::{Context, Result, bail};
 
 /// Separate CMake project selecting the requested modules without patching
 /// the upstream sources.
