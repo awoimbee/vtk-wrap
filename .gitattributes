@@ -1,0 +1,2 @@
+# Preserve intentional Markdown hard breaks in upstream documentation.
+vendor/WrapVTK/**/*.md whitespace=-blank-at-eol

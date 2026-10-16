@@ -1,41 +1,21 @@
 #!/usr/bin/env bash
+# Export generated files for inspection; UPDATE_DOCS=1 refreshes the Rust-only
+# documentation snapshots as well. The generator is private build support.
 #
-# Regenerate the committed Rust and C++ bindings from VTK's headers.
-#
-#   ./scripts/regenerate.sh
-#
-# `vtk-wrap-gen` does the actual work: it clones (or reuses) WrapVTK, builds
-# `vtkWrapXML` against your VTK, generates the XML API description, and then
-# writes the C++ shim and the Rust crates.  This script is only a convenience
-# wrapper that builds `vtk-wrap-gen` and forwards its environment.
-#
-# By default the module set comes from the `vtk*` features in
-# `vtk-wrap-sys/Cargo.toml`, so the bindings and the features cannot drift apart.
-# Override with MODULES (comma separated, VTK spelling):
-#
-#   MODULES=vtkCommonCore,vtkFiltersSources ./scripts/regenerate.sh
-#
-# Recognised environment variables (all optional):
-#   VTK_DIR        VTK CMake package dir; auto-detected (Homebrew, /usr/local,
-#                  /usr) when unset.
-#   VTK_INCLUDE    VTK include dir; derived from VTK_DIR when unset.
-#   WRAPVTK_DIR    WrapVTK checkout to use or create (default:
-#                  target/wrapvtk/WrapVTK).
-#   MODULES        Modules to wrap (default: the vtk-wrap-sys features).
+# MODULES selects Cargo module features (default: the normal feature set).
+# For snapshots, enable every vtk* module and use an installation with them all.
+# VTK_WRAP_XML_DIR may point to existing XML instead of invoking WrapVTK.
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
+args=(--test generator)
+if [[ "${UPDATE_DOCS:-0}" == 1 ]]; then
+  modules="$(cargo metadata --no-deps --format-version 1 | python3 -c 'import json,sys; p=json.load(sys.stdin)["packages"][0]; print(",".join(sorted(k for k in p["features"] if k.startswith("vtk"))))')"
+  args+=(--features "$modules")
+elif [[ -n "${MODULES:-}" ]]; then
+  args+=(--no-default-features --features "$MODULES")
+fi
 
-args=(--repo "$REPO_ROOT")
-[[ -n "${MODULES:-}" ]] && args+=(--modules "$MODULES")
-[[ -n "${VTK_DIR:-}" ]] && args+=(--vtk-dir "$VTK_DIR")
-[[ -n "${VTK_INCLUDE:-}" ]] && args+=(--vtk-include "$VTK_INCLUDE")
-[[ -n "${WRAPVTK_DIR:-}" ]] && args+=(--wrapvtk-dir "$WRAPVTK_DIR")
-[[ -n "${WRAPVTK_URL:-}" ]] && args+=(--wrapvtk-url "$WRAPVTK_URL")
-
-cargo run --release -p vtk-wrap-gen -- "${args[@]}"
-
-echo
-echo "Done. Rebuild with: cargo build -p vtk-wrap-sys -p vtk-wrap"
+cargo test "${args[@]}" export_bindings -- --ignored --nocapture

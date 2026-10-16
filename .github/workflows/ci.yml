@@ -4,18 +4,15 @@
 #   * `lint`  -- formatting, spelling and a security audit of the workflow
 #                itself.  Runs on Linux, needs no VTK, finishes in well under a
 #                minute, and gates everything else.
-#   * `build` -- the whole workspace (native VTK + shim + Rust) on Linux, macOS
+#   * `build` -- vtk-wrap (native VTK + shim + Rust) on Linux, macOS
 #                and Windows, plus the fast tests.
 #
 # ── Current status of `build` ──────────────────────────────────────────
-# The generated bindings that are committed were produced from a *macOS* VTK, so
-# they wrap classes that only exist there (`vtkCocoaRenderWindow`, ...) and use
-# C++ types that are spelled differently on other platforms
-# (`int64_t` vs `vtkIdType` on Linux/Windows).  Only the macOS job can pass
-# today; the Linux and Windows jobs run the exact same steps but are marked
-# `continue-on-error` so they report status without blocking PRs.  Drop the
-# `blocking: false` entries once the bindings are made platform-independent
-# (`vtk-wrap-gen` needs a per-platform module list / type mapping, see the README).
+# Linux and macOS build and test the non-rendering modules and block PRs.
+# Windows reconstructs the link line through CMake's File API, so the Visual
+# Studio generator works too; it stays non-blocking for now.
+# Bindings are generated from each job's VTK installation. Linux additionally
+# compiles the OpenGL bindings without opening a window.
 #
 # Building VTK from source dominates the runtime (~8 minutes on a fast machine,
 # more on a hosted runner).  The `VTK_WRAP_CACHE_DIR` cache keeps the built VTK and
@@ -85,7 +82,7 @@ jobs:
           - os: macos-latest
             blocking: true
           - os: ubuntu-latest
-            blocking: false
+            blocking: true
           - os: windows-latest
             blocking: false
     steps:
@@ -137,19 +134,21 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ env.VTK_WRAP_CACHE_DIR }}
-          key: vtk-wrap-vtk-${{ runner.os }}-${{ hashFiles('vtk-wrap-sys/build.rs', 'vtk-wrap-sys/shim/**') }}
+          key: vtk-wrap-vtk-${{ runner.os }}-${{ hashFiles('build.rs', 'Cargo.toml', 'Cargo.lock', 'build_support/**', 'vendor/WrapVTK/**') }}
           restore-keys: |
             vtk-wrap-vtk-${{ runner.os }}-
 
-      # Builds: vtk-wrap-gen, vtk-wrap-sys (downloads + builds VTK, builds the shim),
-      # vtk-wrap, and all test targets.
-      - name: Build workspace and tests
-        run: cargo build --workspace --tests --locked
+      # Builds VTK, generates bindings and the shim, and compiles test targets.
+      - name: Build crate and tests
+        run: cargo build --tests --features vtkFiltersSources,vtkIOCore --locked
 
       # Cheap functional checks that do not need a window server.  The full
       # `smoke` sweep deliberately is not run here: it is a crash hunt that
       # walks into a known VTK segfault (see `scripts/crash-hunt.sh`).
       - name: Run fast tests
         run: |
-          cargo test -p vtk-wrap-gen --locked
-          cargo test -p vtk-wrap --test pipeline --locked
+          cargo test --features vtkFiltersSources,vtkIOCore --locked
+
+      - name: Check Linux rendering bindings
+        if: runner.os == 'Linux'
+        run: cargo check -p vtk-wrap --features vtkRenderingOpenGL2 --locked
