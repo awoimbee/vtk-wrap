@@ -6,6 +6,9 @@ license = "BSD-3-Clause"
 repository = "https://github.com/awoimbee/vtk-wrap"
 authors = ["vtk-wrap contributors"]
 description = "Unsafe Rust bindings to VTK"
+readme = "README.md"
+keywords = ["vtk", "visualization", "graphics", "bindings", "ffi"]
+categories = ["api-bindings", "graphics", "science", "visualization"]
 links = "vtk_wrap_shim"
 
 [lib]
